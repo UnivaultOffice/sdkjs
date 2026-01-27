@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -43,10 +43,10 @@ $(function () {
 			["http://foo.com/blah_blah", AscCommon.c_oAscUrlType.Http],
 			["http://foo.com/blah_blah_(wikipedia)_(again)", AscCommon.c_oAscUrlType.Http],
 			["https://www.example.com/foo/?bar=baz&inga=42&quux", AscCommon.c_oAscUrlType.Http],
-			["http://userid:password@example.com:8080", AscCommon.c_oAscUrlType.Http],
-			["http://userid@example.com:8080/", AscCommon.c_oAscUrlType.Http],
+			["http://userid:password@example.com:2026", AscCommon.c_oAscUrlType.Http],
+			["http://userid@example.com:2026/", AscCommon.c_oAscUrlType.Http],
 			["http://142.42.1.1", AscCommon.c_oAscUrlType.Http],
-			["http://142.42.1.1:8080/", AscCommon.c_oAscUrlType.Http],
+			["http://142.42.1.1:2026/", AscCommon.c_oAscUrlType.Http],
 			["http://foo.com/blah_(wikipedia)_blah#cite-1", AscCommon.c_oAscUrlType.Http],
 			["http://foo.bar/?q=Test%20URL-encoded%20stuff", AscCommon.c_oAscUrlType.Http],
 			["http://a.b-c.de", AscCommon.c_oAscUrlType.Http],
@@ -71,7 +71,7 @@ $(function () {
 			["smb://192.168.56.1/e/Testfolder/TestFile.docx", AscCommon.c_oAscUrlType.Unsafe],
 
 			["tessa://tessaclient.EPD/?Action=OpenCard&ID=c40076f5-daa9-4929-8f66-d3fd6ae2dcb1", AscCommon.c_oAscUrlType.Unsafe],
-			["joplin://x-callback-url/openFolder?id=1234", AscCommon.c_oAscUrlType.Unsafe],
+			["joplin://x-callback-url/openFolder?id=2026", AscCommon.c_oAscUrlType.Unsafe],
 
 			["file://localhost/etc/fstab", AscCommon.c_oAscUrlType.Unsafe],
 			["file:///etc/fstab", AscCommon.c_oAscUrlType.Unsafe],
@@ -100,10 +100,10 @@ $(function () {
 			["http://foo.com/blah_blah", AscCommon.c_oAscUrlType.Http],
 			["http://foo.com/blah_blah_(wikipedia)_(again)", AscCommon.c_oAscUrlType.Http],
 			["https://www.example.com/foo/?bar=baz&inga=42&quux", AscCommon.c_oAscUrlType.Http],
-			["http://userid:password@example.com:8080", AscCommon.c_oAscUrlType.Http],
-			["http://userid@example.com:8080/", AscCommon.c_oAscUrlType.Http],
+			["http://userid:password@example.com:2026", AscCommon.c_oAscUrlType.Http],
+			["http://userid@example.com:2026/", AscCommon.c_oAscUrlType.Http],
 			["http://142.42.1.1", AscCommon.c_oAscUrlType.Http],
-			["http://142.42.1.1:8080/", AscCommon.c_oAscUrlType.Http],
+			["http://142.42.1.1:2026/", AscCommon.c_oAscUrlType.Http],
 			["http://foo.com/blah_(wikipedia)_blah#cite-1", AscCommon.c_oAscUrlType.Http],
 			["http://foo.bar/?q=Test%20URL-encoded%20stuff", AscCommon.c_oAscUrlType.Http],
 			["http://a.b-c.de", AscCommon.c_oAscUrlType.Http],

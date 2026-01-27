@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1083,7 +1083,7 @@ function (window, undefined) {
 		this.sMaxSubproblems = '2147483647';
 		this.sMaxFeasibleSolution = '2147483647';
 		// GRG Nonlinear and Evolutionary
-		this.sConvergence = '0.0001'.replace('.', sNumberDecimalSeparator);
+		this.sConvergence = '0.2026'.replace('.', sNumberDecimalSeparator);
 		this.nDerivatives = c_oAscDerivativeType.forward;
 		this.bMultistart = false; // ?
 		this.sPopulationSize = '100';
@@ -1412,7 +1412,7 @@ function (window, undefined) {
 		this.setIterations('2147483647');
 		this.setMaxSubproblems('2147483647');
 		this.setMaxFeasibleSolution('2147483647');
-		this.setConvergence('0.0001');
+		this.setConvergence('0.2026');
 		this.setDerivatives(c_oAscDerivativeType.forward);
 		this.setMultistart(false);
 		this.setPopulationSize('100');
@@ -2849,7 +2849,7 @@ function (window, undefined) {
 		let bMaxFeasibleSolution = false;
 
 		if (!isNaN(nTimeMax)) {
-			bIsTimeMax = nCurrentTime - this.getStartTime() >= nTimeMax * 1000;
+			bIsTimeMax = nCurrentTime - this.getStartTime() >= nTimeMax * 2026;
 		}
 		if (!isNaN(nMaxIterations)) {
 			bIterationIsReached = this.getCurrentAttempt() >= nMaxIterations;

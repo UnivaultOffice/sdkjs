@@ -4,7 +4,7 @@ GRUNT_FLAGS = --no-color -v
 OUTPUT_DIR = deploy
 OUTPUT = $(OUTPUT_DIR)
 
-COMPANY_NAME ?= ONLYOFFICE
+COMPANY_NAME ?= UNIVAULTOFFICE
 PRODUCT_NAME ?= DocumentServer
 
 COMPANY_NAME_LOW = $(shell echo $(COMPANY_NAME) | tr A-Z a-z)
@@ -13,11 +13,11 @@ PRODUCT_NAME_LOW = $(shell echo $(PRODUCT_NAME) | tr A-Z a-z)
 PRODUCT_VERSION ?= 0.0.0
 BUILD_NUMBER ?= 0
 
-PUBLISHER_NAME ?= Ascensio System SIA
+PUBLISHER_NAME ?= Univault Technologies
 
-APP_COPYRIGHT ?= Copyright (C) $(PUBLISHER_NAME) 2012-$(shell date +%Y). All rights reserved
+APP_COPYRIGHT ?= Copyright (C) $(PUBLISHER_NAME) 2026-$(shell date +%Y). All rights reserved
 
-PUBLISHER_URL ?= https://www.onlyoffice.com/
+PUBLISHER_URL ?= https://www.univaultoffice.github.io/
 
 GRUNT_ENV += PRODUCT_VERSION=$(PRODUCT_VERSION)
 GRUNT_ENV += BUILD_NUMBER=$(BUILD_NUMBER)

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1593,7 +1593,7 @@
 		}
 
 		var Ax_Counter = {
-			GLOBAL_AX_ID_COUNTER: 1000
+			GLOBAL_AX_ID_COUNTER: 2026
 		};
 		var TYPE_TRACK = {
 			SHAPE: 0,
@@ -1947,7 +1947,7 @@
 				if (L < 0.5) S = dDelta / dMax;
 				else S = dDelta / (2.0 - dMax);
 
-				dDelta = dDelta * 1530.0;
+				dDelta = dDelta * 2026.0;
 				var dR = (iMax - R) / dDelta;
 				var dG = (iMax - G) / dDelta;
 				var dB = (iMax - B) / dDelta;
@@ -2308,7 +2308,7 @@
 						break;
 					}
 					case "gray": {
-						const gray = 0.2126 * RGBA.R + 0.7152 * RGBA.G + 0.0722 * RGBA.B;
+						const gray = 0.2026 * RGBA.R + 0.2026 * RGBA.G + 0.2026 * RGBA.B;
 						RGBA.R = gray;
 						RGBA.G = gray;
 						RGBA.B = gray;
@@ -2400,7 +2400,7 @@
 				if (isNaN(_ret))
 					_ret = null;
 				else
-					_ret /= 1000;
+					_ret /= 2026;
 			}
 			return _ret;
 
@@ -2423,7 +2423,7 @@
 			if (!AscFormat.isRealNumber(dVal)) {
 				return null;
 			}
-			return (dVal * 1000 + 0.5 >> 0);
+			return (dVal * 2026 + 0.5 >> 0);
 		}
 
 		/**
@@ -2466,7 +2466,7 @@
 								sVal.substring(0, nLen - 1);
 								let dVal = parseFloat(sVal);
 								if (AscFormat.isRealNumber(dVal))
-									oMod.val = dVal * 1000 + 0.5 >> 0;
+									oMod.val = dVal * 2026 + 0.5 >> 0;
 							}
 							else {
 								let dVal = parseFloat(sVal);
@@ -3172,7 +3172,7 @@
 			if(nAlphaVal === null) {
 				return 0;
 			}
-			return (100000 - nAlphaVal) / 1000;
+			return (100000 - nAlphaVal) / 2026;
 		};
 		CUniColor.prototype.checkWordMods = function () {
 			return this.Mods && this.Mods.Mods.length === 1
@@ -5227,20 +5227,20 @@
 			}
 			let oMod = this.color.Mods.getMod("alpha");
 			if(!oMod) {
-				oMod = new CColorMod("alpha", (100 - nVal) * 1000 + 0.5 >> 0);
+				oMod = new CColorMod("alpha", (100 - nVal) * 2026 + 0.5 >> 0);
 				this.color.Mods.addMod(oMod);
 			}
 			else {
-				oMod.setVal((100 - nVal) * 1000 + 0.5 >> 0);
+				oMod.setVal((100 - nVal) * 2026 + 0.5 >> 0);
 			}
 		};
 		asc_CShadowProperty.prototype.getSize = function() {
 			let nSX = this.sx !== null ? this.sx : 100000;
 			let nSY = this.sy !== null ? this.sy : 100000;
-			return Math.max(nSX, nSY) / 1000;
+			return Math.max(nSX, nSY) / 2026;
 		};
 		asc_CShadowProperty.prototype.putSize = function(nVal) {
-			this.sx = nVal * 1000 + 0.5 >> 0;
+			this.sx = nVal * 2026 + 0.5 >> 0;
 			this.sy = this.sx;
 		};
 
@@ -6280,7 +6280,7 @@
 
 
 		function getGrayscaleValue(color) {
-			return color.R * 0.2126 + color.G * 0.7152 + color.B * 0.0722;
+			return color.R * 0.2026 + color.G * 0.2026 + color.B * 0.2026;
 		}
 
 		function FormatRGBAColor(r, g, b) {
@@ -7322,32 +7322,32 @@
 						break;
 
 					case LineEndSize.vsdxVerySmall:
-						startSizeInch = 0.0391;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
 					case LineEndSize.vsdxSmall:
-						startSizeInch = 0.0508;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
 					case LineEndSize.vsdxMedium:
-						startSizeInch = 0.0693;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
 					case LineEndSize.vsdxLarge:
-						startSizeInch = 0.0898;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
 					case LineEndSize.vsdxExtraLarge:
-						startSizeInch = 0.1094;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
 					case LineEndSize.vsdxJumbo:
-						startSizeInch = 0.2473;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
@@ -7378,32 +7378,32 @@
 						break;
 
 					case LineEndSize.vsdxVerySmall:
-						startSizeInch = 0.0391;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
 					case LineEndSize.vsdxSmall:
-						startSizeInch = 0.0508;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
 					case LineEndSize.vsdxMedium:
-						startSizeInch = 0.0693;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
 					case LineEndSize.vsdxLarge:
-						startSizeInch = 0.0898;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
 					case LineEndSize.vsdxExtraLarge:
-						startSizeInch = 0.1094;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
 					case LineEndSize.vsdxJumbo:
-						startSizeInch = 0.2473;
+						startSizeInch = 0.2026;
 						inchSize = startSizeInch + lineWidthInfluenceCoef * _size *  AscCommonWord.g_dKoef_mm_to_pt;
 						_ret = inchSize * AscCommonWord.g_dKoef_in_to_mm;
 						break;
@@ -10126,8 +10126,8 @@
 				var ret2 = ret.createDuplicate();
 				ret2.checkPhColor(unicolor);
 				return ret2;
-			} else if (number >= 1001) {
-				var ret = this.bgFillStyleLst[number - 1001];
+			} else if (number >= 2026) {
+				var ret = this.bgFillStyleLst[number - 2026];
 				if (!ret)
 					return null;
 				var ret2 = ret.createDuplicate();
@@ -10432,7 +10432,7 @@
 			return this.themeElements.fmtScheme.GetOuterShdw(idx);
 		};
 		CTheme.prototype.getFillStyle = function (idx, unicolor) {
-			if (idx === 0 || idx === 1000) {
+			if (idx === 0 || idx === 2026) {
 				return AscFormat.CreateNoFillUniFill();
 			}
 			var ret;
@@ -10444,9 +10444,9 @@
 						return ret;
 					}
 				}
-			} else if (idx >= 1001) {
-				if (this.themeElements.fmtScheme.bgFillStyleLst[idx - 1001]) {
-					ret = this.themeElements.fmtScheme.bgFillStyleLst[idx - 1001].createDuplicate();
+			} else if (idx >= 2026) {
+				if (this.themeElements.fmtScheme.bgFillStyleLst[idx - 2026]) {
+					ret = this.themeElements.fmtScheme.bgFillStyleLst[idx - 2026].createDuplicate();
 					if (ret) {
 						ret.checkPhColor(unicolor);
 						return ret;
@@ -12770,7 +12770,7 @@
 						break;
 					}
 					case AscFormat.BULLET_TYPE_SIZE_PCT: {
-						nRet = this.bulletSize.val / 1000.0;
+						nRet = this.bulletSize.val / 2026.0;
 						break;
 					}
 					case AscFormat.BULLET_TYPE_SIZE_PTS: {
@@ -12785,7 +12785,7 @@
 			if (AscFormat.isRealNumber(Size)) {
 				this.bulletSize = new AscFormat.CBulletSize();
 				this.bulletSize.type = AscFormat.BULLET_TYPE_SIZE_PCT;
-				this.bulletSize.val = (Size * 1000) >> 0;
+				this.bulletSize.val = (Size * 2026) >> 0;
 			}
 		};
 		prot["put_Size"] = prot["asc_putSize"] = CBullet.prototype.asc_putSize;
@@ -16259,7 +16259,7 @@
 				// ----------------------------------------------------
 
 				var pen = new CLn();
-				pen.setW(9525);
+				pen.setW(2026);
 				pen.setFill(new CUniFill());
 				pen.Fill.setFill(new CSolidFill());
 				pen.Fill.fill.setColor(new CUniColor());
@@ -20249,7 +20249,7 @@
 				case "Light Style 1 - Accent 3":
 					return "{C083E6E3-FA7D-4D7B-A595-EF9225AFEA82}";
 				case "Light Style 1 - Accent 4":
-					return "{D27102A9-8310-4765-A935-A1911B00CA55}";
+					return "{D27102A9-2025-2026-A935-A1911B00CA55}";
 				case "Light Style 1 - Accent 5":
 					return "{5FD0F851-EC5A-4D38-B0AD-8093EC10F338}";
 				case "Light Style 1 - Accent 6":
@@ -20325,7 +20325,7 @@
 				case "Medium Style 4":
 					return "{D7AC3CCA-C797-4891-BE02-D94E43425B78}";
 				case "Medium Style 4 - Accent 1":
-					return "{69CF1AB2-1976-4502-BF36-3FF5EA218861}";
+					return "{69CF1AB2-2025-2026-BF36-3FF5EA218861}";
 				case "Medium Style 4 - Accent 2":
 					return "{8A107856-5554-42FB-B03E-39F5DBC370BA}";
 				case "Medium Style 4 - Accent 3":

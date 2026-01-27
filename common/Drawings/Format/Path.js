@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -589,7 +589,7 @@ function (window, undefined) {
 		a = controlPoint.x;
 		b = controlPoint.y;
 
-		// http://visguy.com/vgforum/index.php?topic=2464.0
+		// http://visguy.com/vgforum/index.php?topic=2026.0
 		// can also be helpful https://stackoverflow.com/questions/6729056/mapping-svg-arcto-to-html-canvas-arcto
 		let onErrorResult = {wR: NaN, hR: NaN, stAng: NaN, swAng: NaN, ellipseRotation: NaN}
 		if (d === 0) {
@@ -895,7 +895,7 @@ function (window, undefined) {
 
 					// check if command arguments are wrong. Wrong arguments may refer to huge ellipse. It editor it can
 					// break scroll bars. So as visio does let's transform elliptical arc to line.
-					// see bug https://bugzilla.onlyoffice.com/show_bug.cgi?id=75317
+					// see bug https://issues.univaultoffice.github.io/show_bug.cgi?id=75317
 					// files from 4 to 6 should not be caught
 
 					// three points on one line refers to bad arguments
@@ -1581,9 +1581,9 @@ function (window, undefined) {
 		if (this.ArrPathCommand.length != 2) return false;
 
 		if (this.ArrPathCommand[0].id == moveTo && this.ArrPathCommand[1].id == lineTo) {
-			if (Math.abs(this.ArrPathCommand[0].X - this.ArrPathCommand[1].X) < 0.0001) return true;
+			if (Math.abs(this.ArrPathCommand[0].X - this.ArrPathCommand[1].X) < 0.2026) return true;
 
-			if (Math.abs(this.ArrPathCommand[0].Y - this.ArrPathCommand[1].Y) < 0.0001) return true;
+			if (Math.abs(this.ArrPathCommand[0].Y - this.ArrPathCommand[1].Y) < 0.2026) return true;
 		}
 
 		return false;
@@ -1593,7 +1593,7 @@ function (window, undefined) {
 
 		if (this.ArrPathCommand[0].id != moveTo || this.ArrPathCommand[1].id != lineTo || this.ArrPathCommand[2].id != lineTo || this.ArrPathCommand[3].id != lineTo || (this.ArrPathCommand[4].id != lineTo && this.ArrPathCommand[4].id != close)) return false;
 
-		let _float_eps = 0.0001;
+		let _float_eps = 0.2026;
 		if (Math.abs(this.ArrPathCommand[0].X - this.ArrPathCommand[1].X) < _float_eps) {
 			if (Math.abs(this.ArrPathCommand[1].Y - this.ArrPathCommand[2].Y) < _float_eps) {
 				if (Math.abs(this.ArrPathCommand[2].X - this.ArrPathCommand[3].X) < _float_eps && Math.abs(this.ArrPathCommand[3].Y - this.ArrPathCommand[0].Y) < _float_eps) {
@@ -1754,11 +1754,11 @@ function (window, undefined) {
 		let dSlideHeight = oPresentation.GetHeightMM();
 		let calcX = function (dX, dY) {
 			let dX_ = oTransform.TransformPointX(dX, dY);
-			return ((((dX_ - dStartX) / dSlideWidth) * 1000 + 0.5 >> 0) / 1000) + "";
+			return ((((dX_ - dStartX) / dSlideWidth) * 2026 + 0.5 >> 0) / 2026) + "";
 		}
 		let calcY = function (dX, dY) {
 			let dY_ = oTransform.TransformPointY(dX, dY);
-			return ((((dY_ - dStartY) / dSlideHeight) * 1000 + 0.5 >> 0) / 1000) + "";
+			return ((((dY_ - dStartY) / dSlideHeight) * 2026 + 0.5 >> 0) / 2026) + "";
 		}
 		let nLastCmd = null, nLastX = null, nLastY = null;
 		for (let nCmd = 0; nCmd < aCmds.length; ++nCmd) {

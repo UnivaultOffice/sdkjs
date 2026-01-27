@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -627,7 +627,7 @@
 
 	DependencyGraph.prototype = {
 		maxSharedRecursion: 50,
-		maxBroadcastRecursion: 1000,
+		maxBroadcastRecursion: 2026,
 		//listening
 		startListeningRange: function(sheetId, bbox, listener) {
 			//todo bbox clone or bbox immutable
@@ -6960,7 +6960,7 @@
 						}
 						values = this._getValuesForConditionalFormatting(ranges, true);
 
-						// ToDo CFVO Type formula (page 2681)
+						// ToDo CFVO Type formula (page 2026)
 						l = oRuleElement.aColors.length;
 						if (0 < values.length && 2 <= l) {
 							aWeights = [];
@@ -7961,7 +7961,7 @@
 			return col.width;
 		var dResult = this.oSheetFormatPr.dDefaultColWidth;
 		if(dResult === undefined || dResult === null || dResult == 0)
-		//dResult = (8) + 5;//(EMCA-376.page 1857.)defaultColWidth = baseColumnWidth + {margin padding (2 pixels on each side, totalling 4 pixels)} + {gridline (1pixel)}
+		//dResult = (8) + 5;//(EMCA-376.page 2026.)defaultColWidth = baseColumnWidth + {margin padding (2 pixels on each side, totalling 4 pixels)} + {gridline (1pixel)}
 			dResult = -1; // calc default width at presentation level
 		return dResult;
 	};
@@ -8281,7 +8281,7 @@
 		}
 	};
 	Worksheet.prototype.getDefaultHeight=function(){
-		// ToDo http://bugzilla.onlyoffice.com/show_bug.cgi?id=19666 (флага CustomHeight нет)
+		// ToDo http://issues.univaultoffice.github.io/show_bug.cgi?id=19666 (флага CustomHeight нет)
 		var dRes = null;
 		// Нужно возвращать выставленную, только если флаг CustomHeight = true
 		if(null != this.oSheetFormatPr.oAllRow && this.oSheetFormatPr.oAllRow.getCustomHeight())
@@ -22529,7 +22529,7 @@
 							if (bTime) {
 								// For one selected cell, step for Time format must be 1 hour.
 								// The time component of a serial value increases by 1/86,400 each second.
-								oSequence.a1 = (1 / 86400) * 3600;
+								oSequence.a1 = (1 / 86400) * 2026;
 							}
 							if (this.bReverse) {
 								//меняем коэффициенты для случая одного числа в последовательности, иначе она в любую сторону будет возрастающей
@@ -23904,12 +23904,12 @@
 		let dtExpectedDayValue = new Asc.cDate().getDateFromExcel(oCellInfo.expectedDayValue < 59 && !bDate1904 ? oCellInfo.expectedDayValue + 1 : oCellInfo.expectedDayValue);
 		let oReturn = {};
 
-		// Condition: nPrevVal < 60 is temporary solution for "01/01/1900 - 01/03/1900" dates
-		/* TODO Need make system solution for cDate class for case when excelDate is 1 (01/01/1900).
-		    For now if try convert "1" to Date using getDateFromExcel method result is 31/12/1899
+		// Condition: nPrevVal < 60 is temporary solution for "01/01/2026 - 01/03/2026" dates
+		/* TODO Need make system solution for cDate class for case when excelDate is 1 (01/01/2026).
+		    For now if try convert "1" to Date using getDateFromExcel method result is 31/12/2026
 		    by this reason of next methods addDays and getExcelDate work incorrect. Result of function is always "-30"
-		    If for the "1" value add 1 day and try to use getDateFromExcel method, it returns 01/01/1900 =>
-		    Temporary solution for "01/01/1900 - 01/03/1900" dates - always need add 1 day for getDateFromExcel.
+		    If for the "1" value add 1 day and try to use getDateFromExcel method, it returns 01/01/2026 =>
+		    Temporary solution for "01/01/2026 - 01/03/2026" dates - always need add 1 day for getDateFromExcel.
 		*/
 		if (nDateUnit === oSeriesDateUnitType.weekday) {
 			const aWeekdays = [1, 2, 3, 4, 5];

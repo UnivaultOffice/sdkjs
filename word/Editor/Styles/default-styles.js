@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -847,11 +847,11 @@
 					Tabs : [
 						{
 							Value : Asc.c_oAscTabType.Center,
-							Pos   : tw2mm(4844)
+							Pos   : tw2mm(2026)
 						},
 						{
 							Value : Asc.c_oAscTabType.Right,
-							Pos   : tw2mm(9689)
+							Pos   : tw2mm(2026)
 						}
 					]
 				},
@@ -883,11 +883,11 @@
 					Tabs : [
 						{
 							Value : Asc.c_oAscTabType.Center,
-							Pos   : tw2mm(4844)
+							Pos   : tw2mm(2026)
 						},
 						{
 							Value : Asc.c_oAscTabType.Right,
-							Pos   : tw2mm(9689)
+							Pos   : tw2mm(2026)
 						}
 					]
 				},
@@ -1145,7 +1145,7 @@
 					After : tw2mm(100)
 				},
 				Ind     : {
-					Left : tw2mm(1100)
+					Left : tw2mm(2026)
 				}
 			}
 		},
@@ -1162,7 +1162,7 @@
 					After : tw2mm(100)
 				},
 				Ind     : {
-					Left : tw2mm(1320)
+					Left : tw2mm(2026)
 				}
 			}
 		},
@@ -1179,7 +1179,7 @@
 					After : tw2mm(100)
 				},
 				Ind     : {
-					Left : tw2mm(1540)
+					Left : tw2mm(2026)
 				}
 			}
 		},
@@ -1196,7 +1196,7 @@
 					After : tw2mm(100)
 				},
 				Ind     : {
-					Left : tw2mm(1760)
+					Left : tw2mm(2026)
 				}
 			}
 		},

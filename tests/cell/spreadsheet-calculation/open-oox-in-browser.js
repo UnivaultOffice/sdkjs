@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -60,7 +60,7 @@ $( function () {
 	module( "open oox" );
 	test( "Tables", function () {
 		var res = '"<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n' +
-			'<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="1" xr:uid="{A86CAF0D-84D6-44BD-A6C6-FD6D74D5D380}" name="Table1" displayName="Table1" ref="B2:B3" insertRow="1" totalsRowShown="0"><autoFilter ref="B2:B3" xr:uid="{A86CAF0D-84D6-44BD-A6C6-FD6D74D5D380}"/><tableColumns count="1"><tableColumn id="1" xr3:uid="{6047EC3F-80CF-4339-AAC1-69DA7B2C5951}" name="Column1"/></tableColumns><tableStyleInfo name="TableStyleMedium2" showFirstColumn="0" showLastColumn="0" showRowStripes="1" showColumnStripes="0"/></table>'
+			'<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2026/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2026" mc:Ignorable="xr xr3" xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2026/revision" xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2026/revision3" id="1" xr:uid="{A86CAF0D-84D6-44BD-A6C6-FD6D74D5D380}" name="Table1" displayName="Table1" ref="B2:B3" insertRow="1" totalsRowShown="0"><autoFilter ref="B2:B3" xr:uid="{A86CAF0D-84D6-44BD-A6C6-FD6D74D5D380}"/><tableColumns count="1"><tableColumn id="1" xr3:uid="{6047EC3F-80CF-4339-AAC1-69DA7B2C5951}" name="Column1"/></tableColumns><tableStyleInfo name="TableStyleMedium2" showFirstColumn="0" showLastColumn="0" showRowStripes="1" showColumnStripes="0"/></table>'
 		var oNewTable = ws.createTablePart();
 		var reader = new StaxParser(res, oNewTable);
 		oNewTable.fromXml(reader);

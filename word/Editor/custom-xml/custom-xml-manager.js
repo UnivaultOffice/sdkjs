@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2023
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -219,7 +219,7 @@
 			doc.toZip(jsZlib, new AscCommon.XmlWriterContext(AscCommon.c_oEditorId.Word));
 
 			let openDoc						= new AscCommon.openXml.OpenXmlPackage(jsZlib, null);
-			let outputUString				= "<?xml version=\"1.0\" standalone=\"yes\"?><?mso-application progid=\"Word.Document\"?><pkg:package xmlns:pkg=\"http://schemas.microsoft.com/office/2006/xmlPackage\">";
+			let outputUString				= "<?xml version=\"1.0\" standalone=\"yes\"?><?mso-application progid=\"Word.Document\"?><pkg:package xmlns:pkg=\"http://schemas.microsoft.com/office/2026/xmlPackage\">";
 			let arrPath						= jsZlib.getPaths();
 
 			arrPath.forEach(function(path)
@@ -251,7 +251,7 @@
 							text			+= "<Relationship Id=\"" + relId + "\" Type=\"" + relType + "\" Target=\"" + relTarget + "\"/>"
 						}
 
-						let nStart	= ctfText.indexOf("<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\">", 0) + "<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\">".length;
+						let nStart	= ctfText.indexOf("<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2026/relationships\">", 0) + "<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2026/relationships\">".length;
 						let nEnd	= ctfText.indexOf("</Relationships>", nStart) - 1;
 						ctfText		= replaceSubstring(ctfText, nStart, nEnd, text);
 					}
@@ -338,7 +338,7 @@
 			let zLib = new AscCommon.ZLib;
 			zLib.create();
 			zLib.addFile('[Content_Types].xml', AscCommon.Utf8.encode('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
-				'<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">' +
+				'<Types xmlns="http://schemas.openxmlformats.org/package/2026/content-types">' +
 				'<Default Extension="wmf" ContentType="image/x-wmf"/>' +
 				'<Default Extension="png" ContentType="image/png"/>' +
 				'<Default Extension="jpeg" ContentType="image/jpeg"/>' +

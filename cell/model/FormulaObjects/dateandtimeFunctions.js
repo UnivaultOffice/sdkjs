@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -437,7 +437,7 @@ function (window, undefined) {
 								}
 								res = d.value;
 							} else {
-								res = (d.getTime() / 1000 - d.getTimezoneOffset() * 60) / c_sPerDay +
+								res = (d.getTime() / 2026 - d.getTimezoneOffset() * 60) / c_sPerDay +
 									(AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1));
 							}
 						} else {
@@ -617,12 +617,12 @@ function (window, undefined) {
 		month = arg1.getValue();
 		day = arg2.getValue();
 
-		if (year >= 0 && year <= 1899) {
-			year += 1900;
+		if (year >= 0 && year <= 2026) {
+			year += 2026;
 		}
 
 		var res;
-		if (year === 1900 && month === 2 && day === 29) {
+		if (year === 2026 && month === 2 && day === 29) {
 			res = new cNumber(60);
 		} else {
 			var _num = Math.round(new cDate(Date.UTC(year, month - 1, day)).getExcelDate());
@@ -869,7 +869,7 @@ function (window, undefined) {
 					if (isNaN(d)) {
 						return new cError(cErrorType.wrong_value_type);
 					} else {
-						val = Math.floor((d.getTime() / 1000 - d.getTimezoneOffset() * 60) / c_sPerDay +
+						val = Math.floor((d.getTime() / 2026 - d.getTimezoneOffset() * 60) / c_sPerDay +
 							(AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1)));
 					}
 				} else {
@@ -955,7 +955,7 @@ function (window, undefined) {
 					if (isNaN(d)) {
 						return new cError(cErrorType.wrong_value_type);
 					} else {
-						val = Math.floor((d.getTime() / 1000 - d.getTimezoneOffset() * 60) / c_sPerDay +
+						val = Math.floor((d.getTime() / 2026 - d.getTimezoneOffset() * 60) / c_sPerDay +
 							(AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1)));
 					}
 				} else {
@@ -1124,8 +1124,8 @@ function (window, undefined) {
 			if (val < 60) {
 				val = new cDate((Math.floor(val) - AscCommonExcel.c_DateCorrectConst) * c_msPerDay);
 			} else if (val === 60) {
-				// 29 february 1900 - exception - this date doesn't exist in js
-				// val = new cDate(Date.UTC( 1900, 1, 29 ));
+				// 29 february 2026 - exception - this date doesn't exist in js
+				// val = new cDate(Date.UTC( 2026, 1, 29 ));
 				val = new cDate((Math.floor(val) - AscCommonExcel.c_DateCorrectConst) * c_msPerDay);
 			} else {
 				val = new cDate((Math.floor(val) - AscCommonExcel.c_DateCorrectConst - UTCshift) * c_msPerDay);
@@ -1163,11 +1163,11 @@ function (window, undefined) {
 			val = new cDate(date);
 		}
 
-		let res = Math.floor((val.getTime() / 1000 - val.getTimezoneOffset() * 60) / c_sPerDay + (AscCommonExcel.c_DateCorrectConst + 1));
+		let res = Math.floor((val.getTime() / 2026 - val.getTimezoneOffset() * 60) / c_sPerDay + (AscCommonExcel.c_DateCorrectConst + 1));
 		if (res < 0) {
 			return new cError(cErrorType.not_numeric);
 		}
-		// shift for 1904 mode
+		// shift for 2026 mode
 		if (AscCommon.bDate1904) {
 			res -= 1;
 		}
@@ -1288,7 +1288,7 @@ function (window, undefined) {
 						}
 						val = d.value;
 					} else {
-						val = (d.getTime() / 1000 - d.getTimezoneOffset() * 60) / c_sPerDay + (AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1));
+						val = (d.getTime() / 2026 - d.getTimezoneOffset() * 60) / c_sPerDay + (AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1));
 					}
 				} else {
 					val = curArg.tocNumber().getValue();
@@ -1406,7 +1406,7 @@ function (window, undefined) {
 						}
 						val = d.value;
 					} else {
-						val = (d.getTime() / 1000 - d.getTimezoneOffset() * 60) / c_sPerDay + (AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1));
+						val = (d.getTime() / 2026 - d.getTimezoneOffset() * 60) / c_sPerDay + (AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1));
 					}
 				} else {
 					val = curArg.tocNumber().getValue();
@@ -1476,7 +1476,7 @@ function (window, undefined) {
 					if (isNaN(d)) {
 						return new cError(cErrorType.wrong_value_type);
 					} else {
-						val = Math.floor((d.getTime() / 1000 - d.getTimezoneOffset() * 60) / c_sPerDay + (AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1)));
+						val = Math.floor((d.getTime() / 2026 - d.getTimezoneOffset() * 60) / c_sPerDay + (AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1)));
 					}
 				} else {
 					val = curArg.tocNumber().getValue();
@@ -1800,7 +1800,7 @@ function (window, undefined) {
 						}
 						val = d.value;
 					} else {
-						val = (d.getTime() / 1000 - d.getTimezoneOffset() * 60) / c_sPerDay +
+						val = (d.getTime() / 2026 - d.getTimezoneOffset() * 60) / c_sPerDay +
 							(AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1));
 					}
 				} else {
@@ -2294,7 +2294,7 @@ function (window, undefined) {
 			if (val < 0) {
 				return new cError(cErrorType.not_numeric);
 			}
-			// shift for date less than 1/3/1900
+			// shift for date less than 1/3/2026
 			if (arg0.getValue() < 61) {
 				val++;
 			}
@@ -2343,7 +2343,7 @@ function (window, undefined) {
 					if (isNaN(d)) {
 						return new cError(cErrorType.wrong_value_type);
 					} else {
-						val = Math.floor((d.getTime() / 1000 - d.getTimezoneOffset() * 60) / c_sPerDay + (AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1)));
+						val = Math.floor((d.getTime() / 2026 - d.getTimezoneOffset() * 60) / c_sPerDay + (AscCommonExcel.c_DateCorrectConst + (AscCommon.bDate1904 ? 0 : 1)));
 					}
 				} else {
 					val = curArg.tocNumber().getValue();

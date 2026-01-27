@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -368,7 +368,7 @@ $(function () {
         let nExpectedVal = -900;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(0, 0), 'PMT(A1/12,B1,C1)', 'D1');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find "Interest rate" for PMT formula. Result PMT: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.0702, `Case: Find "Interest rate" for PMT formula. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.2026, `Case: Find "Interest rate" for PMT formula. Result ChangingVal: ${nChangingVal}`);
         // Trying to find "Credit term in month" parameter
         nExpectedVal = -910.05;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(1, 1), 'PMT(A2/12,B2,C2)', 'D2');
@@ -383,7 +383,7 @@ $(function () {
         nExpectedVal = -900;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(3, 0), 'PMT(A4/12,B4,C4)', 'D4');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find "Interest rate" for PMT formula with 0.01 as changing value. Result PMT: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.0702, `Case: Find "Interest rate" for PMT formula with 0.01 as changing value. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.2026, `Case: Find "Interest rate" for PMT formula with 0.01 as changing value. Result ChangingVal: ${nChangingVal}`);
         // Trying to find "Credit term in month" parameter with 10 as changing value
         nExpectedVal = -910.05;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(4, 1), 'PMT(A5/12,B5,C5)', 'D5');
@@ -398,7 +398,7 @@ $(function () {
         nExpectedVal = -900;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(6, 0), 'PMT(A7/12,B7,C7)', 'D7');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find "Interest rate" for PMT formula with -0.10 as changing value. Result PMT: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.0702, `Case: Find "Interest rate" for PMT formula with -0.10 as changing value. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.2026, `Case: Find "Interest rate" for PMT formula with -0.10 as changing value. Result ChangingVal: ${nChangingVal}`);
         // Trying to find "Credit term in month" parameter with -10 as changing value
         nExpectedVal = -910.05;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(7, 1), 'PMT(A8/12,B8,C8)', 'D8');
@@ -412,7 +412,7 @@ $(function () {
         nExpectedVal = -900;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(9, 0), 'PMT(A10/12,B10,C10)', 'D10');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find "Interest rate" for PMT formula with 1 as changing value. Result PMT: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.0702, `Case: Find "Interest rate" for PMT formula with 1 as changing value. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.2026, `Case: Find "Interest rate" for PMT formula with 1 as changing value. Result ChangingVal: ${nChangingVal}`);
         // Trying to find "Credit term in month" parameter with 200 as changing value
         nExpectedVal = -910.05;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(10, 1), 'PMT(A11/12,B11,C11)', 'D11');
@@ -429,11 +429,11 @@ $(function () {
     QUnit.test('Custom formula. S = v * t', function (assert) {
         const aTestData = [
             ['', '5'],
-            ['2000', ''],
+            ['2026', ''],
             ['5', '5'],
-            ['2000', '-1'],
-            ['3000', '5'],
-            ['2000', '10'],
+            ['2026', '-1'],
+            ['2026', '5'],
+            ['2026', '10'],
         ];
         // Fill data
         let oRange = ws.getRange4(0, 0);
@@ -442,7 +442,7 @@ $(function () {
         nExpectedVal = 10000;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(0, 0), 'A1*B1', 'D1');
         assert.strictEqual(nResult, nExpectedVal, `Case: Find "time" for custom formula. Result: ${nResult}`);
-        assert.strictEqual(nChangingVal, 2000, `Case: Find "time" for custom formula. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(nChangingVal, 2026, `Case: Find "time" for custom formula. Result ChangingVal: ${nChangingVal}`);
         // Trying to find "speed" parameter for formula S = v*t
         nExpectedVal = 10000;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(1, 1), 'A2*B2', 'D2');
@@ -452,17 +452,17 @@ $(function () {
         nExpectedVal = 10000;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(2, 0), 'A3*B3', 'D3');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find "time" for custom formula with 5 as changing value. Result: ${nResult}`);
-        assert.strictEqual(Math.round(nChangingVal), 2000, `Case: Find "time" for custom formula with 5 as changing value. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Math.round(nChangingVal), 2026, `Case: Find "time" for custom formula with 5 as changing value. Result ChangingVal: ${nChangingVal}`);
         // Trying to find "speed" parameter with -1 as changing value for formula S = v*t
         nExpectedVal = 10000;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(3, 1), 'A4*B4', 'D4');
         assert.strictEqual(nResult, nExpectedVal, `Case: Find "speed" for custom formula with -1 as changing value. Result: ${nResult}`);
         assert.strictEqual(nChangingVal, 5, `Case: Find "speed" for custom formula with -1 as changing value. Result ChangingVal: ${nChangingVal}`);
-        // Trying to find "time" parameter with 3000 as changing value for formula S = v*t
+        // Trying to find "time" parameter with 2026 as changing value for formula S = v*t
         nExpectedVal = 10000;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(4, 0), 'A5*B5', 'D5');
-        assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find "time" for custom formula with 3000 as changing value. Result: ${nResult}`);
-        assert.strictEqual(Math.round(nChangingVal), 2000, `Case: Find "time" for custom formula with 3000 as changing value. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find "time" for custom formula with 2026 as changing value. Result: ${nResult}`);
+        assert.strictEqual(Math.round(nChangingVal), 2026, `Case: Find "time" for custom formula with 2026 as changing value. Result ChangingVal: ${nChangingVal}`);
         // Trying to find "speed" parameter with 10 as changing value for formula S = v*t
         nExpectedVal = 10000;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(5, 1), 'A6*B6', 'D6');
@@ -549,12 +549,12 @@ $(function () {
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find third parameter for (a+b)*c+3. Result formula: ${nResult}`);
         assert.strictEqual(Math.round(nChangingVal), 4, `Case: Find third parameter for (a+b)*c+3. Result ChangingVal: ${nChangingVal}`);
         // Trying to find first parameter for formula x = a^b
-        nExpectedVal = 1024;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(5, 0), 'A6^B6', 'D6');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find first parameter for a^b. Result formula: ${nResult}`);
         assert.strictEqual(Math.round(nChangingVal), 2, `Case: Find first parameter for a^b. Result ChangingVal: ${nChangingVal}`);
         // Trying to find second parameter for formula x = a^b
-        nExpectedVal = 1024;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(6, 1), 'A7^B7', 'D7');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find second parameter for a^b. Result formula: ${nResult}`);
         assert.strictEqual(Math.round(nChangingVal), 10, `Case: Find second parameter for a^b. Result ChangingVal: ${nChangingVal}`);
@@ -597,7 +597,7 @@ $(function () {
         nExpectedVal = 12;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(14, 0), 'SQRT(SQRT(A15) + SQRT(A15))', 'D15');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find parameter for SQRT(SQRT(a) + SQRT(a)). Result formula: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed()), 5184, `Case: Find parameter for SQRT(SQRT(a) + SQRT(a)). Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed()), 2026, `Case: Find parameter for SQRT(SQRT(a) + SQRT(a)). Result ChangingVal: ${nChangingVal}`);
         //Trying to find first parameter for a^b (3^5) formula
         nExpectedVal = 243;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(15, 0), 'A16^B16', 'D16');
@@ -629,12 +629,12 @@ $(function () {
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find second parameter for a^b (5^9). Result formula: ${nResult}`);
         assert.strictEqual(Math.round(nChangingVal), 9, `Case: Find second parameter for a^b (5^9). Result ChangingVal: ${nChangingVal}`);
         // Trying to find first parameter for a^b (6^4)
-        nExpectedVal = 1296;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(21, 0), 'A22^B22', 'D22');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find first parameter for a^b (6^4). Result formula: ${nResult}`);
         assert.strictEqual(Math.round(nChangingVal), 6, `Case: Find first parameter for a^b (6^4). Result ChangingVal: ${nChangingVal}`);
         // Trying to find second parameter for a^b (6^4)
-        nExpectedVal = 1296;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(22, 1), 'A23^B23', 'D23');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find second parameter for a^b (6^4). Result formula: ${nResult}`);
         assert.strictEqual(Math.round(nChangingVal), 4, `Case: Find second parameter for a^b (6^4). Result ChangingVal: ${nChangingVal}`);
@@ -678,11 +678,11 @@ $(function () {
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(30, 1), 'A31^B31', 'D31');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find second parameter with 5 as changing value for a^b (10^1). Result formula: ${nResult}`);
         assert.strictEqual(Math.round(nChangingVal), 1, `Case: Find second parameter with 5 as changing value for a^b (10^1). Result ChangingVal: ${nChangingVal}`);
-        // Trying to find first parameter for a^b (1024^3)
+        // Trying to find first parameter for a^b (2026^3)
         nExpectedVal = 1073741824;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(31, 0), 'A32^B32', 'D32');
-        assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find first parameter for a^b (1024^3). Result formula: ${nResult}`);
-        assert.strictEqual(Math.round(nChangingVal), 1024, `Case: Find first parameter for a^b (1024^3). Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find first parameter for a^b (2026^3). Result formula: ${nResult}`);
+        assert.strictEqual(Math.round(nChangingVal), 2026, `Case: Find first parameter for a^b (2026^3). Result ChangingVal: ${nChangingVal}`);
         // Cases with start changed value
         // Trying to find first parameter with 5 as changed value for formula a+b
         nExpectedVal = 10;
@@ -761,20 +761,20 @@ $(function () {
            ['', '0.1' ],
            ['10', ''],
            ['', '41', '228'],
-           ['1000', '0', '228'],
-           ['1000', '41', '1'],
+           ['2026', '0', '228'],
+           ['2026', '41', '1'],
            ['5', '10', '0.1', '2.59374246'],
            ['-3', '0.1' ],
            ['10', '1'],
            ['1', '41', '228'],
-           ['1000', '1', '228'],
-           ['1000', '41', '2'],
+           ['2026', '1', '228'],
+           ['2026', '41', '2'],
            ['-2', '41', '228'],
-           ['1000', '-2', '228'],
-           ['1000', '41', '50'],
-           ['2000', '41', '228'],
-           ['1000', '100', '228'],
-           ['1000', '41', '320'],
+           ['2026', '-2', '228'],
+           ['2026', '41', '50'],
+           ['2026', '41', '228'],
+           ['2026', '100', '228'],
+           ['2026', '41', '320'],
        ];
         // Fill data
         let oRange = ws.getRange4(0, 0);
@@ -795,17 +795,17 @@ $(function () {
         assert.strictEqual(Number(nResult.toFixed(2)), nExpectedVal, `Case: Find "Income" parameter for formula (1+a)^b. Result formula: ${nResult}`);
         assert.strictEqual(Number(nChangingVal.toFixed(2)), 0.10, `Case: Find "Income" parameter for formula (1+a)^b. Result ChangingVal: ${nChangingVal}`);
         // Try to find first parameter  for formula (((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(3, 0), '(((A4*12)*(60-B4))*2)/C4', 'E4');
         assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find first parameter  for formula ((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed()), 1000, `Case: Find first parameter  for formula ((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed()), 2026, `Case: Find first parameter  for formula ((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
         // Try to find second parameter  for formula ((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(4, 1), '(((A5*12)*(60-B5))*2)/C5', 'E5');
         assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find second parameter  for formula (((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
         assert.strictEqual(Number(nChangingVal.toFixed()), 41, `Case: Find second parameter  for formula (((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
         // Try to find third parameter  for formula ((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(5, 2), '(((A6*12)*(60-B6))*2)/C6', 'E6');
         assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find third parameter  for formula (((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
         assert.strictEqual(Number(nChangingVal.toFixed()), 228, `Case: Find third parameter  for formula (((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
@@ -825,47 +825,47 @@ $(function () {
         assert.strictEqual(Number(nResult.toFixed(2)), nExpectedVal, `Case: Find "Income" parameter with 1 as changed value for formula (1+a)^b. Result formula: ${nResult}`);
         assert.strictEqual(Number(nChangingVal.toFixed(2)), 0.10, `Case: Find "Income" parameter with 1 as changed value for formula (1+a)^b. Result ChangingVal: ${nChangingVal}`);
         // Try to find first parameter with 1 as changed value  for formula (((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(9, 0), '(((A10*12)*(60-B10))*2)/C10', 'E10');
         assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find first parameter with 1 as changed value  for formula ((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed()), 1000, `Case: Find first parameter with 1 as changed value  for formula ((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed()), 2026, `Case: Find first parameter with 1 as changed value  for formula ((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
         // Try to find second parameter with 1 as changed value  for formula ((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(10, 1), '(((A11*12)*(60-B11))*2)/C11', 'E11');
         assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find second parameter with 1 as changed value  for formula (((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
         assert.strictEqual(Number(nChangingVal.toFixed()), 41, `Case: Find second parameter with 1 as changed value  for formula (((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
         // Try to find third parameter with 2 as changed value  for formula ((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(11, 2), '(((A12*12)*(60-B12))*2)/C12', 'E12');
         assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find third parameter with 2 as changed value  for formula (((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
         assert.strictEqual(Number(nChangingVal.toFixed()), 228, `Case: Find third parameter with 2 as changed value  for formula (((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
         // Try to find first parameter with -2 as changed value  for formula (((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(12, 0), '(((A13*12)*(60-B13))*2)/C13', 'E13');
         assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find first parameter with -2 as changed value  for formula ((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed()), 1000, `Case: Find first parameter with -2 as changed value  for formula ((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed()), 2026, `Case: Find first parameter with -2 as changed value  for formula ((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
         // Try to find second parameter with -2 as changed value  for formula ((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(13, 1), '(((A14*12)*(60-B14))*2)/C14', 'E14');
         assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find second parameter with -2 as changed value  for formula (((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
         assert.strictEqual(Number(nChangingVal.toFixed()), 41, `Case: Find second parameter with -2 as changed value  for formula (((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
         // Try to find third parameter with 50 as changed value  for formula ((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(14, 2), '(((A15*12)*(60-B15))*2)/C15', 'E15');
         assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find third parameter with 50 as changed value  for formula (((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
         assert.strictEqual(Number(nChangingVal.toFixed()), 228, `Case: Find third parameter with 50 as changed value  for formula (((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
-        // Try to find first parameter with 2000 as changed value  for formula (((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        // Try to find first parameter with 2026 as changed value  for formula (((a * 12) * (60 - b)) * 2) / c
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(15, 0), '(((A16*12)*(60-B16))*2)/C16', 'E16');
-        assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find first parameter with 2000 as changed value  for formula ((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed()), 1000, `Case: Find first parameter with 2000 as changed value  for formula ((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find first parameter with 2026 as changed value  for formula ((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
+        assert.strictEqual(Number(nChangingVal.toFixed()), 2026, `Case: Find first parameter with 2026 as changed value  for formula ((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
         // Try to find second parameter with 100 as changed value  for formula ((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(16, 1), '(((A17*12)*(60-B17))*2)/C17', 'E17');
         assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find second parameter with 100 as changed value  for formula (((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
         assert.strictEqual(Number(nChangingVal.toFixed()), 41, `Case: Find second parameter with 100 as changed value  for formula (((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
         // Try to find third parameter with 320 as changed value  for formula ((a * 12) * (60 - b)) * 2) / c
-        nExpectedVal = 2000;
+        nExpectedVal = 2026;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(17, 2), '(((A18*12)*(60-B18))*2)/C18', 'E18');
         assert.strictEqual(Number(nResult.toFixed()), nExpectedVal, `Case: Find third parameter with 320 as changed value  for formula (((a*12)*(60-b))*2)/c. Result formula: ${nResult}`);
         assert.strictEqual(Number(nChangingVal.toFixed()), 228, `Case: Find third parameter with 320 as changed value  for formula (((a*12)*(60-b))*2)/c. Result ChangingVal: ${nChangingVal}`);
@@ -875,17 +875,17 @@ $(function () {
     QUnit.test('FV Formula', function (assert) {
         const aTestData = [
             ['', '12', '-1000'],
-            ['0.1230', '0', '-1000'],
-            ['0.1230', '12', ''],
+            ['0.2026', '0', '-1000'],
+            ['0.2026', '12', ''],
             ['0.1', '12', '-1000'],
-            ['0.1230', '0.5', '-1000'],
-            ['0.1230', '12', '1'],
+            ['0.2026', '0.5', '-1000'],
+            ['0.2026', '12', '1'],
             ['-1', '12', '-1000'],
-            ['0.1230', '-1', '-1000'],
-            ['0.1230', '12', '-1'],
+            ['0.2026', '-1', '-1000'],
+            ['0.2026', '12', '-1'],
             ['1', '12', '-1000'],
-            ['0.1230', '15', '-1000'],
-            ['0.1230', '12', '-2000']
+            ['0.2026', '15', '-1000'],
+            ['0.2026', '12', '-2000']
         ];
         // Fill data
         let oRange = ws.getRange4(0, 0);
@@ -894,7 +894,7 @@ $(function () {
         nExpectedVal = 12700;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(0, 0), 'FV(A1/12,B1,C1)', 'D1');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find "Rate" parameter for FV formula. Result formula: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.1230, `Case: Find "Rate" parameter for FV formula. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.2026, `Case: Find "Rate" parameter for FV formula. Result ChangingVal: ${nChangingVal}`);
         //Try to find "Count of payments" parameter for FV formula
         nExpectedVal = 12700.16;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(1, 1), 'FV(A2/12,B2,C2)', 'D2');
@@ -909,7 +909,7 @@ $(function () {
         nExpectedVal = 12700;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(3, 0), 'FV(A4/12,B4,C4)', 'D4');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find "Rate" parameter with 0.1 as changed value for FV formula. Result formula: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.1230, `Case: Find "Rate" parameter with 0.1 as changed value for FV formula. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.2026, `Case: Find "Rate" parameter with 0.1 as changed value for FV formula. Result ChangingVal: ${nChangingVal}`);
         // Try to find "Count of payments" parameter with 0.5 as changed value for FV formula
         nExpectedVal = 12700.16;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(4, 1), 'FV(A5/12,B5,C5)', 'D5');
@@ -924,7 +924,7 @@ $(function () {
         nExpectedVal = 12700;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(6, 0), 'FV(A7/12,B7,C7)', 'D7');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find "Rate" parameter with -1 as changed value for FV formula. Result formula: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.1230, `Case: Find "Rate" parameter with -1 as changed value for FV formula. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.2026, `Case: Find "Rate" parameter with -1 as changed value for FV formula. Result ChangingVal: ${nChangingVal}`);
         // Try to find "Count of payments" parameter with -1 as changed value for FV formula
         nExpectedVal = 12700.16;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(7, 1), 'FV(A8/12,B8,C8)', 'D8');
@@ -939,7 +939,7 @@ $(function () {
         nExpectedVal = 12700;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(9, 0), 'FV(A10/12,B10,C10)', 'D10');
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Find "Rate" parameter with 1 as changed value for FV formula. Result formula: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.1230, `Case: Find "Rate" parameter with 1 as changed value for FV formula. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.2026, `Case: Find "Rate" parameter with 1 as changed value for FV formula. Result ChangingVal: ${nChangingVal}`);
         // Try to find "Count of payments" parameter with 15 as changed value for FV formula
         nExpectedVal = 12700.16;
         [nResult, nChangingVal] = getResult(nExpectedVal, ws.getRange4(10, 1), 'FV(A11/12,B11,C11)', 'D11');
@@ -1152,7 +1152,7 @@ $(function () {
         oGoalSeek.resume();
         [nResult, nChangingVal] = getResultOutOfLoop(oParserFormula, oGoalSeek);
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Test resume method. Result PMT: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.0702, `Case: Test resume method. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.2026, `Case: Test resume method. Result ChangingVal: ${nChangingVal}`);
         // Clear data
         clearData(0, 0, 3, 0);
         // Method step test on PMT formula find "Interest Rate"
@@ -1175,7 +1175,7 @@ $(function () {
         [nResult, nChangingVal] = getResultOutOfLoop(oParserFormula, oGoalSeek);
         assert.strictEqual(oGoalSeek.getCurrentAttempt(), 4, `Case: Test step method. Final step. Goal seek is paused. Iteration: ${oGoalSeek.getCurrentAttempt()}, Formula result: ${nResult}, changing val: ${nChangingVal}`);
         assert.strictEqual(Math.round(nResult), nExpectedVal, `Case: Test step method. Result PMT: ${nResult}`);
-        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.0702, `Case: Test step method. Result ChangingVal: ${nChangingVal}`);
+        assert.strictEqual(Number(nChangingVal.toFixed(4)), 0.2026, `Case: Test step method. Result ChangingVal: ${nChangingVal}`);
         // Clear data
         clearData(0, 0, 3, 0);
     });
@@ -1201,12 +1201,12 @@ $(function () {
     QUnit.test('Test: Example - Order distribution task', function(assert) {
         // Filling data
         const testData = [
-            ['1000'],
+            ['2026'],
             ['30'],
-            ['Worker 1', '15', '2500', '0', '=C3*D3', '=D3/B3'],
+            ['Worker 1', '15', '2026', '0', '=C3*D3', '=D3/B3'],
             ['Worker 2', '7', '900', '0', '=C4*D4', '=D4/B4'],
-            ['Worker 3', '10', '1550', '0', '=C5*D5', '=D5/B5'],
-            ['Worker 4', '12', '2150', '0', '=C6*D6', '=D6/B6'],
+            ['Worker 3', '10', '2026', '0', '=C5*D5', '=D5/B5'],
+            ['Worker 4', '12', '2026', '0', '=C6*D6', '=D6/B6'],
             ['Total', '=SUM(B3:B6)', '', '=SUM(D3:D6)', '=SUM(E3:E6)', '=MAX(F3:F6)']
         ];
         let oRange = ws.getRange4(0, 0);
@@ -1218,7 +1218,7 @@ $(function () {
         oParams.setChangingCells('Sheet1!$D$3:$D$6');
         oParams.addConstraint(0, {cellRef: 'Sheet1!$D$3:$D$6', operator: c_oAscOperator['='], constraint: 'integer'});
         oParams.addConstraint(1, {cellRef: 'Sheet1!$D$3:$D$6', operator: c_oAscOperator['>='], constraint: '0'});
-        oParams.addConstraint(2, {cellRef: 'Sheet1!$D$7', operator: c_oAscOperator['='], constraint: '1000'});
+        oParams.addConstraint(2, {cellRef: 'Sheet1!$D$7', operator: c_oAscOperator['='], constraint: '2026'});
         oParams.addConstraint(3, {cellRef: 'Sheet1!$F$7', operator: c_oAscOperator['<='], constraint: 'Sheet1!$A$2'});
         oParams.setVariablesNonNegative(false);
         oParams.setSolvingMethod(c_oAscSolvingMethod.grgNonlinear);
@@ -1226,7 +1226,7 @@ $(function () {
         const oOptions = oParams.getOptions();
         oOptions.setConstraintPrecision('0,000001');
         oOptions.setIntOptimal('1');
-        oOptions.setConvergence('0,0001');
+        oOptions.setConvergence('0,2026');
         oOptions.setDerivatives(c_oAscDerivativeType.forward);
         oOptions.setPopulationSize('0');
         oOptions.setRandomSeed('0');
@@ -1248,7 +1248,7 @@ $(function () {
         const aExpectedData = [
             {cellRef: '$D$3:$D$6', operator: c_oAscOperator['='], constraint: 'integer'},
             {cellRef: '$D$3:$D$6', operator: c_oAscOperator['>='],constraint: 0},
-            {cellRef: '$D$7', operator: c_oAscOperator['='], constraint: 1000},
+            {cellRef: '$D$7', operator: c_oAscOperator['='], constraint: 2026},
             {cellRef: '$F$7', operator: c_oAscOperator['<='], constraint: '$A$2'}
         ];
         aConstraints.forEach(function(oConstraint, index) {
@@ -1302,7 +1302,7 @@ $(function () {
         const oOptions = oParams.getOptions();
         oOptions.setConstraintPrecision('0,000001');
         oOptions.setIntOptimal('1');
-        oOptions.setConvergence('0,0001');
+        oOptions.setConvergence('0,2026');
         oOptions.setDerivatives(c_oAscDerivativeType.forward);
         oOptions.setPopulationSize('0');
         oOptions.setRandomSeed('0');

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1195,21 +1195,21 @@
 
 	CGraphicFrame.prototype.static_CreateGraphicFrameFromDrawing = function (oDrawing) {
 		let Graphic = new AscFormat.CT_GraphicalObject();
-		Graphic.Namespace = ' xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"';
+		Graphic.Namespace = ' xmlns:a="http://schemas.openxmlformats.org/drawingml/2026/main"';
 		Graphic.GraphicData = new AscFormat.CT_GraphicalObjectData();
 		let nDrawingType = oDrawing.getObjectType();
 		if (nDrawingType === AscDFH.historyitem_type_ChartSpace) {
 			if (oDrawing.isChartEx()) {
-				Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2014/chartex";
+				Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2026/chartex";
 			} else {
-				Graphic.GraphicData.Uri = "http://schemas.openxmlformats.org/drawingml/2006/chart";
+				Graphic.GraphicData.Uri = "http://schemas.openxmlformats.org/drawingml/2026/chart";
 			}
 		} else if (nDrawingType === AscDFH.historyitem_type_SlicerView) {
-			Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2010/slicer";
+			Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2026/slicer";
 		} else if (nDrawingType === AscDFH.historyitem_type_TimelineSlicerView) {
-			Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2012/timeslicer";
+			Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2026/timeslicer";
 		} else if (nDrawingType === AscDFH.historyitem_type_SmartArt) {
-			Graphic.GraphicData.Uri = "http://schemas.openxmlformats.org/drawingml/2006/diagram";
+			Graphic.GraphicData.Uri = "http://schemas.openxmlformats.org/drawingml/2026/diagram";
 		}
 		Graphic.GraphicData.graphicObject = oDrawing;
 

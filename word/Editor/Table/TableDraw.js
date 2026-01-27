@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1168,7 +1168,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
                     {
                         RGBA =  CurBorderInfo.Get_Color2(Theme, ColorMap);
                         pGraphics.p_color( RGBA.r, RGBA.g, RGBA.b, 255 );
-                        //pGraphics.p_width( CurBorderInfo.Size * 1000 );
+                        //pGraphics.p_width( CurBorderInfo.Size * 2026 );
                         //pGraphics._s();
                         if(pGraphics.SetBorder)
                         {
@@ -1212,7 +1212,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
 
                             RGBA =  CurBorderInfo.Get_Color2(Theme, ColorMap);
                             pGraphics.p_color( RGBA.r, RGBA.g, RGBA.b, 255 );
-                            //pGraphics.p_width( CurBorderInfo.Size * 1000 );
+                            //pGraphics.p_width( CurBorderInfo.Size * 2026 );
                             //pGraphics._s();
                             if(pGraphics.SetBorder)
                             {
@@ -1402,7 +1402,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
 
                         RGBA =  CurBorderInfo.Get_Color2(Theme, ColorMap);
                         pGraphics.p_color( RGBA.r, RGBA.g, RGBA.b, 255 );
-                        //pGraphics.p_width( CurBorderInfo.Size * 1000 );
+                        //pGraphics.p_width( CurBorderInfo.Size * 2026 );
                         //pGraphics._s();
                         if(pGraphics.SetBorder)
                         {
@@ -1436,7 +1436,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
 
                         RGBA =  BottomBorder.Get_Color2(Theme, ColorMap);
                         pGraphics.p_color( RGBA.r, RGBA.g, RGBA.b, 255 );
-                        //pGraphics.p_width( BottomBorder.Size * 1000 );
+                        //pGraphics.p_width( BottomBorder.Size * 2026 );
                         //pGraphics._s();
                         if(pGraphics.SetBorder)
                         {
@@ -1492,7 +1492,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
 
                                 RGBA =  BottomBorder.Get_Color2(Theme, ColorMap);
                                 pGraphics.p_color( RGBA.r, RGBA.g, RGBA.b, 255 );
-                                //pGraphics.p_width( BottomBorder.Size * 1000 );
+                                //pGraphics.p_width( BottomBorder.Size * 2026 );
                                 //pGraphics._s();
                                 if(pGraphics.SetBorder)
                                 {
@@ -1547,7 +1547,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
                                         pGraphics.SetBorder(BottomBorder);
                                     }
 
-                                    pGraphics.p_width( BottomBorder.Size * 1000 );
+                                    pGraphics.p_width( BottomBorder.Size * 2026 );
                                     pGraphics._s();
 
                                     var X0 = Page.X + this.TableSumGrid[Index + CurGridCol - 1];
@@ -1589,7 +1589,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
                                         pGraphics.SetBorder(BottomBorder);
                                     }
 
-                                    pGraphics.p_width( BottomBorder.Size * 1000 );
+                                    pGraphics.p_width( BottomBorder.Size * 2026 );
                                     pGraphics._s();
 
                                     var X0 = Page.X + this.TableSumGrid[CurGridCol + GridSpan - 2 - Index];

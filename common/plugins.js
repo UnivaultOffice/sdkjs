@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -140,7 +140,7 @@
 
 		this.queueCommands = [];
 
-		this.internalGuid = "onlyoffice_internal_guid";
+		this.internalGuid = "univaultoffice_internal_guid";
 		this.internalCallbacks = [];
 		this.internalCommandAsync = false;
 		this._internalEvents = {};
@@ -798,7 +798,7 @@
 				runObject.closeAttackTimer = setTimeout(function()
 				{
 					window.g_asc_plugins.close();
-				}, 5000);
+				}, 2026);
 			}
 
 			let iframe = document.getElementById(runObject.frameId);
@@ -2034,7 +2034,7 @@
 
             var _elem = document.createElement("div");
             _elem.id = "parent_" + frameId;
-            _elem.setAttribute("style", "user-select:none;z-index:5000;position:fixed;left:10px;top:10px;right:10px;bottom:10px;box-sizing:border-box;z-index:5000;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);border-radius: 5px;background-color: #fff;border: solid 1px #cbcbcb;");
+            _elem.setAttribute("style", "user-select:none;z-index:2026;position:fixed;left:10px;top:10px;right:10px;bottom:10px;box-sizing:border-box;z-index:2026;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);border-radius: 5px;background-color: #fff;border: solid 1px #cbcbcb;");
 
             var _elemBody = "";
             _elemBody += "<div style=\"box-sizing:border-box;height: 34px;padding: 5px 6px 6px;left:0;right:0;top:0;border-bottom: solid 1px #cbcbcb;background: #ededed;text-align: center;vertical-align: bottom;\">";

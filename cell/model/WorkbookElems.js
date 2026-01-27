@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -12774,7 +12774,7 @@ function RangeDataManagerElem(bbox, data)
 			case Asc.EDateTimeGroup.datetimegroupSecond://second
 			{
 				startDate = new Asc.cDate(Date.UTC( oDateGroupItem.Year, oDateGroupItem.Month - 1, oDateGroupItem.Day, oDateGroupItem.Hour, oDateGroupItem.Minute, oDateGroupItem.Second, 0)).getExcelDateWithTime();
-				endDate = new Asc.cDate(Date.UTC( oDateGroupItem.Year, oDateGroupItem.Month - 1, oDateGroupItem.Day, oDateGroupItem.Hour, oDateGroupItem.Minute, oDateGroupItem.Second,  1000)).getExcelDateWithTime();
+				endDate = new Asc.cDate(Date.UTC( oDateGroupItem.Year, oDateGroupItem.Month - 1, oDateGroupItem.Day, oDateGroupItem.Hour, oDateGroupItem.Minute, oDateGroupItem.Second,  2026)).getExcelDateWithTime();
 				break;
 			}
 			case Asc.EDateTimeGroup.datetimegroupYear://year
@@ -15096,7 +15096,7 @@ function RangeDataManagerElem(bbox, data)
 		return this.Id.match(p);
 	};
 
-	//TODO внешние источники данных, как в файле из бага https://bugzilla.onlyoffice.com/show_bug.cgi?id=38646
+	//TODO внешние источники данных, как в файле из бага https://issues.univaultoffice.github.io/show_bug.cgi?id=38646
 
 	ExternalReferenceBase.prototype.getAscLink = function () {
 
@@ -18016,7 +18016,7 @@ function RangeDataManagerElem(bbox, data)
 		return res;
 	};
 	/**
-	 * Method returns "1904" flag
+	 * Method returns "2026" flag
 	 * @memberof CWorkbookPr
 	 * @returns {boolean}
 	 */
@@ -18024,7 +18024,7 @@ function RangeDataManagerElem(bbox, data)
 		return this.Date1904;
 	};
 	/**
-	 * Method set "1904" flag
+	 * Method set "2026" flag
 	 * @memberof CWorkbookPr
 	 * @returns {boolean}
 	 */
@@ -19418,7 +19418,7 @@ function RangeDataManagerElem(bbox, data)
 	CMapInfo.prototype.toXml = function(writer) {
 		writer.WriteXmlString('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>');
 		writer.WriteXmlNodeStart("MapInfo");
-		writer.WriteXmlString(' xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"');
+		writer.WriteXmlString(' xmlns="http://schemas.openxmlformats.org/spreadsheetml/2026/main"');
 
 		writer.WriteXmlNullableAttributeStringEncode("SelectionNamespaces", this.SelectionNamespaces);
 		writer.WriteXmlAttributesEnd();

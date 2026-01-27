@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -82,7 +82,7 @@ function mod(name, value) {
 		),
 		test(
 			rgb(68, 114, 196),
-			[mod("satMod", 5000)],
+			[mod("satMod", 2026)],
 			rgb(129, 131, 135)
 		),
 		test(
@@ -282,14 +282,14 @@ function mod(name, value) {
 		test(rgb(126, 126, 126),[mod("satOff", 150000)],rgb(255, 0, 0)),
 		test(rgb(128, 128, 128),[mod("satOff", 150000)],rgb(255, 0, 0)),
 		test(rgb(200, 200, 200),[mod("satOff", 150000)],rgb(255, 117, 0)),
-		test(rgb(127, 127, 127),[mod("satOff", 5000)],rgb(133, 121, 95)),
-		test(rgb(0, 0, 0),[mod("satOff", 5000)],rgb(0, 0, 0)),
-		test(rgb(255, 255, 255),[mod("satOff", 5000)],rgb(255, 255, 255)),
-		test(rgb(15, 15, 15),[mod("satOff", 5000)],rgb(16, 14, 11)),
-		test(rgb(127, 127, 127),[mod("satOff", 5000)],rgb(133, 121, 95)),
-		test(rgb(126, 126, 126),[mod("satOff", 5000)],rgb(132, 120, 95)),
-		test(rgb(128, 128, 128),[mod("satOff", 5000)],rgb(134, 122, 96)),
-		test(rgb(200, 200, 200),[mod("satOff", 5000)],rgb(203, 197, 186)),
+		test(rgb(127, 127, 127),[mod("satOff", 2025)],rgb(133, 121, 95)),
+		test(rgb(0, 0, 0),[mod("satOff", 2025)],rgb(0, 0, 0)),
+		test(rgb(255, 255, 255),[mod("satOff", 2025)],rgb(255, 255, 255)),
+		test(rgb(15, 15, 15),[mod("satOff", 2025)],rgb(16, 14, 11)),
+		test(rgb(127, 127, 127),[mod("satOff", 2025)],rgb(133, 121, 95)),
+		test(rgb(126, 126, 126),[mod("satOff", 2025)],rgb(132, 120, 95)),
+		test(rgb(128, 128, 128),[mod("satOff", 2025)],rgb(134, 122, 96)),
+		test(rgb(200, 200, 200),[mod("satOff", 2025)],rgb(203, 197, 186)),
 		test(rgb(127, 127, 127),[mod("satOff", -77000)],rgb(29, 225, 255)),
 		test(rgb(0, 0, 0),[mod("satOff", -77000)],rgb(0, 0, 0)),
 		test(rgb(255, 255, 255),[mod("satOff", -77000)],rgb(255, 255, 255)),
@@ -323,14 +323,14 @@ function mod(name, value) {
 		test(rgb(126, 126, 126),[mod("satMod", 150000)],rgb(126, 126, 126)),
 		test(rgb(128, 128, 128),[mod("satMod", 150000)],rgb(128, 128, 128)),
 		test(rgb(200, 200, 200),[mod("satMod", 150000)],rgb(200, 200, 200)),
-		test(rgb(127, 127, 127),[mod("satMod", 5000)],rgb(127, 127, 127)),
-		test(rgb(0, 0, 0),[mod("satMod", 5000)],rgb(0, 0, 0)),
-		test(rgb(255, 255, 255),[mod("satMod", 5000)],rgb(255, 255, 255)),
-		test(rgb(15, 15, 15),[mod("satMod", 5000)],rgb(15, 15, 15)),
-		test(rgb(127, 127, 127),[mod("satMod", 5000)],rgb(127, 127, 127)),
-		test(rgb(126, 126, 126),[mod("satMod", 5000)],rgb(126, 126, 126)),
-		test(rgb(128, 128, 128),[mod("satMod", 5000)],rgb(128, 128, 128)),
-		test(rgb(200, 200, 200),[mod("satMod", 5000)],rgb(200, 200, 200)),
+		test(rgb(127, 127, 127),[mod("satMod", 2025)],rgb(127, 127, 127)),
+		test(rgb(0, 0, 0),[mod("satMod", 2025)],rgb(0, 0, 0)),
+		test(rgb(255, 255, 255),[mod("satMod", 2025)],rgb(255, 255, 255)),
+		test(rgb(15, 15, 15),[mod("satMod", 2025)],rgb(15, 15, 15)),
+		test(rgb(127, 127, 127),[mod("satMod", 2025)],rgb(127, 127, 127)),
+		test(rgb(126, 126, 126),[mod("satMod", 2025)],rgb(126, 126, 126)),
+		test(rgb(128, 128, 128),[mod("satMod", 2025)],rgb(128, 128, 128)),
+		test(rgb(200, 200, 200),[mod("satMod", 2025)],rgb(200, 200, 200)),
 		test(rgb(127, 127, 127),[mod("satMod", -77000)],rgb(127, 127, 127)),
 		test(rgb(0, 0, 0),[mod("satMod", -77000)],rgb(0, 0, 0)),
 		test(rgb(255, 255, 255),[mod("satMod", -77000)],rgb(255, 255, 255)),
@@ -407,12 +407,12 @@ function mod(name, value) {
 			[mod("satMod", 0)],
 			rgb(85, 85, 85)
 		),
-		test(rgb(157, 54, 14), [mod("tint", 96000), mod("shade", 100000), mod("hueMod", 270000), mod("satMod", 200000), mod("lumMod", 128000)], rgb(247, 137, 37)),
-		test(rgb(68, 114, 196), [mod("tint", 96000), mod("shade", 100000), mod("hueMod", 270000), mod("satMod", 200000), mod("lumMod", 128000)], rgb(111, 124, 255)),
+		test(rgb(157, 54, 14), [mod("tint", 96000), mod("shade", 100000), mod("hueMod", 270000), mod("satMod", 202500), mod("lumMod", 128000)], rgb(247, 137, 37)),
+		test(rgb(68, 114, 196), [mod("tint", 96000), mod("shade", 100000), mod("hueMod", 270000), mod("satMod", 202500), mod("lumMod", 128000)], rgb(111, 124, 255)),
 		test(rgb(157, 54, 14), [mod("shade", 100000), mod("hueMod", 100000), mod("satMod", 110000), mod("lumMod", 130000)], rgb(213, 66, 9)),
-		test(rgb(157, 54, 14), [mod("shade", 78000), mod("hueMod", 44000), mod("satMod", 200000), mod("lumMod", 69000)], rgb(141, 0, 0)),
-		test(rgb(157, 54, 14), [mod("shade", 78000), mod("hueMod", 44000), mod("satMod", 200000), mod("lumMod", 69000)], rgb(141, 0, 0)),
-		test(rgb(68, 114, 196), [mod("red", 10000), mod("green", 50000),mod("blue", 96000), mod("redMod", 50000),  mod("greenMod", 50000), mod("blueMod", 50000), mod("redOff", 10000),  mod("greenOff", 10000), mod("blueOff", 10000), mod("hueOff", 270000), mod("satOff", 100000), mod("lumOff", 10000),  mod("tint", 96000), mod("shade", 100000), mod("hueMod", 270000), mod("satMod", 200000), mod("lumMod", 128000), mod("comp", 0), mod("gamma", 0)], rgb(255, 161, 144)),
+		test(rgb(157, 54, 14), [mod("shade", 78000), mod("hueMod", 44000), mod("satMod", 202500), mod("lumMod", 69000)], rgb(141, 0, 0)),
+		test(rgb(157, 54, 14), [mod("shade", 78000), mod("hueMod", 44000), mod("satMod", 202500), mod("lumMod", 69000)], rgb(141, 0, 0)),
+		test(rgb(68, 114, 196), [mod("red", 10000), mod("green", 50000),mod("blue", 96000), mod("redMod", 50000),  mod("greenMod", 50000), mod("blueMod", 50000), mod("redOff", 10000),  mod("greenOff", 10000), mod("blueOff", 10000), mod("hueOff", 270000), mod("satOff", 100000), mod("lumOff", 10000),  mod("tint", 96000), mod("shade", 100000), mod("hueMod", 270000), mod("satMod", 202500), mod("lumMod", 128000), mod("comp", 0), mod("gamma", 0)], rgb(255, 161, 144)),
 	];
 
 	QUnit.test('Check colors with mods', (assert) => {
@@ -437,9 +437,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("satMod", 100)],rgb(0, 0, 0));	
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("satMod", 1000)],rgb(0, 0, 0));	
+		testResult = test(rgb(0,0,0),[mod("satMod", 2025)],rgb(0, 0, 0));	
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("satMod", 5000)],rgb(0, 0, 0));	
+		testResult = test(rgb(0,0,0),[mod("satMod", 2025)],rgb(0, 0, 0));	
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("satMod", 10000)],rgb(0, 0, 0));	
 		fTestFunction(testResult);
@@ -449,7 +449,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("satMod", 150000)],rgb(0, 0, 0));	
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("satMod", 200000)],rgb(0, 0, 0));	
+		testResult = test(rgb(0,0,0),[mod("satMod", 202500)],rgb(0, 0, 0));	
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("satMod", 1000000)],rgb(0, 0, 0));	
 		fTestFunction(testResult);
@@ -491,9 +491,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("satMod", 100)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("satMod", 1000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("satMod", 2025)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("satMod", 5000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("satMod", 2025)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("satMod", 10000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
@@ -503,7 +503,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("satMod", 150000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("satMod", 200000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("satMod", 202500)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("satMod", 1000000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
@@ -545,9 +545,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("satMod", 100)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("satMod", 1000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("satMod", 2025)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("satMod", 5000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("satMod", 2025)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("satMod", 10000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
@@ -557,7 +557,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("satMod", 150000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("satMod", 200000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("satMod", 202500)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("satMod", 1000000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
@@ -599,9 +599,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("satMod", 100)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("satMod", 1000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("satMod", 2025)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("satMod", 5000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("satMod", 2025)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("satMod", 10000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
@@ -611,7 +611,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("satMod", 150000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("satMod", 200000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("satMod", 202500)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("satMod", 1000000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
@@ -653,9 +653,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("satMod", 100)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("satMod", 1000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("satMod", 2025)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("satMod", 5000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("satMod", 2025)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("satMod", 10000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
@@ -665,7 +665,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("satMod", 150000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("satMod", 200000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("satMod", 202500)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("satMod", 1000000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
@@ -707,9 +707,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("satMod", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("satMod", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("satMod", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("satMod", 5000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("satMod", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("satMod", 10000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -719,7 +719,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("satMod", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("satMod", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("satMod", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("satMod", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -761,9 +761,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("satMod", 100)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("satMod", 1000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("satMod", 2025)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("satMod", 5000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("satMod", 2025)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("satMod", 10000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
@@ -773,7 +773,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("satMod", 150000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("satMod", 200000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("satMod", 202500)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("satMod", 1000000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
@@ -815,9 +815,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("satMod", 100)],rgb(86, 87, 86));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("satMod", 1000)],rgb(86, 87, 86));
+		testResult = test(rgb(34, 139, 34),[mod("satMod", 2025)],rgb(86, 87, 86));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("satMod", 5000)],rgb(84, 89, 84));
+		testResult = test(rgb(34, 139, 34),[mod("satMod", 2025)],rgb(84, 89, 84));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("satMod", 10000)],rgb(81, 92, 81));
 		fTestFunction(testResult);
@@ -827,7 +827,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("satMod", 150000)],rgb(8, 165, 8));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("satMod", 200000)],rgb(0, 191, 0));
+		testResult = test(rgb(34, 139, 34),[mod("satMod", 202500)],rgb(0, 191, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("satMod", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -869,9 +869,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("satMod", 100)],rgb(163, 163, 163));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("satMod", 1000)],rgb(164, 162, 162));
+		testResult = test(rgb(255, 99, 71),[mod("satMod", 2025)],rgb(164, 162, 162));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("satMod", 5000)],rgb(168, 160, 158));
+		testResult = test(rgb(255, 99, 71),[mod("satMod", 2025)],rgb(168, 160, 158));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("satMod", 10000)],rgb(172, 157, 154));
 		fTestFunction(testResult);
@@ -881,7 +881,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("satMod", 150000)],rgb(255, 67, 25));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("satMod", 200000)],rgb(255, 35, 0));
+		testResult = test(rgb(255, 99, 71),[mod("satMod", 202500)],rgb(255, 35, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("satMod", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -923,9 +923,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("satMod", 100)],rgb(65, 65, 65));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("satMod", 1000)],rgb(65, 64, 66));
+		testResult = test(rgb(75, 0, 130),[mod("satMod", 2025)],rgb(65, 64, 66));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("satMod", 5000)],rgb(66, 62, 68));
+		testResult = test(rgb(75, 0, 130),[mod("satMod", 2025)],rgb(66, 62, 68));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("satMod", 10000)],rgb(66, 59, 71));
 		fTestFunction(testResult);
@@ -935,7 +935,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("satMod", 150000)],rgb(80, 0, 163));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("satMod", 200000)],rgb(85, 0, 195));
+		testResult = test(rgb(75, 0, 130),[mod("satMod", 202500)],rgb(85, 0, 195));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("satMod", 1000000)],rgb(165, 0, 255));
 		fTestFunction(testResult);
@@ -977,9 +977,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("satMod", 100)],rgb(120, 120, 120));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("satMod", 1000)],rgb(121, 119, 119));
+		testResult = test(rgb(220, 20, 60),[mod("satMod", 2025)],rgb(121, 119, 119));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("satMod", 5000)],rgb(125, 115, 117));
+		testResult = test(rgb(220, 20, 60),[mod("satMod", 2025)],rgb(125, 115, 117));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("satMod", 10000)],rgb(130, 110, 114));
 		fTestFunction(testResult);
@@ -989,7 +989,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("satMod", 150000)],rgb(255, 0, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("satMod", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(220, 20, 60),[mod("satMod", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("satMod", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -1031,9 +1031,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("satMod", 100)],rgb(127, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("satMod", 1000)],rgb(126, 128, 129));
+		testResult = test(rgb(0, 191, 255),[mod("satMod", 2025)],rgb(126, 128, 129));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("satMod", 5000)],rgb(121, 131, 134));
+		testResult = test(rgb(0, 191, 255),[mod("satMod", 2025)],rgb(121, 131, 134));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("satMod", 10000)],rgb(115, 134, 140));
 		fTestFunction(testResult);
@@ -1043,7 +1043,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("satMod", 150000)],rgb(0, 223, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("satMod", 200000)],rgb(0, 255, 255));
+		testResult = test(rgb(0, 191, 255),[mod("satMod", 202500)],rgb(0, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("satMod", 1000000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
@@ -1085,9 +1085,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("satMod", 100)],rgb(128, 128, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("satMod", 1000)],rgb(129, 128, 126));
+		testResult = test(rgb(255, 215, 0),[mod("satMod", 2025)],rgb(129, 128, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("satMod", 5000)],rgb(134, 132, 121));
+		testResult = test(rgb(255, 215, 0),[mod("satMod", 2025)],rgb(134, 132, 121));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("satMod", 10000)],rgb(140, 136, 115));
 		fTestFunction(testResult);
@@ -1097,7 +1097,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("satMod", 150000)],rgb(255, 255, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("satMod", 200000)],rgb(255, 255, 0));
+		testResult = test(rgb(255, 215, 0),[mod("satMod", 202500)],rgb(255, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("satMod", 1000000)],rgb(255, 255, 0));
 		fTestFunction(testResult);
@@ -1139,9 +1139,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("satMod", 100)],rgb(135, 134, 135));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("satMod", 1000)],rgb(135, 134, 135));
+		testResult = test(rgb(138, 43, 226),[mod("satMod", 2025)],rgb(135, 134, 135));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("satMod", 5000)],rgb(135, 130, 139));
+		testResult = test(rgb(138, 43, 226),[mod("satMod", 2025)],rgb(135, 130, 139));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("satMod", 10000)],rgb(135, 125, 144));
 		fTestFunction(testResult);
@@ -1151,7 +1151,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("satMod", 150000)],rgb(140, 0, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("satMod", 200000)],rgb(141, 0, 255));
+		testResult = test(rgb(138, 43, 226),[mod("satMod", 202500)],rgb(141, 0, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("satMod", 1000000)],rgb(169, 0, 255));
 		fTestFunction(testResult);
@@ -1193,9 +1193,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("satMod", 100)],rgb(127, 128, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("satMod", 1000)],rgb(127, 128, 127));
+		testResult = test(rgb(50, 205, 50),[mod("satMod", 2025)],rgb(127, 128, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("satMod", 5000)],rgb(124, 131, 124));
+		testResult = test(rgb(50, 205, 50),[mod("satMod", 2025)],rgb(124, 131, 124));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("satMod", 10000)],rgb(120, 135, 120));
 		fTestFunction(testResult);
@@ -1205,7 +1205,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("satMod", 150000)],rgb(11, 244, 11));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("satMod", 200000)],rgb(0, 255, 0));
+		testResult = test(rgb(50, 205, 50),[mod("satMod", 202500)],rgb(0, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("satMod", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -1247,9 +1247,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("satMod", 100)],rgb(128, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("satMod", 1000)],rgb(129, 127, 126));
+		testResult = test(rgb(255, 69, 0),[mod("satMod", 2025)],rgb(129, 127, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("satMod", 5000)],rgb(134, 125, 121));
+		testResult = test(rgb(255, 69, 0),[mod("satMod", 2025)],rgb(134, 125, 121));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("satMod", 10000)],rgb(140, 122, 115));
 		fTestFunction(testResult);
@@ -1259,7 +1259,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("satMod", 150000)],rgb(255, 40, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("satMod", 200000)],rgb(255, 11, 0));
+		testResult = test(rgb(255, 69, 0),[mod("satMod", 202500)],rgb(255, 11, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("satMod", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -1301,9 +1301,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("satMod", 100)],rgb(64, 64, 64));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("satMod", 1000)],rgb(63, 65, 65));
+		testResult = test(rgb(0, 128, 128),[mod("satMod", 2025)],rgb(63, 65, 65));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("satMod", 5000)],rgb(61, 67, 67));
+		testResult = test(rgb(0, 128, 128),[mod("satMod", 2025)],rgb(61, 67, 67));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("satMod", 10000)],rgb(58, 70, 70));
 		fTestFunction(testResult);
@@ -1313,7 +1313,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("satMod", 150000)],rgb(0, 160, 160));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("satMod", 200000)],rgb(0, 192, 192));
+		testResult = test(rgb(0, 128, 128),[mod("satMod", 202500)],rgb(0, 192, 192));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("satMod", 1000000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
@@ -1355,9 +1355,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("satMod", 100)],rgb(165, 165, 165));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("satMod", 1000)],rgb(166, 164, 165));
+		testResult = test(rgb(218, 112, 214),[mod("satMod", 2025)],rgb(166, 164, 165));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("satMod", 5000)],rgb(168, 162, 167));
+		testResult = test(rgb(218, 112, 214),[mod("satMod", 2025)],rgb(168, 162, 167));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("satMod", 10000)],rgb(170, 160, 170));
 		fTestFunction(testResult);
@@ -1367,7 +1367,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("satMod", 150000)],rgb(244, 86, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("satMod", 200000)],rgb(255, 59, 255));
+		testResult = test(rgb(218, 112, 214),[mod("satMod", 202500)],rgb(255, 59, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("satMod", 1000000)],rgb(255, 0, 255));
 		fTestFunction(testResult);
@@ -1409,9 +1409,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("satMod", 100)],rgb(125, 125, 125));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("satMod", 1000)],rgb(124, 125, 126));
+		testResult = test(rgb(70, 130, 180),[mod("satMod", 2025)],rgb(124, 125, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("satMod", 5000)],rgb(122, 125, 128));
+		testResult = test(rgb(70, 130, 180),[mod("satMod", 2025)],rgb(122, 125, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("satMod", 10000)],rgb(120, 126, 131));
 		fTestFunction(testResult);
@@ -1421,7 +1421,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("satMod", 150000)],rgb(43, 132, 207));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("satMod", 200000)],rgb(15, 135, 235));
+		testResult = test(rgb(70, 130, 180),[mod("satMod", 202500)],rgb(15, 135, 235));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("satMod", 1000000)],rgb(0, 175, 255));
 		fTestFunction(testResult);
@@ -1463,9 +1463,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("satMod", 100)],rgb(128, 128, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("satMod", 1000)],rgb(129, 128, 126));
+		testResult = test(rgb(255, 165, 0),[mod("satMod", 2025)],rgb(129, 128, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("satMod", 5000)],rgb(134, 129, 121));
+		testResult = test(rgb(255, 165, 0),[mod("satMod", 2025)],rgb(134, 129, 121));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("satMod", 10000)],rgb(140, 131, 115));
 		fTestFunction(testResult);
@@ -1475,7 +1475,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("satMod", 150000)],rgb(255, 184, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("satMod", 200000)],rgb(255, 202, 0));
+		testResult = test(rgb(255, 165, 0),[mod("satMod", 202500)],rgb(255, 202, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("satMod", 1000000)],rgb(255, 255, 0));
 		fTestFunction(testResult);
@@ -1517,9 +1517,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("satMod", 100)],rgb(165, 165, 166));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("satMod", 1000)],rgb(165, 165, 166));
+		testResult = test(rgb(147, 112, 219),[mod("satMod", 2025)],rgb(165, 165, 166));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("satMod", 5000)],rgb(165, 163, 168));
+		testResult = test(rgb(147, 112, 219),[mod("satMod", 2025)],rgb(165, 163, 168));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("satMod", 10000)],rgb(164, 160, 171));
 		fTestFunction(testResult);
@@ -1529,7 +1529,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("satMod", 150000)],rgb(138, 85, 246));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("satMod", 200000)],rgb(129, 59, 255));
+		testResult = test(rgb(147, 112, 219),[mod("satMod", 202500)],rgb(129, 59, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("satMod", 1000000)],rgb(0, 0, 255));
 		fTestFunction(testResult);
@@ -1571,9 +1571,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("satMod", 100)],rgb(119, 120, 119));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("satMod", 1000)],rgb(119, 120, 119));
+		testResult = test(rgb(60, 179, 113),[mod("satMod", 2025)],rgb(119, 120, 119));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("satMod", 5000)],rgb(117, 122, 119));
+		testResult = test(rgb(60, 179, 113),[mod("satMod", 2025)],rgb(117, 122, 119));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("satMod", 10000)],rgb(114, 125, 119));
 		fTestFunction(testResult);
@@ -1583,7 +1583,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("satMod", 150000)],rgb(30, 209, 110));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("satMod", 200000)],rgb(0, 239, 106));
+		testResult = test(rgb(60, 179, 113),[mod("satMod", 202500)],rgb(0, 239, 106));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("satMod", 1000000)],rgb(0, 255, 54));
 		fTestFunction(testResult);
@@ -1625,9 +1625,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("satMod", 100)],rgb(120, 120, 120));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("satMod", 1000)],rgb(121, 120, 119));
+		testResult = test(rgb(210, 105, 30),[mod("satMod", 2025)],rgb(121, 120, 119));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("satMod", 5000)],rgb(124, 119, 115));
+		testResult = test(rgb(210, 105, 30),[mod("satMod", 2025)],rgb(124, 119, 115));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("satMod", 10000)],rgb(129, 118, 111));
 		fTestFunction(testResult);
@@ -1637,7 +1637,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("satMod", 150000)],rgb(255, 97, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("satMod", 200000)],rgb(255, 90, 0));
+		testResult = test(rgb(210, 105, 30),[mod("satMod", 202500)],rgb(255, 90, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("satMod", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -1679,9 +1679,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("satMod", 100)],rgb(171, 171, 171));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("satMod", 1000)],rgb(171, 170, 172));
+		testResult = test(rgb(123, 104, 238),[mod("satMod", 2025)],rgb(171, 170, 172));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("satMod", 5000)],rgb(169, 168, 174));
+		testResult = test(rgb(123, 104, 238),[mod("satMod", 2025)],rgb(169, 168, 174));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("satMod", 10000)],rgb(166, 164, 178));
 		fTestFunction(testResult);
@@ -1691,7 +1691,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("satMod", 150000)],rgb(99, 70, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("satMod", 200000)],rgb(75, 37, 255));
+		testResult = test(rgb(123, 104, 238),[mod("satMod", 202500)],rgb(75, 37, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("satMod", 1000000)],rgb(0, 0, 255));
 		fTestFunction(testResult);
@@ -1733,9 +1733,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("satMod", 100)],rgb(104, 105, 105));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("satMod", 1000)],rgb(103, 106, 106));
+		testResult = test(rgb(0, 206, 209),[mod("satMod", 2025)],rgb(103, 106, 106));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("satMod", 5000)],rgb(99, 110, 110));
+		testResult = test(rgb(0, 206, 209),[mod("satMod", 2025)],rgb(99, 110, 110));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("satMod", 10000)],rgb(94, 115, 115));
 		fTestFunction(testResult);
@@ -1745,7 +1745,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("satMod", 150000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("satMod", 200000)],rgb(0, 255, 255));
+		testResult = test(rgb(0, 206, 209),[mod("satMod", 202500)],rgb(0, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("satMod", 1000000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
@@ -1787,9 +1787,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("satMod", 100)],rgb(180, 180, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("satMod", 1000)],rgb(181, 179, 180));
+		testResult = test(rgb(255, 105, 180),[mod("satMod", 2025)],rgb(181, 179, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("satMod", 5000)],rgb(184, 176, 180));
+		testResult = test(rgb(255, 105, 180),[mod("satMod", 2025)],rgb(184, 176, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("satMod", 10000)],rgb(187, 173, 180));
 		fTestFunction(testResult);
@@ -1799,7 +1799,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("satMod", 150000)],rgb(255, 67, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("satMod", 200000)],rgb(255, 30, 180));
+		testResult = test(rgb(255, 105, 180),[mod("satMod", 202500)],rgb(255, 30, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("satMod", 1000000)],rgb(255, 0, 180));
 		fTestFunction(testResult);
@@ -1841,9 +1841,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("satMod", 100)],rgb(92, 93, 92));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("satMod", 1000)],rgb(92, 93, 92));
+		testResult = test(rgb(46, 139, 87),[mod("satMod", 2025)],rgb(92, 93, 92));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("satMod", 5000)],rgb(90, 95, 92));
+		testResult = test(rgb(46, 139, 87),[mod("satMod", 2025)],rgb(90, 95, 92));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("satMod", 10000)],rgb(88, 97, 92));
 		fTestFunction(testResult);
@@ -1853,7 +1853,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("satMod", 150000)],rgb(23, 162, 84));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("satMod", 200000)],rgb(0, 185, 82));
+		testResult = test(rgb(46, 139, 87),[mod("satMod", 202500)],rgb(0, 185, 82));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("satMod", 1000000)],rgb(0, 255, 38));
 		fTestFunction(testResult);
@@ -1899,9 +1899,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("lumOff", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("lumOff", 1000)],rgb(3, 3, 3));
+		testResult = test(rgb(0,0,0),[mod("lumOff", 2025)],rgb(3, 3, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("lumOff", 5000)],rgb(13, 13, 13));
+		testResult = test(rgb(0,0,0),[mod("lumOff", 2025)],rgb(13, 13, 13));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("lumOff", 10000)],rgb(25, 25, 25));
 		fTestFunction(testResult);
@@ -1911,7 +1911,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0,0,0),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -1953,9 +1953,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("lumOff", 100)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("lumOff", 1000)],rgb(129, 129, 129));
+		testResult = test(rgb(126,126,126),[mod("lumOff", 2025)],rgb(129, 129, 129));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("lumOff", 5000)],rgb(139, 139, 139));
+		testResult = test(rgb(126,126,126),[mod("lumOff", 2025)],rgb(139, 139, 139));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("lumOff", 10000)],rgb(152, 152, 152));
 		fTestFunction(testResult);
@@ -1965,7 +1965,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(126,126,126),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2007,9 +2007,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("lumOff", 100)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("lumOff", 1000)],rgb(130, 130, 130));
+		testResult = test(rgb(127,127,127),[mod("lumOff", 2025)],rgb(130, 130, 130));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("lumOff", 5000)],rgb(140, 140, 140));
+		testResult = test(rgb(127,127,127),[mod("lumOff", 2025)],rgb(140, 140, 140));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("lumOff", 10000)],rgb(152, 152, 152));
 		fTestFunction(testResult);
@@ -2019,7 +2019,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(127,127,127),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2061,9 +2061,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("lumOff", 100)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("lumOff", 1000)],rgb(131, 131, 131));
+		testResult = test(rgb(128,128,128),[mod("lumOff", 2025)],rgb(131, 131, 131));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("lumOff", 5000)],rgb(141, 141, 141));
+		testResult = test(rgb(128,128,128),[mod("lumOff", 2025)],rgb(141, 141, 141));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("lumOff", 10000)],rgb(153, 153, 153));
 		fTestFunction(testResult);
@@ -2073,7 +2073,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(128,128,128),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2115,9 +2115,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("lumOff", 100)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("lumOff", 1000)],rgb(203, 203, 203));
+		testResult = test(rgb(200,200,200),[mod("lumOff", 2025)],rgb(203, 203, 203));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("lumOff", 5000)],rgb(213, 213, 213));
+		testResult = test(rgb(200,200,200),[mod("lumOff", 2025)],rgb(213, 213, 213));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("lumOff", 10000)],rgb(226, 226, 226));
 		fTestFunction(testResult);
@@ -2127,7 +2127,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(200,200,200),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2169,9 +2169,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("lumOff", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("lumOff", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("lumOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("lumOff", 5000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("lumOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("lumOff", 10000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2181,7 +2181,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2223,9 +2223,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("lumOff", 100)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("lumOff", 1000)],rgb(103, 103, 103));
+		testResult = test(rgb(100,100,100),[mod("lumOff", 2025)],rgb(103, 103, 103));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("lumOff", 5000)],rgb(113, 113, 113));
+		testResult = test(rgb(100,100,100),[mod("lumOff", 2025)],rgb(113, 113, 113));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("lumOff", 10000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
@@ -2235,7 +2235,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(100,100,100),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2277,9 +2277,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("lumOff", 100)],rgb(34, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("lumOff", 1000)],rgb(35, 143, 35));
+		testResult = test(rgb(34, 139, 34),[mod("lumOff", 2025)],rgb(35, 143, 35));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("lumOff", 5000)],rgb(39, 159, 39));
+		testResult = test(rgb(34, 139, 34),[mod("lumOff", 2025)],rgb(39, 159, 39));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("lumOff", 10000)],rgb(44, 180, 44));
 		fTestFunction(testResult);
@@ -2289,7 +2289,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(34, 139, 34),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2331,9 +2331,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("lumOff", 100)],rgb(255, 99, 72));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("lumOff", 1000)],rgb(255, 103, 76));
+		testResult = test(rgb(255, 99, 71),[mod("lumOff", 2025)],rgb(255, 103, 76));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("lumOff", 5000)],rgb(255, 121, 96));
+		testResult = test(rgb(255, 99, 71),[mod("lumOff", 2025)],rgb(255, 121, 96));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("lumOff", 10000)],rgb(255, 142, 122));
 		fTestFunction(testResult);
@@ -2343,7 +2343,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 99, 71),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2385,9 +2385,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("lumOff", 100)],rgb(75, 0, 131));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("lumOff", 1000)],rgb(78, 0, 135));
+		testResult = test(rgb(75, 0, 130),[mod("lumOff", 2025)],rgb(78, 0, 135));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("lumOff", 5000)],rgb(90, 0, 156));
+		testResult = test(rgb(75, 0, 130),[mod("lumOff", 2025)],rgb(90, 0, 156));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("lumOff", 10000)],rgb(104, 0, 181));
 		fTestFunction(testResult);
@@ -2397,7 +2397,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(75, 0, 130),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2439,9 +2439,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("lumOff", 100)],rgb(220, 20, 60));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("lumOff", 1000)],rgb(225, 20, 61));
+		testResult = test(rgb(220, 20, 60),[mod("lumOff", 2025)],rgb(225, 20, 61));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("lumOff", 5000)],rgb(235, 31, 72));
+		testResult = test(rgb(220, 20, 60),[mod("lumOff", 2025)],rgb(235, 31, 72));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("lumOff", 10000)],rgb(237, 54, 91));
 		fTestFunction(testResult);
@@ -2451,7 +2451,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(220, 20, 60),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2493,9 +2493,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("lumOff", 100)],rgb(0, 191, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("lumOff", 1000)],rgb(5, 192, 255));
+		testResult = test(rgb(0, 191, 255),[mod("lumOff", 2025)],rgb(5, 192, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("lumOff", 5000)],rgb(25, 197, 255));
+		testResult = test(rgb(0, 191, 255),[mod("lumOff", 2025)],rgb(25, 197, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("lumOff", 10000)],rgb(51, 204, 255));
 		fTestFunction(testResult);
@@ -2505,7 +2505,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0, 191, 255),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2547,9 +2547,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("lumOff", 100)],rgb(255, 215, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("lumOff", 1000)],rgb(255, 216, 5));
+		testResult = test(rgb(255, 215, 0),[mod("lumOff", 2025)],rgb(255, 216, 5));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("lumOff", 5000)],rgb(255, 219, 25));
+		testResult = test(rgb(255, 215, 0),[mod("lumOff", 2025)],rgb(255, 219, 25));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("lumOff", 10000)],rgb(255, 223, 51));
 		fTestFunction(testResult);
@@ -2559,7 +2559,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 215, 0),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2601,9 +2601,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("lumOff", 100)],rgb(138, 43, 226));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("lumOff", 1000)],rgb(140, 47, 227));
+		testResult = test(rgb(138, 43, 226),[mod("lumOff", 2025)],rgb(140, 47, 227));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("lumOff", 5000)],rgb(150, 65, 229));
+		testResult = test(rgb(138, 43, 226),[mod("lumOff", 2025)],rgb(150, 65, 229));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("lumOff", 10000)],rgb(163, 88, 232));
 		fTestFunction(testResult);
@@ -2613,7 +2613,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(138, 43, 226),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2655,9 +2655,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("lumOff", 100)],rgb(50, 205, 50));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("lumOff", 1000)],rgb(54, 206, 54));
+		testResult = test(rgb(50, 205, 50),[mod("lumOff", 2025)],rgb(54, 206, 54));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("lumOff", 5000)],rgb(71, 210, 71));
+		testResult = test(rgb(50, 205, 50),[mod("lumOff", 2025)],rgb(71, 210, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("lumOff", 10000)],rgb(91, 215, 91));
 		fTestFunction(testResult);
@@ -2667,7 +2667,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(50, 205, 50),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2709,9 +2709,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("lumOff", 100)],rgb(255, 69, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("lumOff", 1000)],rgb(255, 73, 5));
+		testResult = test(rgb(255, 69, 0),[mod("lumOff", 2025)],rgb(255, 73, 5));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("lumOff", 5000)],rgb(255, 88, 25));
+		testResult = test(rgb(255, 69, 0),[mod("lumOff", 2025)],rgb(255, 88, 25));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("lumOff", 10000)],rgb(255, 106, 51));
 		fTestFunction(testResult);
@@ -2721,7 +2721,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 69, 0),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2763,9 +2763,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("lumOff", 100)],rgb(0, 129, 129));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("lumOff", 1000)],rgb(0, 133, 133));
+		testResult = test(rgb(0, 128, 128),[mod("lumOff", 2025)],rgb(0, 133, 133));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("lumOff", 5000)],rgb(0, 153, 153));
+		testResult = test(rgb(0, 128, 128),[mod("lumOff", 2025)],rgb(0, 153, 153));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("lumOff", 10000)],rgb(0, 179, 179));
 		fTestFunction(testResult);
@@ -2775,7 +2775,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0, 128, 128),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2817,9 +2817,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("lumOff", 100)],rgb(218, 112, 214));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("lumOff", 1000)],rgb(219, 116, 215));
+		testResult = test(rgb(218, 112, 214),[mod("lumOff", 2025)],rgb(219, 116, 215));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("lumOff", 5000)],rgb(223, 132, 220));
+		testResult = test(rgb(218, 112, 214),[mod("lumOff", 2025)],rgb(223, 132, 220));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("lumOff", 10000)],rgb(228, 153, 226));
 		fTestFunction(testResult);
@@ -2829,7 +2829,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(218, 112, 214),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2871,9 +2871,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("lumOff", 100)],rgb(70, 130, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("lumOff", 1000)],rgb(71, 133, 184));
+		testResult = test(rgb(70, 130, 180),[mod("lumOff", 2025)],rgb(71, 133, 184));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("lumOff", 5000)],rgb(86, 142, 189));
+		testResult = test(rgb(70, 130, 180),[mod("lumOff", 2025)],rgb(86, 142, 189));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("lumOff", 10000)],rgb(105, 155, 196));
 		fTestFunction(testResult);
@@ -2883,7 +2883,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(70, 130, 180),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2925,9 +2925,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("lumOff", 100)],rgb(255, 165, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("lumOff", 1000)],rgb(255, 167, 5));
+		testResult = test(rgb(255, 165, 0),[mod("lumOff", 2025)],rgb(255, 167, 5));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("lumOff", 5000)],rgb(255, 174, 25));
+		testResult = test(rgb(255, 165, 0),[mod("lumOff", 2025)],rgb(255, 174, 25));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("lumOff", 10000)],rgb(255, 183, 51));
 		fTestFunction(testResult);
@@ -2937,7 +2937,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 165, 0),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -2979,9 +2979,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("lumOff", 100)],rgb(147, 112, 219));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("lumOff", 1000)],rgb(150, 116, 220));
+		testResult = test(rgb(147, 112, 219),[mod("lumOff", 2025)],rgb(150, 116, 220));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("lumOff", 5000)],rgb(162, 132, 224));
+		testResult = test(rgb(147, 112, 219),[mod("lumOff", 2025)],rgb(162, 132, 224));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("lumOff", 10000)],rgb(178, 153, 229));
 		fTestFunction(testResult);
@@ -2991,7 +2991,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(147, 112, 219),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -3033,9 +3033,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("lumOff", 100)],rgb(60, 179, 113));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("lumOff", 1000)],rgb(61, 183, 115));
+		testResult = test(rgb(60, 179, 113),[mod("lumOff", 2025)],rgb(61, 183, 115));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("lumOff", 5000)],rgb(71, 193, 126));
+		testResult = test(rgb(60, 179, 113),[mod("lumOff", 2025)],rgb(71, 193, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("lumOff", 10000)],rgb(90, 200, 139));
 		fTestFunction(testResult);
@@ -3045,7 +3045,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(60, 179, 113),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -3087,9 +3087,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("lumOff", 100)],rgb(210, 105, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("lumOff", 1000)],rgb(214, 107, 31));
+		testResult = test(rgb(210, 105, 30),[mod("lumOff", 2025)],rgb(214, 107, 31));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("lumOff", 5000)],rgb(224, 117, 41));
+		testResult = test(rgb(210, 105, 30),[mod("lumOff", 2025)],rgb(224, 117, 41));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("lumOff", 10000)],rgb(228, 132, 63));
 		fTestFunction(testResult);
@@ -3099,7 +3099,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(210, 105, 30),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -3141,9 +3141,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("lumOff", 100)],rgb(123, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("lumOff", 1000)],rgb(127, 109, 239));
+		testResult = test(rgb(123, 104, 238),[mod("lumOff", 2025)],rgb(127, 109, 239));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("lumOff", 5000)],rgb(143, 127, 241));
+		testResult = test(rgb(123, 104, 238),[mod("lumOff", 2025)],rgb(143, 127, 241));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("lumOff", 10000)],rgb(163, 150, 243));
 		fTestFunction(testResult);
@@ -3153,7 +3153,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(123, 104, 238),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -3195,9 +3195,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("lumOff", 100)],rgb(0, 207, 210));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("lumOff", 1000)],rgb(0, 211, 214));
+		testResult = test(rgb(0, 206, 209),[mod("lumOff", 2025)],rgb(0, 211, 214));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("lumOff", 5000)],rgb(0, 231, 235));
+		testResult = test(rgb(0, 206, 209),[mod("lumOff", 2025)],rgb(0, 231, 235));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("lumOff", 10000)],rgb(5, 251, 255));
 		fTestFunction(testResult);
@@ -3207,7 +3207,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0, 206, 209),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -3249,9 +3249,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("lumOff", 100)],rgb(255, 106, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("lumOff", 1000)],rgb(255, 110, 183));
+		testResult = test(rgb(255, 105, 180),[mod("lumOff", 2025)],rgb(255, 110, 183));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("lumOff", 5000)],rgb(255, 130, 193));
+		testResult = test(rgb(255, 105, 180),[mod("lumOff", 2025)],rgb(255, 130, 193));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("lumOff", 10000)],rgb(255, 156, 205));
 		fTestFunction(testResult);
@@ -3261,7 +3261,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 105, 180),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -3303,9 +3303,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("lumOff", 100)],rgb(46, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("lumOff", 1000)],rgb(47, 143, 89));
+		testResult = test(rgb(46, 139, 87),[mod("lumOff", 2025)],rgb(47, 143, 89));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("lumOff", 5000)],rgb(52, 158, 99));
+		testResult = test(rgb(46, 139, 87),[mod("lumOff", 2025)],rgb(52, 158, 99));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("lumOff", 10000)],rgb(59, 177, 111));
 		fTestFunction(testResult);
@@ -3315,7 +3315,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("lumOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("lumOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(46, 139, 87),[mod("lumOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("lumOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -3361,9 +3361,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("satOff", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("satOff", 1000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("satOff", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("satOff", 5000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("satOff", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("satOff", 10000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -3373,7 +3373,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("satOff", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("satOff", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("satOff", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("satOff", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -3415,9 +3415,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("satOff", 100)],rgb(126, 126, 125));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("satOff", 1000)],rgb(127, 125, 120));
+		testResult = test(rgb(126,126,126),[mod("satOff", 2025)],rgb(127, 125, 120));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("satOff", 5000)],rgb(132, 120, 95));
+		testResult = test(rgb(126,126,126),[mod("satOff", 2025)],rgb(132, 120, 95));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("satOff", 10000)],rgb(139, 113, 63));
 		fTestFunction(testResult);
@@ -3427,7 +3427,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("satOff", 150000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("satOff", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(126,126,126),[mod("satOff", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("satOff", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -3469,9 +3469,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("satOff", 100)],rgb(127, 127, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("satOff", 1000)],rgb(128, 126, 121));
+		testResult = test(rgb(127,127,127),[mod("satOff", 2025)],rgb(128, 126, 121));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("satOff", 5000)],rgb(133, 121, 95));
+		testResult = test(rgb(127,127,127),[mod("satOff", 2025)],rgb(133, 121, 95));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("satOff", 10000)],rgb(140, 114, 63));
 		fTestFunction(testResult);
@@ -3481,7 +3481,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("satOff", 150000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("satOff", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(127,127,127),[mod("satOff", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("satOff", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -3523,9 +3523,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("satOff", 100)],rgb(128, 128, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("satOff", 1000)],rgb(129, 127, 122));
+		testResult = test(rgb(128,128,128),[mod("satOff", 2025)],rgb(129, 127, 122));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("satOff", 5000)],rgb(134, 122, 96));
+		testResult = test(rgb(128,128,128),[mod("satOff", 2025)],rgb(134, 122, 96));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("satOff", 10000)],rgb(141, 115, 64));
 		fTestFunction(testResult);
@@ -3535,7 +3535,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("satOff", 150000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("satOff", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(128,128,128),[mod("satOff", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("satOff", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -3577,9 +3577,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("satOff", 100)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("satOff", 1000)],rgb(201, 199, 197));
+		testResult = test(rgb(200,200,200),[mod("satOff", 2025)],rgb(201, 199, 197));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("satOff", 5000)],rgb(203, 197, 186));
+		testResult = test(rgb(200,200,200),[mod("satOff", 2025)],rgb(203, 197, 186));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("satOff", 10000)],rgb(206, 195, 173));
 		fTestFunction(testResult);
@@ -3589,7 +3589,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("satOff", 150000)],rgb(255, 117, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("satOff", 200000)],rgb(255, 90, 0));
+		testResult = test(rgb(200,200,200),[mod("satOff", 202500)],rgb(255, 90, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("satOff", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -3631,9 +3631,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("satOff", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("satOff", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("satOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("satOff", 5000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("satOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("satOff", 10000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -3643,7 +3643,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("satOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("satOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("satOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("satOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -3685,9 +3685,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("satOff", 100)],rgb(100, 100, 99));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("satOff", 1000)],rgb(101, 99, 95));
+		testResult = test(rgb(100,100,100),[mod("satOff", 2025)],rgb(101, 99, 95));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("satOff", 5000)],rgb(105, 95, 75));
+		testResult = test(rgb(100,100,100),[mod("satOff", 2025)],rgb(105, 95, 75));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("satOff", 10000)],rgb(110, 90, 50));
 		fTestFunction(testResult);
@@ -3697,7 +3697,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("satOff", 150000)],rgb(250, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("satOff", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(100,100,100),[mod("satOff", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("satOff", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -3739,9 +3739,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("satOff", 100)],rgb(34, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("satOff", 1000)],rgb(33, 140, 33));
+		testResult = test(rgb(34, 139, 34),[mod("satOff", 2025)],rgb(33, 140, 33));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("satOff", 5000)],rgb(30, 143, 30));
+		testResult = test(rgb(34, 139, 34),[mod("satOff", 2025)],rgb(30, 143, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("satOff", 10000)],rgb(25, 148, 25));
 		fTestFunction(testResult);
@@ -3751,7 +3751,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("satOff", 150000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("satOff", 200000)],rgb(0, 255, 0));
+		testResult = test(rgb(34, 139, 34),[mod("satOff", 202500)],rgb(0, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("satOff", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -3793,9 +3793,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("satOff", 100)],rgb(255, 99, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("satOff", 1000)],rgb(255, 98, 70));
+		testResult = test(rgb(255, 99, 71),[mod("satOff", 2025)],rgb(255, 98, 70));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("satOff", 5000)],rgb(255, 96, 66));
+		testResult = test(rgb(255, 99, 71),[mod("satOff", 2025)],rgb(255, 96, 66));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("satOff", 10000)],rgb(255, 93, 62));
 		fTestFunction(testResult);
@@ -3805,7 +3805,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("satOff", 150000)],rgb(255, 3, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("satOff", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 99, 71),[mod("satOff", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("satOff", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -3847,9 +3847,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("satOff", 100)],rgb(75, 0, 130));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("satOff", 1000)],rgb(75, 0, 131));
+		testResult = test(rgb(75, 0, 130),[mod("satOff", 2025)],rgb(75, 0, 131));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("satOff", 5000)],rgb(75, 0, 133));
+		testResult = test(rgb(75, 0, 130),[mod("satOff", 2025)],rgb(75, 0, 133));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("satOff", 10000)],rgb(76, 0, 137));
 		fTestFunction(testResult);
@@ -3859,7 +3859,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("satOff", 150000)],rgb(90, 0, 228));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("satOff", 200000)],rgb(95, 0, 255));
+		testResult = test(rgb(75, 0, 130),[mod("satOff", 202500)],rgb(95, 0, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("satOff", 1000000)],rgb(175, 0, 255));
 		fTestFunction(testResult);
@@ -3901,9 +3901,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("satOff", 100)],rgb(220, 20, 60));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("satOff", 1000)],rgb(221, 19, 59));
+		testResult = test(rgb(220, 20, 60),[mod("satOff", 2025)],rgb(221, 19, 59));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("satOff", 5000)],rgb(226, 14, 56));
+		testResult = test(rgb(220, 20, 60),[mod("satOff", 2025)],rgb(226, 14, 56));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("satOff", 10000)],rgb(232, 8, 53));
 		fTestFunction(testResult);
@@ -3913,7 +3913,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("satOff", 150000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("satOff", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(220, 20, 60),[mod("satOff", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("satOff", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -3955,9 +3955,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("satOff", 100)],rgb(0, 191, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("satOff", 1000)],rgb(0, 192, 255));
+		testResult = test(rgb(0, 191, 255),[mod("satOff", 2025)],rgb(0, 192, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("satOff", 5000)],rgb(0, 194, 255));
+		testResult = test(rgb(0, 191, 255),[mod("satOff", 2025)],rgb(0, 194, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("satOff", 10000)],rgb(0, 197, 255));
 		fTestFunction(testResult);
@@ -3967,7 +3967,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("satOff", 150000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("satOff", 200000)],rgb(0, 255, 255));
+		testResult = test(rgb(0, 191, 255),[mod("satOff", 202500)],rgb(0, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("satOff", 1000000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
@@ -4009,9 +4009,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("satOff", 100)],rgb(255, 215, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("satOff", 1000)],rgb(255, 216, 0));
+		testResult = test(rgb(255, 215, 0),[mod("satOff", 2025)],rgb(255, 216, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("satOff", 5000)],rgb(255, 219, 0));
+		testResult = test(rgb(255, 215, 0),[mod("satOff", 2025)],rgb(255, 219, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("satOff", 10000)],rgb(255, 224, 0));
 		fTestFunction(testResult);
@@ -4021,7 +4021,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("satOff", 150000)],rgb(255, 255, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("satOff", 200000)],rgb(255, 255, 0));
+		testResult = test(rgb(255, 215, 0),[mod("satOff", 202500)],rgb(255, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("satOff", 1000000)],rgb(255, 255, 0));
 		fTestFunction(testResult);
@@ -4063,9 +4063,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("satOff", 100)],rgb(138, 43, 226));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("satOff", 1000)],rgb(138, 42, 227));
+		testResult = test(rgb(138, 43, 226),[mod("satOff", 2025)],rgb(138, 42, 227));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("satOff", 5000)],rgb(138, 37, 232));
+		testResult = test(rgb(138, 43, 226),[mod("satOff", 2025)],rgb(138, 37, 232));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("satOff", 10000)],rgb(138, 31, 238));
 		fTestFunction(testResult);
@@ -4075,7 +4075,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("satOff", 150000)],rgb(145, 0, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("satOff", 200000)],rgb(147, 0, 255));
+		testResult = test(rgb(138, 43, 226),[mod("satOff", 202500)],rgb(147, 0, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("satOff", 1000000)],rgb(184, 0, 255));
 		fTestFunction(testResult);
@@ -4117,9 +4117,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("satOff", 100)],rgb(50, 205, 50));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("satOff", 1000)],rgb(49, 206, 49));
+		testResult = test(rgb(50, 205, 50),[mod("satOff", 2025)],rgb(49, 206, 49));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("satOff", 5000)],rgb(44, 211, 44));
+		testResult = test(rgb(50, 205, 50),[mod("satOff", 2025)],rgb(44, 211, 44));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("satOff", 10000)],rgb(37, 218, 37));
 		fTestFunction(testResult);
@@ -4129,7 +4129,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("satOff", 150000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("satOff", 200000)],rgb(0, 255, 0));
+		testResult = test(rgb(50, 205, 50),[mod("satOff", 202500)],rgb(0, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("satOff", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -4171,9 +4171,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("satOff", 100)],rgb(255, 69, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("satOff", 1000)],rgb(255, 68, 0));
+		testResult = test(rgb(255, 69, 0),[mod("satOff", 2025)],rgb(255, 68, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("satOff", 5000)],rgb(255, 66, 0));
+		testResult = test(rgb(255, 69, 0),[mod("satOff", 2025)],rgb(255, 66, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("satOff", 10000)],rgb(255, 63, 0));
 		fTestFunction(testResult);
@@ -4183,7 +4183,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("satOff", 150000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("satOff", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 69, 0),[mod("satOff", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("satOff", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -4225,9 +4225,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("satOff", 100)],rgb(0, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("satOff", 1000)],rgb(0, 129, 129));
+		testResult = test(rgb(0, 128, 128),[mod("satOff", 2025)],rgb(0, 129, 129));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("satOff", 5000)],rgb(0, 131, 131));
+		testResult = test(rgb(0, 128, 128),[mod("satOff", 2025)],rgb(0, 131, 131));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("satOff", 10000)],rgb(0, 134, 134));
 		fTestFunction(testResult);
@@ -4237,7 +4237,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("satOff", 150000)],rgb(0, 224, 224));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("satOff", 200000)],rgb(0, 255, 255));
+		testResult = test(rgb(0, 128, 128),[mod("satOff", 202500)],rgb(0, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("satOff", 1000000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
@@ -4279,9 +4279,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("satOff", 100)],rgb(218, 112, 214));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("satOff", 1000)],rgb(219, 111, 215));
+		testResult = test(rgb(218, 112, 214),[mod("satOff", 2025)],rgb(219, 111, 215));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("satOff", 5000)],rgb(222, 108, 218));
+		testResult = test(rgb(218, 112, 214),[mod("satOff", 2025)],rgb(222, 108, 218));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("satOff", 10000)],rgb(227, 103, 222));
 		fTestFunction(testResult);
@@ -4291,7 +4291,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("satOff", 150000)],rgb(255, 0, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("satOff", 200000)],rgb(255, 0, 255));
+		testResult = test(rgb(218, 112, 214),[mod("satOff", 202500)],rgb(255, 0, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("satOff", 1000000)],rgb(255, 0, 255));
 		fTestFunction(testResult);
@@ -4333,9 +4333,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("satOff", 100)],rgb(70, 130, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("satOff", 1000)],rgb(69, 130, 181));
+		testResult = test(rgb(70, 130, 180),[mod("satOff", 2025)],rgb(69, 130, 181));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("satOff", 5000)],rgb(64, 131, 186));
+		testResult = test(rgb(70, 130, 180),[mod("satOff", 2025)],rgb(64, 131, 186));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("satOff", 10000)],rgb(58, 131, 192));
 		fTestFunction(testResult);
@@ -4345,7 +4345,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("satOff", 150000)],rgb(0, 147, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("satOff", 200000)],rgb(0, 153, 255));
+		testResult = test(rgb(70, 130, 180),[mod("satOff", 202500)],rgb(0, 153, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("satOff", 1000000)],rgb(0, 244, 255));
 		fTestFunction(testResult);
@@ -4387,9 +4387,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("satOff", 100)],rgb(255, 165, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("satOff", 1000)],rgb(255, 165, 0));
+		testResult = test(rgb(255, 165, 0),[mod("satOff", 2025)],rgb(255, 165, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("satOff", 5000)],rgb(255, 167, 0));
+		testResult = test(rgb(255, 165, 0),[mod("satOff", 2025)],rgb(255, 167, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("satOff", 10000)],rgb(255, 169, 0));
 		fTestFunction(testResult);
@@ -4399,7 +4399,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("satOff", 150000)],rgb(255, 221, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("satOff", 200000)],rgb(255, 240, 0));
+		testResult = test(rgb(255, 165, 0),[mod("satOff", 202500)],rgb(255, 240, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("satOff", 1000000)],rgb(255, 255, 0));
 		fTestFunction(testResult);
@@ -4441,9 +4441,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("satOff", 100)],rgb(147, 112, 219));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("satOff", 1000)],rgb(147, 111, 220));
+		testResult = test(rgb(147, 112, 219),[mod("satOff", 2025)],rgb(147, 111, 220));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("satOff", 5000)],rgb(145, 108, 223));
+		testResult = test(rgb(147, 112, 219),[mod("satOff", 2025)],rgb(145, 108, 223));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("satOff", 10000)],rgb(144, 103, 228));
 		fTestFunction(testResult);
@@ -4453,7 +4453,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("satOff", 150000)],rgb(101, 0, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("satOff", 200000)],rgb(85, 0, 255));
+		testResult = test(rgb(147, 112, 219),[mod("satOff", 202500)],rgb(85, 0, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("satOff", 1000000)],rgb(0, 0, 255));
 		fTestFunction(testResult);
@@ -4495,9 +4495,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("satOff", 100)],rgb(60, 179, 113));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("satOff", 1000)],rgb(59, 180, 113));
+		testResult = test(rgb(60, 179, 113),[mod("satOff", 2025)],rgb(59, 180, 113));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("satOff", 5000)],rgb(54, 185, 112));
+		testResult = test(rgb(60, 179, 113),[mod("satOff", 2025)],rgb(54, 185, 112));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("satOff", 10000)],rgb(48, 191, 112));
 		fTestFunction(testResult);
@@ -4507,7 +4507,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("satOff", 150000)],rgb(0, 255, 93));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("satOff", 200000)],rgb(0, 255, 87));
+		testResult = test(rgb(60, 179, 113),[mod("satOff", 202500)],rgb(0, 255, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("satOff", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -4549,9 +4549,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("satOff", 100)],rgb(210, 105, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("satOff", 1000)],rgb(211, 105, 29));
+		testResult = test(rgb(210, 105, 30),[mod("satOff", 2025)],rgb(211, 105, 29));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("satOff", 5000)],rgb(216, 104, 24));
+		testResult = test(rgb(210, 105, 30),[mod("satOff", 2025)],rgb(216, 104, 24));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("satOff", 10000)],rgb(222, 103, 18));
 		fTestFunction(testResult);
@@ -4561,7 +4561,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("satOff", 150000)],rgb(255, 75, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("satOff", 200000)],rgb(255, 65, 0));
+		testResult = test(rgb(210, 105, 30),[mod("satOff", 202500)],rgb(255, 65, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("satOff", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -4603,9 +4603,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("satOff", 100)],rgb(123, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("satOff", 1000)],rgb(122, 103, 239));
+		testResult = test(rgb(123, 104, 238),[mod("satOff", 2025)],rgb(122, 103, 239));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("satOff", 5000)],rgb(120, 100, 242));
+		testResult = test(rgb(123, 104, 238),[mod("satOff", 2025)],rgb(120, 100, 242));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("satOff", 10000)],rgb(117, 96, 246));
 		fTestFunction(testResult);
@@ -4615,7 +4615,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("satOff", 150000)],rgb(33, 0, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("satOff", 200000)],rgb(3, 0, 255));
+		testResult = test(rgb(123, 104, 238),[mod("satOff", 202500)],rgb(3, 0, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("satOff", 1000000)],rgb(0, 0, 255));
 		fTestFunction(testResult);
@@ -4657,9 +4657,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("satOff", 100)],rgb(0, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("satOff", 1000)],rgb(0, 207, 210));
+		testResult = test(rgb(0, 206, 209),[mod("satOff", 2025)],rgb(0, 207, 210));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("satOff", 5000)],rgb(0, 211, 214));
+		testResult = test(rgb(0, 206, 209),[mod("satOff", 2025)],rgb(0, 211, 214));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("satOff", 10000)],rgb(0, 216, 219));
 		fTestFunction(testResult);
@@ -4669,7 +4669,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("satOff", 150000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("satOff", 200000)],rgb(0, 255, 255));
+		testResult = test(rgb(0, 206, 209),[mod("satOff", 202500)],rgb(0, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("satOff", 1000000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
@@ -4711,9 +4711,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("satOff", 100)],rgb(255, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("satOff", 1000)],rgb(255, 104, 180));
+		testResult = test(rgb(255, 105, 180),[mod("satOff", 2025)],rgb(255, 104, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("satOff", 5000)],rgb(255, 101, 180));
+		testResult = test(rgb(255, 105, 180),[mod("satOff", 2025)],rgb(255, 101, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("satOff", 10000)],rgb(255, 97, 180));
 		fTestFunction(testResult);
@@ -4723,7 +4723,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("satOff", 150000)],rgb(255, 0, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("satOff", 200000)],rgb(255, 0, 180));
+		testResult = test(rgb(255, 105, 180),[mod("satOff", 202500)],rgb(255, 0, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("satOff", 1000000)],rgb(255, 0, 180));
 		fTestFunction(testResult);
@@ -4765,9 +4765,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("satOff", 100)],rgb(46, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("satOff", 1000)],rgb(45, 140, 87));
+		testResult = test(rgb(46, 139, 87),[mod("satOff", 2025)],rgb(45, 140, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("satOff", 5000)],rgb(41, 144, 86));
+		testResult = test(rgb(46, 139, 87),[mod("satOff", 2025)],rgb(41, 144, 86));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("satOff", 10000)],rgb(37, 148, 86));
 		fTestFunction(testResult);
@@ -4777,7 +4777,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("satOff", 150000)],rgb(0, 255, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("satOff", 200000)],rgb(0, 255, 65));
+		testResult = test(rgb(46, 139, 87),[mod("satOff", 202500)],rgb(0, 255, 65));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("satOff", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -4941,9 +4941,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hueMod", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hueMod", 1000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hueMod", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hueMod", 5000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hueMod", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hueMod", 10000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -4953,7 +4953,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hueMod", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hueMod", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hueMod", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hueMod", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -4995,9 +4995,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hueMod", 100)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hueMod", 1000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hueMod", 2025)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hueMod", 5000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hueMod", 2025)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hueMod", 10000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
@@ -5007,7 +5007,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hueMod", 150000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hueMod", 200000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hueMod", 202500)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hueMod", 1000000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
@@ -5049,9 +5049,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hueMod", 100)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hueMod", 1000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hueMod", 2025)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hueMod", 5000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hueMod", 2025)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hueMod", 10000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
@@ -5061,7 +5061,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hueMod", 150000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hueMod", 200000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hueMod", 202500)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hueMod", 1000000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
@@ -5103,9 +5103,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hueMod", 100)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hueMod", 1000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hueMod", 2025)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hueMod", 5000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hueMod", 2025)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hueMod", 10000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
@@ -5115,7 +5115,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hueMod", 150000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hueMod", 200000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hueMod", 202500)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hueMod", 1000000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
@@ -5157,9 +5157,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hueMod", 100)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hueMod", 1000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hueMod", 2025)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hueMod", 5000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hueMod", 2025)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hueMod", 10000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
@@ -5169,7 +5169,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hueMod", 150000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hueMod", 200000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hueMod", 202500)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hueMod", 1000000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
@@ -5211,9 +5211,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hueMod", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hueMod", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hueMod", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hueMod", 5000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hueMod", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hueMod", 10000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -5223,7 +5223,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hueMod", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hueMod", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hueMod", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hueMod", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -5265,9 +5265,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hueMod", 100)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hueMod", 1000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hueMod", 2025)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hueMod", 5000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hueMod", 2025)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hueMod", 10000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
@@ -5277,7 +5277,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hueMod", 150000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hueMod", 200000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hueMod", 202500)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hueMod", 1000000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
@@ -5319,9 +5319,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hueMod", 100)],rgb(139, 34, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hueMod", 1000)],rgb(139, 36, 34));
+		testResult = test(rgb(34, 139, 34),[mod("hueMod", 2025)],rgb(139, 36, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hueMod", 5000)],rgb(139, 45, 34));
+		testResult = test(rgb(34, 139, 34),[mod("hueMod", 2025)],rgb(139, 45, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hueMod", 10000)],rgb(139, 55, 34));
 		fTestFunction(testResult);
@@ -5331,7 +5331,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hueMod", 150000)],rgb(34, 139, 139));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hueMod", 200000)],rgb(34, 34, 139));
+		testResult = test(rgb(34, 139, 34),[mod("hueMod", 202500)],rgb(34, 34, 139));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hueMod", 1000000)],rgb(34, 139, 34));
 		fTestFunction(testResult);
@@ -5373,9 +5373,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hueMod", 100)],rgb(255, 71, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hueMod", 1000)],rgb(255, 71, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hueMod", 2025)],rgb(255, 71, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hueMod", 5000)],rgb(255, 72, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hueMod", 2025)],rgb(255, 72, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hueMod", 10000)],rgb(255, 74, 71));
 		fTestFunction(testResult);
@@ -5385,7 +5385,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hueMod", 150000)],rgb(255, 113, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hueMod", 200000)],rgb(255, 127, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hueMod", 202500)],rgb(255, 127, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hueMod", 1000000)],rgb(159, 255, 71));
 		fTestFunction(testResult);
@@ -5427,9 +5427,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hueMod", 100)],rgb(130, 1, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hueMod", 1000)],rgb(130, 6, 0));
+		testResult = test(rgb(75, 0, 130),[mod("hueMod", 2025)],rgb(130, 6, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hueMod", 5000)],rgb(130, 30, 0));
+		testResult = test(rgb(75, 0, 130),[mod("hueMod", 2025)],rgb(130, 30, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hueMod", 10000)],rgb(130, 60, 0));
 		fTestFunction(testResult);
@@ -5439,7 +5439,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hueMod", 150000)],rgb(130, 113, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hueMod", 200000)],rgb(0, 110, 130));
+		testResult = test(rgb(75, 0, 130),[mod("hueMod", 202500)],rgb(0, 110, 130));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hueMod", 1000000)],rgb(0, 30, 130));
 		fTestFunction(testResult);
@@ -5481,9 +5481,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hueMod", 100)],rgb(220, 21, 20));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hueMod", 1000)],rgb(220, 32, 20));
+		testResult = test(rgb(220, 20, 60),[mod("hueMod", 2025)],rgb(220, 32, 20));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hueMod", 5000)],rgb(220, 78, 20));
+		testResult = test(rgb(220, 20, 60),[mod("hueMod", 2025)],rgb(220, 78, 20));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hueMod", 10000)],rgb(220, 136, 20));
 		fTestFunction(testResult);
@@ -5493,7 +5493,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hueMod", 150000)],rgb(20, 220, 160));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hueMod", 200000)],rgb(220, 20, 100));
+		testResult = test(rgb(220, 20, 60),[mod("hueMod", 202500)],rgb(220, 20, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hueMod", 1000000)],rgb(20, 20, 220));
 		fTestFunction(testResult);
@@ -5535,9 +5535,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hueMod", 100)],rgb(255, 1, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hueMod", 1000)],rgb(255, 8, 0));
+		testResult = test(rgb(0, 191, 255),[mod("hueMod", 2025)],rgb(255, 8, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hueMod", 5000)],rgb(255, 41, 0));
+		testResult = test(rgb(0, 191, 255),[mod("hueMod", 2025)],rgb(255, 41, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hueMod", 10000)],rgb(255, 83, 0));
 		fTestFunction(testResult);
@@ -5547,7 +5547,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hueMod", 150000)],rgb(223, 0, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hueMod", 200000)],rgb(255, 128, 0));
+		testResult = test(rgb(0, 191, 255),[mod("hueMod", 202500)],rgb(255, 128, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hueMod", 1000000)],rgb(0, 255, 130));
 		fTestFunction(testResult);
@@ -5589,9 +5589,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hueMod", 100)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hueMod", 1000)],rgb(255, 2, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hueMod", 2025)],rgb(255, 2, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hueMod", 5000)],rgb(255, 11, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hueMod", 2025)],rgb(255, 11, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hueMod", 10000)],rgb(255, 22, 0));
 		fTestFunction(testResult);
@@ -5601,7 +5601,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hueMod", 150000)],rgb(188, 255, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hueMod", 200000)],rgb(80, 255, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hueMod", 202500)],rgb(80, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hueMod", 1000000)],rgb(0, 255, 110));
 		fTestFunction(testResult);
@@ -5643,9 +5643,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hueMod", 100)],rgb(226, 44, 43));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hueMod", 1000)],rgb(226, 51, 43));
+		testResult = test(rgb(138, 43, 226),[mod("hueMod", 2025)],rgb(226, 51, 43));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hueMod", 5000)],rgb(226, 84, 43));
+		testResult = test(rgb(138, 43, 226),[mod("hueMod", 2025)],rgb(226, 84, 43));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hueMod", 10000)],rgb(226, 126, 43));
 		fTestFunction(testResult);
@@ -5655,7 +5655,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hueMod", 150000)],rgb(226, 185, 43));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hueMod", 200000)],rgb(43, 219, 226));
+		testResult = test(rgb(138, 43, 226),[mod("hueMod", 202500)],rgb(43, 219, 226));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hueMod", 1000000)],rgb(43, 191, 226));
 		fTestFunction(testResult);
@@ -5697,9 +5697,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hueMod", 100)],rgb(205, 50, 50));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hueMod", 1000)],rgb(205, 53, 50));
+		testResult = test(rgb(50, 205, 50),[mod("hueMod", 2025)],rgb(205, 53, 50));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hueMod", 5000)],rgb(205, 66, 50));
+		testResult = test(rgb(50, 205, 50),[mod("hueMod", 2025)],rgb(205, 66, 50));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hueMod", 10000)],rgb(205, 81, 50));
 		fTestFunction(testResult);
@@ -5709,7 +5709,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hueMod", 150000)],rgb(50, 205, 205));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hueMod", 200000)],rgb(50, 50, 205));
+		testResult = test(rgb(50, 205, 50),[mod("hueMod", 202500)],rgb(50, 50, 205));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hueMod", 1000000)],rgb(50, 205, 50));
 		fTestFunction(testResult);
@@ -5751,9 +5751,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hueMod", 100)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hueMod", 1000)],rgb(255, 1, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hueMod", 2025)],rgb(255, 1, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hueMod", 5000)],rgb(255, 3, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hueMod", 2025)],rgb(255, 3, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hueMod", 10000)],rgb(255, 7, 0));
 		fTestFunction(testResult);
@@ -5763,7 +5763,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hueMod", 150000)],rgb(255, 104, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hueMod", 200000)],rgb(255, 138, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hueMod", 202500)],rgb(255, 138, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hueMod", 1000000)],rgb(0, 255, 180));
 		fTestFunction(testResult);
@@ -5805,9 +5805,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hueMod", 100)],rgb(128, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hueMod", 1000)],rgb(128, 4, 0));
+		testResult = test(rgb(0, 128, 128),[mod("hueMod", 2025)],rgb(128, 4, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hueMod", 5000)],rgb(128, 19, 0));
+		testResult = test(rgb(0, 128, 128),[mod("hueMod", 2025)],rgb(128, 19, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hueMod", 10000)],rgb(128, 38, 0));
 		fTestFunction(testResult);
@@ -5817,7 +5817,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hueMod", 150000)],rgb(64, 0, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hueMod", 200000)],rgb(128, 0, 0));
+		testResult = test(rgb(0, 128, 128),[mod("hueMod", 202500)],rgb(128, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hueMod", 1000000)],rgb(128, 0, 0));
 		fTestFunction(testResult);
@@ -5859,9 +5859,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hueMod", 100)],rgb(218, 113, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hueMod", 1000)],rgb(218, 117, 112));
+		testResult = test(rgb(218, 112, 214),[mod("hueMod", 2025)],rgb(218, 117, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hueMod", 5000)],rgb(218, 139, 112));
+		testResult = test(rgb(218, 112, 214),[mod("hueMod", 2025)],rgb(218, 139, 112));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hueMod", 10000)],rgb(218, 165, 112));
 		fTestFunction(testResult);
@@ -5871,7 +5871,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hueMod", 150000)],rgb(159, 218, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hueMod", 200000)],rgb(120, 112, 218));
+		testResult = test(rgb(218, 112, 214),[mod("hueMod", 202500)],rgb(120, 112, 218));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hueMod", 1000000)],rgb(112, 218, 152));
 		fTestFunction(testResult);
@@ -5913,9 +5913,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hueMod", 100)],rgb(180, 70, 70));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hueMod", 1000)],rgb(180, 74, 70));
+		testResult = test(rgb(70, 130, 180),[mod("hueMod", 2025)],rgb(180, 74, 70));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hueMod", 5000)],rgb(180, 89, 70));
+		testResult = test(rgb(70, 130, 180),[mod("hueMod", 2025)],rgb(180, 89, 70));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hueMod", 10000)],rgb(180, 108, 70));
 		fTestFunction(testResult);
@@ -5925,7 +5925,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hueMod", 150000)],rgb(180, 70, 160));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hueMod", 200000)],rgb(180, 170, 70));
+		testResult = test(rgb(70, 130, 180),[mod("hueMod", 202500)],rgb(180, 170, 70));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hueMod", 1000000)],rgb(130, 70, 180));
 		fTestFunction(testResult);
@@ -5967,9 +5967,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hueMod", 100)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hueMod", 1000)],rgb(255, 2, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hueMod", 2025)],rgb(255, 2, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hueMod", 5000)],rgb(255, 8, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hueMod", 2025)],rgb(255, 8, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hueMod", 10000)],rgb(255, 16, 0));
 		fTestFunction(testResult);
@@ -5979,7 +5979,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hueMod", 150000)],rgb(255, 247, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hueMod", 200000)],rgb(180, 255, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hueMod", 202500)],rgb(180, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hueMod", 1000000)],rgb(255, 120, 0));
 		fTestFunction(testResult);
@@ -6021,9 +6021,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hueMod", 100)],rgb(219, 112, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hueMod", 1000)],rgb(219, 117, 112));
+		testResult = test(rgb(147, 112, 219),[mod("hueMod", 2025)],rgb(219, 117, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hueMod", 5000)],rgb(219, 135, 112));
+		testResult = test(rgb(147, 112, 219),[mod("hueMod", 2025)],rgb(219, 135, 112));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hueMod", 10000)],rgb(219, 158, 112));
 		fTestFunction(testResult);
@@ -6033,7 +6033,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hueMod", 150000)],rgb(219, 164, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hueMod", 200000)],rgb(112, 219, 182));
+		testResult = test(rgb(147, 112, 219),[mod("hueMod", 202500)],rgb(112, 219, 182));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hueMod", 1000000)],rgb(190, 219, 112));
 		fTestFunction(testResult);
@@ -6075,9 +6075,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hueMod", 100)],rgb(179, 60, 60));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hueMod", 1000)],rgb(179, 63, 60));
+		testResult = test(rgb(60, 179, 113),[mod("hueMod", 2025)],rgb(179, 63, 60));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hueMod", 5000)],rgb(179, 75, 60));
+		testResult = test(rgb(60, 179, 113),[mod("hueMod", 2025)],rgb(179, 75, 60));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hueMod", 10000)],rgb(179, 89, 60));
 		fTestFunction(testResult);
@@ -6087,7 +6087,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hueMod", 150000)],rgb(60, 100, 179));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hueMod", 200000)],rgb(166, 60, 179));
+		testResult = test(rgb(60, 179, 113),[mod("hueMod", 202500)],rgb(166, 60, 179));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hueMod", 1000000)],rgb(179, 114, 60));
 		fTestFunction(testResult);
@@ -6129,9 +6129,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hueMod", 100)],rgb(210, 30, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hueMod", 1000)],rgb(210, 31, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hueMod", 2025)],rgb(210, 31, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hueMod", 5000)],rgb(210, 34, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hueMod", 2025)],rgb(210, 34, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hueMod", 10000)],rgb(210, 37, 30));
 		fTestFunction(testResult);
@@ -6141,7 +6141,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hueMod", 150000)],rgb(210, 142, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hueMod", 200000)],rgb(210, 180, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hueMod", 202500)],rgb(210, 180, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hueMod", 1000000)],rgb(60, 30, 210));
 		fTestFunction(testResult);
@@ -6183,9 +6183,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hueMod", 100)],rgb(238, 105, 104));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hueMod", 1000)],rgb(238, 110, 104));
+		testResult = test(rgb(123, 104, 238),[mod("hueMod", 2025)],rgb(238, 110, 104));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hueMod", 5000)],rgb(238, 132, 104));
+		testResult = test(rgb(123, 104, 238),[mod("hueMod", 2025)],rgb(238, 132, 104));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hueMod", 10000)],rgb(238, 159, 104));
 		fTestFunction(testResult);
@@ -6195,7 +6195,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hueMod", 150000)],rgb(238, 132, 104));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hueMod", 200000)],rgb(104, 238, 142));
+		testResult = test(rgb(123, 104, 238),[mod("hueMod", 202500)],rgb(104, 238, 142));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hueMod", 1000000)],rgb(238, 104, 182));
 		fTestFunction(testResult);
@@ -6237,9 +6237,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hueMod", 100)],rgb(209, 1, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hueMod", 1000)],rgb(209, 6, 0));
+		testResult = test(rgb(0, 206, 209),[mod("hueMod", 2025)],rgb(209, 6, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hueMod", 5000)],rgb(209, 31, 0));
+		testResult = test(rgb(0, 206, 209),[mod("hueMod", 2025)],rgb(209, 31, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hueMod", 10000)],rgb(209, 63, 0));
 		fTestFunction(testResult);
@@ -6249,7 +6249,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hueMod", 150000)],rgb(109, 0, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hueMod", 200000)],rgb(209, 6, 0));
+		testResult = test(rgb(0, 206, 209),[mod("hueMod", 202500)],rgb(209, 6, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hueMod", 1000000)],rgb(209, 30, 0));
 		fTestFunction(testResult);
@@ -6291,9 +6291,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hueMod", 100)],rgb(255, 106, 105));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hueMod", 1000)],rgb(255, 113, 105));
+		testResult = test(rgb(255, 105, 180),[mod("hueMod", 2025)],rgb(255, 113, 105));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hueMod", 5000)],rgb(255, 146, 105));
+		testResult = test(rgb(255, 105, 180),[mod("hueMod", 2025)],rgb(255, 146, 105));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hueMod", 10000)],rgb(255, 187, 105));
 		fTestFunction(testResult);
@@ -6303,7 +6303,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hueMod", 150000)],rgb(105, 255, 142));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hueMod", 200000)],rgb(255, 105, 255));
+		testResult = test(rgb(255, 105, 180),[mod("hueMod", 202500)],rgb(255, 105, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hueMod", 1000000)],rgb(255, 255, 105));
 		fTestFunction(testResult);
@@ -6345,9 +6345,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hueMod", 100)],rgb(139, 46, 46));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hueMod", 1000)],rgb(139, 48, 46));
+		testResult = test(rgb(46, 139, 87),[mod("hueMod", 2025)],rgb(139, 48, 46));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hueMod", 5000)],rgb(139, 57, 46));
+		testResult = test(rgb(46, 139, 87),[mod("hueMod", 2025)],rgb(139, 57, 46));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hueMod", 10000)],rgb(139, 69, 46));
 		fTestFunction(testResult);
@@ -6357,7 +6357,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hueMod", 150000)],rgb(46, 77, 139));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hueMod", 200000)],rgb(128, 46, 139));
+		testResult = test(rgb(46, 139, 87),[mod("hueMod", 202500)],rgb(128, 46, 139));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hueMod", 1000000)],rgb(139, 84, 46));
 		fTestFunction(testResult);
@@ -6403,9 +6403,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("tint", 1000)],rgb(254, 254, 254));
+		testResult = test(rgb(0,0,0),[mod("tint", 2025)],rgb(254, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("tint", 5000)],rgb(249, 249, 249));
+		testResult = test(rgb(0,0,0),[mod("tint", 2025)],rgb(249, 249, 249));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("tint", 10000)],rgb(243, 243, 243));
 		fTestFunction(testResult);
@@ -6415,7 +6415,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0,0,0),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6457,9 +6457,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("tint", 1000)],rgb(254, 254, 254));
+		testResult = test(rgb(126,126,126),[mod("tint", 2025)],rgb(254, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("tint", 5000)],rgb(251, 251, 251));
+		testResult = test(rgb(126,126,126),[mod("tint", 2025)],rgb(251, 251, 251));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("tint", 10000)],rgb(246, 246, 246));
 		fTestFunction(testResult);
@@ -6469,7 +6469,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(126,126,126),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6511,9 +6511,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("tint", 1000)],rgb(254, 254, 254));
+		testResult = test(rgb(127,127,127),[mod("tint", 2025)],rgb(254, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("tint", 5000)],rgb(251, 251, 251));
+		testResult = test(rgb(127,127,127),[mod("tint", 2025)],rgb(251, 251, 251));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("tint", 10000)],rgb(246, 246, 246));
 		fTestFunction(testResult);
@@ -6523,7 +6523,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(127,127,127),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6565,9 +6565,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("tint", 1000)],rgb(254, 254, 254));
+		testResult = test(rgb(128,128,128),[mod("tint", 2025)],rgb(254, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("tint", 5000)],rgb(251, 251, 251));
+		testResult = test(rgb(128,128,128),[mod("tint", 2025)],rgb(251, 251, 251));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("tint", 10000)],rgb(246, 246, 246));
 		fTestFunction(testResult);
@@ -6577,7 +6577,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(128,128,128),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6619,9 +6619,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("tint", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(200,200,200),[mod("tint", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("tint", 5000)],rgb(253, 253, 253));
+		testResult = test(rgb(200,200,200),[mod("tint", 2025)],rgb(253, 253, 253));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("tint", 10000)],rgb(250, 250, 250));
 		fTestFunction(testResult);
@@ -6631,7 +6631,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(200,200,200),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6673,9 +6673,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("tint", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("tint", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("tint", 5000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("tint", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("tint", 10000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6685,7 +6685,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6727,9 +6727,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("tint", 1000)],rgb(254, 254, 254));
+		testResult = test(rgb(100,100,100),[mod("tint", 2025)],rgb(254, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("tint", 5000)],rgb(250, 250, 250));
+		testResult = test(rgb(100,100,100),[mod("tint", 2025)],rgb(250, 250, 250));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("tint", 10000)],rgb(245, 245, 245));
 		fTestFunction(testResult);
@@ -6739,7 +6739,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(100,100,100),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6781,9 +6781,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("tint", 1000)],rgb(254, 254, 254));
+		testResult = test(rgb(34, 139, 34),[mod("tint", 2025)],rgb(254, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("tint", 5000)],rgb(249, 251, 249));
+		testResult = test(rgb(34, 139, 34),[mod("tint", 2025)],rgb(249, 251, 249));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("tint", 10000)],rgb(244, 246, 244));
 		fTestFunction(testResult);
@@ -6793,7 +6793,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(34, 139, 34),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6835,9 +6835,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("tint", 1000)],rgb(255, 254, 254));
+		testResult = test(rgb(255, 99, 71),[mod("tint", 2025)],rgb(255, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("tint", 5000)],rgb(255, 250, 250));
+		testResult = test(rgb(255, 99, 71),[mod("tint", 2025)],rgb(255, 250, 250));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("tint", 10000)],rgb(255, 245, 244));
 		fTestFunction(testResult);
@@ -6847,7 +6847,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 99, 71),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6889,9 +6889,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("tint", 1000)],rgb(254, 254, 254));
+		testResult = test(rgb(75, 0, 130),[mod("tint", 2025)],rgb(254, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("tint", 5000)],rgb(250, 249, 251));
+		testResult = test(rgb(75, 0, 130),[mod("tint", 2025)],rgb(250, 249, 251));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("tint", 10000)],rgb(244, 243, 246));
 		fTestFunction(testResult);
@@ -6901,7 +6901,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(75, 0, 130),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6943,9 +6943,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("tint", 1000)],rgb(255, 254, 254));
+		testResult = test(rgb(220, 20, 60),[mod("tint", 2025)],rgb(255, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("tint", 5000)],rgb(253, 249, 250));
+		testResult = test(rgb(220, 20, 60),[mod("tint", 2025)],rgb(253, 249, 250));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("tint", 10000)],rgb(252, 244, 244));
 		fTestFunction(testResult);
@@ -6955,7 +6955,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(220, 20, 60),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -6997,9 +6997,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("tint", 1000)],rgb(254, 254, 255));
+		testResult = test(rgb(0, 191, 255),[mod("tint", 2025)],rgb(254, 254, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("tint", 5000)],rgb(249, 252, 255));
+		testResult = test(rgb(0, 191, 255),[mod("tint", 2025)],rgb(249, 252, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("tint", 10000)],rgb(243, 250, 255));
 		fTestFunction(testResult);
@@ -7009,7 +7009,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0, 191, 255),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7051,9 +7051,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("tint", 1000)],rgb(255, 255, 254));
+		testResult = test(rgb(255, 215, 0),[mod("tint", 2025)],rgb(255, 255, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("tint", 5000)],rgb(255, 253, 249));
+		testResult = test(rgb(255, 215, 0),[mod("tint", 2025)],rgb(255, 253, 249));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("tint", 10000)],rgb(255, 251, 243));
 		fTestFunction(testResult);
@@ -7063,7 +7063,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 215, 0),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7105,9 +7105,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("tint", 1000)],rgb(254, 254, 255));
+		testResult = test(rgb(138, 43, 226),[mod("tint", 2025)],rgb(254, 254, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("tint", 5000)],rgb(251, 249, 254));
+		testResult = test(rgb(138, 43, 226),[mod("tint", 2025)],rgb(251, 249, 254));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("tint", 10000)],rgb(246, 244, 252));
 		fTestFunction(testResult);
@@ -7117,7 +7117,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(138, 43, 226),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7159,9 +7159,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("tint", 1000)],rgb(254, 255, 254));
+		testResult = test(rgb(50, 205, 50),[mod("tint", 2025)],rgb(254, 255, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("tint", 5000)],rgb(249, 253, 249));
+		testResult = test(rgb(50, 205, 50),[mod("tint", 2025)],rgb(249, 253, 249));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("tint", 10000)],rgb(244, 251, 244));
 		fTestFunction(testResult);
@@ -7171,7 +7171,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(50, 205, 50),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7213,9 +7213,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("tint", 1000)],rgb(255, 254, 254));
+		testResult = test(rgb(255, 69, 0),[mod("tint", 2025)],rgb(255, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("tint", 5000)],rgb(255, 250, 249));
+		testResult = test(rgb(255, 69, 0),[mod("tint", 2025)],rgb(255, 250, 249));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("tint", 10000)],rgb(255, 244, 243));
 		fTestFunction(testResult);
@@ -7225,7 +7225,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 69, 0),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7267,9 +7267,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("tint", 1000)],rgb(254, 254, 254));
+		testResult = test(rgb(0, 128, 128),[mod("tint", 2025)],rgb(254, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("tint", 5000)],rgb(249, 251, 251));
+		testResult = test(rgb(0, 128, 128),[mod("tint", 2025)],rgb(249, 251, 251));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("tint", 10000)],rgb(243, 246, 246));
 		fTestFunction(testResult);
@@ -7279,7 +7279,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0, 128, 128),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7321,9 +7321,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("tint", 1000)],rgb(255, 254, 255));
+		testResult = test(rgb(218, 112, 214),[mod("tint", 2025)],rgb(255, 254, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("tint", 5000)],rgb(253, 250, 253));
+		testResult = test(rgb(218, 112, 214),[mod("tint", 2025)],rgb(253, 250, 253));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("tint", 10000)],rgb(252, 245, 251));
 		fTestFunction(testResult);
@@ -7333,7 +7333,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(218, 112, 214),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7375,9 +7375,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("tint", 1000)],rgb(254, 254, 254));
+		testResult = test(rgb(70, 130, 180),[mod("tint", 2025)],rgb(254, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("tint", 5000)],rgb(250, 251, 252));
+		testResult = test(rgb(70, 130, 180),[mod("tint", 2025)],rgb(250, 251, 252));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("tint", 10000)],rgb(244, 246, 249));
 		fTestFunction(testResult);
@@ -7387,7 +7387,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(70, 130, 180),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7429,9 +7429,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("tint", 1000)],rgb(255, 254, 254));
+		testResult = test(rgb(255, 165, 0),[mod("tint", 2025)],rgb(255, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("tint", 5000)],rgb(255, 251, 249));
+		testResult = test(rgb(255, 165, 0),[mod("tint", 2025)],rgb(255, 251, 249));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("tint", 10000)],rgb(255, 248, 243));
 		fTestFunction(testResult);
@@ -7441,7 +7441,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 165, 0),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7483,9 +7483,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("tint", 1000)],rgb(254, 254, 255));
+		testResult = test(rgb(147, 112, 219),[mod("tint", 2025)],rgb(254, 254, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("tint", 5000)],rgb(251, 250, 253));
+		testResult = test(rgb(147, 112, 219),[mod("tint", 2025)],rgb(251, 250, 253));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("tint", 10000)],rgb(247, 245, 252));
 		fTestFunction(testResult);
@@ -7495,7 +7495,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(147, 112, 219),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7537,9 +7537,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("tint", 1000)],rgb(254, 254, 254));
+		testResult = test(rgb(60, 179, 113),[mod("tint", 2025)],rgb(254, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("tint", 5000)],rgb(250, 252, 250));
+		testResult = test(rgb(60, 179, 113),[mod("tint", 2025)],rgb(250, 252, 250));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("tint", 10000)],rgb(244, 249, 245));
 		fTestFunction(testResult);
@@ -7549,7 +7549,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(60, 179, 113),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7591,9 +7591,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("tint", 1000)],rgb(255, 254, 254));
+		testResult = test(rgb(210, 105, 30),[mod("tint", 2025)],rgb(255, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("tint", 5000)],rgb(253, 250, 249));
+		testResult = test(rgb(210, 105, 30),[mod("tint", 2025)],rgb(253, 250, 249));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("tint", 10000)],rgb(251, 245, 244));
 		fTestFunction(testResult);
@@ -7603,7 +7603,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(210, 105, 30),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7645,9 +7645,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("tint", 1000)],rgb(254, 254, 255));
+		testResult = test(rgb(123, 104, 238),[mod("tint", 2025)],rgb(254, 254, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("tint", 5000)],rgb(250, 250, 254));
+		testResult = test(rgb(123, 104, 238),[mod("tint", 2025)],rgb(250, 250, 254));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("tint", 10000)],rgb(246, 245, 253));
 		fTestFunction(testResult);
@@ -7657,7 +7657,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(123, 104, 238),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7699,9 +7699,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("tint", 1000)],rgb(254, 255, 255));
+		testResult = test(rgb(0, 206, 209),[mod("tint", 2025)],rgb(254, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("tint", 5000)],rgb(249, 253, 253));
+		testResult = test(rgb(0, 206, 209),[mod("tint", 2025)],rgb(249, 253, 253));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("tint", 10000)],rgb(243, 251, 251));
 		fTestFunction(testResult);
@@ -7711,7 +7711,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0, 206, 209),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7753,9 +7753,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("tint", 1000)],rgb(255, 254, 254));
+		testResult = test(rgb(255, 105, 180),[mod("tint", 2025)],rgb(255, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("tint", 5000)],rgb(255, 250, 252));
+		testResult = test(rgb(255, 105, 180),[mod("tint", 2025)],rgb(255, 250, 252));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("tint", 10000)],rgb(255, 245, 249));
 		fTestFunction(testResult);
@@ -7765,7 +7765,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 105, 180),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7807,9 +7807,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("tint", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("tint", 1000)],rgb(254, 254, 254));
+		testResult = test(rgb(46, 139, 87),[mod("tint", 2025)],rgb(254, 254, 254));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("tint", 5000)],rgb(249, 251, 250));
+		testResult = test(rgb(46, 139, 87),[mod("tint", 2025)],rgb(249, 251, 250));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("tint", 10000)],rgb(244, 246, 245));
 		fTestFunction(testResult);
@@ -7819,7 +7819,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("tint", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("tint", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(46, 139, 87),[mod("tint", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("tint", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -7865,9 +7865,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("shade", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("shade", 1000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("shade", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("shade", 5000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("shade", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("shade", 10000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -7877,7 +7877,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -7919,9 +7919,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("shade", 100)],rgb(1, 1, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("shade", 1000)],rgb(7, 7, 7));
+		testResult = test(rgb(126,126,126),[mod("shade", 2025)],rgb(7, 7, 7));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("shade", 5000)],rgb(26, 26, 26));
+		testResult = test(rgb(126,126,126),[mod("shade", 2025)],rgb(26, 26, 26));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("shade", 10000)],rgb(40, 40, 40));
 		fTestFunction(testResult);
@@ -7931,7 +7931,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(126,126,126),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -7973,9 +7973,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("shade", 100)],rgb(1, 1, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("shade", 1000)],rgb(7, 7, 7));
+		testResult = test(rgb(127,127,127),[mod("shade", 2025)],rgb(7, 7, 7));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("shade", 5000)],rgb(26, 26, 26));
+		testResult = test(rgb(127,127,127),[mod("shade", 2025)],rgb(26, 26, 26));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("shade", 10000)],rgb(40, 40, 40));
 		fTestFunction(testResult);
@@ -7985,7 +7985,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(127,127,127),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8027,9 +8027,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("shade", 100)],rgb(1, 1, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("shade", 1000)],rgb(7, 7, 7));
+		testResult = test(rgb(128,128,128),[mod("shade", 2025)],rgb(7, 7, 7));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("shade", 5000)],rgb(27, 27, 27));
+		testResult = test(rgb(128,128,128),[mod("shade", 2025)],rgb(27, 27, 27));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("shade", 10000)],rgb(40, 40, 40));
 		fTestFunction(testResult);
@@ -8039,7 +8039,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(128,128,128),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8081,9 +8081,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("shade", 100)],rgb(2, 2, 2));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("shade", 1000)],rgb(17, 17, 17));
+		testResult = test(rgb(200,200,200),[mod("shade", 2025)],rgb(17, 17, 17));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("shade", 5000)],rgb(47, 47, 47));
+		testResult = test(rgb(200,200,200),[mod("shade", 2025)],rgb(47, 47, 47));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("shade", 10000)],rgb(68, 68, 68));
 		fTestFunction(testResult);
@@ -8093,7 +8093,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(200,200,200),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8135,9 +8135,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("shade", 100)],rgb(3, 3, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("shade", 1000)],rgb(25, 25, 25));
+		testResult = test(rgb(255,255,255),[mod("shade", 2025)],rgb(25, 25, 25));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("shade", 5000)],rgb(63, 63, 63));
+		testResult = test(rgb(255,255,255),[mod("shade", 2025)],rgb(63, 63, 63));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("shade", 10000)],rgb(89, 89, 89));
 		fTestFunction(testResult);
@@ -8147,7 +8147,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(255,255,255),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8189,9 +8189,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("shade", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("shade", 1000)],rgb(4, 4, 4));
+		testResult = test(rgb(100,100,100),[mod("shade", 2025)],rgb(4, 4, 4));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("shade", 5000)],rgb(19, 19, 19));
+		testResult = test(rgb(100,100,100),[mod("shade", 2025)],rgb(19, 19, 19));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("shade", 10000)],rgb(30, 30, 30));
 		fTestFunction(testResult);
@@ -8201,7 +8201,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(100,100,100),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8243,9 +8243,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("shade", 100)],rgb(0, 1, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("shade", 1000)],rgb(1, 9, 1));
+		testResult = test(rgb(34, 139, 34),[mod("shade", 2025)],rgb(1, 9, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("shade", 5000)],rgb(3, 30, 3));
+		testResult = test(rgb(34, 139, 34),[mod("shade", 2025)],rgb(3, 30, 3));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("shade", 10000)],rgb(5, 45, 5));
 		fTestFunction(testResult);
@@ -8255,7 +8255,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(34, 139, 34),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8297,9 +8297,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("shade", 100)],rgb(3, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("shade", 1000)],rgb(25, 4, 2));
+		testResult = test(rgb(255, 99, 71),[mod("shade", 2025)],rgb(25, 4, 2));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("shade", 5000)],rgb(63, 18, 10));
+		testResult = test(rgb(255, 99, 71),[mod("shade", 2025)],rgb(63, 18, 10));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("shade", 10000)],rgb(89, 29, 19));
 		fTestFunction(testResult);
@@ -8309,7 +8309,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(255, 99, 71),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8351,9 +8351,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("shade", 100)],rgb(0, 0, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("shade", 1000)],rgb(2, 0, 7));
+		testResult = test(rgb(75, 0, 130),[mod("shade", 2025)],rgb(2, 0, 7));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("shade", 5000)],rgb(12, 0, 27));
+		testResult = test(rgb(75, 0, 130),[mod("shade", 2025)],rgb(12, 0, 27));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("shade", 10000)],rgb(20, 0, 41));
 		fTestFunction(testResult);
@@ -8363,7 +8363,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(75, 0, 130),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8405,9 +8405,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("shade", 100)],rgb(2, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("shade", 1000)],rgb(20, 0, 1));
+		testResult = test(rgb(220, 20, 60),[mod("shade", 2025)],rgb(20, 0, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("shade", 5000)],rgb(53, 1, 7));
+		testResult = test(rgb(220, 20, 60),[mod("shade", 2025)],rgb(53, 1, 7));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("shade", 10000)],rgb(76, 2, 14));
 		fTestFunction(testResult);
@@ -8417,7 +8417,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(220, 20, 60),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8459,9 +8459,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("shade", 100)],rgb(0, 2, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("shade", 1000)],rgb(0, 16, 25));
+		testResult = test(rgb(0, 191, 255),[mod("shade", 2025)],rgb(0, 16, 25));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("shade", 5000)],rgb(0, 45, 63));
+		testResult = test(rgb(0, 191, 255),[mod("shade", 2025)],rgb(0, 45, 63));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("shade", 10000)],rgb(0, 65, 89));
 		fTestFunction(testResult);
@@ -8471,7 +8471,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0, 191, 255),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8513,9 +8513,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("shade", 100)],rgb(3, 2, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("shade", 1000)],rgb(25, 20, 0));
+		testResult = test(rgb(255, 215, 0),[mod("shade", 2025)],rgb(25, 20, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("shade", 5000)],rgb(63, 52, 0));
+		testResult = test(rgb(255, 215, 0),[mod("shade", 2025)],rgb(63, 52, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("shade", 10000)],rgb(89, 74, 0));
 		fTestFunction(testResult);
@@ -8525,7 +8525,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(255, 215, 0),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8567,9 +8567,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("shade", 100)],rgb(1, 0, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("shade", 1000)],rgb(8, 1, 21));
+		testResult = test(rgb(138, 43, 226),[mod("shade", 2025)],rgb(8, 1, 21));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("shade", 5000)],rgb(30, 4, 55));
+		testResult = test(rgb(138, 43, 226),[mod("shade", 2025)],rgb(30, 4, 55));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("shade", 10000)],rgb(44, 8, 78));
 		fTestFunction(testResult);
@@ -8579,7 +8579,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(138, 43, 226),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8621,9 +8621,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("shade", 100)],rgb(0, 2, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("shade", 1000)],rgb(1, 18, 1));
+		testResult = test(rgb(50, 205, 50),[mod("shade", 2025)],rgb(1, 18, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("shade", 5000)],rgb(5, 49, 5));
+		testResult = test(rgb(50, 205, 50),[mod("shade", 2025)],rgb(5, 49, 5));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("shade", 10000)],rgb(11, 70, 11));
 		fTestFunction(testResult);
@@ -8633,7 +8633,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(50, 205, 50),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8675,9 +8675,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("shade", 100)],rgb(3, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("shade", 1000)],rgb(25, 2, 0));
+		testResult = test(rgb(255, 69, 0),[mod("shade", 2025)],rgb(25, 2, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("shade", 5000)],rgb(63, 10, 0));
+		testResult = test(rgb(255, 69, 0),[mod("shade", 2025)],rgb(63, 10, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("shade", 10000)],rgb(89, 18, 0));
 		fTestFunction(testResult);
@@ -8687,7 +8687,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(255, 69, 0),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8729,9 +8729,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("shade", 100)],rgb(0, 1, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("shade", 1000)],rgb(0, 7, 7));
+		testResult = test(rgb(0, 128, 128),[mod("shade", 2025)],rgb(0, 7, 7));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("shade", 5000)],rgb(0, 27, 27));
+		testResult = test(rgb(0, 128, 128),[mod("shade", 2025)],rgb(0, 27, 27));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("shade", 10000)],rgb(0, 40, 40));
 		fTestFunction(testResult);
@@ -8741,7 +8741,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0, 128, 128),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8783,9 +8783,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("shade", 100)],rgb(2, 1, 2));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("shade", 1000)],rgb(20, 5, 19));
+		testResult = test(rgb(218, 112, 214),[mod("shade", 2025)],rgb(20, 5, 19));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("shade", 5000)],rgb(53, 22, 51));
+		testResult = test(rgb(218, 112, 214),[mod("shade", 2025)],rgb(53, 22, 51));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("shade", 10000)],rgb(75, 34, 73));
 		fTestFunction(testResult);
@@ -8795,7 +8795,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(218, 112, 214),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8837,9 +8837,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("shade", 100)],rgb(0, 1, 2));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("shade", 1000)],rgb(2, 7, 14));
+		testResult = test(rgb(70, 130, 180),[mod("shade", 2025)],rgb(2, 7, 14));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("shade", 5000)],rgb(10, 27, 42));
+		testResult = test(rgb(70, 130, 180),[mod("shade", 2025)],rgb(10, 27, 42));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("shade", 10000)],rgb(18, 41, 60));
 		fTestFunction(testResult);
@@ -8849,7 +8849,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(70, 130, 180),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8891,9 +8891,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("shade", 100)],rgb(3, 1, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("shade", 1000)],rgb(25, 12, 0));
+		testResult = test(rgb(255, 165, 0),[mod("shade", 2025)],rgb(25, 12, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("shade", 5000)],rgb(63, 37, 0));
+		testResult = test(rgb(255, 165, 0),[mod("shade", 2025)],rgb(63, 37, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("shade", 10000)],rgb(89, 55, 0));
 		fTestFunction(testResult);
@@ -8903,7 +8903,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(255, 165, 0),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8945,9 +8945,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("shade", 100)],rgb(1, 1, 2));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("shade", 1000)],rgb(10, 5, 20));
+		testResult = test(rgb(147, 112, 219),[mod("shade", 2025)],rgb(10, 5, 20));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("shade", 5000)],rgb(32, 22, 53));
+		testResult = test(rgb(147, 112, 219),[mod("shade", 2025)],rgb(32, 22, 53));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("shade", 10000)],rgb(48, 34, 75));
 		fTestFunction(testResult);
@@ -8957,7 +8957,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(147, 112, 219),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -8999,9 +8999,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("shade", 100)],rgb(0, 1, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("shade", 1000)],rgb(1, 14, 5));
+		testResult = test(rgb(60, 179, 113),[mod("shade", 2025)],rgb(1, 14, 5));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("shade", 5000)],rgb(7, 41, 22));
+		testResult = test(rgb(60, 179, 113),[mod("shade", 2025)],rgb(7, 41, 22));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("shade", 10000)],rgb(14, 60, 35));
 		fTestFunction(testResult);
@@ -9011,7 +9011,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(60, 179, 113),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -9053,9 +9053,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("shade", 100)],rgb(2, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("shade", 1000)],rgb(19, 5, 0));
+		testResult = test(rgb(210, 105, 30),[mod("shade", 2025)],rgb(19, 5, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("shade", 5000)],rgb(50, 20, 2));
+		testResult = test(rgb(210, 105, 30),[mod("shade", 2025)],rgb(50, 20, 2));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("shade", 10000)],rgb(72, 32, 4));
 		fTestFunction(testResult);
@@ -9065,7 +9065,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(210, 105, 30),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -9107,9 +9107,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("shade", 100)],rgb(1, 0, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("shade", 1000)],rgb(7, 5, 23));
+		testResult = test(rgb(123, 104, 238),[mod("shade", 2025)],rgb(7, 5, 23));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("shade", 5000)],rgb(25, 20, 58));
+		testResult = test(rgb(123, 104, 238),[mod("shade", 2025)],rgb(25, 20, 58));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("shade", 10000)],rgb(38, 31, 83));
 		fTestFunction(testResult);
@@ -9119,7 +9119,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(123, 104, 238),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -9161,9 +9161,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("shade", 100)],rgb(0, 2, 2));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("shade", 1000)],rgb(0, 18, 19));
+		testResult = test(rgb(0, 206, 209),[mod("shade", 2025)],rgb(0, 18, 19));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("shade", 5000)],rgb(0, 49, 50));
+		testResult = test(rgb(0, 206, 209),[mod("shade", 2025)],rgb(0, 49, 50));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("shade", 10000)],rgb(0, 70, 71));
 		fTestFunction(testResult);
@@ -9173,7 +9173,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0, 206, 209),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -9215,9 +9215,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("shade", 100)],rgb(3, 0, 2));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("shade", 1000)],rgb(25, 5, 14));
+		testResult = test(rgb(255, 105, 180),[mod("shade", 2025)],rgb(25, 5, 14));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("shade", 5000)],rgb(63, 20, 42));
+		testResult = test(rgb(255, 105, 180),[mod("shade", 2025)],rgb(63, 20, 42));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("shade", 10000)],rgb(89, 32, 60));
 		fTestFunction(testResult);
@@ -9227,7 +9227,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(255, 105, 180),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -9269,9 +9269,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("shade", 100)],rgb(0, 1, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("shade", 1000)],rgb(1, 9, 3));
+		testResult = test(rgb(46, 139, 87),[mod("shade", 2025)],rgb(1, 9, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("shade", 5000)],rgb(5, 30, 15));
+		testResult = test(rgb(46, 139, 87),[mod("shade", 2025)],rgb(5, 30, 15));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("shade", 10000)],rgb(9, 45, 25));
 		fTestFunction(testResult);
@@ -9281,7 +9281,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("shade", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("shade", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(46, 139, 87),[mod("shade", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("shade", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -9385,9 +9385,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blue", 100)],rgb(0, 0, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("blue", 1000)],rgb(0, 0, 25));
+		testResult = test(rgb(0,0,0),[mod("blue", 2025)],rgb(0, 0, 25));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("blue", 5000)],rgb(0, 0, 63));
+		testResult = test(rgb(0,0,0),[mod("blue", 2025)],rgb(0, 0, 63));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blue", 10000)],rgb(0, 0, 89));
 		fTestFunction(testResult);
@@ -9397,7 +9397,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blue", 150000)],rgb(0, 0, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("blue", 200000)],rgb(0, 0, 255));
+		testResult = test(rgb(0,0,0),[mod("blue", 202500)],rgb(0, 0, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blue", 1000000)],rgb(0, 0, 255));
 		fTestFunction(testResult);
@@ -9439,9 +9439,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blue", 100)],rgb(126, 126, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("blue", 1000)],rgb(126, 126, 25));
+		testResult = test(rgb(126,126,126),[mod("blue", 2025)],rgb(126, 126, 25));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("blue", 5000)],rgb(126, 126, 63));
+		testResult = test(rgb(126,126,126),[mod("blue", 2025)],rgb(126, 126, 63));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blue", 10000)],rgb(126, 126, 89));
 		fTestFunction(testResult);
@@ -9451,7 +9451,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blue", 150000)],rgb(126, 126, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("blue", 200000)],rgb(126, 126, 255));
+		testResult = test(rgb(126,126,126),[mod("blue", 202500)],rgb(126, 126, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blue", 1000000)],rgb(126, 126, 255));
 		fTestFunction(testResult);
@@ -9497,9 +9497,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blueMod", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("blueMod", 1000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("blueMod", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("blueMod", 5000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("blueMod", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blueMod", 10000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -9509,7 +9509,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blueMod", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("blueMod", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("blueMod", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blueMod", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -9551,9 +9551,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blueMod", 100)],rgb(126, 126, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("blueMod", 1000)],rgb(126, 126, 7));
+		testResult = test(rgb(126,126,126),[mod("blueMod", 2025)],rgb(126, 126, 7));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("blueMod", 5000)],rgb(126, 126, 26));
+		testResult = test(rgb(126,126,126),[mod("blueMod", 2025)],rgb(126, 126, 26));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blueMod", 10000)],rgb(126, 126, 40));
 		fTestFunction(testResult);
@@ -9563,7 +9563,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blueMod", 150000)],rgb(126, 126, 152));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("blueMod", 200000)],rgb(126, 126, 173));
+		testResult = test(rgb(126,126,126),[mod("blueMod", 202500)],rgb(126, 126, 173));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blueMod", 1000000)],rgb(126, 126, 255));
 		fTestFunction(testResult);
@@ -9605,9 +9605,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("blueMod", 100)],rgb(127, 127, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("blueMod", 1000)],rgb(127, 127, 7));
+		testResult = test(rgb(127,127,127),[mod("blueMod", 2025)],rgb(127, 127, 7));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("blueMod", 5000)],rgb(127, 127, 26));
+		testResult = test(rgb(127,127,127),[mod("blueMod", 2025)],rgb(127, 127, 26));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("blueMod", 10000)],rgb(127, 127, 40));
 		fTestFunction(testResult);
@@ -9617,7 +9617,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("blueMod", 150000)],rgb(127, 127, 153));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("blueMod", 200000)],rgb(127, 127, 174));
+		testResult = test(rgb(127,127,127),[mod("blueMod", 202500)],rgb(127, 127, 174));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("blueMod", 1000000)],rgb(127, 127, 255));
 		fTestFunction(testResult);
@@ -9659,9 +9659,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("blueMod", 100)],rgb(128, 128, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("blueMod", 1000)],rgb(128, 128, 7));
+		testResult = test(rgb(128,128,128),[mod("blueMod", 2025)],rgb(128, 128, 7));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("blueMod", 5000)],rgb(128, 128, 27));
+		testResult = test(rgb(128,128,128),[mod("blueMod", 2025)],rgb(128, 128, 27));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("blueMod", 10000)],rgb(128, 128, 40));
 		fTestFunction(testResult);
@@ -9671,7 +9671,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("blueMod", 150000)],rgb(128, 128, 154));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("blueMod", 200000)],rgb(128, 128, 176));
+		testResult = test(rgb(128,128,128),[mod("blueMod", 202500)],rgb(128, 128, 176));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("blueMod", 1000000)],rgb(128, 128, 255));
 		fTestFunction(testResult);
@@ -9713,9 +9713,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("blueMod", 100)],rgb(200, 200, 2));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("blueMod", 1000)],rgb(200, 200, 17));
+		testResult = test(rgb(200,200,200),[mod("blueMod", 2025)],rgb(200, 200, 17));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("blueMod", 5000)],rgb(200, 200, 47));
+		testResult = test(rgb(200,200,200),[mod("blueMod", 2025)],rgb(200, 200, 47));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("blueMod", 10000)],rgb(200, 200, 68));
 		fTestFunction(testResult);
@@ -9725,7 +9725,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("blueMod", 150000)],rgb(200, 200, 239));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("blueMod", 200000)],rgb(200, 200, 255));
+		testResult = test(rgb(200,200,200),[mod("blueMod", 202500)],rgb(200, 200, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("blueMod", 1000000)],rgb(200, 200, 255));
 		fTestFunction(testResult);
@@ -9767,9 +9767,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("blueMod", 100)],rgb(255, 255, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("blueMod", 1000)],rgb(255, 255, 25));
+		testResult = test(rgb(255,255,255),[mod("blueMod", 2025)],rgb(255, 255, 25));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("blueMod", 5000)],rgb(255, 255, 63));
+		testResult = test(rgb(255,255,255),[mod("blueMod", 2025)],rgb(255, 255, 63));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("blueMod", 10000)],rgb(255, 255, 89));
 		fTestFunction(testResult);
@@ -9779,7 +9779,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("blueMod", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("blueMod", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("blueMod", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("blueMod", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -9801,9 +9801,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("blueMod", 100)],rgb(46, 139, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("blueMod", 1000)],rgb(46, 139, 3));
+		testResult = test(rgb(46, 139, 87),[mod("blueMod", 2025)],rgb(46, 139, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("blueMod", 5000)],rgb(46, 139, 15));
+		testResult = test(rgb(46, 139, 87),[mod("blueMod", 2025)],rgb(46, 139, 15));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("blueMod", 10000)],rgb(46, 139, 25));
 		fTestFunction(testResult);
@@ -9813,7 +9813,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("blueMod", 150000)],rgb(46, 139, 106));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("blueMod", 200000)],rgb(46, 139, 121));
+		testResult = test(rgb(46, 139, 87),[mod("blueMod", 202500)],rgb(46, 139, 121));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("blueMod", 1000000)],rgb(46, 139, 250));
 		fTestFunction(testResult);
@@ -9859,9 +9859,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blueOff", 100)],rgb(0, 0, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("blueOff", 1000)],rgb(0, 0, 25));
+		testResult = test(rgb(0,0,0),[mod("blueOff", 2025)],rgb(0, 0, 25));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("blueOff", 5000)],rgb(0, 0, 63));
+		testResult = test(rgb(0,0,0),[mod("blueOff", 2025)],rgb(0, 0, 63));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blueOff", 10000)],rgb(0, 0, 89));
 		fTestFunction(testResult);
@@ -9871,7 +9871,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blueOff", 150000)],rgb(0, 0, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("blueOff", 200000)],rgb(0, 0, 255));
+		testResult = test(rgb(0,0,0),[mod("blueOff", 202500)],rgb(0, 0, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("blueOff", 1000000)],rgb(0, 0, 255));
 		fTestFunction(testResult);
@@ -9913,9 +9913,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blueOff", 100)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("blueOff", 1000)],rgb(126, 126, 129));
+		testResult = test(rgb(126,126,126),[mod("blueOff", 2025)],rgb(126, 126, 129));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("blueOff", 5000)],rgb(126, 126, 139));
+		testResult = test(rgb(126,126,126),[mod("blueOff", 2025)],rgb(126, 126, 139));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blueOff", 10000)],rgb(126, 126, 151));
 		fTestFunction(testResult);
@@ -9925,7 +9925,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blueOff", 150000)],rgb(126, 126, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("blueOff", 200000)],rgb(126, 126, 255));
+		testResult = test(rgb(126,126,126),[mod("blueOff", 202500)],rgb(126, 126, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("blueOff", 1000000)],rgb(126, 126, 255));
 		fTestFunction(testResult);
@@ -9967,9 +9967,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("blueOff", 100)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("blueOff", 1000)],rgb(127, 127, 130));
+		testResult = test(rgb(127,127,127),[mod("blueOff", 2025)],rgb(127, 127, 130));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("blueOff", 5000)],rgb(127, 127, 140));
+		testResult = test(rgb(127,127,127),[mod("blueOff", 2025)],rgb(127, 127, 140));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("blueOff", 10000)],rgb(127, 127, 152));
 		fTestFunction(testResult);
@@ -9979,7 +9979,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("blueOff", 150000)],rgb(127, 127, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("blueOff", 200000)],rgb(127, 127, 255));
+		testResult = test(rgb(127,127,127),[mod("blueOff", 202500)],rgb(127, 127, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("blueOff", 1000000)],rgb(127, 127, 255));
 		fTestFunction(testResult);
@@ -10021,9 +10021,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("blueOff", 100)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("blueOff", 1000)],rgb(128, 128, 131));
+		testResult = test(rgb(128,128,128),[mod("blueOff", 2025)],rgb(128, 128, 131));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("blueOff", 5000)],rgb(128, 128, 141));
+		testResult = test(rgb(128,128,128),[mod("blueOff", 2025)],rgb(128, 128, 141));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("blueOff", 10000)],rgb(128, 128, 152));
 		fTestFunction(testResult);
@@ -10033,7 +10033,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("blueOff", 150000)],rgb(128, 128, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("blueOff", 200000)],rgb(128, 128, 255));
+		testResult = test(rgb(128,128,128),[mod("blueOff", 202500)],rgb(128, 128, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("blueOff", 1000000)],rgb(128, 128, 255));
 		fTestFunction(testResult);
@@ -10075,9 +10075,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("blueOff", 100)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("blueOff", 1000)],rgb(200, 200, 202));
+		testResult = test(rgb(200,200,200),[mod("blueOff", 2025)],rgb(200, 200, 202));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("blueOff", 5000)],rgb(200, 200, 208));
+		testResult = test(rgb(200,200,200),[mod("blueOff", 2025)],rgb(200, 200, 208));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("blueOff", 10000)],rgb(200, 200, 215));
 		fTestFunction(testResult);
@@ -10087,7 +10087,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("blueOff", 150000)],rgb(200, 200, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("blueOff", 200000)],rgb(200, 200, 255));
+		testResult = test(rgb(200,200,200),[mod("blueOff", 202500)],rgb(200, 200, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("blueOff", 1000000)],rgb(200, 200, 255));
 		fTestFunction(testResult);
@@ -10129,9 +10129,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("blueOff", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("blueOff", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("blueOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("blueOff", 5000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("blueOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("blueOff", 10000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -10141,7 +10141,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("blueOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("blueOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("blueOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("blueOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -10183,9 +10183,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("blueOff", 100)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("blueOff", 1000)],rgb(100, 100, 104));
+		testResult = test(rgb(100,100,100),[mod("blueOff", 2025)],rgb(100, 100, 104));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("blueOff", 5000)],rgb(100, 100, 117));
+		testResult = test(rgb(100,100,100),[mod("blueOff", 2025)],rgb(100, 100, 117));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("blueOff", 10000)],rgb(100, 100, 131));
 		fTestFunction(testResult);
@@ -10195,7 +10195,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("blueOff", 150000)],rgb(100, 100, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("blueOff", 200000)],rgb(100, 100, 255));
+		testResult = test(rgb(100,100,100),[mod("blueOff", 202500)],rgb(100, 100, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("blueOff", 1000000)],rgb(100, 100, 255));
 		fTestFunction(testResult);
@@ -10241,9 +10241,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("blueOff", 100)],rgb(255, 165, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("blueOff", 1000)],rgb(255, 165, 25));
+		testResult = test(rgb(255, 165, 0),[mod("blueOff", 2025)],rgb(255, 165, 25));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("blueOff", 5000)],rgb(255, 165, 63));
+		testResult = test(rgb(255, 165, 0),[mod("blueOff", 2025)],rgb(255, 165, 63));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("blueOff", 10000)],rgb(255, 165, 89));
 		fTestFunction(testResult);
@@ -10253,7 +10253,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("blueOff", 150000)],rgb(255, 165, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("blueOff", 200000)],rgb(255, 165, 255));
+		testResult = test(rgb(255, 165, 0),[mod("blueOff", 202500)],rgb(255, 165, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("blueOff", 1000000)],rgb(255, 165, 255));
 		fTestFunction(testResult);
@@ -10295,9 +10295,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("blueOff", 100)],rgb(147, 112, 219));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("blueOff", 1000)],rgb(147, 112, 220));
+		testResult = test(rgb(147, 112, 219),[mod("blueOff", 2025)],rgb(147, 112, 220));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("blueOff", 5000)],rgb(147, 112, 226));
+		testResult = test(rgb(147, 112, 219),[mod("blueOff", 2025)],rgb(147, 112, 226));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("blueOff", 10000)],rgb(147, 112, 232));
 		fTestFunction(testResult);
@@ -10307,7 +10307,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("blueOff", 150000)],rgb(147, 112, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("blueOff", 200000)],rgb(147, 112, 255));
+		testResult = test(rgb(147, 112, 219),[mod("blueOff", 202500)],rgb(147, 112, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("blueOff", 1000000)],rgb(147, 112, 255));
 		fTestFunction(testResult);
@@ -10349,9 +10349,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("blueOff", 100)],rgb(60, 179, 113));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("blueOff", 1000)],rgb(60, 179, 116));
+		testResult = test(rgb(60, 179, 113),[mod("blueOff", 2025)],rgb(60, 179, 116));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("blueOff", 5000)],rgb(60, 179, 128));
+		testResult = test(rgb(60, 179, 113),[mod("blueOff", 2025)],rgb(60, 179, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("blueOff", 10000)],rgb(60, 179, 141));
 		fTestFunction(testResult);
@@ -10361,7 +10361,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("blueOff", 150000)],rgb(60, 179, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("blueOff", 200000)],rgb(60, 179, 255));
+		testResult = test(rgb(60, 179, 113),[mod("blueOff", 202500)],rgb(60, 179, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("blueOff", 1000000)],rgb(60, 179, 255));
 		fTestFunction(testResult);
@@ -10403,9 +10403,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("blueOff", 100)],rgb(210, 105, 31));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("blueOff", 1000)],rgb(210, 105, 42));
+		testResult = test(rgb(210, 105, 30),[mod("blueOff", 2025)],rgb(210, 105, 42));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("blueOff", 5000)],rgb(210, 105, 71));
+		testResult = test(rgb(210, 105, 30),[mod("blueOff", 2025)],rgb(210, 105, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("blueOff", 10000)],rgb(210, 105, 94));
 		fTestFunction(testResult);
@@ -10415,7 +10415,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("blueOff", 150000)],rgb(210, 105, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("blueOff", 200000)],rgb(210, 105, 255));
+		testResult = test(rgb(210, 105, 30),[mod("blueOff", 202500)],rgb(210, 105, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("blueOff", 1000000)],rgb(210, 105, 255));
 		fTestFunction(testResult);
@@ -10457,9 +10457,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("blueOff", 100)],rgb(123, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("blueOff", 1000)],rgb(123, 104, 239));
+		testResult = test(rgb(123, 104, 238),[mod("blueOff", 2025)],rgb(123, 104, 239));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("blueOff", 5000)],rgb(123, 104, 244));
+		testResult = test(rgb(123, 104, 238),[mod("blueOff", 2025)],rgb(123, 104, 244));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("blueOff", 10000)],rgb(123, 104, 250));
 		fTestFunction(testResult);
@@ -10469,7 +10469,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("blueOff", 150000)],rgb(123, 104, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("blueOff", 200000)],rgb(123, 104, 255));
+		testResult = test(rgb(123, 104, 238),[mod("blueOff", 202500)],rgb(123, 104, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("blueOff", 1000000)],rgb(123, 104, 255));
 		fTestFunction(testResult);
@@ -10511,9 +10511,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("blueOff", 100)],rgb(0, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("blueOff", 1000)],rgb(0, 206, 210));
+		testResult = test(rgb(0, 206, 209),[mod("blueOff", 2025)],rgb(0, 206, 210));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("blueOff", 5000)],rgb(0, 206, 216));
+		testResult = test(rgb(0, 206, 209),[mod("blueOff", 2025)],rgb(0, 206, 216));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("blueOff", 10000)],rgb(0, 206, 223));
 		fTestFunction(testResult);
@@ -10523,7 +10523,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("blueOff", 150000)],rgb(0, 206, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("blueOff", 200000)],rgb(0, 206, 255));
+		testResult = test(rgb(0, 206, 209),[mod("blueOff", 202500)],rgb(0, 206, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("blueOff", 1000000)],rgb(0, 206, 255));
 		fTestFunction(testResult);
@@ -10565,9 +10565,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("blueOff", 100)],rgb(255, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("blueOff", 1000)],rgb(255, 105, 182));
+		testResult = test(rgb(255, 105, 180),[mod("blueOff", 2025)],rgb(255, 105, 182));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("blueOff", 5000)],rgb(255, 105, 189));
+		testResult = test(rgb(255, 105, 180),[mod("blueOff", 2025)],rgb(255, 105, 189));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("blueOff", 10000)],rgb(255, 105, 197));
 		fTestFunction(testResult);
@@ -10577,7 +10577,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("blueOff", 150000)],rgb(255, 105, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("blueOff", 200000)],rgb(255, 105, 255));
+		testResult = test(rgb(255, 105, 180),[mod("blueOff", 202500)],rgb(255, 105, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("blueOff", 1000000)],rgb(255, 105, 255));
 		fTestFunction(testResult);
@@ -10619,9 +10619,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("blueOff", 100)],rgb(46, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("blueOff", 1000)],rgb(46, 139, 91));
+		testResult = test(rgb(46, 139, 87),[mod("blueOff", 2025)],rgb(46, 139, 91));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("blueOff", 5000)],rgb(46, 139, 106));
+		testResult = test(rgb(46, 139, 87),[mod("blueOff", 2025)],rgb(46, 139, 106));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("blueOff", 10000)],rgb(46, 139, 122));
 		fTestFunction(testResult);
@@ -10631,7 +10631,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("blueOff", 150000)],rgb(46, 139, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("blueOff", 200000)],rgb(46, 139, 255));
+		testResult = test(rgb(46, 139, 87),[mod("blueOff", 202500)],rgb(46, 139, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("blueOff", 1000000)],rgb(46, 139, 255));
 		fTestFunction(testResult);
@@ -10735,9 +10735,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("green", 100)],rgb(0, 3, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("green", 1000)],rgb(0, 25, 0));
+		testResult = test(rgb(0,0,0),[mod("green", 2025)],rgb(0, 25, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("green", 5000)],rgb(0, 63, 0));
+		testResult = test(rgb(0,0,0),[mod("green", 2025)],rgb(0, 63, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("green", 10000)],rgb(0, 89, 0));
 		fTestFunction(testResult);
@@ -10747,7 +10747,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("green", 150000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("green", 200000)],rgb(0, 255, 0));
+		testResult = test(rgb(0,0,0),[mod("green", 202500)],rgb(0, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("green", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -10789,9 +10789,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("green", 100)],rgb(126, 3, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("green", 1000)],rgb(126, 25, 126));
+		testResult = test(rgb(126,126,126),[mod("green", 2025)],rgb(126, 25, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("green", 5000)],rgb(126, 63, 126));
+		testResult = test(rgb(126,126,126),[mod("green", 2025)],rgb(126, 63, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("green", 10000)],rgb(126, 89, 126));
 		fTestFunction(testResult);
@@ -10801,7 +10801,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("green", 150000)],rgb(126, 255, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("green", 200000)],rgb(126, 255, 126));
+		testResult = test(rgb(126,126,126),[mod("green", 202500)],rgb(126, 255, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("green", 1000000)],rgb(126, 255, 126));
 		fTestFunction(testResult);
@@ -10843,9 +10843,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("green", 100)],rgb(127, 3, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("green", 1000)],rgb(127, 25, 127));
+		testResult = test(rgb(127,127,127),[mod("green", 2025)],rgb(127, 25, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("green", 5000)],rgb(127, 63, 127));
+		testResult = test(rgb(127,127,127),[mod("green", 2025)],rgb(127, 63, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("green", 10000)],rgb(127, 89, 127));
 		fTestFunction(testResult);
@@ -10855,7 +10855,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("green", 150000)],rgb(127, 255, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("green", 200000)],rgb(127, 255, 127));
+		testResult = test(rgb(127,127,127),[mod("green", 202500)],rgb(127, 255, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("green", 1000000)],rgb(127, 255, 127));
 		fTestFunction(testResult);
@@ -10897,9 +10897,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("green", 100)],rgb(128, 3, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("green", 1000)],rgb(128, 25, 128));
+		testResult = test(rgb(128,128,128),[mod("green", 2025)],rgb(128, 25, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("green", 5000)],rgb(128, 63, 128));
+		testResult = test(rgb(128,128,128),[mod("green", 2025)],rgb(128, 63, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("green", 10000)],rgb(128, 89, 128));
 		fTestFunction(testResult);
@@ -10909,7 +10909,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("green", 150000)],rgb(128, 255, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("green", 200000)],rgb(128, 255, 128));
+		testResult = test(rgb(128,128,128),[mod("green", 202500)],rgb(128, 255, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("green", 1000000)],rgb(128, 255, 128));
 		fTestFunction(testResult);
@@ -10951,9 +10951,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("green", 100)],rgb(200, 3, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("green", 1000)],rgb(200, 25, 200));
+		testResult = test(rgb(200,200,200),[mod("green", 2025)],rgb(200, 25, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("green", 5000)],rgb(200, 63, 200));
+		testResult = test(rgb(200,200,200),[mod("green", 2025)],rgb(200, 63, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("green", 10000)],rgb(200, 89, 200));
 		fTestFunction(testResult);
@@ -10963,7 +10963,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("green", 150000)],rgb(200, 255, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("green", 200000)],rgb(200, 255, 200));
+		testResult = test(rgb(200,200,200),[mod("green", 202500)],rgb(200, 255, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("green", 1000000)],rgb(200, 255, 200));
 		fTestFunction(testResult);
@@ -11005,9 +11005,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("green", 100)],rgb(255, 3, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("green", 1000)],rgb(255, 25, 255));
+		testResult = test(rgb(255,255,255),[mod("green", 2025)],rgb(255, 25, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("green", 5000)],rgb(255, 63, 255));
+		testResult = test(rgb(255,255,255),[mod("green", 2025)],rgb(255, 63, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("green", 10000)],rgb(255, 89, 255));
 		fTestFunction(testResult);
@@ -11017,7 +11017,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("green", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("green", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("green", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("green", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -11059,9 +11059,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("green", 100)],rgb(100, 3, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("green", 1000)],rgb(100, 25, 100));
+		testResult = test(rgb(100,100,100),[mod("green", 2025)],rgb(100, 25, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("green", 5000)],rgb(100, 63, 100));
+		testResult = test(rgb(100,100,100),[mod("green", 2025)],rgb(100, 63, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("green", 10000)],rgb(100, 89, 100));
 		fTestFunction(testResult);
@@ -11071,7 +11071,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("green", 150000)],rgb(100, 255, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("green", 200000)],rgb(100, 255, 100));
+		testResult = test(rgb(100,100,100),[mod("green", 202500)],rgb(100, 255, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("green", 1000000)],rgb(100, 255, 100));
 		fTestFunction(testResult);
@@ -11095,7 +11095,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("green", 150000)],rgb(255, 255, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("green", 200000)],rgb(255, 255, 180));
+		testResult = test(rgb(255, 105, 180),[mod("green", 202500)],rgb(255, 255, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("green", 1000000)],rgb(255, 255, 180));
 		fTestFunction(testResult);
@@ -11137,9 +11137,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("green", 100)],rgb(46, 3, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("green", 1000)],rgb(46, 25, 87));
+		testResult = test(rgb(46, 139, 87),[mod("green", 2025)],rgb(46, 25, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("green", 5000)],rgb(46, 63, 87));
+		testResult = test(rgb(46, 139, 87),[mod("green", 2025)],rgb(46, 63, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("green", 10000)],rgb(46, 89, 87));
 		fTestFunction(testResult);
@@ -11149,7 +11149,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("green", 150000)],rgb(46, 255, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("green", 200000)],rgb(46, 255, 87));
+		testResult = test(rgb(46, 139, 87),[mod("green", 202500)],rgb(46, 255, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("green", 1000000)],rgb(46, 255, 87));
 		fTestFunction(testResult);
@@ -11195,9 +11195,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("greenMod", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("greenMod", 1000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("greenMod", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("greenMod", 5000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("greenMod", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("greenMod", 10000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -11207,7 +11207,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("greenMod", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("greenMod", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("greenMod", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("greenMod", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -11249,9 +11249,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("greenMod", 100)],rgb(126, 1, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("greenMod", 1000)],rgb(126, 7, 126));
+		testResult = test(rgb(126,126,126),[mod("greenMod", 2025)],rgb(126, 7, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("greenMod", 5000)],rgb(126, 26, 126));
+		testResult = test(rgb(126,126,126),[mod("greenMod", 2025)],rgb(126, 26, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("greenMod", 10000)],rgb(126, 40, 126));
 		fTestFunction(testResult);
@@ -11261,7 +11261,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("greenMod", 150000)],rgb(126, 152, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("greenMod", 200000)],rgb(126, 173, 126));
+		testResult = test(rgb(126,126,126),[mod("greenMod", 202500)],rgb(126, 173, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("greenMod", 1000000)],rgb(126, 255, 126));
 		fTestFunction(testResult);
@@ -11303,9 +11303,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("greenMod", 100)],rgb(127, 1, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("greenMod", 1000)],rgb(127, 7, 127));
+		testResult = test(rgb(127,127,127),[mod("greenMod", 2025)],rgb(127, 7, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("greenMod", 5000)],rgb(127, 26, 127));
+		testResult = test(rgb(127,127,127),[mod("greenMod", 2025)],rgb(127, 26, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("greenMod", 10000)],rgb(127, 40, 127));
 		fTestFunction(testResult);
@@ -11315,7 +11315,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("greenMod", 150000)],rgb(127, 153, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("greenMod", 200000)],rgb(127, 174, 127));
+		testResult = test(rgb(127,127,127),[mod("greenMod", 202500)],rgb(127, 174, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("greenMod", 1000000)],rgb(127, 255, 127));
 		fTestFunction(testResult);
@@ -11357,9 +11357,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("greenMod", 100)],rgb(128, 1, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("greenMod", 1000)],rgb(128, 7, 128));
+		testResult = test(rgb(128,128,128),[mod("greenMod", 2025)],rgb(128, 7, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("greenMod", 5000)],rgb(128, 27, 128));
+		testResult = test(rgb(128,128,128),[mod("greenMod", 2025)],rgb(128, 27, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("greenMod", 10000)],rgb(128, 40, 128));
 		fTestFunction(testResult);
@@ -11369,7 +11369,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("greenMod", 150000)],rgb(128, 154, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("greenMod", 200000)],rgb(128, 176, 128));
+		testResult = test(rgb(128,128,128),[mod("greenMod", 202500)],rgb(128, 176, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("greenMod", 1000000)],rgb(128, 255, 128));
 		fTestFunction(testResult);
@@ -11411,9 +11411,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("greenMod", 100)],rgb(200, 2, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("greenMod", 1000)],rgb(200, 17, 200));
+		testResult = test(rgb(200,200,200),[mod("greenMod", 2025)],rgb(200, 17, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("greenMod", 5000)],rgb(200, 47, 200));
+		testResult = test(rgb(200,200,200),[mod("greenMod", 2025)],rgb(200, 47, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("greenMod", 10000)],rgb(200, 68, 200));
 		fTestFunction(testResult);
@@ -11423,7 +11423,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("greenMod", 150000)],rgb(200, 239, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("greenMod", 200000)],rgb(200, 255, 200));
+		testResult = test(rgb(200,200,200),[mod("greenMod", 202500)],rgb(200, 255, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("greenMod", 1000000)],rgb(200, 255, 200));
 		fTestFunction(testResult);
@@ -11465,9 +11465,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("greenMod", 100)],rgb(255, 3, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("greenMod", 1000)],rgb(255, 25, 255));
+		testResult = test(rgb(255,255,255),[mod("greenMod", 2025)],rgb(255, 25, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("greenMod", 5000)],rgb(255, 63, 255));
+		testResult = test(rgb(255,255,255),[mod("greenMod", 2025)],rgb(255, 63, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("greenMod", 10000)],rgb(255, 89, 255));
 		fTestFunction(testResult);
@@ -11477,7 +11477,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("greenMod", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("greenMod", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("greenMod", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("greenMod", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -11519,9 +11519,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("greenMod", 100)],rgb(100, 0, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("greenMod", 1000)],rgb(100, 4, 100));
+		testResult = test(rgb(100,100,100),[mod("greenMod", 2025)],rgb(100, 4, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("greenMod", 5000)],rgb(100, 19, 100));
+		testResult = test(rgb(100,100,100),[mod("greenMod", 2025)],rgb(100, 19, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("greenMod", 10000)],rgb(100, 30, 100));
 		fTestFunction(testResult);
@@ -11531,7 +11531,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("greenMod", 150000)],rgb(100, 121, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("greenMod", 200000)],rgb(100, 138, 100));
+		testResult = test(rgb(100,100,100),[mod("greenMod", 202500)],rgb(100, 138, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("greenMod", 1000000)],rgb(100, 255, 100));
 		fTestFunction(testResult);
@@ -11573,9 +11573,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("greenMod", 100)],rgb(34, 1, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("greenMod", 1000)],rgb(34, 9, 34));
+		testResult = test(rgb(34, 139, 34),[mod("greenMod", 2025)],rgb(34, 9, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("greenMod", 5000)],rgb(34, 30, 34));
+		testResult = test(rgb(34, 139, 34),[mod("greenMod", 2025)],rgb(34, 30, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("greenMod", -1000000)],rgb(255, 0, 180));
 		fTestFunction(testResult);
@@ -11615,9 +11615,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("greenMod", 100)],rgb(46, 1, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("greenMod", 1000)],rgb(46, 9, 87));
+		testResult = test(rgb(46, 139, 87),[mod("greenMod", 2025)],rgb(46, 9, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("greenMod", 5000)],rgb(46, 30, 87));
+		testResult = test(rgb(46, 139, 87),[mod("greenMod", 2025)],rgb(46, 30, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("greenMod", 10000)],rgb(46, 45, 87));
 		fTestFunction(testResult);
@@ -11627,7 +11627,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("greenMod", 150000)],rgb(46, 167, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("greenMod", 200000)],rgb(46, 190, 87));
+		testResult = test(rgb(46, 139, 87),[mod("greenMod", 202500)],rgb(46, 190, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("greenMod", 1000000)],rgb(46, 255, 87));
 		fTestFunction(testResult);
@@ -11673,9 +11673,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("greenOff", 100)],rgb(0, 3, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("greenOff", 1000)],rgb(0, 25, 0));
+		testResult = test(rgb(0,0,0),[mod("greenOff", 2025)],rgb(0, 25, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("greenOff", 5000)],rgb(0, 63, 0));
+		testResult = test(rgb(0,0,0),[mod("greenOff", 2025)],rgb(0, 63, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("greenOff", 10000)],rgb(0, 89, 0));
 		fTestFunction(testResult);
@@ -11685,7 +11685,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("greenOff", 150000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("greenOff", 200000)],rgb(0, 255, 0));
+		testResult = test(rgb(0,0,0),[mod("greenOff", 202500)],rgb(0, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("greenOff", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -11727,9 +11727,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("greenOff", 100)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("greenOff", 1000)],rgb(126, 129, 126));
+		testResult = test(rgb(126,126,126),[mod("greenOff", 2025)],rgb(126, 129, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("greenOff", 5000)],rgb(126, 139, 126));
+		testResult = test(rgb(126,126,126),[mod("greenOff", 2025)],rgb(126, 139, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("greenOff", 10000)],rgb(126, 151, 126));
 		fTestFunction(testResult);
@@ -11739,7 +11739,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("greenOff", 150000)],rgb(126, 255, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("greenOff", 200000)],rgb(126, 255, 126));
+		testResult = test(rgb(126,126,126),[mod("greenOff", 202500)],rgb(126, 255, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("greenOff", 1000000)],rgb(126, 255, 126));
 		fTestFunction(testResult);
@@ -11781,9 +11781,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("greenOff", 100)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("greenOff", 1000)],rgb(127, 130, 127));
+		testResult = test(rgb(127,127,127),[mod("greenOff", 2025)],rgb(127, 130, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("greenOff", 5000)],rgb(127, 140, 127));
+		testResult = test(rgb(127,127,127),[mod("greenOff", 2025)],rgb(127, 140, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("greenOff", 10000)],rgb(127, 152, 127));
 		fTestFunction(testResult);
@@ -11793,7 +11793,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("greenOff", 150000)],rgb(127, 255, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("greenOff", 200000)],rgb(127, 255, 127));
+		testResult = test(rgb(127,127,127),[mod("greenOff", 202500)],rgb(127, 255, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("greenOff", 1000000)],rgb(127, 255, 127));
 		fTestFunction(testResult);
@@ -11835,9 +11835,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("greenOff", 100)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("greenOff", 1000)],rgb(128, 131, 128));
+		testResult = test(rgb(128,128,128),[mod("greenOff", 2025)],rgb(128, 131, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("greenOff", 5000)],rgb(128, 141, 128));
+		testResult = test(rgb(128,128,128),[mod("greenOff", 2025)],rgb(128, 141, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("greenOff", 10000)],rgb(128, 152, 128));
 		fTestFunction(testResult);
@@ -11847,7 +11847,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("greenOff", 150000)],rgb(128, 255, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("greenOff", 200000)],rgb(128, 255, 128));
+		testResult = test(rgb(128,128,128),[mod("greenOff", 202500)],rgb(128, 255, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("greenOff", 1000000)],rgb(128, 255, 128));
 		fTestFunction(testResult);
@@ -11889,9 +11889,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("greenOff", 100)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("greenOff", 1000)],rgb(200, 202, 200));
+		testResult = test(rgb(200,200,200),[mod("greenOff", 2025)],rgb(200, 202, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("greenOff", 5000)],rgb(200, 208, 200));
+		testResult = test(rgb(200,200,200),[mod("greenOff", 2025)],rgb(200, 208, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("greenOff", 10000)],rgb(200, 215, 200));
 		fTestFunction(testResult);
@@ -11901,7 +11901,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("greenOff", 150000)],rgb(200, 255, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("greenOff", 200000)],rgb(200, 255, 200));
+		testResult = test(rgb(200,200,200),[mod("greenOff", 202500)],rgb(200, 255, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("greenOff", 1000000)],rgb(200, 255, 200));
 		fTestFunction(testResult);
@@ -11943,9 +11943,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("greenOff", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("greenOff", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("greenOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("greenOff", 5000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("greenOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("greenOff", 10000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -11955,7 +11955,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("greenOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("greenOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("greenOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("greenOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -11997,9 +11997,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("greenOff", 100)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("greenOff", 1000)],rgb(100, 104, 100));
+		testResult = test(rgb(100,100,100),[mod("greenOff", 2025)],rgb(100, 104, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("greenOff", 5000)],rgb(100, 117, 100));
+		testResult = test(rgb(100,100,100),[mod("greenOff", 2025)],rgb(100, 117, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("greenOff", 10000)],rgb(100, 131, 100));
 		fTestFunction(testResult);
@@ -12009,7 +12009,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("greenOff", 150000)],rgb(100, 255, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("greenOff", 200000)],rgb(100, 255, 100));
+		testResult = test(rgb(100,100,100),[mod("greenOff", 202500)],rgb(100, 255, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("greenOff", 1000000)],rgb(100, 255, 100));
 		fTestFunction(testResult);
@@ -12051,9 +12051,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("greenOff", 100)],rgb(34, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("greenOff", 1000)],rgb(123, 107, 238));
+		testResult = test(rgb(123, 104, 238),[mod("greenOff", 2025)],rgb(123, 107, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("greenOff", 5000)],rgb(123, 120, 238));
+		testResult = test(rgb(123, 104, 238),[mod("greenOff", 2025)],rgb(123, 120, 238));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("greenOff", 10000)],rgb(123, 134, 238));
 		fTestFunction(testResult);
@@ -12063,7 +12063,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("greenOff", 150000)],rgb(123, 255, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("greenOff", 200000)],rgb(123, 255, 238));
+		testResult = test(rgb(123, 104, 238),[mod("greenOff", 202500)],rgb(123, 255, 238));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("greenOff", 1000000)],rgb(123, 255, 238));
 		fTestFunction(testResult);
@@ -12105,9 +12105,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("greenOff", 100)],rgb(0, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("greenOff", 1000)],rgb(0, 207, 209));
+		testResult = test(rgb(0, 206, 209),[mod("greenOff", 2025)],rgb(0, 207, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("greenOff", 5000)],rgb(0, 213, 209));
+		testResult = test(rgb(0, 206, 209),[mod("greenOff", 2025)],rgb(0, 213, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("greenOff", 10000)],rgb(0, 220, 209));
 		fTestFunction(testResult);
@@ -12117,7 +12117,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("greenOff", 150000)],rgb(0, 255, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("greenOff", 200000)],rgb(0, 255, 209));
+		testResult = test(rgb(0, 206, 209),[mod("greenOff", 202500)],rgb(0, 255, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("greenOff", 1000000)],rgb(0, 255, 209));
 		fTestFunction(testResult);
@@ -12159,9 +12159,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("greenOff", 100)],rgb(255, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("greenOff", 1000)],rgb(255, 108, 180));
+		testResult = test(rgb(255, 105, 180),[mod("greenOff", 2025)],rgb(255, 108, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("greenOff", 5000)],rgb(255, 121, 180));
+		testResult = test(rgb(255, 105, 180),[mod("greenOff", 2025)],rgb(255, 121, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("greenOff", 10000)],rgb(255, 135, 180));
 		fTestFunction(testResult);
@@ -12171,7 +12171,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("greenOff", 150000)],rgb(255, 255, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("greenOff", 200000)],rgb(255, 255, 180));
+		testResult = test(rgb(255, 105, 180),[mod("greenOff", 202500)],rgb(255, 255, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("greenOff", 1000000)],rgb(255, 255, 180));
 		fTestFunction(testResult);
@@ -12213,9 +12213,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("greenOff", 100)],rgb(46, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("greenOff", 1000)],rgb(46, 141, 87));
+		testResult = test(rgb(46, 139, 87),[mod("greenOff", 2025)],rgb(46, 141, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("greenOff", 5000)],rgb(46, 151, 87));
+		testResult = test(rgb(46, 139, 87),[mod("greenOff", 2025)],rgb(46, 151, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("greenOff", 10000)],rgb(46, 161, 87));
 		fTestFunction(testResult);
@@ -12225,7 +12225,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("greenOff", 150000)],rgb(46, 255, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("greenOff", 200000)],rgb(46, 255, 87));
+		testResult = test(rgb(46, 139, 87),[mod("greenOff", 202500)],rgb(46, 255, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("greenOff", 1000000)],rgb(46, 255, 87));
 		fTestFunction(testResult);
@@ -12329,9 +12329,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("red", 100)],rgb(3, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("red", 1000)],rgb(25, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("red", 2025)],rgb(25, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("red", 5000)],rgb(63, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("red", 2025)],rgb(63, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("red", 10000)],rgb(89, 0, 0));
 		fTestFunction(testResult);
@@ -12341,7 +12341,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("red", 150000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("red", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("red", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("red", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -12383,9 +12383,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("red", 100)],rgb(3, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("red", 1000)],rgb(25, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("red", 2025)],rgb(25, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("red", 5000)],rgb(63, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("red", 2025)],rgb(63, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("red", 10000)],rgb(89, 126, 126));
 		fTestFunction(testResult);
@@ -12395,7 +12395,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("red", 150000)],rgb(255, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("red", 200000)],rgb(255, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("red", 202500)],rgb(255, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("red", 1000000)],rgb(255, 126, 126));
 		fTestFunction(testResult);
@@ -12437,9 +12437,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("red", 100)],rgb(3, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("red", 1000)],rgb(25, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("red", 2025)],rgb(25, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("red", 5000)],rgb(63, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("red", 2025)],rgb(63, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("red", 10000)],rgb(89, 127, 127));
 		fTestFunction(testResult);
@@ -12449,7 +12449,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("red", 150000)],rgb(255, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("red", 200000)],rgb(255, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("red", 202500)],rgb(255, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("red", 1000000)],rgb(255, 127, 127));
 		fTestFunction(testResult);
@@ -12491,9 +12491,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("red", 100)],rgb(3, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("red", 1000)],rgb(25, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("red", 2025)],rgb(25, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("red", 5000)],rgb(63, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("red", 2025)],rgb(63, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("red", 10000)],rgb(89, 128, 128));
 		fTestFunction(testResult);
@@ -12503,7 +12503,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("red", 150000)],rgb(255, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("red", 200000)],rgb(255, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("red", 202500)],rgb(255, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("red", 1000000)],rgb(255, 128, 128));
 		fTestFunction(testResult);
@@ -12545,9 +12545,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("red", 100)],rgb(3, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("red", 1000)],rgb(25, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("red", 2025)],rgb(25, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("red", 5000)],rgb(63, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("red", 2025)],rgb(63, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("red", 10000)],rgb(89, 200, 200));
 		fTestFunction(testResult);
@@ -12557,7 +12557,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("red", 150000)],rgb(255, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("red", 200000)],rgb(255, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("red", 202500)],rgb(255, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("red", 1000000)],rgb(255, 200, 200));
 		fTestFunction(testResult);
@@ -12599,9 +12599,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("red", 100)],rgb(3, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("red", 1000)],rgb(25, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("red", 2025)],rgb(25, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("red", 5000)],rgb(63, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("red", 2025)],rgb(63, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("red", 10000)],rgb(89, 255, 255));
 		fTestFunction(testResult);
@@ -12611,7 +12611,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("red", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("red", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("red", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("red", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -12653,9 +12653,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("red", 100)],rgb(3, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("red", 1000)],rgb(25, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("red", 2025)],rgb(25, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("red", 5000)],rgb(63, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("red", 2025)],rgb(63, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("red", 10000)],rgb(89, 100, 100));
 		fTestFunction(testResult);
@@ -12665,7 +12665,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("red", 150000)],rgb(255, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("red", 200000)],rgb(255, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("red", 202500)],rgb(255, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("red", 1000000)],rgb(255, 100, 100));
 		fTestFunction(testResult);
@@ -12707,9 +12707,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("red", 100)],rgb(3, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("red", 1000)],rgb(25, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("red", 2025)],rgb(25, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("red", 5000)],rgb(63, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("red", 2025)],rgb(63, 139, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("red", 10000)],rgb(89, 139, 34));
 		fTestFunction(testResult);
@@ -12719,7 +12719,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("red", 150000)],rgb(255, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("red", 200000)],rgb(255, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("red", 202500)],rgb(255, 139, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("red", 1000000)],rgb(255, 139, 34));
 		fTestFunction(testResult);
@@ -12749,7 +12749,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("red", 150000)],rgb(255, 179, 113));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("red", 200000)],rgb(255, 179, 113));
+		testResult = test(rgb(60, 179, 113),[mod("red", 202500)],rgb(255, 179, 113));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("red", 1000000)],rgb(255, 179, 113));
 		fTestFunction(testResult);
@@ -12791,9 +12791,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("red", 100)],rgb(3, 105, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("red", 1000)],rgb(25, 105, 30));
+		testResult = test(rgb(210, 105, 30),[mod("red", 2025)],rgb(25, 105, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("red", 5000)],rgb(63, 105, 30));
+		testResult = test(rgb(210, 105, 30),[mod("red", 2025)],rgb(63, 105, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("red", 10000)],rgb(89, 105, 30));
 		fTestFunction(testResult);
@@ -12803,7 +12803,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("red", 150000)],rgb(255, 105, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("red", 200000)],rgb(255, 105, 30));
+		testResult = test(rgb(210, 105, 30),[mod("red", 202500)],rgb(255, 105, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("red", 1000000)],rgb(255, 105, 30));
 		fTestFunction(testResult);
@@ -12845,9 +12845,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("red", 100)],rgb(3, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("red", 1000)],rgb(25, 104, 238));
+		testResult = test(rgb(123, 104, 238),[mod("red", 2025)],rgb(25, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("red", 5000)],rgb(63, 104, 238));
+		testResult = test(rgb(123, 104, 238),[mod("red", 2025)],rgb(63, 104, 238));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("red", 10000)],rgb(89, 104, 238));
 		fTestFunction(testResult);
@@ -12857,7 +12857,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("red", 150000)],rgb(255, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("red", 200000)],rgb(255, 104, 238));
+		testResult = test(rgb(123, 104, 238),[mod("red", 202500)],rgb(255, 104, 238));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("red", 1000000)],rgb(255, 104, 238));
 		fTestFunction(testResult);
@@ -12899,9 +12899,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("red", 100)],rgb(3, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("red", 1000)],rgb(25, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("red", 2025)],rgb(25, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("red", 5000)],rgb(63, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("red", 2025)],rgb(63, 206, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("red", 10000)],rgb(89, 206, 209));
 		fTestFunction(testResult);
@@ -12911,7 +12911,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("red", 150000)],rgb(255, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("red", 200000)],rgb(255, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("red", 202500)],rgb(255, 206, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("red", 1000000)],rgb(255, 206, 209));
 		fTestFunction(testResult);
@@ -12953,9 +12953,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("red", 100)],rgb(3, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("red", 1000)],rgb(25, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("red", 2025)],rgb(25, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("red", 5000)],rgb(63, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("red", 2025)],rgb(63, 105, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("red", 10000)],rgb(89, 105, 180));
 		fTestFunction(testResult);
@@ -12965,7 +12965,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("red", 150000)],rgb(255, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("red", 200000)],rgb(255, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("red", 202500)],rgb(255, 105, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("red", 1000000)],rgb(255, 105, 180));
 		fTestFunction(testResult);
@@ -13007,9 +13007,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("red", 100)],rgb(3, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("red", 1000)],rgb(25, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("red", 2025)],rgb(25, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("red", 5000)],rgb(63, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("red", 2025)],rgb(63, 139, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("red", 10000)],rgb(89, 139, 87));
 		fTestFunction(testResult);
@@ -13019,7 +13019,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("red", 150000)],rgb(255, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("red", 200000)],rgb(255, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("red", 202500)],rgb(255, 139, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("red", 1000000)],rgb(255, 139, 87));
 		fTestFunction(testResult);
@@ -13065,9 +13065,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("redMod", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("redMod", 1000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("redMod", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("redMod", 5000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("redMod", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("redMod", 10000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -13077,7 +13077,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("redMod", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("redMod", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("redMod", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("redMod", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -13119,9 +13119,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("redMod", 100)],rgb(1, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("redMod", 1000)],rgb(7, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("redMod", 2025)],rgb(7, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("redMod", 5000)],rgb(26, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("redMod", 2025)],rgb(26, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("redMod", 10000)],rgb(40, 126, 126));
 		fTestFunction(testResult);
@@ -13131,7 +13131,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("redMod", 150000)],rgb(152, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("redMod", 200000)],rgb(173, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("redMod", 202500)],rgb(173, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("redMod", 1000000)],rgb(255, 126, 126));
 		fTestFunction(testResult);
@@ -13173,9 +13173,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("redMod", 100)],rgb(1, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("redMod", 1000)],rgb(7, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("redMod", 2025)],rgb(7, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("redMod", 5000)],rgb(26, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("redMod", 2025)],rgb(26, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("redMod", 10000)],rgb(40, 127, 127));
 		fTestFunction(testResult);
@@ -13185,7 +13185,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("redMod", 150000)],rgb(153, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("redMod", 200000)],rgb(174, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("redMod", 202500)],rgb(174, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("redMod", 1000000)],rgb(255, 127, 127));
 		fTestFunction(testResult);
@@ -13227,9 +13227,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("redMod", 100)],rgb(1, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("redMod", 1000)],rgb(7, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("redMod", 2025)],rgb(7, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("redMod", 5000)],rgb(27, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("redMod", 2025)],rgb(27, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("redMod", 10000)],rgb(40, 128, 128));
 		fTestFunction(testResult);
@@ -13239,7 +13239,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("redMod", 150000)],rgb(154, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("redMod", 200000)],rgb(176, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("redMod", 202500)],rgb(176, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("redMod", 1000000)],rgb(255, 128, 128));
 		fTestFunction(testResult);
@@ -13281,9 +13281,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("redMod", 100)],rgb(2, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("redMod", 1000)],rgb(17, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("redMod", 2025)],rgb(17, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("redMod", 5000)],rgb(47, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("redMod", 2025)],rgb(47, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("redMod", 10000)],rgb(68, 200, 200));
 		fTestFunction(testResult);
@@ -13293,7 +13293,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("redMod", 150000)],rgb(239, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("redMod", 200000)],rgb(255, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("redMod", 202500)],rgb(255, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("redMod", 1000000)],rgb(255, 200, 200));
 		fTestFunction(testResult);
@@ -13335,9 +13335,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("redMod", 100)],rgb(3, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("redMod", 1000)],rgb(25, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("redMod", 2025)],rgb(25, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("redMod", 5000)],rgb(63, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("redMod", 2025)],rgb(63, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("redMod", 10000)],rgb(89, 255, 255));
 		fTestFunction(testResult);
@@ -13347,7 +13347,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("redMod", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("redMod", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("redMod", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("redMod", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -13389,9 +13389,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("redMod", 100)],rgb(0, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("redMod", 1000)],rgb(4, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("redMod", 2025)],rgb(4, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("redMod", 5000)],rgb(19, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("redMod", 2025)],rgb(19, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("redMod", 10000)],rgb(30, 100, 100));
 		fTestFunction(testResult);
@@ -13401,7 +13401,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("redMod", 150000)],rgb(121, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("redMod", 200000)],rgb(138, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("redMod", 202500)],rgb(138, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("redMod", 1000000)],rgb(255, 100, 100));
 		fTestFunction(testResult);
@@ -13443,9 +13443,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("redMod", 100)],rgb(0, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("redMod", 1000)],rgb(1, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("redMod", 2025)],rgb(1, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("redMod", 5000)],rgb(3, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("redMod", 2025)],rgb(3, 139, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("redMod", 10000)],rgb(5, 139, 34));
 		fTestFunction(testResult);
@@ -13455,7 +13455,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("redMod", 150000)],rgb(43, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("redMod", 200000)],rgb(50, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("redMod", 202500)],rgb(50, 139, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("redMod", 1000000)],rgb(111, 139, 34));
 		fTestFunction(testResult);
@@ -13497,9 +13497,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("redMod", 100)],rgb(3, 99, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("redMod", 1000)],rgb(25, 99, 71));
+		testResult = test(rgb(255, 99, 71),[mod("redMod", 2025)],rgb(25, 99, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("redMod", 5000)],rgb(63, 99, 71));
+		testResult = test(rgb(255, 99, 71),[mod("redMod", 2025)],rgb(63, 99, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("redMod", 10000)],rgb(89, 99, 71));
 		fTestFunction(testResult);
@@ -13509,7 +13509,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("redMod", 150000)],rgb(255, 99, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("redMod", 200000)],rgb(255, 99, 71));
+		testResult = test(rgb(255, 99, 71),[mod("redMod", 202500)],rgb(255, 99, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("redMod", 1000000)],rgb(255, 99, 71));
 		fTestFunction(testResult);
@@ -13551,9 +13551,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("redMod", 100)],rgb(0, 0, 130));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("redMod", 1000)],rgb(2, 0, 130));
+		testResult = test(rgb(75, 0, 130),[mod("redMod", 2025)],rgb(2, 0, 130));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("redMod", 5000)],rgb(12, 0, 130));
+		testResult = test(rgb(75, 0, 130),[mod("redMod", 2025)],rgb(12, 0, 130));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("redMod", 10000)],rgb(20, 0, 130));
 		fTestFunction(testResult);
@@ -13563,7 +13563,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("redMod", 150000)],rgb(91, 0, 130));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("redMod", 200000)],rgb(105, 0, 130));
+		testResult = test(rgb(75, 0, 130),[mod("redMod", 202500)],rgb(105, 0, 130));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("redMod", 1000000)],rgb(218, 0, 130));
 		fTestFunction(testResult);
@@ -13605,7 +13605,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("redMod", 100)],rgb(2, 20, 60));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("redMod", 1000)],rgb(20, 20, 60));
+		testResult = test(rgb(220, 20, 60),[mod("redMod", 2025)],rgb(20, 20, 60));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("redMod", -50)],rgb(0, 105, 30));
 		fTestFunction(testResult);
@@ -13625,9 +13625,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("redMod", 100)],rgb(1, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("redMod", 1000)],rgb(7, 104, 238));
+		testResult = test(rgb(123, 104, 238),[mod("redMod", 2025)],rgb(7, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("redMod", 5000)],rgb(25, 104, 238));
+		testResult = test(rgb(123, 104, 238),[mod("redMod", 2025)],rgb(25, 104, 238));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("redMod", 10000)],rgb(38, 104, 238));
 		fTestFunction(testResult);
@@ -13637,7 +13637,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("redMod", 150000)],rgb(148, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("redMod", 200000)],rgb(169, 104, 238));
+		testResult = test(rgb(123, 104, 238),[mod("redMod", 202500)],rgb(169, 104, 238));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("redMod", 1000000)],rgb(255, 104, 238));
 		fTestFunction(testResult);
@@ -13679,9 +13679,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("redMod", 100)],rgb(0, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("redMod", 1000)],rgb(0, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("redMod", 2025)],rgb(0, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("redMod", 5000)],rgb(0, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("redMod", 2025)],rgb(0, 206, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("redMod", 10000)],rgb(0, 206, 209));
 		fTestFunction(testResult);
@@ -13691,7 +13691,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("redMod", 150000)],rgb(0, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("redMod", 200000)],rgb(0, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("redMod", 202500)],rgb(0, 206, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("redMod", 1000000)],rgb(0, 206, 209));
 		fTestFunction(testResult);
@@ -13733,9 +13733,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("redMod", 100)],rgb(3, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("redMod", 1000)],rgb(25, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("redMod", 2025)],rgb(25, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("redMod", 5000)],rgb(63, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("redMod", 2025)],rgb(63, 105, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("redMod", 10000)],rgb(89, 105, 180));
 		fTestFunction(testResult);
@@ -13745,7 +13745,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("redMod", 150000)],rgb(255, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("redMod", 200000)],rgb(255, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("redMod", 202500)],rgb(255, 105, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("redMod", 1000000)],rgb(255, 105, 180));
 		fTestFunction(testResult);
@@ -13787,9 +13787,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("redMod", 100)],rgb(0, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("redMod", 1000)],rgb(1, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("redMod", 2025)],rgb(1, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("redMod", 5000)],rgb(5, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("redMod", 2025)],rgb(5, 139, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("redMod", 10000)],rgb(9, 139, 87));
 		fTestFunction(testResult);
@@ -13799,7 +13799,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("redMod", 150000)],rgb(57, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("redMod", 200000)],rgb(66, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("redMod", 202500)],rgb(66, 139, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("redMod", 1000000)],rgb(143, 139, 87));
 		fTestFunction(testResult);
@@ -13845,9 +13845,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("redOff", 100)],rgb(3, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("redOff", 1000)],rgb(25, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("redOff", 2025)],rgb(25, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("redOff", 5000)],rgb(63, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("redOff", 2025)],rgb(63, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("redOff", 10000)],rgb(89, 0, 0));
 		fTestFunction(testResult);
@@ -13857,7 +13857,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("redOff", 150000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("redOff", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("redOff", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("redOff", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -13899,9 +13899,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("redOff", 100)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("redOff", 1000)],rgb(129, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("redOff", 2025)],rgb(129, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("redOff", 5000)],rgb(139, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("redOff", 2025)],rgb(139, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("redOff", 10000)],rgb(151, 126, 126));
 		fTestFunction(testResult);
@@ -13911,7 +13911,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("redOff", 150000)],rgb(255, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("redOff", 200000)],rgb(255, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("redOff", 202500)],rgb(255, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("redOff", 1000000)],rgb(255, 126, 126));
 		fTestFunction(testResult);
@@ -13953,9 +13953,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("redOff", 100)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("redOff", 1000)],rgb(130, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("redOff", 2025)],rgb(130, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("redOff", 5000)],rgb(140, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("redOff", 2025)],rgb(140, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("redOff", 10000)],rgb(152, 127, 127));
 		fTestFunction(testResult);
@@ -13965,7 +13965,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("redOff", 150000)],rgb(255, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("redOff", 200000)],rgb(255, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("redOff", 202500)],rgb(255, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("redOff", 1000000)],rgb(255, 127, 127));
 		fTestFunction(testResult);
@@ -14007,9 +14007,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("redOff", 100)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("redOff", 1000)],rgb(131, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("redOff", 2025)],rgb(131, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("redOff", 5000)],rgb(141, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("redOff", 2025)],rgb(141, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("redOff", 10000)],rgb(152, 128, 128));
 		fTestFunction(testResult);
@@ -14019,7 +14019,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("redOff", 150000)],rgb(255, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("redOff", 200000)],rgb(255, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("redOff", 202500)],rgb(255, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("redOff", 1000000)],rgb(255, 128, 128));
 		fTestFunction(testResult);
@@ -14061,9 +14061,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("redOff", 100)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("redOff", 1000)],rgb(202, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("redOff", 2025)],rgb(202, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("redOff", 5000)],rgb(208, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("redOff", 2025)],rgb(208, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("redOff", 10000)],rgb(215, 200, 200));
 		fTestFunction(testResult);
@@ -14073,7 +14073,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("redOff", 150000)],rgb(255, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("redOff", 200000)],rgb(255, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("redOff", 202500)],rgb(255, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("redOff", 1000000)],rgb(255, 200, 200));
 		fTestFunction(testResult);
@@ -14115,9 +14115,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("redOff", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("redOff", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("redOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("redOff", 5000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("redOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("redOff", 10000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -14127,7 +14127,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("redOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("redOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("redOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("redOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -14169,9 +14169,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("redOff", 100)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("redOff", 1000)],rgb(104, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("redOff", 2025)],rgb(104, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("redOff", 5000)],rgb(117, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("redOff", 2025)],rgb(117, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("redOff", 10000)],rgb(131, 100, 100));
 		fTestFunction(testResult);
@@ -14181,7 +14181,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("redOff", 150000)],rgb(255, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("redOff", 200000)],rgb(255, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("redOff", 202500)],rgb(255, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("redOff", 1000000)],rgb(255, 100, 100));
 		fTestFunction(testResult);
@@ -14223,9 +14223,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("redOff", 100)],rgb(35, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("redOff", 1000)],rgb(45, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("redOff", 2025)],rgb(45, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("redOff", 5000)],rgb(73, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("redOff", 2025)],rgb(73, 139, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("redOff", 10000)],rgb(96, 139, 34));
 		fTestFunction(testResult);
@@ -14235,15 +14235,15 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("redOff", 150000)],rgb(255, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("redOff", 200000)],rgb(255, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("redOff", 202500)],rgb(255, 139, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("redOff", 1000000)],rgb(255, 139, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("redOff", -1000000)],rgb(0, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("redOff", 1000)],rgb(25, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("redOff", 2025)],rgb(25, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("redOff", 5000)],rgb(63, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("redOff", 2025)],rgb(63, 206, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("redOff", 10000)],rgb(89, 206, 209));
 		fTestFunction(testResult);
@@ -14253,7 +14253,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("redOff", 150000)],rgb(255, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("redOff", 200000)],rgb(255, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("redOff", 202500)],rgb(255, 206, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("redOff", 1000000)],rgb(255, 206, 209));
 		fTestFunction(testResult);
@@ -14295,9 +14295,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("redOff", 100)],rgb(255, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("redOff", 1000)],rgb(255, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("redOff", 2025)],rgb(255, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("redOff", 5000)],rgb(255, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("redOff", 2025)],rgb(255, 105, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("redOff", 10000)],rgb(255, 105, 180));
 		fTestFunction(testResult);
@@ -14307,7 +14307,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("redOff", 150000)],rgb(255, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("redOff", 200000)],rgb(255, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("redOff", 202500)],rgb(255, 105, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("redOff", 1000000)],rgb(255, 105, 180));
 		fTestFunction(testResult);
@@ -14349,9 +14349,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("redOff", 100)],rgb(47, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("redOff", 1000)],rgb(54, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("redOff", 2025)],rgb(54, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("redOff", 5000)],rgb(79, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("redOff", 2025)],rgb(79, 139, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("redOff", 10000)],rgb(100, 139, 87));
 		fTestFunction(testResult);
@@ -14361,7 +14361,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("redOff", 150000)],rgb(255, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("redOff", 200000)],rgb(255, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("redOff", 202500)],rgb(255, 139, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("redOff", 1000000)],rgb(255, 139, 87));
 		fTestFunction(testResult);
@@ -14407,9 +14407,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("sat", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("sat", 1000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("sat", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("sat", 5000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("sat", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("sat", 10000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -14419,7 +14419,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("sat", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("sat", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("sat", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("sat", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -14461,9 +14461,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("sat", 100)],rgb(126, 126, 125));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("sat", 1000)],rgb(127, 125, 120));
+		testResult = test(rgb(126,126,126),[mod("sat", 2025)],rgb(127, 125, 120));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("sat", 5000)],rgb(132, 120, 95));
+		testResult = test(rgb(126,126,126),[mod("sat", 2025)],rgb(132, 120, 95));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("sat", 10000)],rgb(139, 113, 63));
 		fTestFunction(testResult);
@@ -14473,7 +14473,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("sat", 150000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("sat", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(126,126,126),[mod("sat", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("sat", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -14515,9 +14515,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("sat", 100)],rgb(127, 127, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("sat", 1000)],rgb(128, 126, 121));
+		testResult = test(rgb(127,127,127),[mod("sat", 2025)],rgb(128, 126, 121));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("sat", 5000)],rgb(133, 121, 95));
+		testResult = test(rgb(127,127,127),[mod("sat", 2025)],rgb(133, 121, 95));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("sat", 10000)],rgb(140, 114, 63));
 		fTestFunction(testResult);
@@ -14527,7 +14527,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("sat", 150000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("sat", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(127,127,127),[mod("sat", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("sat", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -14569,9 +14569,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("sat", 100)],rgb(128, 128, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("sat", 1000)],rgb(129, 127, 122));
+		testResult = test(rgb(128,128,128),[mod("sat", 2025)],rgb(129, 127, 122));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("sat", 5000)],rgb(134, 122, 96));
+		testResult = test(rgb(128,128,128),[mod("sat", 2025)],rgb(134, 122, 96));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("sat", 10000)],rgb(141, 115, 64));
 		fTestFunction(testResult);
@@ -14581,7 +14581,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("sat", 150000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("sat", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(128,128,128),[mod("sat", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("sat", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -14623,9 +14623,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("sat", 100)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("sat", 1000)],rgb(201, 199, 197));
+		testResult = test(rgb(200,200,200),[mod("sat", 2025)],rgb(201, 199, 197));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("sat", 5000)],rgb(203, 197, 186));
+		testResult = test(rgb(200,200,200),[mod("sat", 2025)],rgb(203, 197, 186));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("sat", 10000)],rgb(206, 195, 173));
 		fTestFunction(testResult);
@@ -14635,7 +14635,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("sat", 150000)],rgb(255, 117, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("sat", 200000)],rgb(255, 90, 0));
+		testResult = test(rgb(200,200,200),[mod("sat", 202500)],rgb(255, 90, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("sat", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -14677,9 +14677,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("sat", 100)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("sat", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("sat", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("sat", 5000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("sat", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("sat", 10000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -14689,7 +14689,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("sat", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("sat", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("sat", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("sat", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -14731,9 +14731,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("sat", 100)],rgb(100, 100, 99));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("sat", 1000)],rgb(101, 99, 95));
+		testResult = test(rgb(100,100,100),[mod("sat", 2025)],rgb(101, 99, 95));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("sat", 5000)],rgb(105, 95, 75));
+		testResult = test(rgb(100,100,100),[mod("sat", 2025)],rgb(105, 95, 75));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("sat", 10000)],rgb(110, 90, 50));
 		fTestFunction(testResult);
@@ -14743,7 +14743,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("sat", 150000)],rgb(250, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("sat", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(100,100,100),[mod("sat", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("sat", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -14785,9 +14785,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("sat", 100)],rgb(86, 87, 86));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("sat", 1000)],rgb(86, 87, 86));
+		testResult = test(rgb(34, 139, 34),[mod("sat", 2025)],rgb(86, 87, 86));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("sat", 5000)],rgb(82, 91, 82));
+		testResult = test(rgb(34, 139, 34),[mod("sat", 2025)],rgb(82, 91, 82));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("sat", 10000)],rgb(78, 95, 78));
 		fTestFunction(testResult);
@@ -14797,7 +14797,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("sat", 150000)],rgb(0, 216, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("sat", 200000)],rgb(0, 255, 0));
+		testResult = test(rgb(34, 139, 34),[mod("sat", 202500)],rgb(0, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("sat", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -14839,9 +14839,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("sat", 100)],rgb(163, 163, 163));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("sat", 1000)],rgb(164, 162, 162));
+		testResult = test(rgb(255, 99, 71),[mod("sat", 2025)],rgb(164, 162, 162));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("sat", 5000)],rgb(168, 160, 158));
+		testResult = test(rgb(255, 99, 71),[mod("sat", 2025)],rgb(168, 160, 158));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("sat", 10000)],rgb(172, 157, 154));
 		fTestFunction(testResult);
@@ -14851,7 +14851,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("sat", 150000)],rgb(255, 67, 25));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("sat", 200000)],rgb(255, 35, 0));
+		testResult = test(rgb(255, 99, 71),[mod("sat", 202500)],rgb(255, 35, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("sat", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -14893,9 +14893,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("sat", 100)],rgb(65, 65, 65));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("sat", 1000)],rgb(65, 64, 66));
+		testResult = test(rgb(75, 0, 130),[mod("sat", 2025)],rgb(65, 64, 66));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("sat", 5000)],rgb(66, 62, 68));
+		testResult = test(rgb(75, 0, 130),[mod("sat", 2025)],rgb(66, 62, 68));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("sat", 10000)],rgb(66, 59, 71));
 		fTestFunction(testResult);
@@ -14905,7 +14905,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("sat", 150000)],rgb(80, 0, 163));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("sat", 200000)],rgb(85, 0, 195));
+		testResult = test(rgb(75, 0, 130),[mod("sat", 202500)],rgb(85, 0, 195));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("sat", 1000000)],rgb(165, 0, 255));
 		fTestFunction(testResult);
@@ -14947,9 +14947,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("sat", 100)],rgb(120, 120, 120));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("sat", 1000)],rgb(121, 119, 119));
+		testResult = test(rgb(220, 20, 60),[mod("sat", 2025)],rgb(121, 119, 119));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("sat", 5000)],rgb(126, 114, 116));
+		testResult = test(rgb(220, 20, 60),[mod("sat", 2025)],rgb(126, 114, 116));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("sat", 10000)],rgb(132, 108, 113));
 		fTestFunction(testResult);
@@ -14959,7 +14959,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("sat", 150000)],rgb(255, 0, 12));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("sat", 200000)],rgb(255, 0, 0));
+		testResult = test(rgb(220, 20, 60),[mod("sat", 202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("sat", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -15001,9 +15001,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("sat", 100)],rgb(127, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("sat", 1000)],rgb(126, 128, 129));
+		testResult = test(rgb(0, 191, 255),[mod("sat", 2025)],rgb(126, 128, 129));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("sat", 5000)],rgb(121, 131, 134));
+		testResult = test(rgb(0, 191, 255),[mod("sat", 2025)],rgb(121, 131, 134));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("sat", 10000)],rgb(115, 134, 140));
 		fTestFunction(testResult);
@@ -15013,7 +15013,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("sat", 150000)],rgb(0, 223, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("sat", 200000)],rgb(0, 255, 255));
+		testResult = test(rgb(0, 191, 255),[mod("sat", 202500)],rgb(0, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("sat", 1000000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
@@ -15055,9 +15055,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("sat", 100)],rgb(128, 128, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("sat", 1000)],rgb(129, 128, 126));
+		testResult = test(rgb(255, 215, 0),[mod("sat", 2025)],rgb(129, 128, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("sat", 5000)],rgb(134, 132, 121));
+		testResult = test(rgb(255, 215, 0),[mod("sat", 2025)],rgb(134, 132, 121));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("sat", 10000)],rgb(140, 136, 115));
 		fTestFunction(testResult);
@@ -15067,7 +15067,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("sat", 150000)],rgb(255, 255, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("sat", 200000)],rgb(255, 255, 0));
+		testResult = test(rgb(255, 215, 0),[mod("sat", 202500)],rgb(255, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("sat", 1000000)],rgb(255, 255, 0));
 		fTestFunction(testResult);
@@ -15109,9 +15109,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("sat", 100)],rgb(135, 134, 135));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("sat", 1000)],rgb(135, 133, 136));
+		testResult = test(rgb(138, 43, 226),[mod("sat", 2025)],rgb(135, 133, 136));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("sat", 5000)],rgb(135, 128, 141));
+		testResult = test(rgb(138, 43, 226),[mod("sat", 2025)],rgb(135, 128, 141));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("sat", 10000)],rgb(135, 122, 147));
 		fTestFunction(testResult);
@@ -15121,7 +15121,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("sat", 150000)],rgb(141, 0, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("sat", 200000)],rgb(144, 0, 255));
+		testResult = test(rgb(138, 43, 226),[mod("sat", 202500)],rgb(144, 0, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("sat", 1000000)],rgb(181, 0, 255));
 		fTestFunction(testResult);
@@ -15163,9 +15163,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("sat", 100)],rgb(127, 128, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("sat", 1000)],rgb(126, 129, 126));
+		testResult = test(rgb(50, 205, 50),[mod("sat", 2025)],rgb(126, 129, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("sat", 5000)],rgb(121, 134, 121));
+		testResult = test(rgb(50, 205, 50),[mod("sat", 2025)],rgb(121, 134, 121));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("sat", 10000)],rgb(115, 140, 115));
 		fTestFunction(testResult);
@@ -15175,7 +15175,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("sat", 150000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("sat", 200000)],rgb(0, 255, 0));
+		testResult = test(rgb(50, 205, 50),[mod("sat", 202500)],rgb(0, 255, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("sat", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -15217,9 +15217,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("sat", 100)],rgb(128, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("sat", 1000)],rgb(129, 127, 126));
+		testResult = test(rgb(255, 69, 0),[mod("sat", 2025)],rgb(129, 127, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("sat", 5000)],rgb(134, 125, 121));
+		testResult = test(rgb(255, 69, 0),[mod("sat", 2025)],rgb(134, 125, 121));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("sat", 10000)],rgb(140, 122, 115));
 		fTestFunction(testResult);
@@ -15229,7 +15229,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("sat", 150000)],rgb(255, 40, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("sat", 200000)],rgb(255, 11, 0));
+		testResult = test(rgb(255, 69, 0),[mod("sat", 202500)],rgb(255, 11, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("sat", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -15271,9 +15271,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("sat", 100)],rgb(64, 64, 64));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("sat", 1000)],rgb(63, 65, 65));
+		testResult = test(rgb(0, 128, 128),[mod("sat", 2025)],rgb(63, 65, 65));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("sat", 5000)],rgb(61, 67, 67));
+		testResult = test(rgb(0, 128, 128),[mod("sat", 2025)],rgb(61, 67, 67));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("sat", 10000)],rgb(58, 70, 70));
 		fTestFunction(testResult);
@@ -15283,7 +15283,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("sat", 150000)],rgb(0, 160, 160));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("sat", 200000)],rgb(0, 192, 192));
+		testResult = test(rgb(0, 128, 128),[mod("sat", 202500)],rgb(0, 192, 192));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("sat", 1000000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
@@ -15325,9 +15325,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("sat", 100)],rgb(165, 165, 165));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("sat", 1000)],rgb(166, 164, 166));
+		testResult = test(rgb(218, 112, 214),[mod("sat", 2025)],rgb(166, 164, 166));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("sat", 5000)],rgb(169, 160, 169));
+		testResult = test(rgb(218, 112, 214),[mod("sat", 2025)],rgb(169, 160, 169));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("sat", 10000)],rgb(174, 156, 173));
 		fTestFunction(testResult);
@@ -15337,7 +15337,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("sat", 150000)],rgb(255, 30, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("sat", 200000)],rgb(255, 0, 255));
+		testResult = test(rgb(218, 112, 214),[mod("sat", 202500)],rgb(255, 0, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("sat", 1000000)],rgb(255, 0, 255));
 		fTestFunction(testResult);
@@ -15379,9 +15379,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("sat", 100)],rgb(125, 125, 125));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("sat", 1000)],rgb(124, 125, 126));
+		testResult = test(rgb(70, 130, 180),[mod("sat", 2025)],rgb(124, 125, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("sat", 5000)],rgb(119, 126, 131));
+		testResult = test(rgb(70, 130, 180),[mod("sat", 2025)],rgb(119, 126, 131));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("sat", 10000)],rgb(113, 126, 138));
 		fTestFunction(testResult);
@@ -15391,7 +15391,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("sat", 150000)],rgb(0, 142, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("sat", 200000)],rgb(0, 148, 255));
+		testResult = test(rgb(70, 130, 180),[mod("sat", 202500)],rgb(0, 148, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("sat", 1000000)],rgb(0, 239, 255));
 		fTestFunction(testResult);
@@ -15433,9 +15433,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("sat", 100)],rgb(128, 128, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("sat", 1000)],rgb(129, 128, 126));
+		testResult = test(rgb(255, 165, 0),[mod("sat", 2025)],rgb(129, 128, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("sat", 5000)],rgb(134, 129, 121));
+		testResult = test(rgb(255, 165, 0),[mod("sat", 2025)],rgb(134, 129, 121));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("sat", 10000)],rgb(140, 131, 115));
 		fTestFunction(testResult);
@@ -15445,7 +15445,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("sat", 150000)],rgb(255, 184, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("sat", 200000)],rgb(255, 202, 0));
+		testResult = test(rgb(255, 165, 0),[mod("sat", 202500)],rgb(255, 202, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("sat", 1000000)],rgb(255, 255, 0));
 		fTestFunction(testResult);
@@ -15487,9 +15487,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("sat", 100)],rgb(165, 165, 166));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("sat", 1000)],rgb(165, 165, 166));
+		testResult = test(rgb(147, 112, 219),[mod("sat", 2025)],rgb(165, 165, 166));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("sat", 5000)],rgb(164, 161, 170));
+		testResult = test(rgb(147, 112, 219),[mod("sat", 2025)],rgb(164, 161, 170));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("sat", 10000)],rgb(162, 157, 174));
 		fTestFunction(testResult);
@@ -15499,7 +15499,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("sat", 150000)],rgb(119, 31, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("sat", 200000)],rgb(104, 0, 255));
+		testResult = test(rgb(147, 112, 219),[mod("sat", 202500)],rgb(104, 0, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("sat", 1000000)],rgb(0, 0, 255));
 		fTestFunction(testResult);
@@ -15541,9 +15541,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("sat", 100)],rgb(119, 120, 119));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("sat", 1000)],rgb(118, 121, 119));
+		testResult = test(rgb(60, 179, 113),[mod("sat", 2025)],rgb(118, 121, 119));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("sat", 5000)],rgb(114, 125, 119));
+		testResult = test(rgb(60, 179, 113),[mod("sat", 2025)],rgb(114, 125, 119));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("sat", 10000)],rgb(108, 131, 118));
 		fTestFunction(testResult);
@@ -15553,7 +15553,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("sat", 150000)],rgb(0, 255, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("sat", 200000)],rgb(0, 255, 93));
+		testResult = test(rgb(60, 179, 113),[mod("sat", 202500)],rgb(0, 255, 93));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("sat", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -15595,9 +15595,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("sat", 100)],rgb(120, 120, 120));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("sat", 1000)],rgb(121, 120, 119));
+		testResult = test(rgb(210, 105, 30),[mod("sat", 2025)],rgb(121, 120, 119));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("sat", 5000)],rgb(126, 119, 114));
+		testResult = test(rgb(210, 105, 30),[mod("sat", 2025)],rgb(126, 119, 114));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("sat", 10000)],rgb(132, 118, 108));
 		fTestFunction(testResult);
@@ -15607,7 +15607,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("sat", 150000)],rgb(255, 90, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("sat", 200000)],rgb(255, 80, 0));
+		testResult = test(rgb(210, 105, 30),[mod("sat", 202500)],rgb(255, 80, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("sat", 1000000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -15649,9 +15649,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("sat", 100)],rgb(171, 171, 171));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("sat", 1000)],rgb(170, 170, 172));
+		testResult = test(rgb(123, 104, 238),[mod("sat", 2025)],rgb(170, 170, 172));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("sat", 5000)],rgb(168, 167, 175));
+		testResult = test(rgb(123, 104, 238),[mod("sat", 2025)],rgb(168, 167, 175));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("sat", 10000)],rgb(165, 163, 179));
 		fTestFunction(testResult);
@@ -15661,7 +15661,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("sat", 150000)],rgb(81, 45, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("sat", 200000)],rgb(51, 3, 255));
+		testResult = test(rgb(123, 104, 238),[mod("sat", 202500)],rgb(51, 3, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("sat", 1000000)],rgb(0, 0, 255));
 		fTestFunction(testResult);
@@ -15703,9 +15703,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("sat", 100)],rgb(104, 105, 105));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("sat", 1000)],rgb(103, 106, 106));
+		testResult = test(rgb(0, 206, 209),[mod("sat", 2025)],rgb(103, 106, 106));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("sat", 5000)],rgb(99, 110, 110));
+		testResult = test(rgb(0, 206, 209),[mod("sat", 2025)],rgb(99, 110, 110));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("sat", 10000)],rgb(94, 115, 115));
 		fTestFunction(testResult);
@@ -15715,7 +15715,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("sat", 150000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("sat", 200000)],rgb(0, 255, 255));
+		testResult = test(rgb(0, 206, 209),[mod("sat", 202500)],rgb(0, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("sat", 1000000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
@@ -15757,9 +15757,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("sat", 100)],rgb(180, 180, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("sat", 1000)],rgb(181, 179, 180));
+		testResult = test(rgb(255, 105, 180),[mod("sat", 2025)],rgb(181, 179, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("sat", 5000)],rgb(184, 176, 180));
+		testResult = test(rgb(255, 105, 180),[mod("sat", 2025)],rgb(184, 176, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("sat", 10000)],rgb(187, 173, 180));
 		fTestFunction(testResult);
@@ -15769,7 +15769,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("sat", 150000)],rgb(255, 67, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("sat", 200000)],rgb(255, 30, 180));
+		testResult = test(rgb(255, 105, 180),[mod("sat", 202500)],rgb(255, 30, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("sat", 1000000)],rgb(255, 0, 180));
 		fTestFunction(testResult);
@@ -15811,9 +15811,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("sat", 100)],rgb(92, 93, 92));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("sat", 1000)],rgb(92, 93, 92));
+		testResult = test(rgb(46, 139, 87),[mod("sat", 2025)],rgb(92, 93, 92));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("sat", 5000)],rgb(88, 97, 92));
+		testResult = test(rgb(46, 139, 87),[mod("sat", 2025)],rgb(88, 97, 92));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("sat", 10000)],rgb(83, 102, 91));
 		fTestFunction(testResult);
@@ -15823,7 +15823,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("sat", 150000)],rgb(0, 231, 76));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("sat", 200000)],rgb(0, 255, 71));
+		testResult = test(rgb(46, 139, 87),[mod("sat", 202500)],rgb(0, 255, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("sat", 1000000)],rgb(0, 255, 0));
 		fTestFunction(testResult);
@@ -15869,9 +15869,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("lum", 1000)],rgb(3, 3, 3));
+		testResult = test(rgb(0,0,0),[mod("lum", 2025)],rgb(3, 3, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("lum", 5000)],rgb(13, 13, 13));
+		testResult = test(rgb(0,0,0),[mod("lum", 2025)],rgb(13, 13, 13));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("lum", 10000)],rgb(25, 25, 25));
 		fTestFunction(testResult);
@@ -15881,7 +15881,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0,0,0),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -15923,9 +15923,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("lum", 1000)],rgb(3, 3, 3));
+		testResult = test(rgb(126,126,126),[mod("lum", 2025)],rgb(3, 3, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("lum", 5000)],rgb(13, 13, 13));
+		testResult = test(rgb(126,126,126),[mod("lum", 2025)],rgb(13, 13, 13));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("lum", 10000)],rgb(25, 25, 25));
 		fTestFunction(testResult);
@@ -15935,7 +15935,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(126,126,126),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -15977,9 +15977,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("lum", 1000)],rgb(3, 3, 3));
+		testResult = test(rgb(127,127,127),[mod("lum", 2025)],rgb(3, 3, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("lum", 5000)],rgb(13, 13, 13));
+		testResult = test(rgb(127,127,127),[mod("lum", 2025)],rgb(13, 13, 13));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("lum", 10000)],rgb(25, 25, 25));
 		fTestFunction(testResult);
@@ -15989,7 +15989,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(127,127,127),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16031,9 +16031,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("lum", 1000)],rgb(3, 3, 3));
+		testResult = test(rgb(128,128,128),[mod("lum", 2025)],rgb(3, 3, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("lum", 5000)],rgb(13, 13, 13));
+		testResult = test(rgb(128,128,128),[mod("lum", 2025)],rgb(13, 13, 13));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("lum", 10000)],rgb(25, 25, 25));
 		fTestFunction(testResult);
@@ -16043,7 +16043,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(128,128,128),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16085,9 +16085,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("lum", 1000)],rgb(3, 3, 3));
+		testResult = test(rgb(200,200,200),[mod("lum", 2025)],rgb(3, 3, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("lum", 5000)],rgb(13, 13, 13));
+		testResult = test(rgb(200,200,200),[mod("lum", 2025)],rgb(13, 13, 13));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("lum", 10000)],rgb(25, 25, 25));
 		fTestFunction(testResult);
@@ -16097,7 +16097,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(200,200,200),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16139,9 +16139,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("lum", 1000)],rgb(3, 3, 3));
+		testResult = test(rgb(255,255,255),[mod("lum", 2025)],rgb(3, 3, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("lum", 5000)],rgb(13, 13, 13));
+		testResult = test(rgb(255,255,255),[mod("lum", 2025)],rgb(13, 13, 13));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("lum", 10000)],rgb(25, 25, 25));
 		fTestFunction(testResult);
@@ -16151,7 +16151,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16193,9 +16193,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("lum", 1000)],rgb(3, 3, 3));
+		testResult = test(rgb(100,100,100),[mod("lum", 2025)],rgb(3, 3, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("lum", 5000)],rgb(13, 13, 13));
+		testResult = test(rgb(100,100,100),[mod("lum", 2025)],rgb(13, 13, 13));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("lum", 10000)],rgb(25, 25, 25));
 		fTestFunction(testResult);
@@ -16205,7 +16205,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(100,100,100),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16247,9 +16247,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("lum", 1000)],rgb(1, 4, 1));
+		testResult = test(rgb(34, 139, 34),[mod("lum", 2025)],rgb(1, 4, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("lum", 5000)],rgb(5, 20, 5));
+		testResult = test(rgb(34, 139, 34),[mod("lum", 2025)],rgb(5, 20, 5));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("lum", 10000)],rgb(10, 41, 10));
 		fTestFunction(testResult);
@@ -16259,7 +16259,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(34, 139, 34),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16301,9 +16301,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("lum", 1000)],rgb(5, 1, 0));
+		testResult = test(rgb(255, 99, 71),[mod("lum", 2025)],rgb(5, 1, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("lum", 5000)],rgb(25, 4, 0));
+		testResult = test(rgb(255, 99, 71),[mod("lum", 2025)],rgb(25, 4, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("lum", 10000)],rgb(51, 8, 0));
 		fTestFunction(testResult);
@@ -16313,7 +16313,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 99, 71),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16355,9 +16355,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("lum", 1000)],rgb(3, 0, 5));
+		testResult = test(rgb(75, 0, 130),[mod("lum", 2025)],rgb(3, 0, 5));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("lum", 5000)],rgb(15, 0, 25));
+		testResult = test(rgb(75, 0, 130),[mod("lum", 2025)],rgb(15, 0, 25));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("lum", 10000)],rgb(29, 0, 51));
 		fTestFunction(testResult);
@@ -16367,7 +16367,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(75, 0, 130),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16409,9 +16409,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("lum", 1000)],rgb(5, 0, 1));
+		testResult = test(rgb(220, 20, 60),[mod("lum", 2025)],rgb(5, 0, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("lum", 5000)],rgb(23, 2, 6));
+		testResult = test(rgb(220, 20, 60),[mod("lum", 2025)],rgb(23, 2, 6));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("lum", 10000)],rgb(47, 4, 13));
 		fTestFunction(testResult);
@@ -16421,7 +16421,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(220, 20, 60),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16463,9 +16463,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("lum", 1000)],rgb(0, 4, 5));
+		testResult = test(rgb(0, 191, 255),[mod("lum", 2025)],rgb(0, 4, 5));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("lum", 5000)],rgb(0, 19, 25));
+		testResult = test(rgb(0, 191, 255),[mod("lum", 2025)],rgb(0, 19, 25));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("lum", 10000)],rgb(0, 38, 51));
 		fTestFunction(testResult);
@@ -16475,7 +16475,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0, 191, 255),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16517,9 +16517,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("lum", 1000)],rgb(5, 4, 0));
+		testResult = test(rgb(255, 215, 0),[mod("lum", 2025)],rgb(5, 4, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("lum", 5000)],rgb(25, 22, 0));
+		testResult = test(rgb(255, 215, 0),[mod("lum", 2025)],rgb(25, 22, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("lum", 10000)],rgb(51, 43, 0));
 		fTestFunction(testResult);
@@ -16529,7 +16529,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 215, 0),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16571,9 +16571,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("lum", 1000)],rgb(3, 1, 4));
+		testResult = test(rgb(138, 43, 226),[mod("lum", 2025)],rgb(3, 1, 4));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("lum", 5000)],rgb(13, 3, 22));
+		testResult = test(rgb(138, 43, 226),[mod("lum", 2025)],rgb(13, 3, 22));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("lum", 10000)],rgb(26, 6, 45));
 		fTestFunction(testResult);
@@ -16583,7 +16583,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(138, 43, 226),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16625,9 +16625,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("lum", 1000)],rgb(1, 4, 1));
+		testResult = test(rgb(50, 205, 50),[mod("lum", 2025)],rgb(1, 4, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("lum", 5000)],rgb(5, 20, 5));
+		testResult = test(rgb(50, 205, 50),[mod("lum", 2025)],rgb(5, 20, 5));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("lum", 10000)],rgb(10, 41, 10));
 		fTestFunction(testResult);
@@ -16637,7 +16637,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(50, 205, 50),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16679,9 +16679,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("lum", 1000)],rgb(5, 1, 0));
+		testResult = test(rgb(255, 69, 0),[mod("lum", 2025)],rgb(5, 1, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("lum", 5000)],rgb(25, 7, 0));
+		testResult = test(rgb(255, 69, 0),[mod("lum", 2025)],rgb(25, 7, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("lum", 10000)],rgb(51, 14, 0));
 		fTestFunction(testResult);
@@ -16691,7 +16691,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 69, 0),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16733,9 +16733,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("lum", 1000)],rgb(0, 5, 5));
+		testResult = test(rgb(0, 128, 128),[mod("lum", 2025)],rgb(0, 5, 5));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("lum", 5000)],rgb(0, 25, 25));
+		testResult = test(rgb(0, 128, 128),[mod("lum", 2025)],rgb(0, 25, 25));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("lum", 10000)],rgb(0, 51, 51));
 		fTestFunction(testResult);
@@ -16745,7 +16745,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0, 128, 128),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16787,9 +16787,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("lum", 1000)],rgb(4, 1, 4));
+		testResult = test(rgb(218, 112, 214),[mod("lum", 2025)],rgb(4, 1, 4));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("lum", 5000)],rgb(20, 5, 20));
+		testResult = test(rgb(218, 112, 214),[mod("lum", 2025)],rgb(20, 5, 20));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("lum", 10000)],rgb(41, 10, 39));
 		fTestFunction(testResult);
@@ -16799,7 +16799,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(218, 112, 214),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16841,9 +16841,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("lum", 1000)],rgb(1, 3, 4));
+		testResult = test(rgb(70, 130, 180),[mod("lum", 2025)],rgb(1, 3, 4));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("lum", 5000)],rgb(7, 13, 18));
+		testResult = test(rgb(70, 130, 180),[mod("lum", 2025)],rgb(7, 13, 18));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("lum", 10000)],rgb(14, 27, 37));
 		fTestFunction(testResult);
@@ -16853,7 +16853,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(70, 130, 180),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16895,9 +16895,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("lum", 1000)],rgb(5, 3, 0));
+		testResult = test(rgb(255, 165, 0),[mod("lum", 2025)],rgb(5, 3, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("lum", 5000)],rgb(25, 16, 0));
+		testResult = test(rgb(255, 165, 0),[mod("lum", 2025)],rgb(25, 16, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("lum", 10000)],rgb(51, 33, 0));
 		fTestFunction(testResult);
@@ -16907,7 +16907,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 165, 0),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -16949,9 +16949,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("lum", 1000)],rgb(2, 1, 4));
+		testResult = test(rgb(147, 112, 219),[mod("lum", 2025)],rgb(2, 1, 4));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("lum", 5000)],rgb(10, 5, 20));
+		testResult = test(rgb(147, 112, 219),[mod("lum", 2025)],rgb(10, 5, 20));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("lum", 10000)],rgb(20, 10, 41));
 		fTestFunction(testResult);
@@ -16961,7 +16961,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(147, 112, 219),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -17003,9 +17003,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("lum", 1000)],rgb(1, 4, 2));
+		testResult = test(rgb(60, 179, 113),[mod("lum", 2025)],rgb(1, 4, 2));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("lum", 5000)],rgb(6, 19, 12));
+		testResult = test(rgb(60, 179, 113),[mod("lum", 2025)],rgb(6, 19, 12));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("lum", 10000)],rgb(13, 38, 24));
 		fTestFunction(testResult);
@@ -17015,7 +17015,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(60, 179, 113),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -17057,9 +17057,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("lum", 1000)],rgb(4, 2, 1));
+		testResult = test(rgb(210, 105, 30),[mod("lum", 2025)],rgb(4, 2, 1));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("lum", 5000)],rgb(22, 11, 3));
+		testResult = test(rgb(210, 105, 30),[mod("lum", 2025)],rgb(22, 11, 3));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("lum", 10000)],rgb(45, 22, 6));
 		fTestFunction(testResult);
@@ -17069,7 +17069,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(210, 105, 30),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -17111,9 +17111,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("lum", 1000)],rgb(1, 1, 5));
+		testResult = test(rgb(123, 104, 238),[mod("lum", 2025)],rgb(1, 1, 5));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("lum", 5000)],rgb(5, 3, 23));
+		testResult = test(rgb(123, 104, 238),[mod("lum", 2025)],rgb(5, 3, 23));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("lum", 10000)],rgb(11, 5, 46));
 		fTestFunction(testResult);
@@ -17123,7 +17123,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(123, 104, 238),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -17165,9 +17165,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("lum", 1000)],rgb(0, 5, 5));
+		testResult = test(rgb(0, 206, 209),[mod("lum", 2025)],rgb(0, 5, 5));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("lum", 5000)],rgb(0, 25, 25));
+		testResult = test(rgb(0, 206, 209),[mod("lum", 2025)],rgb(0, 25, 25));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("lum", 10000)],rgb(0, 50, 51));
 		fTestFunction(testResult);
@@ -17177,7 +17177,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(0, 206, 209),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -17219,9 +17219,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("lum", 1000)],rgb(5, 0, 3));
+		testResult = test(rgb(255, 105, 180),[mod("lum", 2025)],rgb(5, 0, 3));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("lum", 5000)],rgb(25, 0, 13));
+		testResult = test(rgb(255, 105, 180),[mod("lum", 2025)],rgb(25, 0, 13));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("lum", 10000)],rgb(51, 0, 25));
 		fTestFunction(testResult);
@@ -17231,7 +17231,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255, 105, 180),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -17273,9 +17273,9 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("lum", 100)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("lum", 1000)],rgb(1, 4, 2));
+		testResult = test(rgb(46, 139, 87),[mod("lum", 2025)],rgb(1, 4, 2));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("lum", 5000)],rgb(6, 19, 12));
+		testResult = test(rgb(46, 139, 87),[mod("lum", 2025)],rgb(6, 19, 12));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("lum", 10000)],rgb(13, 38, 24));
 		fTestFunction(testResult);
@@ -17285,7 +17285,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("lum", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("lum", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(46, 139, 87),[mod("lum", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("lum", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -17326,7 +17326,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(68, 114, 196, 255),[mod("alpha", 75000)],rgb(68, 114, 196, 191));
 		fTestFunction(testResult);
-		testResult = test(rgb(68, 114, 196, 255),[mod("alpha", 200000)],rgb(68, 114, 196, 0));
+		testResult = test(rgb(68, 114, 196, 255),[mod("alpha", 202500)],rgb(68, 114, 196, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(68, 114, 196, 255),[mod("alpha", -100000)],rgb(68, 114, 196, 0));
 		fTestFunction(testResult);
@@ -17350,7 +17350,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(68, 114, 196, 128),[mod("alphaMod", -50000)],rgb(68, 114, 196, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(68, 114, 196, 128),[mod("alphaMod", 200000)],rgb(68, 114, 196, 255));
+		testResult = test(rgb(68, 114, 196, 128),[mod("alphaMod", 202500)],rgb(68, 114, 196, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(68, 114, 196, 128),[mod("alphaMod", -1)],rgb(68, 114, 196, 0));
 		fTestFunction(testResult);
@@ -17372,7 +17372,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(68, 114, 196, 128),[mod("alphaOff", -50000)],rgb(68, 114, 196, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(68, 114, 196, 128),[mod("alphaOff", 200000)],rgb(68, 114, 196, 0));
+		testResult = test(rgb(68, 114, 196, 128),[mod("alphaOff", 202500)],rgb(68, 114, 196, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(68, 114, 196, 128),[mod("alphaOff", 100001)],rgb(68, 114, 196, 0));
 		fTestFunction(testResult);
@@ -17392,13 +17392,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hue", 21600000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hue", 43200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hue", 43202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hue", 10800000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hue", 1000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hue", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hue", 5000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hue", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hue", 10000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -17408,7 +17408,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hue", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hue", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hue", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hue", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -17434,7 +17434,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hue", -10800000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hue", -43200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hue", -43202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hue", -21600000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -17446,13 +17446,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hue", 21600000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hue", 43200000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hue", 43202500)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hue", 10800000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hue", 1000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hue", 2025)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hue", 5000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hue", 2025)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hue", 10000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
@@ -17462,7 +17462,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hue", 150000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hue", 200000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hue", 202500)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hue", 1000000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
@@ -17488,7 +17488,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hue", -10800000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hue", -43200000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hue", -43202500)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hue", -21600000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
@@ -17500,13 +17500,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hue", 21600000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hue", 43200000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hue", 43202500)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hue", 10800000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hue", 1000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hue", 2025)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hue", 5000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hue", 2025)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hue", 10000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
@@ -17516,7 +17516,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hue", 150000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hue", 200000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hue", 202500)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hue", 1000000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
@@ -17542,7 +17542,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hue", -10800000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hue", -43200000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hue", -43202500)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hue", -21600000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
@@ -17554,13 +17554,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hue", 21600000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hue", 43200000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hue", 43202500)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hue", 10800000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hue", 1000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hue", 2025)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hue", 5000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hue", 2025)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hue", 10000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
@@ -17570,7 +17570,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hue", 150000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hue", 200000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hue", 202500)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hue", 1000000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
@@ -17596,7 +17596,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hue", -10800000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hue", -43200000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hue", -43202500)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hue", -21600000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
@@ -17608,13 +17608,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hue", 21600000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hue", 43200000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hue", 43202500)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hue", 10800000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hue", 1000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hue", 2025)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hue", 5000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hue", 2025)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hue", 10000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
@@ -17624,7 +17624,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hue", 150000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hue", 200000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hue", 202500)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hue", 1000000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
@@ -17650,7 +17650,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hue", -10800000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hue", -43200000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hue", -43202500)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hue", -21600000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
@@ -17662,13 +17662,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hue", 21600000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hue", 43200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hue", 43202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hue", 10800000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hue", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hue", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hue", 5000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hue", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hue", 10000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -17678,7 +17678,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hue", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hue", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hue", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hue", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -17704,7 +17704,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hue", -10800000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hue", -43200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hue", -43202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hue", -21600000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -17716,13 +17716,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hue", 21600000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hue", 43200000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hue", 43202500)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hue", 10800000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hue", 1000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hue", 2025)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hue", 5000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hue", 2025)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hue", 10000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
@@ -17732,7 +17732,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hue", 150000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hue", 200000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hue", 202500)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hue", 1000000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
@@ -17758,7 +17758,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hue", -10800000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hue", -43200000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hue", -43202500)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hue", -21600000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
@@ -17770,13 +17770,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hue", 21600000)],rgb(139, 34, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hue", 43200000)],rgb(139, 34, 34));
+		testResult = test(rgb(34, 139, 34),[mod("hue", 43202500)],rgb(139, 34, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hue", 10800000)],rgb(34, 139, 139));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hue", 1000)],rgb(139, 34, 34));
+		testResult = test(rgb(34, 139, 34),[mod("hue", 2025)],rgb(139, 34, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hue", 5000)],rgb(139, 34, 34));
+		testResult = test(rgb(34, 139, 34),[mod("hue", 2025)],rgb(139, 34, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hue", 10000)],rgb(139, 34, 34));
 		fTestFunction(testResult);
@@ -17786,7 +17786,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hue", 150000)],rgb(139, 38, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hue", 200000)],rgb(139, 40, 34));
+		testResult = test(rgb(34, 139, 34),[mod("hue", 202500)],rgb(139, 40, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hue", 1000000)],rgb(139, 63, 34));
 		fTestFunction(testResult);
@@ -17812,7 +17812,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hue", -10800000)],rgb(139, 34, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hue", -43200000)],rgb(139, 34, 34));
+		testResult = test(rgb(34, 139, 34),[mod("hue", -43202500)],rgb(139, 34, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hue", -21600000)],rgb(139, 34, 34));
 		fTestFunction(testResult);
@@ -17824,13 +17824,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hue", 21600000)],rgb(255, 71, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hue", 43200000)],rgb(255, 71, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hue", 43202500)],rgb(255, 71, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hue", 10800000)],rgb(71, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hue", 1000)],rgb(255, 71, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hue", 2025)],rgb(255, 71, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hue", 5000)],rgb(255, 71, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hue", 2025)],rgb(255, 71, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hue", 10000)],rgb(255, 72, 71));
 		fTestFunction(testResult);
@@ -17840,7 +17840,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hue", 150000)],rgb(255, 79, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hue", 200000)],rgb(255, 81, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hue", 202500)],rgb(255, 81, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hue", 1000000)],rgb(255, 122, 71));
 		fTestFunction(testResult);
@@ -17866,7 +17866,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hue", -10800000)],rgb(255, 71, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hue", -43200000)],rgb(255, 71, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hue", -43202500)],rgb(255, 71, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hue", -21600000)],rgb(255, 71, 71));
 		fTestFunction(testResult);
@@ -17878,13 +17878,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hue", 21600000)],rgb(130, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hue", 43200000)],rgb(130, 0, 0));
+		testResult = test(rgb(75, 0, 130),[mod("hue", 43202500)],rgb(130, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hue", 10800000)],rgb(0, 130, 130));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hue", 1000)],rgb(130, 0, 0));
+		testResult = test(rgb(75, 0, 130),[mod("hue", 2025)],rgb(130, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hue", 5000)],rgb(130, 0, 0));
+		testResult = test(rgb(75, 0, 130),[mod("hue", 2025)],rgb(130, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hue", 10000)],rgb(130, 0, 0));
 		fTestFunction(testResult);
@@ -17894,7 +17894,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hue", 150000)],rgb(130, 5, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hue", 200000)],rgb(130, 7, 0));
+		testResult = test(rgb(75, 0, 130),[mod("hue", 202500)],rgb(130, 7, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hue", 1000000)],rgb(130, 36, 0));
 		fTestFunction(testResult);
@@ -17920,7 +17920,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hue", -10800000)],rgb(130, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hue", -43200000)],rgb(130, 0, 0));
+		testResult = test(rgb(75, 0, 130),[mod("hue", -43202500)],rgb(130, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hue", -21600000)],rgb(130, 0, 0));
 		fTestFunction(testResult);
@@ -17932,13 +17932,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hue", 21600000)],rgb(220, 20, 20));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hue", 43200000)],rgb(220, 20, 20));
+		testResult = test(rgb(220, 20, 60),[mod("hue", 43202500)],rgb(220, 20, 20));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hue", 10800000)],rgb(20, 220, 220));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hue", 1000)],rgb(220, 20, 20));
+		testResult = test(rgb(220, 20, 60),[mod("hue", 2025)],rgb(220, 20, 20));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hue", 5000)],rgb(220, 20, 20));
+		testResult = test(rgb(220, 20, 60),[mod("hue", 2025)],rgb(220, 20, 20));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hue", 10000)],rgb(220, 21, 20));
 		fTestFunction(testResult);
@@ -17948,7 +17948,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hue", 150000)],rgb(220, 28, 20));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hue", 200000)],rgb(220, 31, 20));
+		testResult = test(rgb(220, 20, 60),[mod("hue", 202500)],rgb(220, 31, 20));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hue", 1000000)],rgb(220, 76, 20));
 		fTestFunction(testResult);
@@ -17974,7 +17974,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hue", -10800000)],rgb(220, 20, 20));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hue", -43200000)],rgb(220, 20, 20));
+		testResult = test(rgb(220, 20, 60),[mod("hue", -43202500)],rgb(220, 20, 20));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hue", -21600000)],rgb(220, 20, 20));
 		fTestFunction(testResult);
@@ -17986,13 +17986,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hue", 21600000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hue", 43200000)],rgb(255, 0, 0));
+		testResult = test(rgb(0, 191, 255),[mod("hue", 43202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hue", 10800000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hue", 1000)],rgb(255, 0, 0));
+		testResult = test(rgb(0, 191, 255),[mod("hue", 2025)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hue", 5000)],rgb(255, 0, 0));
+		testResult = test(rgb(0, 191, 255),[mod("hue", 2025)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hue", 10000)],rgb(255, 1, 0));
 		fTestFunction(testResult);
@@ -18002,7 +18002,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hue", 150000)],rgb(255, 11, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hue", 200000)],rgb(255, 14, 0));
+		testResult = test(rgb(0, 191, 255),[mod("hue", 202500)],rgb(255, 14, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hue", 1000000)],rgb(255, 71, 0));
 		fTestFunction(testResult);
@@ -18028,7 +18028,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hue", -10800000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hue", -43200000)],rgb(255, 0, 0));
+		testResult = test(rgb(0, 191, 255),[mod("hue", -43202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hue", -21600000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -18040,13 +18040,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hue", 21600000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hue", 43200000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hue", 43202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hue", 10800000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hue", 1000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hue", 2025)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hue", 5000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hue", 2025)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hue", 10000)],rgb(255, 1, 0));
 		fTestFunction(testResult);
@@ -18056,7 +18056,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hue", 150000)],rgb(255, 11, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hue", 200000)],rgb(255, 14, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hue", 202500)],rgb(255, 14, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hue", 1000000)],rgb(255, 71, 0));
 		fTestFunction(testResult);
@@ -18082,7 +18082,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hue", -10800000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hue", -43200000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hue", -43202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hue", -21600000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -18094,13 +18094,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hue", 21600000)],rgb(226, 43, 43));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hue", 43200000)],rgb(226, 43, 43));
+		testResult = test(rgb(138, 43, 226),[mod("hue", 43202500)],rgb(226, 43, 43));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hue", 10800000)],rgb(43, 226, 226));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hue", 1000)],rgb(226, 43, 43));
+		testResult = test(rgb(138, 43, 226),[mod("hue", 2025)],rgb(226, 43, 43));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hue", 5000)],rgb(226, 43, 43));
+		testResult = test(rgb(138, 43, 226),[mod("hue", 2025)],rgb(226, 43, 43));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hue", 10000)],rgb(226, 44, 43));
 		fTestFunction(testResult);
@@ -18110,7 +18110,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hue", 150000)],rgb(226, 51, 43));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hue", 200000)],rgb(226, 53, 43));
+		testResult = test(rgb(138, 43, 226),[mod("hue", 202500)],rgb(226, 53, 43));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hue", 1000000)],rgb(226, 94, 43));
 		fTestFunction(testResult);
@@ -18136,7 +18136,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hue", -10800000)],rgb(226, 43, 43));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hue", -43200000)],rgb(226, 43, 43));
+		testResult = test(rgb(138, 43, 226),[mod("hue", -43202500)],rgb(226, 43, 43));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hue", -21600000)],rgb(226, 43, 43));
 		fTestFunction(testResult);
@@ -18148,13 +18148,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hue", 21600000)],rgb(205, 50, 50));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hue", 43200000)],rgb(205, 50, 50));
+		testResult = test(rgb(50, 205, 50),[mod("hue", 43202500)],rgb(205, 50, 50));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hue", 10800000)],rgb(50, 205, 205));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hue", 1000)],rgb(205, 50, 50));
+		testResult = test(rgb(50, 205, 50),[mod("hue", 2025)],rgb(205, 50, 50));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hue", 5000)],rgb(205, 50, 50));
+		testResult = test(rgb(50, 205, 50),[mod("hue", 2025)],rgb(205, 50, 50));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hue", 10000)],rgb(205, 50, 50));
 		fTestFunction(testResult);
@@ -18164,7 +18164,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hue", 150000)],rgb(205, 56, 50));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hue", 200000)],rgb(205, 59, 50));
+		testResult = test(rgb(50, 205, 50),[mod("hue", 202500)],rgb(205, 59, 50));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hue", 1000000)],rgb(205, 93, 50));
 		fTestFunction(testResult);
@@ -18190,7 +18190,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hue", -10800000)],rgb(205, 50, 50));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hue", -43200000)],rgb(205, 50, 50));
+		testResult = test(rgb(50, 205, 50),[mod("hue", -43202500)],rgb(205, 50, 50));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hue", -21600000)],rgb(205, 50, 50));
 		fTestFunction(testResult);
@@ -18202,13 +18202,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hue", 21600000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hue", 43200000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hue", 43202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hue", 10800000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hue", 1000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hue", 2025)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hue", 5000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hue", 2025)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hue", 10000)],rgb(255, 1, 0));
 		fTestFunction(testResult);
@@ -18218,7 +18218,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hue", 150000)],rgb(255, 11, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hue", 200000)],rgb(255, 14, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hue", 202500)],rgb(255, 14, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hue", 1000000)],rgb(255, 71, 0));
 		fTestFunction(testResult);
@@ -18244,7 +18244,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hue", -10800000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hue", -43200000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hue", -43202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hue", -21600000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -18256,13 +18256,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hue", 21600000)],rgb(128, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hue", 43200000)],rgb(128, 0, 0));
+		testResult = test(rgb(0, 128, 128),[mod("hue", 43202500)],rgb(128, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hue", 10800000)],rgb(0, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hue", 1000)],rgb(128, 0, 0));
+		testResult = test(rgb(0, 128, 128),[mod("hue", 2025)],rgb(128, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hue", 5000)],rgb(128, 0, 0));
+		testResult = test(rgb(0, 128, 128),[mod("hue", 2025)],rgb(128, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hue", 10000)],rgb(128, 0, 0));
 		fTestFunction(testResult);
@@ -18272,7 +18272,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hue", 150000)],rgb(128, 5, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hue", 200000)],rgb(128, 7, 0));
+		testResult = test(rgb(0, 128, 128),[mod("hue", 202500)],rgb(128, 7, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hue", 1000000)],rgb(128, 36, 0));
 		fTestFunction(testResult);
@@ -18298,7 +18298,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hue", -10800000)],rgb(128, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hue", -43200000)],rgb(128, 0, 0));
+		testResult = test(rgb(0, 128, 128),[mod("hue", -43202500)],rgb(128, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hue", -21600000)],rgb(128, 0, 0));
 		fTestFunction(testResult);
@@ -18310,13 +18310,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hue", 21600000)],rgb(218, 112, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hue", 43200000)],rgb(218, 112, 112));
+		testResult = test(rgb(218, 112, 214),[mod("hue", 43202500)],rgb(218, 112, 112));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hue", 10800000)],rgb(112, 218, 218));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hue", 1000)],rgb(218, 112, 112));
+		testResult = test(rgb(218, 112, 214),[mod("hue", 2025)],rgb(218, 112, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hue", 5000)],rgb(218, 112, 112));
+		testResult = test(rgb(218, 112, 214),[mod("hue", 2025)],rgb(218, 112, 112));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hue", 10000)],rgb(218, 112, 112));
 		fTestFunction(testResult);
@@ -18326,7 +18326,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hue", 150000)],rgb(218, 116, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hue", 200000)],rgb(218, 118, 112));
+		testResult = test(rgb(218, 112, 214),[mod("hue", 202500)],rgb(218, 118, 112));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hue", 1000000)],rgb(218, 141, 112));
 		fTestFunction(testResult);
@@ -18352,7 +18352,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hue", -10800000)],rgb(218, 112, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hue", -43200000)],rgb(218, 112, 112));
+		testResult = test(rgb(218, 112, 214),[mod("hue", -43202500)],rgb(218, 112, 112));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hue", -21600000)],rgb(218, 112, 112));
 		fTestFunction(testResult);
@@ -18364,13 +18364,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hue", 21600000)],rgb(180, 70, 70));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hue", 43200000)],rgb(180, 70, 70));
+		testResult = test(rgb(70, 130, 180),[mod("hue", 43202500)],rgb(180, 70, 70));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hue", 10800000)],rgb(70, 180, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hue", 1000)],rgb(180, 70, 70));
+		testResult = test(rgb(70, 130, 180),[mod("hue", 2025)],rgb(180, 70, 70));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hue", 5000)],rgb(180, 70, 70));
+		testResult = test(rgb(70, 130, 180),[mod("hue", 2025)],rgb(180, 70, 70));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hue", 10000)],rgb(180, 70, 70));
 		fTestFunction(testResult);
@@ -18380,7 +18380,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hue", 150000)],rgb(180, 75, 70));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hue", 200000)],rgb(180, 76, 70));
+		testResult = test(rgb(70, 130, 180),[mod("hue", 202500)],rgb(180, 76, 70));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hue", 1000000)],rgb(180, 101, 70));
 		fTestFunction(testResult);
@@ -18406,7 +18406,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hue", -10800000)],rgb(180, 70, 70));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hue", -43200000)],rgb(180, 70, 70));
+		testResult = test(rgb(70, 130, 180),[mod("hue", -43202500)],rgb(180, 70, 70));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hue", -21600000)],rgb(180, 70, 70));
 		fTestFunction(testResult);
@@ -18418,13 +18418,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hue", 21600000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hue", 43200000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hue", 43202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hue", 10800000)],rgb(0, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hue", 1000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hue", 2025)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hue", 5000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hue", 2025)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hue", 10000)],rgb(255, 1, 0));
 		fTestFunction(testResult);
@@ -18434,7 +18434,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hue", 150000)],rgb(255, 11, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hue", 200000)],rgb(255, 14, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hue", 202500)],rgb(255, 14, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hue", 1000000)],rgb(255, 71, 0));
 		fTestFunction(testResult);
@@ -18460,7 +18460,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hue", -10800000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hue", -43200000)],rgb(255, 0, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hue", -43202500)],rgb(255, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hue", -21600000)],rgb(255, 0, 0));
 		fTestFunction(testResult);
@@ -18472,13 +18472,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hue", 21600000)],rgb(219, 112, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hue", 43200000)],rgb(219, 112, 112));
+		testResult = test(rgb(147, 112, 219),[mod("hue", 43202500)],rgb(219, 112, 112));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hue", 10800000)],rgb(112, 219, 219));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hue", 1000)],rgb(219, 112, 112));
+		testResult = test(rgb(147, 112, 219),[mod("hue", 2025)],rgb(219, 112, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hue", 5000)],rgb(219, 112, 112));
+		testResult = test(rgb(147, 112, 219),[mod("hue", 2025)],rgb(219, 112, 112));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hue", 10000)],rgb(219, 112, 112));
 		fTestFunction(testResult);
@@ -18488,7 +18488,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hue", 150000)],rgb(219, 116, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hue", 200000)],rgb(219, 118, 112));
+		testResult = test(rgb(147, 112, 219),[mod("hue", 202500)],rgb(219, 118, 112));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hue", 1000000)],rgb(219, 142, 112));
 		fTestFunction(testResult);
@@ -18514,7 +18514,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hue", -10800000)],rgb(219, 112, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hue", -43200000)],rgb(219, 112, 112));
+		testResult = test(rgb(147, 112, 219),[mod("hue", -43202500)],rgb(219, 112, 112));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hue", -21600000)],rgb(219, 112, 112));
 		fTestFunction(testResult);
@@ -18526,13 +18526,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hue", 21600000)],rgb(179, 60, 60));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hue", 43200000)],rgb(179, 60, 60));
+		testResult = test(rgb(60, 179, 113),[mod("hue", 43202500)],rgb(179, 60, 60));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hue", 10800000)],rgb(60, 179, 179));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hue", 1000)],rgb(179, 60, 60));
+		testResult = test(rgb(60, 179, 113),[mod("hue", 2025)],rgb(179, 60, 60));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hue", 5000)],rgb(179, 60, 60));
+		testResult = test(rgb(60, 179, 113),[mod("hue", 2025)],rgb(179, 60, 60));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hue", 10000)],rgb(179, 60, 60));
 		fTestFunction(testResult);
@@ -18542,7 +18542,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hue", 150000)],rgb(179, 65, 60));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hue", 200000)],rgb(179, 67, 60));
+		testResult = test(rgb(60, 179, 113),[mod("hue", 202500)],rgb(179, 67, 60));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hue", 1000000)],rgb(179, 93, 60));
 		fTestFunction(testResult);
@@ -18568,7 +18568,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hue", -10800000)],rgb(179, 60, 60));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hue", -43200000)],rgb(179, 60, 60));
+		testResult = test(rgb(60, 179, 113),[mod("hue", -43202500)],rgb(179, 60, 60));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hue", -21600000)],rgb(179, 60, 60));
 		fTestFunction(testResult);
@@ -18580,13 +18580,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hue", 21600000)],rgb(210, 30, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hue", 43200000)],rgb(210, 30, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hue", 43202500)],rgb(210, 30, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hue", 10800000)],rgb(30, 210, 210));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hue", 1000)],rgb(210, 30, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hue", 2025)],rgb(210, 30, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hue", 5000)],rgb(210, 30, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hue", 2025)],rgb(210, 30, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hue", 10000)],rgb(210, 31, 30));
 		fTestFunction(testResult);
@@ -18596,7 +18596,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hue", 150000)],rgb(210, 37, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hue", 200000)],rgb(210, 40, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hue", 202500)],rgb(210, 40, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hue", 1000000)],rgb(210, 80, 30));
 		fTestFunction(testResult);
@@ -18622,7 +18622,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hue", -10800000)],rgb(210, 30, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hue", -43200000)],rgb(210, 30, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hue", -43202500)],rgb(210, 30, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hue", -21600000)],rgb(210, 30, 30));
 		fTestFunction(testResult);
@@ -18634,13 +18634,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hue", 21600000)],rgb(238, 104, 104));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hue", 43200000)],rgb(238, 104, 104));
+		testResult = test(rgb(123, 104, 238),[mod("hue", 43202500)],rgb(238, 104, 104));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hue", 10800000)],rgb(104, 238, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hue", 1000)],rgb(238, 104, 104));
+		testResult = test(rgb(123, 104, 238),[mod("hue", 2025)],rgb(238, 104, 104));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hue", 5000)],rgb(238, 104, 104));
+		testResult = test(rgb(123, 104, 238),[mod("hue", 2025)],rgb(238, 104, 104));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hue", 10000)],rgb(238, 104, 104));
 		fTestFunction(testResult);
@@ -18650,7 +18650,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hue", 150000)],rgb(238, 110, 104));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hue", 200000)],rgb(238, 111, 104));
+		testResult = test(rgb(123, 104, 238),[mod("hue", 202500)],rgb(238, 111, 104));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hue", 1000000)],rgb(238, 141, 104));
 		fTestFunction(testResult);
@@ -18676,7 +18676,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hue", -10800000)],rgb(238, 104, 104));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hue", -43200000)],rgb(238, 104, 104));
+		testResult = test(rgb(123, 104, 238),[mod("hue", -43202500)],rgb(238, 104, 104));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hue", -21600000)],rgb(238, 104, 104));
 		fTestFunction(testResult);
@@ -18688,13 +18688,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hue", 21600000)],rgb(209, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hue", 43200000)],rgb(209, 0, 0));
+		testResult = test(rgb(0, 206, 209),[mod("hue", 43202500)],rgb(209, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hue", 10800000)],rgb(0, 209, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hue", 1000)],rgb(209, 0, 0));
+		testResult = test(rgb(0, 206, 209),[mod("hue", 2025)],rgb(209, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hue", 5000)],rgb(209, 0, 0));
+		testResult = test(rgb(0, 206, 209),[mod("hue", 2025)],rgb(209, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hue", 10000)],rgb(209, 1, 0));
 		fTestFunction(testResult);
@@ -18704,7 +18704,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hue", 150000)],rgb(209, 9, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hue", 200000)],rgb(209, 12, 0));
+		testResult = test(rgb(0, 206, 209),[mod("hue", 202500)],rgb(209, 12, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hue", 1000000)],rgb(209, 58, 0));
 		fTestFunction(testResult);
@@ -18730,7 +18730,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hue", -10800000)],rgb(209, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hue", -43200000)],rgb(209, 0, 0));
+		testResult = test(rgb(0, 206, 209),[mod("hue", -43202500)],rgb(209, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hue", -21600000)],rgb(209, 0, 0));
 		fTestFunction(testResult);
@@ -18742,13 +18742,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hue", 21600000)],rgb(255, 105, 105));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hue", 43200000)],rgb(255, 105, 105));
+		testResult = test(rgb(255, 105, 180),[mod("hue", 43202500)],rgb(255, 105, 105));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hue", 10800000)],rgb(105, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hue", 1000)],rgb(255, 105, 105));
+		testResult = test(rgb(255, 105, 180),[mod("hue", 2025)],rgb(255, 105, 105));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hue", 5000)],rgb(255, 105, 105));
+		testResult = test(rgb(255, 105, 180),[mod("hue", 2025)],rgb(255, 105, 105));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hue", 10000)],rgb(255, 105, 105));
 		fTestFunction(testResult);
@@ -18758,7 +18758,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hue", 150000)],rgb(255, 111, 105));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hue", 200000)],rgb(255, 113, 105));
+		testResult = test(rgb(255, 105, 180),[mod("hue", 202500)],rgb(255, 113, 105));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hue", 1000000)],rgb(255, 147, 105));
 		fTestFunction(testResult);
@@ -18784,7 +18784,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hue", -10800000)],rgb(255, 105, 105));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hue", -43200000)],rgb(255, 105, 105));
+		testResult = test(rgb(255, 105, 180),[mod("hue", -43202500)],rgb(255, 105, 105));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hue", -21600000)],rgb(255, 105, 105));
 		fTestFunction(testResult);
@@ -18796,13 +18796,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hue", 21600000)],rgb(139, 46, 46));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hue", 43200000)],rgb(139, 46, 46));
+		testResult = test(rgb(46, 139, 87),[mod("hue", 43202500)],rgb(139, 46, 46));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hue", 10800000)],rgb(46, 139, 139));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hue", 1000)],rgb(139, 46, 46));
+		testResult = test(rgb(46, 139, 87),[mod("hue", 2025)],rgb(139, 46, 46));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hue", 5000)],rgb(139, 46, 46));
+		testResult = test(rgb(46, 139, 87),[mod("hue", 2025)],rgb(139, 46, 46));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hue", 10000)],rgb(139, 46, 46));
 		fTestFunction(testResult);
@@ -18812,7 +18812,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hue", 150000)],rgb(139, 50, 46));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hue", 200000)],rgb(139, 51, 46));
+		testResult = test(rgb(46, 139, 87),[mod("hue", 202500)],rgb(139, 51, 46));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hue", 1000000)],rgb(139, 72, 46));
 		fTestFunction(testResult);
@@ -18838,7 +18838,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hue", -10800000)],rgb(139, 46, 46));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hue", -43200000)],rgb(139, 46, 46));
+		testResult = test(rgb(46, 139, 87),[mod("hue", -43202500)],rgb(139, 46, 46));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hue", -21600000)],rgb(139, 46, 46));
 		fTestFunction(testResult);
@@ -18854,13 +18854,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hueOff", 21600000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hueOff", 43200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hueOff", 43202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hueOff", 10800000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hueOff", 1000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hueOff", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hueOff", 5000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hueOff", 2025)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hueOff", 10000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -18870,7 +18870,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hueOff", 150000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hueOff", 200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hueOff", 202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hueOff", 1000000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -18896,7 +18896,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hueOff", -10800000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0,0,0),[mod("hueOff", -43200000)],rgb(0, 0, 0));
+		testResult = test(rgb(0,0,0),[mod("hueOff", -43202500)],rgb(0, 0, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(0,0,0),[mod("hueOff", -21600000)],rgb(0, 0, 0));
 		fTestFunction(testResult);
@@ -18908,13 +18908,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hueOff", 21600000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hueOff", 43200000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hueOff", 43202500)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hueOff", 10800000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hueOff", 1000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hueOff", 2025)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hueOff", 5000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hueOff", 2025)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hueOff", 10000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
@@ -18924,7 +18924,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hueOff", 150000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hueOff", 200000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hueOff", 202500)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hueOff", 1000000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
@@ -18950,7 +18950,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hueOff", -10800000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(126,126,126),[mod("hueOff", -43200000)],rgb(126, 126, 126));
+		testResult = test(rgb(126,126,126),[mod("hueOff", -43202500)],rgb(126, 126, 126));
 		fTestFunction(testResult);
 		testResult = test(rgb(126,126,126),[mod("hueOff", -21600000)],rgb(126, 126, 126));
 		fTestFunction(testResult);
@@ -18962,13 +18962,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hueOff", 21600000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hueOff", 43200000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hueOff", 43202500)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hueOff", 10800000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hueOff", 1000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hueOff", 2025)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hueOff", 5000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hueOff", 2025)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hueOff", 10000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
@@ -18978,7 +18978,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hueOff", 150000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hueOff", 200000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hueOff", 202500)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hueOff", 1000000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
@@ -19004,7 +19004,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hueOff", -10800000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
-		testResult = test(rgb(127,127,127),[mod("hueOff", -43200000)],rgb(127, 127, 127));
+		testResult = test(rgb(127,127,127),[mod("hueOff", -43202500)],rgb(127, 127, 127));
 		fTestFunction(testResult);
 		testResult = test(rgb(127,127,127),[mod("hueOff", -21600000)],rgb(127, 127, 127));
 		fTestFunction(testResult);
@@ -19016,13 +19016,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hueOff", 21600000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hueOff", 43200000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hueOff", 43202500)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hueOff", 10800000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hueOff", 1000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hueOff", 2025)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hueOff", 5000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hueOff", 2025)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hueOff", 10000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
@@ -19032,7 +19032,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hueOff", 150000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hueOff", 200000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hueOff", 202500)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hueOff", 1000000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
@@ -19058,7 +19058,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hueOff", -10800000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(128,128,128),[mod("hueOff", -43200000)],rgb(128, 128, 128));
+		testResult = test(rgb(128,128,128),[mod("hueOff", -43202500)],rgb(128, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(128,128,128),[mod("hueOff", -21600000)],rgb(128, 128, 128));
 		fTestFunction(testResult);
@@ -19070,13 +19070,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hueOff", 21600000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hueOff", 43200000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hueOff", 43202500)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hueOff", 10800000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hueOff", 1000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hueOff", 2025)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hueOff", 5000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hueOff", 2025)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hueOff", 10000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
@@ -19086,7 +19086,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hueOff", 150000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hueOff", 200000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hueOff", 202500)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hueOff", 1000000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
@@ -19112,7 +19112,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hueOff", -10800000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
-		testResult = test(rgb(200,200,200),[mod("hueOff", -43200000)],rgb(200, 200, 200));
+		testResult = test(rgb(200,200,200),[mod("hueOff", -43202500)],rgb(200, 200, 200));
 		fTestFunction(testResult);
 		testResult = test(rgb(200,200,200),[mod("hueOff", -21600000)],rgb(200, 200, 200));
 		fTestFunction(testResult);
@@ -19124,13 +19124,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hueOff", 21600000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hueOff", 43200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hueOff", 43202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hueOff", 10800000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hueOff", 1000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hueOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hueOff", 5000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hueOff", 2025)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hueOff", 10000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -19140,7 +19140,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hueOff", 150000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hueOff", 200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hueOff", 202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hueOff", 1000000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -19166,7 +19166,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hueOff", -10800000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255,255,255),[mod("hueOff", -43200000)],rgb(255, 255, 255));
+		testResult = test(rgb(255,255,255),[mod("hueOff", -43202500)],rgb(255, 255, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(255,255,255),[mod("hueOff", -21600000)],rgb(255, 255, 255));
 		fTestFunction(testResult);
@@ -19178,13 +19178,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hueOff", 21600000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hueOff", 43200000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hueOff", 43202500)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hueOff", 10800000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hueOff", 1000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hueOff", 2025)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hueOff", 5000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hueOff", 2025)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hueOff", 10000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
@@ -19194,7 +19194,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hueOff", 150000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hueOff", 200000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hueOff", 202500)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hueOff", 1000000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
@@ -19220,7 +19220,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hueOff", -10800000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
-		testResult = test(rgb(100,100,100),[mod("hueOff", -43200000)],rgb(100, 100, 100));
+		testResult = test(rgb(100,100,100),[mod("hueOff", -43202500)],rgb(100, 100, 100));
 		fTestFunction(testResult);
 		testResult = test(rgb(100,100,100),[mod("hueOff", -21600000)],rgb(100, 100, 100));
 		fTestFunction(testResult);
@@ -19232,13 +19232,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hueOff", 21600000)],rgb(34, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hueOff", 43200000)],rgb(34, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("hueOff", 43202500)],rgb(34, 139, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hueOff", 10800000)],rgb(139, 34, 139));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hueOff", 1000)],rgb(34, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("hueOff", 2025)],rgb(34, 139, 34));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hueOff", 5000)],rgb(34, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("hueOff", 2025)],rgb(34, 139, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hueOff", 10000)],rgb(34, 139, 34));
 		fTestFunction(testResult);
@@ -19248,7 +19248,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hueOff", 150000)],rgb(34, 139, 38));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hueOff", 200000)],rgb(34, 139, 40));
+		testResult = test(rgb(34, 139, 34),[mod("hueOff", 202500)],rgb(34, 139, 40));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hueOff", 1000000)],rgb(34, 139, 63));
 		fTestFunction(testResult);
@@ -19274,7 +19274,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hueOff", -10800000)],rgb(139, 34, 139));
 		fTestFunction(testResult);
-		testResult = test(rgb(34, 139, 34),[mod("hueOff", -43200000)],rgb(34, 139, 34));
+		testResult = test(rgb(34, 139, 34),[mod("hueOff", -43202500)],rgb(34, 139, 34));
 		fTestFunction(testResult);
 		testResult = test(rgb(34, 139, 34),[mod("hueOff", -21600000)],rgb(34, 139, 34));
 		fTestFunction(testResult);
@@ -19286,13 +19286,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hueOff", 21600000)],rgb(255, 99, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hueOff", 43200000)],rgb(255, 99, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hueOff", 43202500)],rgb(255, 99, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hueOff", 10800000)],rgb(71, 227, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hueOff", 1000)],rgb(255, 99, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hueOff", 2025)],rgb(255, 99, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hueOff", 5000)],rgb(255, 99, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hueOff", 2025)],rgb(255, 99, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hueOff", 10000)],rgb(255, 100, 71));
 		fTestFunction(testResult);
@@ -19302,7 +19302,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hueOff", 150000)],rgb(255, 107, 71));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hueOff", 200000)],rgb(255, 109, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hueOff", 202500)],rgb(255, 109, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hueOff", 1000000)],rgb(255, 150, 71));
 		fTestFunction(testResult);
@@ -19328,7 +19328,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hueOff", -10800000)],rgb(71, 227, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 99, 71),[mod("hueOff", -43200000)],rgb(255, 99, 71));
+		testResult = test(rgb(255, 99, 71),[mod("hueOff", -43202500)],rgb(255, 99, 71));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 99, 71),[mod("hueOff", -21600000)],rgb(255, 99, 71));
 		fTestFunction(testResult);
@@ -19340,13 +19340,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hueOff", 21600000)],rgb(75, 0, 130));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hueOff", 43200000)],rgb(75, 0, 130));
+		testResult = test(rgb(75, 0, 130),[mod("hueOff", 43202500)],rgb(75, 0, 130));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hueOff", 10800000)],rgb(55, 130, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hueOff", 1000)],rgb(75, 0, 130));
+		testResult = test(rgb(75, 0, 130),[mod("hueOff", 2025)],rgb(75, 0, 130));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hueOff", 5000)],rgb(75, 0, 130));
+		testResult = test(rgb(75, 0, 130),[mod("hueOff", 2025)],rgb(75, 0, 130));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hueOff", 10000)],rgb(75, 0, 130));
 		fTestFunction(testResult);
@@ -19356,7 +19356,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hueOff", 150000)],rgb(80, 0, 130));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hueOff", 200000)],rgb(82, 0, 130));
+		testResult = test(rgb(75, 0, 130),[mod("hueOff", 202500)],rgb(82, 0, 130));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hueOff", 1000000)],rgb(111, 0, 130));
 		fTestFunction(testResult);
@@ -19382,7 +19382,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hueOff", -10800000)],rgb(55, 130, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(75, 0, 130),[mod("hueOff", -43200000)],rgb(75, 0, 130));
+		testResult = test(rgb(75, 0, 130),[mod("hueOff", -43202500)],rgb(75, 0, 130));
 		fTestFunction(testResult);
 		testResult = test(rgb(75, 0, 130),[mod("hueOff", -21600000)],rgb(75, 0, 130));
 		fTestFunction(testResult);
@@ -19394,13 +19394,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hueOff", 21600000)],rgb(220, 20, 60));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hueOff", 43200000)],rgb(220, 20, 60));
+		testResult = test(rgb(220, 20, 60),[mod("hueOff", 43202500)],rgb(220, 20, 60));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hueOff", 10800000)],rgb(20, 220, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hueOff", 1000)],rgb(220, 20, 60));
+		testResult = test(rgb(220, 20, 60),[mod("hueOff", 2025)],rgb(220, 20, 60));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hueOff", 5000)],rgb(220, 20, 60));
+		testResult = test(rgb(220, 20, 60),[mod("hueOff", 2025)],rgb(220, 20, 60));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hueOff", 10000)],rgb(220, 20, 59));
 		fTestFunction(testResult);
@@ -19410,7 +19410,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hueOff", 150000)],rgb(220, 20, 52));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hueOff", 200000)],rgb(220, 20, 49));
+		testResult = test(rgb(220, 20, 60),[mod("hueOff", 202500)],rgb(220, 20, 49));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hueOff", 1000000)],rgb(220, 36, 20));
 		fTestFunction(testResult);
@@ -19436,7 +19436,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hueOff", -10800000)],rgb(20, 220, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(220, 20, 60),[mod("hueOff", -43200000)],rgb(220, 20, 60));
+		testResult = test(rgb(220, 20, 60),[mod("hueOff", -43202500)],rgb(220, 20, 60));
 		fTestFunction(testResult);
 		testResult = test(rgb(220, 20, 60),[mod("hueOff", -21600000)],rgb(220, 20, 60));
 		fTestFunction(testResult);
@@ -19448,13 +19448,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hueOff", 21600000)],rgb(0, 191, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hueOff", 43200000)],rgb(0, 191, 255));
+		testResult = test(rgb(0, 191, 255),[mod("hueOff", 43202500)],rgb(0, 191, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hueOff", 10800000)],rgb(255, 64, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hueOff", 1000)],rgb(0, 191, 255));
+		testResult = test(rgb(0, 191, 255),[mod("hueOff", 2025)],rgb(0, 191, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hueOff", 5000)],rgb(0, 191, 255));
+		testResult = test(rgb(0, 191, 255),[mod("hueOff", 2025)],rgb(0, 191, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hueOff", 10000)],rgb(0, 190, 255));
 		fTestFunction(testResult);
@@ -19464,7 +19464,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hueOff", 150000)],rgb(0, 180, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hueOff", 200000)],rgb(0, 177, 255));
+		testResult = test(rgb(0, 191, 255),[mod("hueOff", 202500)],rgb(0, 177, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hueOff", 1000000)],rgb(0, 120, 255));
 		fTestFunction(testResult);
@@ -19490,7 +19490,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hueOff", -10800000)],rgb(255, 64, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 191, 255),[mod("hueOff", -43200000)],rgb(0, 191, 255));
+		testResult = test(rgb(0, 191, 255),[mod("hueOff", -43202500)],rgb(0, 191, 255));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 191, 255),[mod("hueOff", -21600000)],rgb(0, 191, 255));
 		fTestFunction(testResult);
@@ -19502,13 +19502,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hueOff", 21600000)],rgb(255, 215, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hueOff", 43200000)],rgb(255, 215, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hueOff", 43202500)],rgb(255, 215, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hueOff", 10800000)],rgb(0, 40, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hueOff", 1000)],rgb(255, 215, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hueOff", 2025)],rgb(255, 215, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hueOff", 5000)],rgb(255, 215, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hueOff", 2025)],rgb(255, 215, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hueOff", 10000)],rgb(255, 216, 0));
 		fTestFunction(testResult);
@@ -19518,7 +19518,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hueOff", 150000)],rgb(255, 226, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hueOff", 200000)],rgb(255, 229, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hueOff", 202500)],rgb(255, 229, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hueOff", 1000000)],rgb(224, 255, 0));
 		fTestFunction(testResult);
@@ -19544,7 +19544,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hueOff", -10800000)],rgb(0, 40, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 215, 0),[mod("hueOff", -43200000)],rgb(255, 215, 0));
+		testResult = test(rgb(255, 215, 0),[mod("hueOff", -43202500)],rgb(255, 215, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 215, 0),[mod("hueOff", -21600000)],rgb(255, 215, 0));
 		fTestFunction(testResult);
@@ -19556,13 +19556,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hueOff", 21600000)],rgb(138, 43, 226));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hueOff", 43200000)],rgb(138, 43, 226));
+		testResult = test(rgb(138, 43, 226),[mod("hueOff", 43202500)],rgb(138, 43, 226));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hueOff", 10800000)],rgb(131, 226, 43));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hueOff", 1000)],rgb(138, 43, 226));
+		testResult = test(rgb(138, 43, 226),[mod("hueOff", 2025)],rgb(138, 43, 226));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hueOff", 5000)],rgb(138, 43, 226));
+		testResult = test(rgb(138, 43, 226),[mod("hueOff", 2025)],rgb(138, 43, 226));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hueOff", 10000)],rgb(139, 43, 226));
 		fTestFunction(testResult);
@@ -19572,7 +19572,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hueOff", 150000)],rgb(146, 43, 226));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hueOff", 200000)],rgb(148, 43, 226));
+		testResult = test(rgb(138, 43, 226),[mod("hueOff", 202500)],rgb(148, 43, 226));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hueOff", 1000000)],rgb(189, 43, 226));
 		fTestFunction(testResult);
@@ -19598,7 +19598,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hueOff", -10800000)],rgb(131, 226, 43));
 		fTestFunction(testResult);
-		testResult = test(rgb(138, 43, 226),[mod("hueOff", -43200000)],rgb(138, 43, 226));
+		testResult = test(rgb(138, 43, 226),[mod("hueOff", -43202500)],rgb(138, 43, 226));
 		fTestFunction(testResult);
 		testResult = test(rgb(138, 43, 226),[mod("hueOff", -21600000)],rgb(138, 43, 226));
 		fTestFunction(testResult);
@@ -19610,13 +19610,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hueOff", 21600000)],rgb(50, 205, 50));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hueOff", 43200000)],rgb(50, 205, 50));
+		testResult = test(rgb(50, 205, 50),[mod("hueOff", 43202500)],rgb(50, 205, 50));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hueOff", 10800000)],rgb(205, 50, 205));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hueOff", 1000)],rgb(50, 205, 50));
+		testResult = test(rgb(50, 205, 50),[mod("hueOff", 2025)],rgb(50, 205, 50));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hueOff", 5000)],rgb(50, 205, 50));
+		testResult = test(rgb(50, 205, 50),[mod("hueOff", 2025)],rgb(50, 205, 50));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hueOff", 10000)],rgb(50, 205, 50));
 		fTestFunction(testResult);
@@ -19626,7 +19626,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hueOff", 150000)],rgb(50, 205, 56));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hueOff", 200000)],rgb(50, 205, 59));
+		testResult = test(rgb(50, 205, 50),[mod("hueOff", 202500)],rgb(50, 205, 59));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hueOff", 1000000)],rgb(50, 205, 93));
 		fTestFunction(testResult);
@@ -19652,7 +19652,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hueOff", -10800000)],rgb(205, 50, 205));
 		fTestFunction(testResult);
-		testResult = test(rgb(50, 205, 50),[mod("hueOff", -43200000)],rgb(50, 205, 50));
+		testResult = test(rgb(50, 205, 50),[mod("hueOff", -43202500)],rgb(50, 205, 50));
 		fTestFunction(testResult);
 		testResult = test(rgb(50, 205, 50),[mod("hueOff", -21600000)],rgb(50, 205, 50));
 		fTestFunction(testResult);
@@ -19664,13 +19664,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hueOff", 21600000)],rgb(255, 69, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hueOff", 43200000)],rgb(255, 69, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hueOff", 43202500)],rgb(255, 69, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hueOff", 10800000)],rgb(0, 186, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hueOff", 1000)],rgb(255, 69, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hueOff", 2025)],rgb(255, 69, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hueOff", 5000)],rgb(255, 69, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hueOff", 2025)],rgb(255, 69, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hueOff", 10000)],rgb(255, 70, 0));
 		fTestFunction(testResult);
@@ -19680,7 +19680,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hueOff", 150000)],rgb(255, 80, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hueOff", 200000)],rgb(255, 83, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hueOff", 202500)],rgb(255, 83, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hueOff", 1000000)],rgb(255, 140, 0));
 		fTestFunction(testResult);
@@ -19706,7 +19706,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hueOff", -10800000)],rgb(0, 186, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 69, 0),[mod("hueOff", -43200000)],rgb(255, 69, 0));
+		testResult = test(rgb(255, 69, 0),[mod("hueOff", -43202500)],rgb(255, 69, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 69, 0),[mod("hueOff", -21600000)],rgb(255, 69, 0));
 		fTestFunction(testResult);
@@ -19718,13 +19718,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hueOff", 21600000)],rgb(0, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hueOff", 43200000)],rgb(0, 128, 128));
+		testResult = test(rgb(0, 128, 128),[mod("hueOff", 43202500)],rgb(0, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hueOff", 10800000)],rgb(128, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hueOff", 1000)],rgb(0, 128, 128));
+		testResult = test(rgb(0, 128, 128),[mod("hueOff", 2025)],rgb(0, 128, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hueOff", 5000)],rgb(0, 128, 128));
+		testResult = test(rgb(0, 128, 128),[mod("hueOff", 2025)],rgb(0, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hueOff", 10000)],rgb(0, 128, 128));
 		fTestFunction(testResult);
@@ -19734,7 +19734,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hueOff", 150000)],rgb(0, 123, 128));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hueOff", 200000)],rgb(0, 121, 128));
+		testResult = test(rgb(0, 128, 128),[mod("hueOff", 202500)],rgb(0, 121, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hueOff", 1000000)],rgb(0, 92, 128));
 		fTestFunction(testResult);
@@ -19760,7 +19760,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hueOff", -10800000)],rgb(128, 0, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 128, 128),[mod("hueOff", -43200000)],rgb(0, 128, 128));
+		testResult = test(rgb(0, 128, 128),[mod("hueOff", -43202500)],rgb(0, 128, 128));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 128, 128),[mod("hueOff", -21600000)],rgb(0, 128, 128));
 		fTestFunction(testResult);
@@ -19772,13 +19772,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hueOff", 21600000)],rgb(218, 112, 214));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hueOff", 43200000)],rgb(218, 112, 214));
+		testResult = test(rgb(218, 112, 214),[mod("hueOff", 43202500)],rgb(218, 112, 214));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hueOff", 10800000)],rgb(112, 218, 116));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hueOff", 1000)],rgb(218, 112, 214));
+		testResult = test(rgb(218, 112, 214),[mod("hueOff", 2025)],rgb(218, 112, 214));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hueOff", 5000)],rgb(218, 112, 214));
+		testResult = test(rgb(218, 112, 214),[mod("hueOff", 2025)],rgb(218, 112, 214));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hueOff", 10000)],rgb(218, 112, 214));
 		fTestFunction(testResult);
@@ -19788,7 +19788,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hueOff", 150000)],rgb(218, 112, 210));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hueOff", 200000)],rgb(218, 112, 208));
+		testResult = test(rgb(218, 112, 214),[mod("hueOff", 202500)],rgb(218, 112, 208));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hueOff", 1000000)],rgb(218, 112, 185));
 		fTestFunction(testResult);
@@ -19814,7 +19814,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hueOff", -10800000)],rgb(112, 218, 116));
 		fTestFunction(testResult);
-		testResult = test(rgb(218, 112, 214),[mod("hueOff", -43200000)],rgb(218, 112, 214));
+		testResult = test(rgb(218, 112, 214),[mod("hueOff", -43202500)],rgb(218, 112, 214));
 		fTestFunction(testResult);
 		testResult = test(rgb(218, 112, 214),[mod("hueOff", -21600000)],rgb(218, 112, 214));
 		fTestFunction(testResult);
@@ -19826,13 +19826,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hueOff", 21600000)],rgb(70, 130, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hueOff", 43200000)],rgb(70, 130, 180));
+		testResult = test(rgb(70, 130, 180),[mod("hueOff", 43202500)],rgb(70, 130, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hueOff", 10800000)],rgb(180, 120, 70));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hueOff", 1000)],rgb(70, 130, 180));
+		testResult = test(rgb(70, 130, 180),[mod("hueOff", 2025)],rgb(70, 130, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hueOff", 5000)],rgb(70, 130, 180));
+		testResult = test(rgb(70, 130, 180),[mod("hueOff", 2025)],rgb(70, 130, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hueOff", 10000)],rgb(70, 130, 180));
 		fTestFunction(testResult);
@@ -19842,7 +19842,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hueOff", 150000)],rgb(70, 125, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hueOff", 200000)],rgb(70, 124, 180));
+		testResult = test(rgb(70, 130, 180),[mod("hueOff", 202500)],rgb(70, 124, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hueOff", 1000000)],rgb(70, 99, 180));
 		fTestFunction(testResult);
@@ -19868,7 +19868,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hueOff", -10800000)],rgb(180, 120, 70));
 		fTestFunction(testResult);
-		testResult = test(rgb(70, 130, 180),[mod("hueOff", -43200000)],rgb(70, 130, 180));
+		testResult = test(rgb(70, 130, 180),[mod("hueOff", -43202500)],rgb(70, 130, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(70, 130, 180),[mod("hueOff", -21600000)],rgb(70, 130, 180));
 		fTestFunction(testResult);
@@ -19880,13 +19880,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hueOff", 21600000)],rgb(255, 165, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hueOff", 43200000)],rgb(255, 165, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hueOff", 43202500)],rgb(255, 165, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hueOff", 10800000)],rgb(0, 90, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hueOff", 1000)],rgb(255, 165, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hueOff", 2025)],rgb(255, 165, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hueOff", 5000)],rgb(255, 165, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hueOff", 2025)],rgb(255, 165, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hueOff", 10000)],rgb(255, 166, 0));
 		fTestFunction(testResult);
@@ -19896,7 +19896,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hueOff", 150000)],rgb(255, 176, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hueOff", 200000)],rgb(255, 179, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hueOff", 202500)],rgb(255, 179, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hueOff", 1000000)],rgb(255, 236, 0));
 		fTestFunction(testResult);
@@ -19922,7 +19922,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hueOff", -10800000)],rgb(0, 90, 255));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 165, 0),[mod("hueOff", -43200000)],rgb(255, 165, 0));
+		testResult = test(rgb(255, 165, 0),[mod("hueOff", -43202500)],rgb(255, 165, 0));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 165, 0),[mod("hueOff", -21600000)],rgb(255, 165, 0));
 		fTestFunction(testResult);
@@ -19934,13 +19934,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hueOff", 21600000)],rgb(147, 112, 219));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hueOff", 43200000)],rgb(147, 112, 219));
+		testResult = test(rgb(147, 112, 219),[mod("hueOff", 43202500)],rgb(147, 112, 219));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hueOff", 10800000)],rgb(184, 219, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hueOff", 1000)],rgb(147, 112, 219));
+		testResult = test(rgb(147, 112, 219),[mod("hueOff", 2025)],rgb(147, 112, 219));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hueOff", 5000)],rgb(147, 112, 219));
+		testResult = test(rgb(147, 112, 219),[mod("hueOff", 2025)],rgb(147, 112, 219));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hueOff", 10000)],rgb(147, 112, 219));
 		fTestFunction(testResult);
@@ -19950,7 +19950,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hueOff", 150000)],rgb(151, 112, 219));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hueOff", 200000)],rgb(153, 112, 219));
+		testResult = test(rgb(147, 112, 219),[mod("hueOff", 202500)],rgb(153, 112, 219));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hueOff", 1000000)],rgb(177, 112, 219));
 		fTestFunction(testResult);
@@ -19976,7 +19976,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hueOff", -10800000)],rgb(184, 219, 112));
 		fTestFunction(testResult);
-		testResult = test(rgb(147, 112, 219),[mod("hueOff", -43200000)],rgb(147, 112, 219));
+		testResult = test(rgb(147, 112, 219),[mod("hueOff", -43202500)],rgb(147, 112, 219));
 		fTestFunction(testResult);
 		testResult = test(rgb(147, 112, 219),[mod("hueOff", -21600000)],rgb(147, 112, 219));
 		fTestFunction(testResult);
@@ -19988,13 +19988,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hueOff", 21600000)],rgb(60, 179, 113));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hueOff", 43200000)],rgb(60, 179, 113));
+		testResult = test(rgb(60, 179, 113),[mod("hueOff", 43202500)],rgb(60, 179, 113));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hueOff", 10800000)],rgb(179, 60, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hueOff", 1000)],rgb(60, 179, 113));
+		testResult = test(rgb(60, 179, 113),[mod("hueOff", 2025)],rgb(60, 179, 113));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hueOff", 5000)],rgb(60, 179, 113));
+		testResult = test(rgb(60, 179, 113),[mod("hueOff", 2025)],rgb(60, 179, 113));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hueOff", 10000)],rgb(60, 179, 113));
 		fTestFunction(testResult);
@@ -20004,7 +20004,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hueOff", 150000)],rgb(60, 179, 118));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hueOff", 200000)],rgb(60, 179, 120));
+		testResult = test(rgb(60, 179, 113),[mod("hueOff", 202500)],rgb(60, 179, 120));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hueOff", 1000000)],rgb(60, 179, 146));
 		fTestFunction(testResult);
@@ -20030,7 +20030,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hueOff", -10800000)],rgb(179, 60, 126));
 		fTestFunction(testResult);
-		testResult = test(rgb(60, 179, 113),[mod("hueOff", -43200000)],rgb(60, 179, 113));
+		testResult = test(rgb(60, 179, 113),[mod("hueOff", -43202500)],rgb(60, 179, 113));
 		fTestFunction(testResult);
 		testResult = test(rgb(60, 179, 113),[mod("hueOff", -21600000)],rgb(60, 179, 113));
 		fTestFunction(testResult);
@@ -20042,13 +20042,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hueOff", 21600000)],rgb(210, 105, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hueOff", 43200000)],rgb(210, 105, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hueOff", 43202500)],rgb(210, 105, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hueOff", 10800000)],rgb(30, 135, 210));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hueOff", 1000)],rgb(210, 105, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hueOff", 2025)],rgb(210, 105, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hueOff", 5000)],rgb(210, 105, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hueOff", 2025)],rgb(210, 105, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hueOff", 10000)],rgb(210, 105, 30));
 		fTestFunction(testResult);
@@ -20058,7 +20058,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hueOff", 150000)],rgb(210, 112, 30));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hueOff", 200000)],rgb(210, 115, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hueOff", 202500)],rgb(210, 115, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hueOff", 1000000)],rgb(210, 155, 30));
 		fTestFunction(testResult);
@@ -20084,7 +20084,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hueOff", -10800000)],rgb(30, 135, 210));
 		fTestFunction(testResult);
-		testResult = test(rgb(210, 105, 30),[mod("hueOff", -43200000)],rgb(210, 105, 30));
+		testResult = test(rgb(210, 105, 30),[mod("hueOff", -43202500)],rgb(210, 105, 30));
 		fTestFunction(testResult);
 		testResult = test(rgb(210, 105, 30),[mod("hueOff", -21600000)],rgb(210, 105, 30));
 		fTestFunction(testResult);
@@ -20096,13 +20096,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hueOff", 21600000)],rgb(123, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hueOff", 43200000)],rgb(123, 104, 238));
+		testResult = test(rgb(123, 104, 238),[mod("hueOff", 43202500)],rgb(123, 104, 238));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hueOff", 10800000)],rgb(219, 238, 104));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hueOff", 1000)],rgb(123, 104, 238));
+		testResult = test(rgb(123, 104, 238),[mod("hueOff", 2025)],rgb(123, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hueOff", 5000)],rgb(123, 104, 238));
+		testResult = test(rgb(123, 104, 238),[mod("hueOff", 2025)],rgb(123, 104, 238));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hueOff", 10000)],rgb(123, 104, 238));
 		fTestFunction(testResult);
@@ -20112,7 +20112,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hueOff", 150000)],rgb(129, 104, 238));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hueOff", 200000)],rgb(130, 104, 238));
+		testResult = test(rgb(123, 104, 238),[mod("hueOff", 202500)],rgb(130, 104, 238));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hueOff", 1000000)],rgb(160, 104, 238));
 		fTestFunction(testResult);
@@ -20138,7 +20138,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hueOff", -10800000)],rgb(219, 238, 104));
 		fTestFunction(testResult);
-		testResult = test(rgb(123, 104, 238),[mod("hueOff", -43200000)],rgb(123, 104, 238));
+		testResult = test(rgb(123, 104, 238),[mod("hueOff", -43202500)],rgb(123, 104, 238));
 		fTestFunction(testResult);
 		testResult = test(rgb(123, 104, 238),[mod("hueOff", -21600000)],rgb(123, 104, 238));
 		fTestFunction(testResult);
@@ -20150,13 +20150,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hueOff", 21600000)],rgb(0, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hueOff", 43200000)],rgb(0, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("hueOff", 43202500)],rgb(0, 206, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hueOff", 10800000)],rgb(209, 3, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hueOff", 1000)],rgb(0, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("hueOff", 2025)],rgb(0, 206, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hueOff", 5000)],rgb(0, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("hueOff", 2025)],rgb(0, 206, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hueOff", 10000)],rgb(0, 205, 209));
 		fTestFunction(testResult);
@@ -20166,7 +20166,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hueOff", 150000)],rgb(0, 197, 209));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hueOff", 200000)],rgb(0, 194, 209));
+		testResult = test(rgb(0, 206, 209),[mod("hueOff", 202500)],rgb(0, 194, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hueOff", 1000000)],rgb(0, 148, 209));
 		fTestFunction(testResult);
@@ -20192,7 +20192,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hueOff", -10800000)],rgb(209, 3, 0));
 		fTestFunction(testResult);
-		testResult = test(rgb(0, 206, 209),[mod("hueOff", -43200000)],rgb(0, 206, 209));
+		testResult = test(rgb(0, 206, 209),[mod("hueOff", -43202500)],rgb(0, 206, 209));
 		fTestFunction(testResult);
 		testResult = test(rgb(0, 206, 209),[mod("hueOff", -21600000)],rgb(0, 206, 209));
 		fTestFunction(testResult);
@@ -20204,13 +20204,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hueOff", 21600000)],rgb(255, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hueOff", 43200000)],rgb(255, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("hueOff", 43202500)],rgb(255, 105, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hueOff", 10800000)],rgb(105, 255, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hueOff", 1000)],rgb(255, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("hueOff", 2025)],rgb(255, 105, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hueOff", 5000)],rgb(255, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("hueOff", 2025)],rgb(255, 105, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hueOff", 10000)],rgb(255, 105, 180));
 		fTestFunction(testResult);
@@ -20220,7 +20220,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hueOff", 150000)],rgb(255, 105, 174));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hueOff", 200000)],rgb(255, 105, 172));
+		testResult = test(rgb(255, 105, 180),[mod("hueOff", 202500)],rgb(255, 105, 172));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hueOff", 1000000)],rgb(255, 105, 138));
 		fTestFunction(testResult);
@@ -20246,7 +20246,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hueOff", -10800000)],rgb(105, 255, 180));
 		fTestFunction(testResult);
-		testResult = test(rgb(255, 105, 180),[mod("hueOff", -43200000)],rgb(255, 105, 180));
+		testResult = test(rgb(255, 105, 180),[mod("hueOff", -43202500)],rgb(255, 105, 180));
 		fTestFunction(testResult);
 		testResult = test(rgb(255, 105, 180),[mod("hueOff", -21600000)],rgb(255, 105, 180));
 		fTestFunction(testResult);
@@ -20258,13 +20258,13 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hueOff", 21600000)],rgb(46, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hueOff", 43200000)],rgb(46, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("hueOff", 43202500)],rgb(46, 139, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hueOff", 10800000)],rgb(139, 46, 98));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hueOff", 1000)],rgb(46, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("hueOff", 2025)],rgb(46, 139, 87));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hueOff", 5000)],rgb(46, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("hueOff", 2025)],rgb(46, 139, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hueOff", 10000)],rgb(46, 139, 87));
 		fTestFunction(testResult);
@@ -20274,7 +20274,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hueOff", 150000)],rgb(46, 139, 91));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hueOff", 200000)],rgb(46, 139, 92));
+		testResult = test(rgb(46, 139, 87),[mod("hueOff", 202500)],rgb(46, 139, 92));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hueOff", 1000000)],rgb(46, 139, 113));
 		fTestFunction(testResult);
@@ -20300,7 +20300,7 @@ function mod(name, value) {
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hueOff", -10800000)],rgb(139, 46, 98));
 		fTestFunction(testResult);
-		testResult = test(rgb(46, 139, 87),[mod("hueOff", -43200000)],rgb(46, 139, 87));
+		testResult = test(rgb(46, 139, 87),[mod("hueOff", -43202500)],rgb(46, 139, 87));
 		fTestFunction(testResult);
 		testResult = test(rgb(46, 139, 87),[mod("hueOff", -21600000)],rgb(46, 139, 87));
 		fTestFunction(testResult);

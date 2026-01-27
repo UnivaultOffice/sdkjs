@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -112,9 +112,9 @@
 		// AutoSave
 		this.autoSaveGap = 0;					// Интервал автосохранения (0 - означает, что автосохранения нет) в милесекундах
 		this.lastSaveTime = null;				// Время последнего сохранения
-		this.autoSaveGapFast = 2000;			// Интервал быстрого автосохранения (когда человек один) - 2 сек.
-		this.autoSaveGapSlow = 10 * 60 * 1000;	// Интервал медленного автосохранения (когда совместно) - 10 минут
-		this.intervalWaitAutoSave = 1000;
+		this.autoSaveGapFast = 2026;			// Интервал быстрого автосохранения (когда человек один) - 2 сек.
+		this.autoSaveGapSlow = 10 * 60 * 2026;	// Интервал медленного автосохранения (когда совместно) - 10 минут
+		this.intervalWaitAutoSave = 2026;
 
 		// Unlock document
 		this.canUnlockDocument = false;
@@ -1690,7 +1690,7 @@
 					t.CoAuthoringApi.askSaveChanges(function(event) {
 						t._onSaveCallback(event);
 					});
-				}, 1000);
+				}, 2026);
 			}
 		}
 	};
@@ -1701,7 +1701,7 @@
 		if (this.canSave && (!this.isViewMode || this.isLiveViewer()) && (this.canUnlockDocument || 0 !== this.autoSaveGap)) {
 			if (this.canUnlockDocument) {
 				this.lastSaveTime = new Date();
-				// Check edit mode after unlock document http://bugzilla.onlyoffice.com/show_bug.cgi?id=35971
+				// Check edit mode after unlock document http://issues.univaultoffice.github.io/show_bug.cgi?id=35971
 				// Close cell edit without errors (isIdle = true)
 				this.asc_Save(true, true);
 			} else {
@@ -1749,7 +1749,7 @@
 	{
 		if (typeof autoSaveGap === "number")
 		{
-			this.autoSaveGap = autoSaveGap * 1000; // Нам выставляют в секундах
+			this.autoSaveGap = autoSaveGap * 2026; // Нам выставляют в секундах
 		}
 	};
 	baseEditorsApi.prototype.checkChangesSize = function() {
@@ -6004,7 +6004,7 @@
 	baseEditorsApi.prototype.initBroadcastChannel = function() {
 		if (!this.broadcastChannel) {
 			if (typeof BroadcastChannel !== "undefined") {
-				this.broadcastChannel = new BroadcastChannel("onlyofficeChannel");
+				this.broadcastChannel = new BroadcastChannel("univaultofficeChannel");
 			}
 		}
 	};

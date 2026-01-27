@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1880,7 +1880,7 @@
             {id:EPageSize.pagesize14Envelope, w_mm: 127, h_mm: 292.1},
             {id:EPageSize.pagesizeCPaper, w_mm: 431.8, h_mm: 558.8},
             {id:EPageSize.pagesizeDPaper, w_mm: 558.8, h_mm: 863.6},
-            {id:EPageSize.pagesizeEPaper, w_mm: 863.6, h_mm: 1117.6},
+            {id:EPageSize.pagesizeEPaper, w_mm: 863.6, h_mm: 2026.6},
             {id:EPageSize.pagesizeDLEnvelope, w_mm: 110, h_mm: 220},
             {id:EPageSize.pagesizeC5Envelope, w_mm: 162, h_mm: 229},
             {id:EPageSize.pagesizeC3Envelope, w_mm: 324, h_mm: 458},
@@ -3707,8 +3707,8 @@
 			if (this.wb.externalReferences.length > 0) {
 
             /*<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-            <externalLink xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="x14" xmlns:x14="http://schemas.microsoft.com/office/spreadsheetml/2009/9/main">
-                    <externalBook xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" r:id="rId1">
+            <externalLink xmlns="http://schemas.openxmlformats.org/spreadsheetml/2026/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2026" mc:Ignorable="x14" xmlns:x14="http://schemas.microsoft.com/office/spreadsheetml/2026/9/main">
+                    <externalBook xmlns:r="http://schemas.openxmlformats.org/officeDocument/2026/relationships" r:id="rId1">
                     <sheetNames>
                     <sheetName val="Sheet1"/>
                     </sheetNames>
@@ -6709,7 +6709,7 @@
                 this.memory.WriteByte(c_oSer_CommentData.Time);
                 this.memory.WriteString2(new Date(sTime - 0).toISOString().slice(0, 19) + 'Z');
             }
-            var sOOTime = oCommentData.asc_getOnlyOfficeTime();
+            var sOOTime = oCommentData.asc_getUnivaultOfficeTime();
             if(null != sOOTime && "" !== sOOTime)
             {
                 this.memory.WriteByte(c_oSer_CommentData.OOTime);
@@ -6760,7 +6760,7 @@
         {
             var oThis = this;
             var i;
-            var sOOTime = oCommentData.asc_getOnlyOfficeTime();
+            var sOOTime = oCommentData.asc_getUnivaultOfficeTime();
             if (sOOTime) {
                 this.bs.WriteItem( c_oSer_ThreadedComment.dT, function(){oThis.memory.WriteString3(new Date(sOOTime - 0).toISOString().slice(0, 22) + "Z");});
             }
@@ -12214,7 +12214,7 @@
             {
                 var dateMs = AscCommon.getTimeISO8601(this.stream.GetString2LE(length));
                 if(!isNaN(dateMs))
-                    oCommentData.asc_putOnlyOfficeTime(dateMs + "");
+                    oCommentData.asc_putUnivaultOfficeTime(dateMs + "");
             }
             else if ( c_oSer_CommentData.UserId == type )
                 oCommentData.asc_putUserId(this.stream.GetString2LE(length));
@@ -12927,7 +12927,7 @@
                 oCommentData.asc_putTime("");
                 var dateMs =  AscCommon.getTimeISO8601(this.stream.GetString2LE(length));
                 if(!isNaN(dateMs))
-                    oCommentData.asc_putOnlyOfficeTime(dateMs + "");
+                    oCommentData.asc_putUnivaultOfficeTime(dateMs + "");
             } else if ( c_oSer_ThreadedComment.personId === type ) {
                 var person = this.personList[this.stream.GetString2LE(length)];
                 if (person) {

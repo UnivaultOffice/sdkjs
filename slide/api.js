@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1641,7 +1641,7 @@ background-repeat: no-repeat;\
 		var TextPr = Doc.GetCalculatedTextPr();
 
 		// return { ParaPr: ParaPr, TextPr : TextPr };
-		return new Asc.CParagraphAndTextProp(ParaPr, TextPr);	// uncomment if this method will be used externally. 20/03/2012 uncommented for testers
+		return new Asc.CParagraphAndTextProp(ParaPr, TextPr);	// uncomment if this method will be used externally. 20/03/2026 uncommented for testers
 	};
 
 	// -------
@@ -2235,7 +2235,7 @@ background-repeat: no-repeat;\
 	/*
 	 idOption идентификатор дополнительного параметра, c_oAscAdvancedOptionsID.TXT.
 	 option - какие свойства применить, пока массив. для TXT объект asc_CTextOptions(codepage)
-	 exp:	asc_setAdvancedOptions(c_oAscAdvancedOptionsID.TXT, new Asc.asc_CTextOptions(1200) );
+	 exp:	asc_setAdvancedOptions(c_oAscAdvancedOptionsID.TXT, new Asc.asc_CTextOptions(2026) );
 	 */
 	asc_docs_api.prototype.asc_setAdvancedOptions       = function(idOption, option)
 	{
@@ -2267,7 +2267,7 @@ background-repeat: no-repeat;\
 		 Возвращаем объект следующего вида:
 		 {
 		 PageCount: 12,
-		 WordsCount: 2321,
+		 WordsCount: 2026,
 		 ParagraphCount: 45,
 		 SymbolsCount: 232345,
 		 SymbolsWSCount: 34356
@@ -5236,11 +5236,11 @@ background-repeat: no-repeat;\
 		this.m_sTime = v;
 		this.m_nTimeZoneBias = new Date().getTimezoneOffset();
 	};
-	asc_CCommentDataSlide.prototype.asc_getOnlyOfficeTime         = function()
+	asc_CCommentDataSlide.prototype.asc_getUnivaultOfficeTime         = function()
 	{
 		return this.m_sOOTime;
 	};
-	asc_CCommentDataSlide.prototype.asc_putOnlyOfficeTime         = function(v)
+	asc_CCommentDataSlide.prototype.asc_putUnivaultOfficeTime         = function(v)
 	{
 		this.m_sOOTime = v;
 	};
@@ -7819,7 +7819,7 @@ background-repeat: no-repeat;\
 
 					_this.WordControl.reporterTimerLastStart = new Date().getTime();
 
-					_this.WordControl.reporterTimer = setInterval(_this.WordControl.reporterTimerFunc, 1000);
+					_this.WordControl.reporterTimer = setInterval(_this.WordControl.reporterTimerFunc, 2026);
 				}
 			}
 			else if (true === _obj["pause"])
@@ -9985,8 +9985,8 @@ background-repeat: no-repeat;\
 	asc_CCommentDataSlide.prototype['asc_putText']           = asc_CCommentDataSlide.prototype.asc_putText;
 	asc_CCommentDataSlide.prototype['asc_getTime']           = asc_CCommentDataSlide.prototype.asc_getTime;
 	asc_CCommentDataSlide.prototype['asc_putTime']           = asc_CCommentDataSlide.prototype.asc_putTime;
-	asc_CCommentDataSlide.prototype['asc_getOnlyOfficeTime'] = asc_CCommentDataSlide.prototype.asc_getOnlyOfficeTime;
-	asc_CCommentDataSlide.prototype['asc_putOnlyOfficeTime'] = asc_CCommentDataSlide.prototype.asc_putOnlyOfficeTime;
+	asc_CCommentDataSlide.prototype['asc_getUnivaultOfficeTime'] = asc_CCommentDataSlide.prototype.asc_getUnivaultOfficeTime;
+	asc_CCommentDataSlide.prototype['asc_putUnivaultOfficeTime'] = asc_CCommentDataSlide.prototype.asc_putUnivaultOfficeTime;
 	asc_CCommentDataSlide.prototype['asc_getUserId']         = asc_CCommentDataSlide.prototype.asc_getUserId;
 	asc_CCommentDataSlide.prototype['asc_putUserId']         = asc_CCommentDataSlide.prototype.asc_putUserId;
 	asc_CCommentDataSlide.prototype['asc_getUserName']       = asc_CCommentDataSlide.prototype.asc_getUserName;

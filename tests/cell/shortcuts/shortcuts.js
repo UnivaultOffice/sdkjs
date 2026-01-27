@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -718,14 +718,14 @@ QUnit.config.autostart = false;
 
 		ClearShapeAndAddParagraph('');
 		const hyperlink = new AscCommonExcel.Hyperlink();
-		hyperlink.Hyperlink = "https://www.onlyoffice.com/";
+		hyperlink.Hyperlink = "https://www.univaultoffice.github.io/";
 		const ascHyperlink = new Asc.asc_CHyperlink(hyperlink);
 		ascHyperlink.text = "Hello";
 		editor.asc_insertHyperlink(ascHyperlink);
 		GetDrawingObjects().cursorMoveLeft();
 		GetDrawingObjects().cursorMoveLeft();
 
-		ExecuteTestWithCatchEvent('asc_onHyperlinkClick', (sValue) => sValue, 'https://www.onlyoffice.com/', graphicEvents[graphicHotkeyTypes.visitHyperink][0]);
+		ExecuteTestWithCatchEvent('asc_onHyperlinkClick', (sValue) => sValue, 'https://www.univaultoffice.github.io/', graphicEvents[graphicHotkeyTypes.visitHyperink][0]);
 		const selectedInfo = new CSelectedElementsInfo();
 		GetDrawingObjects().getTargetDocContent().GetSelectedElementsInfo(selectedInfo);
 		assert.true(selectedInfo.m_oHyperlink.Visited, 'Check hyperlink visited');
@@ -1594,7 +1594,7 @@ QUnit.config.autostart = false;
 		ExecuteShortcut(Asc.c_oAscSpreadsheetShortcutType.CellTimeFormat);
 		assert.strictEqual(GetCellText(0, 0), '12:00:00 AM', 'set time format');
 		ExecuteShortcut(Asc.c_oAscSpreadsheetShortcutType.CellDateFormat);
-		assert.strictEqual(GetCellText(0, 0), '11/11/2036', 'set date format');
+		assert.strictEqual(GetCellText(0, 0), '11/11/2026', 'set date format');
 		ExecuteShortcut(Asc.c_oAscSpreadsheetShortcutType.CellNumberFormat);
 		assert.strictEqual(GetCellText(0, 0), '49990.00', 'set number format');
 		ExecuteShortcut(Asc.c_oAscSpreadsheetShortcutType.CellGeneralFormat);

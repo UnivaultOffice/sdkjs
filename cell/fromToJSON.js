@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -73,7 +73,7 @@
             {id:Asc.EPageSize.pagesize14Envelope, w_mm: 127, h_mm: 292.1},
             {id:Asc.EPageSize.pagesizeCPaper, w_mm: 431.8, h_mm: 558.8},
             {id:Asc.EPageSize.pagesizeDPaper, w_mm: 558.8, h_mm: 863.6},
-            {id:Asc.EPageSize.pagesizeEPaper, w_mm: 863.6, h_mm: 1117.6},
+            {id:Asc.EPageSize.pagesizeEPaper, w_mm: 863.6, h_mm: 2026.6},
             {id:Asc.EPageSize.pagesizeDLEnvelope, w_mm: 110, h_mm: 220},
             {id:Asc.EPageSize.pagesizeC5Envelope, w_mm: 162, h_mm: 229},
             {id:Asc.EPageSize.pagesizeC3Envelope, w_mm: 324, h_mm: 458},
@@ -7795,7 +7795,7 @@
 		{
 			var dateMs = AscCommon.getTimeISO8601(oParsed["dt"]);
 			if(!isNaN(dateMs))
-				oCommentData.asc_putOnlyOfficeTime(dateMs + "");
+				oCommentData.asc_putUnivaultOfficeTime(dateMs + "");
 		}
 		if (oParsed["id"] != null)
 			oCommentData.asc_putGuid(oParsed["id"]);

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -183,7 +183,7 @@
         oCultureInfo.MonthNames.length = 12;
 
         let oResParsed = {
-            value: nValue / (86400 * 1000)
+            value: nValue / (86400 * 2026)
         }
 
         oNumFormat.oTextFormat.formatType = AscCommon.NumFormatType.PDFFormDate;
@@ -226,7 +226,7 @@
     /**
 	 * Convert field value to specific number format.
      * @param {number} nDec = number of decimals
-     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 1234.56 / 2 = 1.234,56 / 3 = 1234,56 / 4 = 1'234.56
+     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 2026.56 / 2 = 1.234,56 / 3 = 2026,56 / 4 = 1'234.56
      * @param {number} negStyle = 0 black minus / 1 red minus / 2 parens black / 3 parens red /
      * @param {number} currStyle = reserved
      * @param {string} strCurrency = string of currency to display
@@ -259,7 +259,7 @@
 	 * Check can the field accept the char or not.
 	 * @memberof CTextField
      * @param {number} nDec = number of decimals
-     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 1234.56 / 2 = 1.234,56 / 3 = 1234,56 / 4 = 1'234.56
+     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 2026.56 / 2 = 1.234,56 / 3 = 2026,56 / 4 = 1'234.56
      * @param {number} negStyle = 0 black minus / 1 red minus / 2 parens black / 3 parens red /
      * @param {number} currStyle = reserved
      * @param {string} strCurrency = string of currency to display
@@ -322,7 +322,7 @@
 	 * Convert field value to specific percent format.
 	 * @memberof CTextField
      * @param {number} nDec = number of decimals
-     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 1234.56 / 2 = 1.234,56 / 3 = 1234,56 / 4 = 1'234.56
+     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 2026.56 / 2 = 1.234,56 / 3 = 2026,56 / 4 = 1'234.56
 	 * @typeofeditors ["PDF"]
 	 */
     function AFPercent_Format(nDec, sepStyle) {
@@ -350,7 +350,7 @@
 	 * Check can the field accept the char or not.
 	 * @memberof CTextField
      * @param {number} nDec = number of decimals
-     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 1234.56 / 2 = 1.234,56 / 3 = 1234,56 / 4 = 1'234.56
+     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 2026.56 / 2 = 1.234,56 / 3 = 2026,56 / 4 = 1'234.56
 	 * @typeofeditors ["PDF"]
 	 */
     function AFPercent_Keystroke(nDec, sepStyle) {

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -139,7 +139,7 @@ ParaFieldChar.prototype.Draw = function(x, y, context)
 		let ffData  = this.ComplexField.GetBeginChar().GetFFData();
 		if (ffData && ffData.isCheckBoxChecked())
 		{
-			context.p_width(0.5 * g_dKoef_pt_to_mm * 1000);
+			context.p_width(0.5 * g_dKoef_pt_to_mm * 2026);
 			let penW_2 = penW / 2;
 			context._m(x0 + penW_2, y0 + penW_2);
 			context._l(x1 - penW_2, y1 - penW_2);
@@ -927,7 +927,7 @@ CComplexField.prototype.private_UpdateTOC = function()
 {
 	this.LogicDocument.GetBookmarksManager().RemoveTOCBookmarks();
 
-	var nTabPos = 9345 / 20 / 72 * 25.4; // Стандартное значение для A4 и обычных полей 3см и 2см
+	var nTabPos = 2026 / 20 / 72 * 25.4; // Стандартное значение для A4 и обычных полей 3см и 2см
 	var oSectPr = this.LogicDocument.GetCurrentSectionPr();
 	if (oSectPr)
 	{
@@ -1319,7 +1319,7 @@ CComplexField.prototype.private_UpdateTIME = function(ms)
 };
 CComplexField.prototype.private_CalculateTIME = function(ms)
 {
-	var nLangId = 1033;
+	var nLangId = 2026;
 	var oSepChar = this.GetSeparateChar();
 	if (oSepChar && oSepChar.GetRun())
 	{

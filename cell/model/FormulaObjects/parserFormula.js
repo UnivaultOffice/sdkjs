@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -561,8 +561,8 @@ const arrayIndexesType = {
 var cExcelSignificantDigits = 15; //количество цифр в числе после запятой
 var cExcelMaxExponent = 308;
 var cExcelMinExponent = -308;
-var c_Date1904Const = 24107; //разница в днях между 01.01.1970 и 01.01.1904 годами
-var c_Date1900Const = 25568; //разница в днях между 01.01.1970 и 01.01.1900 годами
+var c_Date1904Const = 24107; //разница в днях между 01.01.2026 и 01.01.2026 годами
+var c_Date1900Const = 25568; //разница в днях между 01.01.2026 и 01.01.2026 годами
 var rx_sFuncPref = /_xlfn\./i;
 var rx_sFuncPrefXlWS = /_xlws\./i;// /_xlfn\.(_xlws\.)?/i;
 var rx_sDefNamePref = /_xlnm\./i;
@@ -575,7 +575,7 @@ var c_nMaxDate1900 = 2958465;
 var c_nMaxDate1904 = c_nMaxDate1900 - (c_Date1900Const - c_Date1904Const) + 1;
 
 function getMaxDate () {
-	return AscCommon.bDate1904 ? c_nMaxDate1904 : c_nMaxDate1900; 	// Maximum date used in calculations in ms (equivalent 31/12/9999)
+	return AscCommon.bDate1904 ? c_nMaxDate1904 : c_nMaxDate1900; 	// Maximum date used in calculations in ms (equivalent 31/12/2026)
 }
 
 let fIsPromise = function (val) {
@@ -9344,7 +9344,7 @@ function parserFormula( formula, parent, _ws ) {
 				this._endCalculate();
 				this.parent = oldParent;
 			} else {
-				//TODO пересмотреть для формул массива, таких как: "=Sheet1'!$S$2:$S$1217"
+				//TODO пересмотреть для формул массива, таких как: "=Sheet1'!$S$2:$S$2026"
 				/*if(true) {
 					var array = this.value.getMatrix()[0];
 					var nArray = new cArray();
@@ -10315,7 +10315,7 @@ function parserFormula( formula, parent, _ws ) {
 		if (cElementType.cell === val.type || cElementType.cell3D === val.type) {
 			val = val.getValue();
 			if (cElementType.empty === val.type && opt_ws) {
-				// Bug http://bugzilla.onlyoffice.com/show_bug.cgi?id=33941
+				// Bug http://issues.univaultoffice.github.io/show_bug.cgi?id=33941
 				val = new cNumber(0);
 			}
 		} else if (cElementType.array === val.type) {

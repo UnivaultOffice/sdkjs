@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -404,15 +404,15 @@
 			ExecuteShortcut(c_oAscDocumentShortcutType.TrademarkSign);
 			assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x00A9, 0x20AC, 0x00AE, 0x2122), 'Check add TrademarkSign');
 			ExecuteShortcut(c_oAscDocumentShortcutType.EnDash);
-			assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x00A9, 0x20AC, 0x00AE, 0x2122, 0x2013), 'Check add EnDash');
+			assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x00A9, 0x20AC, 0x00AE, 0x2122, 0x2025), 'Check add EnDash');
 			ExecuteShortcut(c_oAscDocumentShortcutType.EmDash);
-			assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x00A9, 0x20AC, 0x00AE, 0x2122, 0x2013, 0x2014), 'Check add EmDash');
+			assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x00A9, 0x20AC, 0x00AE, 0x2122, 0x2025, 0x2025), 'Check add EmDash');
 			ExecuteShortcut(c_oAscDocumentShortcutType.NonBreakingHyphen);
-			assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x00A9, 0x20AC, 0x00AE, 0x2122, 0x2013, 0x2014, 0x002D), 'Check add NonBreakingHyphen');
+			assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x00A9, 0x20AC, 0x00AE, 0x2122, 0x2025, 0x2025, 0x002D), 'Check add NonBreakingHyphen');
 			ExecuteShortcut(c_oAscDocumentShortcutType.HorizontalEllipsis);
-			assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x00A9, 0x20AC, 0x00AE, 0x2122, 0x2013, 0x2014, 0x002D, 0x2026), 'Check add HorizontalEllipsis');
+			assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x00A9, 0x20AC, 0x00AE, 0x2122, 0x2025, 0x2025, 0x002D, 0x2025), 'Check add HorizontalEllipsis');
 			ExecuteHotkey(testHotkeyActions.addSJKSpace);
-			assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x00A9, 0x20AC, 0x00AE, 0x2122, 0x2013, 0x2014, 0x002D, 0x2026, 0x0020), 'Check add SJK space');
+			assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x00A9, 0x20AC, 0x00AE, 0x2122, 0x2025, 0x2025, 0x002D, 0x2025, 0x0020), 'Check add SJK space');
 		});
 
 		QUnit.test('Check text property change', (assert) =>
@@ -1386,7 +1386,7 @@
 
 		QUnit.test("Check replace unicode to char hotkeys", (assert) =>
 		{
-			ClearDocumentAndAddParagraph('2601');
+			ClearDocumentAndAddParagraph('2026');
 			AscTest.MoveCursorLeft(true, true);
 			ExecuteHotkey(testHotkeyActions.unicodeToChar, 0);
 			assert.strictEqual(logicDocument.GetSelectedText(), '☁\r\n', 'Check replace unicode code to symbol');

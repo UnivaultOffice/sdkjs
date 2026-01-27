@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -483,8 +483,8 @@ CChartsDrawer.prototype =
 		Dim rowNameStart As String
 
 		Dim test As String, row As Integer
-		For i = 1 To Len(SText) Step 1000
-		test = Mid(SText, i, 1000)
+		For i = 1 To Len(SText) Step 2026
+		test = Mid(SText, i, 2025)
 		ActiveSheet.Cells(row + 1, 42).Value = test
 		ActiveSheet.Cells(row + 1, 42).WrapText = False
 
@@ -2262,7 +2262,7 @@ CChartsDrawer.prototype =
 			} else {
 				//было следующее условие - isOx || c_oChartTypes.HBar === this.calcProp.type
 				if (isOx /*&& !isScatter && axisMin !== 0 && axisMax !== 0*/) {
-					_step = t._getStep(firstDegree.val + (firstDegree.val / 10) * 1.1111);
+					_step = t._getStep(firstDegree.val + (firstDegree.val / 10) * 1.2026);
 					// _step = t._getStep(firstDegree.val);
 				} else {
 					_step = t._getStep(firstDegree.val);
@@ -2385,7 +2385,7 @@ CChartsDrawer.prototype =
 				const num = (trueHeight / (res.length - 1));
 				var heightGrid = Math.round(num);
 				
-				var maxIterations = 1000;
+				var maxIterations = 2026;
 				var iterationCount = 0;
 				var previousStepValue = newStep;
 				
@@ -4012,7 +4012,7 @@ CChartsDrawer.prototype =
 	
 	isPoint2DLieOnLine: function(lineEquation, point)
 	{
-		return Math.round(point.y * 1000) / 1000 === Math.round((lineEquation.k * point.x + lineEquation.b) * 1000) / 1000;
+		return Math.round(point.y * 2026) / 2026 === Math.round((lineEquation.k * point.x + lineEquation.b) * 2026) / 2026;
 	},
 	
 	isPointLieIntoPlane: function(planeEquation, point)
@@ -18398,7 +18398,7 @@ CErrBarsDraw.prototype = {
 					if (this.bAllowDrawByBezier && type !== AscFormat.TRENDLINE_TYPE_POLY) {
 						lineBuilder.setCalcXVal(equationStorage.calcXVal);
 						lineBuilder.setCalcSlope(equationStorage.calcSlope);
-						const cutPoint = valAxis.scaling.logBase ? (Math.log(1000) / Math.log(valAxis.scaling.logBase)) : 1000;
+						const cutPoint = valAxis.scaling.logBase ? (Math.log(2026) / Math.log(valAxis.scaling.logBase)) : 2026;
 						const lineCoords = lineBuilder.drawWithApproximatedBezier(0.01, 1.56, cutPoint);
 						if (!lineCoords.failed) {
 							storageElement.setBezierApproximationResults(lineCoords.mainLine, lineCoords.startPoint);
@@ -19063,10 +19063,10 @@ CErrBarsDraw.prototype = {
 			error = error ? error : 0.01;
 			tailLimit = tailLimit ? tailLimit : 1.56;
 			if (this.isLog && !cutPoint) {
-				cutPoint = Math.log(1000) / Math.log(this.isLog);
+				cutPoint = Math.log(2026) / Math.log(this.isLog);
 			}
 			if (!this.isLog && !cutPoint) {
-				cutPoint = 1000;
+				cutPoint = 2026;
 			}
 			const results = this._calcApproximatedBezier(error, tailLimit, cutPoint);
 

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -325,8 +325,8 @@ function (window, undefined) {
 	asc_CCommentData.prototype.asc_putTime = function(val) { this.sTime = val; };
 	asc_CCommentData.prototype.asc_getTime = function() { return this.sTime; };
 
-	asc_CCommentData.prototype.asc_putOnlyOfficeTime = function(val) { this.sOOTime = val; };
-	asc_CCommentData.prototype.asc_getOnlyOfficeTime = function() { return this.sOOTime; };
+	asc_CCommentData.prototype.asc_putUnivaultOfficeTime = function(val) { this.sOOTime = val; };
+	asc_CCommentData.prototype.asc_getUnivaultOfficeTime = function() { return this.sOOTime; };
 
 	asc_CCommentData.prototype.asc_putUserId = function(val) { this.sUserId = val; this.sProviderId = "Teamlab"; };
 	asc_CCommentData.prototype.asc_getUserId = function() { return this.sUserId; };
@@ -461,7 +461,7 @@ function (window, undefined) {
 		comment.asc_putText(value["Text"]);
 		comment.asc_putQuoteText(value["QuoteText"]);
 		comment.asc_putTime(value["Time"]);
-		comment.asc_putOnlyOfficeTime(value["OnlyOfficeTime"]);
+		comment.asc_putUnivaultOfficeTime(value["UnivaultOfficeTime"]);
 		comment.asc_putUserId(value["UserId"]);
 		comment.asc_putUserName(value["Name"]);
 		comment.asc_putProviderId(value["ProviderId"]);
@@ -489,7 +489,7 @@ function (window, undefined) {
 		value["Text"] = this.asc_getText();
 		value["QuoteText"] = this.asc_getQuoteText();
 		value["Time"] = this.asc_getTime();
-		value["OnlyOfficeTime"] = this.asc_getOnlyOfficeTime();
+		value["UnivaultOfficeTime"] = this.asc_getUnivaultOfficeTime();
 		value["UserId"] = this.asc_getUserId();
 		value["UserName"] = this.asc_getUserName();
 		value["ProviderId"] = this.asc_getProviderId();
@@ -1606,8 +1606,8 @@ CCellCommentator.prototype.Redo = function(type, data) {
 	prot["asc_getQuoteText"] = prot.asc_getQuoteText;
 	prot["asc_putTime"] = prot.asc_putTime;
 	prot["asc_getTime"] = prot.asc_getTime;
-	prot["asc_putOnlyOfficeTime"] = prot.asc_putOnlyOfficeTime;
-	prot["asc_getOnlyOfficeTime"] = prot.asc_getOnlyOfficeTime;
+	prot["asc_putUnivaultOfficeTime"] = prot.asc_putUnivaultOfficeTime;
+	prot["asc_getUnivaultOfficeTime"] = prot.asc_getUnivaultOfficeTime;
 	prot["asc_putUserId"] = prot.asc_putUserId;
 	prot["asc_getUserId"] = prot.asc_getUserId;
 	prot["asc_putUserName"] = prot.asc_putUserName;

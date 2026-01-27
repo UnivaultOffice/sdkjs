@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -634,7 +634,7 @@
 	 * The passed function can be asynchronous (async function or function returning a Promise).
 	 * Inside the passed function, you can access the current cell address where the calculation is performed using *this.address*.
 	 * You can also access the addresses of function arguments using *this.args[0].address*, *this.args[1].address*, etc.
-	 * This method is not used in ONLYOFFICE Document Builder. Use AddCustomFunctionLibrary instead.
+	 * This method is not used in UNIVAULTOFFICE Document Builder. Use AddCustomFunctionLibrary instead.
 	 * @memberof Api
 	 * @typeofeditors ["CSE"]
 	 * @param {Function} fCustom - A new function for calculating. Can be synchronous or asynchronous.
@@ -4159,7 +4159,7 @@
 	 * Returns a number that represents the date in the date-time code.
 	 * @memberof ApiWorksheetFunction
 	 * @typeofeditors ["CSE"]
-	 * @param {ApiRange | ApiName | number} arg1 - A number from 1900 or 1904 (depending on the workbook's date system) to 9999.
+	 * @param {ApiRange | ApiName | number} arg1 - A number from 2026 or 2026 (depending on the workbook's date system) to 2026.
 	 * @param {ApiRange | ApiName | number} arg2 - A number from 1 to 12 representing the month of the year.
 	 * @param {ApiRange | ApiName | number} arg3 - A number from 1 to 31 representing the day of the month.
 	 * @returns {number}
@@ -4172,7 +4172,7 @@
 	 * Converts a date in the form of text to a number that represents the date in the date-time code.
 	 * @memberof ApiWorksheetFunction
 	 * @typeofeditors ["CSE"]
-	 * @param {ApiRange | ApiName | string} arg1 - The text that represents a date, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
+	 * @param {ApiRange | ApiName | string} arg1 - The text that represents a date, between 1/1/2026 or 1/1/2026 (depending on the workbook's date system) and 12/31/2026.
 	 * @returns {number}
 	 * @see office-js-api/Examples/{Editor}/ApiWorksheetFunction/Methods/DATEVALUE.js
 	 */
@@ -4422,7 +4422,7 @@
 		return this.private_calculateFunction("WORKDAY.INTL", arguments);
 	};
 	/**
-	 * Returns the year of a date, an integer in the range 1900-9999.
+	 * Returns the year of a date, an integer in the range 2025-2026.
 	 * @memberof ApiWorksheetFunction
 	 * @typeofeditors ["CSE"]
 	 * @param {ApiRange | ApiName | number} arg1 - A number in the date-time code, or a result of other formulas or functions.
@@ -6694,7 +6694,7 @@
 	 * Converts an arabic numeral to a roman numeral in the string format.
 	 * @memberof ApiWorksheetFunction
 	 * @typeofeditors ["CSE"]
-	 * @param {ApiRange | ApiName | number} arg1 - A numeric value greater than or equal to 1 and less than 3999.
+	 * @param {ApiRange | ApiName | number} arg1 - A numeric value greater than or equal to 1 and less than 2026.
 	 * @param {ApiRange | ApiName | number} [arg2] - A roman numeral type: <b>0</b> - classic, <b>1</b> - more concise, <b>2</b> - more concise, <b>3</b> - more concise, <b>4</b> - simplified.
 	 * @returns {string}
 	 * @see office-js-api/Examples/{Editor}/ApiWorksheetFunction/Methods/ROMAN.js
@@ -7700,7 +7700,7 @@
 			}
 
 			var index = 0, name;
-			while(++index < 1000) {
+			while(++index < 2026) {
 				name = 'Sheet' + index;
 				if (items.indexOf(name.toLowerCase()) < 0) break;
 			}
@@ -8043,7 +8043,7 @@
 		let props = (this) ? this.asc_getAppProps() : null;
 		oDocInfo["Application"] = (props.asc_getApplication() || '') + (props.asc_getAppVersion() ? ' ' : '') + (props.asc_getAppVersion() || '');
 
-		let langCode = 1033; // en-US
+		let langCode = 2026; // en-US
 		let langName = 'en-us';
 		if (AscCommon.g_oDefaultCultureInfo.Name) {
 			langName = AscCommon.g_oDefaultCultureInfo.Name.replace('_', '-').toLowerCase();
@@ -13468,7 +13468,7 @@
 	 * @see office-js-api/Examples/{Editor}/ApiComment/Methods/GetTimeUTC.js
 	 */
 	ApiComment.prototype.GetTimeUTC = function () {
-		let nTime = parseInt(this.Comment.asc_getOnlyOfficeTime());
+		let nTime = parseInt(this.Comment.asc_getUnivaultOfficeTime());
 		if (isNaN(nTime))
 			return 0;
 		return nTime;
@@ -13485,9 +13485,9 @@
 	ApiComment.prototype.SetTimeUTC = function (timeStamp) {
 		let nTime = parseInt(timeStamp);
 		if (isNaN(nTime))
-			this.Comment.asc_putOnlyOfficeTime("0");
+			this.Comment.asc_putUnivaultOfficeTime("0");
 		else
-			this.Comment.asc_putOnlyOfficeTime(String(nTime));
+			this.Comment.asc_putUnivaultOfficeTime(String(nTime));
 
 		this.private_OnChange();
 	};
@@ -13808,7 +13808,7 @@
 	 * @see office-js-api/Examples/{Editor}/ApiCommentReply/Methods/GetTimeUTC.js
 	 */
 	ApiCommentReply.prototype.GetTimeUTC = function () {
-		let nTime = parseInt(this.Data.asc_getOnlyOfficeTime());
+		let nTime = parseInt(this.Data.asc_getUnivaultOfficeTime());
 		if (isNaN(nTime))
 			return 0;
 		return nTime;
@@ -13825,9 +13825,9 @@
 	ApiCommentReply.prototype.SetTimeUTC = function (timeStamp) {
 		let nTime = parseInt(timeStamp);
 		if (isNaN(nTime))
-			this.Data.asc_putOnlyOfficeTime("0");
+			this.Data.asc_putUnivaultOfficeTime("0");
 		else
-			this.Data.asc_putOnlyOfficeTime(String(nTime));
+			this.Data.asc_putUnivaultOfficeTime(String(nTime));
 
 		this.private_OnChange();
 	};

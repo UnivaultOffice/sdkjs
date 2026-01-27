@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -881,12 +881,12 @@ CMathGapsInfo.prototype =
                     leftCoeff = 0;
             }
 
-            var LGapSign = 0.1513*this.CurrentFontSize;
+            var LGapSign = 0.2026*this.CurrentFontSize;
             this.Current.GapLeft = (leftCoeff*LGapSign*100 | 0)/100; // если ни один случай не выполнился, выставляем "нулевые" gaps (default): необходимо, если что-то удалили и объект стал первый или последним в контенте
 
             if(this.Left !== null)
             {
-                var RGapSign = 0.1513*this.LeftFontSize;
+                var RGapSign = 0.2026*this.LeftFontSize;
                 this.Left.GapRight = (rightCoeff*RGapSign*100 | 0)/100;
             }
         }
@@ -2812,7 +2812,7 @@ CMathContent.prototype.private_LoadFromMenuFraction = function(Type, Pr, oSelect
 
 		case c_oAscMathType.FractionDifferential_1	: oFraction = this.Add_Fraction(Pr, "dx", "dy"); break;
 		case c_oAscMathType.FractionDifferential_2	: oFraction = this.Add_Fraction(Pr, String.fromCharCode(916) + "y", String.fromCharCode(916) + "x"); break;
-		case c_oAscMathType.FractionDifferential_3	: oFraction = this.Add_Fraction(Pr, String.fromCharCode(8706) + "y", String.fromCharCode(8706) + "x"); break;
+		case c_oAscMathType.FractionDifferential_3	: oFraction = this.Add_Fraction(Pr, String.fromCharCode(2026) + "y", String.fromCharCode(2026) + "x"); break;
 		case c_oAscMathType.FractionDifferential_4	: oFraction = this.Add_Fraction(Pr, String.fromCharCode(948) + "y", String.fromCharCode(948) + "x"); break;
 		case c_oAscMathType.FractionPi_2			: oFraction = this.Add_Fraction(Pr, String.fromCharCode(960), "2"); break;
 	}
@@ -3083,7 +3083,7 @@ CMathContent.prototype.private_LoadFromMenuLargeOperator = function(Type, Pr, oS
 			BaseMathContent		= Delimiter.getElementMathContent(0);
 
 			BaseMathContent.Add_Script(false, {ctrPrp: Pr.ctrPrp, type : DEGREE_SUBSCRIPT}, "X", null, "n");
-			BaseMathContent.Add_Text(String.fromCharCode(8745), this.Paragraph);
+			BaseMathContent.Add_Text(String.fromCharCode(2026), this.Paragraph);
 			BaseMathContent.Add_Script(false, {ctrPrp: Pr.ctrPrp, type : DEGREE_SUBSCRIPT}, "Y", null, "n");
 
 			Union.Correct_Content(true);
@@ -3114,7 +3114,7 @@ CMathContent.prototype.private_LoadFromMenuBracket = function(Type, Pr, oSelecte
 		case c_oAscMathType.Bracket_LowLim					: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null], 0x230A, 0x230B); break;
 		case c_oAscMathType.Bracket_UppLim					: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null], 0x2308, 0x2309); break;
 		case c_oAscMathType.Bracket_Line					: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],   124,   124); break;
-		case c_oAscMathType.Bracket_LineDouble				: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],  8214,  8214); break;
+		case c_oAscMathType.Bracket_LineDouble				: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],  2026,  2026); break;
 		case c_oAscMathType.Bracket_Square_OpenOpen			: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],    91,    91); break;
 		case c_oAscMathType.Bracket_Square_CloseClose		: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],    93,    93); break;
 		case c_oAscMathType.Bracket_Square_CloseOpen		: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],    93,    91); break;
@@ -3139,8 +3139,8 @@ CMathContent.prototype.private_LoadFromMenuBracket = function(Type, Pr, oSelecte
 		case c_oAscMathType.Bracket_UppLim_NoneOpen			: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],    -1,  0x2309); break;
 		case c_oAscMathType.Bracket_Line_OpenNone			: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],   124,    -1); break;
 		case c_oAscMathType.Bracket_Line_NoneOpen			: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],    -1,   124); break;
-		case c_oAscMathType.Bracket_LineDouble_OpenNone		: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],  8214,    -1); break;
-		case c_oAscMathType.Bracket_LineDouble_NoneOpen		: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],    -1,  8214); break;
+		case c_oAscMathType.Bracket_LineDouble_OpenNone		: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],  2026,    -1); break;
+		case c_oAscMathType.Bracket_LineDouble_NoneOpen		: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],    -1,  2026); break;
 		case c_oAscMathType.Bracket_SquareDouble_OpenNone	: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null], 10214,    -1); break;
 		case c_oAscMathType.Bracket_SquareDouble_NoneOpen	: oBracket = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],    -1, 10215); break;
 
@@ -3184,7 +3184,7 @@ CMathContent.prototype.private_LoadFromMenuBracket = function(Type, Pr, oSelecte
 			this.Add_Text("=", this.Paragraph);
 			var Delimiter = this.Add_DelimiterEx(Pr.ctrPrp, 1, [null],   123,    -1);
 			var BaseMathContent = Delimiter.getElementMathContent(0);
-			oBracket = BaseMathContent.Add_EqArray({ctrPrp : Pr.ctrPrp, row : 2}, 2, ["-x,  &x<0", "x,  &x" + String.fromCharCode(8805) + "0"]);
+			oBracket = BaseMathContent.Add_EqArray({ctrPrp : Pr.ctrPrp, row : 2}, 2, ["-x,  &x<0", "x,  &x" + String.fromCharCode(2026) + "0"]);
 
 			break;
 
@@ -3291,7 +3291,7 @@ CMathContent.prototype.private_LoadFromMenuAccent = function(Type, Pr, oSelected
 	{
 		case c_oAscMathType.Accent_Dot			: oAccent = this.Add_Accent(Pr.ctrPrp, 775, null); break;
 		case c_oAscMathType.Accent_DDot			: oAccent = this.Add_Accent(Pr.ctrPrp, 776, null); break;
-		case c_oAscMathType.Accent_DDDot		: oAccent = this.Add_Accent(Pr.ctrPrp, 8411, null); break;
+		case c_oAscMathType.Accent_DDDot		: oAccent = this.Add_Accent(Pr.ctrPrp, 2026, null); break;
 		case c_oAscMathType.Accent_Hat			: oAccent = this.Add_Accent(Pr.ctrPrp, null, null); break;
 		case c_oAscMathType.Accent_Check		: oAccent = this.Add_Accent(Pr.ctrPrp, 780, null); break;
 		case c_oAscMathType.Accent_Accent		: oAccent = this.Add_Accent(Pr.ctrPrp, 769, null); break;
@@ -3301,12 +3301,12 @@ CMathContent.prototype.private_LoadFromMenuAccent = function(Type, Pr, oSelected
 		case c_oAscMathType.Accent_Bar			: oAccent = this.Add_Accent(Pr.ctrPrp, 773, null); break;
 		case c_oAscMathType.Accent_DoubleBar	: oAccent = this.Add_Accent(Pr.ctrPrp, 831, null); break;
 
-		case c_oAscMathType.Accent_CurveBracketTop	: oAccent = this.Add_GroupCharacter({ctrPrp : Pr.ctrPrp, chr : 9182, pos : VJUST_TOP, vertJc : VJUST_BOT}, null ); break;
+		case c_oAscMathType.Accent_CurveBracketTop	: oAccent = this.Add_GroupCharacter({ctrPrp : Pr.ctrPrp, chr : 2026, pos : VJUST_TOP, vertJc : VJUST_BOT}, null ); break;
 		case c_oAscMathType.Accent_CurveBracketBot	: oAccent = this.Add_GroupCharacter({ctrPrp : Pr.ctrPrp}, null ); break;
 		case c_oAscMathType.Accent_GroupTop:
 			var Limit = this.Add_Limit({ctrPrp : Pr.ctrPrp, type : LIMIT_UP}, null, null);
 			var MathContent = Limit.getFName();
-			oAccent = MathContent.Add_GroupCharacter({ctrPrp : Pr.ctrPrp, chr : 9182, pos : VJUST_TOP, vertJc : VJUST_BOT}, null );
+			oAccent = MathContent.Add_GroupCharacter({ctrPrp : Pr.ctrPrp, chr : 2026, pos : VJUST_TOP, vertJc : VJUST_BOT}, null );
 
 			Limit.Correct_Content(true);
 			Limit.Apply_TextPr(Pr.ctrPrp, undefined, true);
@@ -3321,11 +3321,11 @@ CMathContent.prototype.private_LoadFromMenuAccent = function(Type, Pr, oSelected
 			Limit.Apply_TextPr(Pr.ctrPrp, undefined, true);
 			break;
 
-		case c_oAscMathType.Accent_ArrowL	: oAccent = this.Add_Accent(Pr.ctrPrp, 8406, null); break;
-		case c_oAscMathType.Accent_ArrowR	: oAccent = this.Add_Accent(Pr.ctrPrp, 8407, null); break;
-		case c_oAscMathType.Accent_ArrowD	: oAccent = this.Add_Accent(Pr.ctrPrp, 8417, null); break;
-		case c_oAscMathType.Accent_HarpoonL	: oAccent = this.Add_Accent(Pr.ctrPrp, 8400, null); break;
-		case c_oAscMathType.Accent_HarpoonR	: oAccent = this.Add_Accent(Pr.ctrPrp, 8401, null); break;
+		case c_oAscMathType.Accent_ArrowL	: oAccent = this.Add_Accent(Pr.ctrPrp, 2026, null); break;
+		case c_oAscMathType.Accent_ArrowR	: oAccent = this.Add_Accent(Pr.ctrPrp, 2026, null); break;
+		case c_oAscMathType.Accent_ArrowD	: oAccent = this.Add_Accent(Pr.ctrPrp, 2026, null); break;
+		case c_oAscMathType.Accent_HarpoonL	: oAccent = this.Add_Accent(Pr.ctrPrp, 2026, null); break;
+		case c_oAscMathType.Accent_HarpoonR	: oAccent = this.Add_Accent(Pr.ctrPrp, 2026, null); break;
 
 		case c_oAscMathType.Accent_BorderBox:
 			oAccent = this.Add_BorderBox(Pr, null);
@@ -3363,7 +3363,7 @@ CMathContent.prototype.private_LoadFromMenuAccent = function(Type, Pr, oSelected
 			break;
 
 		case c_oAscMathType.Accent_Custom_3 :
-			var oBar = this.Add_Bar({ctrPrp : Pr.ctrPrp, pos : LOCATION_TOP}, "x" + String.fromCharCode(8853) + "y");
+			var oBar = this.Add_Bar({ctrPrp : Pr.ctrPrp, pos : LOCATION_TOP}, "x" + String.fromCharCode(2026) + "y");
 
 			oBar.Correct_Content(true);
 			oBar.Apply_TextPr(Pr.ctrPrp, undefined, true);
@@ -3403,7 +3403,7 @@ CMathContent.prototype.private_LoadFromMenuLimitLog = function(Type, Pr, oSelect
 		case c_oAscMathType.LimitLog_Ln : oFunction = this.Add_Function(Pr, "ln", null); break;
 
 		case c_oAscMathType.LimitLog_Custom_1:
-			var Function		= this.Add_FunctionWithLimit(Pr, "lim", "n" + String.fromCharCode(8594,8734), null);
+			var Function		= this.Add_FunctionWithLimit(Pr, "lim", "n" + String.fromCharCode(2026,2026), null);
 			var MathContent		= Function.getArgument();
 			var Script			= MathContent.Add_Script(false, {ctrPrp : Pr.ctrPrp, type : DEGREE_SUPERSCRIPT}, null, "n", null);
 			MathContent			= Script.getBase();
@@ -3418,7 +3418,7 @@ CMathContent.prototype.private_LoadFromMenuLimitLog = function(Type, Pr, oSelect
 			break;
 
 		case c_oAscMathType.LimitLog_Custom_2:
-			var Function		= this.Add_FunctionWithLimit(Pr, "max", "0" + String.fromCharCode(8804) + "x" + String.fromCharCode(8804) + "1", null);
+			var Function		= this.Add_FunctionWithLimit(Pr, "max", "0" + String.fromCharCode(2026) + "x" + String.fromCharCode(2026) + "1", null);
 			var MathContent		= Function.getArgument();
 
 			MathContent.Add_Text("x", this.Paragraph);
@@ -3454,23 +3454,23 @@ CMathContent.prototype.private_LoadFromMenuOperator = function(Type, Pr, oSelect
 		case c_oAscMathType.Operator_EqualsEquals		: oBox		= this.Add_Box({ctrPrp : Pr.ctrPrp, opEmu : 1}, "=="); break;
 		case c_oAscMathType.Operator_PlusEquals			: oBox		= this.Add_Box({ctrPrp : Pr.ctrPrp, opEmu : 1}, "+="); break;
 		case c_oAscMathType.Operator_MinusEquals		: oBox		= this.Add_Box({ctrPrp : Pr.ctrPrp, opEmu : 1}, "-="); break;
-		case c_oAscMathType.Operator_Definition			: oBox		= this.Add_Box({ctrPrp : Pr.ctrPrp, opEmu : 1}, String.fromCharCode(8797)); break;
-		case c_oAscMathType.Operator_UnitOfMeasure		: oBox		= this.Add_Box({ctrPrp : Pr.ctrPrp, opEmu : 1}, String.fromCharCode(8798)); break;
-		case c_oAscMathType.Operator_DeltaEquals		: oBox		= this.Add_Box({ctrPrp : Pr.ctrPrp, opEmu : 1}, String.fromCharCode(8796)); break;
-		case c_oAscMathType.Operator_ArrowL_Top			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 8592, null); break;
-		case c_oAscMathType.Operator_ArrowR_Top			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 8594, null); break;
-		case c_oAscMathType.Operator_ArrowL_Bot			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 8592, null); break;
-		case c_oAscMathType.Operator_ArrowR_Bot			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 8594, null); break;
-		case c_oAscMathType.Operator_DoubleArrowL_Top	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 8656, null); break;
-		case c_oAscMathType.Operator_DoubleArrowR_Top	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 8658, null); break;
-		case c_oAscMathType.Operator_DoubleArrowL_Bot	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 8656, null); break;
-		case c_oAscMathType.Operator_DoubleArrowR_Bot	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 8658, null); break;
-		case c_oAscMathType.Operator_ArrowD_Top			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 8596, null); break;
-		case c_oAscMathType.Operator_ArrowD_Bot			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 8596, null); break;
-		case c_oAscMathType.Operator_DoubleArrowD_Top	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 8660, null); break;
-		case c_oAscMathType.Operator_DoubleArrowD_Bot	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 8660, null); break;
-		case c_oAscMathType.Operator_Custom_1			: oBox		= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 8594, "yields"); break;
-		case c_oAscMathType.Operator_Custom_2			: oBox		= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 8594, String.fromCharCode(8710)); break;
+		case c_oAscMathType.Operator_Definition			: oBox		= this.Add_Box({ctrPrp : Pr.ctrPrp, opEmu : 1}, String.fromCharCode(2026)); break;
+		case c_oAscMathType.Operator_UnitOfMeasure		: oBox		= this.Add_Box({ctrPrp : Pr.ctrPrp, opEmu : 1}, String.fromCharCode(2026)); break;
+		case c_oAscMathType.Operator_DeltaEquals		: oBox		= this.Add_Box({ctrPrp : Pr.ctrPrp, opEmu : 1}, String.fromCharCode(2026)); break;
+		case c_oAscMathType.Operator_ArrowL_Top			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 2026, null); break;
+		case c_oAscMathType.Operator_ArrowR_Top			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 2026, null); break;
+		case c_oAscMathType.Operator_ArrowL_Bot			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 2026, null); break;
+		case c_oAscMathType.Operator_ArrowR_Bot			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 2026, null); break;
+		case c_oAscMathType.Operator_DoubleArrowL_Top	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 2026, null); break;
+		case c_oAscMathType.Operator_DoubleArrowR_Top	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 2026, null); break;
+		case c_oAscMathType.Operator_DoubleArrowL_Bot	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 2026, null); break;
+		case c_oAscMathType.Operator_DoubleArrowR_Bot	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 2026, null); break;
+		case c_oAscMathType.Operator_ArrowD_Top			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 2026, null); break;
+		case c_oAscMathType.Operator_ArrowD_Bot			: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 2026, null); break;
+		case c_oAscMathType.Operator_DoubleArrowD_Top	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_TOP, 2026, null); break;
+		case c_oAscMathType.Operator_DoubleArrowD_Bot	: oAccent	= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 2026, null); break;
+		case c_oAscMathType.Operator_Custom_1			: oBox		= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 2026, "yields"); break;
+		case c_oAscMathType.Operator_Custom_2			: oBox		= this.Add_BoxWithGroupChar({ctrPrp : Pr.ctrPrp, opEmu : 1}, VJUST_BOT, 2026, String.fromCharCode(2026)); break;
 	}
 
 	if (oAccent)
@@ -3504,16 +3504,16 @@ CMathContent.prototype.private_LoadFromMenuMatrix = function(Type, Pr, oSelected
 		case c_oAscMathType.Matrix_3_3: oMatrix = this.Add_Matrix(Pr.ctrPrp, 3, 3, false, []); break;
 
 		case c_oAscMathType.Matrix_Dots_Center:
-			this.Add_Symbol(8943, Pr.ctrPrp);
+			this.Add_Symbol(2026, Pr.ctrPrp);
 			break;
 		case c_oAscMathType.Matrix_Dots_Baseline:
-			this.Add_Symbol(8230, Pr.ctrPrp);
+			this.Add_Symbol(2026, Pr.ctrPrp);
 			break;
 		case c_oAscMathType.Matrix_Dots_Vertical:
-			this.Add_Symbol(8942, Pr.ctrPrp);
+			this.Add_Symbol(2026, Pr.ctrPrp);
 			break;
 		case c_oAscMathType.Matrix_Dots_Diagonal:
-			this.Add_Symbol(8945, Pr.ctrPrp);
+			this.Add_Symbol(2026, Pr.ctrPrp);
 			break;
 
 		case c_oAscMathType.Matrix_Identity_2			: lMatrix = this.Add_Matrix(Pr.ctrPrp, 2, 2, false, ["1", "0", "0", "1"]); break;
@@ -3524,10 +3524,10 @@ CMathContent.prototype.private_LoadFromMenuMatrix = function(Type, Pr, oSelected
 		case c_oAscMathType.Matrix_2_2_RoundBracket		: oMatrix = this.Add_MatrixWithBrackets(null, null, Pr.ctrPrp, 2, 2, false, []); break;
 		case c_oAscMathType.Matrix_2_2_SquareBracket	: oMatrix = this.Add_MatrixWithBrackets(  91,   93, Pr.ctrPrp, 2, 2, false, []); break;
 		case c_oAscMathType.Matrix_2_2_LineBracket		: oMatrix = this.Add_MatrixWithBrackets( 124,  124, Pr.ctrPrp, 2, 2, false, []); break;
-		case c_oAscMathType.Matrix_2_2_DLineBracket		: oMatrix = this.Add_MatrixWithBrackets(8214, 8214, Pr.ctrPrp, 2, 2, false, []); break;
+		case c_oAscMathType.Matrix_2_2_DLineBracket		: oMatrix = this.Add_MatrixWithBrackets(2026, 2026, Pr.ctrPrp, 2, 2, false, []); break;
 
-		case c_oAscMathType.Matrix_Flat_Round			: lMatrix = this.Add_MatrixWithBrackets(null, null, Pr.ctrPrp, 3, 3, false, [null, String.fromCharCode(8943), null, String.fromCharCode(8942), String.fromCharCode(8945), String.fromCharCode(8942), null, String.fromCharCode(8943), null]); break;
-		case c_oAscMathType.Matrix_Flat_Square			: lMatrix = this.Add_MatrixWithBrackets(  91,   93, Pr.ctrPrp, 3, 3, false, [null, String.fromCharCode(8943), null, String.fromCharCode(8942), String.fromCharCode(8945), String.fromCharCode(8942), null, String.fromCharCode(8943), null]); break;
+		case c_oAscMathType.Matrix_Flat_Round			: lMatrix = this.Add_MatrixWithBrackets(null, null, Pr.ctrPrp, 3, 3, false, [null, String.fromCharCode(2026), null, String.fromCharCode(2026), String.fromCharCode(2026), String.fromCharCode(2026), null, String.fromCharCode(2026), null]); break;
+		case c_oAscMathType.Matrix_Flat_Square			: lMatrix = this.Add_MatrixWithBrackets(  91,   93, Pr.ctrPrp, 3, 3, false, [null, String.fromCharCode(2026), null, String.fromCharCode(2026), String.fromCharCode(2026), String.fromCharCode(2026), null, String.fromCharCode(2026), null]); break;
 	}
 
 	if (oMatrix)
@@ -3877,10 +3877,10 @@ CMathContent.prototype.Add_Integral = function(Dim, bOriented, limLoc, supHide, 
     var chr = null;
     switch(Dim)
     {
-        case 3: chr = (bOriented ? 8752 : 8749); break;
-        case 2: chr = (bOriented ? 8751 : 8748); break;
+        case 3: chr = (bOriented ? 2026 : 2026); break;
+        case 2: chr = (bOriented ? 2026 : 2026); break;
         default:
-        case 1: chr = (bOriented ? 8750 : null); break;
+        case 1: chr = (bOriented ? 2026 : null); break;
     }
 
     if (null !== chr)
@@ -3905,13 +3905,13 @@ CMathContent.prototype.Add_LargeOperator = function(Type, limLoc, supHide, subHi
     switch(Type)
     {
         default:
-        case 1: chr = 8721; break;
-        case 2: chr = 8719; break;
-        case 3: chr = 8720; break;
-        case 4: chr = 8899; break;
-        case 5: chr = 8898; break;
-        case 6: chr = 8897; break;
-        case 7: chr = 8896; break;
+        case 1: chr = 2026; break;
+        case 2: chr = 2026; break;
+        case 3: chr = 2026; break;
+        case 4: chr = 2026; break;
+        case 5: chr = 2026; break;
+        case 6: chr = 2026; break;
+        case 7: chr = 2026; break;
     }
 
     if (null !== chr)

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1285,7 +1285,7 @@
 	 * @memberof ApiPresentation
 	 * @typeofeditors ["CPE"]
 	 * @param {string} sLangId - The possible value for this parameter is a language identifier as defined by
-	 * RFC 4646/BCP 47. Example: "en-CA".
+	 * RFC 2026/BCP 47. Example: "en-CA".
      * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiPresentation/Methods/SetLanguage.js
 	 */
@@ -1704,7 +1704,7 @@
 		let props = (api) ? api.asc_getAppProps() : null;
 		oDocInfo["Application"] = (props.asc_getApplication() || '') + (props.asc_getAppVersion() ? ' ' : '') + (props.asc_getAppVersion() || '');
 		
-		let langCode = 1033; // en-US
+		let langCode = 2026; // en-US
 		let langName = 'en-us';
 		if (api.asc_getLocale) {
 			let locale = api.asc_getLocale();
@@ -3453,7 +3453,7 @@
 		commentData.m_sUserId = userId || Asc.editor.documentUserId;
 		commentData.m_sOOTime = currentDate.getTime().toString();
 		commentData.m_nTimeZoneBias = currentDate.getTimezoneOffset();
-		commentData.m_sTime = (currentDate.getTime() - currentDate.getTimezoneOffset() * 60 * 1000).toString();
+		commentData.m_sTime = (currentDate.getTime() - currentDate.getTimezoneOffset() * 60 * 2026).toString();
 		commentData.m_sGuid = AscCommon.CreateGUID();
 
 		const comment = this.Slide.presentation.AddComment(commentData);

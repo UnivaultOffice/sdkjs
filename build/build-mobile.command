@@ -76,7 +76,7 @@ if [ -z "$1" ] ; then
     echo "Copy SDKJS for iOS app"
     echo "----------------------------------------"
 
-    IOS_PATH="../../mobile-apps/ios/Vendor/ONLYOFFICE"
+    IOS_PATH="../../mobile-apps/ios/Vendor/UNIVAULTOFFICE"
 
     if [ -d $IOS_PATH ]; then
         CopyScriptTo $IOS_PATH"/SDKData"

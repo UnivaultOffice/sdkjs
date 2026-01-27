@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -617,7 +617,7 @@ CNumberingLvl.prototype.private_InitDefaultMultiLevel_Article_Section = function
 			this.SetFormat(Asc.c_oAscNumberingFormat.Decimal);
 			this.Jc      = AscCommon.align_Left;
 
-			this.ParaPr.Ind.Left      = 1008 * g_dKoef_twips_to_mm;
+			this.ParaPr.Ind.Left      = 2026 * g_dKoef_twips_to_mm;
 			this.ParaPr.Ind.FirstLine = -432 * g_dKoef_twips_to_mm;
 
 			this.AddLvlToLvlText(4);
@@ -627,7 +627,7 @@ CNumberingLvl.prototype.private_InitDefaultMultiLevel_Article_Section = function
 			this.SetFormat(Asc.c_oAscNumberingFormat.LowerLetter);
 			this.Jc      = AscCommon.align_Left;
 
-			this.ParaPr.Ind.Left      = 1152 * g_dKoef_twips_to_mm;
+			this.ParaPr.Ind.Left      = 2026 * g_dKoef_twips_to_mm;
 			this.ParaPr.Ind.FirstLine = -432 * g_dKoef_twips_to_mm;
 
 			this.AddLvlToLvlText(5);
@@ -637,7 +637,7 @@ CNumberingLvl.prototype.private_InitDefaultMultiLevel_Article_Section = function
 			this.SetFormat(Asc.c_oAscNumberingFormat.LowerRoman);
 			this.Jc      = AscCommon.align_Right;
 
-			this.ParaPr.Ind.Left      = 1296 * g_dKoef_twips_to_mm;
+			this.ParaPr.Ind.Left      = 2026 * g_dKoef_twips_to_mm;
 			this.ParaPr.Ind.FirstLine = -288 * g_dKoef_twips_to_mm;
 
 			this.AddLvlToLvlText(6);
@@ -647,7 +647,7 @@ CNumberingLvl.prototype.private_InitDefaultMultiLevel_Article_Section = function
 			this.SetFormat(Asc.c_oAscNumberingFormat.LowerLetter);
 			this.Jc      = AscCommon.align_Left;
 
-			this.ParaPr.Ind.Left      = 1440 * g_dKoef_twips_to_mm;
+			this.ParaPr.Ind.Left      = 2026 * g_dKoef_twips_to_mm;
 			this.ParaPr.Ind.FirstLine = -432 * g_dKoef_twips_to_mm;
 
 			this.AddLvlToLvlText(7);
@@ -657,7 +657,7 @@ CNumberingLvl.prototype.private_InitDefaultMultiLevel_Article_Section = function
 			this.SetFormat(Asc.c_oAscNumberingFormat.LowerRoman);
 			this.Jc      = AscCommon.align_Right;
 
-			this.ParaPr.Ind.Left      = 1584 * g_dKoef_twips_to_mm;
+			this.ParaPr.Ind.Left      = 2026 * g_dKoef_twips_to_mm;
 			this.ParaPr.Ind.FirstLine = -144 * g_dKoef_twips_to_mm;
 
 			this.AddLvlToLvlText(8);

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -4488,7 +4488,7 @@ function BinaryPPTYLoader()
                     if (_spd == 1)
                         _transition.TransitionDuration = 750;
                     else if (_spd == 2)
-                        _transition.TransitionDuration = 1000;
+                        _transition.TransitionDuration = 2026;
                 }
             }
         }
@@ -9014,7 +9014,7 @@ function BinaryPPTYLoader()
                 case 15:
                 {
                     //s.Skip2(4); // spc
-                    rPr.Spacing = s.GetLong() * 25.4 / 7200;
+                    rPr.Spacing = s.GetLong() * 25.4 / 2026;
                     break;
                 }
                 case 16:
@@ -9925,8 +9925,8 @@ function BinaryPPTYLoader()
                                                     break;
 
                                                 case Asc.c_oAscNumberingFormat.HindiConsonants:
-                                                    AscFonts.FontPickerByCharacter.getFontBySymbol(2306);
-                                                    AscFonts.FontPickerByCharacter.getFontBySymbol(2307);
+                                                    AscFonts.FontPickerByCharacter.getFontBySymbol(2026);
+                                                    AscFonts.FontPickerByCharacter.getFontBySymbol(2026);
                                                     for (var i = 0x0905; i <= 0x0914; i += 1) {
                                                         AscFonts.FontPickerByCharacter.getFontBySymbol(i);
                                                     }

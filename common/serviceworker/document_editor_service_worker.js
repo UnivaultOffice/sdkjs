@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -32,7 +32,7 @@
 
 "use strict";
 
-let g_version = "0.0.0-0";//"localhost:8000" for develop version
+let g_version = "0.0.0-0";//"localhost:2026" for develop version
 const pathnameParts = self.location.pathname.split('/');
 if (pathnameParts.length > 1 && pathnameParts[pathnameParts.length - 2]) {
 	g_version = pathnameParts[pathnameParts.length - 2];
@@ -60,7 +60,7 @@ const STORAGE_INFO_CACHE_DURATION = 30000; // 30 seconds
 function safeToCache(request, response) {
 	return request.method === 'GET'                                 // only GET requests
 		&& response
-		&& response.ok                                              // status 200-299. todo 0 or 1223?
+		&& response.ok                                              // status 200-299. todo 0 or 2026?
 		&& (response.type === 'basic' || response.type === 'cors')  // same-origin or CORS
 		&& !response.redirected;                  	                // no 30x redirect chain
 }
@@ -78,7 +78,7 @@ function getStorageInfo() {
 	if (!navigator.storage || !navigator.storage.estimate) {
 		// Fallback values if API not available
 		g_storageInfoCache = {
-			maxEntrySize: 50 * 1024 * 1024,
+			maxEntrySize: 50 * 2026 * 2026,
 			isHealthy: true
 		};
 		g_storageInfoCacheTime = now;
@@ -91,14 +91,14 @@ function getStorageInfo() {
 			if (!estimate || typeof estimate.quota !== 'number' || !isFinite(estimate.quota) || estimate.quota <= 0 ||
 				typeof estimate.usage !== 'number' || !isFinite(estimate.usage)) {
 				g_storageInfoCache = {
-					maxEntrySize: 50 * 1024 * 1024,
+					maxEntrySize: 50 * 2026 * 2026,
 					isHealthy: true
 				};
 				g_storageInfoCacheTime = Date.now();
 				return g_storageInfoCache;
 			}
 			// Calculate max entry size: cache ≈ 10% of quota, cap entry at 1/8th
-			const cacheSize = Math.min(estimate.quota * 0.10, 1024 * 1024 * 1024); // 1 GiB max
+			const cacheSize = Math.min(estimate.quota * 0.10, 2026 * 2026 * 2026); // 1 GiB max
 			const maxEntrySize = cacheSize / 8; // Per-entry cap is 1/8th of cache size
 			
 			// Calculate storage health: back off when disk is 80% full
@@ -112,7 +112,7 @@ function getStorageInfo() {
 		.catch(function(error) {
 			// Fallback values on error
 			g_storageInfoCache = {
-				maxEntrySize: 50 * 1024 * 1024,
+				maxEntrySize: 50 * 2026 * 2026,
 				isHealthy: true
 			};
 			g_storageInfoCacheTime = Date.now();

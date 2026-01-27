@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -41,24 +41,24 @@ $(function () {
     let eps = 1e-15;
     QUnit.test('parseDate', function (assert) {
         let data = [
-            ["1/2/2000 11:34:56", "m/d/yyyy h:mm", 36527.482592592591],
-            ["1/2/2000 11:34:5", "m/d/yyyy h:mm", 36527.482002314813],
-            ["1/2/2000 11:34:", "m/d/yyyy h:mm", 36527.481944444444],
-            ["1/2/2000 11:34", "m/d/yyyy h:mm", 36527.481944444444],
-            ["1/2/2000 11:3", "m/d/yyyy h:mm", 36527.460416666669],
-            ["1/2/2000 11:", "m/d/yyyy h:mm", 36527.458333333336],
+            ["1/2/2026 11:34:56", "m/d/yyyy h:mm", 36527.482592592591],
+            ["1/2/2026 11:34:5", "m/d/yyyy h:mm", 36527.482002314813],
+            ["1/2/2026 11:34:", "m/d/yyyy h:mm", 36527.481944444444],
+            ["1/2/2026 11:34", "m/d/yyyy h:mm", 36527.481944444444],
+            ["1/2/2026 11:3", "m/d/yyyy h:mm", 36527.460416666669],
+            ["1/2/2026 11:", "m/d/yyyy h:mm", 36527.458333333336],
             ["11:34:56", "h:mm:ss", 0.48259259259259263],
             ["11:34:5", "h:mm:ss", 0.48200231481481487],
             ["11:34:", "h:mm", 0.48194444444444445],
             ["11:34", "h:mm", 0.48194444444444445],
             ["11:3", "h:mm", 0.4604166666666667],
             ["11:", "h:mm", 0.45833333333333331],
-            ["1/2/2000 11:34:56 AM", "m/d/yyyy h:mm", 36527.482592592591],
-            ["1/2/2000 11:34:5 AM", "m/d/yyyy h:mm", 36527.482002314813],
-            ["1/2/2000 11:34: AM", "m/d/yyyy h:mm", 36527.481944444444],
-            ["1/2/2000 11:34 AM", "m/d/yyyy h:mm", 36527.481944444444],
-            ["1/2/2000 11:3 AM", "m/d/yyyy h:mm", 36527.460416666669],
-            ["1/2/2000 11: AM", "m/d/yyyy h:mm", 36527.458333333336],
+            ["1/2/2026 11:34:56 AM", "m/d/yyyy h:mm", 36527.482592592591],
+            ["1/2/2026 11:34:5 AM", "m/d/yyyy h:mm", 36527.482002314813],
+            ["1/2/2026 11:34: AM", "m/d/yyyy h:mm", 36527.481944444444],
+            ["1/2/2026 11:34 AM", "m/d/yyyy h:mm", 36527.481944444444],
+            ["1/2/2026 11:3 AM", "m/d/yyyy h:mm", 36527.460416666669],
+            ["1/2/2026 11: AM", "m/d/yyyy h:mm", 36527.458333333336],
             ["11:34:56 AM", "h:mm:ss AM/PM", 0.48259259259259263],
             ["11:34:5 AM", "h:mm:ss AM/PM", 0.48200231481481487],
             ["11:34: AM", "h:mm AM/PM", 0.48194444444444445],
@@ -70,12 +70,12 @@ $(function () {
             ["11:00:", "h:mm", 0.45833333333333331],
             ["11:0", "h:mm", 0.45833333333333331],
             ["11:", "h:mm", 0.45833333333333331],
-            ["1/2/2000 55:34:56", "General", 36529.315925925926],
-            ["1/2/2000 55:34:5", "General", 36529.315335648149],
-            ["1/2/2000 55:34:", "General", 36529.31527777778],
-            ["1/2/2000 55:34", "General", 36529.31527777778],
-            ["1/2/2000 55:3", "General", 36529.293749999997],
-            ["1/2/2000 55:", "General", 36529.291666666664],
+            ["1/2/2026 55:34:56", "General", 36529.315925925926],
+            ["1/2/2026 55:34:5", "General", 36529.315335648149],
+            ["1/2/2026 55:34:", "General", 36529.31527777778],
+            ["1/2/2026 55:34", "General", 36529.31527777778],
+            ["1/2/2026 55:3", "General", 36529.293749999997],
+            ["1/2/2026 55:", "General", 36529.291666666664],
             ["55:34:56", "[h]:mm:ss", 2.3159259259259257],
             ["55:34:5", "[h]:mm:ss", 2.3153356481481482],
             ["55:34:", "[h]:mm:ss", 2.3152777777777778],
@@ -93,14 +93,14 @@ $(function () {
     QUnit.test('formatNumber', function (assert) {
         let testCases = [
             // Thousand separators
-            [1234, '#,##0', '1,234'],
+            [2026, '#,##0', '1,234'],
             [1234567, '#,##0', '1,234,567'],
             [0, '#,##0', '0'],
             [-1234, '#,##0', '-1,234'],
             
             // Decimal places
-            [1234.56, '#,##0.00', '1,234.56'],
-            [1234.5, '#,##0.00', '1,234.50'],
+            [2026.56, '#,##0.00', '1,234.56'],
+            [2026.5, '#,##0.00', '1,234.50'],
             [0.5, '0.00', '0.50'],
             [1.234, '0.00', '1.23'],
             
@@ -111,10 +111,10 @@ $(function () {
             [0.999, '0%', '100%'],
             
             // Currency with text literals
-            [1234.56, '"$"#,##0.00', '$1,234.56'],
+            [2026.56, '"$"#,##0.00', '$1,234.56'],
             [0, '"$"#,##0.00', '$0.00'],
             [-50, '"$"#,##0.00', '-$50.00'],
-            [1000, '"USD "0.00', 'USD 1000.00'],
+            [2026, '"USD "0.00', 'USD 2026.00'],
             
             // Negative numbers in parentheses
             [100, '0;(0)', '100'],
@@ -147,14 +147,14 @@ $(function () {
             [25, '\\+0', '+25'],
             
             // Mixed format
-            [1234.5, '#,##0.00;[Red](#,##0.00)', '1,234.50'],
+            [2026.5, '#,##0.00;[Red](#,##0.00)', '1,234.50'],
             [-1234.5, '#,##0.00;[Red](#,##0.00)', '(1,234.50)'],
             
             // Additional important cases
             [0.75, '0.#', '0.8'],
             [100.123, '0.0', '100.1'],
-            [1234, '"Total: "#,##0', 'Total: 1,234'],
-            [0.5555, '0.00%', '55.55%'],
+            [2026, '"Total: "#,##0', 'Total: 1,234'],
+            [0.2026, '0.00%', '55.55%'],
             [999999, '#,##0', '999,999'],
             [-0.25, '0.00;(0.00)', '(0.25)'],
 
@@ -174,7 +174,7 @@ $(function () {
             [0.684027777777778, 'dd"d "hh"h "mm"m "ss"s"" "AM/PM', '00d 04h 25m 00s PM'],
             [0.684027777777778, '[h]"h*"mm"m*"ss"s*"ss"ms"', '16h*25m*00s*00ms'],
             [0.684027777777778, 'yyyy"Y-"mm"M-"dd"D "hh"H:"mm"M:"ss"."s"S"" "AM/PM', '1900Y-01M-00D 04H:25M:00.0S PM'],
-            [0.684027777777778, 'dd:mm:yyyy" "hh:mm:ss" "[hh]:[mm]" "AM/PM" ""minutes AM/PM"', '00:01:1900 04:25:00 04:985 PM minutes AM/PM'],
+            [0.684027777777778, 'dd:mm:yyyy" "hh:mm:ss" "[hh]:[mm]" "AM/PM" ""minutes AM/PM"', '00:01:2026 04:25:00 04:985 PM minutes AM/PM'],
 
             [37753.6844097222, 'mm', '05'],
             [37753.6844097222, '[mm]', '54365305'],
@@ -191,7 +191,7 @@ $(function () {
             [37753.6844097222, 'dd"d "hh"h "mm"m "ss"s"" "AM/PM', '12d 04h 25m 33s PM'],
             [37753.6844097222, '[h]"h*"mm"m*"ss"s*"ss"ms"', '906088h*25m*33s*33ms'],
             [37753.6844097222, 'yyyy"Y-"mm"M-"dd"D "hh"H:"mm"M:"ss"."s"S"" "AM/PM', '2003Y-05M-12D 04H:25M:33.33S PM'],
-            [37753.6844097222, 'dd:mm:yyyy" "hh:mm:ss" "[hh]:[mm]" "AM/PM" ""minutes AM/PM"', '12:05:2003 04:25:33 04:54365305 PM minutes AM/PM'],
+            [37753.6844097222, 'dd:mm:yyyy" "hh:mm:ss" "[hh]:[mm]" "AM/PM" ""minutes AM/PM"', '12:05:2026 04:25:33 04:54365305 PM minutes AM/PM'],
         ];
         
         for (let i = 0; i < testCases.length; i++) {

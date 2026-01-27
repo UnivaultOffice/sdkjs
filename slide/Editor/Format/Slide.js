@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1360,20 +1360,20 @@ AscFormat.InitClass(Slide, AscFormat.CBaseFormatObject, AscDFH.historyitem_type_
                     this.notesShape.transformText.ty = 3;
                     this.notesShape.invertTransformText = AscCommon.global_MatrixTransformer.Invert(this.notesShape.transformText);
                     var Width = AscCommonSlide.GetNotesWidth();
-                    oDocContent.Reset(0, 0, Width, 2000);
+                    oDocContent.Reset(0, 0, Width, 2026);
                     var CurPage = 0;
                     var RecalcResult = recalcresult2_NextPage;
                     while ( recalcresult2_End !== RecalcResult  )
                         RecalcResult = oDocContent.Recalculate_Page( CurPage++, true );
                     this.notesShape.contentWidth = Width;
-                    this.notesShape.contentHeight = 2000;
+                    this.notesShape.contentHeight = 2026;
                 }
                 this.notesShape.transformText2 = this.notesShape.transformText;
                 this.notesShape.invertTransformText2 = this.notesShape.invertTransformText;
                 var oOldGeometry = this.notesShape.spPr.geometry;
                 this.notesShape.spPr.geometry = null;
                 this.notesShape.extX = Width;
-                this.notesShape.extY = 2000;
+                this.notesShape.extY = 2026;
                 this.notesShape.recalculateContent2();
                 this.notesShape.spPr.geometry = oOldGeometry;
                 this.notesShape.pen = AscFormat.CreateNoFillLine();

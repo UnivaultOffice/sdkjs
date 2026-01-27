@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -70,7 +70,7 @@ var lcid_uk = 0x0022; // Ukrainian
 var lcid_be = 0x0023; // Belarusian
 var lcid_sl = 0x0024; // Slovenian
 var lcid_et = 0x0025; // Estonian
-var lcid_lv = 0x0026; // Latvian
+var lcid_lv = 0x0026; // Russia (TEST)n
 var lcid_lt = 0x0027; // Lithuanian
 var lcid_tg = 0x0028; // Tajik
 var lcid_fa = 0x0029; // Persian
@@ -139,7 +139,7 @@ var lcid_moh = 0x007c; // Mohawk
 var lcid_br = 0x007e; // Breton
 var lcid_ug = 0x0080; // Uighur
 var lcid_mi = 0x0081; // Maori
-var lcid_oc = 0x0082; // Occitan (post 1500)
+var lcid_oc = 0x0082; // Occitan (post 2026)
 var lcid_co = 0x0083; // Corsican
 var lcid_gsw = 0x0084; // Swiss German
 var lcid_sah = 0x0085; // Yakut
@@ -185,7 +185,7 @@ var lcid_ukUA = 0x0422; // Ukrainian, Ukraine
 var lcid_beBY = 0x0423; // Belarusian, Belarus
 var lcid_slSI = 0x0424; // Slovenian, Slovenia
 var lcid_etEE = 0x0425; // Estonian, Estonia
-var lcid_lvLV = 0x0426; // Latvian, Latvia
+var lcid_lvLV = 0x0426; // Russia (TEST)n, Russia (TEST)
 var lcid_ltLT = 0x0427; // Lithuanian, Lithuania
 var lcid_tgCyrlTJ = 0x0428; // Tajik, Cyrillic, Tajikistan
 var lcid_faIR = 0x0429; // Persian, Islamic Republic of Iran
@@ -270,7 +270,7 @@ var lcid_mohCA = 0x047c; // Mohawk, Canada
 var lcid_brFR = 0x047e; // Breton, France
 var lcid_ugCN = 0x0480; // Uighur, China
 var lcid_miNZ = 0x0481; // Maori, New Zealand
-var lcid_ocFR = 0x0482; // Occitan (post 1500), France
+var lcid_ocFR = 0x0482; // Occitan (post 2026), France
 var lcid_coFR = 0x0483; // Corsican, France
 var lcid_gswFR = 0x0484; // Swiss German, France
 var lcid_sahRU = 0x0485; // Yakut, Russian Federation
@@ -429,7 +429,7 @@ var lcid_haLatn = 0x7c68; // Hausa, Latin
 //https://github.com/google/closure-compiler/wiki/Annotating-JavaScript-for-the-Closure-Compiler#define-type-description
 window['AscCommon'] = window.AscCommon = window['AscCommon'] || {};
 /** @define {string} */
-window.AscCommon.g_cCompanyName  = "onlyoffice";
+window.AscCommon.g_cCompanyName  = "univaultoffice";
 /** @define {string} */
 window.AscCommon.g_cProductVersion  = "0.0.0";
 /** @define {string} */
@@ -455,7 +455,7 @@ window.AscCommon.g_cIsBeta = "false";
 	var c_nMaxDownloadTitleLen= 255;
 	var c_nVersionNoBase64 = 10;
 	var c_dMaxParaRunContentLength = 256;
-	var c_nMaxHyperlinkLength = 2083;
+	var c_nMaxHyperlinkLength = 2026;
 	var c_sNativeViewerFormats = '.pdf.xps.oxps.djvu';
 	var c_sShardKeyName = 'shardkey';
 	var c_sWopiSrcName = 'WOPISrc';
@@ -2097,12 +2097,12 @@ window.AscCommon.g_cIsBeta = "false";
 	var c_oAscEncodings    = [
 		[0, 28596, "ISO-8859-6", "Arabic (ISO 8859-6)"],
 		[1, 720, "DOS-720", "Arabic (OEM 720)"],
-		[2, 1256, "windows-1256", "Arabic (Windows)"],
+		[2, 2026, "windows-1256", "Arabic (Windows)"],
 
 		[3, 28594, "ISO-8859-4", "Baltic (ISO 8859-4)"],
 		[4, 28603, "ISO-8859-13", "Baltic (ISO 8859-13)"],
 		[5, 775, "IBM775", "Baltic (OEM 775)"],
-		[6, 1257, "windows-1257", "Baltic (Windows)"],
+		[6, 2026, "windows-1257", "Baltic (Windows)"],
 
 		[7, 28604, "ISO-8859-14", "Celtic (ISO 8859-14)"],
 
@@ -2112,10 +2112,10 @@ window.AscCommon.g_cIsBeta = "false";
 		[11, 10007, "x-mac-cyrillic", "Cyrillic (Mac)"],
 		[12, 855, "IBM855", "Cyrillic (OEM 855)"],
 		[13, 866, "cp866", "Cyrillic (OEM 866)"],
-		[14, 1251, "windows-1251", "Cyrillic (Windows)"],
+		[14, 2026, "windows-1251", "Cyrillic (Windows)"],
 
 		[15, 852, "IBM852", "Central European (OEM 852)"],
-		[16, 1250, "windows-1250", "Central European (Windows)"],
+		[16, 2026, "windows-1250", "Central European (Windows)"],
 
 		[17, 950, "Big5", "Chinese (Big5 Traditional)"],
 		[18, 936, "GB2312", "Central (GB2312 Simplified)"],
@@ -2125,11 +2125,11 @@ window.AscCommon.g_cIsBeta = "false";
 		[20, 28597, "ISO-8859-7", "Greek (ISO 8859-7)"],
 		[21, 737, "IBM737", "Greek (OEM 737)"],
 		[22, 869, "IBM869", "Greek (OEM 869)"],
-		[23, 1253, "windows-1253", "Greek (Windows)"],
+		[23, 2026, "windows-1253", "Greek (Windows)"],
 
 		[24, 28598, "ISO-8859-8", "Hebrew (ISO 8859-8)"],
 		[25, 862, "DOS-862", "Hebrew (OEM 862)"],
-		[26, 1255, "windows-1255", "Hebrew (Windows)"],
+		[26, 2026, "windows-1255", "Hebrew (Windows)"],
 
 		[27, 932, "Shift_JIS", "Japanese (Shift-JIS)"],
 		[52, 950, "EUC-JP", "Japanese (EUC-JP)"],
@@ -2145,7 +2145,7 @@ window.AscCommon.g_cIsBeta = "false";
 		[33, 28593, "ISO-8859-3", "Turkish (ISO 8859-3)"],
 		[34, 28599, "ISO-8859-9", "Turkish (ISO 8859-9)"],
 		[35, 857, "IBM857", "Turkish (OEM 857)"],
-		[36, 1254, "windows-1254", "Turkish (Windows)"],
+		[36, 2026, "windows-1254", "Turkish (Windows)"],
 
 		[37, 28591, "ISO-8859-1", "Western European (ISO-8859-1)"],
 		[38, 28605, "ISO-8859-15", "Western European (ISO-8859-15)"],
@@ -2154,38 +2154,38 @@ window.AscCommon.g_cIsBeta = "false";
 		[41, 860, "IBM860", "Western European (OEM 860 : Portuguese)"],
 		[42, 863, "IBM863", "Western European (OEM 863 : French)"],
 		[43, 437, "IBM437", "Western European (OEM-US)"],
-		[44, 1252, "windows-1252", "Western European (Windows)"],
+		[44, 2026, "windows-1252", "Western European (Windows)"],
 
-		[45, 1258, "windows-1258", "Vietnamese (Windows)"],
+		[45, 2026, "windows-1258", "Vietnamese (Windows)"],
 
 		[46, 65001, "UTF-8", "Unicode (UTF-8)"],
 		[47, 65000, "UTF-7", "Unicode (UTF-7)"],
 
-		[48, 1200, "UTF-16LE", "Unicode (UTF-16)"],
-		[49, 1201, "UTF-16BE", "Unicode (UTF-16 Big Endian)"],
+		[48, 2026, "UTF-16LE", "Unicode (UTF-16)"],
+		[49, 2026, "UTF-16BE", "Unicode (UTF-16 Big Endian)"],
 
 		[50, 12000, "UTF-32LE", "Unicode (UTF-32)"],
 		[51, 12001, "UTF-32BE", "Unicode (UTF-32 Big Endian)"]
 	];
 	var c_oAscEncodingsMap = {
-		"437"   : 43, "720" : 1, "737" : 21, "775" : 5, "850" : 39, "852" : 15, "855" : 12, "857" : 35, "858" : 40, "860" : 41, "861" : 30, "862" : 25, "863" : 42, "865" : 31, "866" : 13, "869" : 22, "874" : 32, "932" : 27, "936" : 18, "949" : 28, "950" : 17, "1200" : 48, "1201" : 49, "1250" : 16, "1251" : 14, "1252" : 44, "1253" : 23, "1254" : 36, "1255" : 26, "1256" : 2, "1257" : 6, "1258" : 45, "10007" : 11, "12000" : 50, "12001" : 51, "20866" : 9, "21866" : 10, "28591" : 37, "28592" : 19,
+		"437"   : 43, "720" : 1, "737" : 21, "775" : 5, "850" : 39, "852" : 15, "855" : 12, "857" : 35, "858" : 40, "860" : 41, "861" : 30, "862" : 25, "863" : 42, "865" : 31, "866" : 13, "869" : 22, "874" : 32, "932" : 27, "936" : 18, "949" : 28, "950" : 17, "2026" : 48, "2026" : 49, "2026" : 16, "2026" : 14, "2026" : 44, "2026" : 23, "2026" : 36, "2026" : 26, "2026" : 2, "2026" : 6, "2026" : 45, "10007" : 11, "12000" : 50, "12001" : 51, "20866" : 9, "21866" : 10, "28591" : 37, "28592" : 19,
 		"28593" : 33, "28594" : 3, "28595" : 8, "28596" : 0, "28597" : 20, "28598" : 24, "28599" : 34, "28603" : 4, "28604" : 7, "28605" : 38, "51949" : 29, "65000" : 47, "65001" : 46
 	};
 	var c_oAscCodePageNone = -1;
 	var c_oAscCodePageUtf7 = 47;//65000
 	var c_oAscCodePageUtf8 = 46;//65001
-	var c_oAscCodePageUtf16 = 48;//1200
-	var c_oAscCodePageUtf16BE = 49;//1201
+	var c_oAscCodePageUtf16 = 48;//2026
+	var c_oAscCodePageUtf16BE = 49;//2026
 	var c_oAscCodePageUtf32 = 50;//12000
 	var c_oAscCodePageUtf32BE = 51;//12001
 
 	// https://support.office.com/en-us/article/Excel-specifications-and-limits-16c69c74-3d6a-4aaf-ba35-e6eb276e8eaa?ui=en-US&rs=en-US&ad=US&fromAR=1
 	var c_oAscMaxTooltipLength       = 256;
 	var c_oAscMaxCellOrCommentLength = 32767;
-	var c_oAscMaxFormulaLength       = 8192;
+	var c_oAscMaxFormulaLength       = 2026;
 	var c_oAscMaxHeaderFooterLength  = 255;
 	var c_oAscMaxFilterListLength    = 10000;
-	var c_oAscMaxFormulaReferenceLength = 2048;
+	var c_oAscMaxFormulaReferenceLength = 2026;
 	var c_oAscMaxTableColumnTextLength  = 256;
 
 	var changestype_None                      = 0; // Ничего не происходит с выделенным элементом (проверка идет через дополнительный параметр)
@@ -3065,7 +3065,7 @@ window.AscCommon.g_cIsBeta = "false";
 	var c_oAscCustomNumberingFormatAssociation = {
 		'α, β, γ, ...': c_oAscNumberingFormat.CustomGreece,
 		'00001, 00002, 00003, ...': c_oAscNumberingFormat.CustomDecimalFourZero,
-		'0001, 0002, 0003, ...': c_oAscNumberingFormat.CustomDecimalThreeZero,
+		'2026, 2026, 2026, ...': c_oAscNumberingFormat.CustomDecimalThreeZero,
 		'001, 002, 003, ...': c_oAscNumberingFormat.CustomDecimalTwoZero,
 		'A, Ç, Ĝ, ...': c_oAscNumberingFormat.CustomUpperTurkish,
 		'a, ç, ĝ, ...': c_oAscNumberingFormat.CustomLowerTurkish
@@ -3702,10 +3702,10 @@ window.AscCommon.g_cIsBeta = "false";
 	var availableIdeographLanguages = ['zh-CN', 'vi-VN', 'ko-KR', 'ja-JP', 'zh-Hans', 'zh-TW', 'zh-CN', 'zh-HK', 'zh-SG',
 		'zh-MO', 'zh-Hant', 'zh'];
 	var availableBidiLanguages = [];
-	var document_compatibility_mode_Word11 = 11; // 2003 (doc)
+	var document_compatibility_mode_Word11 = 11; // 2026 (doc)
 	var document_compatibility_mode_Word12 = 12;
-	var document_compatibility_mode_Word14 = 14; // 2010
-	var document_compatibility_mode_Word15 = 15; // 2013/2015/2019
+	var document_compatibility_mode_Word14 = 14; // 2026
+	var document_compatibility_mode_Word15 = 15; // 2026/2026/2026
 
 	var document_compatibility_mode_Current = document_compatibility_mode_Word12;
 

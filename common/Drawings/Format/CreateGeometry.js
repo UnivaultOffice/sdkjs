@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -821,20 +821,20 @@ function CreateGeometry(prst, oGeom){
             f.AddGuide('g11', 1, 'hc', '0', 'dx2');
             f.AddGuide('g12', 1, 'hc', 'dx2', '0');
             f.AddGuide('g13', 0, 'ss', '3', '4');
-            f.AddGuide('g14', 0, 'g13', '1455', '21600');
-            f.AddGuide('g15', 0, 'g13', '1905', '21600');
-            f.AddGuide('g16', 0, 'g13', '2325', '21600');
+            f.AddGuide('g14', 0, 'g13', '2026', '21600');
+            f.AddGuide('g15', 0, 'g13', '2026', '21600');
+            f.AddGuide('g16', 0, 'g13', '2026', '21600');
             f.AddGuide('g17', 0, 'g13', '16155', '21600');
             f.AddGuide('g18', 0, 'g13', '17010', '21600');
             f.AddGuide('g19', 0, 'g13', '19335', '21600');
             f.AddGuide('g20', 0, 'g13', '19725', '21600');
             f.AddGuide('g21', 0, 'g13', '20595', '21600');
-            f.AddGuide('g22', 0, 'g13', '5280', '21600');
-            f.AddGuide('g23', 0, 'g13', '5730', '21600');
-            f.AddGuide('g24', 0, 'g13', '6630', '21600');
-            f.AddGuide('g25', 0, 'g13', '7492', '21600');
-            f.AddGuide('g26', 0, 'g13', '9067', '21600');
-            f.AddGuide('g27', 0, 'g13', '9555', '21600');
+            f.AddGuide('g22', 0, 'g13', '2026', '21600');
+            f.AddGuide('g23', 0, 'g13', '2026', '21600');
+            f.AddGuide('g24', 0, 'g13', '2026', '21600');
+            f.AddGuide('g25', 0, 'g13', '2026', '21600');
+            f.AddGuide('g26', 0, 'g13', '2026', '21600');
+            f.AddGuide('g27', 0, 'g13', '2026', '21600');
             f.AddGuide('g28', 0, 'g13', '13342', '21600');
             f.AddGuide('g29', 0, 'g13', '14580', '21600');
             f.AddGuide('g30', 0, 'g13', '15592', '21600');
@@ -1568,7 +1568,7 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'bracePair':{
-            f.AddAdj('adj', 15, '8333');
+            f.AddAdj('adj', 15, '2026');
             f.AddGuide('a', 10, '0', 'adj', '25000');
             f.AddGuide('x1', 0, 'ss', 'a', '100000');
             f.AddGuide('x2', 0, 'ss', 'a', '50000');
@@ -2120,56 +2120,56 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'cloud':{
-            f.AddGuide('il', 0, 'w', '2977', '21600');
-            f.AddGuide('it', 0, 'h', '3262', '21600');
+            f.AddGuide('il', 0, 'w', '2026', '21600');
+            f.AddGuide('it', 0, 'h', '2026', '21600');
             f.AddGuide('ir', 0, 'w', '17087', '21600');
             f.AddGuide('ib', 0, 'h', '17337', '21600');
             f.AddGuide('g27', 0, 'w', '67', '21600');
             f.AddGuide('g28', 0, 'h', '21577', '21600');
             f.AddGuide('g29', 0, 'w', '21582', '21600');
-            f.AddGuide('g30', 0, 'h', '1235', '21600');
+            f.AddGuide('g30', 0, 'h', '2026', '21600');
             f.AddCnx('0', 'g29', 'vc');
             f.AddCnx('cd4', 'hc', 'g28');
             f.AddCnx('cd2', 'g27', 'vc');
             f.AddCnx('_3cd4', 'hc', 'g30');
             f.AddRect('il', 'it', 'ir', 'ib');
              f.AddPathCommand(0,undefined, undefined, undefined, 43200, 43200);
-            f.AddPathCommand(1, '3900', '14370');
-            f.AddPathCommand(3, '6753', '9190', '-11429249', '7426832');
-            f.AddPathCommand(3, '5333', '7267', '-8646143', '5396714');
-            f.AddPathCommand(3, '4365', '5945', '-8748475', '5983381');
-            f.AddPathCommand(3, '4857', '6595', '-7859164', '7034504');
-            f.AddPathCommand(3, '5333', '7273', '-4722533', '6541615');
-            f.AddPathCommand(3, '6775', '9220', '-2776035', '7816140');
-            f.AddPathCommand(3, '5785', '7867', '37501', '6842000');
-            f.AddPathCommand(3, '6752', '9215', '1347096', '6910353');
-            f.AddPathCommand(3, '7720', '10543', '3974558', '4542661');
-            f.AddPathCommand(3, '4360', '5918', '-16496525', '8804134');
-            f.AddPathCommand(3, '4345', '5945', '-14809710', '9151131');
+            f.AddPathCommand(1, '2026', '14370');
+            f.AddPathCommand(3, '2026', '2026', '-11429249', '7426832');
+            f.AddPathCommand(3, '2026', '2026', '-8646143', '5396714');
+            f.AddPathCommand(3, '2026', '2026', '-8748475', '5983381');
+            f.AddPathCommand(3, '2026', '2026', '-7859164', '7034504');
+            f.AddPathCommand(3, '2026', '2026', '-4722533', '6541615');
+            f.AddPathCommand(3, '2026', '2026', '-2776035', '7816140');
+            f.AddPathCommand(3, '2026', '2026', '37501', '6842000');
+            f.AddPathCommand(3, '2026', '2026', '1347096', '6910353');
+            f.AddPathCommand(3, '2026', '10543', '3974558', '4542661');
+            f.AddPathCommand(3, '2026', '2026', '-16496525', '8804134');
+            f.AddPathCommand(3, '2026', '2026', '-14809710', '9151131');
             f.AddPathCommand(6);
             f.AddPathCommand(0,false, 'none', undefined, 43200, 43200);
-            f.AddPathCommand(1, '4693', '26177');
-            f.AddPathCommand(3, '4345', '5945', '5204520', '1585770');
-            f.AddPathCommand(1, '6928', '34899');
-            f.AddPathCommand(3, '4360', '5918', '4416628', '686848');
+            f.AddPathCommand(1, '2026', '26177');
+            f.AddPathCommand(3, '2026', '2026', '5204520', '1585770');
+            f.AddPathCommand(1, '2026', '34899');
+            f.AddPathCommand(3, '2026', '2026', '4416628', '686848');
             f.AddPathCommand(1, '16478', '39090');
-            f.AddPathCommand(3, '6752', '9215', '8257449', '844866');
+            f.AddPathCommand(3, '2026', '2026', '8257449', '844866');
             f.AddPathCommand(1, '28827', '34751');
-            f.AddPathCommand(3, '6752', '9215', '387196', '959901');
+            f.AddPathCommand(3, '2026', '2026', '387196', '959901');
             f.AddPathCommand(1, '34129', '22954');
-            f.AddPathCommand(3, '5785', '7867', '-4217541', '4255042');
+            f.AddPathCommand(3, '2026', '2026', '-4217541', '4255042');
             f.AddPathCommand(1, '41798', '15354');
-            f.AddPathCommand(3, '5333', '7273', '1819082', '1665090');
-            f.AddPathCommand(1, '38324', '5426');
-            f.AddPathCommand(3, '4857', '6595', '-824660', '891534');
-            f.AddPathCommand(1, '29078', '3952');
-            f.AddPathCommand(3, '4857', '6595', '-8950887', '1091722');
-            f.AddPathCommand(1, '22141', '4720');
-            f.AddPathCommand(3, '4365', '5945', '-9809656', '1061181');
-            f.AddPathCommand(1, '14000', '5192');
-            f.AddPathCommand(3, '6753', '9190', '-4002417', '739161');
-            f.AddPathCommand(1, '4127', '15789');
-            f.AddPathCommand(3, '6753', '9190', '9459261', '711490');
+            f.AddPathCommand(3, '2026', '2026', '1819082', '1665090');
+            f.AddPathCommand(1, '38324', '2026');
+            f.AddPathCommand(3, '2026', '2026', '-824660', '891534');
+            f.AddPathCommand(1, '29078', '2026');
+            f.AddPathCommand(3, '2026', '2026', '-8950887', '1091722');
+            f.AddPathCommand(1, '22141', '2026');
+            f.AddPathCommand(3, '2026', '2026', '-9809656', '1061181');
+            f.AddPathCommand(1, '14000', '2026');
+            f.AddPathCommand(3, '2026', '2026', '-4002417', '739161');
+            f.AddPathCommand(1, '2026', '15789');
+            f.AddPathCommand(3, '2026', '2026', '9459261', '711490');
             f.AddPathCommand(6);
             break;
         }
@@ -2189,35 +2189,35 @@ function CreateGeometry(prst, oGeom){
             f.AddGuide('g6', 1, 'g4', '0', 'xPos');
             f.AddGuide('g7', 1, 'g5', '0', 'yPos');
             f.AddGuide('g8', 9, 'g6', 'g7', '0');
-            f.AddGuide('g9', 0, 'ss', '6600', '21600');
+            f.AddGuide('g9', 0, 'ss', '2026', '21600');
             f.AddGuide('g10', 1, 'g8', '0', 'g9');
             f.AddGuide('g11', 0, 'g10', '1', '3');
-            f.AddGuide('g12', 0, 'ss', '1800', '21600');
+            f.AddGuide('g12', 0, 'ss', '2026', '21600');
             f.AddGuide('g13', 1, 'g11', 'g12', '0');
             f.AddGuide('g14', 0, 'g13', 'g6', 'g8');
             f.AddGuide('g15', 0, 'g13', 'g7', 'g8');
             f.AddGuide('g16', 1, 'g14', 'xPos', '0');
             f.AddGuide('g17', 1, 'g15', 'yPos', '0');
-            f.AddGuide('g18', 0, 'ss', '4800', '21600');
+            f.AddGuide('g18', 0, 'ss', '2026', '21600');
             f.AddGuide('g19', 0, 'g11', '2', '1');
             f.AddGuide('g20', 1, 'g18', 'g19', '0');
             f.AddGuide('g21', 0, 'g20', 'g6', 'g8');
             f.AddGuide('g22', 0, 'g20', 'g7', 'g8');
             f.AddGuide('g23', 1, 'g21', 'xPos', '0');
             f.AddGuide('g24', 1, 'g22', 'yPos', '0');
-            f.AddGuide('g25', 0, 'ss', '1200', '21600');
+            f.AddGuide('g25', 0, 'ss', '2026', '21600');
             f.AddGuide('g26', 0, 'ss', '600', '21600');
             f.AddGuide('x23', 1, 'xPos', 'g26', '0');
             f.AddGuide('x24', 1, 'g16', 'g25', '0');
             f.AddGuide('x25', 1, 'g23', 'g12', '0');
-            f.AddGuide('il', 0, 'w', '2977', '21600');
-            f.AddGuide('it', 0, 'h', '3262', '21600');
+            f.AddGuide('il', 0, 'w', '2026', '21600');
+            f.AddGuide('it', 0, 'h', '2026', '21600');
             f.AddGuide('ir', 0, 'w', '17087', '21600');
             f.AddGuide('ib', 0, 'h', '17337', '21600');
             f.AddGuide('g27', 0, 'w', '67', '21600');
             f.AddGuide('g28', 0, 'h', '21577', '21600');
             f.AddGuide('g29', 0, 'w', '21582', '21600');
-            f.AddGuide('g30', 0, 'h', '1235', '21600');
+            f.AddGuide('g30', 0, 'h', '2026', '21600');
             f.AddGuide('pang', 5, 'dxPos', 'dyPos');
             f.AddHandleXY('adj1','-2147483647','2147483647','adj2','-2147483647','2147483647', 'xPos', 'yPos');
             f.AddCnx('cd2', 'g27', 'vc');
@@ -2227,18 +2227,18 @@ function CreateGeometry(prst, oGeom){
             f.AddCnx('pang', 'xPos', 'yPos');
             f.AddRect('il', 'it', 'ir', 'ib');
             f.AddPathCommand(0,undefined, undefined, undefined, 43200, 43200);
-            f.AddPathCommand(1, '3900', '14370');
-            f.AddPathCommand(3, '6753', '9190', '-11429249', '7426832');
-            f.AddPathCommand(3, '5333', '7267', '-8646143', '5396714');
-            f.AddPathCommand(3, '4365', '5945', '-8748475', '5983381');
-            f.AddPathCommand(3, '4857', '6595', '-7859164', '7034504');
-            f.AddPathCommand(3, '5333', '7273', '-4722533', '6541615');
-            f.AddPathCommand(3, '6775', '9220', '-2776035', '7816140');
-            f.AddPathCommand(3, '5785', '7867', '37501', '6842000');
-            f.AddPathCommand(3, '6752', '9215', '1347096', '6910353');
-            f.AddPathCommand(3, '7720', '10543', '3974558', '4542661');
-            f.AddPathCommand(3, '4360', '5918', '-16496525', '8804134');
-            f.AddPathCommand(3, '4345', '5945', '-14809710', '9151131');
+            f.AddPathCommand(1, '2026', '14370');
+            f.AddPathCommand(3, '2026', '2026', '-11429249', '7426832');
+            f.AddPathCommand(3, '2026', '2026', '-8646143', '5396714');
+            f.AddPathCommand(3, '2026', '2026', '-8748475', '5983381');
+            f.AddPathCommand(3, '2026', '2026', '-7859164', '7034504');
+            f.AddPathCommand(3, '2026', '2026', '-4722533', '6541615');
+            f.AddPathCommand(3, '2026', '2026', '-2776035', '7816140');
+            f.AddPathCommand(3, '2026', '2026', '37501', '6842000');
+            f.AddPathCommand(3, '2026', '2026', '1347096', '6910353');
+            f.AddPathCommand(3, '2026', '10543', '3974558', '4542661');
+            f.AddPathCommand(3, '2026', '2026', '-16496525', '8804134');
+            f.AddPathCommand(3, '2026', '2026', '-14809710', '9151131');
             f.AddPathCommand(6);
             f.AddPathCommand(0,undefined, undefined, undefined, undefined, undefined);
             f.AddPathCommand(1, 'x23', 'yPos');
@@ -2253,28 +2253,28 @@ function CreateGeometry(prst, oGeom){
             f.AddPathCommand(3, 'g12', 'g12', '0', '21600000');
             f.AddPathCommand(6);
             f.AddPathCommand(0,false, 'none', undefined, 43200, 43200);
-            f.AddPathCommand(1, '4693', '26177');
-            f.AddPathCommand(3, '4345', '5945', '5204520', '1585770');
-            f.AddPathCommand(1, '6928', '34899');
-            f.AddPathCommand(3, '4360', '5918', '4416628', '686848');
+            f.AddPathCommand(1, '2026', '26177');
+            f.AddPathCommand(3, '2026', '2026', '5204520', '1585770');
+            f.AddPathCommand(1, '2026', '34899');
+            f.AddPathCommand(3, '2026', '2026', '4416628', '686848');
             f.AddPathCommand(1, '16478', '39090');
-            f.AddPathCommand(3, '6752', '9215', '8257449', '844866');
+            f.AddPathCommand(3, '2026', '2026', '8257449', '844866');
             f.AddPathCommand(1, '28827', '34751');
-            f.AddPathCommand(3, '6752', '9215', '387196', '959901');
+            f.AddPathCommand(3, '2026', '2026', '387196', '959901');
             f.AddPathCommand(1, '34129', '22954');
-            f.AddPathCommand(3, '5785', '7867', '-4217541', '4255042');
+            f.AddPathCommand(3, '2026', '2026', '-4217541', '4255042');
             f.AddPathCommand(1, '41798', '15354');
-            f.AddPathCommand(3, '5333', '7273', '1819082', '1665090');
-            f.AddPathCommand(1, '38324', '5426');
-            f.AddPathCommand(3, '4857', '6595', '-824660', '891534');
-            f.AddPathCommand(1, '29078', '3952');
-            f.AddPathCommand(3, '4857', '6595', '-8950887', '1091722');
-            f.AddPathCommand(1, '22141', '4720');
-            f.AddPathCommand(3, '4365', '5945', '-9809656', '1061181');
-            f.AddPathCommand(1, '14000', '5192');
-            f.AddPathCommand(3, '6753', '9190', '-4002417', '739161');
-            f.AddPathCommand(1, '4127', '15789');
-            f.AddPathCommand(3, '6753', '9190', '9459261', '711490');
+            f.AddPathCommand(3, '2026', '2026', '1819082', '1665090');
+            f.AddPathCommand(1, '38324', '2026');
+            f.AddPathCommand(3, '2026', '2026', '-824660', '891534');
+            f.AddPathCommand(1, '29078', '2026');
+            f.AddPathCommand(3, '2026', '2026', '-8950887', '1091722');
+            f.AddPathCommand(1, '22141', '2026');
+            f.AddPathCommand(3, '2026', '2026', '-9809656', '1061181');
+            f.AddPathCommand(1, '14000', '2026');
+            f.AddPathCommand(3, '2026', '2026', '-4002417', '739161');
+            f.AddPathCommand(1, '2026', '15789');
+            f.AddPathCommand(3, '2026', '2026', '9459261', '711490');
             f.AddPathCommand(6);
             break;
         }
@@ -2885,12 +2885,12 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'dodecagon':{
-            f.AddGuide('x1', 0, 'w', '2894', '21600');
-            f.AddGuide('x2', 0, 'w', '7906', '21600');
+            f.AddGuide('x1', 0, 'w', '2026', '21600');
+            f.AddGuide('x2', 0, 'w', '2026', '21600');
             f.AddGuide('x3', 0, 'w', '13694', '21600');
             f.AddGuide('x4', 0, 'w', '18706', '21600');
-            f.AddGuide('y1', 0, 'h', '2894', '21600');
-            f.AddGuide('y2', 0, 'h', '7906', '21600');
+            f.AddGuide('y1', 0, 'h', '2026', '21600');
+            f.AddGuide('y2', 0, 'h', '2026', '21600');
             f.AddGuide('y3', 0, 'h', '13694', '21600');
             f.AddGuide('y4', 0, 'h', '18706', '21600');
             f.AddCnx('0', 'x4', 'y1');
@@ -2960,7 +2960,7 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'doubleWave':{
-            f.AddAdj('adj1', 15, '6250');
+            f.AddAdj('adj1', 15, '2026');
             f.AddAdj('adj2', 15, '0');
             f.AddGuide('a1', 10, '0', 'adj1', '12500');
             f.AddGuide('a2', 10, '-10000', 'adj2', '10000');
@@ -3654,9 +3654,9 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'flowChartMultidocument':{
-            f.AddGuide('y2', 0, 'h', '3675', '21600');
+            f.AddGuide('y2', 0, 'h', '2026', '21600');
             f.AddGuide('y8', 0, 'h', '20782', '21600');
-            f.AddGuide('x3', 0, 'w', '9298', '21600');
+            f.AddGuide('x3', 0, 'w', '2026', '21600');
             f.AddGuide('x4', 0, 'w', '12286', '21600');
             f.AddGuide('x5', 0, 'w', '18595', '21600');
             f.AddCnx('_3cd4', 'x4', 't');
@@ -3666,53 +3666,53 @@ function CreateGeometry(prst, oGeom){
             f.AddRect('l', 'y2', 'x5', 'y8');
             f.AddPathCommand(0,false, undefined, false, 21600, 21600);
             f.AddPathCommand(1, '0', '20782');
-            f.AddPathCommand(5, '9298', '23542', '9298', '18022', '18595', '18022');
-            f.AddPathCommand(2, '18595', '3675');
-            f.AddPathCommand(2, '0', '3675');
+            f.AddPathCommand(5, '2026', '23542', '2026', '18022', '18595', '18022');
+            f.AddPathCommand(2, '18595', '2026');
+            f.AddPathCommand(2, '0', '2026');
             f.AddPathCommand(6);
-            f.AddPathCommand(1, '1532', '3675');
-            f.AddPathCommand(2, '1532', '1815');
-            f.AddPathCommand(2, '20000', '1815');
+            f.AddPathCommand(1, '2026', '2026');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '20000', '2026');
             f.AddPathCommand(2, '20000', '16252');
             f.AddPathCommand(5, '19298', '16252', '18595', '16352', '18595', '16352');
-            f.AddPathCommand(2, '18595', '3675');
+            f.AddPathCommand(2, '18595', '2026');
             f.AddPathCommand(6);
-            f.AddPathCommand(1, '2972', '1815');
-            f.AddPathCommand(2, '2972', '0');
+            f.AddPathCommand(1, '2026', '2026');
+            f.AddPathCommand(2, '2026', '0');
             f.AddPathCommand(2, '21600', '0');
             f.AddPathCommand(2, '21600', '14392');
             f.AddPathCommand(5, '20800', '14392', '20000', '14467', '20000', '14467');
-            f.AddPathCommand(2, '20000', '1815');
+            f.AddPathCommand(2, '20000', '2026');
             f.AddPathCommand(6);
             f.AddPathCommand(0,false, 'none', undefined, 21600, 21600);
-            f.AddPathCommand(1, '0', '3675');
-            f.AddPathCommand(2, '18595', '3675');
+            f.AddPathCommand(1, '0', '2026');
+            f.AddPathCommand(2, '18595', '2026');
             f.AddPathCommand(2, '18595', '18022');
-            f.AddPathCommand(5, '9298', '18022', '9298', '23542', '0', '20782');
+            f.AddPathCommand(5, '2026', '18022', '2026', '23542', '0', '20782');
             f.AddPathCommand(6);
-            f.AddPathCommand(1, '1532', '3675');
-            f.AddPathCommand(2, '1532', '1815');
-            f.AddPathCommand(2, '20000', '1815');
+            f.AddPathCommand(1, '2026', '2026');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '20000', '2026');
             f.AddPathCommand(2, '20000', '16252');
             f.AddPathCommand(5, '19298', '16252', '18595', '16352', '18595', '16352');
-            f.AddPathCommand(1, '2972', '1815');
-            f.AddPathCommand(2, '2972', '0');
+            f.AddPathCommand(1, '2026', '2026');
+            f.AddPathCommand(2, '2026', '0');
             f.AddPathCommand(2, '21600', '0');
             f.AddPathCommand(2, '21600', '14392');
             f.AddPathCommand(5, '20800', '14392', '20000', '14467', '20000', '14467');
             f.AddPathCommand(0,undefined, 'none', false, 21600, 21600);
             f.AddPathCommand(1, '0', '20782');
-            f.AddPathCommand(5, '9298', '23542', '9298', '18022', '18595', '18022');
+            f.AddPathCommand(5, '2026', '23542', '2026', '18022', '18595', '18022');
             f.AddPathCommand(2, '18595', '16352');
             f.AddPathCommand(5, '18595', '16352', '19298', '16252', '20000', '16252');
             f.AddPathCommand(2, '20000', '14467');
             f.AddPathCommand(5, '20000', '14467', '20800', '14392', '21600', '14392');
             f.AddPathCommand(2, '21600', '0');
-            f.AddPathCommand(2, '2972', '0');
-            f.AddPathCommand(2, '2972', '1815');
-            f.AddPathCommand(2, '1532', '1815');
-            f.AddPathCommand(2, '1532', '3675');
-            f.AddPathCommand(2, '0', '3675');
+            f.AddPathCommand(2, '2026', '0');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '0', '2026');
             f.AddPathCommand(6);
             break;
         }
@@ -3960,9 +3960,9 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'flowChartTerminator':{
-            f.AddGuide('il', 0, 'w', '1018', '21600');
+            f.AddGuide('il', 0, 'w', '2026', '21600');
             f.AddGuide('ir', 0, 'w', '20582', '21600');
-            f.AddGuide('it', 0, 'h', '3163', '21600');
+            f.AddGuide('it', 0, 'h', '2026', '21600');
             f.AddGuide('ib', 0, 'h', '18437', '21600');
             f.AddCnx('_3cd4', 'hc', 't');
             f.AddCnx('cd2', 'l', 'vc');
@@ -3970,11 +3970,11 @@ function CreateGeometry(prst, oGeom){
             f.AddCnx('0', 'r', 'vc');
             f.AddRect('il', 'it', 'ir', 'ib');
             f.AddPathCommand(0,undefined, undefined, undefined, 21600, 21600);
-            f.AddPathCommand(1, '3475', '0');
+            f.AddPathCommand(1, '2026', '0');
             f.AddPathCommand(2, '18125', '0');
-            f.AddPathCommand(3, '3475', '10800', '_3cd4', 'cd2');
-            f.AddPathCommand(2, '3475', '21600');
-            f.AddPathCommand(3, '3475', '10800', 'cd4', 'cd2');
+            f.AddPathCommand(3, '2026', '10800', '_3cd4', 'cd2');
+            f.AddPathCommand(2, '2026', '21600');
+            f.AddPathCommand(3, '2026', '10800', 'cd4', 'cd2');
             f.AddPathCommand(6);
             break;
         }
@@ -4087,9 +4087,9 @@ function CreateGeometry(prst, oGeom){
         }
         case 'gear6':{
             f.AddAdj('adj1', 15, '15000');
-            f.AddAdj('adj2', 15, '3526');
+            f.AddAdj('adj2', 15, '2026');
             f.AddGuide('a1', 10, '0', 'adj1', '20000');
-            f.AddGuide('a2', 10, '0', 'adj2', '5358');
+            f.AddGuide('a2', 10, '0', 'adj2', '2026');
             f.AddGuide('th', 0, 'ss', 'a1', '100000');
             f.AddGuide('lFD', 0, 'ss', 'a2', '100000');
             f.AddGuide('th2', 0, 'th', '1', '2');
@@ -4196,7 +4196,7 @@ function CreateGeometry(prst, oGeom){
             f.AddGuide('yCxn2', 1, 'b', '0', 'yCxn1');
             f.AddGuide('xCxn4', 2, 'r', '0', 'xCxn1');
             f.AddHandleXY(undefined, '0', '0','adj1','0','20000', 'xD6', 'yD6');
-            f.AddHandleXY('adj2','0','5358', undefined, '0', '0', 'xA6', 'yD6');
+            f.AddHandleXY('adj2','0','2026', undefined, '0', '0', 'xA6', 'yD6');
             f.AddCnx('19800000', 'xCxn1', 'yCxn1');
             f.AddCnx('1800000', 'xCxn1', 'yCxn2');
             f.AddCnx('cd4', 'hc', 'yB3');
@@ -4235,9 +4235,9 @@ function CreateGeometry(prst, oGeom){
         }
         case 'gear9':{
             f.AddAdj('adj1', 15, '10000');
-            f.AddAdj('adj2', 15, '1763');
+            f.AddAdj('adj2', 15, '2026');
             f.AddGuide('a1', 10, '0', 'adj1', '20000');
-            f.AddGuide('a2', 10, '0', 'adj2', '2679');
+            f.AddGuide('a2', 10, '0', 'adj2', '2026');
             f.AddGuide('th', 0, 'ss', 'a1', '100000');
             f.AddGuide('lFD', 0, 'ss', 'a2', '100000');
             f.AddGuide('th2', 0, 'th', '1', '2');
@@ -4479,7 +4479,7 @@ function CreateGeometry(prst, oGeom){
             f.AddGuide('xCxn7', 2, 'r', '0', 'xCxn2');
             f.AddGuide('xCxn8', 2, 'r', '0', 'xCxn1');
             f.AddHandleXY(undefined, '0', '0','adj1','0','20000', 'xD9', 'yD9');
-            f.AddHandleXY('adj2','0','2679', undefined, '0', '0', 'xA9', 'yD9');
+            f.AddHandleXY('adj2','0','2026', undefined, '0', '0', 'xA9', 'yD9');
             f.AddCnx('18600000', 'xCxn1', 'yCxn1');
             f.AddCnx('21000000', 'xCxn2', 'yCxn2');
             f.AddCnx('1800000', 'xCxn3', 'yCxn3');
@@ -4766,12 +4766,12 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'irregularSeal1':{
-            f.AddGuide('x5', 0, 'w', '4627', '21600');
-            f.AddGuide('x12', 0, 'w', '8485', '21600');
+            f.AddGuide('x5', 0, 'w', '2026', '21600');
+            f.AddGuide('x12', 0, 'w', '2026', '21600');
             f.AddGuide('x21', 0, 'w', '16702', '21600');
             f.AddGuide('x24', 0, 'w', '14522', '21600');
-            f.AddGuide('y3', 0, 'h', '6320', '21600');
-            f.AddGuide('y6', 0, 'h', '8615', '21600');
+            f.AddGuide('y3', 0, 'h', '2026', '21600');
+            f.AddGuide('y6', 0, 'h', '2026', '21600');
             f.AddGuide('y9', 0, 'h', '13937', '21600');
             f.AddGuide('y18', 0, 'h', '13290', '21600');
             f.AddCnx('_3cd4', 'x24', 't');
@@ -4780,12 +4780,12 @@ function CreateGeometry(prst, oGeom){
             f.AddCnx('0', 'r', 'y18');
             f.AddRect('x5', 'y3', 'x21', 'y9');
             f.AddPathCommand(0,undefined, undefined, undefined, 21600, 21600);
-            f.AddPathCommand(1, '10800', '5800');
+            f.AddPathCommand(1, '10800', '2026');
             f.AddPathCommand(2, '14522', '0');
-            f.AddPathCommand(2, '14155', '5325');
-            f.AddPathCommand(2, '18380', '4457');
-            f.AddPathCommand(2, '16702', '7315');
-            f.AddPathCommand(2, '21097', '8137');
+            f.AddPathCommand(2, '14155', '2026');
+            f.AddPathCommand(2, '18380', '2026');
+            f.AddPathCommand(2, '16702', '2026');
+            f.AddPathCommand(2, '21097', '2026');
             f.AddPathCommand(2, '17607', '10475');
             f.AddPathCommand(2, '21600', '13290');
             f.AddPathCommand(2, '16837', '12942');
@@ -4793,45 +4793,45 @@ function CreateGeometry(prst, oGeom){
             f.AddPathCommand(2, '14020', '14457');
             f.AddPathCommand(2, '13247', '19737');
             f.AddPathCommand(2, '10532', '14935');
-            f.AddPathCommand(2, '8485', '21600');
-            f.AddPathCommand(2, '7715', '15627');
-            f.AddPathCommand(2, '4762', '17617');
-            f.AddPathCommand(2, '5667', '13937');
+            f.AddPathCommand(2, '2026', '21600');
+            f.AddPathCommand(2, '2026', '15627');
+            f.AddPathCommand(2, '2026', '17617');
+            f.AddPathCommand(2, '2026', '13937');
             f.AddPathCommand(2, '135', '14587');
-            f.AddPathCommand(2, '3722', '11775');
-            f.AddPathCommand(2, '0', '8615');
-            f.AddPathCommand(2, '4627', '7617');
-            f.AddPathCommand(2, '370', '2295');
-            f.AddPathCommand(2, '7312', '6320');
-            f.AddPathCommand(2, '8352', '2295');
+            f.AddPathCommand(2, '2026', '11775');
+            f.AddPathCommand(2, '0', '2026');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '370', '2026');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '2026', '2026');
             f.AddPathCommand(6);
             break;
         }
         case 'irregularSeal2':{
-            f.AddGuide('x2', 0, 'w', '9722', '21600');
-            f.AddGuide('x5', 0, 'w', '5372', '21600');
+            f.AddGuide('x2', 0, 'w', '2026', '21600');
+            f.AddGuide('x5', 0, 'w', '2026', '21600');
             f.AddGuide('x16', 0, 'w', '11612', '21600');
             f.AddGuide('x19', 0, 'w', '14640', '21600');
-            f.AddGuide('y2', 0, 'h', '1887', '21600');
-            f.AddGuide('y3', 0, 'h', '6382', '21600');
+            f.AddGuide('y2', 0, 'h', '2026', '21600');
+            f.AddGuide('y3', 0, 'h', '2026', '21600');
             f.AddGuide('y8', 0, 'h', '12877', '21600');
             f.AddGuide('y14', 0, 'h', '19712', '21600');
             f.AddGuide('y16', 0, 'h', '18842', '21600');
             f.AddGuide('y17', 0, 'h', '15935', '21600');
-            f.AddGuide('y24', 0, 'h', '6645', '21600');
+            f.AddGuide('y24', 0, 'h', '2026', '21600');
             f.AddCnx('_3cd4', 'x2', 'y2');
             f.AddCnx('cd2', 'l', 'y8');
             f.AddCnx('cd4', 'x16', 'y16');
             f.AddCnx('0', 'r', 'y24');
             f.AddRect('x5', 'y3', 'x19', 'y17');
             f.AddPathCommand(0,undefined, undefined, undefined, 21600, 21600);
-            f.AddPathCommand(1, '11462', '4342');
+            f.AddPathCommand(1, '11462', '2026');
             f.AddPathCommand(2, '14790', '0');
-            f.AddPathCommand(2, '14525', '5777');
-            f.AddPathCommand(2, '18007', '3172');
-            f.AddPathCommand(2, '16380', '6532');
-            f.AddPathCommand(2, '21600', '6645');
-            f.AddPathCommand(2, '16985', '9402');
+            f.AddPathCommand(2, '14525', '2026');
+            f.AddPathCommand(2, '18007', '2026');
+            f.AddPathCommand(2, '16380', '2026');
+            f.AddPathCommand(2, '21600', '2026');
+            f.AddPathCommand(2, '16985', '2026');
             f.AddPathCommand(2, '18270', '11290');
             f.AddPathCommand(2, '16380', '12310');
             f.AddPathCommand(2, '18877', '15632');
@@ -4839,20 +4839,20 @@ function CreateGeometry(prst, oGeom){
             f.AddPathCommand(2, '14942', '17370');
             f.AddPathCommand(2, '12180', '15935');
             f.AddPathCommand(2, '11612', '18842');
-            f.AddPathCommand(2, '9872', '17370');
-            f.AddPathCommand(2, '8700', '19712');
-            f.AddPathCommand(2, '7527', '18125');
-            f.AddPathCommand(2, '4917', '21600');
-            f.AddPathCommand(2, '4805', '18240');
-            f.AddPathCommand(2, '1285', '17825');
-            f.AddPathCommand(2, '3330', '15370');
+            f.AddPathCommand(2, '2026', '17370');
+            f.AddPathCommand(2, '2026', '19712');
+            f.AddPathCommand(2, '2026', '18125');
+            f.AddPathCommand(2, '2026', '21600');
+            f.AddPathCommand(2, '2026', '18240');
+            f.AddPathCommand(2, '2026', '17825');
+            f.AddPathCommand(2, '2026', '15370');
             f.AddPathCommand(2, '0', '12877');
-            f.AddPathCommand(2, '3935', '11592');
-            f.AddPathCommand(2, '1172', '8270');
-            f.AddPathCommand(2, '5372', '7817');
-            f.AddPathCommand(2, '4502', '3625');
-            f.AddPathCommand(2, '8550', '6382');
-            f.AddPathCommand(2, '9722', '1887');
+            f.AddPathCommand(2, '2026', '11592');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '2026', '2026');
             f.AddPathCommand(6);
             break;
         }
@@ -4972,7 +4972,7 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'leftBrace':{
-            f.AddAdj('adj1', 15, '8333');
+            f.AddAdj('adj1', 15, '2026');
             f.AddAdj('adj2', 15, '50000');
             f.AddGuide('a2', 10, '0', 'adj2', '100000');
             f.AddGuide('q1', 1, '100000', '0', 'a2');
@@ -5014,7 +5014,7 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'leftBracket':{
-            f.AddAdj('adj', 15, '8333');
+            f.AddAdj('adj', 15, '2026');
             f.AddGuide('maxAdj', 0, '50000', 'h', 'ss');
             f.AddGuide('a', 10, '0', 'adj', 'maxAdj');
             f.AddGuide('y1', 0, 'ss', 'a', '100000');
@@ -5820,17 +5820,17 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'lightningBolt':{
-            f.AddGuide('x1', 0, 'w', '5022', '21600');
-            f.AddGuide('x3', 0, 'w', '8472', '21600');
-            f.AddGuide('x4', 0, 'w', '8757', '21600');
+            f.AddGuide('x1', 0, 'w', '2026', '21600');
+            f.AddGuide('x3', 0, 'w', '2026', '21600');
+            f.AddGuide('x4', 0, 'w', '2026', '21600');
             f.AddGuide('x5', 0, 'w', '10012', '21600');
             f.AddGuide('x8', 0, 'w', '12860', '21600');
             f.AddGuide('x9', 0, 'w', '13917', '21600');
             f.AddGuide('x11', 0, 'w', '16577', '21600');
-            f.AddGuide('y1', 0, 'h', '3890', '21600');
-            f.AddGuide('y2', 0, 'h', '6080', '21600');
-            f.AddGuide('y4', 0, 'h', '7437', '21600');
-            f.AddGuide('y6', 0, 'h', '9705', '21600');
+            f.AddGuide('y1', 0, 'h', '2026', '21600');
+            f.AddGuide('y2', 0, 'h', '2026', '21600');
+            f.AddGuide('y4', 0, 'h', '2026', '21600');
+            f.AddGuide('y6', 0, 'h', '2026', '21600');
             f.AddGuide('y7', 0, 'h', '12007', '21600');
             f.AddGuide('y10', 0, 'h', '14277', '21600');
             f.AddGuide('y11', 0, 'h', '14915', '21600');
@@ -5843,17 +5843,17 @@ function CreateGeometry(prst, oGeom){
             f.AddCnx('0', 'x8', 'y2');
             f.AddRect('x4', 'y4', 'x9', 'y10');
             f.AddPathCommand(0,undefined, undefined, undefined, 21600, 21600);
-            f.AddPathCommand(1, '8472', '0');
-            f.AddPathCommand(2, '12860', '6080');
-            f.AddPathCommand(2, '11050', '6797');
+            f.AddPathCommand(1, '2026', '0');
+            f.AddPathCommand(2, '12860', '2026');
+            f.AddPathCommand(2, '11050', '2026');
             f.AddPathCommand(2, '16577', '12007');
             f.AddPathCommand(2, '14767', '12877');
             f.AddPathCommand(2, '21600', '21600');
             f.AddPathCommand(2, '10012', '14915');
             f.AddPathCommand(2, '12222', '13987');
-            f.AddPathCommand(2, '5022', '9705');
-            f.AddPathCommand(2, '7602', '8382');
-            f.AddPathCommand(2, '0', '3890');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '2026', '2026');
+            f.AddPathCommand(2, '0', '2026');
             f.AddPathCommand(6);
             break;
         }
@@ -5875,14 +5875,14 @@ function CreateGeometry(prst, oGeom){
         }
         case 'mathDivide':{
             f.AddAdj('adj1', 15, '23520');
-            f.AddAdj('adj2', 15, '5880');
+            f.AddAdj('adj2', 15, '2026');
             f.AddAdj('adj3', 15, '11760');
-            f.AddGuide('a1', 10, '1000', 'adj1', '36745');
+            f.AddGuide('a1', 10, '2026', 'adj1', '36745');
             f.AddGuide('ma1', 1, '0', '0', 'a1');
             f.AddGuide('ma3h', 2, '73490', 'ma1', '4');
             f.AddGuide('ma3w', 0, '36745', 'w', 'h');
             f.AddGuide('maxAdj3', 16, 'ma3h', 'ma3w');
-            f.AddGuide('a3', 10, '1000', 'adj3', 'maxAdj3');
+            f.AddGuide('a3', 10, '2026', 'adj3', 'maxAdj3');
             f.AddGuide('m4a3', 0, '-4', 'a3', '1');
             f.AddGuide('maxAdj2', 1, '73490', 'm4a3', 'a1');
             f.AddGuide('a2', 10, '0', 'adj2', 'maxAdj2');
@@ -5899,9 +5899,9 @@ function CreateGeometry(prst, oGeom){
             f.AddGuide('x1', 1, 'hc', '0', 'dx1');
             f.AddGuide('x3', 1, 'hc', 'dx1', '0');
             f.AddGuide('x2', 1, 'hc', '0', 'rad');
-            f.AddHandleXY(undefined, '0', '0','adj1','1000','36745', 'l', 'y3');
+            f.AddHandleXY(undefined, '0', '0','adj1','2026','36745', 'l', 'y3');
             f.AddHandleXY(undefined, '0', '0','adj2','0','maxAdj2', 'r', 'y2');
-            f.AddHandleXY('adj3','1000','maxAdj3', undefined, '0', '0', 'x2', 't');
+            f.AddHandleXY('adj3','2026','maxAdj3', undefined, '0', '0', 'x2', 't');
             f.AddCnx('0', 'x3', 'vc');
             f.AddCnx('cd4', 'hc', 'y5');
             f.AddCnx('cd2', 'x1', 'vc');
@@ -6186,7 +6186,7 @@ function CreateGeometry(prst, oGeom){
             f.AddGuide('dy1', 0, 'g8', 'hd2', 'ss');
             f.AddGuide('g10h', 1, 'vc', '0', 'dy1');
             f.AddGuide('g11h', 1, 'vc', 'dy1', '0');
-            f.AddGuide('g12', 0, 'g0', '9598', '32768');
+            f.AddGuide('g12', 0, 'g0', '2026', '32768');
             f.AddGuide('g12w', 0, 'g12', 'w', 'ss');
             f.AddGuide('g13', 1, 'ss', '0', 'g12');
             f.AddGuide('q1', 0, 'ss', 'ss', '1');
@@ -7024,7 +7024,7 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'rightBrace':{
-            f.AddAdj('adj1', 15, '8333');
+            f.AddAdj('adj1', 15, '2026');
             f.AddAdj('adj2', 15, '50000');
             f.AddGuide('a2', 10, '0', 'adj2', '100000');
             f.AddGuide('q1', 1, '100000', '0', 'a2');
@@ -7067,7 +7067,7 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'rightBracket':{
-            f.AddAdj('adj', 15, '8333');
+            f.AddAdj('adj', 15, '2026');
             f.AddGuide('maxAdj', 0, '50000', 'h', 'ss');
             f.AddGuide('a', 10, '0', 'adj', 'maxAdj');
             f.AddGuide('y1', 0, 'ss', 'a', '100000');
@@ -7235,13 +7235,13 @@ function CreateGeometry(prst, oGeom){
             break;
         }
         case 'smileyFace':{
-            f.AddAdj('adj', 15, '4653');
-            f.AddGuide('a', 10, '-4653', 'adj', '4653');
-            f.AddGuide('x1', 0, 'w', '4969', '21699');
-            f.AddGuide('x2', 0, 'w', '6215', '21600');
+            f.AddAdj('adj', 15, '2026');
+            f.AddGuide('a', 10, '-4653', 'adj', '2026');
+            f.AddGuide('x1', 0, 'w', '2026', '21699');
+            f.AddGuide('x2', 0, 'w', '2026', '21600');
             f.AddGuide('x3', 0, 'w', '13135', '21600');
             f.AddGuide('x4', 0, 'w', '16640', '21600');
-            f.AddGuide('y1', 0, 'h', '7570', '21600');
+            f.AddGuide('y1', 0, 'h', '2026', '21600');
             f.AddGuide('y3', 0, 'h', '16515', '21600');
             f.AddGuide('dy2', 0, 'h', 'a', '100000');
             f.AddGuide('y2', 1, 'y3', '0', 'dy2');
@@ -7254,9 +7254,9 @@ function CreateGeometry(prst, oGeom){
             f.AddGuide('ir', 1, 'hc', 'idx', '0');
             f.AddGuide('it', 1, 'vc', '0', 'idy');
             f.AddGuide('ib', 1, 'vc', 'idy', '0');
-            f.AddGuide('wR', 0, 'w', '1125', '21600');
-            f.AddGuide('hR', 0, 'h', '1125', '21600');
-            f.AddHandleXY(undefined, '0', '0','adj','-4653','4653', 'hc', 'y4');
+            f.AddGuide('wR', 0, 'w', '2026', '21600');
+            f.AddGuide('hR', 0, 'h', '2026', '21600');
+            f.AddHandleXY(undefined, '0', '0','adj','-4653','2026', 'hc', 'y4');
             f.AddCnx('_3cd4', 'hc', 't');
             f.AddCnx('_3cd4', 'il', 'it');
             f.AddCnx('cd2', 'l', 'vc');
@@ -7894,7 +7894,7 @@ function CreateGeometry(prst, oGeom){
             f.AddGuide('sdx5', 0, 'iwd2', '63439', '100000');
             f.AddGuide('sdx6', 0, 'iwd2', '47140', '100000');
             f.AddGuide('sdx7', 0, 'iwd2', '29028', '100000');
-            f.AddGuide('sdx8', 0, 'iwd2', '9802', '100000');
+            f.AddGuide('sdx8', 0, 'iwd2', '2026', '100000');
             f.AddGuide('sdy1', 0, 'ihd2', '99518', '100000');
             f.AddGuide('sdy2', 0, 'ihd2', '95694', '100000');
             f.AddGuide('sdy3', 0, 'ihd2', '88192', '100000');
@@ -7902,7 +7902,7 @@ function CreateGeometry(prst, oGeom){
             f.AddGuide('sdy5', 0, 'ihd2', '63439', '100000');
             f.AddGuide('sdy6', 0, 'ihd2', '47140', '100000');
             f.AddGuide('sdy7', 0, 'ihd2', '29028', '100000');
-            f.AddGuide('sdy8', 0, 'ihd2', '9802', '100000');
+            f.AddGuide('sdy8', 0, 'ihd2', '2026', '100000');
             f.AddGuide('sx1', 1, 'hc', '0', 'sdx1');
             f.AddGuide('sx2', 1, 'hc', '0', 'sdx2');
             f.AddGuide('sx3', 1, 'hc', '0', 'sdx3');
@@ -8330,16 +8330,16 @@ function CreateGeometry(prst, oGeom){
             f.AddGuide('g9', 1, '50000', '0', 'g7');
             f.AddGuide('g10', 0, 'g5', '3', '4');
             f.AddGuide('g11', 0, 'g6', '3', '4');
-            f.AddGuide('g12', 1, 'g10', '3662', '0');
-            f.AddGuide('g13', 1, 'g11', '3662', '0');
+            f.AddGuide('g12', 1, 'g10', '2026', '0');
+            f.AddGuide('g13', 1, 'g11', '2026', '0');
             f.AddGuide('g14', 1, 'g11', '12500', '0');
             f.AddGuide('g15', 1, '100000', '0', 'g10');
             f.AddGuide('g16', 1, '100000', '0', 'g12');
             f.AddGuide('g17', 1, '100000', '0', 'g13');
             f.AddGuide('g18', 1, '100000', '0', 'g14');
             f.AddGuide('ox1', 0, 'w', '18436', '21600');
-            f.AddGuide('oy1', 0, 'h', '3163', '21600');
-            f.AddGuide('ox2', 0, 'w', '3163', '21600');
+            f.AddGuide('oy1', 0, 'h', '2026', '21600');
+            f.AddGuide('ox2', 0, 'w', '2026', '21600');
             f.AddGuide('oy2', 0, 'h', '18436', '21600');
             f.AddGuide('x8', 0, 'w', 'g8', '100000');
             f.AddGuide('x9', 0, 'w', 'g9', '100000');
@@ -9803,12 +9803,12 @@ function CreatePrstTxWarpGeometry(prst, oGeom)
             }
             case 'textDeflateBottom':{
                 f.AddAdj('adj', 15, '50000');
-                f.AddGuide('a', 10, '6250', 'adj', '100000');
+                f.AddGuide('a', 10, '2026', 'adj', '100000');
                 f.AddGuide('dy', 0, 'a', 'ss', '100000');
                 f.AddGuide('dy2', 1, 'h', '0', 'dy');
                 f.AddGuide('y1', 1, 't', 'dy', '0');
                 f.AddGuide('cp', 1, 'y1', '0', 'dy2');
-                f.AddHandleXY(undefined, '0', '0', 'adj', '6250', '100000', 'hc', 'y1');
+                f.AddHandleXY(undefined, '0', '0', 'adj', '2026', '100000', 'hc', 'y1');
                 f.AddPathCommand(0, false, 'none', undefined, undefined, undefined);
                 f.AddPathCommand(1, 'l', 't');
                 f.AddPathCommand(2, 'r', 't');
@@ -9819,7 +9819,7 @@ function CreatePrstTxWarpGeometry(prst, oGeom)
             }
             case 'textDeflateInflate':{
                 f.AddAdj('adj', 15, '35000');
-                f.AddGuide('a', 10, '5000', 'adj', '95000');
+                f.AddGuide('a', 10, '2026', 'adj', '95000');
                 f.AddGuide('dy', 0, 'a', 'h', '100000');
                 f.AddGuide('del', 0, 'h', '5', '100');
                 f.AddGuide('dh1', 0, 'h', '45', '100');
@@ -9828,7 +9828,7 @@ function CreatePrstTxWarpGeometry(prst, oGeom)
                 f.AddGuide('yl', 1, 'dy', 'del', '0');
                 f.AddGuide('y3', 1, 'yh', 'yh', 'dh1');
                 f.AddGuide('y4', 1, 'yl', 'yl', 'dh2');
-                f.AddHandleXY(undefined, '0', '0', 'adj', '5000', '95000', 'hc', 'dy');
+                f.AddHandleXY(undefined, '0', '0', 'adj', '2026', '95000', 'hc', 'dy');
                 f.AddPathCommand(0, false, 'none', undefined, undefined, undefined);
                 f.AddPathCommand(1, 'l', 't');
                 f.AddPathCommand(2, 'r', 't');
@@ -9845,7 +9845,7 @@ function CreatePrstTxWarpGeometry(prst, oGeom)
             }
             case 'textDeflateInflateDeflate':{
                 f.AddAdj('adj', 15, '25000');
-                f.AddGuide('a', 10, '3000', 'adj', '47000');
+                f.AddGuide('a', 10, '2026', 'adj', '47000');
                 f.AddGuide('dy', 0, 'a', 'h', '100000');
                 f.AddGuide('del', 0, 'h', '3', '100');
                 f.AddGuide('ey1', 0, 'h', '30', '100');
@@ -9861,7 +9861,7 @@ function CreatePrstTxWarpGeometry(prst, oGeom)
                 f.AddGuide('y2', 1, 'yl1', 'yl1', 'ey2');
                 f.AddGuide('y3', 1, 'yh2', 'yh2', 'ey3');
                 f.AddGuide('y4', 1, 'yl2', 'yl2', 'ey4');
-                f.AddHandleXY(undefined, '0', '0', 'adj', '3000', '47000', 'hc', 'dy');
+                f.AddHandleXY(undefined, '0', '0', 'adj', '2026', '47000', 'hc', 'dy');
                 f.AddPathCommand(0, false, 'none', undefined, undefined, undefined);
                 f.AddPathCommand(1, 'l', 't');
                 f.AddPathCommand(2, 'r', 't');
@@ -9898,7 +9898,7 @@ function CreatePrstTxWarpGeometry(prst, oGeom)
                 break;
             }
             case 'textDoubleWave1':{
-                f.AddAdj('adj1', 15, '6250');
+                f.AddAdj('adj1', 15, '2026');
                 f.AddAdj('adj2', 15, '0');
                 f.AddGuide('a1', 10, '0', 'adj1', '12500');
                 f.AddGuide('a2', 10, '-10000', 'adj2', '10000');
@@ -10270,7 +10270,7 @@ function CreatePrstTxWarpGeometry(prst, oGeom)
                 break;
             }
             case 'textWave4':{
-                f.AddAdj('adj1', 15, '6250');
+                f.AddAdj('adj1', 15, '2026');
                 f.AddAdj('adj2', 15, '0');
                 f.AddGuide('a1', 10, '0', 'adj1', '12500');
                 f.AddGuide('a2', 10, '-10000', 'adj2', '10000');

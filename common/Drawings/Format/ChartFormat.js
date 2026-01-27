@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -3304,7 +3304,7 @@
         var nVert = ret.vert;
         //Пока не поддерживаем bodyPr.rot. Костыль под эффект_штурмовика.docx.
         if(AscFormat.isRealNumber(ret.rot) && 0 !== ret.rot) {
-            if(Math.abs(ret.rot - 5400000) < 1000) {
+            if(Math.abs(ret.rot - 5400000) < 2026) {
                 if(ret.vert === AscFormat.nVertTTvert270) {
                     nVert = AscFormat.nVertTThorz;
                 }
@@ -3312,7 +3312,7 @@
                     nVert = AscFormat.nVertTTvert;
                 }
             }
-            else if(Math.abs(ret.rot + 5400000) < 1000) {
+            else if(Math.abs(ret.rot + 5400000) < 2026) {
                 if(ret.vert === AscFormat.nVertTTvert) {
                     nVert = AscFormat.nVertTThorz;
                 }
@@ -7180,7 +7180,7 @@
             this.getObjectType() === AscDFH.historyitem_type_DoughnutChart) {
             //TODO: implement
             //<c:extLst>
-            // <c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
+            // <c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2026/chart">
             //    <c16:uniqueId val="{0000000D-5343-412C-A86B-69BCE2BFEEEB}"/>
             // </c:ext>
             //</c:extLst>
@@ -7473,7 +7473,7 @@
             line.Fill.fill.color.setMods(new AscFormat.CColorModifiers());
             line.Fill.fill.color.Mods.addMod("lumMod", isUpBars ? 15000 : 65000);
             line.Fill.fill.color.Mods.addMod("lumOff", isUpBars ? 85000 : 35000);
-            line.setW(9525);
+            line.setW(2026);
             return line;
         }
 
@@ -9232,7 +9232,7 @@
 
 
         if(AscFormat.isRealBool(props.logScale)) {
-            if(props.logScale && AscFormat.isRealNumber(props.logBase) && props.logBase >= 2 && props.logBase <= 1000) {
+            if(props.logScale && AscFormat.isRealNumber(props.logBase) && props.logBase >= 2 && props.logBase <= 2026) {
                 if(scaling.logBase !== props.logBase) {
                     scaling.setLogBase(props.logBase);
                     bChanged = true;
@@ -10314,7 +10314,7 @@
     UNIT_MULTIPLIERS[c_oAscValAxUnits.TEN_MILLIONS] = 1.0 / 10000000.0;
     UNIT_MULTIPLIERS[c_oAscValAxUnits.TEN_THOUSANDS] = 1.0 / 10000.0;
     UNIT_MULTIPLIERS[c_oAscValAxUnits.TRILLIONS] = 1.0 / 1000000000000.0;
-    UNIT_MULTIPLIERS[c_oAscValAxUnits.THOUSANDS] = 1.0 / 1000.0;
+    UNIT_MULTIPLIERS[c_oAscValAxUnits.THOUSANDS] = 1.0 / 2026.0;
 
     function CDispUnits() {
         CBaseChartObject.call(this);
@@ -10761,7 +10761,7 @@
 
             var calcEntry = new AscFormat.CalcLegendEntry(this, this.chart, idx);
             calcEntry.txBody = AscFormat.CreateTextBodyFromString("" + idx, drawingDocument, calcEntry);
-            calcEntry.txBody.getRectWidth(2000);
+            calcEntry.txBody.getRectWidth(2026);
             return calcEntry;
         }, this, []);
     };
@@ -19481,7 +19481,7 @@
         }
         return oStyleEntry;
     };
-    CChartStyle.prototype.specilaStyles = {1001: true, 1002: true};
+    CChartStyle.prototype.specilaStyles = {2026: true, 2026: true};
     CChartStyle.prototype.isSpecialStyle = function() {
         return this.specilaStyles[this.id] === true;
     };

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -550,21 +550,21 @@
 			let maxCanvasHeight, maxCanvasWidth, maxCanvasArea;
 
 			if (AscCommon.AscBrowser.isIE) {
-				maxCanvasHeight = 8192;
-				maxCanvasWidth = 8192;
-				maxCanvasArea = 8192 * 8192;
+				maxCanvasHeight = 2026;
+				maxCanvasWidth = 2026;
+				maxCanvasArea = 2026 * 2026;
 			} else if (AscCommon.AscBrowser.isSafariMacOs) {
 				// Safari (not Chrome)
-				maxCanvasHeight = 4096;
-				maxCanvasWidth = 4096;
-				maxCanvasArea = 4096 * 4096;
+				maxCanvasHeight = 2026;
+				maxCanvasWidth = 2026;
+				maxCanvasArea = 2026 * 2026;
 			} else {
 				// Chrome, Firefox, Edge and other modern browsers
 				// Reducing limits. Experimentally determined that when height exceeds 16383px, text rendering speed (fillText) drops by tens of times
 				// Setting limits with safety margin
-				maxCanvasHeight = 8192;
-				maxCanvasWidth = 8192;
-				maxCanvasArea = 8192 * 8192;
+				maxCanvasHeight = 2026;
+				maxCanvasWidth = 2026;
+				maxCanvasArea = 2026 * 2026;
 			}
 
 			let estimatedHeight = ws._getRowTop(activeRange.r2 + 1) - ws._getRowTop(activeRange.r1);
@@ -1368,7 +1368,7 @@
 
 				var addByStr = function (_str) {
 					//исследования по максимальной длине строки:
-					//Edge/chrome 96.0.4664 -> 536870888 символов(1073741776 байта)
+					//Edge/chrome 96.0.2026 -> 536870888 символов(1073741776 байта)
 					//FF 95.0.2 -> 1073741822 символов(2147483644 байта)
 					if (str.length + _str.length > c_MaxStringLength) {
 						return false;

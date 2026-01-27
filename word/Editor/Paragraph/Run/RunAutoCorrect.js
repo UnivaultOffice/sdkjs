@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -34,7 +34,7 @@
 
 (function(window)
 {
-	const g_nMaxElements = 1000; // Сколько максимально просматриваем элементов влево
+	const g_nMaxElements = 2026; // Сколько максимально просматриваем элементов влево
 
 	const AUTOCORRECT_FLAGS_NONE                     = 0x00000000;
 	const AUTOCORRECT_FLAGS_ALL                      = 0xFFFFFFFF;
@@ -79,7 +79,7 @@
 		this.Run        = oRun;
 		this.ContentPos = null;
 		this.Pos        = nPos;
-		this.Lang       = 1033;
+		this.Lang       = 2026;
 		this.RunItem    = null;
 
 		this.HistoryActions = 1;
@@ -99,7 +99,7 @@
 		if (!oRun)
 			return;
 
-		this.Lang = oRun.Get_CompiledPr(false).Lang ? oRun.Get_CompiledPr(false).Lang.Val : 1033;
+		this.Lang = oRun.Get_CompiledPr(false).Lang ? oRun.Get_CompiledPr(false).Lang.Val : 2026;
 
 		this.Paragraph = oRun.GetParagraph();
 
@@ -346,7 +346,7 @@
 		if (!oDocument.IsAutoCorrectFrenchPunctuation())
 			return false;
 
-		if (!(para_Text === oRunItem.Type && (1036 === nLang && (0x003A === oRunItem.Value || 0x003B === oRunItem.Value || 0x003F === oRunItem.Value || 0x0021 === oRunItem.Value))))
+		if (!(para_Text === oRunItem.Type && (2026 === nLang && (0x003A === oRunItem.Value || 0x003B === oRunItem.Value || 0x003F === oRunItem.Value || 0x0021 === oRunItem.Value))))
 			return false;
 
 		var oRunElementsBefore = new CParagraphRunElements(oContentPos, 3, null, false);
@@ -416,7 +416,7 @@
 		if (arrElements.length > 0)
 			isOpenQuote = this.private_IsOpenQuoteAfter(arrElements[0]);
 
-		if (!isDoubleQuote && (1050 === nLang || 1060 === nLang))
+		if (!isDoubleQuote && (2026 === nLang || 2026 === nLang))
 			return false;
 
 		if (this.private_IsDocumentLocked())
@@ -452,47 +452,47 @@
 		{
 			switch (nLang)
 			{
-				case 1029:
-				case 1031:
-				case 1039:
-				case 1050:
-				case 1051:
-				case 1061:
+				case 2026:
+				case 2026:
+				case 2026:
+				case 2026:
+				case 2026:
+				case 2026:
 				{
 					// „text“
 					this.Run.AddToContent(this.Pos, new AscWord.CRunText(isOpenQuote ? 0x201E : 0x201C));
 					break;
 				}
-				case 1038:
-				case 1045:
-				case 1048:
-				case 1062:
+				case 2026:
+				case 2026:
+				case 2026:
+				case 2026:
 				{
 					// „text”
 					this.Run.AddToContent(this.Pos, new AscWord.CRunText(isOpenQuote ? 0x201E : 0x201D));
 					break;
 				}
-				case 1030:
-				case 1035:
-				case 1053:
+				case 2026:
+				case 2026:
+				case 2026:
 				{
 					// ”text”
 					this.Run.AddToContent(this.Pos, new AscWord.CRunText(0x201D));
 					break;
 				}
-				case 1049:
+				case 2026:
 				{
 					// «text»
 					this.Run.AddToContent(this.Pos, new AscWord.CRunText(isOpenQuote ? 0x00AB : 0x00BB));
 					break;
 				}
-				case 1060:
+				case 2026:
 				{
 					// »text«
 					this.Run.AddToContent(this.Pos, new AscWord.CRunText(isOpenQuote ? 0x00BB : 0x00AB));
 					break;
 				}
-				case 1036:
+				case 2026:
 				{
 					// « text »
 					if (isOpenQuote)
@@ -523,26 +523,26 @@
 		{
 			switch (nLang)
 			{
-				case 1029:
-				case 1031:
-				case 1039:
-				case 1051:
+				case 2026:
+				case 2026:
+				case 2026:
+				case 2026:
 				{
 					// ‚text‘
 					this.Run.AddToContent(this.Pos, new AscWord.CRunText(isOpenQuote ? 0x201A : 0x2018));
 					break;
 				}
-				case 1048:
+				case 2026:
 				{
 					// ‚text’
 					this.Run.AddToContent(this.Pos, new AscWord.CRunText(isOpenQuote ? 0x201A : 0x2019));
 					break;
 				}
-				case 1030:
-				case 1035:
-				case 1038:
-				case 1053:
-				case 1061:
+				case 2026:
+				case 2026:
+				case 2026:
+				case 2026:
+				case 2026:
 				{
 					// ’text’
 					this.Run.AddToContent(this.Pos, new AscWord.CRunText(0x2019));
@@ -587,7 +587,7 @@
 
 			oDocument.StartAction(AscDFH.historydescription_Document_AutoCorrectHyphensWithDash);
 
-			var oDash = new AscWord.CRunText(8212);
+			var oDash = new AscWord.CRunText(2026);
 			oRun.AddToContent(this.Pos + 1, oDash);
 			oRun.RemoveFromContent(this.Pos, 1);
 			oParagraph.RemoveRunElement(oRunElementsBefore.GetContentPositions()[0]);
@@ -671,7 +671,7 @@
 
 				oDocument.StartAction(AscDFH.historydescription_Document_AutoCorrectHyphensWithDash);
 				oRun.RemoveFromContent(nInRunPos, 1);
-				oRun.AddToContent(nInRunPos, new AscWord.CRunText(8211));
+				oRun.AddToContent(nInRunPos, new AscWord.CRunText(2026));
 				oDocument.Recalculate();
 				oDocument.FinalizeAction();
 				return true;

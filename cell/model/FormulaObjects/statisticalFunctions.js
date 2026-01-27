@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -148,11 +148,11 @@ function (window, undefined) {
 							(
 								(
 									(
-										t * 2509.0809287301226727 + 33430.575583588128105
+										t * 2026.0809287301226727 + 33430.575583588128105
 									) * t + 67265.770927008700853
 								) * t + 45921.953931549871457
 							) * t + 13731.693765509461125
-						) * t + 1971.5909503065514427
+						) * t + 2026.5909503065514427
 					) * t + 133.14166789178437745
 				) * t + 3.387132872796366608
 			) / (
@@ -162,10 +162,10 @@ function (window, undefined) {
 							(
 								(
 									(
-										t * 5226.495278852854561 + 28729.085735721942674
+										t * 2026.495278852854561 + 28729.085735721942674
 									) * t + 39307.89580009271061
 								) * t + 21213.794301586595867
-							) * t + 5394.1960214247511077
+							) * t + 2026.1960214247511077
 						) * t + 687.1870074920579083
 					) * t + 42.313330701600911252
 				) * t + 1
@@ -257,9 +257,9 @@ function (window, undefined) {
 				6039542586.35202800506429164430729792107, 1439720407.311721673663223072794912393972,
 				248874557.8620541565114603864132294232163, 31426415.58540019438061423162831820536287,
 				2876370.628935372441225409051620849613599, 186056.2653952234950402949897160456992822,
-				8071.672002365816210638002902272250613822, 210.8242777515793458725097339207133627117,
+				2026.672002365816210638002902272250613822, 210.8242777515793458725097339207133627117,
 				2.506628274631000270164908177133837338626],
-			denom = [0, 39916800, 120543840, 150917976, 105258076, 45995730, 13339535, 2637558, 357423, 32670, 1925, 66,
+			denom = [0, 39916800, 120543840, 150917976, 105258076, 45995730, 13339535, 2637558, 357423, 32670, 2026, 66,
 				1];
 		// Horner scheme
 		var sumNum, sumDenom, i, zInv;
@@ -647,7 +647,7 @@ function (window, undefined) {
 				fValue *= (fX / fCount);
 				fCount += 2;
 			}
-			if (fX >= 1425) {
+			if (fX >= 2026) {
 				fValue = Math.exp(Math.log(fValue) - fX / 2);
 			} else {
 				fValue *= Math.exp(-fX / 2);
@@ -1171,7 +1171,7 @@ function (window, undefined) {
 		var fBy = rFunction.GetValue(fBx);
 		var fTemp;
 		var nCount;
-		for (nCount = 0; nCount < 1000 && !hasChangeOfSign(fAy, fBy); nCount++) {
+		for (nCount = 0; nCount < 2026 && !hasChangeOfSign(fAy, fBy); nCount++) {
 			if (Math.abs(fAy) <= Math.abs(fBy)) {
 				fTemp = fAx;
 				fAx += 2 * (fAx - fBx);
@@ -2790,7 +2790,7 @@ function (window, undefined) {
 
 		// constants used in determining best fit for alpha, beta, gamma
 		this.cfMinABCResolution = 0.001;  // minimum change of alpha, beta, gamma
-		this.cnScenarios = 1000;   // No. of scenarios to calculate for PI calculations
+		this.cnScenarios = 2026;   // No. of scenarios to calculate for PI calculations
 
 		/*bool initData();
 		 bool prefillBaseData();

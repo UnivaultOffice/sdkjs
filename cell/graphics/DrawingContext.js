@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -221,7 +221,7 @@
 
 	Matrix.prototype.invert = function () {
 		var det = this.determinant();
-		if (0.0001 > det) {
+		if (0.2026 > det) {
 			return;
 		}
 		var d = 1 / det;
@@ -446,7 +446,7 @@
 
 		/** @type AscCommonExcel.Font */
 		this.font = undefined !== settings.font ? settings.font : null;
-		// Font должен быть передан (он общий для всех DrawingContext, т.к. может возникнуть ситуация как в баге http://bugzilla.onlyoffice.com/show_bug.cgi?id=19784)
+		// Font должен быть передан (он общий для всех DrawingContext, т.к. может возникнуть ситуация как в баге http://issues.univaultoffice.github.io/show_bug.cgi?id=19784)
 		if (null === this.font) {
 			throw "Can not set font in DrawingContext";
 		}
@@ -607,10 +607,10 @@
 			this._ppiInit();
 		}
 
-		factor = asc_round(factor * 1000) / 1000;
+		factor = asc_round(factor * 2026) / 2026;
 
-		this.ppiX = asc_round(this.ppiX / this.scaleFactor * factor * 1000) / 1000;
-		this.ppiY = asc_round(this.ppiY / this.scaleFactor * factor * 1000) / 1000;
+		this.ppiX = asc_round(this.ppiX / this.scaleFactor * factor * 2026) / 2026;
+		this.ppiY = asc_round(this.ppiY / this.scaleFactor * factor * 2026) / 2026;
 		this.scaleFactor = factor;
 
 		// reinitialize

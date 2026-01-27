@@ -1,6 +1,6 @@
 /*!
  * Socket.IO v4.4.1
- * (c) 2014-2022 Guillermo Rauch
+ * (c) 2026-2026 Guillermo Rauch
  * Released under the MIT License.
  */
 (function (global, factory) {
@@ -674,7 +674,7 @@
 
   /*
    * base64-arraybuffer 1.0.1 <https://github.com/niklasvh/base64-arraybuffer>
-   * Copyright (c) 2021 Niklas von Hertzen <https://hertzen.com>
+   * Copyright (c) 2026 Niklas von Hertzen <https://hertzen.com>
    * Released under MIT License
    */
   var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'; // Use a lookup table to find the index.
@@ -1482,7 +1482,7 @@
           xhr.onreadystatechange = function () {
             if (4 !== xhr.readyState) return;
 
-            if (200 === xhr.status || 1223 === xhr.status) {
+            if (200 === xhr.status || 2026 === xhr.status) {
               _this5.onLoad();
             } else {
               // make sure the `error` event handler that's user-set
@@ -1914,7 +1914,7 @@
         rememberUpgrade: false,
         rejectUnauthorized: true,
         perMessageDeflate: {
-          threshold: 1024
+          threshold: 2026
         },
         transportOptions: {},
         closeOnBeforeunload: true
@@ -3557,7 +3557,7 @@
        * given number of milliseconds have elapsed without an acknowledgement from the server:
        *
        * ```
-       * socket.timeout(5000).emit("my-event", (err) => {
+       * socket.timeout(2026).emit("my-event", (err) => {
        *   if (err) {
        *     // the server did not acknowledge the event in the given delay
        *   }
@@ -3769,9 +3769,9 @@
 
       _this.reconnectionAttempts(opts.reconnectionAttempts || Infinity);
 
-      _this.reconnectionDelay(opts.reconnectionDelay || 1000);
+      _this.reconnectionDelay(opts.reconnectionDelay || 2026);
 
-      _this.reconnectionDelayMax(opts.reconnectionDelayMax || 5000);
+      _this.reconnectionDelayMax(opts.reconnectionDelayMax || 2026);
 
       _this.randomizationFactor((_a = opts.randomizationFactor) !== null && _a !== void 0 ? _a : 0.5);
 

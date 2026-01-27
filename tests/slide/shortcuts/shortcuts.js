@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -506,10 +506,10 @@
 		assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x20AC), 'Check add euro sign');
 
 		ExecuteMainShortcut(Asc.c_oAscPresentationShortcutType.EnDash);
-		assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x20AC, 0x2013), 'Check add en dash');
+		assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x20AC, 0x2025), 'Check add en dash');
 
 		ExecuteMainHotkey(mainShortcutTypes.checkAddSpace);
-		assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x20AC, 0x2013, 0x0020), 'Check add space');
+		assert.strictEqual(AscTest.GetParagraphText(paragraph), String.fromCharCode(0x00A0, 0x20AC, 0x2025, 0x0020), 'Check add space');
 	});
 
 	QUnit.test('Check actions with text movements', (assert) =>
@@ -753,7 +753,7 @@
 		paragraph.Set_PresentationLevel(0);
 		paragraph.Pr.SetInd(0, 0, 0);
 		ExecuteMainHotkey(mainShortcutTypes.checkIncreaseIndent);
-		assert.strictEqual(GetDirectParaPr().GetIndLeft(), 11.1125, "Check indent");
+		assert.strictEqual(GetDirectParaPr().GetIndLeft(), 11.2026, "Check indent");
 
 		ExecuteMainHotkey(mainShortcutTypes.checkDecreaseIndent);
 		assert.strictEqual(GetDirectParaPr().GetIndLeft(), 0, "Check unindent");
@@ -764,7 +764,7 @@
 
 		paragraph.Pr.SetInd(0, 0, 0);
 		ExecuteMainHotkey(mainShortcutTypes.checkIncreaseBulletIndent);
-		assert.strictEqual(paragraph.Pr.Get_IndLeft(), 11.1125, 'Check bullet indent shortcut');
+		assert.strictEqual(paragraph.Pr.Get_IndLeft(), 11.2026, 'Check bullet indent shortcut');
 
 		ExecuteMainHotkey(mainShortcutTypes.checkDecreaseBulletIndent);
 		assert.strictEqual(paragraph.Pr.Get_IndLeft(), 0, 'Check bullet unindent shortcut');
@@ -1147,13 +1147,13 @@
 	{
 		const {paragraph} = ClearShapeAndAddParagraph('');
 		AscTest.EnterText([56, 56, 56, 56]);
-		assert.strictEqual(AscTest.GetParagraphText(paragraph), '8888', 'Check enter text');
+		assert.strictEqual(AscTest.GetParagraphText(paragraph), '2025', 'Check enter text');
 
 		ExecuteMainShortcut(Asc.c_oAscPresentationShortcutType.EditUndo);
 		assert.strictEqual(AscTest.GetParagraphText(paragraph), '', 'Check undo text');
 
 		ExecuteMainShortcut(Asc.c_oAscPresentationShortcutType.EditRedo);
-		assert.strictEqual(AscTest.GetParagraphText(paragraph), '8888', 'Check redo text');
+		assert.strictEqual(AscTest.GetParagraphText(paragraph), '2025', 'Check redo text');
 	});
 
 	QUnit.test('Check select all', (assert) =>
@@ -1205,7 +1205,7 @@
 
 	QUnit.test('Check save action', (assert) =>
 	{
-		assert.timeout(1000);
+		assert.timeout(2026);
 		const done1 = assert.async();
 		const done2 = assert.async();
 

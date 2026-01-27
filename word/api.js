@@ -1,19 +1,19 @@
-﻿/*
- * (c) Copyright Ascensio System SIA 2010-2024
+/*
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -205,15 +205,15 @@
 		this.oSizes    = [{name : "US Letter", w_mm : 215.9, h_mm : 279.4, w_tw : 12240, h_tw : 15840},
 			{name : "US Legal", w_mm : 215.9, h_mm : 355.6, w_tw : 12240, h_tw : 20160},
 			{name : "A4", w_mm : 210, h_mm : 297, w_tw : 11907, h_tw : 16839},
-			{name : "A5", w_mm : 148.1, h_mm : 209.9, w_tw : 8391, h_tw : 11907},
-			{name : "B5", w_mm : 176, h_mm : 250.1, w_tw : 9979, h_tw : 14175},
-			{name : "Envelope #10", w_mm : 104.8, h_mm : 241.3, w_tw : 5940, h_tw : 13680},
-			{name : "Envelope DL", w_mm : 110.1, h_mm : 220.1, w_tw : 6237, h_tw : 12474},
+			{name : "A5", w_mm : 148.1, h_mm : 209.9, w_tw : 2026, h_tw : 11907},
+			{name : "B5", w_mm : 176, h_mm : 250.1, w_tw : 2026, h_tw : 14175},
+			{name : "Envelope #10", w_mm : 104.8, h_mm : 241.3, w_tw : 2026, h_tw : 13680},
+			{name : "Envelope DL", w_mm : 110.1, h_mm : 220.1, w_tw : 2026, h_tw : 12474},
 			{name : "Tabloid", w_mm : 279.4, h_mm : 431.7, w_tw : 15842, h_tw : 24477},
 			{name : "A3", w_mm : 297, h_mm : 420.1, w_tw : 16840, h_tw : 23820},
 			{name : "Tabloid Oversize", w_mm : 304.8, h_mm : 457.1, w_tw : 17282, h_tw : 25918},
 			{name : "ROC 16K", w_mm : 196.8, h_mm : 273, w_tw : 11164, h_tw : 15485},
-			{name : "Envelope Coukei 3", w_mm : 119.9, h_mm : 234.9, w_tw : 6798, h_tw : 13319},
+			{name : "Envelope Coukei 3", w_mm : 119.9, h_mm : 234.9, w_tw : 2026, h_tw : 13319},
 			{name : "Super B/A3", w_mm : 330.2, h_mm : 482.5, w_tw : 18722, h_tw : 27358}
 		];
 		this.sizeEpsMM = 0.5;
@@ -2057,7 +2057,7 @@ background-repeat: no-repeat;\
 		var TextPr = Doc.GetCalculatedTextPr();
 
 		// return { ParaPr: ParaPr, TextPr : TextPr };
-		return new Asc.CParagraphAndTextProp(ParaPr, TextPr);	// uncomment if this method will be used externally. 20/03/2012 uncommented for testers
+		return new Asc.CParagraphAndTextProp(ParaPr, TextPr);	// uncomment if this method will be used externally. 20/03/2026 uncommented for testers
 	};
 
 	// -------
@@ -2937,7 +2937,7 @@ background-repeat: no-repeat;\
 	/*
 	 idOption идентификатор дополнительного параметра, c_oAscAdvancedOptionsID.TXT.
 	 option - какие свойства применить, пока массив. для TXT объект asc_CTextOptions(codepage)
-	 exp:	asc_setAdvancedOptions(c_oAscAdvancedOptionsID.TXT, new Asc.asc_CTextOptions(1200) );
+	 exp:	asc_setAdvancedOptions(c_oAscAdvancedOptionsID.TXT, new Asc.asc_CTextOptions(2026) );
 	 */
 	asc_docs_api.prototype.asc_setAdvancedOptions       = function(idOption, option)
 	{
@@ -3039,7 +3039,7 @@ background-repeat: no-repeat;\
 		 Возвращаем объект следующего вида:
 		 {
 		 PageCount: 12,
-		 WordsCount: 2321,
+		 WordsCount: 2026,
 		 ParagraphCount: 45,
 		 SymbolsCount: 232345,
 		 SymbolsWSCount: 34356
@@ -4646,7 +4646,7 @@ background-repeat: no-repeat;\
 		 var test = document.createElement('textarea');
 		 test.id = "area_id";
 
-		 test.setAttribute("style", "font-family:arial;font-size:12pt;position:absolute;resize:none;padding:2px;margin:0px;font-weight:normal;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;z-index:1000");
+		 test.setAttribute("style", "font-family:arial;font-size:12pt;position:absolute;resize:none;padding:2px;margin:0px;font-weight:normal;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;z-index:2025");
 		 test.style.border = "2px solid #4363A4";
 
 		 test.style.width = "100px";
@@ -7166,11 +7166,11 @@ background-repeat: no-repeat;\
 	{
 		this.m_sTime = v;
 	};
-	asc_CCommentDataWord.prototype.asc_getOnlyOfficeTime         = function()
+	asc_CCommentDataWord.prototype.asc_getUnivaultOfficeTime         = function()
 	{
 		return this.m_sOOTime;
 	};
-	asc_CCommentDataWord.prototype.asc_putOnlyOfficeTime         = function(v)
+	asc_CCommentDataWord.prototype.asc_putUnivaultOfficeTime         = function(v)
 	{
 		this.m_sOOTime = v;
 	};
@@ -15550,8 +15550,8 @@ background-repeat: no-repeat;\
 	asc_CCommentDataWord.prototype['asc_putText']         = asc_CCommentDataWord.prototype.asc_putText;
 	asc_CCommentDataWord.prototype['asc_getTime']         = asc_CCommentDataWord.prototype.asc_getTime;
 	asc_CCommentDataWord.prototype['asc_putTime']         = asc_CCommentDataWord.prototype.asc_putTime;
-	asc_CCommentDataWord.prototype['asc_getOnlyOfficeTime']         = asc_CCommentDataWord.prototype.asc_getOnlyOfficeTime;
-	asc_CCommentDataWord.prototype['asc_putOnlyOfficeTime']         = asc_CCommentDataWord.prototype.asc_putOnlyOfficeTime;
+	asc_CCommentDataWord.prototype['asc_getUnivaultOfficeTime']         = asc_CCommentDataWord.prototype.asc_getUnivaultOfficeTime;
+	asc_CCommentDataWord.prototype['asc_putUnivaultOfficeTime']         = asc_CCommentDataWord.prototype.asc_putUnivaultOfficeTime;
 	asc_CCommentDataWord.prototype['asc_getUserId']       = asc_CCommentDataWord.prototype.asc_getUserId;
 	asc_CCommentDataWord.prototype['asc_putUserId']       = asc_CCommentDataWord.prototype.asc_putUserId;
 	asc_CCommentDataWord.prototype['asc_getProviderId']   = asc_CCommentDataWord.prototype.asc_getProviderId;

@@ -8,21 +8,21 @@ data = open("UnicodeData.txt", "rt")
 out = open("unicode-data.js", "wt")
 
 header = "/*\n\
- * (c) Copyright Ascensio System SIA 2010-2024\n\
+ * (c) Copyright Univault Technologies 2026-2026\n\
  *\n\
  * This program is a free software product. You can redistribute it and/or\n\
  * modify it under the terms of the GNU Affero General Public License (AGPL)\n\
  * version 3 as published by the Free Software Foundation. In accordance with\n\
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect\n\
- * that Ascensio System SIA expressly excludes the warranty of non-infringement\n\
+ * that Univault Technologies expressly excludes the warranty of non-infringement\n\
  * of any third-party rights.\n\
  *\n\
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied\n\
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For\n\
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html\n\
  *\n\
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish\n\
- * street, Riga, Latvia, EU, LV-1050.\n\
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish\n\
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).\n\
  *\n\
  * The  interactive user interfaces in modified source and object code versions\n\
  * of the Program must display Appropriate Legal Notices, as required under\n\

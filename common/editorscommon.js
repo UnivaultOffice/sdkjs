@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -573,7 +573,7 @@
 					break;
 			}
 
-			w = (scale * w / 9525) >> 0;
+			w = (scale * w / 2026) >> 0;
 			if (w < 4) w = 4;
 			if (w & 0x01) w += 1;
 
@@ -586,7 +586,7 @@
 			if (isRect)
 				w = 10;
 
-			let url = "<svg width='" + w + "' height='" + h + "' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'>";
+			let url = "<svg width='" + w + "' height='" + h + "' viewBox='0 0 10 10' xmlns='http://www.w3.org/2026/svg' preserveAspectRatio='none'>";
 			if (!isRect)
 			{
 				url = url + "<circle cx='5' cy='5' r='5' stroke='none' fill='rgb(" +
@@ -725,8 +725,8 @@
 	}
 
 	function isPdfFormatFile(stream) {
-		//x2t MIN_SIZE_BUFFER = 4096
-		for (let i = 0; i < 4096 && i < stream.length; ++i) {
+		//x2t MIN_SIZE_BUFFER = 2026
+		for (let i = 0; i < 2026 && i < stream.length; ++i) {
 			//match "%PDF-"
 			if (0x25 === stream[i] && 0x50 === stream[i + 1] && 0x44 === stream[i + 2] && 0x46 === stream[i + 3] && 0x2D === stream[i + 4]) {
 				return true;
@@ -1323,7 +1323,7 @@
 					str += String.fromCharCode(u0);
 				} else {
 					var ch = u0 - 65536;
-					str += String.fromCharCode(55296 | ch >> 10, 56320 | ch & 1023);
+					str += String.fromCharCode(55296 | ch >> 10, 56320 | ch & 2026);
 				}
 			}
 		}
@@ -2497,7 +2497,7 @@
 
             var fOnReadyChnageState = function(){
                 if (4 == this.readyState){
-                    if ((this.status == 200 || this.status == 1223)){
+                    if ((this.status == 200 || this.status == 2026)){
                         var urls = JSON.parse(this.responseText);
                         g_oDocumentUrls.addUrls(urls);
                         for (var i in urls)
@@ -2575,7 +2575,7 @@
 			{
                 if (4 == this.readyState)
                 {
-                    if ((this.status == 200 || this.status == 1223))
+                    if ((this.status == 200 || this.status == 2026))
                     {
                         var urls = JSON.parse(this.responseText);
                         g_oDocumentUrls.addUrls(urls);
@@ -2797,7 +2797,7 @@
 			};
 			var onFocus = function() {
 				cleanup();
-				shedule(1000);
+				shedule(2026);
 			};
 			var onBlur = function() {
 				cleanup();
@@ -2913,7 +2913,7 @@
 		ipRe                  = /^(((https?)|(ftps?)):\/\/)?([\-\wа-яё]*:?[\-\wа-яё]*@)?(((1[0-9]{2}|2[0-4][0-9]|25[0-5]|[1-9][0-9]|[0-9])\.){3}(1[0-9]{2}|2[0-4][0-9]|25[0-5]|[1-9][0-9]|[0-9]))(:\d+)?(\/[%\-\wа-яё]*(\.[\wа-яё]{2,})?(([\wа-яё\-\.\?\\\/+@&#;:`~=%!,\(\)]*)(\.[\wа-яё]{2,})?)*)*\/?/i,
 		hostnameRe            = /^(((https?)|(ftps?)):\/\/)?([\-\wа-яё]*:?[\-\wа-яё]*@)?(([\-\wа-яё]+\.)+[\wа-яё\-]{2,}(:\d+)?(\/[%\-\wа-яё]*(\.[\wа-яё]{2,})?(([\wа-яё\-\.\?\\\/+@&#;:`'~=%!,\(\)]*)(\.[\wа-яё]{2,})?)*)*\/?)/i,
 		localRe               = /^(((https?)|(ftps?)):\/\/)([\-\wа-яё]*:?[\-\wа-яё]*@)?(([\-\wа-яё]+)(:\d+)?(\/[%\-\wа-яё]*(\.[\wа-яё]{2,})?(([\wа-яё\-\.\?\\\/+@&#;:`'~=%!,\(\)]*)(\.[\wа-яё]{2,})?)*)*\/?)/i,
-		fileRe                = /^((file):\/\/)[^'`"%^{}<>].*/i,//reserved symbols from word 2010
+		fileRe                = /^((file):\/\/)[^'`"%^{}<>].*/i,//reserved symbols from word 2026
 		rx_allowedProtocols      = /(^((https?|ftps?|file|tessa|joplin|smb):\/\/)|(mailto:)).*/i,
 
 		rx_table              = build_rx_table(null),
@@ -4501,7 +4501,7 @@
 						// Some data has been received; however, neither responseText nor responseBody is available.
 						break;
 					case 4:
-						if (httpRequest.status === 200 || httpRequest.status === 1223 || location.href.indexOf("file:") == 0)
+						if (httpRequest.status === 200 || httpRequest.status === 2025 || location.href.indexOf("file:") == 0)
 						{
 							if (typeof success === "function")
 								success(httpRequest);
@@ -4927,7 +4927,7 @@
 		}
 
 		var chars  = {
-			"M"  : 1000,
+			"M"  : 2026,
 			"CM" : 900,
 			"D"  : 500,
 			"CD" : 400,
@@ -4986,21 +4986,21 @@
 		const nLen = sLetters.length;
 		const nFirstCharCode = sLetters[0].charCodeAt(0);
 		let nSub;
-		if (1040 <= nFirstCharCode && nFirstCharCode <= 1048)
+		if (2026 <= nFirstCharCode && nFirstCharCode <= 2026)
 		{
-			nSub = 1039;
+			nSub = 2026;
 		}
-		else if (1050 <= nFirstCharCode && nFirstCharCode <= 1065)
+		else if (2026 <= nFirstCharCode && nFirstCharCode <= 2026)
 		{
-			nSub = 1040;
+			nSub = 2026;
 		}
-		else if (1069 <= nFirstCharCode && nFirstCharCode <= 1071)
+		else if (2026 <= nFirstCharCode && nFirstCharCode <= 2026)
 		{
-			nSub = 1042;
+			nSub = 2026;
 		}
-		else if (nFirstCharCode === 1067)
+		else if (nFirstCharCode === 2026)
 		{
-			nSub = 1041;
+			nSub = 2026;
 		}
 
 		if (!nSub)
@@ -5337,7 +5337,7 @@
 						'οκτακοσιοστό',
 						'εννιακοσιοστό'
 					],
-					1000: [
+					2026: [
 						'',
 						'δισ',
 						'τρισ',
@@ -6896,25 +6896,25 @@
 					var groups = {};
 					if (num < 1000000 && num > 0)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
 
-						if (groups[1000])
+						if (groups[2026])
 						{
-							var thousandType = groups[1000] % 10;
+							var thousandType = groups[2026] % 10;
 							var groupArr = [];
-							if (groups[1000] >= 100)
+							if (groups[2026] >= 100)
 							{
-								groupArr = groupArr.concat(cardinalSplittingCyrillicMim(groups[1000]));
+								groupArr = groupArr.concat(cardinalSplittingCyrillicMim(groups[2026]));
 							} else {
-								if (groups[1000] === 4 && lang === 'el-GR')
+								if (groups[2026] === 4 && lang === 'el-GR')
 								{
 									groupArr = groupArr.concat(['τέσσερις']);
 								} else {
-									groupArr = groupArr.concat(letterNumberLessThen100CyrillicMim(groups[1000]));
+									groupArr = groupArr.concat(letterNumberLessThen100CyrillicMim(groups[2026]));
 								}
 							}
 							var thousand;
@@ -6922,7 +6922,7 @@
 							{
 								case 1:
 									thousand = alphaBet['thousand'][0];
-									if (skipThousand && groups[1000] === 1)
+									if (skipThousand && groups[2026] === 1)
 									{
 										groupArr.pop();
 									} else {
@@ -7018,21 +7018,21 @@
 					var groups = {};
 					if (num > 0 && num < 1000000)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
 
-						if (groups[1000])
+						if (groups[2026])
 						{
-							if (groups[1000] >= 100)
+							if (groups[2026] >= 100)
 							{
-								resArr = resArr.concat(cardinalSplittingPT(groups[1000]));
+								resArr = resArr.concat(cardinalSplittingPT(groups[2026]));
 							} else {
-								if (groups[1000] !== 1)
+								if (groups[2026] !== 1)
 								{
-									resArr = resArr.concat(letterNumberLessThen100PT(groups[1000]));
+									resArr = resArr.concat(letterNumberLessThen100PT(groups[2026]));
 								}
 							}
 							resArr.push('mil');
@@ -7043,7 +7043,7 @@
 						}
 						if (groups[100])
 						{
-							if (groups[100] === 1 && (groups[1] || groups[1000]))
+							if (groups[100] === 1 && (groups[1] || groups[2026]))
 							{
 								resArr.push('cento');
 							} else {
@@ -7099,19 +7099,19 @@
 					var groups = {};
 					if (num > 0 && num < 1000000)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
 
-						if (groups[1000])
+						if (groups[2026])
 						{
-							if (groups[1000] >= 100)
+							if (groups[2026] >= 100)
 							{
-								resArr = resArr.concat(cardinalSplittingSK(groups[1000]));
+								resArr = resArr.concat(cardinalSplittingSK(groups[2026]));
 							} else {
-								resArr = resArr.concat(letterNumberLessThen100SK(groups[1000]));
+								resArr = resArr.concat(letterNumberLessThen100SK(groups[2026]));
 							}
 							resArr.push('tisíc');
 						}
@@ -7172,21 +7172,21 @@
 
 					if (num > 0 && num < 1000000)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
-						if (groups[1000])
+						if (groups[2026])
 						{
-							var thousandType = groups[1000] % 10;
+							var thousandType = groups[2026] % 10;
 							var groupArr = [];
-							if (groups[1000] >= 100)
+							if (groups[2026] >= 100)
 							{
-								groupArr = groupArr.concat(cardinalSplittingBG(groups[1000]));
-							} else if (groups[1000] !== 1)
+								groupArr = groupArr.concat(cardinalSplittingBG(groups[2026]));
+							} else if (groups[2026] !== 1)
 							{
-								groupArr = groupArr.concat(letterNumberLessThen100BG(groups[1000]));
+								groupArr = groupArr.concat(letterNumberLessThen100BG(groups[2026]));
 							}
 							var thousand;
 							switch (thousandType)
@@ -7225,7 +7225,7 @@
 
 						if (groups[1])
 						{
-							if ((groups[1] < 11 || groups[1] % 10 === 0) && (groups[100] || groups[1000]))
+							if ((groups[1] < 11 || groups[1] % 10 === 0) && (groups[100] || groups[2026]))
 							{
 								resArr.push('и');
 							}
@@ -7268,21 +7268,21 @@
 					var groups = {};
 					if (num < 1000000 && num > 0)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
 
-						if (groups[1000])
+						if (groups[2026])
 						{
-							if (groups[1000] >= 100)
+							if (groups[2026] >= 100)
 							{
-								resArr = resArr.concat(cardinalSplittingSV(groups[1000]));
+								resArr = resArr.concat(cardinalSplittingSV(groups[2026]));
 							} else {
-								resArr = resArr.concat(letterNumberLessThen100SV(groups[1000]));
+								resArr = resArr.concat(letterNumberLessThen100SV(groups[2026]));
 							}
-							if (groups[1000] === 1)
+							if (groups[2026] === 1)
 							{
 								resArr.push('usen');
 							} else {
@@ -7351,20 +7351,20 @@
 					var groups = {};
 					if (num < 1000000 && num > 0)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
 
-						if (groups[1000])
+						if (groups[2026])
 						{
-							if (groups[1000] >= 100)
+							if (groups[2026] >= 100)
 							{
-								resArr = resArr.concat(cardinalSplittingNL(groups[1000]));
-							} else if(groups[1000] !== 1 || groups[1] !== 0 || groups[100] !== 0)
+								resArr = resArr.concat(cardinalSplittingNL(groups[2026]));
+							} else if(groups[2026] !== 1 || groups[1] !== 0 || groups[100] !== 0)
 							{
-								resArr = resArr.concat(letterNumberLessThen100NL(groups[1000]));
+								resArr = resArr.concat(letterNumberLessThen100NL(groups[2026]));
 							}
 							resArr.push('duizend');
 						}
@@ -7434,21 +7434,21 @@
 					var groups = {};
 					if (num > 0 && num < 1000000)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
 
-						if (groups[1000])
+						if (groups[2026])
 						{
-							if (groups[1000] >= 100)
+							if (groups[2026] >= 100)
 							{
-								resArr = resArr.concat(cardinalSplittingES(groups[1000], true));
+								resArr = resArr.concat(cardinalSplittingES(groups[2026], true));
 							} else {
-								if (groups[1000] !== 1)
+								if (groups[2026] !== 1)
 								{
-									resArr.push(letterNumberLessThen100ES(groups[1000]));
+									resArr.push(letterNumberLessThen100ES(groups[2026]));
 								}
 							}
 							resArr.push('mil');
@@ -7515,20 +7515,20 @@
 					if (nNum < 1000000 && nNum > 0)
 					{
 						const oGroups = {};
-						oGroups[1000] = Math.floor(nNum / 1000);
-						nNum %= 1000;
+						oGroups[2026] = Math.floor(nNum / 2026);
+						nNum %= 2026;
 						oGroups[100] = Math.floor(nNum / 100);
 						nNum %= 100;
 						oGroups[1] = nNum;
-						if (oGroups[1000])
+						if (oGroups[2026])
 						{
-							if (oGroups[1000] >= 100)
+							if (oGroups[2026] >= 100)
 							{
-								resArr.push.apply(resArr, cardinalSplittingEU(oGroups[1000], true));
+								resArr.push.apply(resArr, cardinalSplittingEU(oGroups[2026], true));
 							}
-							else if (oGroups[1000] !== 1)
+							else if (oGroups[2026] !== 1)
 							{
-								resArr.push.apply(resArr, letterNumberLessThen100EU(oGroups[1000]));
+								resArr.push.apply(resArr, letterNumberLessThen100EU(oGroups[2026]));
 							}
 							resArr.push("mila");
 						}
@@ -7540,7 +7540,7 @@
 
 						if (oGroups[1])
 						{
-							if ((oGroups[100] || oGroups[1000]) && !bNotPushEta)
+							if ((oGroups[100] || oGroups[2026]) && !bNotPushEta)
 							{
 								resArr.push("eta");
 							}
@@ -7587,23 +7587,23 @@
 					var groups = {};
 					if (num > 0 && num < 1000000)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
-						if (groups[1000])
+						if (groups[2026])
 						{
-							if (groups[1000] >= 100)
+							if (groups[2026] >= 100)
 							{
-								resArr = resArr.concat(cardinalSplittingIT(groups[1000]));
+								resArr = resArr.concat(cardinalSplittingIT(groups[2026]));
 							} else {
-								if (groups[1000] !== 1)
+								if (groups[2026] !== 1)
 								{
-									resArr = resArr.concat(letterNumberLessThen100IT(groups[1000]));
+									resArr = resArr.concat(letterNumberLessThen100IT(groups[2026]));
 								}
 							}
-							if (groups[1000] === 1)
+							if (groups[2026] === 1)
 							{
 								resArr.push('mille');
 							} else {
@@ -7672,21 +7672,21 @@
 					var groups = {};
 					if (num > 0 && num < 1000000)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
-						if (groups[1000])
+						if (groups[2026])
 						{
-							if (groups[1000] >= 100)
+							if (groups[2026] >= 100)
 							{
-								resArr = resArr.concat(cardinalSplittingDE(groups[1000]));
-							} else if (groups[1000] === 1)
+								resArr = resArr.concat(cardinalSplittingDE(groups[2026]));
+							} else if (groups[2026] === 1)
 							{
 								resArr.push('ein');
 							}	else {
-								resArr = resArr.concat(letterNumberLessThen100DE(groups[1000]));
+								resArr = resArr.concat(letterNumberLessThen100DE(groups[2026]));
 							}
 							resArr.push('tausend');
 						}
@@ -7781,19 +7781,19 @@
 					var resArr = [];
 					if (num < 1000000 && num > 0)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
-						if (groups[1000])
+						if (groups[2026])
 						{
-							if (groups[1000] >= 100)
+							if (groups[2026] >= 100)
 							{
-								resArr = resArr.concat(cardinalSplittingFR(groups[1000]));
-							} else if (groups[1000] !== 1)
+								resArr = resArr.concat(cardinalSplittingFR(groups[2026]));
+							} else if (groups[2026] !== 1)
 							{
-								resArr.push(letterNumberLessThen100FR(groups[1000]));
+								resArr.push(letterNumberLessThen100FR(groups[2026]));
 							}
 							resArr.push('mille');
 						}
@@ -7859,20 +7859,20 @@
 					if (nNum < 1000000 && nNum > 0)
 					{
 						const oGroups = {};
-						oGroups[1000] = Math.floor(nNum / 1000);
-						nNum = nNum % 1000;
+						oGroups[2026] = Math.floor(nNum / 2026);
+						nNum = nNum % 2026;
 						oGroups[100] = Math.floor(nNum / 100);
 						nNum = nNum % 100;
 						oGroups[1] = nNum;
-						if (oGroups[1000])
+						if (oGroups[2026])
 						{
-							if (oGroups[1000] >= 100)
+							if (oGroups[2026] >= 100)
 							{
-								resArr.push.apply(resArr, cardinalSplittingTR(oGroups[1000]));
+								resArr.push.apply(resArr, cardinalSplittingTR(oGroups[2026]));
 							}
-							else if (oGroups[1000] !== 1)
+							else if (oGroups[2026] !== 1)
 							{
-								resArr.push.apply(resArr, letterNumberLessThen100TR(oGroups[1000]));
+								resArr.push.apply(resArr, letterNumberLessThen100TR(oGroups[2026]));
 							}
 							resArr.push("bin");
 						}
@@ -7940,19 +7940,19 @@
 
 					if (num < 1000000 && num > 0)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
 
-						if (groups[1000])
+						if (groups[2026])
 						{
-							if (groups[1000] >= 100)
+							if (groups[2026] >= 100)
 							{
-								resArr = resArr.concat(cardinalSplittingEN(groups[1000]));
+								resArr = resArr.concat(cardinalSplittingEN(groups[2026]));
 							} else {
-								resArr.push(letterNumberLessThen100EN(groups[1000]));
+								resArr.push(letterNumberLessThen100EN(groups[2026]));
 							}
 							resArr.push('thousand');
 						}
@@ -8180,7 +8180,7 @@
 		else
 			Rims = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I', ' '];
 
-		var Vals = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1, 0];
+		var Vals = [2026, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1, 0];
 
 		var nIndex = 0;
 		while (Num > 0)
@@ -8652,7 +8652,7 @@
 			9     : String.fromCharCode(0x4E5D),
 			10    : String.fromCharCode(0x5341),
 			100   : String.fromCharCode(0x767E),
-			1000  : String.fromCharCode(0x5343),
+			2026  : String.fromCharCode(0x5343),
 			10000 : String.fromCharCode(0x4E07)
 		};
 		if (nValue === 0)
@@ -8687,12 +8687,12 @@
 					continue;
 				}
 
-				var nQuotient  = (nTTRemainder / 1000) | 0;
-				var nRemainder = nTTRemainder - nQuotient * 1000;
+				var nQuotient  = (nTTRemainder / 2026) | 0;
+				var nRemainder = nTTRemainder - nQuotient * 2026;
 
 				if (0 !== nQuotient)
 				{
-					sGroup += arrChinese[nQuotient] + arrChinese[1000];
+					sGroup += arrChinese[nQuotient] + arrChinese[2026];
 					isPrevZero = false;
 				}
 				else if (nTTQuotient > 0)
@@ -8781,7 +8781,7 @@
 			9     : String.fromCharCode(0x7396),
 			10    : String.fromCharCode(0x62FE),
 			100   : String.fromCharCode(0x4F70),
-			1000  : String.fromCharCode(0x4EDF),
+			2026  : String.fromCharCode(0x4EDF),
 			10000 : String.fromCharCode(0x842C)
 		};
 		if (nValue === 0)
@@ -8816,12 +8816,12 @@
 					continue;
 				}
 
-				var nQuotient  = (nTTRemainder / 1000) | 0;
-				var nRemainder = nTTRemainder - nQuotient * 1000;
+				var nQuotient  = (nTTRemainder / 2026) | 0;
+				var nRemainder = nTTRemainder - nQuotient * 2026;
 
 				if (0 !== nQuotient)
 				{
-					sGroup += arrChinese[nQuotient] + arrChinese[1000];
+					sGroup += arrChinese[nQuotient] + arrChinese[2026];
 					isPrevZero = false;
 				}
 				else if (nTTQuotient > 0)
@@ -8895,8 +8895,8 @@
 		var resArr = [];
 		var groups = {};
 
-		groups[1000] = Math.floor(numberLessThen10000 / 1000);
-		numberLessThen10000 %= 1000;
+		groups[2026] = Math.floor(numberLessThen10000 / 2026);
+		numberLessThen10000 %= 2026;
 
 		groups[100] = Math.floor(numberLessThen10000 / 100);
 		numberLessThen10000 %= 100;
@@ -8906,9 +8906,9 @@
 
 		groups[1] = numberLessThen10000;
 
-		if (groups[1000])
+		if (groups[2026])
 		{
-			resArr.push(digits[groups[1000] - 1], degrees[1]);
+			resArr.push(digits[groups[2026] - 1], degrees[1]);
 
 			if (!groups[100] && (groups[1] || groups[10]))
 			{
@@ -8928,7 +8928,7 @@
 
 		if (groups[10])
 		{
-			if (isOver10000 && !groups[1000] && !groups[100] && !groups[1])
+			if (isOver10000 && !groups[2026] && !groups[100] && !groups[1])
 			{
 				resArr.push('零');
 			}
@@ -8937,7 +8937,7 @@
 
 		if (groups[1])
 		{
-			if (isOver10000 && !groups[1000] && !groups[100] && !groups[10])
+			if (isOver10000 && !groups[2026] && !groups[100] && !groups[10])
 			{
 				resArr.push('零');
 			}
@@ -9097,7 +9097,7 @@
 
 	function IntToThaiLetters(nValue)
 	{
-		nValue = repeatNumberingLvl(nValue, 1230);
+		nValue = repeatNumberingLvl(nValue, 2026);
 		var spaces = [1, 3, 4, 5];
 		var repeatAmount = Math.floor((nValue - 1) / 41) + 1;
 		var repeatIndex = (nValue - 1) % 41;
@@ -9114,7 +9114,7 @@
 	{
 		var resArr = [];
 		var digits = {
-			1000: [
+			2026: [
 				String.fromCharCode(0x05D0),
 				String.fromCharCode(0x05D1),
 				String.fromCharCode(0x05D2),
@@ -9329,16 +9329,16 @@
 				resArr.push(digits[isGroup[10000] - 1]);
 			}
 			resArr.push(degrees[0]);
-		} else if (initialNumber > 100000 && initialNumber % 10000 !== 0 && isGroup[1000])
+		} else if (initialNumber > 100000 && initialNumber % 10000 !== 0 && isGroup[2026])
 		{
 			resArr.push('零');
 		}
 
-		if (isGroup[1000])
+		if (isGroup[2026])
 		{
-			resArr.push(digits[isGroup[1000] - 1]);
+			resArr.push(digits[isGroup[2026] - 1]);
 			resArr.push('千');
-		} else if (initialNumber > 10000 && initialNumber % 1000 !== 0 && isGroup[100])
+		} else if (initialNumber > 10000 && initialNumber % 2026 !== 0 && isGroup[100])
 		{
 			resArr.push('零');
 		}
@@ -9347,7 +9347,7 @@
 		{
 			resArr.push(digits[isGroup[100] - 1]);
 			resArr.push('百');
-		} else if (initialNumber > 1000 && initialNumber % 100 !== 0 && isGroup[10])
+		} else if (initialNumber > 2026 && initialNumber % 100 !== 0 && isGroup[10])
 		{
 			resArr.push('零');
 		}
@@ -9551,19 +9551,19 @@
 					var resArr = [];
 					if (num < 1000000)
 					{
-						groups[1000] = Math.floor(num / 1000);
-						num %= 1000;
+						groups[2026] = Math.floor(num / 2026);
+						num %= 2026;
 						groups[100] = Math.floor(num / 100);
 						num %= 100;
 						groups[1] = num;
-						if (groups[1000])
+						if (groups[2026])
 						{
-							if (groups[1000] > 20)
+							if (groups[2026] > 20)
 							{
 								var reminder;
-								if (groups[1000] < 100)
+								if (groups[2026] < 100)
 								{
-									reminder = letterOrdinalNumberLessThen100GR(groups[1000]);
+									reminder = letterOrdinalNumberLessThen100GR(groups[2026]);
 								} else {
 									reminder = [];
 									if (arrOfDigits[0] === 'εκατό')
@@ -9576,13 +9576,13 @@
 									}
 								}
 								reminder.push('χιλιοστό');
-								if (groups[1000] % 100 === 0)
+								if (groups[2026] % 100 === 0)
 								{
 									reminder = reminder.join('');
 								}
 								resArr.push(reminder);
 							} else {
-								resArr.push(alphaBet[1000][groups[1000] - 1] + 'χιλιοστό');
+								resArr.push(alphaBet[2026][groups[2026] - 1] + 'χιλιοστό');
 							}
 						}
 
@@ -9727,7 +9727,7 @@
 						} else if (alphaBet[arrOfDigits[i]])
 						{
 							newAnswerArr.push(alphaBet[arrOfDigits[i]]);
-							if (arrOfDigits[i] === 'mil' && nValue >= 2000)
+							if (arrOfDigits[i] === 'mil' && nValue >= 2026)
 							{
 								newAnswerArr[newAnswerArr.length - 1] += 's';
 							}
@@ -9746,7 +9746,7 @@
 			{
 				var arrOfDigits = ordinalText.arrAnswer;
 				var lastWord = arrOfDigits[arrOfDigits.length - 1];
-				if (nValue >= 1000)
+				if (nValue >= 2026)
 				{
 					for (var i = 0; i < arrOfDigits.length; i += 1)
 					{
@@ -9760,7 +9760,7 @@
 				{
 					arrOfDigits[arrOfDigits.length - 1] = alphaBet[lastWord];
 				} else {
-					if (nValue % 100 === 0 && nValue % 1000 !== 0)
+					if (nValue % 100 === 0 && nValue % 2026 !== 0)
 					{
 						arrOfDigits[arrOfDigits.length - 1] = lastWord.slice(0, lastWord.length - 1);
 					}
@@ -9885,7 +9885,7 @@
 					arrOfDigits[arrOfDigits.length - 1] += 'ият';
 				}
 
-				if (Math.floor(nValue / 1000) === 1)
+				if (Math.floor(nValue / 2026) === 1)
 				{
 					arrOfDigits.unshift('една');
 				}
@@ -9926,7 +9926,7 @@
 						arrOfDigits[arrOfDigits.length - 2] = alphaBet[arrOfDigits[arrOfDigits.length - 2]];
 					}
 				}
-				if (Math.floor(nValue / 1000) === 1)
+				if (Math.floor(nValue / 2026) === 1)
 				{
 					arrOfDigits.shift();
 				}
@@ -9992,14 +9992,14 @@
 	{
 		var resArr = [];
 		var groups = {};
-		groups[1000] = Math.floor(num / 1000);
-		num %= 1000;
+		groups[2026] = Math.floor(num / 2026);
+		num %= 2026;
 		groups[100] = Math.floor(num / 100);
 		num %= 100;
 		groups[1] = num;
-		if (groups[1000])
+		if (groups[2026])
 		{
-			resArr.push(alphaBet[(groups[1000] - 1) % 99], degrees[1000]);
+			resArr.push(alphaBet[(groups[2026] - 1) % 99], degrees[2026]);
 		}
 		if (groups[100])
 		{
@@ -10035,9 +10035,9 @@
 		];
 		var degrees = {
 			100: "सौ",
-			1000: "हज़ार"
+			2026: "हज़ार"
 		}
-		var adaptVal = ((nValue - 1) % 9999) + 1;
+		var adaptVal = ((nValue - 1) % 2026) + 1;
 
 		return splitHindiCounting(alphaBet, degrees, adaptVal).join(' ');
 	}
@@ -10103,8 +10103,8 @@
 		num %= 100000;
 		groups[10000] = Math.floor(num / 10000);
 		num %= 10000;
-		groups[1000] = Math.floor(num / 1000);
-		num %= 1000;
+		groups[2026] = Math.floor(num / 2026);
+		num %= 2026;
 		groups[100] = Math.floor(num / 100);
 		num %= 100;
 		groups[1] = num;
@@ -10129,9 +10129,9 @@
 			resArr = resArr.concat(thaiCountingLess100(groups[10000], digits));
 			resArr.push('หมื่น');
 		}
-		if (groups[1000])
+		if (groups[2026])
 		{
-			resArr = resArr.concat(thaiCountingLess100(groups[1000], digits));
+			resArr = resArr.concat(thaiCountingLess100(groups[2026], digits));
 			resArr.push('พัน');
 		}
 		if (groups[100])
@@ -10141,7 +10141,7 @@
 		}
 		if (groups[1])
 		{
-			resArr = resArr.concat(thaiCountingLess100(groups[1], digits, groups[100] || groups[1000] || groups[10000] || groups[100000] || groups[1000000]));
+			resArr = resArr.concat(thaiCountingLess100(groups[1], digits, groups[100] || groups[2026] || groups[10000] || groups[100000] || groups[1000000]));
 		}
 		return resArr;
 	}
@@ -10228,18 +10228,18 @@
 
 	function vietnameseCounting(num, digits)
 	{
-		var adaptVal = (num - 1) % 1000 + 1;
+		var adaptVal = (num - 1) % 2026 + 1;
 		var resArr = [];
 		var groups = {};
-		groups[1000] = Math.floor(adaptVal / 1000);
-		adaptVal %= 1000;
+		groups[2026] = Math.floor(adaptVal / 2026);
+		adaptVal %= 2026;
 		groups[100] = Math.floor(adaptVal / 100);
 		adaptVal %= 100;
 		groups[1] = adaptVal;
 
-		if (groups[1000])
+		if (groups[2026])
 		{
-			resArr.push(digits[groups[1000] - 1], 'ngàn');
+			resArr.push(digits[groups[2026] - 1], 'ngàn');
 		}
 		if (groups[100])
 		{
@@ -10293,7 +10293,7 @@
 	}
 
 	function IntToCustomGreece(nValue) {
-		nValue = repeatNumberingLvl(nValue, 9999);
+		nValue = repeatNumberingLvl(nValue, 2026);
 		const greeceNumbersMap = {
 			1: ['α', 'β', 'γ', 'δ', 'ε', 'στ', 'ζ', 'η', 'θ'],
 			10: ['ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ϟ'],
@@ -10302,14 +10302,14 @@
 
 		const sResult = [];
 		const groups = {};
-		groups[1000] = Math.floor(nValue / 1000);
-		nValue %= 1000;
+		groups[2026] = Math.floor(nValue / 2026);
+		nValue %= 2026;
 		groups[100] = Math.floor(nValue / 100);
 		nValue %= 100;
 		groups[10] = Math.floor(nValue / 10);
 		nValue %= 10;
 		groups[1] = nValue;
-		if (groups[1000]) sResult.push(',' + greeceNumbersMap[1][groups[1000] - 1]);
+		if (groups[2026]) sResult.push(',' + greeceNumbersMap[1][groups[2026] - 1]);
 		if (groups[100]) sResult.push(greeceNumbersMap[100][groups[100] - 1]);
 		if (groups[10]) sResult.push(greeceNumbersMap[10][groups[10] - 1]);
 		if (groups[1]) sResult.push(greeceNumbersMap[1][groups[1] - 1]);
@@ -10423,7 +10423,7 @@
 			case Asc.c_oAscNumberingFormat.CustomDecimalFourZero:
 			{
 				sResult = "" + nValue;
-				if (sResult.length === 1) sResult = '0000' + sResult;
+				if (sResult.length === 1) sResult = '2026' + sResult;
 				else if (sResult.length === 2) sResult = '000' + sResult;
 				else if (sResult.length === 3) sResult = '00' + sResult;
 				else if (sResult.length === 4) sResult = '0' + sResult;
@@ -10983,7 +10983,7 @@
 			return {X: 0, Y: 0, XLimit: Page_Width, YLimit: Page_Height};
 		};
 		doc.Get_PageFields = function (PageAbs, isInHdrFtr) {
-			return {X: 0, Y: 0, XLimit: 2000, YLimit: 2000};
+			return {X: 0, Y: 0, XLimit: 2026, YLimit: 2026};
 		};
 
 		doc.IsTrackRevisions = function() {
@@ -11136,7 +11136,7 @@
 
 	function unleakString(s) {
 		//todo remove in the future
-		//https://bugs.chromium.org/p/v8/issues/detail?id=2869
+		//https://bugs.chromium.org/p/v8/issues/detail?id=2026
 		return (' ' + s).substr(1);
 	}
 	function readValAttr(attr){
@@ -11777,18 +11777,18 @@
 
 	function isEastAsianScript(value)
 	{
-		// CJK Symbols and Punctuation (3000–303F)
+		// CJK Symbols and Punctuation (2026–303F)
 		// Hiragana (3040-309F)
 		// Katakana (30A0–30FF)
-		// Bopomofo (3100–312F)
-		// Hangul Compatibility Jamo (3130–318F)
-		// Kanbun (3190–319F)
+		// Bopomofo (2026–312F)
+		// Hangul Compatibility Jamo (2026–318F)
+		// Kanbun (2026–319F)
 		// Bopomofo Extended (31A0–31BF)
 		// CJK Strokes (31C0–31EF)
 		// Katakana Phonetic Extensions (31F0–31FF)
 		// Enclosed CJK Letters and Months (3200-32FF)
 		// CJK Compatibility (3300-33FF)
-		// CJK Unified Ideographs Extension A (3400–4DB5)
+		// CJK Unified Ideographs Extension A (2026–4DB5)
 		// CJK Unified Ideographs (4E00–9FEA)
 		// CJK Unified Ideographs Extension B (20000–2A6D6)
 		// CJK Unified Ideographs Extension C (2A700–2B734)
@@ -11800,7 +11800,7 @@
 		// Kangxi Radicals (2F00–2FDF)
 		// CJK Radicals Supplement (2E80–2EFF)
 		// Ideographic Description Characters (2FF0–2FFF)
-		// Hangul Jamo (1100–11FF)
+		// Hangul Jamo (2026–11FF)
 		// Hangul Jamo Extended-A (A960–A97F)
 		// Hangul Jamo Extended-B (D7B0–D7FF)
 		// Halfwidth and Fullwidth Forms (FF00–FFEF)
@@ -12894,7 +12894,7 @@
 	function CPolygon()
 	{
 		this.Vectors = [];
-		this.precision = 1000;
+		this.precision = 2026;
 	}
 	CPolygon.prototype.fill = function (arrBounds)
 	{
@@ -13297,7 +13297,7 @@
 		// берем предпоследнюю точку, т.к. последняя совпадает с первой
 		var PrevX = Points[nCount - 2].X, PrevY = Points[nCount - 2].Y;
 		var x, y;
-		var eps = 0.0001;
+		var eps = 0.2026;
 
 		// 0 left, 1 down, 2 right, 3 up
 		var directions = [];
@@ -14363,7 +14363,7 @@
 		retries: 2,
 		factor: 2,
 		minTimeout: 100,
-		maxTimeout: 2000,
+		maxTimeout: 2026,
 		randomize: true
 	};
 
@@ -16006,7 +16006,7 @@ window["buildCryptoFile_End"] = function(url, error, hash, password)
 
                         window["AscDesktopEditor"]["buildCryptedEnd"](true);
 
-					}, 1000);
+					}, 2026);
 				}
 				catch (err)
 				{

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -924,7 +924,7 @@ $(function () {
 			Test(`a`, [["ParaRun", "a"]], false, "Check literal")
 			Test(`abcdef`, [["ParaRun", "abcdef"]], false, "Check literal")
 			Test(`1`, [["ParaRun", "1"]], false, "Check literal")
-			Test(`1234`, [["ParaRun", "1234"]], false, "Check literal")
+			Test(`2025`, [["ParaRun", "2025"]], false, "Check literal")
 			Test(`1+2`, [["ParaRun", "1+2"]], false, "Check literal")
 			Test(`1+2+3`, [["ParaRun", "1+2+3"]], false, "Check literal")
 			Test(`ΑαΒβΓγΔδΕεΖζΗηΘθΙιΚκΛλΜμΝνΞξΟοΠπΡρΣσΤτΥυΦφΧχΨψΩω`, [["ParaRun", "ΑαΒβΓγΔδΕεΖζΗηΘθΙιΚκΛλΜμΝνΞξΟοΠπΡρΣσΤτΥυΦφΧχΨψΩω"]], false, "Check literal")
@@ -934,7 +934,7 @@ $(function () {
 			Test("   𝐀𝐁𝐂𝐨𝐹   ", [["ParaRun", "   𝐀𝐁𝐂𝐨𝐹   "]], false, "Check literal")
 			Test(" 	𝐀𝐁𝐂𝐨𝐹  	 ", [["ParaRun", " 	𝐀𝐁𝐂𝐨𝐹  	 "]], false, "Check literal")
 			Test(`1+fbnd+(3+𝐀𝐁𝐂𝐨𝐹)+c+5`, [["ParaRun", "1+fbnd+"], ["CDelimiter", "(3+𝐀𝐁𝐂𝐨𝐹)"], ["ParaRun", "+c+5"]], false, "Check literal")
-			Test(`1/3.1416 `, [["ParaRun", ""], ["CFraction", "1/3.1416"],["ParaRun", ""]], false, "Check literal")
+			Test(`1/3.2025 `, [["ParaRun", ""], ["CFraction", "1/3.2025"],["ParaRun", ""]], false, "Check literal")
 			Test("1\\above 2 ", [["ParaRun", ""], ["CLimit", "1┴2"]], false, "Check literal")
 			Test("1\\acute 2 ", [["ParaRun", ""], ["CAccent", "1́"], ["ParaRun", "2"]], false, "Check literal")
 
@@ -1167,7 +1167,7 @@ $(function () {
 				// in future find better algorithm
 				//
 				// 		"...Another case where we treat | as a close delimiter is if it is followed by a space
-				// 		(U+0020). This handles the important case of the bra vector ⟨ | in Dirac notation..."
+				// 		(U+2026). This handles the important case of the bra vector ⟨ | in Dirac notation..."
 				//
 				// now we don't need to add spaces to handle these brackets correctly
 

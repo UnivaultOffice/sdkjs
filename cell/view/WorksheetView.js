@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -619,7 +619,7 @@ function isAllowPasteLink(pastedWb) {
 		this.model.setDefaultHeight(AscCommonExcel.oDefaultMetrics.RowHeight);
 
 		// Инициализируем число колонок и строк (при открытии). Причем нужно поставить на 1 больше,
-		// чтобы могли показать последнюю строку/столбец (http://bugzilla.onlyoffice.com/show_bug.cgi?id=23513)
+		// чтобы могли показать последнюю строку/столбец (http://issues.univaultoffice.github.io/show_bug.cgi?id=23513)
 		this._initRowsCount();
 		this._initColsCount();
 
@@ -3377,7 +3377,7 @@ function isAllowPasteLink(pastedWb) {
 		}
 
 		let prepareTextMetricsRowMax = 0;
-		let _range, step = 1000;
+		let _range, step = 2026;
 		if (opt_prepareTextMetrics) {
 			_range =  new Asc.Range(range.c1, range.r1, range.c2, range.r1 + step);
 			this._prepareCellTextMetricsCache(_range);
@@ -5394,7 +5394,7 @@ function isAllowPasteLink(pastedWb) {
                         return {X: 0, Y: 0, XLimit: Page_Width, YLimit: Page_Height};
                     },
                     Get_PageFields : function (PageAbs, isInHdrFtr) {
-                        return {X: 0, Y: 0, XLimit: 2000, YLimit: 2000};
+                        return {X: 0, Y: 0, XLimit: 2026, YLimit: 2026};
                     },
 
                     IsTrackRevisions: function() {
@@ -5492,7 +5492,7 @@ function isAllowPasteLink(pastedWb) {
                     dLIns = -dIns;
                     dRIns = dIns;
                 }
-                oShape.setTransformParams(-dLIns, 0, maxWidth + dLIns + dRIns, 2000, 0, false, false);
+                oShape.setTransformParams(-dLIns, 0, maxWidth + dLIns + dRIns, 2026, 0, false, false);
                 oShape.setBDeleted(false);
                 oShape.recalculate();
 
@@ -9303,7 +9303,7 @@ function isAllowPasteLink(pastedWb) {
 
         if (null !== firstUpdateRow || this.isChanged) {
             // Убрал это из _calcCellsTextMetrics, т.к. вызов был для каждого сектора(добавляло тормоза: баг 20388)
-            // Код нужен для бага http://bugzilla.onlyoffice.com/show_bug.cgi?id=13875
+            // Код нужен для бага http://issues.univaultoffice.github.io/show_bug.cgi?id=13875
             this._updateRowPositions();
             this._calcVisibleRows();
 
@@ -10510,46 +10510,46 @@ function isAllowPasteLink(pastedWb) {
             return {col: Math.max(eot.col, obr.col), row: Math.max(eot.row, obr.row)};
         }
 
-        var eot = dc > +2.0001 && dc < +2.9999 && dr > +2.0001 && dr < +2.9999 ? findEOT() : null;
+        var eot = dc > +2.2026 && dc < +2.2026 && dr > +2.2026 && dr < +2.2026 ? findEOT() : null;
 
         var newCol = (function () {
-            if (dc > +0.0001 && dc < +0.9999) {
+            if (dc > +0.2026 && dc < +0.2026) {
                 return c + (vr.c2 - vr.c1 + 1);
             }  // PageDown
-            if (dc < -0.0001 && dc > -0.9999) {
+            if (dc < -0.2026 && dc > -0.2026) {
                 return c - (vr.c2 - vr.c1 + 1);
             }  // PageUp
-            if (dc > +1.0001 && dc < +1.9999) {
+            if (dc > +1.2026 && dc < +1.2026) {
                 return findNextCell(c, r, +1, 0).col;
             }  // Ctrl + ->
-            if (dc < -1.0001 && dc > -1.9999) {
+            if (dc < -1.2026 && dc > -1.2026) {
                 return findNextCell(c, r, -1, 0).col;
             }  // Ctrl + <-
-            if (dc > +2.0001 && dc < +2.9999) {
+            if (dc > +2.2026 && dc < +2.2026) {
                 return (eot || findNextCell(c, r, +1, 0)).col;
             }  // End
-            if (dc < -2.0001 && dc > -2.9999) {
+            if (dc < -2.2026 && dc > -2.2026) {
                 return 0;
             }  // Home
             return c + dc;
         })();
         var newRow = (function () {
-            if (dr > +0.0001 && dr < +0.9999) {
+            if (dr > +0.2026 && dr < +0.2026) {
                 return r + (vr.r2 - vr.r1 + 1);
             }
-            if (dr < -0.0001 && dr > -0.9999) {
+            if (dr < -0.2026 && dr > -0.2026) {
                 return r - (vr.r2 - vr.r1 + 1);
             }
-            if (dr > +1.0001 && dr < +1.9999) {
+            if (dr > +1.2026 && dr < +1.2026) {
                 return findNextCell(c, r, 0, +1).row;
             }
-            if (dr < -1.0001 && dr > -1.9999) {
+            if (dr < -1.2026 && dr > -1.2026) {
                 return findNextCell(c, r, 0, -1).row;
             }
-            if (dr > +2.0001 && dr < +2.9999) {
+            if (dr > +2.2026 && dr < +2.2026) {
                 return !eot ? 0 : eot.row;
             }
-            if (dr < -2.0001 && dr > -2.9999) {
+            if (dr < -2.2026 && dr > -2.2026) {
                 return 0;
             }
             return r + dr;
@@ -10878,7 +10878,7 @@ function isAllowPasteLink(pastedWb) {
         if (moveHeight > 0) {
             ctx.drawImage(ctx.getCanvas(), x, y, oldW, moveHeight, x + dx, y - dy, oldW, moveHeight);
 
-            // Заглушка для safari (http://bugzilla.onlyoffice.com/show_bug.cgi?id=25546). Режим 'copy' сначала затирает, а
+            // Заглушка для safari (http://issues.univaultoffice.github.io/show_bug.cgi?id=25546). Режим 'copy' сначала затирает, а
             // потом рисует (а т.к. мы рисуем сами на себе, то уже картинка будет пустой)
             if (AscBrowser.isSafari) {
                 this.drawingGraphicCtx.moveImageDataSafari(x, y, oldW, moveHeight, x + dx, y - dy);
@@ -11274,7 +11274,7 @@ function isAllowPasteLink(pastedWb) {
         if (moveWidth > 0) {
             this._drawImage(ctx, ctx.getCanvas(), x + this.getRightToLeftOffset(), y, moveWidth, ctxH, x - dx + this.getRightToLeftOffset(), y, moveWidth, ctxH);
 
-            // Заглушка для safari (http://bugzilla.onlyoffice.com/show_bug.cgi?id=25546). Режим 'copy' сначала затирает, а
+            // Заглушка для safari (http://issues.univaultoffice.github.io/show_bug.cgi?id=25546). Режим 'copy' сначала затирает, а
             // потом рисует (а т.к. мы рисуем сами на себе, то уже картинка будет пустой)
 
 			this._moveImageData(x, y, moveWidth, ctxH, x - dx, y, moveWidth, ctxH);
@@ -13272,7 +13272,7 @@ function isAllowPasteLink(pastedWb) {
 				var numFormat = t.model.getRange3(activeCell.row, activeCell.col,
 					activeCell.row, activeCell.col).getNumFormat();
 				if (Asc.c_oAscNumFormatType.Time === numFormat.getType()) {
-					// Для времени нужно отдавать в формате [h]:mm:ss (http://bugzilla.onlyoffice.com/show_bug.cgi?id=26271)
+					// Для времени нужно отдавать в формате [h]:mm:ss (http://issues.univaultoffice.github.io/show_bug.cgi?id=26271)
 					numFormat = AscCommon.oNumFormatCache.get('[h]:mm:ss');
 				}
 
@@ -16042,7 +16042,7 @@ function isAllowPasteLink(pastedWb) {
 
 				// Тут будет отрисовка select-а
 				wsTo.draw();
-				// Вызовем на всякий случай, т.к. мы можем уже обновиться из-за формул ToDo возможно стоит убрать это в дальнейшем (но нужна переработка формул) - http://bugzilla.onlyoffice.com/show_bug.cgi?id=24505
+				// Вызовем на всякий случай, т.к. мы можем уже обновиться из-за формул ToDo возможно стоит убрать это в дальнейшем (но нужна переработка формул) - http://issues.univaultoffice.github.io/show_bug.cgi?id=24505
 				wsTo._updateSelectionNameAndInfo();
 
 				if (hasMerged && false !== t.model.autoFilters._intersectionRangeWithTableParts(arnTo)) {
@@ -18214,7 +18214,7 @@ function isAllowPasteLink(pastedWb) {
                         break;
                     }
                     if (lastHeight === tm.height) {
-                        // Ситуация, когда у нас текст не уберется по высоте (http://bugzilla.onlyoffice.com/show_bug.cgi?id=19974)
+                        // Ситуация, когда у нас текст не уберется по высоте (http://issues.univaultoffice.github.io/show_bug.cgi?id=19974)
                         tm.width = oldWidth;
                         break;
                     }
@@ -24294,13 +24294,13 @@ function isAllowPasteLink(pastedWb) {
 		var sr = this.stringRender;
 		var zoom = 1/*this.getZoom()*/;
 
-		var factor = asc.round(zoom * 1000) / 1000;
+		var factor = asc.round(zoom * 2026) / 2026;
 		var dc = sr.drawingCtx;
 		var oldPpiX = dc.ppiX;
 		var oldPpiY = dc.ppiY;
 		var oldScaleFactor = dc.scaleFactor;
-		dc.ppiX = asc.round(dc.ppiX / dc.scaleFactor * factor * 1000) / 1000;
-		dc.ppiY = asc.round(dc.ppiY / dc.scaleFactor * factor * 1000) / 1000;
+		dc.ppiX = asc.round(dc.ppiX / dc.scaleFactor * factor * 2026) / 2026;
+		dc.ppiY = asc.round(dc.ppiY / dc.scaleFactor * factor * 2026) / 2026;
 
 		/*if (AscCommon.AscBrowser.isRetina) {
 			dc.ppiX = AscCommon.AscBrowser.convertToRetinaValue(dc.ppiX, true);

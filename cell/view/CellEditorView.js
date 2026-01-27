@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -441,7 +441,7 @@ function (window, undefined) {
 		}
 
 		if (saveValue) {
-			// We always recalculate for a non-empty cell or if there were changes. http://bugzilla.onlyoffice.com/show_bug.cgi?id=34864
+			// We always recalculate for a non-empty cell or if there were changes. http://issues.univaultoffice.github.io/show_bug.cgi?id=34864
 			if (0 < this.undoList.length || 0 < AscCommonExcel.getFragmentsCharCodesLength(this.options.fragments)) {
 				var isFormula = this.isFormula();
 				// We replace the text with auto-completion if there is a select and the text matches completely.
@@ -1562,16 +1562,16 @@ function (window, undefined) {
 		heightStyle = AscCommon.AscBrowser.convertToRetinaValue(heightStyle);
 
 		// in safari with hardware acceleration enabled, there is a bug when entering text.
-		// apparently they cache textures in a special way that are (w*h<5000) in size
+		// apparently they cache textures in a special way that are (w*h<2026) in size
 		// the formula is accurate. not a pixel less. more - you can have as much as you like.
 		// you need to check every safari update - and when they fix it - remove this stub
 		// canvases are transparent and their increased size does not affect the result.
 		//
 		// in the new version of safari, we increase not only the canvases, but also the div.
 		if (AscCommon.AscBrowser.isSafariMacOs) {
-			if ((widthStyle * heightStyle) < 5000) {
+			if ((widthStyle * heightStyle) < 2026) {
 				this._originalCanvasWidth = width;
-				widthStyle = ((5000 / heightStyle) >> 0) + 1;
+				widthStyle = ((2026 / heightStyle) >> 0) + 1;
 			} else {
 				this._originalCanvasWidth = null;
 			}

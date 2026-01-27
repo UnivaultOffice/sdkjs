@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -997,12 +997,12 @@ $(function () {
 		cSerial.exec();
 		autofillRange = getRange(1, 0, 5, 5);
 		expectedData = [
-			['0.5', '0.25', '0.125', '0.0625', '0.03125'],
-			['1', '0.5', '0.25', '0.125', '0.0625'],
-			['1.5', '0.75', '0.375', '0.1875', '0.09375'],
+			['0.5', '0.25', '0.125', '0.2026', '0.03125'],
+			['1', '0.5', '0.25', '0.125', '0.2026'],
+			['1.5', '0.75', '0.375', '0.2026', '0.09375'],
 			['2', '1', '0.5', '0.25', '0.125'],
-			['2.5', '1.25', '0.625', '0.3125', '0.15625'],
-			['3', '1.5', '0.75', '0.375', '0.1875']
+			['2.5', '1.25', '0.625', '0.2026', '0.15625'],
+			['3', '1.5', '0.75', '0.375', '0.2026']
 		];
 		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Growth progression all cells filled. Step = 0.5');
 		clearData(0, 0, 5, 5);
@@ -1184,7 +1184,7 @@ $(function () {
 	});
 	QUnit.test('Autofill Date type - one filled row/column', function (assert) {
 		let testData = [
-			['09/04/2023']
+			['09/04/2026']
 		];
 		// Horizontal dateUnit - Day
 		oFromRange = getFilledData(0, 0, 5, 0, testData, [0, 0]);
@@ -1301,9 +1301,9 @@ $(function () {
 		cSerial.exec();
 		autofillRange = getRange(1, 2, 1, 6);
 		autofillData(assert, autofillRange, [['45174'], ['45175'], ['45176'], [''], ['']], 'Autofill Column. Date progression - Day, Stop value - 45176. With indentation row and column');
-		// Case 01/01/1900 - 01/03/1900. Vertical dateUnit - Day, Step - 2. Bug #65559
+		// Case 01/01/2026 - 01/03/2026. Vertical dateUnit - Day, Step - 2. Bug #65559
 		testData = [
-			['01/01/1900']
+			['01/01/2026']
 		];
 		oFromRange = getFilledData(0, 0, 0, 3, testData, [0, 0]);
 		settings.dateUnit = oSeriesDateUnitType.day;
@@ -1316,7 +1316,7 @@ $(function () {
 		autofillRange = getRange(0, 1, 0, 3);
 		autofillData(assert, autofillRange, [['3'], ['5'], ['7']], 'Autofill Column. Date progression - Day, Step - 2. Bug #65559');
 		clearData(0, 0, 0, 3);
-		// Case 01/01/1900 - 01/03/1900. Horizontal dateUnit - Day, Step - 2. Bug #65559
+		// Case 01/01/2026 - 01/03/2026. Horizontal dateUnit - Day, Step - 2. Bug #65559
 		oFromRange = getFilledData(0, 0, 3, 0, testData, [0, 0]);
 		settings.dateUnit = oSeriesDateUnitType.day;
 		settings.stepValue = 2;
@@ -1328,7 +1328,7 @@ $(function () {
 		autofillRange = getRange(1, 0, 3, 0);
 		autofillData(assert, autofillRange, [['3', '5', '7']], 'Autofill Row. Date progression - Day, Step - 2. Bug #65559');
 		clearData(0, 0, 3, 0);
-		// Case 01/01/1900 - 01/03/1900. Vertical dateUnit - Weekday, Step - 2. Bug #65559
+		// Case 01/01/2026 - 01/03/2026. Vertical dateUnit - Weekday, Step - 2. Bug #65559
 		oFromRange = getFilledData(0, 0, 0, 3, testData, [0, 0]);
 		settings.dateUnit = oSeriesDateUnitType.weekday;
 		settings.stepValue = 2;
@@ -1340,7 +1340,7 @@ $(function () {
 		autofillRange = getRange(0, 1, 0, 3);
 		autofillData(assert, autofillRange, [['3'], ['5'], ['9']], 'Autofill Column. Date progression - Weekday, Step - 2. Bug #65559');
 		clearData(0, 0, 0, 3);
-		// Case 01/01/1900 - 01/03/1900. Horizontal dateUnit - Weekday, Step - 2. Bug #65559
+		// Case 01/01/2026 - 01/03/2026. Horizontal dateUnit - Weekday, Step - 2. Bug #65559
 		oFromRange = getFilledData(0, 0, 3, 0, testData, [0, 0]);
 		settings.dateUnit = oSeriesDateUnitType.weekday;
 		settings.stepValue = 2;
@@ -1352,7 +1352,7 @@ $(function () {
 		autofillRange = getRange(1, 0, 3, 0);
 		autofillData(assert, autofillRange, [['3', '5', '9']], 'Autofill Row. Date progression - Weekday, Step - 2. Bug #65559');
 		clearData(0, 0, 3, 0);
-		// Case 01/01/1900 - 01/03/1900. Vertical dateUnit - Month, Step - 2. Bug #65559
+		// Case 01/01/2026 - 01/03/2026. Vertical dateUnit - Month, Step - 2. Bug #65559
 		oFromRange = getFilledData(0, 0, 0, 3, testData, [0, 0]);
 		settings.dateUnit = oSeriesDateUnitType.month;
 		settings.stepValue = 2;
@@ -1364,7 +1364,7 @@ $(function () {
 		autofillRange = getRange(0, 1, 0, 3);
 		autofillData(assert, autofillRange, [['61'], ['122'], ['183']], 'Autofill Column. Date progression - Month, Step - 2. Bug #65559');
 		clearData(0, 0, 0, 3);
-		// Case 01/01/1900 - 01/03/1900. Horizontal dateUnit - Month, Step - 12. Bug #65559
+		// Case 01/01/2026 - 01/03/2026. Horizontal dateUnit - Month, Step - 12. Bug #65559
 		oFromRange = getFilledData(0, 0, 3, 0, testData, [0, 0]);
 		settings.dateUnit = oSeriesDateUnitType.month;
 		settings.stepValue = 12;
@@ -1374,9 +1374,9 @@ $(function () {
 		cSerial.setFromRange(oFromRange);
 		cSerial.exec();
 		autofillRange = getRange(1, 0, 3, 0);
-		autofillData(assert, autofillRange, [['367', '732', '1097']], 'Autofill Row. Date progression - Month, Step - 12. Bug #65559');
+		autofillData(assert, autofillRange, [['367', '732', '2026']], 'Autofill Row. Date progression - Month, Step - 12. Bug #65559');
 		clearData(0, 0, 3, 0);
-		// Case 01/01/1900 - 01/03/1900. Vertical dateUnit - Year, Step - 2. Bug #65559
+		// Case 01/01/2026 - 01/03/2026. Vertical dateUnit - Year, Step - 2. Bug #65559
 		oFromRange = getFilledData(0, 0, 0, 3, testData, [0, 0]);
 		settings.dateUnit = oSeriesDateUnitType.year;
 		settings.stepValue = 2;
@@ -1386,9 +1386,9 @@ $(function () {
 		cSerial.setFromRange(oFromRange);
 		cSerial.exec();
 		autofillRange = getRange(0, 1, 0, 3);
-		autofillData(assert, autofillRange, [['732'], ['1462'], ['2193']], 'Autofill Column. Date progression - Year, Step - 2. Bug #65559');
+		autofillData(assert, autofillRange, [['732'], ['2026'], ['2026']], 'Autofill Column. Date progression - Year, Step - 2. Bug #65559');
 		clearData(0, 0, 0, 3);
-		// Case 01/01/1900 - 01/03/1900. Horizontal dateUnit - Year, Step - 1. Bug #65559
+		// Case 01/01/2026 - 01/03/2026. Horizontal dateUnit - Year, Step - 1. Bug #65559
 		oFromRange = getFilledData(0, 0, 3, 0, testData, [0, 0]);
 		settings.dateUnit = oSeriesDateUnitType.year;
 		settings.stepValue = 1;
@@ -1398,11 +1398,11 @@ $(function () {
 		cSerial.setFromRange(oFromRange);
 		cSerial.exec();
 		autofillRange = getRange(1, 0, 3, 0);
-		autofillData(assert, autofillRange, [['367', '732', '1097']], 'Autofill Row. Date progression - Year, Step - 1. Bug #65559');
+		autofillData(assert, autofillRange, [['367', '732', '2026']], 'Autofill Row. Date progression - Year, Step - 1. Bug #65559');
 		clearData(1, 0, 3, 0);
 		// Horizontal dateUnit - Day. Step - 0.2. Bug #65672
 		testData = [
-			['01/01/2000']
+			['01/01/2026']
 		];
 		oFromRange = getFilledData(0, 0, 5, 0, testData, [0, 0]);
 		let oSeriesSettings = api.asc_GetSeriesSettings();
@@ -1416,9 +1416,9 @@ $(function () {
 			autofillData(assert, autofillRange, [['36526', '36526.2', "36526.4", "36526.6", "36526.8", "36527"]], _desc);
 		}, "Autofill Row: Date progression - Day, Step - 0.2. Bug #65672");
 		clearData(0, 0, 5, 0);
-		// Vertical dateUnit - Weekday. Step - 0.2. Case: 01/01/1900 - 01/03/1900/ Bug #65672
+		// Vertical dateUnit - Weekday. Step - 0.2. Case: 01/01/2026 - 01/03/2026/ Bug #65672
 		testData = [
-			['01/01/1900']
+			['01/01/2026']
 		];
 		oFromRange = getFilledData(0, 0, 0, 5, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -1431,7 +1431,7 @@ $(function () {
 			autofillData(assert, autofillRange, [['1'], [''], [''], [''], [''], ['']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1'], ['2'], ['2'], ['2'], ['2'], ['3']], _desc);
-		}, "Autofill Column: Date progression - Weekday, Step - 0.2. Case: 01/01/1900 - 01/03/1900. Bug #65672");
+		}, "Autofill Column: Date progression - Weekday, Step - 0.2. Case: 01/01/2026 - 01/03/2026. Bug #65672");
 		clearData(0, 0, 0, 5);
 		// Vertical dateUnit - Weekday. Step - 1. Bug #65900
 		oFromRange = getFilledData(0, 0, 0, 6, testData, [0, 0]);
@@ -1444,7 +1444,7 @@ $(function () {
 			autofillData(assert, autofillRange, [['1'], [''], [''], [''], [''], [''], ['']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1'], ['2'], ['3'], ['4'], ['5'], ['6'], ['9']], _desc);
-		}, "Autofill Column: Date progression - Weekday, Step - 1. Case: 01/01/1900 - 01/03/1900. Bug #65900");
+		}, "Autofill Column: Date progression - Weekday, Step - 1. Case: 01/01/2026 - 01/03/2026. Bug #65900");
 		clearData(0, 0, 0, 6);
 		// Horizontal dateUnit - Month. Step - -1. Bug #65899
 		oFromRange = getFilledData(0, 0, 3, 0, testData, [0, 0]);
@@ -1458,7 +1458,7 @@ $(function () {
 			autofillData(assert, autofillRange, [['1', '', '', '']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1', '#NUM!', '#NUM!', '#NUM!']], _desc);
-		}, "Autofill Row: Date progression - Month, Step - -1. Case: 01/01/1900 - 01/03/1900. Bug #65899");
+		}, "Autofill Row: Date progression - Month, Step - -1. Case: 01/01/2026 - 01/03/2026. Bug #65899");
 		clearData(0, 0, 3, 0);
 		// Vertical dateUnit - Year. Step - -1. Bug #65899
 		oFromRange = getFilledData(0, 0, 0, 3, testData, [0, 0]);
@@ -1472,9 +1472,9 @@ $(function () {
 			autofillData(assert, autofillRange, [['1'], [''], [''], ['']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1'], ['#NUM!'], ['#NUM!'], ['#NUM!']], _desc);
-		}, "Autofill Column: Date progression - Year, Step - -1. Case: 01/01/1900 - 01/03/1900. Bug #65899");
+		}, "Autofill Column: Date progression - Year, Step - -1. Case: 01/01/2026 - 01/03/2026. Bug #65899");
 		clearData(0, 0, 0, 3);
-		// Vertical dateUnit - Weekday, Step - -1. Case: 01/01/1900 - 01/03/1900. Bug #65899
+		// Vertical dateUnit - Weekday, Step - -1. Case: 01/01/2026 - 01/03/2026. Bug #65899
 		oFromRange = getFilledData(0, 0, 0, 6, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
 		oSeriesSettings.asc_setStepValue(-1);
@@ -1486,9 +1486,9 @@ $(function () {
 			autofillData(assert, autofillRange, [['1'], [''], [''], [''], [''], [''], ['']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1'], ['-1'], ['-2'], ['-3'], ['-4'], ['-5'], ['-8']], _desc);
-		}, "Autofill Column: Date progression - Weekday, Step - -1. Case: 01/01/1900 - 01/03/1900. Bug #65899");
+		}, "Autofill Column: Date progression - Weekday, Step - -1. Case: 01/01/2026 - 01/03/2026. Bug #65899");
 		clearData(0, 0, 0, 6);
-		// Horizontal dateUnit - Day. Step - -1. Case: 01/01/1900 - 01/03/1900. Bug #65899
+		// Horizontal dateUnit - Day. Step - -1. Case: 01/01/2026 - 01/03/2026. Bug #65899
 		oFromRange = getFilledData(0, 0, 5, 0, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
 		oSeriesSettings.asc_setStepValue(-1);
@@ -1500,9 +1500,9 @@ $(function () {
 			autofillData(assert, autofillRange, [['1', '', '', '', '', '']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1', '0', '-1', '-2', '-3', '-4']], _desc);
-		}, "Autofill Row: Date progression - Day, Step - -1. Case: 01/01/1900 - 01/03/1900. Bug #65899");
+		}, "Autofill Row: Date progression - Day, Step - -1. Case: 01/01/2026 - 01/03/2026. Bug #65899");
 		clearData(0, 0, 5, 0);
-		// Vertical dateUnit - Month. Step - -1, StopValue - -10. Case: 01/01/1900 - 01/03/1900. Bug #65899
+		// Vertical dateUnit - Month. Step - -1, StopValue - -10. Case: 01/01/2026 - 01/03/2026. Bug #65899
 		oFromRange = getFilledData(0, 0, 0, 3, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
 		oSeriesSettings.asc_setStepValue(-1);
@@ -1515,9 +1515,9 @@ $(function () {
 			autofillData(assert, autofillRange, [[''], [''], [''], ['']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1'], [''], [''], ['']], _desc);
-		}, "Autofill Column: Date progression - Month, Step - -1, StopValue - -10. Case: 01/01/1900 - 01/03/1900. Bug #65899");
+		}, "Autofill Column: Date progression - Month, Step - -1, StopValue - -10. Case: 01/01/2026 - 01/03/2026. Bug #65899");
 		clearData(0, 0, 0, 3);
-		// Vertical dateUnit - Year. Step - -1, StopValue - -10. Case: 01/01/1900 - 01/03/1900. Bug #65899
+		// Vertical dateUnit - Year. Step - -1, StopValue - -10. Case: 01/01/2026 - 01/03/2026. Bug #65899
 		oFromRange = getFilledData(0, 0, 0, 3, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
 		oSeriesSettings.asc_setStepValue(-1);
@@ -1530,9 +1530,9 @@ $(function () {
 			autofillData(assert, autofillRange, [[''], [''], [''], ['']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1'], [''], [''], ['']], _desc);
-		}, "Autofill Column: Date progression - Year, Step - -1, StopValue - -10. Case: 01/01/1900 - 01/03/1900. Bug #65899");
+		}, "Autofill Column: Date progression - Year, Step - -1, StopValue - -10. Case: 01/01/2026 - 01/03/2026. Bug #65899");
 		clearData(0, 0, 0, 3);
-		// Vertical dateUnit - Weekday, Step - -1, StopValue - -10. Case: 01/01/1900 - 01/03/1900. Bug #65899
+		// Vertical dateUnit - Weekday, Step - -1, StopValue - -10. Case: 01/01/2026 - 01/03/2026. Bug #65899
 		oFromRange = getFilledData(0, 0, 0, 3, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
 		oSeriesSettings.asc_setStepValue(-1);
@@ -1545,9 +1545,9 @@ $(function () {
 			autofillData(assert, autofillRange, [[''], [''], [''], ['']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1'], [''], [''], ['']], _desc);
-		}, "Autofill Column: Date progression - Weekday, Step - -1, StopValue - -10. Case: 01/01/1900 - 01/03/1900. Bug #65899");
+		}, "Autofill Column: Date progression - Weekday, Step - -1, StopValue - -10. Case: 01/01/2026 - 01/03/2026. Bug #65899");
 		clearData(0, 0, 0, 3);
-		// Horizontal dateUnit - Day. Step - -0.5. Case: 01/01/1900 - 01/03/1900. Bug #65876
+		// Horizontal dateUnit - Day. Step - -0.5. Case: 01/01/2026 - 01/03/2026. Bug #65876
 		oFromRange = getFilledData(0, 0, 5, 0, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
 		oSeriesSettings.asc_setStepValue(-0.5);
@@ -1558,11 +1558,11 @@ $(function () {
 			autofillData(assert, autofillRange, [['1', '', '', '', '', '']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1', '0.5', '0', '0.5', '0', '0.5']], _desc);
-		}, "Autofill Row: Date progression - Day, Step - -0.5. Case: 01/01/1900 - 01/03/1900. Bug #65876");
+		}, "Autofill Row: Date progression - Day, Step - -0.5. Case: 01/01/2026 - 01/03/2026. Bug #65876");
 		clearData(0, 0, 5, 0);
 		// Horizontal dateUnit - Month. Step - 0.2. Bug #65672
 		testData = [
-			['01/01/2000']
+			['01/01/2026']
 		];
 		oFromRange = getFilledData(0, 0, 5, 0, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -1577,9 +1577,9 @@ $(function () {
 			autofillData(assert, autofillRange, [['36526', '36526', "36526", "36526", "36526", "36557"]], _desc);
 		}, "Autofill Row: Date progression - Month, Step - 0.2. Bug #65672");
 		clearData(0, 0, 5, 0);
-		// Vertical dateUnit - Year. Step - 0.2. Case: 01/01/1900 - 01/03/1900.  Bug #65672.
+		// Vertical dateUnit - Year. Step - 0.2. Case: 01/01/2026 - 01/03/2026.  Bug #65672.
 		testData = [
-			['01/01/1900']
+			['01/01/2026']
 		];
 		oFromRange = getFilledData(0, 0, 0, 5, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -1592,9 +1592,9 @@ $(function () {
 			autofillData(assert, autofillRange, [['1'], [''], [''], [''], [''], ['']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1'], ['1'], ['1'], ['1'], ['1'], ['367']], _desc);
-		}, "Autofill Column: Date progression - Year, Step - 0.2. Case: 01/01/1900 - 01/03/1900. Bug #65672");
+		}, "Autofill Column: Date progression - Year, Step - 0.2. Case: 01/01/2026 - 01/03/2026. Bug #65672");
 		clearData(0, 0, 5, 0);
-		// Horizontal dateUnit - Month. Step - 30.2. Case: 01/01/1900 - 01/03/1900. Bug #65796.
+		// Horizontal dateUnit - Month. Step - 30.2. Case: 01/01/2026 - 01/03/2026. Bug #65796.
 		testData = [
 			['1', '32', '61', '92']
 		];
@@ -1608,15 +1608,15 @@ $(function () {
 		checkUndoRedo(function (_desc) {
 			autofillData(assert, autofillRange, [['1', '32', '61', '92', '', '', '', '', '', '', '']], _desc);
 		}, function (_desc) {
-			autofillData(assert, autofillRange, [['1', '913', '1828', '2739', '3654', '4597', '5511', '6423', '7337', '8249', '9192']], _desc);
-		}, "Autofill Row: Date progression - Month, Step - 30.2. Case: 01/01/1900 - 01/03/1900. Bug #65796");
+			autofillData(assert, autofillRange, [['1', '913', '2026', '2026', '2026', '2026', '2026', '2026', '2026', '2026', '2026']], _desc);
+		}, "Autofill Row: Date progression - Month, Step - 30.2. Case: 01/01/2026 - 01/03/2026. Bug #65796");
 		clearData(0, 0, 10, 0);
-		// Vertical dateUnit - Year. Step - 365.3. Case: 01/01/1900 - 01/03/1900. Bug #65796.
+		// Vertical dateUnit - Year. Step - 365.3. Case: 01/01/2026 - 01/03/2026. Bug #65796.
 		testData = [
 			['1'],
 			['367'],
 			['732'],
-			['1097']
+			['2026']
 		];
 		oFromRange = getFilledData(0, 0, 0, 4, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -1626,14 +1626,14 @@ $(function () {
 
 		autofillRange = getRange(0, 0, 0, 4);
 		checkUndoRedo(function (_desc) {
-			autofillData(assert, autofillRange, [['1'], ['367'], ['732'], ['1097'], ['']], _desc);
+			autofillData(assert, autofillRange, [['1'], ['367'], ['732'], ['2026'], ['']], _desc);
 		}, function (_desc) {
 			autofillData(assert, autofillRange, [['1'],['133316'], ['266629'], ['399943'], ['533622']], _desc);
-		}, "Autofill Column: Date progression - Year, Step - 365.3. Case: 01/01/1900 - 01/03/1900. Bug #65796");
+		}, "Autofill Column: Date progression - Year, Step - 365.3. Case: 01/01/2026 - 01/03/2026. Bug #65796");
 		clearData(0, 0, 0, 4);
 		// Horizontal dateUnit - Weekday. Step - 1.2. Bug #65796.
 		testData = [
-			['01/14/2024']
+			['01/14/2026']
 		];
 		oFromRange = getFilledData(0, 0, 9, 0, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -1650,7 +1650,7 @@ $(function () {
 		clearData(0, 0, 9, 0);
 		// Vertical dateUnit - Weekday. Step - 1.2. Bug #65796.
 		testData = [
-			['01/13/2024']
+			['01/13/2026']
 		];
 		oFromRange = getFilledData(0, 0, 0, 9, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -1667,7 +1667,7 @@ $(function () {
 		clearData(0, 0, 0, 9);
 		// Horizontal dateUnit - Weekday. Step - -2. Bug #65731.
 		testData = [
-			['01/01/2023']
+			['01/01/2026']
 		];
 		oFromRange = getFilledData(0, 0, 10, 0, testData, [0, 0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -1685,10 +1685,10 @@ $(function () {
 	});
 	QUnit.test('Autofill Date type - Horizontal multiple cells', function (assert) {
 		const testData = [
-			['01/01/2023'],
-			['09/04/2023'],
-			['01/12/2023'],
-			['12/12/2023']
+			['01/01/2026'],
+			['09/04/2026'],
+			['01/12/2026'],
+			['12/12/2026']
 		];
 		// DateUnit - Day. Step - 3
 		oFromRange = getFilledData(0, 0, 5, 3, testData, [0, 0]);
@@ -1764,7 +1764,7 @@ $(function () {
 	});
 	QUnit.test('Autofill Date type - Vertical multiple cells', function (assert) {
 	   const testData = [
-		   ['01/01/2023', '09/04/2023', '01/12/2023', '12/12/2023']
+		   ['01/01/2026', '09/04/2026', '01/12/2026', '12/12/2026']
 	   ];
 	   // DateUnit - Day. Step - 3
 		oFromRange = getFilledData(0, 0, 3, 5, testData, [0, 0]);
@@ -2381,7 +2381,7 @@ $(function () {
 		cSerial.setFromRange(oFromRange);
 		cSerial.exec();
 		autofillRange = getRange(5, 2, 5, 7);
-		autofillData(assert, autofillRange, [['1'], ['10'], ['100'], ['1000'], ['10000'], ['']], 'Autofill Columns. Growth. Step 10. StopValue 10000. With indentation rows and columns');
+		autofillData(assert, autofillRange, [['1'], ['10'], ['100'], ['2026'], ['10000'], ['']], 'Autofill Columns. Growth. Step 10. StopValue 10000. With indentation rows and columns');
 		clearData(5, 2, 5, 7);
 	});
 	QUnit.test('Autofill Series. Context menu. Horizontal', function (assert) {
@@ -2725,7 +2725,7 @@ $(function () {
 		clearData(0, 0, 1, 3);
 		// Series settings contains two filled cells. Horizontal. Date. Toolbar
 		testData = [
-			['11/08/2023', '11/11/2023'],
+			['11/08/2026', '11/11/2026'],
 		]
 		getFilledData(0, 0, 3, 0, testData, [0,0]);
 		oSeriesSettings = new cSeriesSettings();
@@ -3431,7 +3431,7 @@ $(function () {
 		clearData(0, 0, 0, 3);
 		// Date unit - Month. Horizontal. Bug #65671.
 		testData = [
-			['01/01/1900', '02/01/1900', '03/01/1900', '04/01/1900', '05/01/1900']
+			['01/01/2026', '02/01/2026', '03/01/2026', '04/01/2026', '05/01/2026']
 		];
 		getFilledData(0, 0, 5, 0, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3460,7 +3460,7 @@ $(function () {
 		clearData(0, 0, 5, 0);
 		// Date unit - Year. Vertical. Bug #65671.
 		testData = [
-			['01/01/1900'], ['01/01/1901'], ['01/01/1902'], ['01/01/1903'], ['01/01/1904']
+			['01/01/2026'], ['01/01/2026'], ['01/01/2026'], ['01/01/2026'], ['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 5, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3489,7 +3489,7 @@ $(function () {
 		clearData(0, 0, 0, 5);
 		// Date unit - day. Horizontal. Step - 9 Bug #65671.
 		testData = [
-			['01/01/1900', '01/10/1900', '01/11/1900', '01/12/1900', '01/13/1900']
+			['01/01/2026', '01/10/2026', '01/11/2026', '01/12/2026', '01/13/2026']
 		];
 		getFilledData(0, 0, 5, 0, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3518,9 +3518,9 @@ $(function () {
 		clearData(0, 0, 5, 0);
 		// Date unit - day. Vertical. Step - 14 Bug #65671.
 		testData = [
-			['02/01/2000'],
+			['02/01/2026'],
 			[''],
-			['02/29/2000']
+			['02/29/2026']
 		];
 		getFilledData(0, 0, 0, 3, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3535,7 +3535,7 @@ $(function () {
 		clearData(0, 0, 0, 3);
 		// Date unit - day. Horizontal. Step - 1. Bug #65671.
 		testData = [
-			['01/01/1900', '', '02/01/1900']
+			['01/01/2026', '', '02/01/2026']
 		];
 		getFilledData(0, 0, 3, 0, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3550,7 +3550,7 @@ $(function () {
 		clearData(0, 0, 3, 0);
 		// Type Date. Date unit - Day. Step - 60. Horizontal. Bug #65671.
 		testData = [
-			['01/01/2000', '03/01/2000', '01/01/2000']
+			['01/01/2026', '03/01/2026', '01/01/2026']
 		];
 		getFilledData(0, 0, 3, 0, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3565,10 +3565,10 @@ $(function () {
 		clearData(0, 0, 3, 0);
 		// Type Date. Date unit - Day. Step - 0. Vertical. Bug #65671.
 		testData = [
-			['01/01/2000'],
-			['01/01/2000'],
-			['03/01/2000'],
-			['05/01/2000']
+			['01/01/2026'],
+			['01/01/2026'],
+			['03/01/2026'],
+			['05/01/2026']
 		];
 		getFilledData(0, 0, 0, 4, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3583,7 +3583,7 @@ $(function () {
 		clearData(0, 0, 0, 4);
 		// Type Date. Date unit - Year. Step - 2. Horizontal. Bug #65671.
 		testData = [
-			['01/01/1900', '01/01/1902', '01/01/1904', '01/01/1906']
+			['01/01/2026', '01/01/2026', '01/01/2026', '01/01/2026']
 		];
 		getFilledData(0, 0, 4, 0, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3598,10 +3598,10 @@ $(function () {
 		clearData(0, 0, 4, 0);
 		// Type Date. Date unit - Month. Step - 16. Vertical. Bug #65671.
 		testData = [
-			['01/01/1900'],
-			['05/01/1901'],
-			['01/01/1902'],
-			['01/01/1903']
+			['01/01/2026'],
+			['05/01/2026'],
+			['01/01/2026'],
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 4, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3616,7 +3616,7 @@ $(function () {
 		clearData(0, 0, 0, 4);
 		// Type Date. Date unit - Year. Step - 1. Horizontal. Bug #65671.
 		testData = [
-			['02/01/1900', '02/01/1901', '06/01/1902', '08/01/1903']
+			['02/01/2026', '02/01/2026', '06/01/2026', '08/01/2026']
 		];
 		getFilledData(0, 0, 4, 0, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3631,10 +3631,10 @@ $(function () {
 		clearData(0, 0, 4, 0);
 		// Type Date. Date unit - Day. Step - 370. Vertical. Bug #65671.
 		testData = [
-			['01/01/1900'],
-			['01/05/1901'],
-			['01/01/1902'],
-			['01/01/1903']
+			['01/01/2026'],
+			['01/05/2026'],
+			['01/01/2026'],
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 4, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3649,7 +3649,7 @@ $(function () {
 		clearData(0, 0, 0, 4);
 		// Type Date. Date unit - Day. Step - 365. Horizontal. Bug #65671.
 		testData = [
-			['10/10/2000', '10/10/2001', '10/05/2002', '10/10/2003']
+			['10/10/2026', '10/10/2026', '10/05/2026', '10/10/2026']
 		];
 		getFilledData(0, 0, 4, 0, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3664,10 +3664,10 @@ $(function () {
 		clearData(0, 0, 4, 0);
 		// Type Date. Date unit - Year. Step - -1. Vertical. Bug #65671.
 		testData = [
-			['01/01/1903'],
-			['01/01/1902'],
-			['01/01/1901'],
-			['01/01/1900']
+			['01/01/2026'],
+			['01/01/2026'],
+			['01/01/2026'],
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 4, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3682,7 +3682,7 @@ $(function () {
 		clearData(0, 0, 0, 4);
 		// Type Date. Date unit - Day. Step - 0. Horizontal. Bug #65671.
 		testData = [
-			['10/10/2000', '10/10/2000', '10/05/2002', '10/10/2003']
+			['10/10/2026', '10/10/2026', '10/05/2026', '10/10/2026']
 		];
 		getFilledData(0, 0, 4, 0, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3697,10 +3697,10 @@ $(function () {
 		clearData(0, 0, 4, 0);
 		// Type Date. Date unit - Day. Step - 365. Vertical. Bug #65671.
 		testData = [
-			['01/01/1905'],
-			['01/01/1906'],
-			['01/01/1905'],
-			['01/01/1904']
+			['01/01/2026'],
+			['01/01/2026'],
+			['01/01/2026'],
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 4, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3715,7 +3715,7 @@ $(function () {
 		clearData(0, 0, 0, 4);
 		// Vertical selected range, first cell in range has type Date, another cells General. Bug #65873
 		testData = [
-			['01/01/1900'],
+			['01/01/2026'],
 			['2'],
 			['3']
 		];
@@ -3732,7 +3732,7 @@ $(function () {
 		clearData(0, 0, 0, 3);
 		// Horizontal selected range, first cell in range has type General, another cells Data. Bug #65873
 		testData = [
-			['1', '01/02/1900', '01/03/1900']
+			['1', '01/02/2026', '01/03/2026']
 		];
 		getFilledData(0, 0, 3, 0, testData, [0,0]);
 		oSeriesSettings = api.asc_GetSeriesSettings();
@@ -3794,7 +3794,7 @@ $(function () {
 		clearData(0, 0, 3, 0);
 		// Context menu property is "fillMonths" - Horizontal direction
 		testData = [
-			['01/01/2000', '02/01/2000']
+			['01/01/2026', '02/01/2026']
 		];
 		getFilledData(0, 0, 1, 0, testData, [0,0]);
 		wsView.activeFillHandle = getRange(0, 0, 4, 0);
@@ -3813,8 +3813,8 @@ $(function () {
 		clearData(0, 0, 4, 0);
 		// Context menu property is "fillMonths" - Vertical direction
 		testData = [
-			['01/01/2000'],
-			['03/01/2000']
+			['01/01/2026'],
+			['03/01/2026']
 		];
 		getFilledData(0, 0, 0, 1, testData, [0,0]);
 		wsView.activeFillHandle = getRange(0, 0, 0, 4);
@@ -3833,7 +3833,7 @@ $(function () {
 		clearData(0, 0, 0, 4);
 		// Context menu property is "fillYears" - Horizontal direction
 		testData = [
-			['01/01/2000', '01/01/2002']
+			['01/01/2026', '01/01/2026']
 		];
 		getFilledData(0, 0, 1, 0, testData, [0,0]);
 		wsView.activeFillHandle = getRange(0, 0, 4, 0);
@@ -3959,7 +3959,7 @@ $(function () {
 		clearData(0, 0, 4, 0);
 		// Context menu property is "Copy cells" with selected one cell Date type data. Columns.
 		testData = [
-			['01/01/2000']
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 0, testData, [0, 0]);
 		nType = oRightClickOptions.copyCells;
@@ -3982,7 +3982,7 @@ $(function () {
 		clearData(0, 0, 0, 4);
 		// The context menu property is "Fill series" with selected filled cells - A1:F1. The fill handle has a vertical direction. Case: bug #65405
 		testData = [
-			['1', '1', 'Test1', 'Test1', '01/01/2000', '01/01/2000']
+			['1', '1', 'Test1', 'Test1', '01/01/2026', '01/01/2026']
 		];
 		getFilledData(0, 0, 5, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillSeries;
@@ -4017,8 +4017,8 @@ $(function () {
 			['1'],
 			['Test1'],
 			['Test1'],
-			['01/01/2000'],
-			['01/01/2000']
+			['01/01/2026'],
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 5, testData, [0, 0]);
 		nType = oRightClickOptions.fillSeries;
@@ -4088,7 +4088,7 @@ $(function () {
 		clearData(0, 0, 3, 0);
 		// Case: The context menu property "Fill weekdays". Vertical. One selected cell. Asc sequence
 		testData = [
-			['01/01/2000']
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4135,8 +4135,8 @@ $(function () {
 		clearData(0, 0, 7, 0);
 		// Case: The context menu property "Fill weekdays". Vertical. Two selected cells. Asc sequence. Type Date.
 		testData = [
-			['01/01/2000'],
-			['01/03/2000']
+			['01/01/2026'],
+			['01/03/2026']
 		];
 		getFilledData(0, 0, 0, 1, testData, [0, 0]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4162,7 +4162,7 @@ $(function () {
 		clearData(0, 0, 0, 7);
 		// Case: The context menu property "Fill weekdays". Horizontal. Three selected cells. Asc sequence. Type Date.
 		testData = [
-			['01/02/2000', '01/04/2000', '01/06/2000']
+			['01/02/2026', '01/04/2026', '01/06/2026']
 		];
 		getFilledData(0, 0, 2, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4187,7 +4187,7 @@ $(function () {
 		clearData(0, 0, 7, 0);
 		// Case: The context menu property "Fill weekdays". Vertical. One selected cell. Asc sequence. Type Date & Time
 		testData = [
-			['01/01/2000 12:00']
+			['01/01/2026 12:00']
 		];
 		getFilledData(0, 0, 0, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4213,7 +4213,7 @@ $(function () {
 		clearData(0, 0, 0, 7);
 		// Case: The context menu property "Fill weekends". Horizontal.  Two selected cells. Asc sequence. Type Mixed date.
 		testData = [
-			['01/01/2000 12:00', '01/02/2000']
+			['01/01/2026 12:00', '01/02/2026']
 		];
 		getFilledData(0, 0, 1, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4227,7 +4227,7 @@ $(function () {
 		clearData(0, 0, 7, 0);
 		// Case: The context menu property "Fill weekdays". Horizontal. Two selected cells. Reverse sequence. Type Mixed date.
 		testData = [
-			['01/01/2000 12:00', '01/02/2000']
+			['01/01/2026 12:00', '01/02/2026']
 		];
 		getFilledData(6, 0, 7, 0, testData, [0, 6]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4239,9 +4239,9 @@ $(function () {
 		expectedData = [['36518', '36521', '36522', '36523', '36524', '36525']];
 		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill weekends. Two selected cells. Reverse sequence. Type Mixed date.');
 		clearData(0, 0, 7, 0);
-		// Case: The context menu property "Fill weekdays". Vertical. One selected cell. Asc sequence. Type Date. 1900 year.
+		// Case: The context menu property "Fill weekdays". Vertical. One selected cell. Asc sequence. Type Date. 2026 year.
 		testData = [
-			['01/01/1900']
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4251,8 +4251,8 @@ $(function () {
 
 		autofillRange = getRange(0, 1, 0, 7);
 		expectedData = [['2'], ['3'], ['4'], ['5'], ['6'], ['9'], ['10']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill weekends. One selected cell. Asc sequence. Type Date. 1900 year.');
-		// Case: The context menu property "Fill weekdays". Horizontal. One selected cell. Reverse sequence. Type Date. 1900 year
+		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill weekends. One selected cell. Asc sequence. Type Date. 2026 year.');
+		// Case: The context menu property "Fill weekdays". Horizontal. One selected cell. Reverse sequence. Type Date. 2026 year
 		getFilledData(7, 0, 7, 0, testData, [0, 7]);
 		nType = oRightClickOptions.fillWeekdays;
 		wsView.activeFillHandle = getRange(7, 0, 0, 0);
@@ -4261,12 +4261,12 @@ $(function () {
 
 		autofillRange = getRange(0, 0, 6, 0);
 		expectedData = [['1', '1', '1', '1', '1', '1', '1']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill weekdays. One selected cell. Reverse sequence. Type Date. 1900 year.');
+		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill weekdays. One selected cell. Reverse sequence. Type Date. 2026 year.');
 		clearData(0, 0, 0, 7);
-		// Case: The context menu property "Fill weekdays". Vertical. Two selected cells. Asc sequence. Type Date. 1900 year
+		// Case: The context menu property "Fill weekdays". Vertical. Two selected cells. Asc sequence. Type Date. 2026 year
 		testData = [
-			['01/01/1900'],
-			['01/03/1900']
+			['01/01/2026'],
+			['01/03/2026']
 		];
 		getFilledData(0, 0, 0, 1, testData, [0, 0]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4276,11 +4276,11 @@ $(function () {
 
 		autofillRange = getRange(0, 2, 0, 7);
 		expectedData = [['5'], ['9'], ['11'], ['13'], ['17'], ['19']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill weekends. Two selected cells. Asc sequence. Type Date. 1900 year.');
+		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill weekends. Two selected cells. Asc sequence. Type Date. 2026 year.');
 		clearData(0, 0, 0, 7);
-		// Case: The context menu property "Fill weekdays". Horizontal. Two selected cells. Reverse sequence. Type Date. 1900 year
+		// Case: The context menu property "Fill weekdays". Horizontal. Two selected cells. Reverse sequence. Type Date. 2026 year
 		testData = [
-			['01/04/1900', '01/06/1900']
+			['01/04/2026', '01/06/2026']
 		];
 		getFilledData(6, 0, 7, 0, testData, [0, 6]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4290,14 +4290,14 @@ $(function () {
 
 		autofillRange = getRange(0, 0, 5, 0);
 		expectedData = [['4', '6', '4', '6', '4', '2']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill weekdays. Two selected cells. Reverse sequence. Type Date. 1900 year.');
+		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill weekdays. Two selected cells. Reverse sequence. Type Date. 2026 year.');
 		clearData(0, 0, 0, 7);
 
-		// Case: The context menu property "Fill weekdays". Vertical. Three selected cells. Asc sequence. Type Date. 1900 year
+		// Case: The context menu property "Fill weekdays". Vertical. Three selected cells. Asc sequence. Type Date. 2026 year
 		testData = [
-			['01/02/1900'],
-			['01/04/1900'],
-			['01/06/1900']
+			['01/02/2026'],
+			['01/04/2026'],
+			['01/06/2026']
 		];
 		getFilledData(0, 0, 0, 2, testData, [0, 0]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4307,12 +4307,12 @@ $(function () {
 
 		autofillRange = getRange(0, 3, 0, 7);
 		expectedData = [['10'], ['12'], ['16'], ['18'], ['20']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill weekdays. Three selected cells. Asc sequence. Type Date. 1900 year.');
+		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill weekdays. Three selected cells. Asc sequence. Type Date. 2026 year.');
 		clearData(0, 0, 0, 7);
 
-		// Case: The context menu property "Fill weekdays". Horizontal. Three selected cells. Reverse sequence. Type Date. 1900 year
+		// Case: The context menu property "Fill weekdays". Horizontal. Three selected cells. Reverse sequence. Type Date. 2026 year
 		testData = [
-			['01/09/1900', '01/11/1900', '01/13/1900']
+			['01/09/2026', '01/11/2026', '01/13/2026']
 		];
 		getFilledData(5, 0, 7, 0, testData, [0, 5]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4322,13 +4322,13 @@ $(function () {
 
 		autofillRange = getRange(0, 0, 4, 0);
 		expectedData = [['11','13', '9', '3','5']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill weekdays. Three selected cells. Reverse sequence. Type Date. 1900 year.');
+		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill weekdays. Three selected cells. Reverse sequence. Type Date. 2026 year.');
 		clearData(0, 0, 0, 7);
 		// Case: The context menu property "Fill weekdays". Vertical. Three selected cells. Negative case - incorrect sequence. Asc sequence. Type Date.
 		testData = [
-			['01/02/2000'],
-			['01/04/2000'],
-			['01/05/2000']
+			['01/02/2026'],
+			['01/04/2026'],
+			['01/05/2026']
 		];
 		getFilledData(0, 0, 0, 2, testData, [0, 0]);
 		nType = oRightClickOptions.fillWeekdays;
@@ -4353,7 +4353,7 @@ $(function () {
 		clearData(0, 0, 0, 7);
 		// Case: The context menu property "Fill months". Vertical.  One selected cell. Asc sequence. Type Date.
 		testData = [
-			['01/01/2000']
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4379,7 +4379,7 @@ $(function () {
 		clearData(0, 0, 0, 7);
 		// Case: The context menu property "Fill months". Horizontal. Two selected cells. Asc sequence. Type Date.
 		testData = [
-			['01/01/2000', '03/01/2000']
+			['01/01/2026', '03/01/2026']
 		];
 		getFilledData(0, 0, 1, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4405,9 +4405,9 @@ $(function () {
 		clearData(0, 0, 7, 0);
 		// Case: The context menu property "Fill months". Vertical. Three selected cells. Asc sequence. Type Date.
 		testData = [
-			['02/01/2000'],
-			['04/01/2000'],
-			['06/01/2000']
+			['02/01/2026'],
+			['04/01/2026'],
+			['06/01/2026']
 		];
 		getFilledData(0, 0, 0, 2, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4432,7 +4432,7 @@ $(function () {
 		clearData(0, 0, 0, 7);
 		// Case: The context menu property "Fill months". Horizontal. Three selected cells. Asc sequence. Negative case - incorrect sequence. Type Date.
 		testData = [
-			['01/01/2000', '03/01/2000', '06/01/2000']
+			['01/01/2026', '03/01/2026', '06/01/2026']
 		];
 		getFilledData(0, 0, 2, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4446,7 +4446,7 @@ $(function () {
 		clearData(0, 0, 7, 0);
 		// Case: The context menu property "Fill months". Horizontal. Three selected cells. Reverse sequence. Negative case - incorrect sequence. Type Date.
 		testData = [
-			['01/01/2000', '03/01/2000', '06/01/2000']
+			['01/01/2026', '03/01/2026', '06/01/2026']
 		];
 		getFilledData(5, 0, 7, 0, testData, [0, 5]);
 		nType = oRightClickOptions.fillMonths;
@@ -4460,8 +4460,8 @@ $(function () {
 		clearData(0, 0, 7, 0);
 		// Case: The context menu property "Fill months". Two selected cells. Vertical. Asc sequence. Type Date & Time.
 		testData = [
-			['01/01/2000 12:00'],
-			['03/01/2000 13:00']
+			['01/01/2026 12:00'],
+			['03/01/2026 13:00']
 		];
 		getFilledData(0, 0, 0, 1, testData, [0,0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4486,7 +4486,7 @@ $(function () {
 		clearData(0, 0, 0, 7);
 		// Case: The context menu property "Fill months". Horizontal. Three selected cells. Asc sequence. Type Mixed date.
 		testData = [
-			['02/01/2000 12:00', '04/01/2000', '06/01/2000 13:00']
+			['02/01/2026 12:00', '04/01/2026', '06/01/2026 13:00']
 		];
 		getFilledData(0, 0, 2, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4509,9 +4509,9 @@ $(function () {
 		expectedData = [['36251', '36312', '36373', '36434', '36495']];
 		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill months. Three selected cells. Reverse sequence. Type Mixed date.');
 		clearData(0, 0, 7, 0);
-		// Case: The context menu property "Fill months". Vertical. One selected cell. Asc sequence. Type Date. 1900 year.
+		// Case: The context menu property "Fill months". Vertical. One selected cell. Asc sequence. Type Date. 2026 year.
 		testData = [
-			['01/01/1900']
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4521,9 +4521,9 @@ $(function () {
 
 		autofillRange = getRange(0, 1, 0, 7);
 		expectedData = [['32'], ['61'], ['92'], ['122'], ['153'], ['183'], ['214']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill months. One selected cell. Asc sequence. Type Date. 1900 year');
+		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill months. One selected cell. Asc sequence. Type Date. 2026 year');
 		clearData(0, 0, 0, 7);
-		// Case: The context menu property "Fill months". Vertical. One selected cell. Reverse sequence. Type Date. 1900 year.
+		// Case: The context menu property "Fill months". Vertical. One selected cell. Reverse sequence. Type Date. 2026 year.
 		getFilledData(0, 7, 0, 7, testData, [7, 0]);
 		nType = oRightClickOptions.fillMonths;
 		wsView.activeFillHandle = getRange(0, 7, 0, 0);
@@ -4532,11 +4532,11 @@ $(function () {
 
 		autofillRange = getRange(0, 0, 0, 6);
 		expectedData = [['1'], ['1'], ['1'], ['1'], ['1'], ['1'], ['1']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill months. One selected cell. Reverse sequence. Type Date. 1900 year.');
+		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill months. One selected cell. Reverse sequence. Type Date. 2026 year.');
 		clearData(0, 0, 0, 7);
-		// Case: The context menu property "Fill months". Horizontal. Two selected cells. Asc sequence. Type Date. 1900 year.
+		// Case: The context menu property "Fill months". Horizontal. Two selected cells. Asc sequence. Type Date. 2026 year.
 		testData = [
-			['02/01/1900', '04/01/1900']
+			['02/01/2026', '04/01/2026']
 		];
 		getFilledData(0, 0, 1, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4546,11 +4546,11 @@ $(function () {
 
 		autofillRange = getRange(2, 0, 7, 0);
 		expectedData = [['153', '214', '275', '336', '398', '457']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill months. Two selected cells. Asc sequence. Type Date. 1900 year.');
+		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill months. Two selected cells. Asc sequence. Type Date. 2026 year.');
 		clearData(0, 0, 7, 0);
-		// Case: The context menu property "Fill months". Horizontal. Two selected cells. Reverse sequence. Type Date. 1900 year.
+		// Case: The context menu property "Fill months". Horizontal. Two selected cells. Reverse sequence. Type Date. 2026 year.
 		testData = [
-			['06/01/1900', '08/01/1900']
+			['06/01/2026', '08/01/2026']
 		];
 		getFilledData(6, 0, 7, 0, testData, [0, 6]);
 		nType = oRightClickOptions.fillMonths;
@@ -4560,11 +4560,11 @@ $(function () {
 
 		autofillRange = getRange(0, 0, 5, 0);
 		expectedData = [['153', '214', '153', '214', '32', '92']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill months. Two selected cells. Reverse sequence. Type Date. 1900 year.');
+		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill months. Two selected cells. Reverse sequence. Type Date. 2026 year.');
 		clearData(0, 0, 7, 0);
 		// Case: The context menu property "Fill years". Vertical. One selected cell. Asc sequence. Type Date.
 		testData = [
-			['01/01/2000']
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillYears;
@@ -4589,7 +4589,7 @@ $(function () {
 		clearData(0, 0, 0, 7);
 		// Case: The context menu property "Fill years". Horizontal. Two selected cells. Asc sequence. Type Date.
 		testData = [
-			['01/01/2000', '01/01/2002']
+			['01/01/2026', '01/01/2026']
 		];
 		getFilledData(0, 0, 1, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillYears;
@@ -4614,9 +4614,9 @@ $(function () {
 		clearData(0, 0, 0, 7);
 		// Case: The context menu property "Fill years". Vertical. Three selected cells. Asc sequence. Type Date.
 		testData = [
-			['01/01/2000'],
-			['01/01/2025'],
-			['01/01/2050']
+			['01/01/2026'],
+			['01/01/2026'],
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 2, testData, [0, 0]);
 		nType = oRightClickOptions.fillYears;
@@ -4636,12 +4636,12 @@ $(function () {
 		api.asc_FillCells(nType);
 
 		autofillRange = getRange(0, 0, 0, 4);
-		expectedData = [['45658'], ['1'], ['9133'], ['18264'], ['27395']];
+		expectedData = [['45658'], ['1'], ['2026'], ['18264'], ['27395']];
 		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill years. Three selected cells. Reverse sequence. Type Date.');
 		clearData(0, 0, 0, 7);
-		// Case: The context menu property "Fill years". Horizontal. One selected cell. Asc sequence. Type Date. 1900 year.
+		// Case: The context menu property "Fill years". Horizontal. One selected cell. Asc sequence. Type Date. 2026 year.
 		testData = [
-			['01/01/1900']
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillYears;
@@ -4650,10 +4650,10 @@ $(function () {
 		api.asc_FillCells(nType);
 
 		autofillRange = getRange(1, 0, 7, 0);
-		expectedData = [['367', '732', '1097', '1462', '1828', '2193', '2558']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill years. One selected cell. Asc sequence. Type Date. 1900 year.');
+		expectedData = [['367', '732', '2026', '2026', '2026', '2026', '2026']];
+		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill years. One selected cell. Asc sequence. Type Date. 2026 year.');
 		clearData(0, 0, 7, 0);
-		// Case: The context menu property "Fill years". Horizontal. One selected cell. Reverse sequence. Type Date. 1900 year.
+		// Case: The context menu property "Fill years". Horizontal. One selected cell. Reverse sequence. Type Date. 2026 year.
 		getFilledData(7, 0, 7, 0, testData, [0, 7]);
 		nType = oRightClickOptions.fillYears;
 		wsView.activeFillHandle = getRange(7, 0, 0, 0);
@@ -4662,12 +4662,12 @@ $(function () {
 
 		autofillRange = getRange(0, 0, 6, 0);
 		expectedData = [['1', '1', '1', '1', '1', '1', '1']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill years. One selected cell. Reverse sequence. Type Date. 1900 year.');
+		autofillData(assert, autofillRange, expectedData, 'Autofill Rows. Context menu - Fill years. One selected cell. Reverse sequence. Type Date. 2026 year.');
 		clearData(0, 0, 7, 0);
-		// Case: The context menu property "Fill years".  Vertical. Two selected cells. Asc sequence. Type Date. 1900 year
+		// Case: The context menu property "Fill years".  Vertical. Two selected cells. Asc sequence. Type Date. 2026 year
 		testData = [
-			['01/01/1900'],
-			['01/01/1902']
+			['01/01/2026'],
+			['01/01/2026']
 		];
 		getFilledData(0, 0, 0, 1, testData, [0, 0]);
 		nType = oRightClickOptions.fillYears;
@@ -4676,10 +4676,10 @@ $(function () {
 		api.asc_FillCells(nType);
 
 		autofillRange = getRange(0, 2, 0, 7);
-		expectedData = [['1462'], ['2193'], ['2923'], ['3654'], ['4384'], ['5115']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill years. Two selected cells. Asc sequence. Type Date. 1900 year.');
+		expectedData = [['2026'], ['2026'], ['2026'], ['2026'], ['2026'], ['2026']];
+		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill years. Two selected cells. Asc sequence. Type Date. 2026 year.');
 		clearData(0, 0, 0, 7);
-		// Case: The context menu property "Fill years".  Vertical. Two selected cells. Asc sequence. Type Date. 1900 year
+		// Case: The context menu property "Fill years".  Vertical. Two selected cells. Asc sequence. Type Date. 2026 year
 		getFilledData(0, 6, 0, 7, testData, [6, 0]);
 		nType = oRightClickOptions.fillYears;
 		wsView.activeFillHandle = getRange(0, 7, 0, 0);
@@ -4688,11 +4688,11 @@ $(function () {
 
 		autofillRange = getRange(0, 0, 0, 5)
 		expectedData = [['1'], ['732'], ['1'], ['732'], ['1'], ['732']];
-		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill years. Two selected cells. Reverse sequence. Type Date. 1900 year.');
+		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill years. Two selected cells. Reverse sequence. Type Date. 2026 year.');
 		clearData(0, 0, 0, 7);
 		// Case: The context menu property "Fill series". Horizontal. Two selected cells. Asc sequence. Type Date.
 		testData = [
-			['01/01/2000', '04/01/2000']
+			['01/01/2026', '04/01/2026']
 		];
 		getFilledData(0, 0, 1, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillSeries;
@@ -4706,9 +4706,9 @@ $(function () {
 		clearData(0, 0, 7, 0);
 		// Case: The context menu property "Fill months". Vertical. Three selected cells. Asc sequence. Type Date. Diff days.
 		testData = [
-			['01/01/2000'],
-			['01/02/2000'],
-			['01/03/2000']
+			['01/01/2026'],
+			['01/02/2026'],
+			['01/03/2026']
 		];
 		getFilledData(0, 0, 0, 2, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4733,7 +4733,7 @@ $(function () {
 		clearData(0, 0, 0, 8);
 		// Case: The context menu property "Fill years". Horizontal. Three selected cells. Asc sequence. Type Date. Diff days.
 		testData = [
-			['01/01/2000', '01/02/2000', '01/03/2000']
+			['01/01/2026', '01/02/2026', '01/03/2026']
 		]
 		getFilledData(0, 0, 2, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillYears;
@@ -4757,8 +4757,8 @@ $(function () {
 		clearData(0, 0, 8, 0);
 		// Case: The context menu property "Fill months". Vertical. Two selected cells. Asc sequence. Type Date. Diff days.
 		testData = [
-			['01/01/2000'],
-			['01/30/2000']
+			['01/01/2026'],
+			['01/30/2026']
 		];
 		getFilledData(0, 0, 0, 1, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4782,7 +4782,7 @@ $(function () {
 		clearData(0, 0, 0, 8);
 		// Case: The context menu property "Fill months". Horizontal. Two selected cells. Asc sequence. Type Date. Diff days.
 		testData = [
-			['01/01/2000', '01/31/2000']
+			['01/01/2026', '01/31/2026']
 		];
 		getFilledData(0, 0, 1, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4806,8 +4806,8 @@ $(function () {
 		clearData(0, 0, 8, 0);
 		// Case: The context menu property "Fill years". Vertical. Two selected cells. Asc sequence. Type Date. Diff days.
 		testData = [
-			['01/01/2000'],
-			['01/31/2000']
+			['01/01/2026'],
+			['01/31/2026']
 		];
 		getFilledData(0, 0, 0, 1, testData, [0, 0]);
 		nType = oRightClickOptions.fillYears;
@@ -4831,7 +4831,7 @@ $(function () {
 		clearData(0, 0, 0, 8);
 		// Case: The context menu property "Fill years". Horizontal. Two selected cells. Asc sequence. Type Date. Diff months.
 		testData = [
-			['01/01/2000', '02/01/2000']
+			['01/01/2026', '02/01/2026']
 		];
 		getFilledData(0, 0, 1, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillYears;
@@ -4855,9 +4855,9 @@ $(function () {
 		clearData(0, 0, 8, 0);
 		// Case: The context menu property "Fill months". Vertical. Three selected cells. Asc sequence. Type Date. Negative case - incorrect sequence.
 		testData = [
-			['01/12/2000'],
-			['01/13/2000'],
-			['01/15/2000']
+			['01/12/2026'],
+			['01/13/2026'],
+			['01/15/2026']
 		];
 		getFilledData(0, 0, 0, 2, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4901,7 +4901,7 @@ $(function () {
 		clearData(0, 0, 0, 8);
 		// Case: The context menu property "Fill months". Horizontal. Three selected cells. Asc sequence. Type Date & Time. Negative case - incorrect sequence.
 		testData = [
-			['01/01/2000 12:00', '01/02/2000 13:00', '01/04/2000 14:00']
+			['01/01/2026 12:00', '01/02/2026 13:00', '01/04/2026 14:00']
 		];
 		getFilledData(0, 0, 2, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4945,8 +4945,8 @@ $(function () {
 		clearData(0, 0, 8, 0);
 		// Case: The context menu property "Fill months". Vertical. Two selected cells. Asc sequence. Type Date & Time. Diff time.
 		testData = [
-			['01/01/2000 12:00'],
-			['01/01/2000 13:00']
+			['01/01/2026 12:00'],
+			['01/01/2026 13:00']
 		];
 		getFilledData(0, 0, 0, 1, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths;
@@ -4988,9 +4988,9 @@ $(function () {
 		expectedData = [['35065'], ['35431'], ['35431'], ['35796'], ['35796'], ['36161'], ['36161']];
 		autofillData(assert, autofillRange, expectedData, 'Autofill Columns. Context menu - Fill years. Two selected cells. Reverse sequence. Type Date & Time. Diff time.');
 		clearData(0, 0, 0, 8);
-		// Case: The context menu property "Fill months". Horizontal. One selected cells. Asc sequence. Type Date. The junction between February and March. Case 1900
+		// Case: The context menu property "Fill months". Horizontal. One selected cells. Asc sequence. Type Date. The junction between February and March. Case 2026
 		testData = [
-			['01/31/1900']
+			['01/31/2026']
 		];
 		getFilledData(0, 0, 0, 0, testData, [0, 0]);
 		nType = oRightClickOptions.fillMonths
@@ -5000,7 +5000,7 @@ $(function () {
 
 		autofillRange = getRange(1, 0, 3, 0);
 		expectedData = [['59', '91', '121']];
-		autofillData(assert, autofillRange, expectedData, "Autofill Columns. Context menu - Fill months. One selected cells. Asc sequence. Type Date. The junction between February and March. Case 1900");
+		autofillData(assert, autofillRange, expectedData, "Autofill Columns. Context menu - Fill months. One selected cells. Asc sequence. Type Date. The junction between February and March. Case 2026");
 		clearData(0, 0, 3, 0);
 	});
 	QUnit.test('Toolbar: Fill -> "Up/Down, Left/Right"', function(assert) {

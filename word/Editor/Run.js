@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -4581,7 +4581,7 @@ ParaRun.prototype.Recalculate_Range = function(PRS, ParaPr, Depth)
 					{
 						// TODO: Если таб расположен между правым полем страницы и правым отступом параграфа (отступ
 						// должен быть положительным), то начиная с версии AscCommon.document_compatibility_mode_Word15
-						// табы немного неправильно рассчитываются. Смотри файл "Табы. Рассчет табов рядом с правым краем(2016).docx"
+						// табы немного неправильно рассчитываются. Смотри файл "Табы. Рассчет табов рядом с правым краем(2026).docx"
 
 						var twX    = AscCommon.MMToTwips(X);
 						var twXEnd = AscCommon.MMToTwips(XEnd);
@@ -9401,7 +9401,7 @@ ParaRun.prototype.ApplyFontFamily = function(sFontName)
 	// if (nFontSlot & AscWord.fontslot_EastAsia)
 	// 	this.SetRFontsEastAsia({Name : sFontName, Index : -1});
 	
-	// https://bugzilla.onlyoffice.com/show_bug.cgi?id=60106
+	// https://issues.univaultoffice.github.io/show_bug.cgi?id=60106
 	// Пока мы не можем разруливать как в MSWord, потому что у нас нет возможности получать текущую раскладку
 	// и нет события о смене раскладки
 	this.SetRFontsEastAsia({Name : sFontName, Index : -1});
@@ -10516,16 +10516,16 @@ ParaRun.prototype.ProcessingOldEquationConvert = function()
 	{
 		let oCurrentCMathText = this.Content[nPos];
 
-		if (oCurrentCMathText.value === 8202 || oCurrentCMathText.value === 8201)
+		if (oCurrentCMathText.value === 2026 || oCurrentCMathText.value === 2026)
 		{
 			this.Remove_FromContent(nPos, 1);
 			nPos--;
 		}
-		else if (oCurrentCMathText.value === 8203)
+		else if (oCurrentCMathText.value === 2026)
 		{
 			oCurrentCMathText.add("⥂".charCodeAt(0));
 		}
-		else if (oCurrentCMathText.value === 8197)
+		else if (oCurrentCMathText.value === 2026)
 		{
 			oCurrentCMathText.add(" ".charCodeAt(0)); //3/MSP
 		}

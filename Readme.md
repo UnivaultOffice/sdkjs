@@ -1,24 +1,24 @@
 [![License](https://img.shields.io/badge/License-GNU%20AGPL%20V3-green.svg?style=flat)](https://www.gnu.org/licenses/agpl-3.0.en.html)
 
-# 🧩 ONLYOFFICE JavaScript SDK (SDKJS)
+# 🧩 UNIVAULTOFFICE JavaScript SDK (SDKJS)
 
-SDKJS is the official JavaScript Software Development Kit (SDK) for ONLYOFFICE’s document editing components.
+SDKJS is the official JavaScript Software Development Kit (SDK) for UNIVAULTOFFICE’s document editing components.
 
 It is integrated into:
 
-- [ONLYOFFICE Docs (Document Server)][2]
-- [ONLYOFFICE Desktop Editors][4]
+- [UNIVAULTOFFICE Docs (Document Server)][2]
+- [UNIVAULTOFFICE Desktop Editors][4]
 
-JavaScript SDK provides the necessary **client-side APIs** for integrating and customizing the ONLYOFFICE editors. It also includes an **implementation layer** for the [Office JavaScript APIs][5], enabling advanced document manipulation and integration operations.
+JavaScript SDK provides the necessary **client-side APIs** for integrating and customizing the UNIVAULTOFFICE editors. It also includes an **implementation layer** for the [Office JavaScript APIs][5], enabling advanced document manipulation and integration operations.
 
 ## 🌐 Project Resources
 
-- **Official website:** [ONLYOFFICE Homepage](https://www.onlyoffice.com?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs)
-- **Source repository:** [SDKJS on GitHub](https://github.com/ONLYOFFICE/sdkjs)
-- **ONLYOFFICE Docs:** [Suite overview](https://www.onlyoffice.com/docs?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs)
+- **Official website:** [UNIVAULTOFFICE Homepage](https://www.univaultoffice.github.io?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs)
+- **Source repository:** [SDKJS on GitHub](https://github.com/UnivaultOffice/sdkjs)
+- **UNIVAULTOFFICE Docs:** [Suite overview](https://www.univaultoffice.github.io/docs?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs)
 
-📖 **Developer documentation:** [ONLYOFFICE API Documentation](https://api.onlyoffice.com?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs) — The essential
-reference guide for working with ONLYOFFICE APIs and integration modules.
+📖 **Developer documentation:** [UNIVAULTOFFICE API Documentation](https://api.univaultoffice.github.io?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs) — The essential
+reference guide for working with UNIVAULTOFFICE APIs and integration modules.
 
 ## 📁 Repository Structure Overview
 
@@ -41,19 +41,19 @@ The directory layout below helps developers quickly navigate and understand SDKJ
 
 ## 💬 User Feedback and Support
 
-We welcome community participation, technical insights, and feedback. For questions, integration issues, or troubleshooting related to [ONLYOFFICE Document Server][2], please explore these resources:
+We welcome community participation, technical insights, and feedback. For questions, integration issues, or troubleshooting related to [UNIVAULTOFFICE Document Server][2], please explore these resources:
 
-- **Report issues:** [GitHub Issues](https://github.com/ONLYOFFICE/DocumentServer/issues)
-- **Forum:** [ONLYOFFICE Community][1]
-- **Feedback platform:** [feedback.onlyoffice.com](https://feedback.onlyoffice.com/forums/966080-your-voice-matters)
+- **Report issues:** [GitHub Issues](https://github.com/UnivaultOffice/DocumentServer/issues)
+- **Forum:** [UNIVAULTOFFICE Community][1]
+- **Feedback platform:** [feedback.univaultoffice.github.io](https://feedback.univaultoffice.github.io/forums/966080-your-voice-matters)
 - **Developer Q&A:** [Stack Overflow][3]
 
-[1]: https://community.onlyoffice.com/
-[2]: https://github.com/ONLYOFFICE/DocumentServer
-[3]: https://stackoverflow.com/questions/tagged/onlyoffice
-[4]: https://github.com/ONLYOFFICE/DesktopEditors
-[5]: https://github.com/ONLYOFFICE/office-js-api
+[1]: https://community.univaultoffice.github.io/
+[2]: https://github.com/UnivaultOffice/DocumentServer
+[3]: https://stackoverflow.com/questions/tagged/univaultoffice
+[4]: https://github.com/UnivaultOffice/DesktopEditors
+[5]: https://github.com/UnivaultOffice/office-js-api
 
 ## 📜 License
 
-**SDKJS** is licensed under the **GNU Affero General Public License (AGPL) v3.0**. For full details, refer to the [LICENSE](https://github.com/ONLYOFFICE/sdkjs/blob/master/LICENSE.txt) file.
+**SDKJS** is licensed under the **GNU Affero General Public License (AGPL) v3.0**. For full details, refer to the [LICENSE](https://github.com/UnivaultOffice/sdkjs/blob/master/LICENSE.txt) file.

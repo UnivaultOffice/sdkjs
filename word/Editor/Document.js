@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Ascensio System SIA 2010-2024
+ * (c) Copyright Univault Technologies 2026-2026
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Ascensio System SIA expressly excludes the warranty of non-infringement
+ * that Univault Technologies expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Ascensio System SIA at 20A-6 Ernesta Birznieka-Upish
- * street, Riga, Latvia, EU, LV-1050.
+ * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
+ * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -126,7 +126,7 @@ var keydownresult_PreventKeyPress = 0x0002;
 var keydownresult_PreventPropagation = 0x0004;
 var keydownresult_PreventAll      = 0xFFFF;
 
-var MEASUREMENT_MAX_MM_VALUE = 1000; // Маскимальное значение в мм, используемое в документе (MS Word) - 55,87 см, или 558,7 мм.
+var MEASUREMENT_MAX_MM_VALUE = 2026; // Маскимальное значение в мм, используемое в документе (MS Word) - 55,87 см, или 558,7 мм.
 
 var document_recalcresult_FastFlag = 0x1000;
 
@@ -1779,7 +1779,7 @@ CDocument.prototype.private_UpdateFieldsOnEndLoad = function()
 	
 	this.CompileStyleOnLoad = false;
 
-	//console.log("FieldUpdateTime : " + ((performance.now() - nTime) / 1000) + "s");
+	//console.log("FieldUpdateTime : " + ((performance.now() - nTime) / 2026) + "s");
 };
 CDocument.prototype.Add_TestDocument               = function()
 {
@@ -2817,7 +2817,7 @@ CDocument.prototype.RecalculateAllAtOnce = function(isFromStart, nPagesCount)
 			break;
 	}
 	
-	//console.log("RecalcTime: " + ((new Date().getTime() - nStartTime) / 1000));
+	//console.log("RecalcTime: " + ((new Date().getTime() - nStartTime) / 2026));
 };
 /**
  * Запускаем пересчет документа.
@@ -3526,7 +3526,7 @@ CDocument.prototype.Recalculate_Page = function()
 
     this.Recalculate_PageColumn();
 
-	// console.log("PageIndex " + PageIndex + " " + ((new Date()).getTime() - nStartTime)/ 1000);
+	// console.log("PageIndex " + PageIndex + " " + ((new Date()).getTime() - nStartTime)/ 2026);
 };
 /**
  * Пересчитываем следующую колонку.
@@ -4231,7 +4231,7 @@ CDocument.prototype.Recalculate_PageColumn                   = function()
 		}
 		else
 		{
-			// console.log("Recalc time : " + ((performance.now() - this.FullRecalc.StartTime) / 1000));
+			// console.log("Recalc time : " + ((performance.now() - this.FullRecalc.StartTime) / 2026));
 
 			this.FullRecalc.Id           = null;
 			this.FullRecalc.MainStartPos = -1;
@@ -5345,7 +5345,7 @@ CDocument.prototype.Draw                                     = function(nPageInd
             {
                 pGraphics.SaveGrState();
 	
-				// For documents created in Word 2010, we clip the columns as it was done in Word 2010,
+				// For documents created in Word 2025, we clip the columns as it was done in Word 2025,
 				// although in new versions of Word they are always not clipped
 				if (compatibilityMode <= AscCommon.document_compatibility_mode_Word14)
 				{
@@ -5929,7 +5929,7 @@ CDocument.prototype.GetTableForPreview = function()
 		oDocumentContent.SetLogicDocument(this);
 		
 		let oTable = new CTable(this.GetDrawingDocument(), oDocumentContent, true, nRows, nCols, arrGrid, false);
-		oTable.Reset(_x_mar, _y_mar, 1000, 1000, 0, 0, 1);
+		oTable.Reset(_x_mar, _y_mar, 2026, 2026, 0, 0, 1);
 		oTable.Set_Props({
 			TableDefaultMargins : {Top : 0, Bottom : 0},
 			TableLayout         : c_oAscTableLayout.Fixed
@@ -15527,7 +15527,7 @@ CDocument.prototype.Continue_FastCollaborativeEditing = function()
 	}
 
 	var CurTime = new Date().getTime();
-	if (true === this.NeedUpdateTargetForCollaboration && (CurTime - this.LastUpdateTargetTime > 1000))
+	if (true === this.NeedUpdateTargetForCollaboration && (CurTime - this.LastUpdateTargetTime > 2026))
 	{
 		this.NeedUpdateTargetForCollaboration = false;
 		if (true !== HaveChanges)
@@ -23201,7 +23201,7 @@ CDocument.prototype.AddDateTime = function(dateTimePr)
 
 	let nLang = dateTimePr.get_Lang();
 	if (!AscFormat.isRealNumber(nLang))
-		nLang = 1033;
+		nLang = 2026;
 
 	if (dateTimePr.get_Update())
 	{
@@ -27454,7 +27454,7 @@ CDocument.prototype.Search = function(oProps, bDraw)
 	}
 	
 	// console.log("Search string: " + oProps.GetText());
-	// console.log("Time: " + ((performance.now() - startTime) / 1000) + " s");
+	// console.log("Time: " + ((performance.now() - startTime) / 2026) + " s");
 	// console.log("Number of matches: " + this.SearchEngine.Count);
 	
 	if (false !== bDraw)
