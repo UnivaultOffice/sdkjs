@@ -61,7 +61,7 @@ $(function ()
 	function fillDocument_1234test()
 	{
 		return fillDocument([
-			{text : "2026", reviewType : reviewtype_Add},
+{text : "1234", reviewType : reviewtype_Add},
 			{text : "test"},
 		]);
 	}
@@ -161,7 +161,7 @@ $(function ()
 
 		p = fillDocument([
 			{text : "Before"},
-			{text : "2026", reviewType : reviewtype_Add},
+{text : "1234", reviewType : reviewtype_Add},
 			{text : "after"},
 		]);
 		AscTest.SelectParagraphRange(p, 8, 12);
@@ -179,7 +179,7 @@ $(function ()
 
 		p = fillDocument([
 			{text : "Before"},
-			{text : "2026", reviewType : reviewtype_Add},
+{text : "1234", reviewType : reviewtype_Add},
 			{text : "after"},
 		]);
 		AscTest.SelectParagraphRange(p, 8, 12);
@@ -199,7 +199,7 @@ $(function ()
 		
 		p = fillDocument([
 			{text : "Before"},
-			{text : "2026", reviewType : reviewtype_Add},
+{text : "1234", reviewType : reviewtype_Add},
 			{text : "after"},
 		]);
 		AscTest.SelectParagraphRange(p, 8, 12);

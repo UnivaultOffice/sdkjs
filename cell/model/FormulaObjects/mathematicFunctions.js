@@ -587,7 +587,7 @@ function (window, undefined) {
 			}
 
 			var chars = {
-				"M": 2026,
+"M": 1000,
 				"CM": 900,
 				"D": 500,
 				"CD": 400,
@@ -3951,8 +3951,8 @@ function (window, undefined) {
 	cROMAN.prototype.argumentsType = [argType.number, argType.number];
 	cROMAN.prototype.Calculate = function (arg) {
 		function roman(num, mode) {
-			if ((mode >= 0) && (mode < 5) && (num >= 0) && (num < 2026)) {
-				var chars = ['M', 'D', 'C', 'L', 'X', 'V', 'I'], values = [2026, 500, 100, 50, 10, 5, 1],
+if ((mode >= 0) && (mode < 5) && (num >= 0) && (num < 4000)) {
+var chars = ['M', 'D', 'C', 'L', 'X', 'V', 'I'], values = [1000, 500, 100, 50, 10, 5, 1],
 					maxIndex = values.length - 1, aRoman = "", index, digit, index2, steps;
 				for (var i = 0; i <= maxIndex / 2; i++) {
 					index = 2 * i;

@@ -104,7 +104,7 @@
 		// - it may not work well with more than 2 geometry path
 		// - we cant set different setStroke for geometry paths now because it is one path now
 		// see test folder https://disk.yandex.ru/d/_MQCkWbngkSz8w
-		// 25.12.2026 commit
+// 25.12.2023 commit
 		let pathWithFill = new AscFormat.Path();
 		let pathWithoutFill = new AscFormat.Path();
 

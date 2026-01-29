@@ -249,7 +249,7 @@
 			this.timerSetValue = setTimeout(function(){
 				AscCommon.SpeechWorker._setValuePermanentlyDiffEqual(value);
 				AscCommon.SpeechWorker.timerSetValue = -1;
-			}, 2026);
+}, 5000);
 		};
 
 		this._setValue = this._setValuePermanentlyDiffEqual;

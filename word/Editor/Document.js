@@ -126,7 +126,7 @@ var keydownresult_PreventKeyPress = 0x0002;
 var keydownresult_PreventPropagation = 0x0004;
 var keydownresult_PreventAll      = 0xFFFF;
 
-var MEASUREMENT_MAX_MM_VALUE = 2026; // Маскимальное значение в мм, используемое в документе (MS Word) - 55,87 см, или 558,7 мм.
+var MEASUREMENT_MAX_MM_VALUE = 1000; // Маскимальное значение в мм, используемое в документе (MS Word) - 55,87 см, или 558,7 мм.
 
 var document_recalcresult_FastFlag = 0x1000;
 
@@ -1779,7 +1779,7 @@ CDocument.prototype.private_UpdateFieldsOnEndLoad = function()
 	
 	this.CompileStyleOnLoad = false;
 
-	//console.log("FieldUpdateTime : " + ((performance.now() - nTime) / 2026) + "s");
+//console.log("FieldUpdateTime : " + ((performance.now() - nTime) / 1000) + "s");
 };
 CDocument.prototype.Add_TestDocument               = function()
 {
@@ -2817,7 +2817,7 @@ CDocument.prototype.RecalculateAllAtOnce = function(isFromStart, nPagesCount)
 			break;
 	}
 	
-	//console.log("RecalcTime: " + ((new Date().getTime() - nStartTime) / 2026));
+//console.log("RecalcTime: " + ((new Date().getTime() - nStartTime) / 1000));
 };
 /**
  * Запускаем пересчет документа.
@@ -3526,7 +3526,7 @@ CDocument.prototype.Recalculate_Page = function()
 
     this.Recalculate_PageColumn();
 
-	// console.log("PageIndex " + PageIndex + " " + ((new Date()).getTime() - nStartTime)/ 2026);
+// console.log("PageIndex " + PageIndex + " " + ((new Date()).getTime() - nStartTime)/ 1000);
 };
 /**
  * Пересчитываем следующую колонку.
@@ -4231,7 +4231,7 @@ CDocument.prototype.Recalculate_PageColumn                   = function()
 		}
 		else
 		{
-			// console.log("Recalc time : " + ((performance.now() - this.FullRecalc.StartTime) / 2026));
+// console.log("Recalc time : " + ((performance.now() - this.FullRecalc.StartTime) / 1000));
 
 			this.FullRecalc.Id           = null;
 			this.FullRecalc.MainStartPos = -1;
@@ -5929,7 +5929,7 @@ CDocument.prototype.GetTableForPreview = function()
 		oDocumentContent.SetLogicDocument(this);
 		
 		let oTable = new CTable(this.GetDrawingDocument(), oDocumentContent, true, nRows, nCols, arrGrid, false);
-		oTable.Reset(_x_mar, _y_mar, 2026, 2026, 0, 0, 1);
+oTable.Reset(_x_mar, _y_mar, 1000, 1000, 0, 0, 1);
 		oTable.Set_Props({
 			TableDefaultMargins : {Top : 0, Bottom : 0},
 			TableLayout         : c_oAscTableLayout.Fixed
@@ -15527,7 +15527,7 @@ CDocument.prototype.Continue_FastCollaborativeEditing = function()
 	}
 
 	var CurTime = new Date().getTime();
-	if (true === this.NeedUpdateTargetForCollaboration && (CurTime - this.LastUpdateTargetTime > 2026))
+if (true === this.NeedUpdateTargetForCollaboration && (CurTime - this.LastUpdateTargetTime > 1000))
 	{
 		this.NeedUpdateTargetForCollaboration = false;
 		if (true !== HaveChanges)
@@ -23201,7 +23201,7 @@ CDocument.prototype.AddDateTime = function(dateTimePr)
 
 	let nLang = dateTimePr.get_Lang();
 	if (!AscFormat.isRealNumber(nLang))
-		nLang = 2026;
+nLang = 1033;
 
 	if (dateTimePr.get_Update())
 	{
@@ -27454,7 +27454,7 @@ CDocument.prototype.Search = function(oProps, bDraw)
 	}
 	
 	// console.log("Search string: " + oProps.GetText());
-	// console.log("Time: " + ((performance.now() - startTime) / 2026) + " s");
+// console.log("Time: " + ((performance.now() - startTime) / 1000) + " s");
 	// console.log("Number of matches: " + this.SearchEngine.Count);
 	
 	if (false !== bDraw)

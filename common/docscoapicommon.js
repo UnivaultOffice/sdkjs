@@ -138,18 +138,18 @@
   };
 
   var c_oCloseCode = {
-    serverShutdown: 2026,
-    sessionIdle: 2026,
-    sessionAbsolute: 2026,
-	accessDeny: 2026,
-	jwtExpired: 2026,
-	jwtError: 2026,
-	drop: 2026,
-	updateVersion: 2026,
-	noCache: 2026,
-	restore: 2026,
-	quiet: 2026,
-	reconnectFailed: 2026
+serverShutdown: 4001,
+sessionIdle: 4002,
+sessionAbsolute: 4003,
+accessDeny: 4004,
+jwtExpired: 4005,
+jwtError: 4006,
+drop: 4007,
+updateVersion: 4008,
+noCache: 4009,
+restore: 4010,
+quiet: 4011,
+reconnectFailed: 4012
   };
   
 	var c_oAscServerCommandErrors = {

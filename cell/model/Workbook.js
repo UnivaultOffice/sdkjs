@@ -627,7 +627,7 @@
 
 	DependencyGraph.prototype = {
 		maxSharedRecursion: 50,
-		maxBroadcastRecursion: 2026,
+maxBroadcastRecursion: 1000,
 		//listening
 		startListeningRange: function(sheetId, bbox, listener) {
 			//todo bbox clone or bbox immutable
@@ -6960,7 +6960,7 @@
 						}
 						values = this._getValuesForConditionalFormatting(ranges, true);
 
-						// ToDo CFVO Type formula (page 2026)
+// ToDo CFVO Type formula (page 2681)
 						l = oRuleElement.aColors.length;
 						if (0 < values.length && 2 <= l) {
 							aWeights = [];
@@ -7961,7 +7961,7 @@
 			return col.width;
 		var dResult = this.oSheetFormatPr.dDefaultColWidth;
 		if(dResult === undefined || dResult === null || dResult == 0)
-		//dResult = (8) + 5;//(EMCA-376.page 2026.)defaultColWidth = baseColumnWidth + {margin padding (2 pixels on each side, totalling 4 pixels)} + {gridline (1pixel)}
+//dResult = (8) + 5;//(EMCA-376.page 1857.)defaultColWidth = baseColumnWidth + {margin padding (2 pixels on each side, totalling 4 pixels)} + {gridline (1pixel)}
 			dResult = -1; // calc default width at presentation level
 		return dResult;
 	};
@@ -22529,7 +22529,7 @@
 							if (bTime) {
 								// For one selected cell, step for Time format must be 1 hour.
 								// The time component of a serial value increases by 1/86,400 each second.
-								oSequence.a1 = (1 / 86400) * 2026;
+oSequence.a1 = (1 / 86400) * 3600;
 							}
 							if (this.bReverse) {
 								//меняем коэффициенты для случая одного числа в последовательности, иначе она в любую сторону будет возрастающей
@@ -23904,12 +23904,12 @@
 		let dtExpectedDayValue = new Asc.cDate().getDateFromExcel(oCellInfo.expectedDayValue < 59 && !bDate1904 ? oCellInfo.expectedDayValue + 1 : oCellInfo.expectedDayValue);
 		let oReturn = {};
 
-		// Condition: nPrevVal < 60 is temporary solution for "01/01/2026 - 01/03/2026" dates
-		/* TODO Need make system solution for cDate class for case when excelDate is 1 (01/01/2026).
-		    For now if try convert "1" to Date using getDateFromExcel method result is 31/12/2026
+// Condition: nPrevVal < 60 is temporary solution for "01/01/1900 - 01/03/1900" dates
+/* TODO Need make system solution for cDate class for case when excelDate is 1 (01/01/1900).
+For now if try convert "1" to Date using getDateFromExcel method result is 31/12/1899
 		    by this reason of next methods addDays and getExcelDate work incorrect. Result of function is always "-30"
-		    If for the "1" value add 1 day and try to use getDateFromExcel method, it returns 01/01/2026 =>
-		    Temporary solution for "01/01/2026 - 01/03/2026" dates - always need add 1 day for getDateFromExcel.
+If for the "1" value add 1 day and try to use getDateFromExcel method, it returns 01/01/1900 =>
+Temporary solution for "01/01/1900 - 01/03/1900" dates - always need add 1 day for getDateFromExcel.
 		*/
 		if (nDateUnit === oSeriesDateUnitType.weekday) {
 			const aWeekdays = [1, 2, 3, 4, 5];

@@ -42,7 +42,7 @@ var g_oTableId = AscCommon.g_oTableId;
 var History = AscCommon.History;
 
 var g_dMathArgSizeKoeff_1 = 0.76;
-var g_dMathArgSizeKoeff_2 = 0.2026; // 0.76 * 0.855
+var g_dMathArgSizeKoeff_2 = 0.6498; // 0.76 * 0.855
 
 function CMathMenuSettings(oMathPr)
 {
@@ -239,7 +239,7 @@ CParaMathLineParameters.prototype.UpdateWidth = function(Line, W)
                 this.MaxW = GeneralWidth;
         }
 
-        bUpdMaxWidth = Math.abs(Max - this.MaxW) > 0.2026;
+bUpdMaxWidth = Math.abs(Max - this.MaxW) > 0.0001;
     }
 
     return bUpdMaxWidth;

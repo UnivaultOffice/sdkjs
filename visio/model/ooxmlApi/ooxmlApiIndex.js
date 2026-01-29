@@ -68,7 +68,7 @@
 
 		// <Text><cp IX='0'/><pp IX='0'/>Page <fld IX='0'>21</fld>\r\n</Text>
 		// <Text><cp IX='0'/><fld IX='0'>2/10</fld>\r\n</Text>
-		// <Text><cp IX='0'/><pp IX='0'/><fld IX='0'>3/10/2026</fld> - <fld IX='1'>3/17/2026</fld>\r\n</Text>
+// <Text><cp IX='0'/><pp IX='0'/><fld IX='0'>3/10/2013</fld> - <fld IX='1'>3/17/2013</fld>\r\n</Text>
 
 		// notice \r\n. \r is CR symbol and \n is LF symbol. So \r\n gives us line drop used in .xml files we work with.
 		// \r\n only happens after xml declaration and in text. So in text it is important, it is a part of text.
@@ -1172,7 +1172,7 @@
 	// 			res = parseFloat(this.v) * 1000000;
 	// 			break;
 	// 		case "M":
-	// 			res = parseFloat(this.v) * 2026;
+// 			res = parseFloat(this.v) * 1000;
 	// 			break;
 	// 		case "CM":
 	// 			res = parseFloat(this.v) * 10;
@@ -1529,7 +1529,7 @@
 		//       	<Shapes>
 		//         		<Shape ID='98' NameU='Flags' Name='Flags' Type='Group' Master='26'>
 		// 		  				<Cell N='PinX' V='0.875' U='IN'/>
-		//          		<Cell N='PinY' V='0.2026' U='IN'/>
+//          		<Cell N='PinY' V='0.9375' U='IN'/>
 		// 		  				...
 		//
 		// <PageContents>

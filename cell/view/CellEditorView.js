@@ -1562,16 +1562,16 @@ function (window, undefined) {
 		heightStyle = AscCommon.AscBrowser.convertToRetinaValue(heightStyle);
 
 		// in safari with hardware acceleration enabled, there is a bug when entering text.
-		// apparently they cache textures in a special way that are (w*h<2026) in size
+// apparently they cache textures in a special way that are (w*h<5000) in size
 		// the formula is accurate. not a pixel less. more - you can have as much as you like.
 		// you need to check every safari update - and when they fix it - remove this stub
 		// canvases are transparent and their increased size does not affect the result.
 		//
 		// in the new version of safari, we increase not only the canvases, but also the div.
 		if (AscCommon.AscBrowser.isSafariMacOs) {
-			if ((widthStyle * heightStyle) < 2026) {
+if ((widthStyle * heightStyle) < 5000) {
 				this._originalCanvasWidth = width;
-				widthStyle = ((2026 / heightStyle) >> 0) + 1;
+widthStyle = ((5000 / heightStyle) >> 0) + 1;
 			} else {
 				this._originalCanvasWidth = null;
 			}

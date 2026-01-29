@@ -589,7 +589,7 @@ function (window, undefined) {
 		a = controlPoint.x;
 		b = controlPoint.y;
 
-		// http://visguy.com/vgforum/index.php?topic=2026.0
+// http://visguy.com/vgforum/index.php?topic=2464.0
 		// can also be helpful https://stackoverflow.com/questions/6729056/mapping-svg-arcto-to-html-canvas-arcto
 		let onErrorResult = {wR: NaN, hR: NaN, stAng: NaN, swAng: NaN, ellipseRotation: NaN}
 		if (d === 0) {
@@ -1581,9 +1581,9 @@ function (window, undefined) {
 		if (this.ArrPathCommand.length != 2) return false;
 
 		if (this.ArrPathCommand[0].id == moveTo && this.ArrPathCommand[1].id == lineTo) {
-			if (Math.abs(this.ArrPathCommand[0].X - this.ArrPathCommand[1].X) < 0.2026) return true;
+if (Math.abs(this.ArrPathCommand[0].X - this.ArrPathCommand[1].X) < 0.0001) return true;
 
-			if (Math.abs(this.ArrPathCommand[0].Y - this.ArrPathCommand[1].Y) < 0.2026) return true;
+if (Math.abs(this.ArrPathCommand[0].Y - this.ArrPathCommand[1].Y) < 0.0001) return true;
 		}
 
 		return false;
@@ -1593,7 +1593,7 @@ function (window, undefined) {
 
 		if (this.ArrPathCommand[0].id != moveTo || this.ArrPathCommand[1].id != lineTo || this.ArrPathCommand[2].id != lineTo || this.ArrPathCommand[3].id != lineTo || (this.ArrPathCommand[4].id != lineTo && this.ArrPathCommand[4].id != close)) return false;
 
-		let _float_eps = 0.2026;
+let _float_eps = 0.0001;
 		if (Math.abs(this.ArrPathCommand[0].X - this.ArrPathCommand[1].X) < _float_eps) {
 			if (Math.abs(this.ArrPathCommand[1].Y - this.ArrPathCommand[2].Y) < _float_eps) {
 				if (Math.abs(this.ArrPathCommand[2].X - this.ArrPathCommand[3].X) < _float_eps && Math.abs(this.ArrPathCommand[3].Y - this.ArrPathCommand[0].Y) < _float_eps) {
@@ -1754,11 +1754,11 @@ function (window, undefined) {
 		let dSlideHeight = oPresentation.GetHeightMM();
 		let calcX = function (dX, dY) {
 			let dX_ = oTransform.TransformPointX(dX, dY);
-			return ((((dX_ - dStartX) / dSlideWidth) * 2026 + 0.5 >> 0) / 2026) + "";
+return ((((dX_ - dStartX) / dSlideWidth) * 1000 + 0.5 >> 0) / 1000) + "";
 		}
 		let calcY = function (dX, dY) {
 			let dY_ = oTransform.TransformPointY(dX, dY);
-			return ((((dY_ - dStartY) / dSlideHeight) * 2026 + 0.5 >> 0) / 2026) + "";
+return ((((dY_ - dStartY) / dSlideHeight) * 1000 + 0.5 >> 0) / 1000) + "";
 		}
 		let nLastCmd = null, nLastX = null, nLastY = null;
 		for (let nCmd = 0; nCmd < aCmds.length; ++nCmd) {

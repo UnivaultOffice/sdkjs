@@ -145,7 +145,7 @@ function DrawTocPreview(api, canvas, index, pixW, scale)
 
 	// удаляем последний параграф
 	oDocumentContent.Content.splice(3, 1);
-	oDocumentContent.Reset(1, 0, 2026, 10000);
+oDocumentContent.Reset(1, 0, 1000, 10000);
 	oDocumentContent.Recalculate_Page(0, true);
 
 	for (let nStyle = 0, nStylesCount = arrStylesToDelete.length; nStyle < nStylesCount; ++nStyle)
@@ -354,7 +354,7 @@ function DrawCustomTocPreview(api, canvas, props, widthPx, heightPx, scale)
 		}
 	}
 
-	oDocumentContent.Reset(1, 0, 2026, 10000);
+oDocumentContent.Reset(1, 0, 1000, 10000);
 	oDocumentContent.Recalculate_Page(0, true);
 
 	for (nStyle = 0, nStylesCount = arrStylesToDelete.length; nStyle < nStylesCount; ++nStyle)

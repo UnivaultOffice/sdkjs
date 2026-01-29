@@ -162,7 +162,7 @@
 			_mode = AscCommon.MobileTouchContextMenuType.Target;
 
 		var selectionBounds = this.LogicDocument.GetSelectionBounds();
-		var eps = 0.2026;
+var eps = 0.0001;
 		if (selectionBounds && selectionBounds.Start && selectionBounds.End &&
 			(Math.abs(selectionBounds.Start.X - selectionBounds.End.X) > eps) &&
 			(Math.abs(selectionBounds.Start.W) > eps) &&

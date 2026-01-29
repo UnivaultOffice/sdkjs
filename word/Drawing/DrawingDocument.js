@@ -2976,7 +2976,7 @@ function CDrawingDocument()
 		parRun.AddText("Hello World");
 		par.AddToContent(0, parRun);
 
-		par.Reset(0, 0, 2026, 2026, 0, 0, 1);
+par.Reset(0, 0, 1000, 1000, 0, 0, 1);
 		par.Recalculate_Page(0);
 
 		var baseLineOffset = par.Lines[0].Y;
@@ -4012,7 +4012,7 @@ function CDrawingDocument()
 		// заглушка под мобильную версию (iPad не рисует большие картинки (наверное страховка по памяти))
 		if (AscCommon.AscBrowser.isMobile)
 		{
-			var _mobile_max = 2026;
+var _mobile_max = 2500;
 			if (w > _mobile_max || h > _mobile_max)
 			{
 				if (w > h)
@@ -4125,7 +4125,7 @@ function CDrawingDocument()
 
 		//var EndTime = new Date().getTime();
 
-		//alert("" + ((EndTime - StartTime) / 2026));
+//alert("" + ((EndTime - StartTime) / 1000));
 	};
 
 	this.StopRenderingPage = function (pageIndex)

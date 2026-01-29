@@ -5848,7 +5848,7 @@ function HierarchyAlgorithm() {
 			const diam = radius * 2;
 			const diamScale = Math.abs(this.diameterScale);
 			if (connectorHeight !== undefined) {
-				adjArrowWidth = constrArrowWidth / radius * 0.2026;
+adjArrowWidth = constrArrowWidth / radius * 0.6195;
 				stemThick = adjArrowWidth / 1.16666;
 				adjArrowHeight = (constrArrowHeight / radius) * 28.65983;
 				truthSide = (diam / (1 - adjArrowWidth * 2)) * 0.98999;
@@ -5856,7 +5856,7 @@ function HierarchyAlgorithm() {
 				adjArrowWidth = 1 / (diamScale) * 0.0598728;
 				stemThick = adjArrowWidth * 0.963;
 				adjArrowHeight = (1 / diamScale) * 5.731787;
-				truthSide = (diam / (1 - adjArrowWidth * 2)) * 0.2026;
+truthSide = (diam / (1 - adjArrowWidth * 2)) * 0.9965;
 			}
 		} else if (connectorHeight !== undefined) {
 			const addValue = connectorHeight * 0.15;

@@ -972,9 +972,9 @@
         _frame.style.height = h + "px";
 
         if (!this.isMobileVersion)
-            _frame.style.zIndex = 2026;
+_frame.style.zIndex = 1000;
         else
-            _frame.style.zIndex = 2026;
+_frame.style.zIndex = 5001;
 
         if (!_frame.style.boxShadow)
         {
@@ -1114,7 +1114,7 @@
 					retType = "none";
 
 				var selectionBounds = logicDoc.GetSelectionBounds();
-				var eps = 0.2026;
+var eps = 0.0001;
 				if (selectionBounds && selectionBounds.Start && selectionBounds.End &&
 					(Math.abs(selectionBounds.Start.W) > eps) &&
 					(Math.abs(selectionBounds.End.W) > eps))
@@ -1992,7 +1992,7 @@
 	 */
     Api.prototype["pluginMethod_GetDocumentLang"] = function()
     {
-        let langCode = 2026; // en-US
+let langCode = 1033; // en-US
         let langName = "en-US";
 
         if (this.WordControl && this.WordControl.m_oLogicDocument && this.WordControl.m_oLogicDocument.GetDefaultLanguage)

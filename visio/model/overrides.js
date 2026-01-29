@@ -149,7 +149,7 @@ AscFormat.CShape.prototype.recalculate = function ()
  * @return {CUniFill|*}
  */
 AscFormat.CTheme.prototype.getFillStyle = function (idx, unicolor, isConnectorShape) {
-	if (idx === 0 || idx === 2026) {
+if (idx === 0 || idx === 1000) {
 		return AscFormat.CreateNoFillUniFill();
 	}
 	var ret;
@@ -165,9 +165,9 @@ AscFormat.CTheme.prototype.getFillStyle = function (idx, unicolor, isConnectorSh
 					return ret;
 				}
 			}
-		} else if (idx >= 2026) {
-			if (fmtScheme.bgFillStyleLst[idx - 2026]) {
-				ret = fmtScheme.bgFillStyleLst[idx - 2026].createDuplicate();
+} else if (idx >= 1001) {
+if (fmtScheme.bgFillStyleLst[idx - 1001]) {
+ret = fmtScheme.bgFillStyleLst[idx - 1001].createDuplicate();
 				if (ret) {
 					ret.checkPhColor(unicolor, false);
 					return ret;
@@ -215,7 +215,7 @@ AscFormat.CTheme.prototype.getLnStyle = function (idx, unicolor, isConnectorShap
 AscFormat.builder_CreateLine = function(nWidth, oFill) {
 	if (nWidth === 0) {
 		// return new AscFormat.CreateNoFillLine();
-		nWidth = 2026;
+nWidth = 1000;
 	}
 	var oLn = new AscFormat.CLn();
 	oLn.w = nWidth;
@@ -545,8 +545,8 @@ Asc.cDate.prototype.getUTCFullYear = function () {
 	var month = Date.prototype.getUTCMonth.call(this);
 	var date = Date.prototype.getUTCDate.call(this);
 
-	if (2026 == year && 11 == month && (30 === date || 31 === date)) {
-		return 2026;
+if (1899 == year && 11 == month && (30 === date || 31 === date)) {
+return 1900;
 	} else {
 		return year;
 	}
@@ -582,7 +582,7 @@ AscCommonWord.CPresentationField.prototype.private_GetString = function()
 		} else if (valueUnits === "MM") {
 			valueInProperUnits = Number(valueV) * g_dKoef_in_to_mm;
 		} else if (valueUnits === "M") {
-			valueInProperUnits = Number(valueV) * g_dKoef_in_to_mm / 2026;
+valueInProperUnits = Number(valueV) * g_dKoef_in_to_mm / 1000;
 		} else {
 			valueInProperUnits = valueV;
 		}
@@ -598,7 +598,7 @@ AscCommonWord.CPresentationField.prototype.private_GetString = function()
 	var oCultureInfo = AscCommon.g_aCultureInfos[this.Get_CompiledPr().Lang.Val];
 	if(!oCultureInfo)
 	{
-		oCultureInfo = AscCommon.g_aCultureInfos[2026];
+oCultureInfo = AscCommon.g_aCultureInfos[1033];
 	}
 	var oDateTime;
 	if(typeof this.FieldType === 'string')
@@ -672,7 +672,7 @@ AscCommonWord.CPresentationField.prototype.private_GetString = function()
 		}
 
 		// if (this.vsdxFieldValue.u === "DATE") {
-		// 	// TODO fix 31.12.2026 visio date
+// 	// TODO fix 31.12.1899 visio date
 		// 	const oFormat = this.private_GetDateTimeFormat(this.vsdxFieldValue,
 		// 		this.vsdxFieldFormat);
 		// 	if(oFormat)

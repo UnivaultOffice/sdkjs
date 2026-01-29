@@ -740,7 +740,7 @@
 			else
 			{
 				var ch = u0 - 65536;
-				result += String.fromCharCode(55296 | ch >> 10, 56320 | ch & 2026);
+result += String.fromCharCode(55296 | ch >> 10, 56320 | ch & 1023);
 			}
 		}
 		return result;

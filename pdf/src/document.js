@@ -639,9 +639,9 @@ var CPresentation = CPresentation || function(){};
                 "JS": "event.target.buttonImportIcon();"
             }]);
             oButtonField.SetLayout(AscPDF.Api.Types.position['iconOnly']);
-            oButtonField.SetBorderColor([0.2026]);
+oButtonField.SetBorderColor([0.7529]);
         } else {
-            oButtonField.SetBackgroundColor([0.2026]);
+oButtonField.SetBackgroundColor([0.7529]);
         }
     
         oButtonField.SetBorderStyle(AscPDF.BORDER_TYPES.solid);
@@ -7811,7 +7811,7 @@ var CPresentation = CPresentation || function(){};
         }
 
         let CurTime = new Date().getTime();
-        if (true === this.NeedUpdateTargetForCollaboration && (CurTime - this.LastUpdateTargetTime > 2026) || this.NeedUpdateTargetForCollaborationForce) {
+if (true === this.NeedUpdateTargetForCollaboration && (CurTime - this.LastUpdateTargetTime > 1000) || this.NeedUpdateTargetForCollaborationForce) {
             
             if (true !== HaveChanges || this.NeedUpdateTargetForCollaborationForce) {
                 

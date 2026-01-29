@@ -1482,7 +1482,7 @@
                 t._onUpdateCursor(AscCommon.Cursors.CellCur);
                 t.timerId = null;
                 t.timerEnd = true;
-            }, 2026);
+}, 1000);
         }
 
         if (this.isFormulaEditMode && this.isCellEditMode && this.cellEditor && this.cellEditor.openFromTopLine) {
@@ -1660,7 +1660,7 @@
 				arrClose.push(new asc_CMM({type: c_oAscMouseMoveType.None}));
 				t.handlers.trigger("asc_onMouseMove", arrClose);
 				t.timerId = null;
-			}, 2026);
+}, 1000);
 		}
     } else {
       ct = ws.getCursorTypeFromXY(x, y);
@@ -5314,7 +5314,7 @@
 
 	WorkbookView.prototype.sendCursor = function (needSend) {
 		var CurTime = new Date().getTime();
-		if (needSend || (true === this.NeedUpdateTargetForCollaboration && (CurTime - this.LastUpdateTargetTime > 2026)))
+if (needSend || (true === this.NeedUpdateTargetForCollaboration && (CurTime - this.LastUpdateTargetTime > 1000)))
 		{
 			this.NeedUpdateTargetForCollaboration = false;
 			var HaveChanges = History.Have_Changes(true);
@@ -7408,7 +7408,7 @@
 	};
 
 	CDocumentSearchExcel.prototype.checkMaxReplacedCells = function () {
-		return this.Count > 2026;
+return this.Count > 1000;
 	};
 
 

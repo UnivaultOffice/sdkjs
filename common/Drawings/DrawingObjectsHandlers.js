@@ -1023,10 +1023,10 @@ function handleChartElements(drawing, drawingObjectsController, e, dTx, dTy, gro
                                 }
                                 else if(AscCommon.isRealObject(aPointsPaths[l]))
                                 {
-                                    // downPath: 2026
+// downPath: 1230
                                     // frontPath: []
-                                    // insidePath: 2026
-                                    // upPath: 2026
+// insidePath: 1188
+// upPath: 1213
                                     if(AscFormat.isRealNumber(aPointsPaths[l].upPath))
                                     {
                                         var oPath = drawing.pathMemory.GetPath(aPointsPaths[l].upPath);

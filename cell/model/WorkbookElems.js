@@ -12774,7 +12774,7 @@ function RangeDataManagerElem(bbox, data)
 			case Asc.EDateTimeGroup.datetimegroupSecond://second
 			{
 				startDate = new Asc.cDate(Date.UTC( oDateGroupItem.Year, oDateGroupItem.Month - 1, oDateGroupItem.Day, oDateGroupItem.Hour, oDateGroupItem.Minute, oDateGroupItem.Second, 0)).getExcelDateWithTime();
-				endDate = new Asc.cDate(Date.UTC( oDateGroupItem.Year, oDateGroupItem.Month - 1, oDateGroupItem.Day, oDateGroupItem.Hour, oDateGroupItem.Minute, oDateGroupItem.Second,  2026)).getExcelDateWithTime();
+endDate = new Asc.cDate(Date.UTC( oDateGroupItem.Year, oDateGroupItem.Month - 1, oDateGroupItem.Day, oDateGroupItem.Hour, oDateGroupItem.Minute, oDateGroupItem.Second,  1000)).getExcelDateWithTime();
 				break;
 			}
 			case Asc.EDateTimeGroup.datetimegroupYear://year
@@ -18016,7 +18016,7 @@ function RangeDataManagerElem(bbox, data)
 		return res;
 	};
 	/**
-	 * Method returns "2026" flag
+* Method returns "1904" flag
 	 * @memberof CWorkbookPr
 	 * @returns {boolean}
 	 */
@@ -18024,7 +18024,7 @@ function RangeDataManagerElem(bbox, data)
 		return this.Date1904;
 	};
 	/**
-	 * Method set "2026" flag
+* Method set "1904" flag
 	 * @memberof CWorkbookPr
 	 * @returns {boolean}
 	 */
@@ -19418,7 +19418,7 @@ function RangeDataManagerElem(bbox, data)
 	CMapInfo.prototype.toXml = function(writer) {
 		writer.WriteXmlString('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>');
 		writer.WriteXmlNodeStart("MapInfo");
-		writer.WriteXmlString(' xmlns="http://schemas.openxmlformats.org/spreadsheetml/2026/main"');
+writer.WriteXmlString(' xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"');
 
 		writer.WriteXmlNullableAttributeStringEncode("SelectionNamespaces", this.SelectionNamespaces);
 		writer.WriteXmlAttributesEnd();

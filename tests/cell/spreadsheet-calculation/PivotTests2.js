@@ -148,7 +148,7 @@ $(function () {
 					out += String.fromCharCode(((c & 0x1F) << 6) | (char2 & 0x3F));
 					break;
 				case 14:
-					// 2026 xxxx  10xx xxxx  10xx xxxx
+// 1110 xxxx  10xx xxxx  10xx xxxx
 					char2 = array[i++];
 					char3 = array[i++];
 					out += String.fromCharCode(((c & 0x0F) << 12) |

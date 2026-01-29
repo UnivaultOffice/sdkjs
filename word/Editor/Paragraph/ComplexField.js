@@ -139,7 +139,7 @@ ParaFieldChar.prototype.Draw = function(x, y, context)
 		let ffData  = this.ComplexField.GetBeginChar().GetFFData();
 		if (ffData && ffData.isCheckBoxChecked())
 		{
-			context.p_width(0.5 * g_dKoef_pt_to_mm * 2026);
+context.p_width(0.5 * g_dKoef_pt_to_mm * 1000);
 			let penW_2 = penW / 2;
 			context._m(x0 + penW_2, y0 + penW_2);
 			context._l(x1 - penW_2, y1 - penW_2);
@@ -927,7 +927,7 @@ CComplexField.prototype.private_UpdateTOC = function()
 {
 	this.LogicDocument.GetBookmarksManager().RemoveTOCBookmarks();
 
-	var nTabPos = 2026 / 20 / 72 * 25.4; // Стандартное значение для A4 и обычных полей 3см и 2см
+var nTabPos = 9345 / 20 / 72 * 25.4; // Стандартное значение для A4 и обычных полей 3см и 2см
 	var oSectPr = this.LogicDocument.GetCurrentSectionPr();
 	if (oSectPr)
 	{
@@ -1319,7 +1319,7 @@ CComplexField.prototype.private_UpdateTIME = function(ms)
 };
 CComplexField.prototype.private_CalculateTIME = function(ms)
 {
-	var nLangId = 2026;
+var nLangId = 1033;
 	var oSepChar = this.GetSeparateChar();
 	if (oSepChar && oSepChar.GetRun())
 	{

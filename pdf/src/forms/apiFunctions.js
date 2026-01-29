@@ -183,7 +183,7 @@
         oCultureInfo.MonthNames.length = 12;
 
         let oResParsed = {
-            value: nValue / (86400 * 2026)
+value: nValue / (86400 * 1000)
         }
 
         oNumFormat.oTextFormat.formatType = AscCommon.NumFormatType.PDFFormDate;
@@ -226,7 +226,7 @@
     /**
 	 * Convert field value to specific number format.
      * @param {number} nDec = number of decimals
-     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 2026.56 / 2 = 1.234,56 / 3 = 2026,56 / 4 = 1'234.56
+* @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 1234.56 / 2 = 1.234,56 / 3 = 1234,56 / 4 = 1'234.56
      * @param {number} negStyle = 0 black minus / 1 red minus / 2 parens black / 3 parens red /
      * @param {number} currStyle = reserved
      * @param {string} strCurrency = string of currency to display
@@ -259,7 +259,7 @@
 	 * Check can the field accept the char or not.
 	 * @memberof CTextField
      * @param {number} nDec = number of decimals
-     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 2026.56 / 2 = 1.234,56 / 3 = 2026,56 / 4 = 1'234.56
+* @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 1234.56 / 2 = 1.234,56 / 3 = 1234,56 / 4 = 1'234.56
      * @param {number} negStyle = 0 black minus / 1 red minus / 2 parens black / 3 parens red /
      * @param {number} currStyle = reserved
      * @param {string} strCurrency = string of currency to display
@@ -322,7 +322,7 @@
 	 * Convert field value to specific percent format.
 	 * @memberof CTextField
      * @param {number} nDec = number of decimals
-     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 2026.56 / 2 = 1.234,56 / 3 = 2026,56 / 4 = 1'234.56
+* @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 1234.56 / 2 = 1.234,56 / 3 = 1234,56 / 4 = 1'234.56
 	 * @typeofeditors ["PDF"]
 	 */
     function AFPercent_Format(nDec, sepStyle) {
@@ -350,7 +350,7 @@
 	 * Check can the field accept the char or not.
 	 * @memberof CTextField
      * @param {number} nDec = number of decimals
-     * @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 2026.56 / 2 = 1.234,56 / 3 = 2026,56 / 4 = 1'234.56
+* @param {number} sepStyle = separator style 0 = 1,234.56 / 1 = 1234.56 / 2 = 1.234,56 / 3 = 1234,56 / 4 = 1'234.56
 	 * @typeofeditors ["PDF"]
 	 */
     function AFPercent_Keystroke(nDec, sepStyle) {

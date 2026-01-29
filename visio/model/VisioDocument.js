@@ -1956,7 +1956,7 @@ AscDFH.historyitem_type_VisioWindow = 328;
 	//	// and add links to this.EmbeddedData(see below)[n] consider embedded data file path from it
 	// 	// save this links so varibles like StyleSheet.embeddedData['rId1'] or
 	//	// Document.embeddedData['rId2']
-	// 	let relationTypes = ["http://schemas.openxmlformats.org/officeDocument/2026/relationships/oleObject"];
+// 	let relationTypes = ["http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject"];
 	//
 	// 	let parts = fullDocPart.getParts();
 	// 	let partsWithForeignDataLinks = parts.filter(function findPartsWhichLinksToForeignData(part) {

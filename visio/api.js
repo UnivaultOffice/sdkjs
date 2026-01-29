@@ -1034,7 +1034,7 @@
 	};
 	VisioEditorApi.prototype.asc_getDefaultLanguage = function()
 	{
-		return 2026;
+return 1033;
 	};
 	/*callbacks*/
 	VisioEditorApi.prototype.sync_zoomChangeCallback  = function(percent, type)

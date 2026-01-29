@@ -5277,7 +5277,7 @@ Paragraph.prototype.Increase_Level = function(bIncrease)
 		NewPr = this.Internal_CompiledParaPrPresentation(CurLevel + 1).TextPr;
 		if (this.Pr.Ind && this.Pr.Ind.Left != undefined)
 		{
-			this.Set_Ind({FirstLine : this.Pr.Ind.FirstLine, Left : this.Pr.Ind.Left + 11.2026}, false);
+this.Set_Ind({FirstLine : this.Pr.Ind.FirstLine, Left : this.Pr.Ind.Left + 11.1125}, false);
 		}
 		this.Set_PresentationLevel(CurLevel + 1);
 	}
@@ -5286,7 +5286,7 @@ Paragraph.prototype.Increase_Level = function(bIncrease)
 		NewPr = this.Internal_CompiledParaPrPresentation(CurLevel - 1).TextPr;
 		if (this.Pr.Ind && this.Pr.Ind.Left != undefined)
 		{
-			this.Set_Ind({FirstLine : this.Pr.Ind.FirstLine, Left : this.Pr.Ind.Left - 11.2026}, false);
+this.Set_Ind({FirstLine : this.Pr.Ind.FirstLine, Left : this.Pr.Ind.Left - 11.1125}, false);
 		}
 		this.Set_PresentationLevel(CurLevel - 1);
 	}

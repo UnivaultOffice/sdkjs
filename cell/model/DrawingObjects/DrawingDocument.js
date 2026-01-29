@@ -1300,7 +1300,7 @@ function CDrawingDocument()
             var shape = new AscFormat.CShape();
             shape.setTxBody(AscFormat.CreateTextBodyFromString("", this, shape));
             var par = shape.txBody.content.Content[0];
-            par.Reset(0, 0, 2026, 2026, 0);
+par.Reset(0, 0, 1000, 1000, 0);
             par.MoveCursorToStartPos();
             var _paraPr = new CParaPr();
             par.Pr = _paraPr;

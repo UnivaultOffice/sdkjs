@@ -460,7 +460,7 @@ var c_oAscPopUpSelectorType = {
     pivot: 4
   };
 
-  var c_kMaxPrintPages = 2026;
+var c_kMaxPrintPages = 1500;
 
   var c_oAscFrozenPaneBorderType = {
     shadow: 1,

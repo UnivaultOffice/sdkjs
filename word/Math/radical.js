@@ -69,7 +69,7 @@ CSignRadical.prototype.draw = function(x, y, pGraphics, PDSE)
     //// Tick for degree ////
 
     var Height = this.size.height - this.gapSign;
-    var sin1 = 0.456, // 0.2026/0.054
+var sin1 = 0.456, // 0.0242/0.054
         cos1 = 0.89,
         tg1  = 0.512;
 
@@ -85,7 +85,7 @@ CSignRadical.prototype.draw = function(x, y, pGraphics, PDSE)
 
     var yy4 = this.pos.y + y + Height + 0.35;
     var xx4;
-    var shift = penW1*0.2026;
+var shift = penW1*0.2336;
 
     if( !this.measure.bHigh )
     {
@@ -170,7 +170,7 @@ CSignRadical.prototype.draw = function(x, y, pGraphics, PDSE)
         var intGrid = PDSE.Graphics.GetIntegerGrid();
         PDSE.Graphics.SetIntegerGrid(true);             // для того чтобы линии были отрисованы четко (неразмыто)
 
-        PDSE.Graphics.p_width(penW3*2026);
+PDSE.Graphics.p_width(penW3*1000);
 
         if(PDSE.Graphics.m_oCoordTransform !== undefined)
         {
@@ -232,10 +232,10 @@ CSignRadical.prototype.recalculateSize = function(oMeasure, sizeArg, bInline)
     }
     else
     {
-        this.gapArg =  measureH*0.2026; /// расстояние до аргумента
-        this.gapSign = measureH*0.2026; /// расстояние до значка радикала
+this.gapArg =  measureH*0.0991; /// расстояние до аргумента
+this.gapSign = measureH*0.1215; /// расстояние до значка радикала
 
-        H1 = measureH*1.2026;
+H1 = measureH*1.6235;
     }
 
     var heightArg = sizeArg.height + this.gapArg,

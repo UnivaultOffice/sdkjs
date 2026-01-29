@@ -65,7 +65,7 @@ $(function () {
 	Asc.ReadDefTableStyles = function () {
 	};
 	cDate.prototype.getCurrentDate = function () {
-		return new cDate(2026, 4, 15, 0, 0, 0);
+return new cDate(2023, 4, 15, 0, 0, 0);
 	};
 
 
@@ -285,9 +285,9 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Today"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45060'], // 14.05.2026
-			['45061'], // 15.05.2026 today
-			['45062'] // 16.05.2026
+['45060'], // 14.05.2023
+['45061'], // 15.05.2023 today
+['45062'] // 16.05.2023
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -301,9 +301,9 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.today, 0);
 
 		// Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 14.05.2026 yesterday must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 15.05.2026 today must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), true, 'Value 16.05.2026 tomorrow must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 14.05.2023 yesterday must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 15.05.2023 today must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), true, 'Value 16.05.2023 tomorrow must be hidden');
 
 		// Clearing data of sheet
 		clearData(0, 0, 0, 3);
@@ -311,9 +311,9 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Yesterday"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45059'], // 13.05.2026
-			['45060'], // 14.05.2026
-			['45061'] // 15.05.2026 today
+['45059'], // 13.05.2023
+['45060'], // 14.05.2023
+['45061'] // 15.05.2023 today
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -327,9 +327,9 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.yesterday, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 13.05.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 14.05.2026 yesterday must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), true, 'Value 15.05.2026 today must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 13.05.2023 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 14.05.2023 yesterday must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), true, 'Value 15.05.2023 today must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 3);
@@ -337,9 +337,9 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Tomorrow"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45061'], // 15.05.2026 today
-			['45062'], // 16.05.2026
-			['45063'] // 17.05.2026
+['45061'], // 15.05.2023 today
+['45062'], // 16.05.2023
+['45063'] // 17.05.2023
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -354,9 +354,9 @@ $(function () {
 
 		//Checking work of filter
 
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 15.05.2026 today must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 16.05.2026 tomorrow must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), true, 'Value 17.05.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 15.05.2023 today must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 16.05.2023 tomorrow must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), true, 'Value 17.05.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 3);
@@ -364,15 +364,15 @@ $(function () {
 	QUnit.test('Test: "Date Filter - This week"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45059'], // 13.05.2026 - 6 day of week
-			['45060'], // 14.05.2026 - 0 day of week
-			['45061'], // 15.05.2026 - 1 day of week
-			['45062'], // 16.05.2026 - 2 day of week
-			['45063'], // 17.05.2026 - 3 day of week
-			['45064'], // 18.05.2026 - 4 day of week
-			['45065'], // 19.05.2026 - 5 day of week
-			['45066'], // 20.05.2026 - 6 day of week
-			['45067']  // 21.05.2026 - 0 day of week
+['45059'], // 13.05.2023 - 6 day of week
+['45060'], // 14.05.2023 - 0 day of week
+['45061'], // 15.05.2023 - 1 day of week
+['45062'], // 16.05.2023 - 2 day of week
+['45063'], // 17.05.2023 - 3 day of week
+['45064'], // 18.05.2023 - 4 day of week
+['45065'], // 19.05.2023 - 5 day of week
+['45066'], // 20.05.2023 - 6 day of week
+['45067']  // 21.05.2023 - 0 day of week
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -386,16 +386,16 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.thisWeek, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 13.05.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 14.05.2026 yesterday must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 15.05.2026 today must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), false, 'Value 16.05.2026 tomorrow must not be hidden');
-		assert.strictEqual(ws.getRowHidden(5), false, 'Value 17.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(6), false, 'Value 18.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(7), false, 'Value 19.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(8), false, 'Value 20.05.2026 must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 13.05.2023 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 14.05.2023 yesterday must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 15.05.2023 today must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), false, 'Value 16.05.2023 tomorrow must not be hidden');
+assert.strictEqual(ws.getRowHidden(5), false, 'Value 17.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(6), false, 'Value 18.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(7), false, 'Value 19.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(8), false, 'Value 20.05.2023 must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(9), true, 'Value 21.05.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(9), true, 'Value 21.05.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 9);
@@ -403,15 +403,15 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Next week"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45066'], // 20.05.2026 - 6 day of week
-			['45067'], // 21.05.2026 - 0 day of week
-			['45068'], // 22.05.2026 - 1 day of week
-			['45069'], // 23.05.2026 - 2 day of week
-			['45070'], // 24.05.2026 - 3 day of week
-			['45071'], // 25.05.2026 - 4 day of week
-			['45072'], // 26.05.2026 - 5 day of week
-			['45073'], // 27.05.2026 - 6 day of week
-			['45074']  // 28.05.2026 - 0 day of week
+['45066'], // 20.05.2023 - 6 day of week
+['45067'], // 21.05.2023 - 0 day of week
+['45068'], // 22.05.2023 - 1 day of week
+['45069'], // 23.05.2023 - 2 day of week
+['45070'], // 24.05.2023 - 3 day of week
+['45071'], // 25.05.2023 - 4 day of week
+['45072'], // 26.05.2023 - 5 day of week
+['45073'], // 27.05.2023 - 6 day of week
+['45074']  // 28.05.2023 - 0 day of week
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -425,16 +425,16 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.nextWeek, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 20.05.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 21.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 22.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), false, 'Value 23.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(5), false, 'Value 24.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(6), false, 'Value 25.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(7), false, 'Value 26.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(8), false, 'Value 27.05.2026 must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 20.05.2023 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 21.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 22.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), false, 'Value 23.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(5), false, 'Value 24.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(6), false, 'Value 25.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(7), false, 'Value 26.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(8), false, 'Value 27.05.2023 must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(9), true, 'Value 28.05.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(9), true, 'Value 28.05.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 9);
@@ -442,15 +442,15 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Last week"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45052'], // 06.05.2026 - 6 day of week
-			['45053'], // 07.05.2026 - 0 day of week
-			['45054'], // 08.05.2026 - 1 day of week
-			['45055'], // 09.05.2026 - 2 day of week
-			['45056'], // 10.05.2026 - 3 day of week
-			['45057'], // 11.05.2026 - 4 day of week
-			['45058'], // 12.05.2026 - 5 day of week
-			['45059'], // 13.05.2026 - 6 day of week
-			['45060']  // 14.05.2026 - 0 day of week
+['45052'], // 06.05.2023 - 6 day of week
+['45053'], // 07.05.2023 - 0 day of week
+['45054'], // 08.05.2023 - 1 day of week
+['45055'], // 09.05.2023 - 2 day of week
+['45056'], // 10.05.2023 - 3 day of week
+['45057'], // 11.05.2023 - 4 day of week
+['45058'], // 12.05.2023 - 5 day of week
+['45059'], // 13.05.2023 - 6 day of week
+['45060']  // 14.05.2023 - 0 day of week
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -464,16 +464,16 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.lastWeek, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 06.05.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 07.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 08.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), false, 'Value 09.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(5), false, 'Value 10.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(6), false, 'Value 11.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(7), false, 'Value 12.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(8), false, 'Value 13.05.2026 must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 06.05.2023 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 07.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 08.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), false, 'Value 09.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(5), false, 'Value 10.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(6), false, 'Value 11.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(7), false, 'Value 12.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(8), false, 'Value 13.05.2023 must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(9), true, 'Value 14.04.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(9), true, 'Value 14.04.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 9);
@@ -481,10 +481,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Last month"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45016'], // 31.03.2026
-			['45017'], // 01.04.2026
-			['45046'], // 30.04.2026
-			['45047']  // 01.05.2026
+['45016'], // 31.03.2023
+['45017'], // 01.04.2023
+['45046'], // 30.04.2023
+['45047']  // 01.05.2023
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -499,11 +499,11 @@ $(function () {
 
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.03.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.04.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.04.2026 must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.03.2023 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.04.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.04.2023 must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.05.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.05.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4);
@@ -511,10 +511,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - This month"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45046'], // 30.04.2026
-			['45047'], // 01.05.2026
-			['45077'], // 31.05.2026
-			['45078'] // 01.06.2026
+['45046'], // 30.04.2023
+['45047'], // 01.05.2023
+['45077'], // 31.05.2023
+['45078'] // 01.06.2023
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -528,11 +528,11 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.thisMonth, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.04.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.05.2026 yesterday not must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.04.2023 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.05.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.05.2023 yesterday not must be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.06.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.06.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4);
@@ -540,10 +540,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Next month"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45077'], // 31.05.2026
-			['45078'], // 01.06.2026
-			['45107'], // 30.06.2026
-			['45108']  // 01.07.2026
+['45077'], // 31.05.2023
+['45078'], // 01.06.2023
+['45107'], // 30.06.2023
+['45108']  // 01.07.2023
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -557,11 +557,11 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.nextMonth, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.05.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.06.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.06.2026 must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.05.2023 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.06.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.06.2023 must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.07.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.07.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4);
@@ -569,10 +569,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Next quarter"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45107'], // 30.06.2026
-			['45108'], // 01.07.2026
-			['45199'], // 30.09.2026
-			['45200']  // 01.10.2026
+['45107'], // 30.06.2023
+['45108'], // 01.07.2023
+['45199'], // 30.09.2023
+['45200']  // 01.10.2023
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -586,11 +586,11 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.nextQuarter, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.06.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.07.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.09.2026 must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.06.2023 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.07.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.09.2023 must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.10.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.10.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4);
@@ -598,10 +598,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - This quarter"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45016'], // 31.03.2026
-			['45017'], // 01.04.2026
-			['45107'], // 30.06.2026
-			['45108'] // 01.07.2026
+['45016'], // 31.03.2023
+['45017'], // 01.04.2023
+['45107'], // 30.06.2023
+['45108'] // 01.07.2023
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -616,11 +616,11 @@ $(function () {
 
 		//Checking work of filter
 
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.03.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.04.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.06.2026 must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.03.2023 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.04.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.06.2023 must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.07.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.07.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4);
@@ -628,10 +628,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Last quarter"', function (assert) {
 		const testData = [
 			['Dates'],
-			['44926'], // 31.12.2026
-			['44927'], // 01.01.2026
-			['45016'], // 31.03.2026
-			['45017']  // 01.04.2026
+['44926'], // 31.12.2022
+['44927'], // 01.01.2023
+['45016'], // 31.03.2023
+['45017']  // 01.04.2023
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -645,11 +645,11 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.lastQuarter, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.03.2026 must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2022 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.03.2023 must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.04.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.04.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4);
@@ -657,10 +657,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - This year"', function (assert) {
 		const testData = [
 			['Dates'],
-			['44926'], // 31.12.2026
-			['44927'], // 01.01.2026
-			['45291'], // 31.12.2026
-			['45292']  // 01.01.2026
+['44926'], // 31.12.2022
+['44927'], // 01.01.2023
+['45291'], // 31.12.2023
+['45292']  // 01.01.2024
 
 		];
 
@@ -675,11 +675,11 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.thisYear, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2026 yesterday must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.12.2026 today must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2022 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2023 yesterday must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.12.2023 today must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.01.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.01.2024 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4);
@@ -687,10 +687,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Next year"', function (assert) {
 		const testData = [
 			['Dates'],
-			['45291'], // 31.12.2026
-			['45292'], // 01.01.2026
-			['45657'], // 31.12.2026
-			['45658'] // 01.01.2026
+['45291'], // 31.12.2023
+['45292'], // 01.01.2024
+['45657'], // 31.12.2025
+['45658'] // 01.01.2025
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -704,11 +704,11 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.nextYear, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.12.2026 must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2023 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2024 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.12.2024 must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.01.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.01.2025 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4);
@@ -716,10 +716,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Last year"', function (assert) {
 		const testData = [
 			['Dates'],
-			['44561'], // 31.12.2026
-			['44562'], // 01.01.2026
-			['44926'], // 31.12.2026
-			['44927'] // 01.01.2026
+['44561'], // 31.12.2021
+['44562'], // 01.01.2022
+['44926'], // 31.12.2022
+['44927'] // 01.01.2023
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -733,11 +733,11 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.lastYear, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.12.2026 must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2021 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2022 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.12.2022 must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.01.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.01.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4);
@@ -745,10 +745,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - Year to date"', function (assert) {
 		const testData = [
 			['Dates'],
-			['44926'], // 31.12.2026
-			['44927'], // 01.01.2026
-			['45061'], // 15.05.2026
-			['45062'] // 16.05.2026
+['44926'], // 31.12.2022
+['44927'], // 01.01.2023
+['45061'], // 15.05.2023
+['45062'] // 16.05.2023
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -762,34 +762,34 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.yearToDate, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 15.05.2026 must not be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2022 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2023 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 15.05.2023 must not be hidden');
 		//TODO
-		//assert.strictEqual(ws.getRowHidden(4), true, 'Value 16.05.2026 must be hidden');
+//assert.strictEqual(ws.getRowHidden(4), true, 'Value 16.05.2023 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
 	});
 	/*
-		Cases with years 2025-2026 for filters "All Dates in the Period" don't work correct because dates move on 1-2 days
+Cases with years 1900-1920 for filters "All Dates in the Period" don't work correct because dates move on 1-2 days
 		 if you use method getDateFromExcel() for excelDate values.
 		e.g.
-		01.01.2026 (excelDate: 0) -> 30.12.2026
-		01.01.2026 (excelDate: 366) -> 31.12.2026
-		01.01.2026 (excelDate: 2026) -> 31.12.2026
+01.01.1900 (excelDate: 0) -> 30.12.1899
+01.01.1901 (excelDate: 366) -> 31.12.1900
+01.01.1910 (excelDate: 3653) -> 31.12.1909
 		...
-		01.01.2026 (excelDate: 2026) -> 01.01.2026
+01.01.1920 (excelDate: 7306) -> 01.01.1920
 	*/
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> January"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36890'], // 30.12.2026
-			['36891'], // 31.12.2026
-			['36526'], // 01.01.2026
-			['36556'], // 31.01.2026
-			['36557'], // 01.02.2026
-			['36558'] // 02.02.2026
+['36890'], // 30.12.2000
+['36891'], // 31.12.2000
+['36526'], // 01.01.2000
+['36556'], // 31.01.2000
+['36557'], // 01.02.2000
+['36558'] // 02.02.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -803,12 +803,12 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m1, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.12.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), true, 'Value 31.12.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 01.01.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), false, 'Value 31.01.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(5), true, 'Value 01.02.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(6), true, 'Value 02.02.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.12.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), true, 'Value 31.12.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 01.01.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), false, 'Value 31.01.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(5), true, 'Value 01.02.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(6), true, 'Value 02.02.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 6)
@@ -817,10 +817,10 @@ $(function () {
 
 		const testData = [
 			['Dates'],
-			['36556'], // 31.01.2026
-			['36557'], // 01.02.2026
-			['36584'], // 28.02.2026
-			['36586']  // 01.03.2026
+['36556'], // 31.01.2000
+['36557'], // 01.02.2000
+['36584'], // 28.02.2000
+['36586']  // 01.03.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -834,10 +834,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m2, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.01.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.02.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 28.02.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.03.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.01.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.02.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 28.02.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.03.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -845,10 +845,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> March"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36584'], // 28.02.2026
-			['36586'], // 01.03.2026
-			['36616'], // 31.03.2026
-			['36617']  // 01.04.2026
+['36584'], // 28.02.2000
+['36586'], // 01.03.2000
+['36616'], // 31.03.2000
+['36617']  // 01.04.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -862,10 +862,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m3, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 28.02.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.03.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.03.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.04.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 28.02.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.03.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.03.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.04.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -873,10 +873,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> April"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36616'], // 31.03.2026
-			['36617'], // 01.04.2026
-			['36646'], // 30.04.2026
-			['36647']  // 01.05.2026
+['36616'], // 31.03.2000
+['36617'], // 01.04.2000
+['36646'], // 30.04.2000
+['36647']  // 01.05.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -890,10 +890,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m4, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.03.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.04.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.04.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.05.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.03.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.04.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.04.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.05.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -901,10 +901,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> May"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36646'], // 30.04.2026
-			['36647'], // 01.05.2026
-			['36677'], // 31.05.2026
-			['36678']  // 01.06.2026
+['36646'], // 30.04.2000
+['36647'], // 01.05.2000
+['36677'], // 31.05.2000
+['36678']  // 01.06.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -918,10 +918,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m5, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.04.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.05.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.06.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.04.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.05.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.05.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.06.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -929,10 +929,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> June"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36677'], // 31.05.2026
-			['36678'], // 01.06.2026
-			['36707'], // 30.06.2026
-			['36708']  // 01.07.2026
+['36677'], // 31.05.2000
+['36678'], // 01.06.2000
+['36707'], // 30.06.2000
+['36708']  // 01.07.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -946,10 +946,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m6, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.05.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.06.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.06.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.07.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.05.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.06.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.06.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.07.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -957,10 +957,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> July"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36707'], // 30.06.2026
-			['36708'], // 01.07.2026
-			['36738'], // 31.07.2026
-			['36739']  // 01.08.2026
+['36707'], // 30.06.2000
+['36708'], // 01.07.2000
+['36738'], // 31.07.2000
+['36739']  // 01.08.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -974,10 +974,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m7, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.06.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.07.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.07.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.08.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.06.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.07.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.07.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.08.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -985,10 +985,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> August"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36738'], // 31.07.2026
-			['36739'], // 01.08.2026
-			['36769'], // 31.08.2026
-			['36770'] // 01.09.2026
+['36738'], // 31.07.2000
+['36739'], // 01.08.2000
+['36769'], // 31.08.2000
+['36770'] // 01.09.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1002,10 +1002,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m8, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.07.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.08.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.08.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.09.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.07.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.08.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.08.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.09.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -1013,10 +1013,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> September"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36769'], // 31.08.2026
-			['36770'], // 01.09.2026
-			['36799'], // 30.09.2026
-			['36800'], // 01.10.2026
+['36769'], // 31.08.2000
+['36770'], // 01.09.2000
+['36799'], // 30.09.2000
+['36800'], // 01.10.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1030,10 +1030,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m9, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.08.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.09.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.09.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.10.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.08.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.09.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.09.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.10.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -1041,10 +1041,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> October"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36799'], // 30.09.2026
-			['36800'], // 01.10.2026
-			['36830'], // 31.10.2026
-			['36831']  // 01.11.2026
+['36799'], // 30.09.2000
+['36800'], // 01.10.2000
+['36830'], // 31.10.2000
+['36831']  // 01.11.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1058,10 +1058,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m10, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.09.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.10.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.10.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.11.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.09.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.10.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.10.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.11.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -1069,10 +1069,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> November"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36830'], // 31.10.2026
-			['36831'], // 01.11.2026
-			['36860'], // 30.11.2026
-			['36861']  // 01.12.2026
+['36830'], // 31.10.2000
+['36831'], // 01.11.2000
+['36860'], // 30.11.2000
+['36861']  // 01.12.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1086,10 +1086,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m11, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.10.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.11.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.11.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.12.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.10.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.11.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.11.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.12.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -1097,10 +1097,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> December"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36860'], // 30.11.2026
-			['36861'], // 01.12.2026
-			['36891'], // 31.12.2026
-			['36526']  // 01.01.2026
+['36860'], // 30.11.2000
+['36861'], // 01.12.2000
+['36891'], // 31.12.2000
+['36526']  // 01.01.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1114,10 +1114,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.m12, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.11.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.12.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.12.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.01.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.11.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.12.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.12.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.01.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -1125,10 +1125,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> Quarter 1"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36891'], // 31.12.2026
-			['36526'], // 01.01.2026
-			['36616'], // 31.03.2026
-			['36617']  // 01.04.2026
+['36891'], // 31.12.2000
+['36526'], // 01.01.2000
+['36616'], // 31.03.2000
+['36617']  // 01.04.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1142,10 +1142,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.q1, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.03.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.04.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.12.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.01.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.03.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.04.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -1153,10 +1153,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> Quarter 2"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36616'], // 31.03.2026
-			['36617'], // 01.04.2026
-			['36707'], // 30.06.2026
-			['36708']  // 01.07.2026
+['36616'], // 31.03.2000
+['36617'], // 01.04.2000
+['36707'], // 30.06.2000
+['36708']  // 01.07.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1170,10 +1170,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.q2, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.03.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.04.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.06.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.07.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 31.03.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.04.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.06.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.07.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -1181,10 +1181,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> Quarter 3"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36707'], // 30.06.2026
-			['36708'], // 01.07.2026
-			['36799'], // 30.09.2026
-			['36800']  // 01.10.2026
+['36707'], // 30.06.2000
+['36708'], // 01.07.2000
+['36799'], // 30.09.2000
+['36800']  // 01.10.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1198,10 +1198,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.q3, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.06.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.07.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.09.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.10.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.06.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.07.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 30.09.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.10.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -1209,10 +1209,10 @@ $(function () {
 	QUnit.test('Test: "Date Filter - All Dates in the Period -> Quarter 4"', function (assert) {
 		const testData = [
 			['Dates'],
-			['36799'], // 30.09.2026
-			['36800'], // 01.10.2026
-			['36891'], // 31.12.2026
-			['36526']  // 01.01.2026
+['36799'], // 30.09.2000
+['36800'], // 01.10.2000
+['36891'], // 31.12.2000
+['36526']  // 01.01.2000
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1226,10 +1226,10 @@ $(function () {
 		ws.autoFilters = createDynamicFilter(ws, Asc.c_oAscDynamicAutoFilter.q4, 0);
 
 		//Checking work of filter
-		assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.09.2026 must be hidden');
-		assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.10.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.12.2026 must not be hidden');
-		assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.01.2026 must be hidden');
+assert.strictEqual(ws.getRowHidden(1), true, 'Value 30.09.2000 must be hidden');
+assert.strictEqual(ws.getRowHidden(2), false, 'Value 01.10.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(3), false, 'Value 31.12.2000 must not be hidden');
+assert.strictEqual(ws.getRowHidden(4), true, 'Value 01.01.2000 must be hidden');
 
 		//Clearing data of sheet
 		clearData(0, 0, 0, 4)
@@ -1241,12 +1241,12 @@ $(function () {
 			['20000'],
 			['test1'],
 			['50000'],
-			['2/11/2026'],
+['2/11/1930'],
 			['test2'],
-			['2/4/2026'],
-			['3/4/2026'],
-			['8/20/2026'],
-			['6/16/2026']
+['2/4/2237'],
+['3/4/2237'],
+['8/20/1994'],
+['6/16/1909']
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1263,7 +1263,7 @@ $(function () {
 		setFilterOptionsVisible(autoFiltersOptions, [{text: "20000", visible: false}, {
 			text: "test1",
 			visible: false
-		}, {text: "2/11/2026", visible: false}]);
+}, {text: "2/11/1930", visible: false}]);
 		ws.autoFilters.applyAutoFilter(autoFiltersOptions);
 		//Checking work of filter
 		checkHiddenRows(assert, testData, {"1": 1, "2": 1, "4": 1});
@@ -1271,8 +1271,8 @@ $(function () {
 
 		autoFiltersOptions = ws.autoFilters.getAutoFiltersOptions(ws, {colId: 0, id: null});
 		autoFiltersOptions.filter.asc_setType(c_oAscAutoFilterTypes.Filters);
-		setFilterOptionsVisible(autoFiltersOptions, [{text: "2/4/2026", visible: false}, {
-			text: "3/4/2026",
+setFilterOptionsVisible(autoFiltersOptions, [{text: "2/4/2237", visible: false}, {
+text: "3/4/2237",
 			visible: false
 		}]);
 		ws.autoFilters.applyAutoFilter(autoFiltersOptions);
@@ -1288,15 +1288,15 @@ $(function () {
 
 		const testData = [
 			['Dates'],
-			['9/26/2026 2:24'],
-			['9/26/2026 2:52'],
-			['9/26/2026 3:07'],
-			['6/22/2026 0:00'],
-			['3/18/2026 0:00'],
-			['12/13/2026 0:00'],
-			['6/22/2026 2:24'],
-			['6/22/2026 4:48'],
-			['6/22/2026 7:12']
+['9/26/1902 2:24'],
+['9/26/1902 2:52'],
+['9/26/1902 3:07'],
+['6/22/1905 0:00'],
+['3/18/1908 0:00'],
+['12/13/1910 0:00'],
+['6/22/1905 2:24'],
+['6/22/1905 4:48'],
+['6/22/1905 7:12']
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1310,9 +1310,9 @@ $(function () {
 		//apply filter
 		let autoFiltersOptions = ws.autoFilters.getAutoFiltersOptions(ws, {colId: 0, id: null});
 		autoFiltersOptions.filter.asc_setType(c_oAscAutoFilterTypes.Filters);
-		//9/26/2026 2:24:00
+//9/26/2002 2:24:00
 		let aChangedVal = [{
-			year: 2026,
+year: 1902,
 			month: 9 - 1,
 			day: 26,
 			hour: 2,
@@ -1321,7 +1321,7 @@ $(function () {
 			dateTimeGrouping: Asc.EDateTimeGroup.datetimegroupHour
 		}];
 		aChangedVal.push({
-			year: 2026,
+year: 1902,
 			month: 9 - 1,
 			day: 26,
 			hour: 2,
@@ -1330,7 +1330,7 @@ $(function () {
 			dateTimeGrouping: Asc.EDateTimeGroup.datetimegroupMinute
 		});
 		aChangedVal.push({
-			year: 2026,
+year: 1902,
 			month: 9 - 1,
 			day: 26,
 			hour: 3,
@@ -1347,10 +1347,10 @@ $(function () {
 
 
 		aChangedVal = [{
-			val: 2026.3,
+val: 2000.3,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 7,
@@ -1358,10 +1358,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.2,
+val: 2000.2,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 4,
@@ -1369,10 +1369,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.1,
+val: 2000.1,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 2,
@@ -1380,10 +1380,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026,
+val: 2000,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 0,
@@ -1391,10 +1391,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.13,
+val: 1000.13,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 3,
@@ -1402,10 +1402,10 @@ $(function () {
 			second: 12,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.12,
+val: 1000.12,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 2,
@@ -1413,10 +1413,10 @@ $(function () {
 			second: 48,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.1,
+val: 1000.1,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 2,
@@ -1432,10 +1432,10 @@ $(function () {
 		ws.autoFilters.isApplyAutoFilterInCell(range, true);
 
 		aChangedVal = [{
-			val: 2026,
+val: 4000,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1910,
 			month: 11,
 			day: 13,
 			hour: 0,
@@ -1443,10 +1443,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026,
+val: 3000,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1908,
 			month: 2,
 			day: 18,
 			hour: 0,
@@ -1454,10 +1454,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.3,
+val: 2000.3,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 7,
@@ -1465,10 +1465,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.2,
+val: 2000.2,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 4,
@@ -1476,10 +1476,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.1,
+val: 2000.1,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 2,
@@ -1487,10 +1487,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026,
+val: 2000,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 0,
@@ -1498,10 +1498,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.13,
+val: 1000.13,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 3,
@@ -1509,10 +1509,10 @@ $(function () {
 			second: 12,
 			dateTimeGrouping: 2
 		}, {
-			val: 2026.12,
+val: 1000.12,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 2,
@@ -1520,10 +1520,10 @@ $(function () {
 			second: 48,
 			dateTimeGrouping: 2
 		}, {
-			val: 2026.1,
+val: 1000.1,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 2,
@@ -1540,10 +1540,10 @@ $(function () {
 
 
 		aChangedVal = [{
-			val: 2026,
+val: 4000,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1910,
 			month: 11,
 			day: 13,
 			hour: 0,
@@ -1551,10 +1551,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026,
+val: 3000,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1908,
 			month: 2,
 			day: 18,
 			hour: 0,
@@ -1562,10 +1562,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.3,
+val: 2000.3,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 7,
@@ -1573,10 +1573,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 2
 		}, {
-			val: 2026.2,
+val: 2000.2,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 4,
@@ -1584,10 +1584,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 2
 		}, {
-			val: 2026.1,
+val: 2000.1,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 2,
@@ -1595,10 +1595,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 2
 		}, {
-			val: 2026,
+val: 2000,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 0,
@@ -1606,10 +1606,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 2
 		}, {
-			val: 2026.13,
+val: 1000.13,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 3,
@@ -1617,10 +1617,10 @@ $(function () {
 			second: 12,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.12,
+val: 1000.12,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 2,
@@ -1628,10 +1628,10 @@ $(function () {
 			second: 48,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.1,
+val: 1000.1,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 2,
@@ -1648,10 +1648,10 @@ $(function () {
 
 
 		aChangedVal = [{
-			val: 2026,
+val: 4000,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1910,
 			month: 11,
 			day: 13,
 			hour: 0,
@@ -1659,10 +1659,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026,
+val: 3000,
 			visible: false,
 			isDateFormat: true,
-			year: 2026,
+year: 1908,
 			month: 2,
 			day: 18,
 			hour: 0,
@@ -1670,10 +1670,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.3,
+val: 2000.3,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 7,
@@ -1681,10 +1681,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.2,
+val: 2000.2,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 4,
@@ -1692,10 +1692,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.1,
+val: 2000.1,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 2,
@@ -1703,10 +1703,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026,
+val: 2000,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1905,
 			month: 5,
 			day: 22,
 			hour: 0,
@@ -1714,10 +1714,10 @@ $(function () {
 			second: 0,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.13,
+val: 1000.13,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 3,
@@ -1725,10 +1725,10 @@ $(function () {
 			second: 12,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.12,
+val: 1000.12,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 2,
@@ -1736,10 +1736,10 @@ $(function () {
 			second: 48,
 			dateTimeGrouping: 6
 		}, {
-			val: 2026.1,
+val: 1000.1,
 			visible: true,
 			isDateFormat: true,
-			year: 2026,
+year: 1902,
 			month: 8,
 			day: 26,
 			hour: 2,
@@ -1765,12 +1765,12 @@ $(function () {
 			['20000'],
 			['test1'],
 			['50000'],
-			['2/11/2026'],
+['2/11/1930'],
 			['test2'],
-			['2/4/2026'],
-			['6/2/2026'],
-			['8/20/2026'],
-			['6/16/2026']
+['2/4/2237'],
+['6/2/1906'],
+['8/20/1994'],
+['6/16/1909']
 		];
 
 		// Imitate filling rows with data, selection data range and add filter
@@ -1783,7 +1783,7 @@ $(function () {
 
 
 		//***Before***
-		createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isLessThan, val: "8/20/2026"}]);
+createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isLessThan, val: "8/20/1994"}]);
 		//Checking work of filter
 		checkHiddenRows(assert, testData, {"2": 1, "3": 1, "5": 1, "6": 1, "8": 1}, " Before: ");
 		//clean filter
@@ -1791,7 +1791,7 @@ $(function () {
 
 
 		//***After***
-		createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isGreaterThan, val: "2026"}]);
+createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isGreaterThan, val: "6500"}]);
 		//Checking work of filter
 		checkHiddenRows(assert, testData, {"2": 1, "5": 1, "7": 1, "9": 1}, " After: ");
 		//clean filter
@@ -1799,7 +1799,7 @@ $(function () {
 
 
 		//***After or equal***
-		createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isGreaterThanOrEqualTo, val: "6/16/2026"}]);
+createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isGreaterThanOrEqualTo, val: "6/16/1909"}]);
 		//Checking work of filter
 		checkHiddenRows(assert, testData, {"2": 1, "5": 1, "7": 1}, " After or equal: ");
 		//clean filter
@@ -1807,7 +1807,7 @@ $(function () {
 
 
 		//***Before or equal***
-		createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isLessThanOrEqualTo, val: "6/16/2026"}]);
+createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isLessThanOrEqualTo, val: "6/16/1909"}]);
 		//Checking work of filter
 		checkHiddenRows(assert, testData, {
 			"1": 1,
@@ -1823,16 +1823,16 @@ $(function () {
 
 
 		//***Between***
-		createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isGreaterThanOrEqualTo, val: "6/16/2026"},
-			{operator: Asc.c_oAscCustomAutoFilter.isLessThanOrEqualTo, val: "8/20/2026"}], true);
+createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isGreaterThanOrEqualTo, val: "6/16/1909"},
+{operator: Asc.c_oAscCustomAutoFilter.isLessThanOrEqualTo, val: "8/20/1994"}], true);
 		//Checking work of filter
 		checkHiddenRows(assert, testData, {"2": 1, "3": 1, "5": 1, "6": 1, "7": 1}, " Between: ");
 		//clean filter
 		ws.autoFilters.isApplyAutoFilterInCell(range, true);
 
 
-		createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isGreaterThanOrEqualTo, val: "6/16/2026"},
-			{operator: Asc.c_oAscCustomAutoFilter.isLessThanOrEqualTo, val: "8/20/2026"}]);
+createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.isGreaterThanOrEqualTo, val: "6/16/1909"},
+{operator: Asc.c_oAscCustomAutoFilter.isLessThanOrEqualTo, val: "8/20/1994"}]);
 		//Checking work of filter
 		checkHiddenRows(assert, testData, {"2": 1, "5": 1}, " Between: ");
 		//clean filter
@@ -1856,7 +1856,7 @@ $(function () {
 		ws.autoFilters.isApplyAutoFilterInCell(range, true);
 
 		//equals === only value with format
-		createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.equals, val: "8/20/2026"}]);
+createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.equals, val: "8/20/1994"}]);
 		//Checking work of filter
 		checkHiddenRows(assert, testData, {
 			"1": 1,
@@ -1895,7 +1895,7 @@ $(function () {
 		//clean filter
 		ws.autoFilters.isApplyAutoFilterInCell(range, true);
 
-		createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.doesNotEqual, val: "8/20/2026"}]);
+createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.doesNotEqual, val: "8/20/1994"}]);
 		//Checking work of filter
 		checkHiddenRows(assert, testData, {"8": 1}, " doesNotEqual2: ");
 		//clean filter
@@ -1925,7 +1925,7 @@ $(function () {
 		//clean filter
 		ws.autoFilters.isApplyAutoFilterInCell(range, true);
 
-		createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.beginsWith, val: "8/20/2026"}]);
+createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.beginsWith, val: "8/20/1994"}]);
 		//Checking work of filter
 		checkHiddenRows(assert, testData, {
 			"1": 1,
@@ -1965,7 +1965,7 @@ $(function () {
 		//clean filter
 		ws.autoFilters.isApplyAutoFilterInCell(range, true);
 
-		createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.endsWith, val: "20/2026"}]);
+createCustomFilter(0, [{operator: Asc.c_oAscCustomAutoFilter.endsWith, val: "20/1994"}]);
 		//Checking work of filter
 		checkHiddenRows(assert, testData, {
 			"1": 1,
@@ -2086,16 +2086,16 @@ $(function () {
 			['Dates'],
 			['text1'],
 			['text1'],
-			['5/20/2026 0:00:00'],
-			['6/20/2026 0:00:00'],
-			['6/21/2026 0:00:00'],
-			['6/22/2026 0:00:00'],
-			['6/22/2026 10:00:00'],
-			['6/22/2026 11:00:00'],
-			['6/23/2026 11:10:00'],
-			['6/24/2026 11:15:00'],
-			['6/24/2026 11:20:10'],
-			['6/24/2026 11:20:20'],
+['5/20/2020 0:00:00'],
+['6/20/2020 0:00:00'],
+['6/21/2020 0:00:00'],
+['6/22/2020 0:00:00'],
+['6/22/2020 10:00:00'],
+['6/22/2020 11:00:00'],
+['6/23/2020 11:10:00'],
+['6/24/2020 11:15:00'],
+['6/24/2020 11:20:10'],
+['6/24/2020 11:20:20'],
 			['555']
 		];
 
@@ -2111,7 +2111,7 @@ $(function () {
 		let autoFiltersOptions = ws.autoFilters.getAutoFiltersOptions(ws, {colId: 0, id: null});
 		autoFiltersOptions.filter.asc_setType(c_oAscAutoFilterTypes.Filters);
 		//may exclude
-		let aChangedVal = [{val:44006.472453703704,visible:true,isDateFormat:true,year:2026,month:5,day:24,hour:11,minute:20,second:20,dateTimeGrouping:4},{val:44006.472337962965,visible:true,isDateFormat:true,year:2026,month:5,day:24,hour:11,minute:20,second:10,dateTimeGrouping:4},{val:44006.46875,visible:true,isDateFormat:true,year:2026,month:5,day:24,hour:11,minute:15,second:0,dateTimeGrouping:4},{val:44005.46527777778,visible:true,isDateFormat:true,year:2026,month:5,day:23,hour:11,minute:10,second:0,dateTimeGrouping:4},{val:44004.458333333336,visible:true,isDateFormat:true,year:2026,month:5,day:22,hour:11,minute:0,second:0,dateTimeGrouping:4},{val:44004.416666666664,visible:true,isDateFormat:true,year:2026,month:5,day:22,hour:10,minute:0,second:0,dateTimeGrouping:4},{val:44004,visible:true,isDateFormat:true,year:2026,month:5,day:22,hour:0,minute:0,second:0,dateTimeGrouping:4},{val:44003,visible:true,isDateFormat:true,year:2026,month:5,day:21,hour:0,minute:0,second:0,dateTimeGrouping:4},{val:44002,visible:true,isDateFormat:true,year:2026,month:5,day:20,hour:0,minute:0,second:0,dateTimeGrouping:4},{val:43971,visible:false,isDateFormat:true,year:2026,month:4,day:20,hour:0,minute:0,second:0,dateTimeGrouping:4},{val:555,visible:true,isDateFormat:false},{val:"text1",visible:true,isDateFormat:false}]
+let aChangedVal = [{val:44006.472453703704,visible:true,isDateFormat:true,year:2020,month:5,day:24,hour:11,minute:20,second:20,dateTimeGrouping:4},{val:44006.472337962965,visible:true,isDateFormat:true,year:2020,month:5,day:24,hour:11,minute:20,second:10,dateTimeGrouping:4},{val:44006.46875,visible:true,isDateFormat:true,year:2020,month:5,day:24,hour:11,minute:15,second:0,dateTimeGrouping:4},{val:44005.46527777778,visible:true,isDateFormat:true,year:2020,month:5,day:23,hour:11,minute:10,second:0,dateTimeGrouping:4},{val:44004.458333333336,visible:true,isDateFormat:true,year:2020,month:5,day:22,hour:11,minute:0,second:0,dateTimeGrouping:4},{val:44004.416666666664,visible:true,isDateFormat:true,year:2020,month:5,day:22,hour:10,minute:0,second:0,dateTimeGrouping:4},{val:44004,visible:true,isDateFormat:true,year:2020,month:5,day:22,hour:0,minute:0,second:0,dateTimeGrouping:4},{val:44003,visible:true,isDateFormat:true,year:2020,month:5,day:21,hour:0,minute:0,second:0,dateTimeGrouping:4},{val:44002,visible:true,isDateFormat:true,year:2020,month:5,day:20,hour:0,minute:0,second:0,dateTimeGrouping:4},{val:43971,visible:false,isDateFormat:true,year:2020,month:4,day:20,hour:0,minute:0,second:0,dateTimeGrouping:4},{val:555,visible:true,isDateFormat:false},{val:"text1",visible:true,isDateFormat:false}]
 
 		setFilterOptionsVisible(autoFiltersOptions, aChangedVal, true);
 		ws.autoFilters.applyAutoFilter(autoFiltersOptions);

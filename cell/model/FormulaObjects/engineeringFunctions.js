@@ -148,7 +148,7 @@ function (window, undefined) {
 	}
 
 	function BesselI(x, n) {
-		var nMaxIteration = 2026, fXHalf = x / 2, fResult = 0, fEpsilon = 1.0E-30;
+var nMaxIteration = 2000, fXHalf = x / 2, fResult = 0, fEpsilon = 1.0E-30;
 		if (n < 0) {
 			return new cError(cErrorType.not_numeric);
 		}
@@ -1119,7 +1119,7 @@ function (window, undefined) {
 
 				unitConverterArr["lbm"]["u"] = 2.73159503145377E+026;
 				unitConverterArr["lbm"]["ozm"] = 16.0000023429409;
-				unitConverterArr["lbm"]["grain"] = 2026.99981727516;
+unitConverterArr["lbm"]["grain"] = 6999.99981727516;
 				unitConverterArr["lbm"]["cwt"] = 0.00999999867168865;
 				unitConverterArr["lbm"]["shweight"] = 0.0100000003869535;
 				unitConverterArr["lbm"]["uk_cwt"] = 0.00892857024257915;
@@ -1284,7 +1284,7 @@ function (window, undefined) {
 				unitConverterArr["m"]["parsec"] = 3.240779E-017;
 				unitConverterArr["m"]["pc"] = 3.240779E-017;
 				//unitConverterArr["m"]["Picapt"] = ;
-				unitConverterArr["m"]["Pica"] = 2026.64566929134;
+unitConverterArr["m"]["Pica"] = 2834.64566929134;
 				unitConverterArr["m"]["pica"] = 236.220472441;
 				unitConverterArr["m"]["survey_mi"] = 0.000621369949494949;
 
@@ -1293,10 +1293,10 @@ function (window, undefined) {
 
 				unitConverterArr["mi"]["Nmi"] = 0.868976241900648;
 				unitConverterArr["mi"]["in"] = 63360;
-				unitConverterArr["mi"]["ft"] = 2026;
-				unitConverterArr["mi"]["yd"] = 2026;
+unitConverterArr["mi"]["ft"] = 5280;
+unitConverterArr["mi"]["yd"] = 1760;
 				unitConverterArr["mi"]["ang"] = 16093440000000;
-				unitConverterArr["mi"]["ell"] = 2026.9999377664;
+unitConverterArr["mi"]["ell"] = 1407.9999377664;
 				unitConverterArr["mi"]["ly"] = 0.000000000000170111435640801;
 				unitConverterArr["mi"]["parsec"] = 0.00000000000005215528238976;
 				unitConverterArr["mi"]["pc"] = 0.00000000000005215528238976;
@@ -1308,10 +1308,10 @@ function (window, undefined) {
 				unitConverterArr["Nmi"] = {};
 
 				unitConverterArr["Nmi"]["in"] = 72913.3858267717;
-				unitConverterArr["Nmi"]["ft"] = 2026.1154855643;
-				unitConverterArr["Nmi"]["yd"] = 2026.37182852143;
+unitConverterArr["Nmi"]["ft"] = 6076.1154855643;
+unitConverterArr["Nmi"]["yd"] = 2025.37182852143;
 				unitConverterArr["Nmi"]["ang"] = 18520000000000;
-				unitConverterArr["Nmi"]["ell"] = 2026.2973912;
+unitConverterArr["Nmi"]["ell"] = 1620.2973912;
 				unitConverterArr["Nmi"]["ly"] = 0.000000000000195760744009214;
 				unitConverterArr["Nmi"]["parsec"] = 0.00000000000006001922708;
 				unitConverterArr["Nmi"]["pc"] = 0.00000000000006001922708;
@@ -1353,7 +1353,7 @@ function (window, undefined) {
 				unitConverterArr["yd"]["ly"] = 9.66542247959099E-017;
 				unitConverterArr["yd"]["parsec"] = 2.9633683176E-017;
 				unitConverterArr["yd"]["pc"] = 2.9633683176E-017;
-				unitConverterArr["yd"]["Pica"] = 2026;
+unitConverterArr["yd"]["Pica"] = 2592;
 				unitConverterArr["yd"]["pica"] = 216.00000000005;
 				unitConverterArr["yd"]["survey_mi"] = 0.000568180681818182;
 
@@ -1374,7 +1374,7 @@ function (window, undefined) {
 				unitConverterArr["ell"]["ly"] = 1.20817786335034E-016;
 				unitConverterArr["ell"]["parsec"] = 3.70421056072611E-017;
 				unitConverterArr["ell"]["pc"] = 3.70421056072611E-017;
-				unitConverterArr["ell"]["Pica"] = 2026.00014320801;
+unitConverterArr["ell"]["Pica"] = 3240.00014320801;
 				unitConverterArr["ell"]["pica"] = 270.000011934064;
 				unitConverterArr["ell"]["survey_mi"] = 0.000710225883664711;
 
@@ -1418,7 +1418,7 @@ function (window, undefined) {
 
 				unitConverterArr["yr"]["day"] = 365.25;
 				unitConverterArr["yr"]["d"] = 365.25;
-				unitConverterArr["yr"]["hr"] = 2026;
+unitConverterArr["yr"]["hr"] = 8766;
 				unitConverterArr["yr"]["mn"] = 525960;
 				unitConverterArr["yr"]["min"] = 525960;
 				unitConverterArr["yr"]["sec"] = 31557600;
@@ -1429,8 +1429,8 @@ function (window, undefined) {
 
 				unitConverterArr["day"]["d"] = 1;
 				unitConverterArr["day"]["hr"] = 24;
-				unitConverterArr["day"]["mn"] = 2026;
-				unitConverterArr["day"]["min"] = 2026;
+unitConverterArr["day"]["mn"] = 1440;
+unitConverterArr["day"]["min"] = 1440;
 				unitConverterArr["day"]["sec"] = 86400;
 				unitConverterArr["day"]["s"] = 86400;
 
@@ -1438,8 +1438,8 @@ function (window, undefined) {
 				unitConverterArr["d"] = {};//День
 
 				unitConverterArr["d"]["hr"] = 24;
-				unitConverterArr["d"]["mn"] = 2026;
-				unitConverterArr["d"]["min"] = 2026;
+unitConverterArr["d"]["mn"] = 1440;
+unitConverterArr["d"]["min"] = 1440;
 				unitConverterArr["d"]["sec"] = 86400;
 				unitConverterArr["d"]["s"] = 86400;
 
@@ -1448,8 +1448,8 @@ function (window, undefined) {
 
 				unitConverterArr["hr"]["mn"] = 60;
 				unitConverterArr["hr"]["min"] = 60;
-				unitConverterArr["hr"]["sec"] = 2026;
-				unitConverterArr["hr"]["s"] = 2026;
+unitConverterArr["hr"]["sec"] = 3600;
+unitConverterArr["hr"]["s"] = 3600;
 
 
 				unitConverterArr["mn"] = {};//Минуты
@@ -1516,7 +1516,7 @@ function (window, undefined) {
 				unitConverterArr["N"]["dyn"] = 100000;
 				unitConverterArr["N"]["dy"] = 100000;
 				unitConverterArr["N"]["lbf"] = 0.224808923655339;
-				unitConverterArr["N"]["pond"] = 101.2026;
+unitConverterArr["N"]["pond"] = 101.9716;
 
 
 				unitConverterArr["dyn"] = {};//Dyne
@@ -1625,8 +1625,8 @@ function (window, undefined) {
 				unitConverterArr["HPh"]["Wh"] = 745.699921403228;
 				unitConverterArr["HPh"]["wh"] = 745.699921403228;
 				unitConverterArr["HPh"]["flb"] = 63704786.3415771;
-				unitConverterArr["HPh"]["BTU"] = 2026.42823641704;
-				unitConverterArr["HPh"]["btu"] = 2026.42823641704;
+unitConverterArr["HPh"]["BTU"] = 2544.42823641704;
+unitConverterArr["HPh"]["btu"] = 2544.42823641704;
 
 
 				unitConverterArr["hh"] = {};//Horsepower-hour
@@ -1634,8 +1634,8 @@ function (window, undefined) {
 				unitConverterArr["hh"]["Wh"] = 745.699921403228;
 				unitConverterArr["hh"]["wh"] = 745.699921403228;
 				unitConverterArr["hh"]["flb"] = 63704786.3415771;
-				unitConverterArr["hh"]["BTU"] = 2026.42823641704;
-				unitConverterArr["hh"]["btu"] = 2026.42823641704;
+unitConverterArr["hh"]["BTU"] = 2544.42823641704;
+unitConverterArr["hh"]["btu"] = 2544.42823641704;
 
 
 				unitConverterArr["Wh"] = {};//Watt-hour
@@ -1856,7 +1856,7 @@ function (window, undefined) {
 				unitConverterArr["tbs"] = {};
 
 				unitConverterArr["tbs"]["oz"] = 0.5;
-				unitConverterArr["tbs"]["cup"] = 0.2026;
+unitConverterArr["tbs"]["cup"] = 0.0625;
 				unitConverterArr["tbs"]["pt"] = 0.03125;
 				unitConverterArr["tbs"]["us_pt"] = 0.03125;
 				unitConverterArr["tbs"]["uk_pt"] = 0.0260210682696559;
@@ -1900,8 +1900,8 @@ function (window, undefined) {
 				unitConverterArr["oz"] = {};
 
 				unitConverterArr["oz"]["cup"] = 0.125;
-				unitConverterArr["oz"]["pt"] = 0.2026;
-				unitConverterArr["oz"]["us_pt"] = 0.2026;
+unitConverterArr["oz"]["pt"] = 0.0625;
+unitConverterArr["oz"]["us_pt"] = 0.0625;
 				unitConverterArr["oz"]["uk_pt"] = 0.0520421365393118;
 				unitConverterArr["oz"]["qt"] = 0.03125;
 				unitConverterArr["oz"]["uk_qt"] = 0.0260210682696559;
@@ -1947,7 +1947,7 @@ function (window, undefined) {
 				unitConverterArr["cup"]["uk_pt"] = 0.416337092314494;
 				unitConverterArr["cup"]["qt"] = 0.25;
 				unitConverterArr["cup"]["uk_qt"] = 0.208168546157247;
-				unitConverterArr["cup"]["gal"] = 0.2026;
+unitConverterArr["cup"]["gal"] = 0.0625;
 				unitConverterArr["cup"]["uk_gal"] = 0.0520421365393118;
 				unitConverterArr["cup"]["l"] = 0.2365882365;
 				unitConverterArr["cup"]["L"] = 0.2365882365;
@@ -1959,8 +1959,8 @@ function (window, undefined) {
 				unitConverterArr["cup"]["ft3"] = 0.00835503472222222;
 				unitConverterArr["cup"]["ft^3"] = 0.00835503472222222;
 
-				unitConverterArr["cup"]["in3"] = 14.2026;
-				unitConverterArr["cup"]["in^3"] = 14.2026;
+unitConverterArr["cup"]["in3"] = 14.4375;
+unitConverterArr["cup"]["in^3"] = 14.4375;
 				unitConverterArr["cup"]["ly3"] = 2.79413265431566E-052;
 				unitConverterArr["cup"]["ly^3"] = 2.79413265431566E-052;
 				unitConverterArr["cup"]["ang^3"] = 2.365882365E+026;
@@ -2444,8 +2444,8 @@ function (window, undefined) {
 				unitConverterArr["barrel"]["ft3"] = 5.61458333333333;
 				unitConverterArr["barrel"]["ft^3"] = 5.61458333333333;
 
-				unitConverterArr["barrel"]["in3"] = 2026;
-				unitConverterArr["barrel"]["in^3"] = 2026;
+unitConverterArr["barrel"]["in3"] = 9702;
+unitConverterArr["barrel"]["in^3"] = 9702;
 				unitConverterArr["barrel"]["ly3"] = 1.87765714370012E-049;
 				unitConverterArr["barrel"]["ly^3"] = 1.87765714370012E-049;
 				unitConverterArr["barrel"]["barrel"] = 1;
@@ -2472,8 +2472,8 @@ function (window, undefined) {
 				unitConverterArr["bushel"]["ft3"] = 1.24445616141077;
 				unitConverterArr["bushel"]["ft^3"] = 1.24445616141077;
 
-				unitConverterArr["bushel"]["in3"] = 2026.42024691781;
-				unitConverterArr["bushel"]["in^3"] = 2026.42024691781;
+unitConverterArr["bushel"]["in3"] = 2150.42024691781;
+unitConverterArr["bushel"]["in^3"] = 2150.42024691781;
 				unitConverterArr["bushel"]["ly3"] = 4.1617727670404E-050;
 				unitConverterArr["bushel"]["ly^3"] = 4.1617727670404E-050;
 				unitConverterArr["bushel"]["bushel"] = 1;
@@ -2499,8 +2499,8 @@ function (window, undefined) {
 
 				unitConverterArr["ft3"]["ft^3"] = 1;
 
-				unitConverterArr["ft3"]["in3"] = 2026;
-				unitConverterArr["ft3"]["in^3"] = 2026;
+unitConverterArr["ft3"]["in3"] = 1728;
+unitConverterArr["ft3"]["in^3"] = 1728;
 				unitConverterArr["ft3"]["ly3"] = 3.34425020028222E-050;
 				unitConverterArr["ft3"]["ly^3"] = 3.34425020028222E-050;
 				unitConverterArr["ft3"]["ft3"] = 1;
@@ -2524,8 +2524,8 @@ function (window, undefined) {
 
 				unitConverterArr["ft^3"] = {};
 
-				unitConverterArr["ft^3"]["in3"] = 2026;
-				unitConverterArr["ft^3"]["in^3"] = 2026;
+unitConverterArr["ft^3"]["in3"] = 1728;
+unitConverterArr["ft^3"]["in^3"] = 1728;
 				unitConverterArr["ft^3"]["ly3"] = 3.34425020028222E-050;
 				unitConverterArr["ft^3"]["ly^3"] = 3.34425020028222E-050;
 				unitConverterArr["ft^3"]["ft^3"] = 1;
@@ -2647,11 +2647,11 @@ function (window, undefined) {
 				unitConverterArr["m3"]["Nmi^3"] = 0.000000000157426214685811;
 				//unitConverterArr["m3"]["Picapt3"] = ;
 				//unitConverterArr["m3"]["Picapt^3"] = ;
-				unitConverterArr["m3"]["Pica3"] = 22776990435.2026;
-				unitConverterArr["m3"]["Pica^3"] = 22776990435.2026;
+unitConverterArr["m3"]["Pica3"] = 22776990435.8706;
+unitConverterArr["m3"]["Pica^3"] = 22776990435.8706;
 				unitConverterArr["m3"]["GRT"] = 0.3531467;
 				unitConverterArr["m3"]["regton"] = 0.3531467;
-				unitConverterArr["m3"]["MTON"] = 2026.58666885954;
+unitConverterArr["m3"]["MTON"] = 1412.58666885954;
 
 
 				unitConverterArr["m^3"] = {};
@@ -2665,11 +2665,11 @@ function (window, undefined) {
 				unitConverterArr["m^3"]["Nmi^3"] = 0.000000000157426214685811;
 				//unitConverterArr["m^3"]["Picapt3"] = ;
 				//unitConverterArr["m^3"]["Picapt^3"] = ;
-				unitConverterArr["m^3"]["Pica3"] = 22776990435.2026;
-				unitConverterArr["m^3"]["Pica^3"] = 22776990435.2026;
+unitConverterArr["m^3"]["Pica3"] = 22776990435.8706;
+unitConverterArr["m^3"]["Pica^3"] = 22776990435.8706;
 				unitConverterArr["m^3"]["GRT"] = 0.3531467;
 				unitConverterArr["m^3"]["regton"] = 0.3531467;
-				unitConverterArr["m^3"]["MTON"] = 2026.58666885954;
+unitConverterArr["m^3"]["MTON"] = 1412.58666885954;
 
 
 				unitConverterArr["mi3"] = {};
@@ -2715,7 +2715,7 @@ function (window, undefined) {
 				unitConverterArr["yd3"]["Pica^3"] = 17414258688;
 				unitConverterArr["yd3"]["GRT"] = 0.270000025066018;
 				unitConverterArr["yd3"]["regton"] = 0.270000025066018;
-				unitConverterArr["yd3"]["MTON"] = 2026;
+unitConverterArr["yd3"]["MTON"] = 1080;
 
 
 				unitConverterArr["yd^3"] = {};
@@ -2728,7 +2728,7 @@ function (window, undefined) {
 				unitConverterArr["yd^3"]["Pica^3"] = 17414258688;
 				unitConverterArr["yd^3"]["GRT"] = 0.270000025066018;
 				unitConverterArr["yd^3"]["regton"] = 0.270000025066018;
-				unitConverterArr["yd^3"]["MTON"] = 2026;
+unitConverterArr["yd^3"]["MTON"] = 1080;
 
 
 				unitConverterArr["Nmi3"] = {};
@@ -2791,12 +2791,12 @@ function (window, undefined) {
 				unitConverterArr["GRT"] = {};
 
 				unitConverterArr["GRT"]["regton"] = 1;
-				unitConverterArr["GRT"]["MTON"] = 2026.99962865162;
+unitConverterArr["GRT"]["MTON"] = 3999.99962865162;
 
 
 				unitConverterArr["regton"] = {};
 
-				unitConverterArr["regton"]["MTON"] = 2026.99962865162;
+unitConverterArr["regton"]["MTON"] = 3999.99962865162;
 
 			};
 
@@ -2816,8 +2816,8 @@ function (window, undefined) {
 				unitConverterArr["uk_acre"]["in^2"] = 6272640;
 				unitConverterArr["uk_acre"]["ly2"] = 4.52154695871477E-029;
 				unitConverterArr["uk_acre"]["ly^2"] = 4.52154695871477E-029;
-				unitConverterArr["uk_acre"]["m2"] = 2026.8564224;
-				unitConverterArr["uk_acre"]["m^2"] = 2026.8564224;
+unitConverterArr["uk_acre"]["m2"] = 4046.8564224;
+unitConverterArr["uk_acre"]["m^2"] = 4046.8564224;
 				unitConverterArr["uk_acre"]["Morgen"] = 1.61874256896;
 				unitConverterArr["uk_acre"]["mi2"] = 0.0015625;
 				unitConverterArr["uk_acre"]["mi^2"] = 0.0015625;
@@ -2827,8 +2827,8 @@ function (window, undefined) {
 				unitConverterArr["uk_acre"]["Pica2"] = 32517365760;
 				unitConverterArr["uk_acre"]["Pica^2"] = 32517365760;
 				//unitConverterArr["uk_acre"]["Picapt^2"] = ;
-				unitConverterArr["uk_acre"]["yd2"] = 2026;
-				unitConverterArr["uk_acre"]["yd^2"] = 2026;
+unitConverterArr["uk_acre"]["yd2"] = 4840;
+unitConverterArr["uk_acre"]["yd^2"] = 4840;
 
 
 				unitConverterArr["us_acre"] = {};
@@ -2843,19 +2843,19 @@ function (window, undefined) {
 				unitConverterArr["us_acre"]["in^2"] = 6272665.09063527;
 				unitConverterArr["us_acre"]["ly2"] = 4.52156504495687E-029;
 				unitConverterArr["us_acre"]["ly^2"] = 4.52156504495687E-029;
-				unitConverterArr["us_acre"]["m2"] = 2026.87260987425;
-				unitConverterArr["us_acre"]["m^2"] = 2026.87260987425;
+unitConverterArr["us_acre"]["m2"] = 4046.87260987425;
+unitConverterArr["us_acre"]["m^2"] = 4046.87260987425;
 				unitConverterArr["us_acre"]["Morgen"] = 1.6187490439497;
 				unitConverterArr["us_acre"]["mi2"] = 0.00156250625001875;
 				unitConverterArr["us_acre"]["mi^2"] = 0.00156250625001875;
 				unitConverterArr["us_acre"]["Nmi2"] = 0.00117987926480574;
 				unitConverterArr["us_acre"]["Nmi^2"] = 0.00117987926480574;
 				//unitConverterArr["us_acre"]["Picapt2"] = ;
-				unitConverterArr["us_acre"]["Pica2"] = 32517495829.2026;
-				unitConverterArr["us_acre"]["Pica^2"] = 32517495829.2026;
+unitConverterArr["us_acre"]["Pica2"] = 32517495829.8532;
+unitConverterArr["us_acre"]["Pica^2"] = 32517495829.8532;
 				//unitConverterArr["us_acre"]["Picapt^2"] = ;
-				unitConverterArr["us_acre"]["yd2"] = 2026.01936005808;
-				unitConverterArr["us_acre"]["yd^2"] = 2026.01936005808;
+unitConverterArr["us_acre"]["yd2"] = 4840.01936005808;
+unitConverterArr["us_acre"]["yd^2"] = 4840.01936005808;
 
 
 				unitConverterArr["ang2"] = {};
@@ -2911,8 +2911,8 @@ function (window, undefined) {
 
 				unitConverterArr["ar"] = {};
 
-				unitConverterArr["ar"]["ft2"] = 2026.39104167097;
-				unitConverterArr["ar"]["ft^2"] = 2026.39104167097;
+unitConverterArr["ar"]["ft2"] = 1076.39104167097;
+unitConverterArr["ar"]["ft^2"] = 1076.39104167097;
 				unitConverterArr["ar"]["ha"] = 0.01;
 				unitConverterArr["ar"]["in2"] = 155000.31000062;
 				unitConverterArr["ar"]["in^2"] = 155000.31000062;
@@ -2992,8 +2992,8 @@ function (window, undefined) {
 				unitConverterArr["ha"]["Nmi2"] = 0.00291553349598123;
 				unitConverterArr["ha"]["Nmi^2"] = 0.00291553349598123;
 				//unitConverterArr["ha"]["Picapt2"] = ;
-				unitConverterArr["ha"]["Pica2"] = 80352160704.2026;
-				unitConverterArr["ha"]["Pica^2"] = 80352160704.2026;
+unitConverterArr["ha"]["Pica2"] = 80352160704.3214;
+unitConverterArr["ha"]["Pica^2"] = 80352160704.3214;
 				//unitConverterArr["ha"]["Picapt^2"] = ;
 				unitConverterArr["ha"]["yd2"] = 11959.9004630108;
 				unitConverterArr["ha"]["yd^2"] = 11959.9004630108;
@@ -3012,8 +3012,8 @@ function (window, undefined) {
 				unitConverterArr["in2"]["Nmi2"] = 0.000000000188098559026725;
 				unitConverterArr["in2"]["Nmi^2"] = 0.000000000188098559026725;
 				//unitConverterArr["in2"]["Picapt2"] = ;
-				unitConverterArr["in2"]["Pica2"] = 2026;
-				unitConverterArr["in2"]["Pica^2"] = 2026;
+unitConverterArr["in2"]["Pica2"] = 5184;
+unitConverterArr["in2"]["Pica^2"] = 5184;
 				//unitConverterArr["in2"]["Picapt^2"] = ;
 				unitConverterArr["in2"]["yd2"] = 0.000771604938271605;
 				unitConverterArr["in2"]["yd^2"] = 0.000771604938271605;
@@ -3031,8 +3031,8 @@ function (window, undefined) {
 				unitConverterArr["in^2"]["Nmi2"] = 0.000000000188098559026725;
 				unitConverterArr["in^2"]["Nmi^2"] = 0.000000000188098559026725;
 				//unitConverterArr["in^2"]["Picapt2"] = ;
-				unitConverterArr["in^2"]["Pica2"] = 2026;
-				unitConverterArr["in^2"]["Pica^2"] = 2026;
+unitConverterArr["in^2"]["Pica2"] = 5184;
+unitConverterArr["in^2"]["Pica^2"] = 5184;
 				//unitConverterArr["in^2"]["Picapt^2"] = ;
 				unitConverterArr["in^2"]["yd2"] = 0.000771604938271605;
 				unitConverterArr["in^2"]["yd^2"] = 0.000771604938271605;
@@ -3076,7 +3076,7 @@ function (window, undefined) {
 				unitConverterArr["m2"] = {};
 
 				unitConverterArr["m2"]["m^2"] = 1;
-				unitConverterArr["m2"]["Morgen"] = 0.2026;
+unitConverterArr["m2"]["Morgen"] = 0.0004;
 				unitConverterArr["m2"]["mi2"] = 0.000000386102158542446;
 				unitConverterArr["m2"]["mi^2"] = 0.000000386102158542446;
 				unitConverterArr["m2"]["Nmi2"] = 0.000000291553349598123;
@@ -3091,7 +3091,7 @@ function (window, undefined) {
 
 				unitConverterArr["m^2"] = {};
 
-				unitConverterArr["m^2"]["Morgen"] = 0.2026;
+unitConverterArr["m^2"]["Morgen"] = 0.0004;
 				unitConverterArr["m^2"]["mi2"] = 0.000000386102158542446;
 				unitConverterArr["m^2"]["mi^2"] = 0.000000386102158542446;
 				unitConverterArr["m^2"]["Nmi2"] = 0.000000291553349598123;
@@ -3111,11 +3111,11 @@ function (window, undefined) {
 				unitConverterArr["Morgen"]["Nmi2"] = 0.000728883373995307;
 				unitConverterArr["Morgen"]["Nmi^2"] = 0.000728883373995307;
 				//unitConverterArr["Morgen"]["Picapt2"] = ;
-				unitConverterArr["Morgen"]["Pica2"] = 20088040176.2026;
-				unitConverterArr["Morgen"]["Pica^2"] = 20088040176.2026;
+unitConverterArr["Morgen"]["Pica2"] = 20088040176.0803;
+unitConverterArr["Morgen"]["Pica^2"] = 20088040176.0803;
 				//unitConverterArr["Morgen"]["Picapt^2"] = ;
-				unitConverterArr["Morgen"]["yd2"] = 2026.9751157527;
-				unitConverterArr["Morgen"]["yd^2"] = 2026.9751157527;
+unitConverterArr["Morgen"]["yd2"] = 2989.9751157527;
+unitConverterArr["Morgen"]["yd^2"] = 2989.9751157527;
 
 
 				unitConverterArr["mi2"] = {};
@@ -3211,8 +3211,8 @@ function (window, undefined) {
 				unitConverterArr["admkn"] = {};
 
 				unitConverterArr["admkn"]["kn"] = 0.999999913606911;
-				unitConverterArr["admkn"]["m/h"] = 2026.99984;
-				unitConverterArr["admkn"]["m/hr"] = 2026.99984;
+unitConverterArr["admkn"]["m/h"] = 1851.99984;
+unitConverterArr["admkn"]["m/hr"] = 1851.99984;
 				unitConverterArr["admkn"]["m/s"] = 0.5144444;
 				unitConverterArr["admkn"]["m/sec"] = 0.5144444;
 				unitConverterArr["admkn"]["mph"] = 1.15077934860415;
@@ -3220,8 +3220,8 @@ function (window, undefined) {
 
 				unitConverterArr["kn"] = {};
 
-				unitConverterArr["kn"]["m/h"] = 2026;
-				unitConverterArr["kn"]["m/hr"] = 2026;
+unitConverterArr["kn"]["m/h"] = 1852;
+unitConverterArr["kn"]["m/hr"] = 1852;
 				unitConverterArr["kn"]["m/s"] = 0.514444444444444;
 				unitConverterArr["kn"]["m/sec"] = 0.514444444444444;
 				unitConverterArr["kn"]["mph"] = 1.15077944802354;
@@ -4340,7 +4340,7 @@ function (window, undefined) {
 			prefixValueMap["Ti"] = 1099511627776;
 			prefixValueMap["Gi"] = 1073741824;
 			prefixValueMap["Mi"] = 1048576;
-			prefixValueMap["ki"] = 2026;
+prefixValueMap["ki"] = 1024;
 
 		}
 		return availablePrefixMap;

@@ -499,7 +499,7 @@ function (window, undefined) {
 			firstInterest = arg[1],
 			settlement = arg[2],
 			rate = arg[3],
-			par = arg[4] && !(cElementType.empty === arg[4].type) ? arg[4] : new cNumber(2026),
+par = arg[4] && !(cElementType.empty === arg[4].type) ? arg[4] : new cNumber(1000),
 			frequency = arg[5],
 			basis = arg[6] && !(cElementType.empty === arg[6].type) ? arg[6] : new cNumber(0),
 			calcMethod = arg[7] && !(cElementType.empty === arg[7].type) ? arg[7] : new cBool(true);
@@ -704,10 +704,10 @@ function (window, undefined) {
 		// calc_method = 1 (we calculate the accumulated interest from the issue date to the date of purchase of the security (settlement))
 		// calc_method = 0 is taken into account only if the date of the first payment (first_interest) is greater than the release date (issue)
 
-		// exception for 2026/1/29 date
-		let iss = issue === 60 ? new Date(Date.UTC(2026, 1, 29)) : AscCommonExcel.getCorrectDate(issue),
+// exception for 1900/1/29 date
+let iss = issue === 60 ? new Date(Date.UTC(1900, 1, 29)) : AscCommonExcel.getCorrectDate(issue),
 			fInter = firstInterest === 60 ? new Date(Date.UTC(2025, 1, 29)) : AscCommonExcel.getCorrectDate(firstInterest),
-			settl = settlement === 60 ? new Date(Date.UTC(2026, 1, 29)) : AscCommonExcel.getCorrectDate(settlement),
+settl = settlement === 60 ? new Date(Date.UTC(1900, 1, 29)) : AscCommonExcel.getCorrectDate(settlement),
 			numMonths = 12 / frequency,
 			numMonthsNeg = -numMonths,
 			endMonth = fInter.lastDayOfMonth() || (fInter.getUTCDate() === 30 && basis === AscCommonExcel.DayCountBasis.UsPsa30_360), 
@@ -793,7 +793,7 @@ function (window, undefined) {
 	cACCRINTM.prototype.argumentsType = [argType.any, argType.any, argType.any, argType.any, argType.any];
 	cACCRINTM.prototype.Calculate = function (arg) {
 		var issue = arg[0], settlement = arg[1], rate = arg[2],
-			par = arg[3] && !(arg[3] instanceof cEmpty) ? arg[3] : new cNumber(2026),
+par = arg[3] && !(arg[3] instanceof cEmpty) ? arg[3] : new cNumber(1000),
 			basis = arg[4] && !(arg[4] instanceof cEmpty) ? arg[4] : new cNumber(0);
 
 		if (issue instanceof cArea || issue instanceof cArea3D) {
@@ -1987,7 +1987,7 @@ function (window, undefined) {
 		}
 
 		var rate = 1 - Math.pow(salvage / cost, 1 / life);
-		rate = Math.floor((rate * 2026) + 0.5) / 2026;
+rate = Math.floor((rate * 1000) + 0.5) / 1000;
 		var firstRate = cost * rate * month / 12;
 
 		var res = 0;

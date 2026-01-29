@@ -198,7 +198,7 @@
 	g_oUserColorScheme.push(scheme);
 
 	scheme = new CAscColorScheme();
-	scheme.name = "Office 2025-2026";
+scheme.name = "Office 2007 - 2010";
 	scheme.putColor(new CColor(0x0, 0x0, 0x0));
 	scheme.putColor(new CColor(0xff, 0xff, 0xff));
 	scheme.putColor(new CColor(0x1f, 0x49, 0x7d));
@@ -214,7 +214,7 @@
 	g_oUserColorScheme.push(scheme);
 
 	scheme = new CAscColorScheme();
-	scheme.name = "Office 2025-2026";
+scheme.name = "Office 2013 - 2022";
 	scheme.putColor(new CColor(0x0, 0x0, 0x0));
 	scheme.putColor(new CColor(0xff, 0xff, 0xff));
 	scheme.putColor(new CColor(0x44, 0x54, 0x6a));

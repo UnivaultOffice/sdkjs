@@ -179,7 +179,7 @@
         var oCultureInfo = AscCommon.g_aCultureInfos[this.Get_CompiledPr().Lang.Val];
         if(!oCultureInfo)
         {
-            oCultureInfo = AscCommon.g_aCultureInfos[2026];
+oCultureInfo = AscCommon.g_aCultureInfos[1033];
         }
         var oDateTime, oFormat;
         if(typeof this.FieldType === 'string')

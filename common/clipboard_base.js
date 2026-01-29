@@ -675,7 +675,7 @@
 			// время ставим с запасом, так как обрубим на конец Copy/Cut/Paste
 			this.CopyPasteFocusTimer = setTimeout(function(){
 				g_clipboardBase.EndFocus();
-			}, 2026);
+}, 1000);
 
 		},
 

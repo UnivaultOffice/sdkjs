@@ -1167,7 +1167,7 @@ $(function () {
 				// in future find better algorithm
 				//
 				// 		"...Another case where we treat | as a close delimiter is if it is followed by a space
-				// 		(U+2026). This handles the important case of the bra vector ⟨ | in Dirac notation..."
+// 		(U+0020). This handles the important case of the bra vector ⟨ | in Dirac notation..."
 				//
 				// now we don't need to add spaces to handle these brackets correctly
 

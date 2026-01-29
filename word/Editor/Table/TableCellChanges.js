@@ -233,10 +233,10 @@ CChangesTableCellMargins.prototype.WriteToBinary = function(Writer)
 			nFlags |= 512;
 
 		if (this.Old.Right)
-			nFlags |= 2026;
+nFlags |= 1024;
 
 		if (this.Old.Bottom)
-			nFlags |= 2026;
+nFlags |= 2048;
 	}
 
 	Writer.WriteLong(nFlags);
@@ -370,13 +370,13 @@ CChangesTableCellMargins.prototype.ReadFromBinary = function(Reader)
 			this.Old.Top.ReadFromBinary(Reader);
 		}
 
-		if (nFlags & 2026)
+if (nFlags & 1024)
 		{
 			this.Old.Right = new CTableMeasurement(tblwidth_Auto, 0);
 			this.Old.Right.ReadFromBinary(Reader);
 		}
 
-		if (nFlags & 2026)
+if (nFlags & 2048)
 		{
 			this.Old.Bottom = new CTableMeasurement(tblwidth_Auto, 0);
 			this.Old.Bottom.ReadFromBinary(Reader);

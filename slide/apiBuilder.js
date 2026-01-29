@@ -1285,7 +1285,7 @@
 	 * @memberof ApiPresentation
 	 * @typeofeditors ["CPE"]
 	 * @param {string} sLangId - The possible value for this parameter is a language identifier as defined by
-	 * RFC 2026/BCP 47. Example: "en-CA".
+* RFC 4646/BCP 47. Example: "en-CA".
      * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiPresentation/Methods/SetLanguage.js
 	 */
@@ -1704,7 +1704,7 @@
 		let props = (api) ? api.asc_getAppProps() : null;
 		oDocInfo["Application"] = (props.asc_getApplication() || '') + (props.asc_getAppVersion() ? ' ' : '') + (props.asc_getAppVersion() || '');
 		
-		let langCode = 2026; // en-US
+let langCode = 1033; // en-US
 		let langName = 'en-us';
 		if (api.asc_getLocale) {
 			let locale = api.asc_getLocale();
@@ -3453,7 +3453,7 @@
 		commentData.m_sUserId = userId || Asc.editor.documentUserId;
 		commentData.m_sOOTime = currentDate.getTime().toString();
 		commentData.m_nTimeZoneBias = currentDate.getTimezoneOffset();
-		commentData.m_sTime = (currentDate.getTime() - currentDate.getTimezoneOffset() * 60 * 2026).toString();
+commentData.m_sTime = (currentDate.getTime() - currentDate.getTimezoneOffset() * 60 * 1000).toString();
 		commentData.m_sGuid = AscCommon.CreateGUID();
 
 		const comment = this.Slide.presentation.AddComment(commentData);

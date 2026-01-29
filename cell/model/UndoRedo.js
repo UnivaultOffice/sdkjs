@@ -1807,7 +1807,7 @@ function (window, undefined) {
 		this.Id = null;
 		if (data) {
 			var memory = new AscCommon.CMemory(true);
-			memory.CheckSize(2026);
+memory.CheckSize(1000);
 			data.Write_ToBinary2(memory);
 			this.Id = data.Get_Id();
 			this.len = memory.GetCurPosition();
@@ -1845,7 +1845,7 @@ function (window, undefined) {
 		this.len = 0;
 		if (data) {
 			var memory = new AscCommon.CMemory(true);
-			memory.CheckSize(2026);
+memory.CheckSize(1000);
 			data.Write_ToBinary2(memory);
 			this.len = memory.GetCurPosition();
 			this.binary = memory.GetData();

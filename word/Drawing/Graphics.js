@@ -284,7 +284,7 @@
 	};
 	CGraphics.prototype.p_width = function(w)
 	{
-		this.m_oPen.LineWidth = w / 2026;
+this.m_oPen.LineWidth = w / 1000;
 
 		if (!this.m_bIntegerGrid)
 		{
@@ -1852,7 +1852,7 @@
 		{
 			// значит какой-то трансформ
 			var dKoefMMToPx = 1 / Math.max(this.m_oCoordTransform.sx, 0.001);
-			this.p_width(2026 * dKoefMMToPx);
+this.p_width(1000 * dKoefMMToPx);
 
 			var w_dot = 2 * dKoefMMToPx;
 			var w_dist = 1 * dKoefMMToPx;
@@ -1951,7 +1951,7 @@
 		{
 			// значит какой-то трансформ
 			var dKoefMMToPx = 1 / Math.max(this.m_oCoordTransform.sx, 0.001);
-			this.p_width(2026 * dKoefMMToPx);
+this.p_width(1000 * dKoefMMToPx);
 
 			var w_dot = 2 * dKoefMMToPx;
 			var w_dist = 1 * dKoefMMToPx;
@@ -2060,7 +2060,7 @@
 			// значит какой-то трансформ
 			var dKoefMMToPx = 1 / Math.max(this.m_oCoordTransform.sx, 0.001);
 
-			this.p_width(2026 * dKoefMMToPx);
+this.p_width(1000 * dKoefMMToPx);
 			this._s();
 			this.GetAutoShapesTrack().AddLineDash(ctx, x1, y1, x2, y2, 2 * dKoefMMToPx, 2 * dKoefMMToPx);
 			this.ds();
@@ -2158,7 +2158,7 @@
 		}
 		
 		this.p_color(color.r, color.g, color.b, 255);
-		this.p_width(0.25 * 2026);
+this.p_width(0.25 * 1000);
 		this.drawHorLine(0, underlineY, x0, x0 + w, 0.25 );
 	};
 
@@ -2176,7 +2176,7 @@
 				return;
 			}
 
-			this.p_width(penW * 2026);
+this.p_width(penW * 1000);
 			this._s();
 			this._m(x, y);
 			this._l(r, y);
@@ -2264,7 +2264,7 @@
 			var _y1 = y - penW / 2;
 			var _y2 = _y1 + 2 * penW;
 
-			this.p_width(penW * 2026);
+this.p_width(penW * 1000);
 			this._s();
 			this._m(x, _y1);
 			this._l(r, _y1);
@@ -2341,7 +2341,7 @@
 				return;
 			}
 
-			this.p_width(penW * 2026);
+this.p_width(penW * 1000);
 			this._s();
 			this._m(x, y);
 			this._l(x, b);
@@ -2425,7 +2425,7 @@
 				return;
 			}
 
-			this.p_width(penW * 2026);
+this.p_width(penW * 1000);
 			this._s();
 			this._m(x, y);
 			this._l(r, y);
@@ -2704,7 +2704,7 @@
 		{
 			let coeff = this.m_oCoordTransform.sx;
 			
-			this.p_width(2 / coeff * 2026);
+this.p_width(2 / coeff * 1000);
 			let shift = isStart ? 3 / coeff : -3 / coeff;
 			this._s();
 			this._m(x + shift, y);

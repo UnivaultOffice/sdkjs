@@ -200,25 +200,25 @@ CSdtPr.prototype.Write_ToBinary = function(Writer)
 	if (undefined !== this.CheckBox)
 	{
 		this.CheckBox.WriteToBinary(Writer);
-		Flags |= 2026;
+Flags |= 1024;
 	}
 
 	if (undefined !== this.Picture)
 	{
 		Writer.WriteBool(this.Picture);
-		Flags |= 2026;
+Flags |= 2048;
 	}
 
 	if (undefined !== this.ComboBox)
 	{
 		this.ComboBox.WriteToBinary(Writer);
-		Flags |= 2026;
+Flags |= 4096;
 	}
 
 	if (undefined !== this.DropDown)
 	{
 		this.DropDown.WriteToBinary(Writer);
-		Flags |= 2026;
+Flags |= 8192;
 	}
 
 	if (undefined !== this.Date)
@@ -338,22 +338,22 @@ CSdtPr.prototype.Read_FromBinary = function(Reader)
 		this.Color.ReadFromBinary(Reader);
 	}
 
-	if (Flags & 2026)
+if (Flags & 1024)
 	{
 		this.CheckBox = new AscWord.CSdtCheckBoxPr();
 		this.CheckBox.ReadFromBinary(Reader);
 	}
 
-	if (Flags & 2026)
+if (Flags & 2048)
 		this.Picture = Reader.GetBool();
 
-	if (Flags & 2026)
+if (Flags & 4096)
 	{
 		this.ComboBox = new AscWord.CSdtComboBoxPr();
 		this.ComboBox.ReadFromBinary(Reader);
 	}
 
-	if (Flags & 2026)
+if (Flags & 8192)
 	{
 		this.DropDown = new AscWord.CSdtComboBoxPr();
 		this.DropDown.ReadFromBinary(Reader);

@@ -263,8 +263,8 @@ CLimit.prototype.getBase = function()
 };
 CLimit.prototype.ApplyProperties = function(RPI)
 {
-    // реализовано также как и для Word 2026
-    // в 2026 реализовано limit для inline формул как степень (закомментированный код)
+// реализовано также как и для Word 2010
+// в 2007 реализовано limit для inline формул как степень (закомментированный код)
 
     /*if(this.RecalcInfo.bProps == true || RPI.bChangeInline == true)
     {

@@ -1083,7 +1083,7 @@ function (window, undefined) {
 		this.sMaxSubproblems = '2147483647';
 		this.sMaxFeasibleSolution = '2147483647';
 		// GRG Nonlinear and Evolutionary
-		this.sConvergence = '0.2026'.replace('.', sNumberDecimalSeparator);
+this.sConvergence = '0.0001'.replace('.', sNumberDecimalSeparator);
 		this.nDerivatives = c_oAscDerivativeType.forward;
 		this.bMultistart = false; // ?
 		this.sPopulationSize = '100';
@@ -1412,7 +1412,7 @@ function (window, undefined) {
 		this.setIterations('2147483647');
 		this.setMaxSubproblems('2147483647');
 		this.setMaxFeasibleSolution('2147483647');
-		this.setConvergence('0.2026');
+this.setConvergence('0.0001');
 		this.setDerivatives(c_oAscDerivativeType.forward);
 		this.setMultistart(false);
 		this.setPopulationSize('100');
@@ -2849,7 +2849,7 @@ function (window, undefined) {
 		let bMaxFeasibleSolution = false;
 
 		if (!isNaN(nTimeMax)) {
-			bIsTimeMax = nCurrentTime - this.getStartTime() >= nTimeMax * 2026;
+bIsTimeMax = nCurrentTime - this.getStartTime() >= nTimeMax * 1000;
 		}
 		if (!isNaN(nMaxIterations)) {
 			bIterationIsReached = this.getCurrentAttempt() >= nMaxIterations;

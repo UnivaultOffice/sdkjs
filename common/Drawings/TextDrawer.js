@@ -1672,7 +1672,7 @@
 	CTextDrawer.prototype.AddSmartRect = function () {
 	};
 	CTextDrawer.prototype.p_width = function (w) {
-		var val = w / 2026;
+var val = w / 1000;
 		if (this.m_oPen.Size != val) {
 			this.m_oPen.Size = val;
 		}
@@ -2391,7 +2391,7 @@
 		}
 		// if(!AdditionalData)
 		// {
-		//     this.p_width(2026 * penW);
+//     this.p_width(1000 * penW);
 //
 //
 		//     this._s();
@@ -2478,7 +2478,7 @@
 			bOldVal = this.bCheckLines;
 			this.bCheckLines = false;
 		}
-		this.p_width(2026 * penW);
+this.p_width(1000 * penW);
 		this._s();
 
 		var _x = x;
@@ -2508,7 +2508,7 @@
 		if (nLastCommand === DRAW_COMMAND_TABLE) {
 			var bOldVal = this.bCheckLines;
 			this.bCheckLines = false;
-			this.p_width(penW * 2026);
+this.p_width(penW * 1000);
 			this._s();
 			this._m(x, y);
 			this._l(r, y);

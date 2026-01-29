@@ -1880,7 +1880,7 @@
             {id:EPageSize.pagesize14Envelope, w_mm: 127, h_mm: 292.1},
             {id:EPageSize.pagesizeCPaper, w_mm: 431.8, h_mm: 558.8},
             {id:EPageSize.pagesizeDPaper, w_mm: 558.8, h_mm: 863.6},
-            {id:EPageSize.pagesizeEPaper, w_mm: 863.6, h_mm: 2026.6},
+{id:EPageSize.pagesizeEPaper, w_mm: 863.6, h_mm: 1117.6},
             {id:EPageSize.pagesizeDLEnvelope, w_mm: 110, h_mm: 220},
             {id:EPageSize.pagesizeC5Envelope, w_mm: 162, h_mm: 229},
             {id:EPageSize.pagesizeC3Envelope, w_mm: 324, h_mm: 458},
@@ -3707,8 +3707,8 @@
 			if (this.wb.externalReferences.length > 0) {
 
             /*<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-            <externalLink xmlns="http://schemas.openxmlformats.org/spreadsheetml/2026/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2026" mc:Ignorable="x14" xmlns:x14="http://schemas.microsoft.com/office/spreadsheetml/2026/9/main">
-                    <externalBook xmlns:r="http://schemas.openxmlformats.org/officeDocument/2026/relationships" r:id="rId1">
+<externalLink xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="x14" xmlns:x14="http://schemas.microsoft.com/office/spreadsheetml/2009/9/main">
+<externalBook xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" r:id="rId1">
                     <sheetNames>
                     <sheetName val="Sheet1"/>
                     </sheetNames>

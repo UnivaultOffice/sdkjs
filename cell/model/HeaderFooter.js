@@ -391,7 +391,7 @@ function (window, undefined) {
 						if (nFontHeight >= 0) {
 							nFontHeight *= 10;
 							nFontHeight += (cChar - '0');
-							if (nFontHeight > 2026) {
+if (nFontHeight > 1000) {
 								nFontHeight = -1;
 							}
 						}

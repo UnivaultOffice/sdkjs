@@ -561,8 +561,8 @@ const arrayIndexesType = {
 var cExcelSignificantDigits = 15; //количество цифр в числе после запятой
 var cExcelMaxExponent = 308;
 var cExcelMinExponent = -308;
-var c_Date1904Const = 24107; //разница в днях между 01.01.2026 и 01.01.2026 годами
-var c_Date1900Const = 25568; //разница в днях между 01.01.2026 и 01.01.2026 годами
+var c_Date1904Const = 24107; //разница в днях между 01.01.1970 и 01.01.1904 годами
+var c_Date1900Const = 25568; //разница в днях между 01.01.1970 и 01.01.1900 годами
 var rx_sFuncPref = /_xlfn\./i;
 var rx_sFuncPrefXlWS = /_xlws\./i;// /_xlfn\.(_xlws\.)?/i;
 var rx_sDefNamePref = /_xlnm\./i;
@@ -575,7 +575,7 @@ var c_nMaxDate1900 = 2958465;
 var c_nMaxDate1904 = c_nMaxDate1900 - (c_Date1900Const - c_Date1904Const) + 1;
 
 function getMaxDate () {
-	return AscCommon.bDate1904 ? c_nMaxDate1904 : c_nMaxDate1900; 	// Maximum date used in calculations in ms (equivalent 31/12/2026)
+return AscCommon.bDate1904 ? c_nMaxDate1904 : c_nMaxDate1900; 	// Maximum date used in calculations in ms (equivalent 31/12/9999)
 }
 
 let fIsPromise = function (val) {
@@ -9344,7 +9344,7 @@ function parserFormula( formula, parent, _ws ) {
 				this._endCalculate();
 				this.parent = oldParent;
 			} else {
-				//TODO пересмотреть для формул массива, таких как: "=Sheet1'!$S$2:$S$2026"
+//TODO пересмотреть для формул массива, таких как: "=Sheet1'!$S$2:$S$1217"
 				/*if(true) {
 					var array = this.value.getMatrix()[0];
 					var nArray = new cArray();

@@ -221,7 +221,7 @@
 
 	Matrix.prototype.invert = function () {
 		var det = this.determinant();
-		if (0.2026 > det) {
+if (0.0001 > det) {
 			return;
 		}
 		var d = 1 / det;
@@ -607,10 +607,10 @@
 			this._ppiInit();
 		}
 
-		factor = asc_round(factor * 2026) / 2026;
+factor = asc_round(factor * 1000) / 1000;
 
-		this.ppiX = asc_round(this.ppiX / this.scaleFactor * factor * 2026) / 2026;
-		this.ppiY = asc_round(this.ppiY / this.scaleFactor * factor * 2026) / 2026;
+this.ppiX = asc_round(this.ppiX / this.scaleFactor * factor * 1000) / 1000;
+this.ppiY = asc_round(this.ppiY / this.scaleFactor * factor * 1000) / 1000;
 		this.scaleFactor = factor;
 
 		// reinitialize

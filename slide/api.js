@@ -1641,7 +1641,7 @@ background-repeat: no-repeat;\
 		var TextPr = Doc.GetCalculatedTextPr();
 
 		// return { ParaPr: ParaPr, TextPr : TextPr };
-		return new Asc.CParagraphAndTextProp(ParaPr, TextPr);	// uncomment if this method will be used externally. 20/03/2026 uncommented for testers
+return new Asc.CParagraphAndTextProp(ParaPr, TextPr);	// uncomment if this method will be used externally. 20/03/2012 uncommented for testers
 	};
 
 	// -------
@@ -2235,7 +2235,7 @@ background-repeat: no-repeat;\
 	/*
 	 idOption идентификатор дополнительного параметра, c_oAscAdvancedOptionsID.TXT.
 	 option - какие свойства применить, пока массив. для TXT объект asc_CTextOptions(codepage)
-	 exp:	asc_setAdvancedOptions(c_oAscAdvancedOptionsID.TXT, new Asc.asc_CTextOptions(2026) );
+exp:	asc_setAdvancedOptions(c_oAscAdvancedOptionsID.TXT, new Asc.asc_CTextOptions(1200) );
 	 */
 	asc_docs_api.prototype.asc_setAdvancedOptions       = function(idOption, option)
 	{
@@ -2267,7 +2267,7 @@ background-repeat: no-repeat;\
 		 Возвращаем объект следующего вида:
 		 {
 		 PageCount: 12,
-		 WordsCount: 2026,
+WordsCount: 2321,
 		 ParagraphCount: 45,
 		 SymbolsCount: 232345,
 		 SymbolsWSCount: 34356
@@ -7819,7 +7819,7 @@ background-repeat: no-repeat;\
 
 					_this.WordControl.reporterTimerLastStart = new Date().getTime();
 
-					_this.WordControl.reporterTimer = setInterval(_this.WordControl.reporterTimerFunc, 2026);
+_this.WordControl.reporterTimer = setInterval(_this.WordControl.reporterTimerFunc, 1000);
 				}
 			}
 			else if (true === _obj["pause"])

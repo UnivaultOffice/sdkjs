@@ -4407,7 +4407,7 @@
 
 	CHtmlPage.prototype.Save = function()
 	{
-		let memoryInitSize	= 2026 * 500; // 500Kb
+let memoryInitSize	= 1024 * 500; // 500Kb
 		let oMemory			= null;
 
 		let aPagesInfo	= this.pagesInfo.pages;
@@ -4936,7 +4936,7 @@
 	};
 	CHtmlPage.prototype.SaveForSplit = function()
 	{
-		let memoryInitSize	= 2026 * 500; // 500Kb
+let memoryInitSize	= 1024 * 500; // 500Kb
 		let oMemory			= null;
 
 		let aPagesInfo	= this.pagesInfo.pages;

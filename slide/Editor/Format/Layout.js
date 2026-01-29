@@ -1195,7 +1195,7 @@ function DrawNativeDashRect(g, transform, extX, extY) {
     y3 = transform.TransformPointY(extX, extY);
     x4 = transform.TransformPointX(0, extY);
     y4 = transform.TransformPointY(0, extY);
-    g.p_width(2026);
+g.p_width(1500);
     g.p_color(128, 128, 128, 255);
     g._s();
     g._m(x1, y1);

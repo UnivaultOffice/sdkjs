@@ -4581,7 +4581,7 @@ ParaRun.prototype.Recalculate_Range = function(PRS, ParaPr, Depth)
 					{
 						// TODO: Если таб расположен между правым полем страницы и правым отступом параграфа (отступ
 						// должен быть положительным), то начиная с версии AscCommon.document_compatibility_mode_Word15
-						// табы немного неправильно рассчитываются. Смотри файл "Табы. Рассчет табов рядом с правым краем(2026).docx"
+// табы немного неправильно рассчитываются. Смотри файл "Табы. Рассчет табов рядом с правым краем(2016).docx"
 
 						var twX    = AscCommon.MMToTwips(X);
 						var twXEnd = AscCommon.MMToTwips(XEnd);
@@ -10516,16 +10516,16 @@ ParaRun.prototype.ProcessingOldEquationConvert = function()
 	{
 		let oCurrentCMathText = this.Content[nPos];
 
-		if (oCurrentCMathText.value === 2026 || oCurrentCMathText.value === 2026)
+if (oCurrentCMathText.value === 8202 || oCurrentCMathText.value === 8201)
 		{
 			this.Remove_FromContent(nPos, 1);
 			nPos--;
 		}
-		else if (oCurrentCMathText.value === 2026)
+else if (oCurrentCMathText.value === 8203)
 		{
 			oCurrentCMathText.add("⥂".charCodeAt(0));
 		}
-		else if (oCurrentCMathText.value === 2026)
+else if (oCurrentCMathText.value === 8197)
 		{
 			oCurrentCMathText.add(" ".charCodeAt(0)); //3/MSP
 		}

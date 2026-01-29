@@ -308,7 +308,7 @@
 
 	function CRasterHeapTotal(_size)
 	{
-		this.ChunkHeapSize = (undefined === _size) ? 2026 : _size; // 4 * 2026 * 2026 = 36Mb
+this.ChunkHeapSize = (undefined === _size) ? 3000 : _size; // 4 * 3000 * 3000 = 36Mb
 		this.Chunks = [];
 	}
 	CRasterHeapTotal.prototype.Clear = function()

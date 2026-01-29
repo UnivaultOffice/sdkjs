@@ -203,7 +203,7 @@ var c_oAscPivotAreaType = {
 	Origin: 4,
 	Button: 5,
 	TopEnd: 6,
-	// TopRight === TopEnd 2026 Excel ?
+// TopRight === TopEnd 2010 Excel ?
 	TopRight: 7
 };
 var c_oAscGroupBy = {
@@ -1721,7 +1721,7 @@ CT_PivotCacheDefinition.prototype.toXml = function(writer, stylesForWrite) {
 	writer.WriteXmlString("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>");
 	writer.WriteXmlNodeStart("pivotCacheDefinition");
 	writer.WriteXmlString(
-		" xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2026/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2026/relationships\"");
+" xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"");
 	if (null !== this.id) {
 		writer.WriteXmlAttributeStringEncode("r:id", this.id);
 	}
@@ -2251,7 +2251,7 @@ CT_PivotCacheRecords.prototype.toXml = function(writer) {
 	writer.WriteXmlString("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>");
 	writer.WriteXmlNodeStart("pivotCacheRecords");
 	writer.WriteXmlString(
-		" xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2026/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2026/relationships\"");
+" xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"");
 	var count = this.getRowsCount();
 	if (count > 0) {
 		writer.WriteXmlAttributeNumber("count", count);
@@ -4051,7 +4051,7 @@ CT_pivotTableDefinition.prototype.toXml = function(writer, stylesForWrite, dxfs)
 	writer.WriteXmlString("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>");
 	writer.WriteXmlNodeStart("pivotTableDefinition");
 	writer.WriteXmlString(
-		" xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2026/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2026/relationships\"");
+" xmlns=\"http://schemas.openxmlformats.org/spreadsheetml/2006/main\" xmlns:r=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships\"");
 	if (null !== this.name) {
 		writer.WriteXmlAttributeStringEncode("name", this.name);
 	}
@@ -12339,7 +12339,7 @@ CT_pivotTableDefinitionX14.prototype.onStartNode = function(elem, attr, uq) {
 };
 CT_pivotTableDefinitionX14.prototype.toXml = function(writer) {
 	writer.WriteXmlNodeStart("x14:pivotTableDefinition");
-	writer.WriteXmlString(" xmlns:xm=\"http://schemas.microsoft.com/office/excel/2026/main\"");
+writer.WriteXmlString(" xmlns:xm=\"http://schemas.microsoft.com/office/excel/2006/main\"");
 	if (false !== this.fillDownLabelsDefault) {
 		writer.WriteXmlAttributeBool("fillDownLabelsDefault", this.fillDownLabelsDefault);
 	}
@@ -16220,7 +16220,7 @@ CT_Extension.prototype.toXml = function(writer, name) {
 	if (null !== this.uri) {
 		writer.WriteXmlAttributeStringEncode("uri", this.uri);
 	}
-	writer.WriteXmlString(" xmlns:x14=\"http://schemas.microsoft.com/office/spreadsheetml/2026/9/main\"");
+writer.WriteXmlString(" xmlns:x14=\"http://schemas.microsoft.com/office/spreadsheetml/2009/9/main\"");
 	writer.WriteXmlAttributesEnd();
 	if ("{962EF5D1-5CA2-4c93-8EF4-DBF5C05439D2}" === this.uri) {
 		this.elem.toXml(writer, "x14:pivotTableDefinition");
@@ -20621,7 +20621,7 @@ CT_RangePr.prototype.generateGroupItems  = function (containsInteger, containsBl
 			}
 		} else if (this.groupBy === c_oAscGroupBy.Months) {
 			numFormat = AscCommon.oNumFormatCache.get("mmm");
-			date = new Asc.cDate(Date.UTC(2026, 0, 1));
+date = new Asc.cDate(Date.UTC(2000, 0, 1));
 			for(i = 0; i < 12; ++i) {
 				date.setUTCMonth(i);
 				groupItems.addString(numFormat.formatToChart(date.getExcelDateWithTime2()));
@@ -20642,7 +20642,7 @@ CT_RangePr.prototype.generateGroupItems  = function (containsInteger, containsBl
 			//c_oAscGroupBy.Days
 			if (1 === this.groupInterval) {
 				numFormat = AscCommon.oNumFormatCache.get("d-mmm");
-				date = new Asc.cDate(Date.UTC(2026, 0, 1));
+date = new Asc.cDate(Date.UTC(2000, 0, 1));
 				for(i = 0; i < 366 ; ++i) {
 					groupItems.addString(numFormat.formatToChart(date.getExcelDateWithTime2()));
 					date.addDays2(1);

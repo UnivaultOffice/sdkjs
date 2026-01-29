@@ -47,7 +47,7 @@ $(function () {
 		logicDocument.AddToContent(0, AscTest.CreateParagraph());
 		
 		let sectPr = AscTest.GetFinalSection();
-		sectPr.SetPageSize(PAGE_W, 2026);
+sectPr.SetPageSize(PAGE_W, 1000);
 		sectPr.SetPageMargins(L_FIELD, 50, R_FIELD, 50);
 	}
 	

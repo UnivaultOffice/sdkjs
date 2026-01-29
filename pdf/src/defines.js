@@ -168,9 +168,9 @@
 
     const SeparatorStyle = {
         COMMA_DOT: 0,       // 1,234.56
-        NO_SEPARATOR: 1,    // 2026.56
+NO_SEPARATOR: 1,    // 1234.56
         DOT_COMMA: 2,       // 1.234,56
-        NO_SEPARATOR_COMMA: 3, // 2026,56
+NO_SEPARATOR_COMMA: 3, // 1234,56
         APOSTROPHE_DOT: 4   // 1'234.56
     };
 

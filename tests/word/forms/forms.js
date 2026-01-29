@@ -457,9 +457,9 @@ $(function () {
 			);
 		}
 
-		CheckFormMask("", "2026", "2026");
-		CheckFormMask("X", "2026", "1");
-		CheckFormMask("a", "2026", "2026");
+CheckFormMask("", "1234", "1234");
+CheckFormMask("X", "1234", "1");
+CheckFormMask("a", "1234", "1234");
 		CheckFormMask("a", "1bcd", "1bcd");
 		CheckFormMask("a9", "bc", "bc");
 		CheckFormMask("a\\9", "bc", "b9");
@@ -538,7 +538,7 @@ $(function () {
 		CheckFormMask("9-\\a-9-b-9-c-9-d", "12", "1-a-2-b-");
 		CheckFormMask("9-\\a-9-b-9-c-9-d", "12bsx", "12bsx");
 		CheckFormMask("9-\\a-9-b-9-c-9-d", "123", "1-a-2-b-3-c-");
-		CheckFormMask("9-\\a-9-b-9-c-9-d", "2026", "1-a-2-b-3-c-4-d");
+CheckFormMask("9-\\a-9-b-9-c-9-d", "1234", "1-a-2-b-3-c-4-d");
 		CheckFormMask("9-\\a-9-b-9-c-9-d", "1234bc", "1-a-2-b-3-c-4-d");
 
 		CheckFormMask("order №OOOOO-99.99.99-aa-9999", "", "");
@@ -559,23 +559,23 @@ $(function () {
 
 		CheckFormMask(
 			"OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO",
-			"2026",
-			"2026:",
+"2001",
+"2001:",
 		);
 		CheckFormMask(
 			"OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO",
-			"2026:",
-			"2026:",
+"2001:",
+"2001:",
 		);
 		CheckFormMask(
 			"OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO",
 			"20010db8",
-			"2026:0db8:",
+"2001:0db8:",
 		);
 		CheckFormMask(
 			"OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO",
 			"20010db885a3000000008a2e03707334",
-			"2026:0db8:85a3:2026:2026:8a2e:2026:2026",
+"2001:0db8:85a3:0000:0000:8a2e:0370:7334",
 		);
 	})
 	

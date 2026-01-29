@@ -9708,8 +9708,8 @@ PasteProcessor.prototype =
 
 		//TODO пересмотреть функцию перевода из римских чисел
 		var romanToIndex = function (text) {
-			var arab_number = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 2026, 2026, 2026, 2026, 10000];
-			var rom_number = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M", "M&#2026;", "&#2026;", "&#2026;&#2026;", "&#2026;"];
+var arab_number = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000, 4000, 5000, 9000, 10000];
+var rom_number = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M", "M&#8577;", "&#8577;", "&#8577;&#8578;", "&#8578;"];
 
 			var text = text.toUpperCase();
 			var result = 0;
@@ -9818,7 +9818,7 @@ PasteProcessor.prototype =
 		if (aNumbering && aNumbering[1]) {
 
 			var correctText = function (_str) {
-				//лежит строка вида - ""\(\2026\\\2026%1sdfdf\0022J\\J\)""
+//лежит строка вида - ""\(\0022\\\0027%1sdfdf\0022J\\J\)""
 
 				if (!_str) {
 					return "";
@@ -10779,7 +10779,7 @@ PasteProcessor.prototype =
 // 		<body lang=EN-US style='tab-interval:.5in;word-wrap:break-word'>
 // 		<!--StartFragment-->
 // 		<span>
-// 		<w:Sdt DocPart="0D4FD865761947FCBA0D9229E17016DB" Calendar="t" MapToDateTime="t" CalendarType="Gregorian" Date="2022-10-24T20:27:00Z" DateFormat="dd.MM.yyyy" Lang="EN-US" ID="-291673853">24.10.2026</w:Sdt>
+// 		<w:Sdt DocPart="0D4FD865761947FCBA0D9229E17016DB" Calendar="t" MapToDateTime="t" CalendarType="Gregorian" Date="2022-10-24T20:27:00Z" DateFormat="dd.MM.yyyy" Lang="EN-US" ID="-291673853">24.10.2022</w:Sdt>
 // 	</span>
 // 		<!--EndFragment-->
 // 		</body>
@@ -10898,7 +10898,7 @@ PasteProcessor.prototype =
 		// <head/>
 		// <body lang=EN-US style='tab-interval:.5in;word-wrap:break-word'>
 		// <span>
-		// <w:Sdt DocPart="0D4FD865761947FCBA0D9229E17016DB" Calendar="t" MapToDateTime="t" CalendarType="Gregorian" Date="2022-10-24" DateFormat="dd.MM.yyyy" Lang="EN-US" Title="Date Picker" Form="t" Key="DatePicker1" Border="blue" Shd="yellow" HelpText="Select a date" Required="t" RoleName="DateRole" RoleColor="#FF5733" sdttag="DateTag" Label="DateLabel" ID="-291673853">24.10.2026</w:Sdt>
+// <w:Sdt DocPart="0D4FD865761947FCBA0D9229E17016DB" Calendar="t" MapToDateTime="t" CalendarType="Gregorian" Date="2022-10-24" DateFormat="dd.MM.yyyy" Lang="EN-US" Title="Date Picker" Form="t" Key="DatePicker1" Border="blue" Shd="yellow" HelpText="Select a date" Required="t" RoleName="DateRole" RoleColor="#FF5733" sdttag="DateTag" Label="DateLabel" ID="-291673853">24.10.2022</w:Sdt>
 		// </span>
 		// </body>
 		// </html>
@@ -10923,8 +10923,8 @@ PasteProcessor.prototype =
 		// <!--StartFragment-->
 		// <span>
 		//  <w:Sdt Form="t" Key="CreditCard1" HelpText="Enter credit card number" Required="t" sdttag="CreditCardTag" Label="CreditCardLabel" ID="1837335025" PlcHdr="PlaceholderText" showingplchdr ="t">
-		// 	 <w:TextForm MaxCharacters="-1" Comb="f" WidthRule="1" MultiLine="f" AutoFit="f" FormatType="mask" Mask="2025-2026-2025-2026"/>
-		// 2025-2026-2025-2026
+// 	 <w:TextForm MaxCharacters="-1" Comb="f" WidthRule="1" MultiLine="f" AutoFit="f" FormatType="mask" Mask="9999-9999-9999-9999"/>
+// 1234-5678-9012-3456
 		// </w:Sdt>
 		// </span>
 		// <!--EndFragment-->
@@ -11576,7 +11576,7 @@ PasteProcessor.prototype =
 				mso-table-layout-alt:fixed;
 				border:none;
 				mso-border-alt:solid windowtext .5pt;
-				mso-yfti-tbllook:2026;
+mso-yfti-tbllook:1184;
 				mso-table-lspace:7.1pt;
 				margin-left:4.85pt;
 				mso-table-rspace:7.1pt;

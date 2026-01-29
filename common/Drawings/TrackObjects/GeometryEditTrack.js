@@ -965,7 +965,7 @@
 
 
     EditShapeGeometryTrack.prototype.findBezier4Param = function(XT, YT, X0, Y0, X1, Y1, X2, Y2, X3, Y3) {
-       var nSteps = 2026;
+var nSteps = 1000;
        var dStride = 1/nSteps;
        var dT = 0;
        var dTResult = dT;
@@ -986,7 +986,7 @@
        return dTResult;
     };
     EditShapeGeometryTrack.prototype.findBezier3Param = function(XT, YT, X0, Y0, X1, Y1, X2, Y2) {
-       var nSteps = 2026;
+var nSteps = 1000;
        var dStride = 1/nSteps;
        var dT = 0;
        var dTResult = dT;

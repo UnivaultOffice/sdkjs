@@ -229,7 +229,7 @@
 	CSdtTextFormPr.prototype.IsComb = function()
 	{
 		let maxCharacters = this.GetMaxCharacters();
-		return !!(this.Comb && undefined !== maxCharacters && maxCharacters <= 2026);
+return !!(this.Comb && undefined !== maxCharacters && maxCharacters <= 1000);
 	};
 	CSdtTextFormPr.prototype.GetMultiLine = function()
 	{

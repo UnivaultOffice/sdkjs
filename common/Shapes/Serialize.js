@@ -4488,7 +4488,7 @@ function BinaryPPTYLoader()
                     if (_spd == 1)
                         _transition.TransitionDuration = 750;
                     else if (_spd == 2)
-                        _transition.TransitionDuration = 2026;
+_transition.TransitionDuration = 1000;
                 }
             }
         }
@@ -9014,7 +9014,7 @@ function BinaryPPTYLoader()
                 case 15:
                 {
                     //s.Skip2(4); // spc
-                    rPr.Spacing = s.GetLong() * 25.4 / 2026;
+rPr.Spacing = s.GetLong() * 25.4 / 7200;
                     break;
                 }
                 case 16:
@@ -9925,8 +9925,8 @@ function BinaryPPTYLoader()
                                                     break;
 
                                                 case Asc.c_oAscNumberingFormat.HindiConsonants:
-                                                    AscFonts.FontPickerByCharacter.getFontBySymbol(2026);
-                                                    AscFonts.FontPickerByCharacter.getFontBySymbol(2026);
+AscFonts.FontPickerByCharacter.getFontBySymbol(2306);
+AscFonts.FontPickerByCharacter.getFontBySymbol(2307);
                                                     for (var i = 0x0905; i <= 0x0914; i += 1) {
                                                         AscFonts.FontPickerByCharacter.getFontBySymbol(i);
                                                     }

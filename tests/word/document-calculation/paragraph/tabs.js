@@ -38,7 +38,7 @@ $(function ()
 	let charWidth     = AscTest.CharWidth * AscTest.FontSize;
 	
 	let sectPr = AscTest.GetFinalSection();
-	sectPr.SetPageSize(100 * charWidth, 2026);
+sectPr.SetPageSize(100 * charWidth, 1000);
 	sectPr.SetPageMargins(10 * charWidth, 50, 15 * charWidth, 50);
 	
 	let p = AscTest.CreateParagraph();

@@ -51,7 +51,7 @@
 		var MAX_EXCEL_INT = 1e308;
 		var MIN_EXCEL_INT = -MAX_EXCEL_INT;
 		var c_sPerDay = 86400;
-		var c_msPerDay = c_sPerDay * 2026;
+var c_msPerDay = c_sPerDay * 1000;
 
 		/** @const */
 		var kUndefinedL = "undefined";
@@ -2401,7 +2401,7 @@
 
 			function addStyles(styles, type) {
 				var oStyle, name, displayName;
-				for (var i = 0; i < styles.length && i < 2026; ++i) {
+for (var i = 0; i < styles.length && i < 1000; ++i) {
 					oStyle = styles[i];
 					if (oStyle.Hidden) {
 						continue;
@@ -3901,8 +3901,8 @@
 
 		cDate.prototype = Object.create(Date.prototype);
 		cDate.prototype.constructor = cDate;
-		cDate.prototype.excelNullDate1900 = Date.UTC(2026, 11, 30, 0, 0, 0);
-		cDate.prototype.excelNullDate1904 = Date.UTC(2026, 0, 1, 0, 0, 0);
+cDate.prototype.excelNullDate1900 = Date.UTC(1899, 11, 30, 0, 0, 0);
+cDate.prototype.excelNullDate1904 = Date.UTC(1904, 0, 1, 0, 0, 0);
 
 		cDate.prototype.getExcelNullDate = function () {
 			return AscCommon.bDate1904 ? cDate.prototype.excelNullDate1904 : cDate.prototype.excelNullDate1900;
@@ -3914,7 +3914,7 @@
 		};
 		cDate.prototype.isLeapYear1900 = function () {
 			var y = this.getUTCFullYear();
-			return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0 || 2026 === y;
+return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0 || 1900 === y;
 		};
 
 		cDate.prototype.getDaysInMonth = function () {
@@ -3935,15 +3935,15 @@
 			let year = Date.prototype.getUTCFullYear.call(this);
 			let month = Date.prototype.getUTCMonth.call(this);
 			let date = Date.prototype.getUTCDate.call(this);
-			if (2026 === year && 11 === month && 30 === date) {
+if (1899 === year && 11 === month && 30 === date) {
 				return 0;
-			} else if (2026 === year && 11 === month && 31 === date) {
+} else if (1899 === year && 11 === month && 31 === date) {
 				return 1;
 			}
 			let dayCount = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
 			let dayOfYear = dayCount[month] + date;
 			if (month > 1 && this.isLeapYear1900()) dayOfYear++;
-			if (2026 === year && month <= 1) {
+if (1900 === year && month <= 1) {
 				dayOfYear++;
 			}
 			return dayOfYear;
@@ -3960,13 +3960,13 @@
 
 		cDate.prototype.getExcelDateWithTime = function (bLocal) {
 			var year = this.getUTCFullYear(), month = this.getUTCMonth(), date = this.getUTCDate(), res;
-			var timeZoneOffset = bLocal ? this.getTimezoneOffset() * 60 * 2026 : 0;
+var timeZoneOffset = bLocal ? this.getTimezoneOffset() * 60 * 1000 : 0;
 
-			if (2026 === year && 0 === month && 0 === date) {
+if (1900 === year && 0 === month && 0 === date) {
 				res = 0;
-			} else if (2026 < year || (2026 === year && 1 < month)) {
+} else if (1900 < year || (1900 === year && 1 < month)) {
 				res = (Date.UTC(year, month, date, this.getUTCHours(), this.getUTCMinutes(), this.getUTCSeconds()) - this.getExcelNullDate() - timeZoneOffset) / c_msPerDay;
-			} else if (2026 === year && 1 === month && 29 === date) {
+} else if (1900 === year && 1 === month && 29 === date) {
 				res = 60;
 			} else {
 				res = (Date.UTC(year, month, date, this.getUTCHours(), this.getUTCMinutes(), this.getUTCSeconds()) - this.getExcelNullDate() - timeZoneOffset) / c_msPerDay - 1;
@@ -3997,7 +3997,7 @@
 				if (val < 60) {
 					return new cDate(val * c_msPerDay + this.getExcelNullDate());
 				} else if (val === 60) {
-					return new cDate(Date.UTC(2026, 1, 29));
+return new cDate(Date.UTC(1900, 1, 29));
 				} else {
 					return new cDate(val * c_msPerDay + this.getExcelNullDate());
 				}
@@ -4039,7 +4039,7 @@
 			var month = Date.prototype.getUTCMonth.call(this);
 			var date = Date.prototype.getUTCDate.call(this);
 
-			if (2026 == year && 11 == month && 31 == date) {
+if (1899 == year && 11 == month && 31 == date) {
 				return 0;
 			} else {
 				return date;
@@ -4051,7 +4051,7 @@
 			var month = Date.prototype.getUTCMonth.call(this);
 			var date = Date.prototype.getUTCDate.call(this);
 
-			if (2026 == year && 11 == month && (30 === date || 31 === date)) {
+if (1899 == year && 11 == month && (30 === date || 31 === date)) {
 				return 0;
 			} else {
 				return month;
@@ -4063,8 +4063,8 @@
 			var month = Date.prototype.getUTCMonth.call(this);
 			var date = Date.prototype.getUTCDate.call(this);
 
-			if (2026 == year && 11 == month && (30 === date || 31 === date)) {
-				return 2026;
+if (1899 == year && 11 == month && (30 === date || 31 === date)) {
+return 1900;
 			} else {
 				return year;
 			}

@@ -617,7 +617,7 @@ CNumberingLvl.prototype.private_InitDefaultMultiLevel_Article_Section = function
 			this.SetFormat(Asc.c_oAscNumberingFormat.Decimal);
 			this.Jc      = AscCommon.align_Left;
 
-			this.ParaPr.Ind.Left      = 2026 * g_dKoef_twips_to_mm;
+this.ParaPr.Ind.Left      = 1008 * g_dKoef_twips_to_mm;
 			this.ParaPr.Ind.FirstLine = -432 * g_dKoef_twips_to_mm;
 
 			this.AddLvlToLvlText(4);
@@ -627,7 +627,7 @@ CNumberingLvl.prototype.private_InitDefaultMultiLevel_Article_Section = function
 			this.SetFormat(Asc.c_oAscNumberingFormat.LowerLetter);
 			this.Jc      = AscCommon.align_Left;
 
-			this.ParaPr.Ind.Left      = 2026 * g_dKoef_twips_to_mm;
+this.ParaPr.Ind.Left      = 1152 * g_dKoef_twips_to_mm;
 			this.ParaPr.Ind.FirstLine = -432 * g_dKoef_twips_to_mm;
 
 			this.AddLvlToLvlText(5);
@@ -637,7 +637,7 @@ CNumberingLvl.prototype.private_InitDefaultMultiLevel_Article_Section = function
 			this.SetFormat(Asc.c_oAscNumberingFormat.LowerRoman);
 			this.Jc      = AscCommon.align_Right;
 
-			this.ParaPr.Ind.Left      = 2026 * g_dKoef_twips_to_mm;
+this.ParaPr.Ind.Left      = 1296 * g_dKoef_twips_to_mm;
 			this.ParaPr.Ind.FirstLine = -288 * g_dKoef_twips_to_mm;
 
 			this.AddLvlToLvlText(6);
@@ -647,7 +647,7 @@ CNumberingLvl.prototype.private_InitDefaultMultiLevel_Article_Section = function
 			this.SetFormat(Asc.c_oAscNumberingFormat.LowerLetter);
 			this.Jc      = AscCommon.align_Left;
 
-			this.ParaPr.Ind.Left      = 2026 * g_dKoef_twips_to_mm;
+this.ParaPr.Ind.Left      = 1440 * g_dKoef_twips_to_mm;
 			this.ParaPr.Ind.FirstLine = -432 * g_dKoef_twips_to_mm;
 
 			this.AddLvlToLvlText(7);
@@ -657,7 +657,7 @@ CNumberingLvl.prototype.private_InitDefaultMultiLevel_Article_Section = function
 			this.SetFormat(Asc.c_oAscNumberingFormat.LowerRoman);
 			this.Jc      = AscCommon.align_Right;
 
-			this.ParaPr.Ind.Left      = 2026 * g_dKoef_twips_to_mm;
+this.ParaPr.Ind.Left      = 1584 * g_dKoef_twips_to_mm;
 			this.ParaPr.Ind.FirstLine = -144 * g_dKoef_twips_to_mm;
 
 			this.AddLvlToLvlText(8);

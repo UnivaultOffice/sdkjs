@@ -936,12 +936,12 @@ function createFindingReviewInfo(nReviewType)
 // 			let addReview = "undefined"
 // 			if (runInfo.revChange) {
 // 				if (runInfo.revChange.mainReviewType === reviewtype_Add) {
-// 					review = "new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026)";
+// 					review = "new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000)";
 // 				} else if (runInfo.revChange.mainReviewType === reviewtype_Remove) {
-// 					review = "new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026)";
+// 					review = "new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000)";
 // 				}
 // 				if (runInfo.revChange.additionalReviewType === reviewtype_Add) {
-// 					addReview = "new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026)";
+// 					addReview = "new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000)";
 // 				}
 // 			}
 // 			let bookmarks = "undefined";

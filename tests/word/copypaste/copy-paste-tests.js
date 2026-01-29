@@ -51,7 +51,7 @@ $(function () {
 		logicDocument.AddToContent(0, AscTest.CreateParagraph());
 
 		let sectPr = AscTest.GetFinalSection();
-		sectPr.SetPageSize(PAGE_W, 2026);
+sectPr.SetPageSize(PAGE_W, 1000);
 		sectPr.SetPageMargins(L_FIELD, 50, R_FIELD, 50);
 	}
 
@@ -779,7 +779,7 @@ $(function () {
 		let htmlElement = document.createElement("div");
 		htmlElement.innerHTML =
 			"<span>\n" +
-			"    <w:Sdt DocPart=\"0D4FD865761947FCBA0D9229E17016DB\" Calendar=\"t\" MapToDateTime=\"t\" CalendarType=\"Gregorian\" Date=\"2022-10-24\" DateFormat=\"dd.MM.yyyy\" Lang=\"EN-US\" Title=\"Date Picker\" Form=\"t\" Key=\"DatePicker1\" Border=\"blue\" Shd=\"yellow\" HelpText=\"Select a date\" Required=\"t\" RoleName=\"DateRole\" RoleColor=\"#FF5733\" sdttag=\"DateTag\" Label=\"DateLabel\" ID=\"-291673853\">24.10.2026</w:Sdt>\n" +
+"    <w:Sdt DocPart=\"0D4FD865761947FCBA0D9229E17016DB\" Calendar=\"t\" MapToDateTime=\"t\" CalendarType=\"Gregorian\" Date=\"2022-10-24\" DateFormat=\"dd.MM.yyyy\" Lang=\"EN-US\" Title=\"Date Picker\" Form=\"t\" Key=\"DatePicker1\" Border=\"blue\" Shd=\"yellow\" HelpText=\"Select a date\" Required=\"t\" RoleName=\"DateRole\" RoleColor=\"#FF5733\" sdttag=\"DateTag\" Label=\"DateLabel\" ID=\"-291673853\">24.10.2022</w:Sdt>\n" +
 			"</span>\n";
 
 		AscTest.Editor.asc_PasteData(
@@ -795,7 +795,7 @@ $(function () {
 
 		const expected = {
 			"type": "document",
-			"textPr": "24.10.2026\r\n",
+"textPr": "24.10.2022\r\n",
 			"content": [
 				{
 					"bFromDocument": true,
@@ -849,7 +849,7 @@ $(function () {
 										"type": "textPr"
 									},
 									"content": [
-										"24.10.2026"
+"24.10.2022"
 									],
 									"footnotes": [],
 									"endnotes": [],
@@ -1072,8 +1072,8 @@ $(function () {
 		htmlElement.innerHTML =
 			"<span>\n" +
 			"    <w:Sdt Form=\"t\" Key=\"CreditCard1\" HelpText=\"Enter credit card number\" Required=\"t\" sdttag=\"CreditCardTag\" Label=\"CreditCardLabel\" ID=\"1837335025\" PlcHdr=\"PlaceholderText\" showingplchdr=\"t\">\n" +
-			"        <w:TextForm MaxCharacters=\"-1\" Comb=\"f\" WidthRule=\"1\" MultiLine=\"f\" AutoFit=\"f\" FormatType=\"mask\" Mask=\"2025-2026-2025-2026\"/>\n" +
-			"        2025-2026-2025-2026\n" +
+"        <w:TextForm MaxCharacters=\"-1\" Comb=\"f\" WidthRule=\"1\" MultiLine=\"f\" AutoFit=\"f\" FormatType=\"mask\" Mask=\"9999-9999-9999-9999\"/>\n" +
+"        1234-5678-9012-3456\n" +
 			"    </w:Sdt>\n" +
 			"</span>\n";
 
@@ -1090,7 +1090,7 @@ $(function () {
 
 		const expected = {
 			"type": "document",
-			"textPr": " 2025-2026-2025-2026 \r\n",
+"textPr": " 1234-5678-9012-3456 \r\n",
 			"content": [
 				{
 					"bFromDocument": true,
@@ -1140,7 +1140,7 @@ $(function () {
 										"type": "textPr"
 									},
 									"content": [
-										" 2025-2026-2025-2026 "
+" 1234-5678-9012-3456 "
 									],
 									"footnotes": [],
 									"endnotes": [],

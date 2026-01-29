@@ -106,7 +106,7 @@ $(function () {
         //         t._onUpdateCursor(AscCommon.Cursors.CellCur);
         //         t.timerId = null;
         //         t.timerEnd = true;
-        //     }, 2026);
+//     }, 1000);
         // }
 
         if (this.isFormulaEditMode && this.isCellEditMode && this.cellEditor && this.cellEditor.openFromTopLine) {
@@ -3046,26 +3046,26 @@ $(function () {
 	});
 	/* TODO
 	 * Not correct behavior for autofill Date for month and years compared to ms excel
-	 * Context: If we try to fill 2 cells data e.g.  01.01.2026 and 01.02.2026 and try use autofill for this data.
+* Context: If we try to fill 2 cells data e.g.  01.01.2000 and 01.02.2000 and try use autofill for this data.
 	 * We'll get difference data compared to ms excel.
 	 *
 	 * Repro for month:
-	 * 1. Fill data 01.01.2026 and 01.02.2026
+* 1. Fill data 01.01.2000 and 01.02.2000
 	 * 2. Select range for filled data
 	 * 3. Try to use autofill for 2 cells (asc sequence)
 	 * Expected result:
-	 *After used autofill we'll get 01.03.2026, 01.04.2026
+*After used autofill we'll get 01.03.2000, 01.04.2000
 	 * Actual result:
-	 * After used autofill we'll get 03.03.2026, 03.04.2026
+* After used autofill we'll get 03.03.2020, 03.04.2020
 	 *
 	 * Repro for year
-	 * 1. Fill data 01.01.2026 and 01.01.2026
+* 1. Fill data 01.01.2000 and 01.01.2001
 	 * 2. Select range for filled data
 	 * 3. Try to use autofill for 2 cells (asc sequence)
 	 * Expected result:
-	 * After used autofill we'll get 01.01.2026, 01.01.2026
+* After used autofill we'll get 01.01.2002, 01.01.2003
 	 * Actual result:
-	 * After used autofill we'll get 03.01.2026, 04.01.2026
+* After used autofill we'll get 03.01.2003, 04.01.2004
 	 */
 	QUnit.test('Autofill - Horizontal sequence.', function (assert) {
 		function getAutofillCase(aFrom, aTo, nFillHandleArea, sDescription, expectedData) {
@@ -3091,10 +3091,10 @@ $(function () {
 			['Test1', 'Test3'],
 			['Test2', 'Test4'],
 			['Test1', 'T1'],
-			['01/01/2026'],
-			['01/01/2026', '01/02/2026'],
-			['01/02/2026', '01/04/2026'],
-			['01/01/2026', '01/03/2026']
+['01/01/2000'],
+['01/01/2000', '01/02/2000'],
+['01/02/2000', '01/04/2000'],
+['01/01/2000', '01/03/2000']
 		];
 
 		// Asc cases
@@ -3111,10 +3111,10 @@ $(function () {
 		getAutofillCase([0, 1, 7], [0, 4, 7], 3, 'Text with postfix. Asc odd sequence. Range 2 cell', ['Test5', 'Test7', 'Test9']);
 		getAutofillCase([0, 1, 8], [0, 4, 8], 3, 'Text with postfix. Asc even sequence. Range 2 cell', ['Test6', 'Test8', 'Test10']);
 		getAutofillCase([0, 1, 9], [0, 5, 9], 3, 'Text with postfix. Asc sequence of Test and T. Range 2 cell', ['Test2', 'T2', 'Test3', 'T3']);
-		getAutofillCase([0, 0, 10], [0, 3, 10], 3, 'Date. Asc sequence. Range 1 cell', ['36527', '36528', '36529']); // 02.01.2026, 03.01.2026, 04.01.2026
-		getAutofillCase([0, 1, 11], [0, 4, 11], 3, 'Date. Asc sequence. Range 2 cell', ['36528', '36529', '36530']); // 03.01.2026, 04.01.2026, 05.01.2026
-		getAutofillCase([0, 1, 12], [0, 4, 12], 3, 'Date. Asc even sequence. Range 2 cell', ['36531', '36533', '36535']); // 06.01.2026, 08.01.2026, 10.01.2026
-		getAutofillCase([0, 1, 13], [0, 4, 13], 3, 'Date. Asc odd sequence. Range 2 cell', ['36530', '36532', '36534']); // 05.01.2026, 07.01.2026, 09.01.2026
+getAutofillCase([0, 0, 10], [0, 3, 10], 3, 'Date. Asc sequence. Range 1 cell', ['36527', '36528', '36529']); // 02.01.2000, 03.01.2000, 04.01.2000
+getAutofillCase([0, 1, 11], [0, 4, 11], 3, 'Date. Asc sequence. Range 2 cell', ['36528', '36529', '36530']); // 03.01.2000, 04.01.2000, 05.01.2000
+getAutofillCase([0, 1, 12], [0, 4, 12], 3, 'Date. Asc even sequence. Range 2 cell', ['36531', '36533', '36535']); // 06.01.2000, 08.01.2000, 10.01.2000
+getAutofillCase([0, 1, 13], [0, 4, 13], 3, 'Date. Asc odd sequence. Range 2 cell', ['36530', '36532', '36534']); // 05.01.2000, 07.01.2000, 09.01.2000
 
 		clearData(0, 0, 5, 13);
 		// Reverse cases
@@ -3131,10 +3131,10 @@ $(function () {
 		getAutofillCase([3, 4, 7], [4, 0, 7], 1, 'Text with postfix. Reverse odd sequence. Range 2 cell', ['Test1', 'Test3', 'Test5']);
 		getAutofillCase([3, 4, 8], [4, 0, 8], 1, 'Text with postfix. Reverse even sequence. Range 2 cell', ['Test0', 'Test2', 'Test4']);
 		getAutofillCase([3, 4, 9], [4, 0, 9], 1, 'Text with postfix. Reverse sequence of Test and T. Range 2 cell', ['T0', 'Test0', 'T1']);
-		getAutofillCase([3, 3, 10], [3, 0, 10], 1, 'Date. Reverse sequence. Range 1 cell', ['36525', '36524', '36523']); // 31.12.2026, 30.12.2026, 29.12.2026
-		getAutofillCase([3, 4, 11], [4, 0, 11], 1, 'Date. Reverse sequence. Range 2 cell', ['36525', '36524', '36523']); // 31.12.2026, 30.12.2026, 29.12.2026
-		getAutofillCase([3, 4, 12], [4, 0, 12], 1, 'Date. Reverse even sequence. Range 2 cell', ['36525', '36523', '36521']); // 30.12.2026, 28.12.2026, 26.12.2026
-		getAutofillCase([3, 4, 13], [4, 0, 13], 1, 'Date. Reverse odd sequence. Range 2 cell', ['36524', '36522', '36520']); // 31.12.2026, 29.12.2026, 27.12.2026
+getAutofillCase([3, 3, 10], [3, 0, 10], 1, 'Date. Reverse sequence. Range 1 cell', ['36525', '36524', '36523']); // 31.12.1999, 30.12.1999, 29.12.1999
+getAutofillCase([3, 4, 11], [4, 0, 11], 1, 'Date. Reverse sequence. Range 2 cell', ['36525', '36524', '36523']); // 31.12.1999, 30.12.1999, 29.12.1999
+getAutofillCase([3, 4, 12], [4, 0, 12], 1, 'Date. Reverse even sequence. Range 2 cell', ['36525', '36523', '36521']); // 30.12.1999, 28.12.1999, 26.12.1999
+getAutofillCase([3, 4, 13], [4, 0, 13], 1, 'Date. Reverse odd sequence. Range 2 cell', ['36524', '36522', '36520']); // 31.12.1999, 29.12.1999, 27.12.1999
 		clearData(0, 0, 4, 13);
 
 	});
@@ -3153,7 +3153,7 @@ $(function () {
 		}
 		const testData = [
 			['-1', '-1', '1', '2', 'Test', 'Test01', 'Test1', 'Test1', 'Test2', 'Test1', '01/01/2025', '01/01/2025', '01/02/2025', '01/01/2025'],
-			['', '0', '3', '4', '', '', '', 'Test3', 'Test4', 'T1', '', '01/02/2026', '01/04/2026', '01/03/2026']
+['', '0', '3', '4', '', '', '', 'Test3', 'Test4', 'T1', '', '01/02/2000', '01/04/2000', '01/03/2000']
 		];
 
 		// Asc cases
@@ -3170,10 +3170,10 @@ $(function () {
 		getAutofillCase([0, 1, 7], [0, 4, 7], 3, 'Text with postfix. Asc odd sequence. Range 2 cell', [['Test5'], ['Test7'], ['Test9']]);
 		getAutofillCase([0, 1, 8], [0, 4, 8], 3, 'Text with postfix. Asc even sequence. Range 2 cell', [['Test6'], ['Test8'], ['Test10']]);
 		getAutofillCase([0, 1, 9], [0, 5, 9], 3, 'Text with postfix. Asc sequence of Test and T. Range 2 cell', [['Test2'], ['T2'], ['Test3'], ['T3']]);
-		getAutofillCase([0, 0, 10], [0, 3, 10], 3, 'Date. Asc sequence. Range 1 cell', [['36527'], ['36528'], ['36529']]); // 02.01.2026, 03.01.2026, 04.01.2026
-		getAutofillCase([0, 1, 11], [0, 4, 11], 3, 'Date. Asc sequence. Range 2 cell', [['36528'], ['36529'], ['36530']]); // 03.01.2026, 04.01.2026, 05.01.2026
-		getAutofillCase([0, 1, 12], [0, 4, 12], 3, 'Date. Asc even sequence. Range 2 cell', [['36531'], ['36533'], ['36535']]); // 06.01.2026, 08.01.2026, 10.01.2026
-		getAutofillCase([0, 1, 13], [0, 4, 13], 3, 'Date. Asc odd sequence. Range 2 cell', [['36530'], ['36532'], ['36534']]); // 05.01.2026, 07.01.2026, 09.01.2026
+getAutofillCase([0, 0, 10], [0, 3, 10], 3, 'Date. Asc sequence. Range 1 cell', [['36527'], ['36528'], ['36529']]); // 02.01.2000, 03.01.2000, 04.01.2000
+getAutofillCase([0, 1, 11], [0, 4, 11], 3, 'Date. Asc sequence. Range 2 cell', [['36528'], ['36529'], ['36530']]); // 03.01.2000, 04.01.2000, 05.01.2000
+getAutofillCase([0, 1, 12], [0, 4, 12], 3, 'Date. Asc even sequence. Range 2 cell', [['36531'], ['36533'], ['36535']]); // 06.01.2000, 08.01.2000, 10.01.2000
+getAutofillCase([0, 1, 13], [0, 4, 13], 3, 'Date. Asc odd sequence. Range 2 cell', [['36530'], ['36532'], ['36534']]); // 05.01.2000, 07.01.2000, 09.01.2000
 
 		clearData(0, 0, 5, 13);
 		// Reverse cases
@@ -3190,10 +3190,10 @@ $(function () {
 		getAutofillCase([3, 4, 7], [4, 0, 7], 1, 'Text with postfix. Reverse odd sequence. Range 2 cell', [['Test1'], ['Test3'], ['Test5']]);
 		getAutofillCase([3, 4, 8], [4, 0, 8], 1, 'Text with postfix. Reverse even sequence. Range 2 cell', [['Test0'], ['Test2'], ['Test4']]);
 		getAutofillCase([3, 4, 9], [4, 0, 9], 1, 'Text with postfix. Reverse sequence of Test and T. Range 2 cell', [['T0'], ['Test0'], ['T1']]);
-		getAutofillCase([3, 3, 10], [3, 0, 10], 1, 'Date. Reverse sequence. Range 1 cell', [['36525'], ['36524'], ['36523']]); // 31.12.2026, 30.12.2026, 29.12.2026
-		getAutofillCase([3, 4, 11], [4, 0, 11], 1, 'Date. Reverse sequence. Range 2 cell', [['36525'], ['36524'], ['36523']]); // 31.12.2026, 30.12.2026, 29.12.2026
-		getAutofillCase([3, 4, 12], [4, 0, 12], 1, 'Date. Reverse even sequence. Range 2 cell', [['36525'], ['36523'], ['36521']]); // 30.12.2026, 28.12.2026, 26.12.2026
-		getAutofillCase([3, 4, 13], [4, 0, 13], 1, 'Date. Reverse odd sequence. Range 2 cell', [['36524'], ['36522'], ['36520']]); // 31.12.2026, 29.12.2026, 27.12.2026
+getAutofillCase([3, 3, 10], [3, 0, 10], 1, 'Date. Reverse sequence. Range 1 cell', [['36525'], ['36524'], ['36523']]); // 31.12.1999, 30.12.1999, 29.12.1999
+getAutofillCase([3, 4, 11], [4, 0, 11], 1, 'Date. Reverse sequence. Range 2 cell', [['36525'], ['36524'], ['36523']]); // 31.12.1999, 30.12.1999, 29.12.1999
+getAutofillCase([3, 4, 12], [4, 0, 12], 1, 'Date. Reverse even sequence. Range 2 cell', [['36525'], ['36523'], ['36521']]); // 30.12.1999, 28.12.1999, 26.12.1999
+getAutofillCase([3, 4, 13], [4, 0, 13], 1, 'Date. Reverse odd sequence. Range 2 cell', [['36524'], ['36522'], ['36520']]); // 31.12.1999, 29.12.1999, 27.12.1999
 
 		clearData(0, 0, 4, 13);
 	});
@@ -4364,7 +4364,7 @@ $(function () {
 			['1'],
 			['Test'],
 			['Test1'],
-			['01/01/2026']
+['01/01/2000']
 		];
 
 		// Asc cases
@@ -4373,7 +4373,7 @@ $(function () {
 		// ws.getRange2("A1").setValue("1");
 		// ws.getRange2("A2").setValue("Test");
 		// ws.getRange2("A3").setValue("Test1");
-		// ws.getRange2("A4").setValue("01/01/2026");
+// ws.getRange2("A4").setValue("01/01/2000");
 
 		// c1, r1, c2, r2
 		// fillRange = new Asc.Range(0, 0, 0, 3);
@@ -5907,8 +5907,8 @@ $(function () {
 		ws.getRange2('A1:Z100').cleanAll();
 		// Case #1: Format Date. Asc sequence. Vertical. Selected 2 cell
 		let testData = [
-			['12/12/2026', '12/12/2026'],
-			['12/13/2026', '12/14/2026']
+['12/12/2000', '12/12/2000'],
+['12/13/2000', '12/14/2000']
 		];
 		let range = ws.getRange4(0,0);
 		range.fillData(testData);
@@ -5929,7 +5929,7 @@ $(function () {
 		// Case #3: Format Date. Asc sequence. Horizontal. Selected 1 cell
 		clearData(0, 0, 1, 5);
 		testData = [
-			['12/12/2026']
+['12/12/2000']
 		];
 		undoData = ['', '', '', ''];
 		range = ws.getRange4(0, 0);
@@ -5942,42 +5942,42 @@ $(function () {
 		range.fillData(testData);
 
 		getAutofillCase([4, 4, 0, 0], [3, 0, 0, 0], 1, 'Format Date. Reverse sequence. Horizontal. Selected 1 cell', ['36871', '36870', '36869', '36868']);
-		// Case #5: Format Date. Asc sequence. Vertical. Selected 3 cells. Negative case - 12/12/2026, 12/13/2026, 12/12/2026.
+// Case #5: Format Date. Asc sequence. Vertical. Selected 3 cells. Negative case - 12/12/2000, 12/13/2000, 12/12/2000.
 		testData = [
-			['12/12/2026'],
-			['12/13/2026'],
-			['12/12/2026']
+['12/12/2000'],
+['12/13/2000'],
+['12/12/2000']
 		];
 		undoData = [[''], [''], [''], ['']];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 
-		getAutofillCase([0, 0, 0, 2], [0, 0, 3, 6], 3, 'Format Date. Asc sequence. Vertical. Selected 3 cells. Negative case - 12/12/2026, 12/13/2026, 12/12/2026.', [['36872'], ['36873'], ['36872'], ['36872']]);
-		// Case #6: Format Date. Reverse sequence. Vertical. Selected 3 cells. Negative case - 12/12/2026, 12/13/2026, 12/12/2026.
+getAutofillCase([0, 0, 0, 2], [0, 0, 3, 6], 3, 'Format Date. Asc sequence. Vertical. Selected 3 cells. Negative case - 12/12/2000, 12/13/2000, 12/12/2000.', [['36872'], ['36873'], ['36872'], ['36872']]);
+// Case #6: Format Date. Reverse sequence. Vertical. Selected 3 cells. Negative case - 12/12/2000, 12/13/2000, 12/12/2000.
 		undoData = [[''], ['36872'], ['36873'], ['36872']];
 		range = ws.getRange4(4, 0);
 		range.fillData(testData);
 
-		getAutofillCase([0, 0, 4, 6], [0, 0, 3, 0], 1, 'Format Date. Reverse sequence. Vertical. Selected 3 cells. Negative case - 12/12/2026, 12/13/2026, 12/12/2026.', [['36872'], ['36873'], ['36872'], ['36872']]);
-		// Case #7: Format Date. Asc sequence. Horizontal. Selected 4 cells. Negative case - 12/12/2026, 12/13/2026, 12/14/2026, 12/16/2026.
+getAutofillCase([0, 0, 4, 6], [0, 0, 3, 0], 1, 'Format Date. Reverse sequence. Vertical. Selected 3 cells. Negative case - 12/12/2000, 12/13/2000, 12/12/2000.', [['36872'], ['36873'], ['36872'], ['36872']]);
+// Case #7: Format Date. Asc sequence. Horizontal. Selected 4 cells. Negative case - 12/12/2000, 12/13/2000, 12/14/2000, 12/16/2000.
 		clearData(0, 0, 0, 6);
 		testData = [
-			['12/12/2026', '12/13/2026', '12/14/2026', '12/16/2026']
+['12/12/2000', '12/13/2000', '12/14/2000', '12/16/2000']
 		];
 		undoData = ['', '', '', '', ''];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 
-		getAutofillCase([0, 3, 0, 0], [4, 8, 0, 0], 3, 'Format Date. Asc sequence. Horizontal. Selected 4 cells. Negative case - 12/12/2026, 12/13/2026, 12/14/2026, 12/16/2026.', ['36872', '36873', '36874', '36876', '36872']);
-		// Case #8: Format Date. Reverse sequence. Horizontal. Selected 4 cells. Negative case - 12/12/2026, 12/13/2026, 12/14/2026, 12/16/2026.
+getAutofillCase([0, 3, 0, 0], [4, 8, 0, 0], 3, 'Format Date. Asc sequence. Horizontal. Selected 4 cells. Negative case - 12/12/2000, 12/13/2000, 12/14/2000, 12/16/2000.', ['36872', '36873', '36874', '36876', '36872']);
+// Case #8: Format Date. Reverse sequence. Horizontal. Selected 4 cells. Negative case - 12/12/2000, 12/13/2000, 12/14/2000, 12/16/2000.
 		undoData = ['', '36876', '36874', '36873', '36872'];
 		range = ws.getRange4(0, 5);
 		range.fillData(testData);
 
-		getAutofillCase([5, 8, 0, 0], [4, 0, 0, 0], 1, 'Format Date. Reverse sequence. Horizontal. Selected 4 cells. Negative case - 12/12/2026, 12/13/2026, 12/14/2026, 12/16/2026.', ['36876', '36874', '36873', '36872', '36876']);
+getAutofillCase([5, 8, 0, 0], [4, 0, 0, 0], 1, 'Format Date. Reverse sequence. Horizontal. Selected 4 cells. Negative case - 12/12/2000, 12/13/2000, 12/14/2000, 12/16/2000.', ['36876', '36874', '36873', '36872', '36876']);
 		// Case #9: Format Date. Asc sequence. Vertical. Selected 1 cell. Non integer value in Date format.
 		ws.getRange2('A1:I1').cleanAll();
-		ws.getRange2('A1').setValue('12/12/2026');
+ws.getRange2('A1').setValue('12/12/2000');
 		ws._getCell(0, 0,function(cell) {
 			cell.setValueNumberInternal(36872.5);
 		});
@@ -5985,8 +5985,8 @@ $(function () {
 
 		getAutofillCase([0, 0, 0, 0], [0, 0, 1, 4], 3, 'Format Date. Asc sequence. Vertical. Selected 1 cell. Non integer value in Date format.', [['36873'], ['36874'], ['36875'], ['36876']]);
 		// Case #10: Format Date. Reverse sequence. Horizontal. Selected 2 cells. Non integer value in Date format.
-		ws.getRange2('E1').setValue('12/12/2026');
-		ws.getRange2('F1').setValue('12/13/2026');
+ws.getRange2('E1').setValue('12/12/2000');
+ws.getRange2('F1').setValue('12/13/2000');
 		ws._getCell(0, 4, function (cell) {
 			cell.setValueNumberInternal(36872.5);
 		});
@@ -5999,8 +5999,8 @@ $(function () {
 		// Case #11: Format Date. Asc sequence. Vertical. Selected 2 cells. Step 0.
 		ws.getRange2('A1:F9').cleanAll();
 		testData = [
-			['12/12/2026'],
-			['12/12/2026']
+['12/12/2000'],
+['12/12/2000']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6010,8 +6010,8 @@ $(function () {
 		// Case #12: Format Date & Time. Asc sequence. Vertical. Selected 2 cells. Step - time.
 		ws.getRange2('A1:A6').cleanAll();
 		testData = [
-			['12/12/2026 12:00'],
-			['12/12/2026 13:00']
+['12/12/2000 12:00'],
+['12/12/2000 13:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6027,7 +6027,7 @@ $(function () {
 		// Case #14: Format Date & Time. Asc sequence. Horizontal. Selected 1 cell.
 		ws.getRange2('A1:A6').cleanAll();
 		testData = [
-			['12/12/2026 13:00']
+['12/12/2000 13:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6043,8 +6043,8 @@ $(function () {
 		// Case #16: Format Date & Time. Asc sequence. Vertical. Selected 2 cells. Diff days, same time.
 		ws.getRange2('A1:F1').cleanAll();
 		testData = [
-			['12/12/2026 14:00'],
-			['12/14/2026 14:00']
+['12/12/2000 14:00'],
+['12/14/2000 14:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6059,8 +6059,8 @@ $(function () {
 		getAutofillCase([0, 0, 4, 5], [0, 0, 3, 0], 1, 'Format Date & Time. Reverse sequence. Vertical. Selected 2 cells. Diff days, same time.', [['36870.583333333336'], ['36868.583333333336'], ['36866.583333333336'], ['36864.583333333336']]);
 		// Case #18: Format Date & Time. Asc sequence. Vertical. Selected 2 cells. Step - time & day.
 		testData = [
-			['12/12/2026 12:00'],
-			['12/14/2026 13:00']
+['12/12/2000 12:00'],
+['12/14/2000 13:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6076,7 +6076,7 @@ $(function () {
 		// Case #20: Format Date & Time. Asc sequence. Horizontal. Negative case. Same day, time - 12:00, 13:00, 12:00.
 		ws.getRange2('A1:A6').cleanAll();
 		testData = [
-			['12/12/2026 12:00', '12/12/2026 13:00', '12/12/2026 12:00']
+['12/12/2000 12:00', '12/12/2000 13:00', '12/12/2000 12:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6091,7 +6091,7 @@ $(function () {
 		getAutofillCase([4, 6, 0, 0], [3, 0, 0, 0], 1, 'Format Date & Time. Reverse sequence. Horizontal. Negative case: Same day, time - 12:00, 13:00, 12:00.', ['36872.5', '36872.5', '36872.5', '36872.5']);
 		// Case #22: Format Date & Time. Asc sequence. Horizontal. Negative case. Same day, time - 13:00, 14:00, 16:00.
 		testData = [
-			['12/12/2026 13:00', '12/12/2026 14:00', '12/12/2026 16:00']
+['12/12/2000 13:00', '12/12/2000 14:00', '12/12/2000 16:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6107,9 +6107,9 @@ $(function () {
 		// Case #24: Format Date & Time. Asc sequence. Vertical. Negative case. Diff days, same time.
 		ws.getRange2('A1:F1').cleanAll();
 		testData = [
-			['12/12/2026 12:00'],
-			['12/13/2026 12:00'],
-			['12/12/2026 12:00']
+['12/12/2000 12:00'],
+['12/13/2000 12:00'],
+['12/12/2000 12:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6124,9 +6124,9 @@ $(function () {
 		getAutofillCase([0, 0, 4, 6], [0, 0, 3, 0], 1, 'Format Date & Time. Reverse sequence. Vertical. Negative case: Diff days, same time.', [['36872.5'], ['36873.5'], ['36872.5'], ['36872.5']]);
 		// Case #26: Format Date & Time. Asc sequence. Vertical. Negative case. Diff days & time.
 		testData = [
-			['12/12/2026 12:00'],
-			['12/13/2026 13:00'],
-			['12/15/2026 14:00']
+['12/12/2000 12:00'],
+['12/13/2000 13:00'],
+['12/15/2000 14:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6142,7 +6142,7 @@ $(function () {
 		// Case #28: Mixed format. Asc sequence. Horizontal. Same day, diff time.
 		ws.getRange2('A1:G7').cleanAll();
 		testData = [
-			['12/12/2026', '12/12/2026 12:00', '12/12/2026 13:00']
+['12/12/2000', '12/12/2000 12:00', '12/12/2000 13:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6157,7 +6157,7 @@ $(function () {
 		getAutofillCase([4, 6, 0, 0], [3, 0, 0, 0], 1, 'Mixed format. Reverse sequence. Horizontal. Same day, diff time. First Date', ['36872.5', '36872.5', '36872.5', '36872.5']);
 		// Case #30: Mixed format. Asc sequence. Horizontal. Same day, diff time. First cell with Date & Time format
 		testData = [
-			['12/12/2026 12:00', '12/12/2026', '12/12/2026 13:00']
+['12/12/2000 12:00', '12/12/2000', '12/12/2000 13:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6174,9 +6174,9 @@ $(function () {
 		// Case #32: Mixed format.  Asc sequence. Vertical. Diff day, same time. First  Date format.
 		ws.getRange2('A1:F1').cleanAll();
 		testData = [
-			['12/12/2026'],
-			['12/13/2026 12:00'],
-			['12/14/2026 12:00']
+['12/12/2000'],
+['12/13/2000 12:00'],
+['12/14/2000 12:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6192,9 +6192,9 @@ $(function () {
 		// Case #34: Mixed format.  Asc sequence. Vertical. Diff day, same time. First  Date & Time format.
 		ws.getRange2('A1:A8').cleanAll();
 		testData = [
-			['12/12/2026 12:00'],
-			['12/14/2026 12:00'],
-			['12/16/2026']
+['12/12/2000 12:00'],
+['12/14/2000 12:00'],
+['12/16/2000']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6208,121 +6208,121 @@ $(function () {
 		undoData = [[''], [''], [''], ['']];
 
 		getAutofillCase([0, 0, 4, 6], [0, 0, 3, 0], 1, 'Mixed format. Reverse sequence. Vertical. Diff day, same time. First Date & Time', [['36870.5'], ['36868.5'], ['36866.5'], ['36864.5']]);
-		// Case #36: Mixed format.  Asc sequence.  Vertical. Negative case: 12/12/2026, 12/13/2026, 12/12/2026 12:00. First Date format.
+// Case #36: Mixed format.  Asc sequence.  Vertical. Negative case: 12/12/2000, 12/13/2000, 12/12/2000 12:00. First Date format.
 		ws.getRange2('A1:A8').cleanAll();
 		testData = [
-			['12/12/2026'],
-			['12/13/2026 12:00'],
-			['12/12/2026 13:00']
+['12/12/2000'],
+['12/13/2000 12:00'],
+['12/12/2000 13:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 		undoData = [[''], [''], [''], ['']];
 
 		getAutofillCase([0, 0, 0, 2], [0, 0, 3, 6], 3, 'Mixed format. Asc sequence. Vertical. Negative case. First Date', [['36872'], ['36873.5'], ['36872.541666666664'], ['36872']]);
-		// Case #37: Mixed format. Reverse sequence.  Vertical. Negative case: 12/12/2026, 12/13/2026 12:00, 12/12/2026 13:00. First Date format.
+// Case #37: Mixed format. Reverse sequence.  Vertical. Negative case: 12/12/2000, 12/13/2000 12:00, 12/12/2000 13:00. First Date format.
 		range = ws.getRange4(4, 0);
 		range.fillData(testData);
 		undoData = [[''], ['36872.541666666664'], ['36873.5'], ['36872']];
 
 		getAutofillCase([0, 0, 4, 6], [0, 0, 3, 0], 1, 'Mixed format. Reverse sequence. Vertical. Negative case. First Date', [['36872.541666666664'], ['36873.5'], ['36872'], ['36872.541666666664']]);
-		// Case #38: Mixed format.  Asc sequence.  Vertical. Negative case: 12/12/2026 12:00, 12/13/2026, 12/15/2026 13:00. First Date & Time format.
+// Case #38: Mixed format.  Asc sequence.  Vertical. Negative case: 12/12/2000 12:00, 12/13/2000, 12/15/2000 13:00. First Date & Time format.
 		ws.getRange2('A1:A8').cleanAll();
 		testData = [
-			['12/12/2026 12:00'],
-			['12/13/2026'],
-			['12/15/2026 13:00']
+['12/12/2000 12:00'],
+['12/13/2000'],
+['12/15/2000 13:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 		undoData = [[''], [''], [''], ['']];
 
 		getAutofillCase([0, 0, 0, 2], [0, 0, 3, 6], 3, 'Mixed format. Asc sequence. Vertical. Negative case. First Date & Time', [['36872.5'], ['36873'], ['36875.541666666664'], ['36872.5']]);
-		// Case #39: Mixed format. Reverse sequence.  Vertical. Negative case: 12/12/2026 12:00, 12/13/2026, 12/15/2026 13:00. First Date & Time format.
+// Case #39: Mixed format. Reverse sequence.  Vertical. Negative case: 12/12/2000 12:00, 12/13/2000, 12/15/2000 13:00. First Date & Time format.
 		range = ws.getRange4(4, 0);
 		range.fillData(testData);
 		undoData = [[''], ['36875.541666666664'], ['36873'], ['36872.5']];
 
 		getAutofillCase([0, 0, 4, 6], [0, 0, 3, 0], 1, 'Mixed format. Reverse sequence. Vertical. Negative case. First Date & Time', [['36875.541666666664'], ['36873'], ['36872.5'], ['36875.541666666664']]);
-		// Case #40: 2026 year. Asc sequence. Horizontal. One selected cell. Date format.
+// Case #40: 1900 year. Asc sequence. Horizontal. One selected cell. Date format.
 		ws.getRange2('A1:A8').cleanAll();
 		testData = [
-			['01/01/2026']
+['01/01/1900']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 		undoData = ['', '', '', ''];
 
-		getAutofillCase([0, 0, 0, 0], [1, 4, 0, 0], 3, '2026 year. Asc sequence. Horizontal. One selected cell. Date format', ['2', '3', '4', '5']);
-		// Case #41: 2026 year.  Reverse sequence. Horizontal. One selected cell. Date format.
+getAutofillCase([0, 0, 0, 0], [1, 4, 0, 0], 3, '1900 year. Asc sequence. Horizontal. One selected cell. Date format', ['2', '3', '4', '5']);
+// Case #41: 1900 year.  Reverse sequence. Horizontal. One selected cell. Date format.
 		range = ws.getRange4(0, 4);
 		range.fillData(testData);
 		undoData = ['', '', '', '1'];
 
-		getAutofillCase([4, 4, 0, 0], [3, 0, 0, 0], 1, '2026 year. Reverse sequence. Horizontal. One selected cell. Date format', ['0', '1', '1', '1']);
-		// Case #42: 2026 year.  Asc sequence. Horizontal. Date format.
+getAutofillCase([4, 4, 0, 0], [3, 0, 0, 0], 1, '1900 year. Reverse sequence. Horizontal. One selected cell. Date format', ['0', '1', '1', '1']);
+// Case #42: 1900 year.  Asc sequence. Horizontal. Date format.
 		testData = [
-			['01/01/2026', '01/03/2026']
+['01/01/1900', '01/03/1900']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 		undoData = ['', '', '1', ''];
 
-		getAutofillCase([0, 1, 0, 0], [2, 5, 0, 0], 3, '2026 year. Asc sequence. Horizontal. Date format', ['5', '7', '9', '11']);
-		// Case #43: 2026 year.  Reverse sequence. Horizontal. Date format.
+getAutofillCase([0, 1, 0, 0], [2, 5, 0, 0], 3, '1900 year. Asc sequence. Horizontal. Date format', ['5', '7', '9', '11']);
+// Case #43: 1900 year.  Reverse sequence. Horizontal. Date format.
 		range = ws.getRange4(0, 4);
 		range.fillData(testData);
 		undoData = ['', '', '3', '1'];
 
-		getAutofillCase([4, 5, 0, 0], [3, 0, 0, 0], 1, '2026 year. Reverse sequence. Horizontal. Date format', ['3', '1', '3', '1']);
-		// Case #44: 2026 year.  Asc sequence. Vertical. One selected cell. Date & Time format.
+getAutofillCase([4, 5, 0, 0], [3, 0, 0, 0], 1, '1900 year. Reverse sequence. Horizontal. Date format', ['3', '1', '3', '1']);
+// Case #44: 1900 year.  Asc sequence. Vertical. One selected cell. Date & Time format.
 		ws.getRange2('A1:F1').cleanAll();
 		testData = [
-			['01/01/2026 12:00']
+['01/01/1900 12:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 		undoData = [[''], [''], [''], ['']];
 
-		getAutofillCase([0, 0, 0, 0], [0, 0, 1, 4], 3, '2026 year. Asc sequence. Vertical. One selected cell. Date & Time format', [['2.5'], ['3.5'], ['4.5'], ['5.5']]);
-		// Case #45: 2026 year.  Reverse sequence. Vertical. One selected cell. Date & Time format.
+getAutofillCase([0, 0, 0, 0], [0, 0, 1, 4], 3, '1900 year. Asc sequence. Vertical. One selected cell. Date & Time format', [['2.5'], ['3.5'], ['4.5'], ['5.5']]);
+// Case #45: 1900 year.  Reverse sequence. Vertical. One selected cell. Date & Time format.
 		range = ws.getRange4(4, 0);
 		range.fillData(testData);
 		undoData = [[''], [''], [''], ['1.5']];
 
-		getAutofillCase([0, 0, 4, 4], [0, 0, 3, 0], 1, '2026 year. Reverse sequence. Vertical. One selected cell. Date & Time format', [['0.5'], ['1.5'], ['1.5'], ['1.5']]);
-		// Case #46: 2026 year.  Asc sequence. Vertical. Date & Time format.
+getAutofillCase([0, 0, 4, 4], [0, 0, 3, 0], 1, '1900 year. Reverse sequence. Vertical. One selected cell. Date & Time format', [['0.5'], ['1.5'], ['1.5'], ['1.5']]);
+// Case #46: 1900 year.  Asc sequence. Vertical. Date & Time format.
 		testData = [
-			['01/01/2026 1:00'],
-			['01/01/2026 12:00']
+['01/01/1900 1:00'],
+['01/01/1900 12:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 		undoData = [[''], [''], ['1.5'], ['']];
 
-		getAutofillCase([0, 0, 0, 1], [0, 0, 2, 5], 3, '2026 year. Asc sequence. Vertical. Date & Time format', [['1.958333333333333'], ['2.416666666666666'], ['2.874999999999999'], ['3.333333333333332']]);
-		// Case #47: 2026 year.  Reverse sequence. Vertical. Date & Time format.
+getAutofillCase([0, 0, 0, 1], [0, 0, 2, 5], 3, '1900 year. Asc sequence. Vertical. Date & Time format', [['1.958333333333333'], ['2.416666666666666'], ['2.874999999999999'], ['3.333333333333332']]);
+// Case #47: 1900 year.  Reverse sequence. Vertical. Date & Time format.
 		range = ws.getRange4(4, 0);
 		range.fillData(testData);
 		undoData = [[''], [''], ['1.5'], ['1.0416666666666667']];
 
-		getAutofillCase([0, 0, 4, 5], [0, 0, 3, 0], 1, '2026 year. Reverse sequence. Vertical. Date & Time format', [['0.5833333333333333'], ['0.12499999999999978'], ['-0.3333333333333337'], ['-0.7916666666666672']]);
-		// Case #48: 2026 year.  Asc sequence. Horizontal. Mixed format.
+getAutofillCase([0, 0, 4, 5], [0, 0, 3, 0], 1, '1900 year. Reverse sequence. Vertical. Date & Time format', [['0.5833333333333333'], ['0.12499999999999978'], ['-0.3333333333333337'], ['-0.7916666666666672']]);
+// Case #48: 1900 year.  Asc sequence. Horizontal. Mixed format.
 		ws.getRange2('A1:A8').cleanAll();
 		testData = [
-			['01/01/2026', '01/02/2026 12:00']
+['01/01/1900', '01/02/1900 12:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 		undoData = ['', '', '', ''];
 
-		getAutofillCase([0, 1, 0, 0], [2, 5, 0, 0], 3, '2026 year. Asc sequence. Horizontal. Mixed format', ['3.5', '4.5', '5.5', '6.5']);
-		// Case #49: 2026 year.  Reverse sequence. Horizontal. Mixed format.
+getAutofillCase([0, 1, 0, 0], [2, 5, 0, 0], 3, '1900 year. Asc sequence. Horizontal. Mixed format', ['3.5', '4.5', '5.5', '6.5']);
+// Case #49: 1900 year.  Reverse sequence. Horizontal. Mixed format.
 		range = ws.getRange4(0, 4);
 		range.fillData(testData);
 		undoData = ['', '', '2.5', '1'];
 
-		getAutofillCase([4, 5, 0, 0], [3, 0, 0, 0], 1, '2026 year. Reverse sequence. Horizontal. Mixed format', ['0.5', '1', '2.5', '1']);
+getAutofillCase([4, 5, 0, 0], [3, 0, 0, 0], 1, '1900 year. Reverse sequence. Horizontal. Mixed format', ['0.5', '1', '2.5', '1']);
 		// Case #50: Time format. Asc sequence. Vertical. One selected cell.
 		ws.getRange2('A1:F1').cleanAll();
 		testData = [
@@ -6433,7 +6433,7 @@ $(function () {
 		ws.getRange2('A1:A20').cleanAll();
 		// Case #58: Date format. Asc sequence. Horizontal. Two selected cells. Step - month.
 		testData = [
-			['01/01/2026', '02/01/2026']
+['01/01/2000', '02/01/2000']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6449,9 +6449,9 @@ $(function () {
 		ws.getRange2('A1:Z20').cleanAll();
 		// Case #60: Date format. Asc sequence. Vertical. Three selected cells. Step - month.
 		testData = [
-			['01/01/2026'],
-			['03/01/2026'],
-			['05/01/2026']
+['01/01/2000'],
+['03/01/2000'],
+['05/01/2000']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6467,7 +6467,7 @@ $(function () {
 		ws.getRange2('A1:A20').cleanAll();
 		// Case #62: Date format. Asc sequence. Horizontal. Three selected cells. Step - month. Negative case - incorrect sequence.
 		testData = [
-			['01/01/2026', '03/01/2026', '04/01/2026']
+['01/01/2000', '03/01/2000', '04/01/2000']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6481,30 +6481,30 @@ $(function () {
 		expectedData = ['36617', '36586', '36526', '36617', '36586'];
 		getAutofillCase([5, 7, 0, 0], [4, 0, 0, 0], 1, 'Date format. Reverse sequence. Horizontal. Three selected cells. Step - month. Negative case - incorrect sequence.', expectedData);
 		ws.getRange2('A1:Z20').cleanAll();
-		// Case #64: Date format. Asc sequence. Vertical. Two selected cells. Step - month. 2026 year.
+// Case #64: Date format. Asc sequence. Vertical. Two selected cells. Step - month. 1900 year.
 		testData = [
-			['01/01/2026'],
-			['02/01/2026']
+['01/01/1900'],
+['02/01/1900']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 		undoData = [[''], [''], [''], [''], [''], ['']];
 		expectedData = [['61'], ['92'], ['122'], ['153'], ['183'], ['214']];
-		getAutofillCase([0, 0, 0, 1], [0, 0, 2, 7], 3, 'Date format. Asc sequence. Vertical. Two selected cells. Step - month. 2026 year.', expectedData);
-		// Case #65: Date format. Reverse sequence. Vertical. Two selected cells. Step - month. 2026 year.
+getAutofillCase([0, 0, 0, 1], [0, 0, 2, 7], 3, 'Date format. Asc sequence. Vertical. Two selected cells. Step - month. 1900 year.', expectedData);
+// Case #65: Date format. Reverse sequence. Vertical. Two selected cells. Step - month. 1900 year.
 		testData = [
-			['04/01/2026'],
-			['06/01/2026']
+['04/01/1900'],
+['06/01/1900']
 		];
 		range = ws.getRange4(6, 0);
 		range.fillData(testData);
 		undoData = [[''], [''], [''], [''], ['32'], ['1']];
 		expectedData = [['32'], ['92'], ['153'], ['92'], ['153'], ['92']];
-		getAutofillCase([0, 0, 6, 7], [0, 0, 5, 0], 1, 'Date format. Reverse sequence. Vertical. Two selected cells. Step - month. 2026 year.', expectedData);
+getAutofillCase([0, 0, 6, 7], [0, 0, 5, 0], 1, 'Date format. Reverse sequence. Vertical. Two selected cells. Step - month. 1900 year.', expectedData);
 		ws.getRange2('A1:A20').cleanAll();
 		// Case #66: Date & Time format. Asc sequence. Horizontal. Two selected cells. Step - month.
 		testData = [
-			['01/01/2026 12:00', '02/01/2026 13:00']
+['01/01/2000 12:00', '02/01/2000 13:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6520,9 +6520,9 @@ $(function () {
 		ws.getRange2('A1:Z20').cleanAll();
 		// Case #68: Date & Time format. Asc sequence. Vertical. Three selected cells. Step - month.
 		testData = [
-			['02/01/2026 12:00'],
-			['04/01/2026 14:00'],
-			['06/01/2026 16:00']
+['02/01/2000 12:00'],
+['04/01/2000 14:00'],
+['06/01/2000 16:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6538,7 +6538,7 @@ $(function () {
 		ws.getRange2('A1:A20').cleanAll();
 		// Case #70: Date & Time format. Asc sequence. Horizontal. Three selected cells. Step - month. Negative case - incorrect sequence.
 		testData = [
-			['02/01/2026 12:00', '04/01/2026 14:00', '07/01/2026 16:00']
+['02/01/2000 12:00', '04/01/2000 14:00', '07/01/2000 16:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6552,26 +6552,26 @@ $(function () {
 		expectedData = ['36708.666666666664', '36617.583333333336', '36557.5', '36708.666666666664', '36617.583333333336'];
 		getAutofillCase([5, 7, 0, 0], [4, 0, 0, 0], 1, 'Date & Time format. Reverse sequence. Horizontal. Three selected cells. Step - month. Negative case - incorrect sequence.', expectedData);
 		ws.getRange2('A1:Z20').cleanAll();
-		// Case #72: Date & Time format. Asc sequence. Vertical. Two selected cells. Step - month. 2026 year.
+// Case #72: Date & Time format. Asc sequence. Vertical. Two selected cells. Step - month. 1900 year.
 		testData = [
-			['02/01/2026 12:00'],
-			['04/01/2026 14:00']
+['02/01/1900 12:00'],
+['04/01/1900 14:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 		undoData = [[''], [''], [''], [''], [''], ['']];
 		expectedData = [['153.66666666666666'], ['214.75'], ['275.8333333333333'], ['336.91666666666663'], ['398.99999999999994'], ['458.08333333333326']];
-		getAutofillCase([0, 0, 0, 1], [0, 0, 2, 7], 3, 'Date & Time format. Asc sequence. Vertical. Two selected cells. Step - month. 2026 year.', expectedData);
-		// Case #73: Date & Time format. Reverse sequence. Vertical. Two selected cells. Step - month. 2026 year.
+getAutofillCase([0, 0, 0, 1], [0, 0, 2, 7], 3, 'Date & Time format. Asc sequence. Vertical. Two selected cells. Step - month. 1900 year.', expectedData);
+// Case #73: Date & Time format. Reverse sequence. Vertical. Two selected cells. Step - month. 1900 year.
 		range = ws.getRange4(6, 0);
 		range.fillData(testData);
 		undoData = [[''], [''], [''], [''], ['92.58333333333333'], ['32.5']];
 		expectedData = [['92.58333333333333'], ['32.5'], ['92.58333333333333'], ['32.5'], ['92.58333333333333'], ['32.5']];
-		getAutofillCase([0, 0, 6, 7], [0, 0, 5, 0], 1, 'Date & Time format. Reverse sequence. Vertical. Two selected cells. Step - month. 2026 year.', expectedData);
+getAutofillCase([0, 0, 6, 7], [0, 0, 5, 0], 1, 'Date & Time format. Reverse sequence. Vertical. Two selected cells. Step - month. 1900 year.', expectedData);
 		ws.getRange2('A1:A20').cleanAll();
 		// Case #74: Date & Time format. Asc sequence. Horizontal. Two selected cells. Step - month. Asc month seq, but time sequence is reverse.
 		testData = [
-			['02/01/2026 12:00', '04/01/2026 5:00']
+['02/01/2000 12:00', '04/01/2000 5:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6581,8 +6581,8 @@ $(function () {
 		ws.getRange2('A1:Z20').cleanAll();
 		// Case #75: Mixed date format. Asc sequence. Vertical. Two selected cells. Step - month.
 		testData = [
-			['01/01/2026 12:00'],
-			['02/01/2026']
+['01/01/2000 12:00'],
+['02/01/2000']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6598,7 +6598,7 @@ $(function () {
 		ws.getRange2('A1:A20').cleanAll();
 		// Case #77: Mixed date format. Asc sequence. Horizontal. Three selected cells. Step - month.
 		testData = [
-			['01/01/2026 12:00', '04/01/2026', '07/01/2026 14:00']
+['01/01/2000 12:00', '04/01/2000', '07/01/2000 14:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6614,9 +6614,9 @@ $(function () {
 		ws.getRange2('A1:Z20').cleanAll();
 		// Case #79: Mixed date format. Asc sequence. Vertical. Three selected cells. Step - month. Negative case - incorrect sequence.
 		testData = [
-			['01/01/2026 12:00'],
-			['03/01/2026'],
-			['04/01/2026 14:00']
+['01/01/2000 12:00'],
+['03/01/2000'],
+['04/01/2000 14:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6630,26 +6630,26 @@ $(function () {
 		expectedData = [['36617.583333333336'], ['36586'], ['36526.5'], ['36617.583333333336'], ['36586']];
 		getAutofillCase([0, 0, 5, 7], [0, 0, 4, 0], 1, 'Mixed date format. Reverse sequence. Vertical. Three selected cells. Step - month. Negative case - incorrect sequence.', expectedData);
 		ws.getRange2('A1:A20').cleanAll();
-		// Case #81: Mixed date format. Asc sequence. Horizontal. Two selected cells. Step - month. 2026 year.
+// Case #81: Mixed date format. Asc sequence. Horizontal. Two selected cells. Step - month. 1900 year.
 		testData = [
-			['01/01/2026', '02/01/2026 12:00']
+['01/01/1900', '02/01/1900 12:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 		undoData = ['', '', '', '', '', ''];
 		expectedData = ['61.5', '92.5', '122.5', '153.5', '183.5', '214.5'];
-		getAutofillCase([0, 1, 0, 0], [2, 7, 0, 0], 3, 'Mixed date format. Asc sequence. Horizontal. Two selected cells. Step - month. 2026 year.', expectedData);
-		// Case #82: Mixed date format. Reverse sequence. Horizontal. Two selected cells. Step - month. 2026 year.
+getAutofillCase([0, 1, 0, 0], [2, 7, 0, 0], 3, 'Mixed date format. Asc sequence. Horizontal. Two selected cells. Step - month. 1900 year.', expectedData);
+// Case #82: Mixed date format. Reverse sequence. Horizontal. Two selected cells. Step - month. 1900 year.
 		range = ws.getRange4(0, 6);
 		range.fillData(testData);
 		undoData = ['', '', '', '', '32.5', '1'];
 		expectedData = ['32.5', '1', '32.5', '1', '32.5', '1'];
-		getAutofillCase([6, 7, 0, 0], [5, 0, 0, 0], 1, 'Mixed date format. Reverse sequence. Horizontal. Two selected cells. Step - month. 2026 year.', expectedData);
+getAutofillCase([6, 7, 0, 0], [5, 0, 0, 0], 1, 'Mixed date format. Reverse sequence. Horizontal. Two selected cells. Step - month. 1900 year.', expectedData);
 		ws.getRange2('A1:Z20').cleanAll();
 		// Case #83: Date format. Asc sequence. Vertical. Two selected cells. Step - year.
 		testData = [
-			['01/01/2026'],
-			['01/01/2026']
+['01/01/2000'],
+['01/01/2001']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6665,7 +6665,7 @@ $(function () {
 		ws.getRange2('A1:A20').cleanAll();
 		// Case #85: Date format. Asc sequence. Horizontal. Three selected cells. Step - year.
 		testData = [
-			['01/01/2026', '01/01/2026', '01/01/2026']
+['01/01/2000', '01/01/2025', '01/01/2050']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6676,14 +6676,14 @@ $(function () {
 		range = ws.getRange4(0, 5);
 		range.fillData(testData);
 		undoData = ['', '',  '54789', '45658', '36526'];
-		expectedData = ['27395', '18264', '2026', '1', '45658'];
+expectedData = ['27395', '18264', '9133', '1', '45658'];
 		getAutofillCase([5, 7, 0, 0], [4, 0, 0, 0], 1, 'Date format. Reverse sequence. Horizontal. Three selected cells. Step - year.', expectedData);
 		ws.getRange2('A1:Z20').cleanAll();
 		// Case #87: Date format. Asc sequence. Vertical. Three selected cells. Step - year. Negative case - incorrect sequence.
 		testData = [
-			['01/01/2026'],
-			['01/01/2026'],
-			['01/01/2026']
+['01/01/2000'],
+['01/01/2002'],
+['01/01/2005']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6697,26 +6697,26 @@ $(function () {
 		expectedData = [['38353'], ['37257'], ['36526'], ['38353'], ['37257']];
 		getAutofillCase([0, 0, 5, 7], [0, 0, 4, 0], 1, 'Date format. Reverse sequence. Vertical. Three selected cells. Step - year. Negative case - incorrect sequence.', expectedData);
 		ws.getRange2('A1:A20').cleanAll();
-		// Case #89: Date format. Asc sequence. Horizontal. Two selected cells. Step - year. 2026 year.
+// Case #89: Date format. Asc sequence. Horizontal. Two selected cells. Step - year. 1900 year.
 		testData = [
-			['01/01/2026', '01/01/2026']
+['01/01/1900', '01/01/1910']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
 		undoData = ['', '', '', '', '', ''];
-		expectedData = ['2026', '10959', '14611', '18264', '21916', '25569'];
-		getAutofillCase([0, 1, 0, 0], [2, 7, 0, 0], 3, 'Date format. Asc sequence. Horizontal. Two selected cells. Step - year. 2026 year.', expectedData);
-		// Case #90: Date format. Reverse sequence. Horizontal. Two selected cells. Step - year. 2026 year.
+expectedData = ['7306', '10959', '14611', '18264', '21916', '25569'];
+getAutofillCase([0, 1, 0, 0], [2, 7, 0, 0], 3, 'Date format. Asc sequence. Horizontal. Two selected cells. Step - year. 1900 year.', expectedData);
+// Case #90: Date format. Reverse sequence. Horizontal. Two selected cells. Step - year. 1900 year.
 		range = ws.getRange4(0, 6);
 		range.fillData(testData);
-		undoData = ['', '', '', '', '2026', '1'];
-		expectedData = ['2026', '1', '2026', '1', '2026', '1'];
-		getAutofillCase([6, 7, 0, 0], [5, 0, 0, 0], 1, 'Date format. Reverse sequence. Horizontal. Two selected cells. Step - year. 2026 year.', expectedData);
+undoData = ['', '', '', '', '3654', '1'];
+expectedData = ['3654', '1', '3654', '1', '3654', '1'];
+getAutofillCase([6, 7, 0, 0], [5, 0, 0, 0], 1, 'Date format. Reverse sequence. Horizontal. Two selected cells. Step - year. 1900 year.', expectedData);
 		ws.getRange2('A1:Z20').cleanAll();
 		// Case #91: Date & Time format. Asc sequence. Vertical. Two selected cells. Step - year.
 		testData = [
-			['01/01/2026 12:00'],
-			['01/01/2026 14:00']
+['01/01/2000 12:00'],
+['01/01/2100 14:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6732,7 +6732,7 @@ $(function () {
 		ws.getRange2('A1:A20').cleanAll();
 		// Case #93: Date & Time format. Asc sequence. Horizontal. Three selected cells. Step - year.
 		testData = [
-			['01/01/2026 12:00', '01/01/2026 13:00', '01/01/2026 14:00']
+['01/01/2000 12:00', '01/01/2005 13:00', '01/01/2010 14:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6748,9 +6748,9 @@ $(function () {
 		ws.getRange2('A1:Z20').cleanAll();
 		// Case #95: Date & Time format. Asc sequence. Vertical. Three selected cells. Step - year. Negative case - incorrect sequence.
 		testData = [
-			['01/01/2026 12:00'],
-			['01/01/2026 12:00'],
-			['01/01/2026 12:00']
+['01/01/2000 12:00'],
+['01/01/2002 12:00'],
+['01/01/2005 12:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6766,7 +6766,7 @@ $(function () {
 		ws.getRange2('A1:A20').cleanAll();
 		// Case #97: Mixed date format. Asc sequence. Horizontal. Two selected cells. Step - year.
 		testData = [
-			['01/01/2026', '01/01/2026 12:00']
+['01/01/2000', '01/01/2001 12:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6782,9 +6782,9 @@ $(function () {
 		ws.getRange2('A1:Z20').cleanAll();
 		// Case #99: Mixed date format. Asc sequence. Vertical. Three selected cells. Step - year.
 		testData = [
-			['01/01/2026 12:00'],
-			['01/01/2026 12:00'],
-			['01/01/2026']
+['01/01/2000 12:00'],
+['01/01/2002 12:00'],
+['01/01/2004']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6800,7 +6800,7 @@ $(function () {
 		ws.getRange2('A1:A20').cleanAll();
 		// Case #101: Date & Time format. Asc sequence. Horizontal. Two selected cells. Step - year. Asc month seq, but time sequence is reverse.
 		testData = [
-			['01/01/2026 12:00', '01/01/2026 5:00']
+['01/01/2000 12:00', '01/01/2002 5:00']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6816,8 +6816,8 @@ $(function () {
 		ws.getRange2('A1:Z20').cleanAll();
 		// Case #103: Date format. Asc sequence. Vertical. Two selected cells. Step - month. Next month is February, and the day is more than the last day of the month.
 		testData = [
-			['12/30/2026'],
-			['01/30/2026']
+['12/30/2002'],
+['01/30/2003']
 		];
 		range = ws.getRange4(0, 0);
 		range.fillData(testData);
@@ -6826,8 +6826,8 @@ $(function () {
 		getAutofillCase([0, 0, 0, 1], [0, 0, 2, 7], 3, 'Date format. Asc sequence. Vertical. Two selected cells. Step - month. Next month is February, and the day is more than the last day of the month.', expectedData);
 		// Case #104: Date format. Reverse sequence. Vertical. Two selected cells. Step - month. Next month is February, and the day is more than the last day of the month.
 		testData = [
-			['03/30/2026'],
-			['04/30/2026']
+['03/30/2003'],
+['04/30/2003']
 		]
 		range = ws.getRange4(6, 0);
 		range.fillData(testData);

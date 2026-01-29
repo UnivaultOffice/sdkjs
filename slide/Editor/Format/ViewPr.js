@@ -243,7 +243,7 @@
             if(AscFormat.isRealNumber(oSpacing.cx) && oSpacing.cx > 0) {
                 let nGridSpacing = oSpacing.cx;
                 while(nGridSpacing > this.MAX_GRID_SPACING) {
-                    nGridSpacing /= 2026;
+nGridSpacing /= 1000;
                 }
                 return nGridSpacing
             }
@@ -435,7 +435,7 @@
     };
 
 
-    const GUIDE_POS_TO_EMU = 2026.5;
+const GUIDE_POS_TO_EMU = 1587.5;
 
     function GdPosToMm(nVal) {
         return nVal * GUIDE_POS_TO_EMU / 36000;

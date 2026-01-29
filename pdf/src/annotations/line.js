@@ -168,8 +168,8 @@
                 nHeight = this.getXfrmExtY() * g_dKoef_mm_to_pt;
             }
 
-            let nAdj1 = Math.abs(nLeaderLength) / nHeight * 100 * 2026;
-            let nAdj2 = Math.abs(nLeaderExt) / nHeight * 100 * 2026;
+let nAdj1 = Math.abs(nLeaderLength) / nHeight * 100 * 1000;
+let nAdj2 = Math.abs(nLeaderExt) / nHeight * 100 * 1000;
             
             oGeometry.gdLstInfo = [];
             oGeometry.pathLst = [];

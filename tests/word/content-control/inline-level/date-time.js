@@ -62,7 +62,7 @@ $(function ()
 		
 		let dateTimePr = new AscWord.CSdtDatePickerPr();
 		let date = new Date();
-		date.setFullYear(2026, 6, 24);
+date.setFullYear(2024, 6, 24);
 		dateTimePr.SetDateFormat("mm/dd/yyyy");
 		dateTimePr.SetFullDate(date);
 		

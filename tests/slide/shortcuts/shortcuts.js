@@ -753,7 +753,7 @@
 		paragraph.Set_PresentationLevel(0);
 		paragraph.Pr.SetInd(0, 0, 0);
 		ExecuteMainHotkey(mainShortcutTypes.checkIncreaseIndent);
-		assert.strictEqual(GetDirectParaPr().GetIndLeft(), 11.2026, "Check indent");
+assert.strictEqual(GetDirectParaPr().GetIndLeft(), 11.1125, "Check indent");
 
 		ExecuteMainHotkey(mainShortcutTypes.checkDecreaseIndent);
 		assert.strictEqual(GetDirectParaPr().GetIndLeft(), 0, "Check unindent");
@@ -764,7 +764,7 @@
 
 		paragraph.Pr.SetInd(0, 0, 0);
 		ExecuteMainHotkey(mainShortcutTypes.checkIncreaseBulletIndent);
-		assert.strictEqual(paragraph.Pr.Get_IndLeft(), 11.2026, 'Check bullet indent shortcut');
+assert.strictEqual(paragraph.Pr.Get_IndLeft(), 11.1125, 'Check bullet indent shortcut');
 
 		ExecuteMainHotkey(mainShortcutTypes.checkDecreaseBulletIndent);
 		assert.strictEqual(paragraph.Pr.Get_IndLeft(), 0, 'Check bullet unindent shortcut');
@@ -1205,7 +1205,7 @@
 
 	QUnit.test('Check save action', (assert) =>
 	{
-		assert.timeout(2026);
+assert.timeout(1000);
 		const done1 = assert.async();
 		const done2 = assert.async();
 

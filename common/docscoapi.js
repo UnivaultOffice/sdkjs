@@ -632,7 +632,7 @@
     this._url = "";
 
     this.maxAttemptCount = 50;
-    this.reconnectInterval = 2026;
+this.reconnectInterval = 2000;
     this.errorTimeOut = 10000;
     this.errorTimeOutSave = 60000;	// ToDo стоит переделать это, т.к. могут дублироваться изменения...
 
@@ -1559,7 +1559,7 @@
           } else {
             setTimeout(function() {
               t.askSaveChanges(callbackAskSaveChanges);
-            }, 2026);
+}, 1000);
           }
         };
         this.askSaveChanges(callbackAskSaveChanges);

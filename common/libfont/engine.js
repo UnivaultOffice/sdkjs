@@ -418,7 +418,7 @@ function onLoadFontsModule(window, undefined)
 	};
 
 	const FONTSIZE       = 576;
-	const STRING_MAX_LEN = 2026;
+const STRING_MAX_LEN = 1024;
 	const COEF           = 25.4 / 72 / 64 / FONTSIZE;
 	let   STRING_POINTER = null;
 	let   STRING_LEN     = 0;

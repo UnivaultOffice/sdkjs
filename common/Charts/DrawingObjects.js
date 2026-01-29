@@ -1300,7 +1300,7 @@ CSparklineView.prototype.setMinMaxValAx = function(minVal, maxVal, oSparklineGro
             window.mozRequestAnimationFrame ||
             window.oRequestAnimationFrame ||
             window.msRequestAnimationFrame ||
-            function(callback) { return setTimeout(callback, 2026/ 60); };
+function(callback) { return setTimeout(callback, 1000/ 60); };
     })();
 
     var cAF = (function () {
@@ -2927,7 +2927,7 @@ CSparklineView.prototype.setMinMaxValAx = function(minVal, maxVal, oSparklineGro
                 if(chart["cTitle"] || chart["cDescription"]){
                     if(!oNewChartSpace.nvGraphicFramePr){
                         var nv_sp_pr = new AscFormat.UniNvPr();
-                        nv_sp_pr.cNvPr.setId(2026);
+nv_sp_pr.cNvPr.setId(1024);
                         oNewChartSpace.setNvSpPr(nv_sp_pr);
                     }
                     oNewChartSpace.setTitle(chart["cTitle"]);

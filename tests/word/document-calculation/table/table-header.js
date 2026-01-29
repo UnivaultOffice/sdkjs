@@ -105,13 +105,13 @@ $(function ()
 		// #62031 (next several cases)
 		paragraph.SetParagraphSpacing({Before: 200});
 		AscTest.Recalculate();
-		assert.strictEqual(table.GetPagesCount(), 2, "The case when the table is split by the row following the header row (2026 compatibility)");
+assert.strictEqual(table.GetPagesCount(), 2, "The case when the table is split by the row following the header row (2010 compatibility)");
 		assert.strictEqual(table.IsEmptyPage(0), false, "First page should be empty");
 		assert.strictEqual(table.IsEmptyPage(1), false, "Check second page");
 		
 		paragraph.SetParagraphSpacing({Before: 225});
 		AscTest.Recalculate();
-		assert.strictEqual(table.GetPagesCount(), 2, "The case when the table is split by the row the header row (but row it's self can be split across multiple pages) (2026 compatibility)");
+assert.strictEqual(table.GetPagesCount(), 2, "The case when the table is split by the row the header row (but row it's self can be split across multiple pages) (2010 compatibility)");
 		assert.strictEqual(table.IsEmptyPage(0), true, "First page should be empty");
 		assert.strictEqual(table.IsEmptyPage(1), false, "Check second page");
 		
@@ -119,14 +119,14 @@ $(function ()
 		// Случай, когда таблица разбивается на строке следующей за заголовочной строкой
 		paragraph.SetParagraphSpacing({Before: 200});
 		AscTest.Recalculate();
-		assert.strictEqual(table.GetPagesCount(), 2, "The case when the table is split by the row following the header row (2026 compatibility)");
+assert.strictEqual(table.GetPagesCount(), 2, "The case when the table is split by the row following the header row (2015 compatibility)");
 		assert.strictEqual(table.IsEmptyPage(0), true, "First page should be empty");
 		assert.strictEqual(table.IsEmptyPage(1), false, "Check second page");
 		
 		// Случай, когда таблица разбивается на заголовочной строке
 		paragraph.SetParagraphSpacing({Before: 225});
 		AscTest.Recalculate();
-		assert.strictEqual(table.GetPagesCount(), 2, "The case when the table is split by the row the header row (but row it's self can be split across multiple pages) (2026 compatibility)");
+assert.strictEqual(table.GetPagesCount(), 2, "The case when the table is split by the row the header row (but row it's self can be split across multiple pages) (2015 compatibility)");
 		assert.strictEqual(table.IsEmptyPage(0), true, "First page should be empty");
 		assert.strictEqual(table.IsEmptyPage(1), false, "Check second page");
 	});

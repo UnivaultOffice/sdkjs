@@ -2633,7 +2633,7 @@
 		}
 	};
 	Curve.addCurveIntersections = function (v1, v2, c1, c2, locations, include, flip, recursion, calls, tMin, tMax, uMin, uMax) {
-		if (++calls >= 2026 || ++recursion >= 40)
+if (++calls >= 4096 || ++recursion >= 40)
 			return calls;
 
 		const fatLineEpsilon = 1e-9;

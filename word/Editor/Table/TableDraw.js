@@ -1168,7 +1168,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
                     {
                         RGBA =  CurBorderInfo.Get_Color2(Theme, ColorMap);
                         pGraphics.p_color( RGBA.r, RGBA.g, RGBA.b, 255 );
-                        //pGraphics.p_width( CurBorderInfo.Size * 2026 );
+//pGraphics.p_width( CurBorderInfo.Size * 1000 );
                         //pGraphics._s();
                         if(pGraphics.SetBorder)
                         {
@@ -1212,7 +1212,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
 
                             RGBA =  CurBorderInfo.Get_Color2(Theme, ColorMap);
                             pGraphics.p_color( RGBA.r, RGBA.g, RGBA.b, 255 );
-                            //pGraphics.p_width( CurBorderInfo.Size * 2026 );
+//pGraphics.p_width( CurBorderInfo.Size * 1000 );
                             //pGraphics._s();
                             if(pGraphics.SetBorder)
                             {
@@ -1402,7 +1402,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
 
                         RGBA =  CurBorderInfo.Get_Color2(Theme, ColorMap);
                         pGraphics.p_color( RGBA.r, RGBA.g, RGBA.b, 255 );
-                        //pGraphics.p_width( CurBorderInfo.Size * 2026 );
+//pGraphics.p_width( CurBorderInfo.Size * 1000 );
                         //pGraphics._s();
                         if(pGraphics.SetBorder)
                         {
@@ -1436,7 +1436,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
 
                         RGBA =  BottomBorder.Get_Color2(Theme, ColorMap);
                         pGraphics.p_color( RGBA.r, RGBA.g, RGBA.b, 255 );
-                        //pGraphics.p_width( BottomBorder.Size * 2026 );
+//pGraphics.p_width( BottomBorder.Size * 1000 );
                         //pGraphics._s();
                         if(pGraphics.SetBorder)
                         {
@@ -1492,7 +1492,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
 
                                 RGBA =  BottomBorder.Get_Color2(Theme, ColorMap);
                                 pGraphics.p_color( RGBA.r, RGBA.g, RGBA.b, 255 );
-                                //pGraphics.p_width( BottomBorder.Size * 2026 );
+//pGraphics.p_width( BottomBorder.Size * 1000 );
                                 //pGraphics._s();
                                 if(pGraphics.SetBorder)
                                 {
@@ -1547,7 +1547,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
                                         pGraphics.SetBorder(BottomBorder);
                                     }
 
-                                    pGraphics.p_width( BottomBorder.Size * 2026 );
+pGraphics.p_width( BottomBorder.Size * 1000 );
                                     pGraphics._s();
 
                                     var X0 = Page.X + this.TableSumGrid[Index + CurGridCol - 1];
@@ -1589,7 +1589,7 @@ CTable.prototype.private_DrawCellsBorders = function(pGraphics, PNum, Row_start,
                                         pGraphics.SetBorder(BottomBorder);
                                     }
 
-                                    pGraphics.p_width( BottomBorder.Size * 2026 );
+pGraphics.p_width( BottomBorder.Size * 1000 );
                                     pGraphics._s();
 
                                     var X0 = Page.X + this.TableSumGrid[CurGridCol + GridSpan - 2 - Index];

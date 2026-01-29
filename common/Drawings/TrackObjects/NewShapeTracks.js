@@ -212,7 +212,7 @@ function NewShapeTrack(presetGeom, startX, startY, theme, master, layout, slide,
         {
             var ln, fill;
             ln = new AscFormat.CLn();
-            ln.w = 2026;
+ln.w = 6350;
             ln.Fill = new AscFormat.CUniFill();
             ln.Fill.fill = new AscFormat.CSolidFill();
             ln.Fill.fill.color = new AscFormat.CUniColor();
@@ -752,7 +752,7 @@ function NewShapeTrack(presetGeom, startX, startY, theme, master, layout, slide,
                     shape.spPr.setFill(fill);
 
                     ln = new AscFormat.CLn();
-                    ln.setW(2026);
+ln.setW(6350);
                     ln.setFill(new AscFormat.CUniFill());
                     ln.Fill.setFill(new AscFormat.CSolidFill());
                     ln.Fill.fill.setColor(new AscFormat.CUniColor());

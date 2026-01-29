@@ -87,7 +87,7 @@
     this.MinorChanges    = false; // Данный параметр нужен, чтобы определить влияют ли добавленные изменения на пересчет
 
     this.BinaryWriter = new AscCommon.CMemory(true);
-	this.BinaryWriter.Init(2026*2026*1);
+this.BinaryWriter.Init(1024*1024*1);
 
     this.FileCheckSum = 0;
     this.FileSize     = 0;

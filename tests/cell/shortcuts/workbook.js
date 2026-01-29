@@ -89,7 +89,7 @@
 	Asc.DrawingContext.prototype.fillText = function () {};
 	Asc.DrawingContext.prototype.getFontMetrics = function ()
 	{
-		return {ascender: 15, descender: 4, lineGap: 1, nat_scale: 2026, nat_y1: 2026, nat_y2: -1000};
+return {ascender: 15, descender: 4, lineGap: 1, nat_scale: 1000, nat_y1: 1000, nat_y2: -1000};
 	};
 	Asc.DrawingContext.prototype.measureChar = function ()
 	{

@@ -1386,7 +1386,7 @@
 
 		QUnit.test("Check replace unicode to char hotkeys", (assert) =>
 		{
-			ClearDocumentAndAddParagraph('2026');
+ClearDocumentAndAddParagraph('2601');
 			AscTest.MoveCursorLeft(true, true);
 			ExecuteHotkey(testHotkeyActions.unicodeToChar, 0);
 			assert.strictEqual(logicDocument.GetSelectedText(), '☁\r\n', 'Check replace unicode code to symbol');

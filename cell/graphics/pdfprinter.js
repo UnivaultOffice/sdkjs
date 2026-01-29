@@ -224,7 +224,7 @@ CPdfPrinter.prototype =
     },
     setLineWidth : function(val)
     {
-        this.DocumentRenderer.p_width(val * 2026 * vector_koef);
+this.DocumentRenderer.p_width(val * 1000 * vector_koef);
         return this;
     },
 	setLineDash : function(params)

@@ -231,41 +231,41 @@
 
 			TextFormWrongFormat : -1201,
 
-			SecondaryAxis: 2026,
-			ComboSeriesError: 2026,
+SecondaryAxis: 1001,
+ComboSeriesError: 1002,
 
 			//conditional formatting
-			NotValidPercentile : 2026,
-			CannotAddConditionalFormatting: 2026,
-			NotValidPercentage: 2026,
-			NotSingleReferenceCannotUsed: 2026,
-			CannotUseRelativeReference: 2026,
-			ValueMustBeGreaterThen: 2026,
-			IconDataRangesOverlap: 2026,
-			ErrorTop10Between: 2026,
+NotValidPercentile : 1003,
+CannotAddConditionalFormatting: 1004,
+NotValidPercentage: 1005,
+NotSingleReferenceCannotUsed: 1006,
+CannotUseRelativeReference: 1007,
+ValueMustBeGreaterThen: 1008,
+IconDataRangesOverlap: 1009,
+ErrorTop10Between: 1010,
 
-			SingleColumnOrRowError: 2026,
-			LocationOrDataRangeError: 2026,
+SingleColumnOrRowError: 1020,
+LocationOrDataRangeError: 1021,
 
-			ChangeOnProtectedSheet: 2026,
-			PasswordIsNotCorrect: 2026,
-			DeleteColumnContainsLockedCell: 2026,
-			DeleteRowContainsLockedCell: 2026,
-			CannotUseCommandProtectedSheet: 2026,
+ChangeOnProtectedSheet: 1030,
+PasswordIsNotCorrect: 1031,
+DeleteColumnContainsLockedCell: 1032,
+DeleteRowContainsLockedCell: 1033,
+CannotUseCommandProtectedSheet: 1034,
 
-			FillAllRowsWarning: 2026,
+FillAllRowsWarning: 1040,
 
-			ProtectedRangeByOtherUser: 2026,
+ProtectedRangeByOtherUser: 1050,
 
-			TraceDependentsNoFormulas: 2026,
-			TracePrecedentsNoValidReference: 2026,
+TraceDependentsNoFormulas: 1060,
+TracePrecedentsNoValidReference: 1061,
 
-			MustIntegerOrDecimalNumber: 2026,
+MustIntegerOrDecimalNumber: 1070,
 
-			DocumentAndChangeMismatch: 2026,
-			EditProtectedRange       : 2026,
+DocumentAndChangeMismatch: 1080,
+EditProtectedRange       : 1081,
 
-			MacroUnavailableWarning: 2026,
+MacroUnavailableWarning: 1082,
 
 
 			// pdf forms

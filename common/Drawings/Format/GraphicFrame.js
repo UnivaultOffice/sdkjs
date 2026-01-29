@@ -1195,21 +1195,21 @@
 
 	CGraphicFrame.prototype.static_CreateGraphicFrameFromDrawing = function (oDrawing) {
 		let Graphic = new AscFormat.CT_GraphicalObject();
-		Graphic.Namespace = ' xmlns:a="http://schemas.openxmlformats.org/drawingml/2026/main"';
+Graphic.Namespace = ' xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"';
 		Graphic.GraphicData = new AscFormat.CT_GraphicalObjectData();
 		let nDrawingType = oDrawing.getObjectType();
 		if (nDrawingType === AscDFH.historyitem_type_ChartSpace) {
 			if (oDrawing.isChartEx()) {
-				Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2026/chartex";
+Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2014/chartex";
 			} else {
-				Graphic.GraphicData.Uri = "http://schemas.openxmlformats.org/drawingml/2026/chart";
+Graphic.GraphicData.Uri = "http://schemas.openxmlformats.org/drawingml/2006/chart";
 			}
 		} else if (nDrawingType === AscDFH.historyitem_type_SlicerView) {
-			Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2026/slicer";
+Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2010/slicer";
 		} else if (nDrawingType === AscDFH.historyitem_type_TimelineSlicerView) {
-			Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2026/timeslicer";
+Graphic.GraphicData.Uri = "http://schemas.microsoft.com/office/drawing/2012/timeslicer";
 		} else if (nDrawingType === AscDFH.historyitem_type_SmartArt) {
-			Graphic.GraphicData.Uri = "http://schemas.openxmlformats.org/drawingml/2026/diagram";
+Graphic.GraphicData.Uri = "http://schemas.openxmlformats.org/drawingml/2006/diagram";
 		}
 		Graphic.GraphicData.graphicObject = oDrawing;
 

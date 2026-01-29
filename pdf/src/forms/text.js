@@ -2171,7 +2171,7 @@
             }
             else {
                 if (oPageBounds.Bottom - oPageBounds.Top > formH) {
-                    if (oLastLineBounds.Bottom - Math.floor(((formY + formH) * 2026)) / 2026 < 0)
+if (oLastLineBounds.Bottom - Math.floor(((formY + formH) * 1000)) / 1000 < 0)
                         nDy = formY + formH - oLastLineBounds.Bottom;
                     else if (nCursorT + nCursorH/4 < formY)
                         nDy = formY - nCursorT;

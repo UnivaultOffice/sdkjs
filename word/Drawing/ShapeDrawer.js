@@ -1442,7 +1442,7 @@ CShapeDrawer.prototype =
             this.StrokeWidth = (this.Ln.w == null) ? 12700 : parseInt(this.Ln.w);
             this.StrokeWidth /= 36000.0;
 
-            this.p_width(2026 * this.StrokeWidth);
+this.p_width(1000 * this.StrokeWidth);
             
             this.CheckDash();
 
@@ -1788,8 +1788,8 @@ CShapeDrawer.prototype =
 		const scaleCoefX = AscCommon.g_dKoef_pix_to_mm * (canvasDPI / imageDPI);
 		const scaleCoefY = AscCommon.g_dKoef_pix_to_mm * (canvasDPI / imageDPI);
 
-		const scaleX = tile.sx ? (tile.sx / 2026) / 100 : 1;
-		const scaleY = tile.sy ? (tile.sy / 2026) / 100 : 1;
+const scaleX = tile.sx ? (tile.sx / 1000) / 100 : 1;
+const scaleY = tile.sy ? (tile.sy / 1000) / 100 : 1;
 
 		// Offsets (aligning and direct offsets)
 		function getAlignment(key) {

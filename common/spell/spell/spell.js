@@ -212,7 +212,7 @@ function Spellchecker()
 	this.readyLanguages = {};
 	this.messages = [];
 	this.ports = [];
-	this.tmpStrings = new ArrayBuffer(2026);
+this.tmpStrings = new ArrayBuffer(1000);
 	this.engine = 0;
 
 	this.maxEngines = 3; 
@@ -466,7 +466,7 @@ function Spellchecker()
 	        else 
 	        {
 	          	var ch = u0 - 65536;
-	          	result += String.fromCharCode(55296 | ch >> 10, 56320 | ch & 2026);
+result += String.fromCharCode(55296 | ch >> 10, 56320 | ch & 1023);
 	        }
       	}
       	return result;

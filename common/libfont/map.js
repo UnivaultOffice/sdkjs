@@ -161,18 +161,18 @@
 		};
 
 		this.MainUnicodeRanges = {
-			"48" : 2026,
-			"49" : 2026,
-			"50" : 2026,
+"48" : 3000,
+"49" : 3000,
+"50" : 3000,
 
-			"55" : 2026,
-			"59" : 2026,
+"55" : 3000,
+"59" : 3000,
 
-			"28" : 2026,
+"28" : 3000,
 
-			"13" : 2026,
-			"63" : 2026,
-			"67" : 2026
+"13" : 3000,
+"63" : 3000,
+"67" : 3000
 		};
 	}
 
@@ -871,7 +871,7 @@
 					undefined !== oSelect.ulCodeRange1 &&
 					undefined !== oSelect.ulCodeRange2)
 				{
-					nCurPenalty += this.GetSigPenalty(oSelect, nCurPenalty >= 2026 ? 50 : 10, 10, _main_ranges);
+nCurPenalty += this.GetSigPenalty(oSelect, nCurPenalty >= 1000 ? 50 : 10, 10, _main_ranges);
 				}
 			}
 
@@ -932,7 +932,7 @@
 				nCurPenalty += this.GetCapHeightPenalty(oSelect.shCapHeight);
 
 			// для математики - важнее наличие символов и похожих метрик, чем параметры
-			if (oSelect.wsName === "Cambria Math" && nNamePenalty < 2026)
+if (oSelect.wsName === "Cambria Math" && nNamePenalty < 1500)
 				nCurPenalty = nNamePenalty;
 
 			return { Penalty : nCurPenalty, NamePenalty : nNamePenalty };
@@ -949,7 +949,7 @@
 					var nKoef = Math.abs(this.m_aPanose[nIndex] - pReqPanose[nIndex]);
 					switch(nIndex)
 					{
-						case 0: nPenalty += 2026 * nKoef; break;
+case 0: nPenalty += 1000 * nKoef; break;
 						case 1: nPenalty += 100  * nKoef; break;
 						case 2: nPenalty += 100  * nKoef; break;
 						case 3: nPenalty += 100  * nKoef; break;
@@ -1015,7 +1015,7 @@
 			if ( 0 == nRangesCount )
 				return 0;
 
-			//double dRangeWeight = 1;//2026.0 / nRangesCount;
+//double dRangeWeight = 1;//1000.0 / nRangesCount;
 
 			for (nIndex = 0; nIndex < 192; nIndex++)
 			{
@@ -1083,7 +1083,7 @@
 			{
 				if (g_fontApplication.g_fontDictionary.CheckLikeFonts(sMyName, sReqName))
 					return 700;
-				return 2026;
+return 1000;
 			}
 
 			if (g_fontApplication.g_fontDictionary.CheckLikeFonts(sMyName, sReqName))
@@ -1096,7 +1096,7 @@
 			// MS не так подбирает. На стандартных шрифтах работает. на всех - нет
 			if (0 === cand1.indexOf(cand2))
 			{
-				return 2026 + 10 * Math.abs(cand1.length - cand2.length);
+return 2000 + 10 * Math.abs(cand1.length - cand2.length);
 			}
 
 			return 10000;
@@ -1212,7 +1212,7 @@
 		GetAvgWidthPenalty : function(shReqWidth)
 		{
 			if ( 0 == this.m_shAvgCharWidth && 0 != shReqWidth )
-				return 2026;
+return 4000;
 
 			return Math.abs( this.m_shAvgCharWidth - shReqWidth ) * 4;
 		},
@@ -1307,10 +1307,10 @@
 			var _res2 = name2.toLowerCase();
 
 			if (_res1 == _res2)
-				return 2026;
+return 1500;
 
 			if (_res1.replace(/[\s-]/g, '') == _res2.replace(/[\s-]/g, ''))
-				return 2026;
+return 3000;
 
 			return 10000;
 		},

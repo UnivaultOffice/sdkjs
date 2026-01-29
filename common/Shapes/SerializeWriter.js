@@ -106,7 +106,7 @@ function CBinaryFileWriter()
     // memory functions ----------
     this.Init = function()
     {
-        this.len = 2026*2026*2;
+this.len = 1024*1024*2;
         this.data = new Uint8Array(this.len);
         this.pos = 0;
     };
@@ -1461,7 +1461,7 @@ function CBinaryFileWriter()
         }
         else if (_transition.TransitionType == c_oAscSlideTransitionTypes.None)
         {
-            oThis._WriteInt1(2, 2026);
+oThis._WriteInt1(2, 2000);
         }
 
         if (_transition.TransitionType != c_oAscSlideTransitionTypes.None)
@@ -1470,7 +1470,7 @@ function CBinaryFileWriter()
 
             if (_transition.TransitionDuration < 250)
                 oThis._WriteUChar1(3, 0);
-            else if (_transition.TransitionDuration > 2026)
+else if (_transition.TransitionDuration > 1000)
                 oThis._WriteUChar1(3, 2);
             else
                 oThis._WriteUChar1(3, 1);
@@ -2187,7 +2187,7 @@ function CBinaryFileWriter()
 
         if (undefined !== rPr.Spacing && null != rPr.Spacing)
         {
-            oThis._WriteInt1(15, (rPr.Spacing * 2026 / 25.4) >> 0);
+oThis._WriteInt1(15, (rPr.Spacing * 7200 / 25.4) >> 0);
         }
 
         if (null != _strike)
@@ -3165,22 +3165,22 @@ function CBinaryFileWriter()
         let val;
         if (rect.l != null)
         {
-            val = (rect.l * 2026) >> 0;
+val = (rect.l * 1000) >> 0;
             oThis._WriteString1(0, "" + val);
         }
         if (rect.t != null)
         {
-            val = (rect.t * 2026) >> 0;
+val = (rect.t * 1000) >> 0;
             oThis._WriteString1(1, "" + val);
         }
         if (rect.r != null)
         {
-            val = ((100 - rect.r) * 2026) >> 0;
+val = ((100 - rect.r) * 1000) >> 0;
             oThis._WriteString1(2, "" + val);
         }
         if (rect.b != null)
         {
-            val = ((100 - rect.b) * 2026) >> 0;
+val = ((100 - rect.b) * 1000) >> 0;
             oThis._WriteString1(3, "" + val);
         }
 
@@ -4290,7 +4290,7 @@ function CBinaryFileWriter()
 		oThis._WriteUChar2(2, 1);
 		oThis._WriteString2(3, oSignatureLine.id);
 		oThis._WriteBool2(4, true);
-		oThis._WriteString2(5, "{00000000-2025-2026-0000-000000000000}");
+oThis._WriteString2(5, "{00000000-0000-0000-0000-000000000000}");
 		oThis._WriteBool2(6, oSignatureLine.showDate);
 		oThis._WriteString2(7, oSignatureLine.instructions);
 		oThis._WriteString2(10, oSignatureLine.signer);

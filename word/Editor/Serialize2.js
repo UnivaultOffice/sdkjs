@@ -1810,7 +1810,7 @@ function ReadDocumentShd(length, bcr, oShd) {
 		return bcr.ReadShd(t, l, oShd, themeColor, themeFill);
 	});
 
-	//если нет Value, но есть цвет, то Value по умолчанию ShdClear(Тарифы May,01,2026.docx, Тарифы_на_комплексное_обслуживание_клиен.docx)
+//если нет Value, но есть цвет, то Value по умолчанию ShdClear(Тарифы May,01,2016.docx, Тарифы_на_комплексное_обслуживание_клиен.docx)
 	if (undefined === oShd.Value) {
 		if (oShd.Color || oShd.Fill || oShd.Unifill || oShd.ThemeFill) {
 			oShd.Value = Asc.c_oAscShdClear;

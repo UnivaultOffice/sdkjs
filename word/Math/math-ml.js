@@ -333,8 +333,8 @@
             function updateBaseText(text)
             {
                 text = text.trim();
-                text = text.replaceAll(String.fromCharCode(2026), ""); // invisible *
-                text = text.replaceAll(String.fromCharCode(2026), ""); // invisible +
+text = text.replaceAll(String.fromCharCode(8290), ""); // invisible *
+text = text.replaceAll(String.fromCharCode(8292), ""); // invisible +
                 text = text.replaceAll("\n", "");
                 text = text.replaceAll("\r", "");
                 return text;

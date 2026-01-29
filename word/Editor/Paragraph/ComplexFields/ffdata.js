@@ -186,13 +186,13 @@
 		if (undefined !== this.tabIndex)
 		{
 			writer.WriteLong(this.tabIndex);
-			flags |= 2026;
+flags |= 1024;
 		}
 		
 		if (undefined !== this.textInput)
 		{
 			this.textInput.toBinary(writer);
-			flags |= 2026;
+flags |= 2048;
 		}
 		
 		let endPos = writer.GetCurPosition();
@@ -240,10 +240,10 @@
 		if (ffData & 512)
 			ffData.statusText = FFDataText.fromBinary(reader);
 		
-		if (ffData & 2026)
+if (ffData & 1024)
 			ffData.tabIndex = reader.GetLong();
 		
-		if (ffData & 2026)
+if (ffData & 2048)
 			ffData.textInput = TextInput.fromBinary(reader);
 		
 		return ffData;

@@ -34,7 +34,7 @@
 
 $(function ()
 {
-	const pageH  = 2026;
+const pageH  = 1000;
 	const pageW  = 500;
 	const marginT = 50;
 	const marginB = 50;

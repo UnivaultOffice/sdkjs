@@ -2339,7 +2339,7 @@
 	 * Sets the text spacing measured in twentieths of a point.
 	 * @memberof ApiRange
 	 * @typeofeditors ["CDE"]
-	 * @param {twips} nSpacing - The value of the text spacing measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nSpacing - The value of the text spacing measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {ApiRange | null} - returns null if can't apply spacing.
 	 * @see office-js-api/Examples/{Editor}/ApiRange/Methods/SetSpacing.js
 	 */
@@ -5115,7 +5115,7 @@
 	 * @typedef {Object} ContentControlDatePr
 	 * @property {string} format - The date format. Example: "mm.dd.yyyy".
 	 * @property {string} lang   - The date language. Possible value for this parameter is a language identifier as defined by
-	 * RFC 2026/BCP 47. Example: "en-CA".
+* RFC 4646/BCP 47. Example: "en-CA".
 	 */
 
 	/**
@@ -6526,7 +6526,7 @@
 
 	/**
 	 * Returns the inner text of the current node and its child nodes.
-	 * For example: `<text>123<one>4</one></text>` returns `"2026"`.
+* For example: `<text>123<one>4</one></text>` returns `"1234"`.
 	 * @memberof ApiCustomXmlNode
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
 	 * @since 9.0.0
@@ -9010,7 +9010,7 @@
 		let props = (api) ? api.asc_getAppProps() : null;
 		oDocInfo["Application"] = (props.asc_getApplication() || '') + (props.asc_getAppVersion() ? ' ' : '') + (props.asc_getAppVersion() || '');
 		
-		let langCode = 2026; // en-US
+let langCode = 1033; // en-US
 		let langName = 'en-us';
 		if (api.asc_getLocale)
 		{
@@ -10460,7 +10460,7 @@
 	 * Sets the text spacing measured in twentieths of a point.
 	 * @memberof ApiParagraph
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @param {twips} nSpacing - The value of the text spacing measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nSpacing - The value of the text spacing measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {ApiParagraph} this
 	 * @see office-js-api/Examples/{Editor}/ApiParagraph/Methods/SetSpacing.js
 	 */
@@ -12093,7 +12093,7 @@
 	 * @memberof ApiRun
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
 	 * @param {string} sLangId - The possible value for this parameter is a language identifier as defined by
-	 * RFC 2026/BCP 47. Example: "en-CA".
+* RFC 4646/BCP 47. Example: "en-CA".
 	 * @returns {ApiTextPr}
 	 * @see office-js-api/Examples/{Editor}/ApiRun/Methods/SetLanguage.js
 	 */
@@ -12159,7 +12159,7 @@
 	 * Sets the text spacing measured in twentieths of a point.
 	 * @memberof ApiRun
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @param {twips} nSpacing - The value of the text spacing measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nSpacing - The value of the text spacing measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {ApiTextPr}
 	 * @see office-js-api/Examples/{Editor}/ApiRun/Methods/SetSpacing.js
 	 */
@@ -12487,7 +12487,7 @@
 	 * @memberof ApiSection
 	 * @typeofeditors ["CDE"]
 	 * @param {number} nCount - Number of columns.
-	 * @param {twips} nSpace - Distance between columns measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nSpace - Distance between columns measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiSection/Methods/SetEqualColumns.js
 	 */
@@ -12503,8 +12503,8 @@
 	 * to the length of the aWidth array. The length of the aSpaces array MUST BE equal to (aWidth.length - 1).
 	 * @memberof ApiSection
 	 * @typeofeditors ["CDE"]
-	 * @param {twips[]} aWidths - An array of column width values measured in twentieths of a point (1/2026 of an inch).
-	 * @param {twips[]} aSpaces - An array of distance values between the columns measured in twentieths of a point (1/2026 of an inch).
+* @param {twips[]} aWidths - An array of column width values measured in twentieths of a point (1/1440 of an inch).
+* @param {twips[]} aSpaces - An array of distance values between the columns measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiSection/Methods/SetNotEqualColumns.js
 	 */
@@ -12531,8 +12531,8 @@
 	 * Specifies the properties (size and orientation) for all the pages in the current section.
 	 * @memberof ApiSection
 	 * @typeofeditors ["CDE"]
-	 * @param {twips} nWidth - The page width measured in twentieths of a point (1/2026 of an inch).
-	 * @param {twips} nHeight - The page height measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nWidth - The page width measured in twentieths of a point (1/1440 of an inch).
+* @param {twips} nHeight - The page height measured in twentieths of a point (1/1440 of an inch).
 	 * @param {boolean} [isPortrait=false] - Specifies the orientation of all the pages in this section (if set to true, then the portrait orientation is chosen).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiSection/Methods/SetPageSize.js
@@ -12570,10 +12570,10 @@
 	 * Specifies the page margins for all the pages in this section.
 	 * @memberof ApiSection
 	 * @typeofeditors ["CDE"]
-	 * @param {twips} nLeft - The left margin width measured in twentieths of a point (1/2026 of an inch).
-	 * @param {twips} nTop - The top margin height measured in twentieths of a point (1/2026 of an inch).
-	 * @param {twips} nRight - The right margin width measured in twentieths of a point (1/2026 of an inch).
-	 * @param {twips} nBottom - The bottom margin height measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nLeft - The left margin width measured in twentieths of a point (1/1440 of an inch).
+* @param {twips} nTop - The top margin height measured in twentieths of a point (1/1440 of an inch).
+* @param {twips} nRight - The right margin width measured in twentieths of a point (1/1440 of an inch).
+* @param {twips} nBottom - The bottom margin height measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiSection/Methods/SetPageMargins.js
 	 */
@@ -12630,7 +12630,7 @@
 	 * Specifies the distance from the top edge of the page to the top edge of the header.
 	 * @memberof ApiSection
 	 * @typeofeditors ["CDE"]
-	 * @param {twips} nDistance - The distance from the top edge of the page to the top edge of the header measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nDistance - The distance from the top edge of the page to the top edge of the header measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiSection/Methods/SetHeaderDistance.js
 	 */
@@ -12655,7 +12655,7 @@
 	 * @memberof ApiSection
 	 * @typeofeditors ["CDE"]
 	 * @param {twips} nDistance - The distance from the bottom edge of the page to the bottom edge of the footer measured
-	 * in twentieths of a point (1/2026 of an inch).
+* in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiSection/Methods/SetFooterDistance.js
 	 */
@@ -15326,7 +15326,7 @@
 	 * Sets the text spacing measured in twentieths of a point.
 	 * @memberof ApiTextPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @param {twips} nSpacing - The value of the text spacing measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nSpacing - The value of the text spacing measured in twentieths of a point (1/1440 of an inch).
 	 * @return {ApiTextPr} - this text properties.
 	 * @see office-js-api/Examples/{Editor}/ApiTextPr/Methods/SetSpacing.js
 	 */
@@ -15482,7 +15482,7 @@
 	 * @memberof ApiTextPr
 	 * @typeofeditors ["CDE"]
 	 * @param {string} sLangId - The possible value for this parameter is a language identifier as defined by
-	 * RFC 2026/BCP 47. Example: "en-CA".
+* RFC 4646/BCP 47. Example: "en-CA".
 	 * @return {ApiTextPr} - this text properties.
 	 * @see office-js-api/Examples/{Editor}/ApiTextPr/Methods/SetLanguage.js
 	 */
@@ -15760,7 +15760,7 @@
 	 * Sets the paragraph left side indentation.
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @param {twips} nValue - The paragraph left side indentation value measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nValue - The paragraph left side indentation value measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiParaPr/Methods/SetIndLeft.js
 	 */
@@ -15774,7 +15774,7 @@
 	 * Returns the paragraph left side indentation.
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @returns {twips | undefined} - The paragraph left side indentation value measured in twentieths of a point (1/2026 of an inch).
+* @returns {twips | undefined} - The paragraph left side indentation value measured in twentieths of a point (1/1440 of an inch).
 	 * @see office-js-api/Examples/{Editor}/ApiParaPr/Methods/GetIndLeft.js
 	 */
 	ApiParaPr.prototype.GetIndLeft = function()
@@ -15791,7 +15791,7 @@
 	 * Sets the paragraph right side indentation.
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @param {twips} nValue - The paragraph right side indentation value measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nValue - The paragraph right side indentation value measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiParaPr/Methods/SetIndRight.js
 	 */
@@ -15805,7 +15805,7 @@
 	 * Returns the paragraph right side indentation.
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @returns {twips | undefined} - The paragraph right side indentation value measured in twentieths of a point (1/2026 of an inch).
+* @returns {twips | undefined} - The paragraph right side indentation value measured in twentieths of a point (1/1440 of an inch).
 	 * @see office-js-api/Examples/{Editor}/ApiParaPr/Methods/GetIndRight.js
 	 */
 	ApiParaPr.prototype.GetIndRight = function()
@@ -15823,7 +15823,7 @@
 	 * Sets the paragraph first line indentation.
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @param {twips} nValue - The paragraph first line indentation value measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nValue - The paragraph first line indentation value measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiParaPr/Methods/SetIndFirstLine.js
 	 */
@@ -15837,7 +15837,7 @@
 	 * Returns the paragraph first line indentation.
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @returns {twips | undefined} - The paragraph first line indentation value measured in twentieths of a point (1/2026 of an inch).
+* @returns {twips | undefined} - The paragraph first line indentation value measured in twentieths of a point (1/1440 of an inch).
 	 * @see office-js-api/Examples/{Editor}/ApiParaPr/Methods/GetIndFirstLine.js
 	 */
 	ApiParaPr.prototype.GetIndFirstLine = function()
@@ -15956,7 +15956,7 @@
 	 * nLine parameter will be interpreted as 240ths of a line.
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @param {(twips | line240)} nLine - The line spacing value measured either in twentieths of a point (1/2026 of an inch) or in 240ths of a line.
+* @param {(twips | line240)} nLine - The line spacing value measured either in twentieths of a point (1/1440 of an inch) or in 240ths of a line.
 	 * @param {("auto" | "atLeast" | "exact")} sLineRule - The rule that determines the measuring units of the line spacing.
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiParaPr/Methods/SetSpacingLine.js
@@ -16060,7 +16060,7 @@
 	 * it will be interpreted as false.
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @param {twips} nBefore - The value of the spacing before the current paragraph measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nBefore - The value of the spacing before the current paragraph measured in twentieths of a point (1/1440 of an inch).
 	 * @param {boolean} [isBeforeAuto=false] - The true value disables the spacing before the current paragraph.
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiParaPr/Methods/SetSpacingBefore.js
@@ -16080,7 +16080,7 @@
 	 * Returns the spacing before value of the current paragraph.
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @returns {twips} - The value of the spacing before the current paragraph measured in twentieths of a point (1/2026 of an inch).
+* @returns {twips} - The value of the spacing before the current paragraph measured in twentieths of a point (1/1440 of an inch).
 	 * @see office-js-api/Examples/{Editor}/ApiParaPr/Methods/GetSpacingBefore.js
 	 */
 	ApiParaPr.prototype.GetSpacingBefore = function()
@@ -16101,7 +16101,7 @@
 	 * will be interpreted as false.
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @param {twips} nAfter - The value of the spacing after the current paragraph measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nAfter - The value of the spacing after the current paragraph measured in twentieths of a point (1/1440 of an inch).
 	 * @param {boolean} [isAfterAuto=false] - The true value disables the spacing after the current paragraph.
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiParaPr/Methods/SetSpacingAfter.js
@@ -16121,7 +16121,7 @@
 	 * Returns the spacing after value of the current paragraph. 
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
-	 * @returns {twips} - The value of the spacing after the current paragraph measured in twentieths of a point (1/2026 of an inch).
+* @returns {twips} - The value of the spacing after the current paragraph measured in twentieths of a point (1/1440 of an inch).
 	 * @see office-js-api/Examples/{Editor}/ApiParaPr/Methods/GetSpacingAfter.js
 	 */
 	ApiParaPr.prototype.GetSpacingAfter = function()
@@ -16306,7 +16306,7 @@
 	 * @memberof ApiParaPr
 	 * @typeofeditors ["CDE", "CSE", "CPE"]
 	 * @param {twips[]} aPos - An array of the positions of custom tab stops with respect to the current page margins
-	 * measured in twentieths of a point (1/2026 of an inch).
+* measured in twentieths of a point (1/1440 of an inch).
 	 * @param {TabJc[]} aVal - An array of the styles of custom tab stops, which determines the behavior of the tab
 	 * stop and the alignment which will be applied to text entered at the current custom tab stop.
 	 * @returns {boolean}
@@ -16925,7 +16925,7 @@
 	 * @memberof ApiTablePr
 	 * @typeofeditors ["CDE"]
 	 * @param {twips} nValue - The value for the amount of space below the bottom extent of the cell measured in
-	 * twentieths of a point (1/2026 of an inch).
+* twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiTablePr/Methods/SetTableCellMarginBottom.js
 	 */
@@ -16940,7 +16940,7 @@
 	 * border of all table cells within the parent table (or table row).
 	 * @memberof ApiTablePr
 	 * @typeofeditors ["CDE"]
-	 * @param {twips} nValue - The value for the amount of space to the left extent of the cell measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nValue - The value for the amount of space to the left extent of the cell measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiTablePr/Methods/SetTableCellMarginLeft.js
 	 */
@@ -16955,7 +16955,7 @@
 	 * border of all table cells within the parent table (or table row).
 	 * @memberof ApiTablePr
 	 * @typeofeditors ["CDE"]
-	 * @param {twips} nValue - The value for the amount of space to the right extent of the cell measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nValue - The value for the amount of space to the right extent of the cell measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiTablePr/Methods/SetTableCellMarginRight.js
 	 */
@@ -16970,7 +16970,7 @@
 	 * of all table cells within the parent table (or table row).
 	 * @memberof ApiTablePr
 	 * @typeofeditors ["CDE"]
-	 * @param {twips} nValue - The value for the amount of space above the top extent of the cell measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nValue - The value for the amount of space above the top extent of the cell measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiTablePr/Methods/SetTableCellMarginTop.js
 	 */
@@ -16984,7 +16984,7 @@
 	 * Specifies the default table cell spacing (the spacing between adjacent cells and the edges of the table).
 	 * @memberof ApiTablePr
 	 * @typeofeditors ["CDE"]
-	 * @param {?twips} nValue - Spacing value measured in twentieths of a point (1/2026 of an inch). <code>"Null"</code> means that no spacing will be applied.
+* @param {?twips} nValue - Spacing value measured in twentieths of a point (1/1440 of an inch). <code>"Null"</code> means that no spacing will be applied.
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiTablePr/Methods/SetCellSpacing.js
 	 */
@@ -17002,7 +17002,7 @@
 	 * (the left edge in the left-to-right table, and the right edge in the right-to-left table).
 	 * @memberof ApiTablePr
 	 * @typeofeditors ["CDE"]
-	 * @param {twips} nValue - The indentation value measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} nValue - The indentation value measured in twentieths of a point (1/1440 of an inch).
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiTablePr/Methods/SetTableInd.js
 	 */
@@ -17143,7 +17143,7 @@
 	 * @memberof ApiTableRowPr
 	 * @typeofeditors ["CDE"]
 	 * @param {("auto" | "atLeast")} sHRule - The rule to apply the height value to the current table row or ignore it. Use the <code>"atLeast"</code> value to enable the <code>SetHeight</code> method use.
-	 * @param {twips} [nValue] - The height for the current table row measured in twentieths of a point (1/2026 of an inch). This value will be ignored if <code>sHRule="auto"<code>.
+* @param {twips} [nValue] - The height for the current table row measured in twentieths of a point (1/1440 of an inch). This value will be ignored if <code>sHRule="auto"<code>.
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiTableRowPr/Methods/SetHeight.js
 	 */
@@ -17230,7 +17230,7 @@
 	 * @memberof ApiTableCellPr
 	 * @typeofeditors ["CDE"]
 	 * @param {?twips} nValue - The value for the amount of space below the bottom extent of the cell measured in twentieths
-	 * of a point (1/2026 of an inch). If this value is <code>null</code>, then default table cell bottom margin will be used, otherwise
+* of a point (1/1440 of an inch). If this value is <code>null</code>, then default table cell bottom margin will be used, otherwise
 	 * the table cell bottom margin will be overridden with the specified value for the current cell.
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiTableCellPr/Methods/SetCellMarginBottom.js
@@ -17261,7 +17261,7 @@
 	 * @memberof ApiTableCellPr
 	 * @typeofeditors ["CDE"]
 	 * @param {?twips} nValue - The value for the amount of space to the left extent of the cell measured in twentieths
-	 * of a point (1/2026 of an inch). If this value is <code>null</code>, then default table cell left margin will be used, otherwise
+* of a point (1/1440 of an inch). If this value is <code>null</code>, then default table cell left margin will be used, otherwise
 	 * the table cell left margin will be overridden with the specified value for the current cell.
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiTableCellPr/Methods/SetCellMarginLeft.js
@@ -17291,7 +17291,7 @@
 	 * @memberof ApiTableCellPr
 	 * @typeofeditors ["CDE"]
 	 * @param {?twips} nValue - The value for the amount of space to the right extent of the cell measured in twentieths
-	 * of a point (1/2026 of an inch). If this value is <code>null</code>, then default table cell right margin will be used, otherwise
+* of a point (1/1440 of an inch). If this value is <code>null</code>, then default table cell right margin will be used, otherwise
 	 * the table cell right margin will be overridden with the specified value for the current cell.
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiTableCellPr/Methods/SetCellMarginRight.js
@@ -17322,7 +17322,7 @@
 	 * @memberof ApiTableCellPr
 	 * @typeofeditors ["CDE"]
 	 * @param {?twips} nValue - The value for the amount of space above the upper extent of the cell measured in twentieths
-	 * of a point (1/2026 of an inch). If this value is <code>null</code>, then default table cell top margin will be used, otherwise
+* of a point (1/1440 of an inch). If this value is <code>null</code>, then default table cell top margin will be used, otherwise
 	 * the table cell top margin will be overridden with the specified value for the current cell.
 	 * @returns {boolean}
 	 * @see office-js-api/Examples/{Editor}/ApiTableCellPr/Methods/SetCellMarginTop.js
@@ -23506,8 +23506,8 @@
 	/**
 	 * Converts the current form to a fixed size form.
 	 * @memberof ApiFormBase
-	 * @param {twips} width - The wrapper shape width measured in twentieths of a point (1/2026 of an inch).
-	 * @param {twips} height - The wrapper shape height measured in twentieths of a point (1/2026 of an inch).
+* @param {twips} width - The wrapper shape width measured in twentieths of a point (1/1440 of an inch).
+* @param {twips} height - The wrapper shape height measured in twentieths of a point (1/1440 of an inch).
 	 * @param {boolean} keepPosition - Save position on the page (it can be a little bit slow, because it runs the document calculation).
 	 * @typeofeditors ["CDE", "CFE"]
 	 * @returns {boolean}
@@ -24769,7 +24769,7 @@
 	 * @memberof ApiDateForm
 	 * @typeofeditors ["CDE", "CFE"]
 	 * @param {string} sLangId - The date language. The possible value for this parameter is a language identifier as defined in
-	 * RFC 2026/BCP 47. Example: "en-CA".
+* RFC 4646/BCP 47. Example: "en-CA".
 	 * @returns {boolean}
 	 * @since 8.1.0
 	 * @see office-js-api/Examples/{Editor}/ApiDateForm/Methods/SetLanguage.js
@@ -29648,7 +29648,7 @@
 		
 		let lcid = Asc.g_oLcidNameToIdMap[pr["lang"]];
 		if (undefined === lcid)
-			lcid = 2026;
+lcid = 1033;
 		
 		datePickerPr.SetDateFormat(GetStringParameter(pr["format"], "mm/dd/yyyy"));
 		datePickerPr.SetLangId(lcid);

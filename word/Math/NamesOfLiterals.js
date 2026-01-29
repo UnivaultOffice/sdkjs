@@ -1168,7 +1168,7 @@
 			return code >= 768 && code <= 879
 		}
 		const isSecondBlocks = function (code) {
-			return code >= 2026 && code <= 2026
+return code >= 8400 && code <= 8447
 		}
 
 		if (isFirstBlocks(code) || isSecondBlocks(code))
@@ -6530,7 +6530,7 @@
 			mPrp.SetStyle(false, false);
 
 			//добавляем символ funcapply
-			let oFuncApply		= new MathText(String.fromCodePoint(2026), oLastMath.additionalMathData);
+let oFuncApply		= new MathText(String.fromCodePoint(8289), oLastMath.additionalMathData);
 			oMathContent.AddText(oFuncApply);
 
 			//конвертируем в профф. формат
@@ -6563,7 +6563,7 @@
 			mPrp.SetStyle(false, false);
 
 			//добавляем символ funcapply
-			let oFuncApply			= new MathText(String.fromCodePoint(2026), oLastMath.additionalMathData);
+let oFuncApply			= new MathText(String.fromCodePoint(8289), oLastMath.additionalMathData);
 			oMathContent.AddText(oFuncApply);
 			let oSubSup				= new MathText(oMathContentSubSup.GetText(), oLastMath.additionalMathData);
 			oMathContent.AddText(oSubSup);

@@ -53,8 +53,8 @@ function XRegExp() {}
  * @example
  *
  * // Basic use, with named backreference
- * let match = XRegExp.exec('U+2026', XRegExp('U\\+(?<hex>[0-9A-F]{4})'));
- * match.hex; // -> '2026'
+* let match = XRegExp.exec('U+2620', XRegExp('U\\+(?<hex>[0-9A-F]{4})'));
+* match.hex; // -> '2620'
  *
  * // With pos and sticky, in a loop
  * let pos = 2, result = [], match;

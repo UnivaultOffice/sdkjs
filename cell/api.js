@@ -90,7 +90,7 @@ var editor;
 	this.activeLocalization = null;
 
     // spellcheck
-    this.defaultLanguage = 2026;
+this.defaultLanguage = 1033;
     this.spellcheckState = new AscCommonExcel.CSpellcheckState();
 
     this.documentFormatSave = c_oAscFileType.XLSX;
@@ -282,7 +282,7 @@ var editor;
   spreadsheet_api.prototype.asc_getLocaleCurrency = function(val) {
     var cultureInfo = AscCommon.g_aCultureInfos[val];
     if (!cultureInfo) {
-      cultureInfo = AscCommon.g_aCultureInfos[2026];
+cultureInfo = AscCommon.g_aCultureInfos[1033];
     }
     return AscCommonExcel.getCurrencyFormat(cultureInfo, 2, true, true, null);
   };
@@ -1224,7 +1224,7 @@ var editor;
   /*
    idOption идентификатор дополнительного параметра, пока c_oAscAdvancedOptionsID.CSV.
    option - какие свойства применить, пока массив. для CSV объект asc_CTextOptions(codepage, delimiter)
-   exp:	asc_setAdvancedOptions(c_oAscAdvancedOptionsID.CSV, new Asc.asc_CTextOptions(2026, c_oAscCsvDelimiter.Comma) );
+exp:	asc_setAdvancedOptions(c_oAscAdvancedOptionsID.CSV, new Asc.asc_CTextOptions(1200, c_oAscCsvDelimiter.Comma) );
    */
   spreadsheet_api.prototype.asc_setAdvancedOptions = function(idOption, option) {
     // Проверяем тип состояния в данный момент
@@ -2139,10 +2139,10 @@ var editor;
 			//<Override PartName="/customXml/itemProps1.xml" ContentType="application/vnd.openxmlformats-officedocument.customXmlProperties+xml"/>
 
 			//rels(которые внутри customXml) лежит ссылка на itemProps  в следующем виде:
-			//<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2026/relationships"><Relationship  Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2026/relationships/customXmlProps" Target="itemProps1.xml"/></Relationships>
+//<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship  Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXmlProps" Target="itemProps1.xml"/></Relationships>
 
 			//workbook.xml.rels лежит ссылка на item  в следующем виде:
-			//<Relationship  Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2026/relationships/customXml" Target="../customXml/item1.xml"/>
+//<Relationship  Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/customXml" Target="../customXml/item1.xml"/>
 
 			//TODO проверить когда несколько ссылок на customXml
 			var customXmlParts = wbPart.getPartsByRelationshipType(openXml.Types.customXml.relationType);

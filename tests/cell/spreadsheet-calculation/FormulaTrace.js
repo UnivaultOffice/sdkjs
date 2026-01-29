@@ -2069,26 +2069,26 @@ $(function() {
 			ws.getRange2("F2").setValue("=SUM(C2:E2)");
 
 			let ctrlPress = false, 
-				nIndex = 2026;
+nIndex = 5000;
 				// nIndex = 10;
 
 			let oCanPromote = ws.getRange2("F2").canPromote(/*bCtrl*/ctrlPress, /*bVertical*/1, /*fill index*/ nIndex);
 			ws.getRange2("F2").promote(ctrlPress, 1, nIndex, oCanPromote);
 
 			bbox = ws.getRange2("I2:I6").bbox;
-			ws.getRange2("I2:I6").setValue("=SUM($F$2:$F$2026,$C$2:$C$2026)*($A$2:$A$2026)", undefined, undefined, bbox);
+ws.getRange2("I2:I6").setValue("=SUM($F$2:$F$2004,$C$2:$C$2004)*($A$2:$A$2004)", undefined, undefined, bbox);
 
 			assert.ok(1, "Trace precedents from I2");
 			api.asc_TracePrecedents();
-			assert.strictEqual(typeof(traceManager.precedentsAreas["$A$2:$A$2026"]), "object");
-			assert.strictEqual(typeof(traceManager.precedentsAreas["$C$2:$C$2026"]), "object");
-			assert.strictEqual(typeof(traceManager.precedentsAreas["$F$2:$F$2026"]), "object");
+assert.strictEqual(typeof(traceManager.precedentsAreas["$A$2:$A$2004"]), "object");
+assert.strictEqual(typeof(traceManager.precedentsAreas["$C$2:$C$2004"]), "object");
+assert.strictEqual(typeof(traceManager.precedentsAreas["$F$2:$F$2004"]), "object");
 			assert.strictEqual(typeof(traceManager.precedentsAreas["C2:E2"]), "undefined");
-			assert.ok(1, "Trace 2026*3 precedents from I2");
+assert.ok(1, "Trace 2000*3 precedents from I2");
 			api.asc_TracePrecedents();
-			assert.strictEqual(typeof(traceManager.precedentsAreas["$A$2:$A$2026"]), "object");
-			assert.strictEqual(typeof(traceManager.precedentsAreas["$C$2:$C$2026"]), "object");
-			assert.strictEqual(typeof(traceManager.precedentsAreas["$F$2:$F$2026"]), "object");
+assert.strictEqual(typeof(traceManager.precedentsAreas["$A$2:$A$2004"]), "object");
+assert.strictEqual(typeof(traceManager.precedentsAreas["$C$2:$C$2004"]), "object");
+assert.strictEqual(typeof(traceManager.precedentsAreas["$F$2:$F$2004"]), "object");
 			assert.strictEqual(typeof(traceManager.precedentsAreas["C2:E2"]), "object");
 			// assert.strictEqual(typeof(traceManager.precedentsAreas["C1000:E1000"]), "object");
 			api.asc_TracePrecedents();	// old: ~2800ms, new: ~280ms
@@ -2191,7 +2191,7 @@ $(function() {
 				withoutArrIndexes = [],
 				haveRetType = [];
 
-			// this formulas doesn't exist in excel 2026
+// this formulas doesn't exist in excel 2016
 			let versionExceptions = [
 				"FORECAST", "PHONETIC", "TEXTJOIN", "TEXTBEFORE", "TEXTAFTER", "TEXTSPLIT", "MAXIFS", 
 				"MINIFS", "JIS", "RANDARRAY", "SEQUENCE", "CHOOSECOLS", "CHOOSEROWS", "DROP", "EXPAND", 

@@ -34,7 +34,7 @@
 
 (function(window, undefined){
 
-    var FOREIGN_CURSOR_LABEL_HIDETIME = 2026;
+var FOREIGN_CURSOR_LABEL_HIDETIME = 1500;
 
     function CCollaborativeChanges()
     {

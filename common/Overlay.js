@@ -734,7 +734,7 @@
         var _len2 = ((xxx2 - xxx1)*(xxx2 - xxx1) + (yyy2 - yyy1)*(yyy2 - yyy1));
         var koef = Math.sqrt(_len2 / 2);
 
-        var _EpsLine = (w * koef / 2026) >> 0;
+var _EpsLine = (w * koef / 1000) >> 0;
         _EpsLine += 5;
 
         if (_EpsLine > this.MaxEpsLine)
@@ -3416,7 +3416,7 @@
 		var shape = new AscFormat.CShape();
 		shape.setTxBody(AscFormat.CreateTextBodyFromString("", this, shape));
 		var par = shape.txBody.content.Content[0];
-		par.Reset(0, 0, 2026, 2026, 0);
+par.Reset(0, 0, 1000, 1000, 0);
 		par.MoveCursorToStartPos();
 		var _paraPr = new CParaPr();
 		par.Pr = _paraPr;

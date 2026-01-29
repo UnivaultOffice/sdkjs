@@ -236,7 +236,7 @@ CGlyphOperator.prototype.draw = function(pGraphics, XX, YY, PDSE)
     var intGrid = pGraphics.GetIntegerGrid();
     pGraphics.SetIntegerGrid(false);
 
-    pGraphics.p_width(this.penW*2026);
+pGraphics.p_width(this.penW*1000);
     pGraphics._s();
 
     this.drawPath(pGraphics, XX, YY, PDSE);
@@ -332,24 +332,24 @@ COperatorBracket.prototype.calcCoord = function(stretch)
     X[15] = 14357; Y[15] = 13243;
     X[16] = 13253; Y[16] = 13518;
     X[17] = 11961; Y[17] = 13518;
-    X[18] = 2026; Y[18] = 13518;
-    X[19] = 2026; Y[19] = 12621;
-    X[20] = 2026; Y[20] = 11724;
-    X[21] = 2026; Y[21] = 10055;
-    X[22] = 2026; Y[22] = 2026;
-    X[23] = 2026; Y[23] = 2026;
-    X[24] = 2026; Y[24] = 2026;
-    X[25] = 2026; Y[25] = 626;
-    X[26] = 2026; Y[26] = 0;
+X[18] = 9835; Y[18] = 13518;
+X[19] = 8292; Y[19] = 12621;
+X[20] = 6750; Y[20] = 11724;
+X[21] = 5750; Y[21] = 10055;
+X[22] = 4750; Y[22] = 8386;
+X[23] = 4270; Y[23] = 5987;
+X[24] = 3791; Y[24] = 3589;
+X[25] = 3791; Y[25] = 626;
+X[26] = 3791; Y[26] = 0;
     X[27] = 0; Y[27] = 0;
-    X[28] = 0; Y[28] = 2026;
-    X[29] = 83; Y[29] = 2026;
-    X[30] = 2026; Y[30] = 2026;
-    X[31] = 2026; Y[31] = 13261;
-    X[32] = 2026; Y[32] = 15700;
-    X[33] = 2026; Y[33] = 18139;
-    X[34] = 2026; Y[34] = 19369;
-    X[35] = 2026; Y[35] = 20599;
+X[28] = 0; Y[28] = 1084;
+X[29] = 83; Y[29] = 5963;
+X[30] = 1021; Y[30] = 9612;
+X[31] = 1959; Y[31] = 13261;
+X[32] = 3543; Y[32] = 15700;
+X[33] = 5127; Y[33] = 18139;
+X[34] = 7232; Y[34] = 19369;
+X[35] = 9337; Y[35] = 20599;
     X[36] = 11796; Y[36] = 20599;
     X[37] = 13338; Y[37] = 20599;
     X[38] = 14588; Y[38] = 20283;
@@ -372,7 +372,7 @@ COperatorBracket.prototype.calcCoord = function(stretch)
     //TODO
     // X[1] > X[52]
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var augm = stretch/((X[52] + (X[0] - X[1])/2 + X[1] - X[52])*alpha*2);
@@ -850,15 +850,15 @@ COperatorParenthesis.prototype.calcCoord = function(stretch)
     X[0] = 39887; Y[0] = 18995;
     X[1] = 25314; Y[1] = 18995;
     X[2] = 15863; Y[2] = 14309;
-    X[3] = 2026; Y[3] = 2026;
-    X[4] = 2026; Y[4] = 0;
-    X[5] = 0; Y[5] = 2026;
-    X[6] = 2026; Y[6] = 13217;
+X[3] = 6412; Y[3] = 9623;
+X[4] = 3206; Y[4] = 0;
+X[5] = 0; Y[5] = 1000;
+X[6] = 3206; Y[6] = 13217;
     X[7] = 13802; Y[7] = 19722;
     X[8] = 24398; Y[8] = 26227;
     X[9] = 39470; Y[9] = 26227;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var aug = stretch/(X[9]*alpha)/2; //Y[9]*alpha - высота скобки
@@ -982,16 +982,16 @@ COperatorAngleBracket.prototype.calcCoord = function(stretch)
     var X = [],
         Y = [];
 
-    X[0] = 38990; Y[0] = 2026;
-    X[1] = 2026; Y[1] = 21036;
+X[0] = 38990; Y[0] = 7665;
+X[1] = 1583; Y[1] = 21036;
     X[2] = 0; Y[2] = 16621;
     X[3] = 37449; Y[3] = 0;
     X[4] = 40531; Y[4] = 0;
     X[5] = 77938; Y[5] = 16621;
     X[6] = 76439; Y[6] = 21036;
-    X[7] = 38990; Y[7] = 2026;
+X[7] = 38990; Y[7] = 7665;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var augm = stretch/(X[5]*alpha);
@@ -1084,17 +1084,17 @@ CSquareBracket.prototype.calcCoord = function(stretch)
     var X = [],
         Y = [];
 
-    X[0] = 2026;  Y[0] = 2026;
-    X[1] = 2026;  Y[1] = 18592;
+X[0] = 3200;  Y[0] = 6912;
+X[1] = 3200;  Y[1] = 18592;
     X[2] = 0;     Y[2] = 18592;
     X[3] = 0;     Y[3] = 0;
     X[4] = 79424; Y[4] = 0;
     X[5] = 79424; Y[5] = 18592;
     X[6] = 76224; Y[6] = 18592;
-    X[7] = 76224; Y[7] = 2026;
-    X[8] = 2026;  Y[8] = 2026;
+X[7] = 76224; Y[7] = 6912;
+X[8] = 3200;  Y[8] = 6912;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var lng = stretch/alpha - X[4] - 2*X[0];
@@ -1162,14 +1162,14 @@ CHalfSquareBracket.prototype.calcCoord = function(stretch)
         Y = [];
 
     X[0] = 0; Y[0] = 0;
-    X[1] = 0; Y[1] = 2026;
-    X[2] = 74106; Y[2] = 2026;
+X[1] = 0; Y[1] = 7000;
+X[2] = 74106; Y[2] = 7000;
     X[3] = 74106; Y[3] = 18578;
     X[4] = 77522; Y[4] = 18578;
     X[5] = 77522; Y[5] = 0;
     X[6] = 0; Y[6] = 0;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var w1 = X[4],
@@ -1244,12 +1244,12 @@ COperatorLine.prototype.calcCoord = function(stretch)
         Y = [];
 
     X[0] = 0;     Y[0] = 0;
-    X[1] = 0;     Y[1] = 2026;
-    X[2] = 77504; Y[2] = 2026;
+X[1] = 0;     Y[1] = 5520;
+X[2] = 77504; Y[2] = 5520;
     X[3] = 77504; Y[3] = 0;
     X[4] = 0;     Y[4] = 0;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var XX = [],
@@ -1316,34 +1316,34 @@ CWhiteSquareBracket.prototype.calcCoord = function(stretch)
      X[1] = 77529; Y[1] = 0;
      X[2] = 0; Y[2] = 0;
      X[3] = 0; Y[3] = 26219;
-     X[4] = 2026; Y[4] = 26219;
-     X[5] = 2026; Y[5] = 17055;
+X[4] = 4249; Y[4] = 26219;
+X[5] = 4249; Y[5] = 17055;
      X[6] = 73280; Y[6] = 17055;
      X[7] = 73280; Y[7] = 26219;
      X[8] = 77529; Y[8] = 26219;
      X[9] = 73280; Y[9] = 12431;
-     X[10] = 2026; Y[10] = 12431;
-     X[11] = 2026; Y[11] = 2026;
-     X[12] = 73280; Y[12] = 2026;
+X[10] = 4249; Y[10] = 12431;
+X[11] = 4249; Y[11] = 4623;
+X[12] = 73280; Y[12] = 4623;
      X[13] = 73280; Y[13] = 12431;*/
 
-    X[0] = 2026;  Y[0] = 17055;
-    X[1] = 2026;  Y[1] = 26219;
+X[0] = 3225;  Y[0] = 17055;
+X[1] = 3225;  Y[1] = 26219;
     X[2] = 0;     Y[2] = 26219;
     X[3] = 0;     Y[3] = 0;
     X[4] = 77529; Y[4] = 0;
     X[5] = 77529; Y[5] = 26219;
     X[6] = 74304; Y[6] = 26219;
     X[7] = 74304; Y[7] = 17055;
-    X[8] = 2026;  Y[8] = 17055;
+X[8] = 3225;  Y[8] = 17055;
 
     X[9] = 74304; Y[9] = 12700;
-    X[10] = 2026; Y[10] = 12700;
-    X[11] = 2026; Y[11] = 2026;
-    X[12] = 74304; Y[12] = 2026;
+X[10] = 3225; Y[10] = 12700;
+X[11] = 3225; Y[11] = 4600;
+X[12] = 74304; Y[12] = 4600;
     X[13] = 74304; Y[13] = 12700;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var XX = [],
@@ -1419,11 +1419,11 @@ COperatorDoubleLine.prototype.calcCoord = function(stretch)
     var X = [],
         Y = [];
 
-    //X[0] = 77504; Y[0] = 2026;
+//X[0] = 77504; Y[0] = 6400;
 
     X[0] = 0;     Y[0] = 0;
-    X[1] = 0;     Y[1] = 2026;
-    X[2] = 77504; Y[2] = 2026;
+X[1] = 0;     Y[1] = 5900;
+X[2] = 77504; Y[2] = 5900;
     X[3] = 77504; Y[3] = 0;
     X[4] = 0;     Y[4] = 0;
 
@@ -1433,7 +1433,7 @@ COperatorDoubleLine.prototype.calcCoord = function(stretch)
     X[8] = 77504; Y[8] = 18112;
     X[9] = 0;     Y[9] = 18112;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var XX = [],
@@ -1501,18 +1501,18 @@ CSingleArrow.prototype.calcCoord = function(stretch)
         Y = [];
 
     X[0] = 56138; Y[0] = 12300;
-    X[1] = 2026; Y[1] = 12300;
-    X[2] = 16313; Y[2] = 2026;
+X[1] = 8363; Y[1] = 12300;
+X[2] = 16313; Y[2] = 2212;
     X[3] = 13950; Y[3] = 0;
     X[4] = 0; Y[4] = 13650;
     X[5] = 0; Y[5] = 16238;
     X[6] = 13950; Y[6] = 29925;
     X[7] = 16313; Y[7] = 27712;
-    X[8] = 2026; Y[8] = 17625;
+X[8] = 8363; Y[8] = 17625;
     X[9] = 56138; Y[9] = 17625;
     X[10] = 56138; Y[10] = 12300;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var XX = [],
@@ -1584,20 +1584,20 @@ CLeftRightArrow.prototype.calcCoord = function(stretch)
     X[2] = 0; Y[2] = 16687;
     X[3] = 0; Y[3] = 14287;
     X[4] = 14738; Y[4] = 0;
-    X[5] = 16950; Y[5] = 2026;
-    X[6] = 2026; Y[6] = 12975;
+X[5] = 16950; Y[5] = 2062;
+X[6] = 8363; Y[6] = 12975;
     X[7] = 53738; Y[7] = 12975;
-    X[8] = 45150; Y[8] = 2026;
+X[8] = 45150; Y[8] = 2062;
     X[9] = 47363; Y[9] = 0;
     X[10] = 62100; Y[10] = 14287;
     X[11] = 62100; Y[11] = 16687;
     X[12] = 47363; Y[12] = 30975;
     X[13] = 45150; Y[13] = 28912;
     X[14] = 53738; Y[14] = 17962;
-    X[15] = 2026; Y[15] = 17962;
+X[15] = 8363; Y[15] = 17962;
     X[16] = 16950; Y[16] = 28912;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var XX = [],
@@ -1676,12 +1676,12 @@ CDoubleArrow.prototype.calcCoord = function(stretch)
     X[3] = 0;      Y[3] = 20731;
     X[4] = 0;      Y[4] = 18334;
     X[5] = 18338;  Y[5] = 0;
-    X[6] = 20775;  Y[6] = 2026;
-    X[7] = 14775;  Y[7] = 2026;
-    X[8] = 57600;  Y[8] = 2026;
+X[6] = 20775;  Y[6] = 2063;
+X[7] = 14775;  Y[7] = 9225;
+X[8] = 57600;  Y[8] = 9225;
     X[9] = 57600;  Y[9] = 14213;
     X[10] = 10950; Y[10] = 14213;
-    X[11] = 2026;  Y[11] = 19532;
+X[11] = 6638;  Y[11] = 19532;
     X[12] = 10875; Y[12] = 24777;
     X[13] = 57600; Y[13] = 24777;
     X[14] = 57600; Y[14] = 29764;
@@ -1690,7 +1690,7 @@ CDoubleArrow.prototype.calcCoord = function(stretch)
     X[16] = 58950; Y[16] = 19495;
     X[17] = 58950; Y[17] = 19495;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var XX = [],
@@ -1771,9 +1771,9 @@ CLR_DoubleArrow.prototype.calcCoord = function(stretch)
     var X = [],
         Y = [];
 
-    X[0] = 14775; Y[0] = 2026;
-    X[1] = 56063; Y[1] = 2026;
-    X[2] = 50100; Y[2] = 2026;
+X[0] = 14775; Y[0] = 9225;
+X[1] = 56063; Y[1] = 9225;
+X[2] = 50100; Y[2] = 2063;
     X[3] = 52538; Y[3] = 0;
     X[4] = 70875; Y[4] = 18334;
     X[5] = 70875; Y[5] = 20731;
@@ -1786,11 +1786,11 @@ CLR_DoubleArrow.prototype.calcCoord = function(stretch)
     X[12] = 0; Y[12] = 20731;
     X[13] = 0; Y[13] = 18334;
     X[14] = 18338; Y[14] = 0;
-    X[15] = 20775; Y[15] = 2026;
-    X[16] = 14775; Y[16] = 2026;
+X[15] = 20775; Y[15] = 2063;
+X[16] = 14775; Y[16] = 9225;
 
     X[17] = 10950; Y[17] = 14213;
-    X[18] = 2026;  Y[18] = 19532;
+X[18] = 6638;  Y[18] = 19532;
     X[19] = 10875; Y[19] = 24777;
     X[20] = 59963; Y[20] = 24777;
     X[21] = 64238; Y[21] = 19532;
@@ -1798,7 +1798,7 @@ CLR_DoubleArrow.prototype.calcCoord = function(stretch)
     X[23] = 59925; Y[23] = 14213;
     X[24] = 10950; Y[24] = 14213;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64;
 
     var XX = [],
@@ -1890,19 +1890,19 @@ CCombiningArrow.prototype.calcCoord = function(stretch)
     var X = [],
         Y = [];
 
-    X[0] = 0; Y[0] = 2026;
-    X[1] = 2026; Y[1] = 0;
-    X[2] = 11400; Y[2] = 2026;
-    X[3] = 2026; Y[3] = 2026;
-    X[4] = 28275; Y[4] = 2026;
+X[0] = 0; Y[0] = 8137;
+X[1] = 9413; Y[1] = 0;
+X[2] = 11400; Y[2] = 2250;
+X[3] = 5400; Y[3] = 7462;
+X[4] = 28275; Y[4] = 7462;
     X[5] = 28275; Y[5] = 10987;
-    X[6] = 2026; Y[6] = 10987;
+X[6] = 5400; Y[6] = 10987;
     X[7] = 11400; Y[7] = 16200;
-    X[8] = 2026; Y[8] = 18450;
+X[8] = 9413; Y[8] = 18450;
     X[9] = 0; Y[9] = 10312;
-    X[10] = 0; Y[10] = 2026;
+X[10] = 0; Y[10] = 8137;
 
-    var textScale =  this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale =  this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var XX = [],
@@ -1979,16 +1979,16 @@ CCombiningHalfArrow.prototype.calcCoord = function(stretch)
     var X = [],
         Y = [];
 
-    X[0] = 0; Y[0] = 2026;
-    X[1] = 2026; Y[1] = 0;
-    X[2] = 11400; Y[2] = 2026;
-    X[3] = 2026; Y[3] = 2026;
-    X[4] = 28275; Y[4] = 2026;
+X[0] = 0; Y[0] = 8137;
+X[1] = 9413; Y[1] = 0;
+X[2] = 11400; Y[2] = 2250;
+X[3] = 5400; Y[3] = 7462;
+X[4] = 28275; Y[4] = 7462;
     X[5] = 28275; Y[5] = 10987;
     X[6] = 0; Y[6] = 10987;
-    X[7] = 0; Y[7] = 2026;
+X[7] = 0; Y[7] = 8137;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var XX = [],
@@ -2054,25 +2054,25 @@ CCombining_LR_Arrow.prototype.calcCoord = function(stretch)
     var X = [],
         Y = [];
 
-    X[0] = 0; Y[0] = 2026;
-    X[1] = 2026; Y[1] = 0;
-    X[2] = 11400; Y[2] = 2026;
-    X[3] = 2026; Y[3] = 2026;
-    X[4] = 42225; Y[4] = 2026;
-    X[5] = 36225; Y[5] = 2026;
+X[0] = 0; Y[0] = 8137;
+X[1] = 9413; Y[1] = 0;
+X[2] = 11400; Y[2] = 2250;
+X[3] = 5400; Y[3] = 7462;
+X[4] = 42225; Y[4] = 7462;
+X[5] = 36225; Y[5] = 2250;
     X[6] = 38213; Y[6] = 0;
-    X[7] = 47625; Y[7] = 2026;
+X[7] = 47625; Y[7] = 8137;
     X[8] = 47625; Y[8] = 10312;
     X[9] = 38213; Y[9] = 18450;
     X[10] = 36225; Y[10] = 16200;
     X[11] = 42225; Y[11] = 10987;
-    X[12] = 2026; Y[12] = 10987;
+X[12] = 5400; Y[12] = 10987;
     X[13] = 11400; Y[13] = 16200;
-    X[14] = 2026; Y[14] = 18450;
+X[14] = 9413; Y[14] = 18450;
     X[15] = 0; Y[15] = 10312;
-    X[16] = 0; Y[16] = 2026;
+X[16] = 0; Y[16] = 8137;
 
-    var textScale = this.getCtrPrp().FontSize/2026; // 2026 pt
+var textScale = this.getCtrPrp().FontSize/1000; // 1000 pt
     var alpha = textScale*25.4/96 /64; // коэффициент используется для того, чтобы перевести координаты в миллиметры
 
     var XX = [],
@@ -4702,7 +4702,7 @@ CGroupCharacter.prototype.GetTextOfElement = function(oMathText)
 		}
 
 		oMathText.AddText( new AscMath.MathText(strStart, this), true);
-		if (nStartCode !== 2026 && nStartCode !== 2026)
+if (nStartCode !== 9182 && nStartCode !== 9183)
 		{
 			oMathText.AddText(new AscMath.MathText(strPos, oBase), true);
 		}

@@ -35,7 +35,7 @@
 (function(window, undefined)
 {
 	const DOCUMENT_SPELLING_MAX_PARAGRAPHS = 50;   // максимальное количество параграфов, которые мы проверяем в таймере
-	const DOCUMENT_SPELLING_MAX_ERRORS     = 2026; // максимальное количество ошибок, которые отрисовываются
+const DOCUMENT_SPELLING_MAX_ERRORS     = 2000; // максимальное количество ошибок, которые отрисовываются
 
 	const DOCUMENT_SPELLING_EXCEPTIONAL_WORDS = {
 		"Teamlab" : true, "teamlab" : true, "UnivaultOffice" : true, "UNIVAULTOFFICE" : true, "API" : true

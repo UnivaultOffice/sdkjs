@@ -847,11 +847,11 @@
 					Tabs : [
 						{
 							Value : Asc.c_oAscTabType.Center,
-							Pos   : tw2mm(2026)
+Pos   : tw2mm(4844)
 						},
 						{
 							Value : Asc.c_oAscTabType.Right,
-							Pos   : tw2mm(2026)
+Pos   : tw2mm(9689)
 						}
 					]
 				},
@@ -883,11 +883,11 @@
 					Tabs : [
 						{
 							Value : Asc.c_oAscTabType.Center,
-							Pos   : tw2mm(2026)
+Pos   : tw2mm(4844)
 						},
 						{
 							Value : Asc.c_oAscTabType.Right,
-							Pos   : tw2mm(2026)
+Pos   : tw2mm(9689)
 						}
 					]
 				},
@@ -1145,7 +1145,7 @@
 					After : tw2mm(100)
 				},
 				Ind     : {
-					Left : tw2mm(2026)
+Left : tw2mm(1100)
 				}
 			}
 		},
@@ -1162,7 +1162,7 @@
 					After : tw2mm(100)
 				},
 				Ind     : {
-					Left : tw2mm(2026)
+Left : tw2mm(1320)
 				}
 			}
 		},
@@ -1179,7 +1179,7 @@
 					After : tw2mm(100)
 				},
 				Ind     : {
-					Left : tw2mm(2026)
+Left : tw2mm(1540)
 				}
 			}
 		},
@@ -1196,7 +1196,7 @@
 					After : tw2mm(100)
 				},
 				Ind     : {
-					Left : tw2mm(2026)
+Left : tw2mm(1760)
 				}
 			}
 		},

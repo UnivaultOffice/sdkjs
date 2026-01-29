@@ -74,7 +74,7 @@
 
 	function CFontFilesCache()
 	{
-		this.m_lMaxSize = 2026;
+this.m_lMaxSize = 1000;
 		this.m_lCurrentSize = 0;
 		this.Fonts = {};
 

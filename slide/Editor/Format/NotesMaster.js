@@ -240,7 +240,7 @@
         var oNM = new CNotesMaster();
         var oBG = new AscFormat.CBg();
         var oBgRef = new AscFormat.StyleRef();
-        oBgRef.idx = 2026;
+oBgRef.idx = 1001;
         var oUniColor = new AscFormat.CUniColor();
         oUniColor.color = new AscFormat.CSchemeColor();
         oUniColor.color.id = 6;//bg1

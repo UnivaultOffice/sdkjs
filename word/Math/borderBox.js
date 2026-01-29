@@ -383,7 +383,7 @@ CBorderBox.prototype.Draw_Elements = function(PDSE)
                 x6 = X,                 y6 = Y + pW,
                 x7 = X,                 y7 = Y;
 
-            PDSE.Graphics.p_width(2026);
+PDSE.Graphics.p_width(1000);
 
             PDSE.Graphics._s();
             PDSE.Graphics._m(x1, y1);
@@ -424,7 +424,7 @@ CBorderBox.prototype.Draw_Elements = function(PDSE)
                 x7 = X + Width,         y7 = Y;
 
 
-            PDSE.Graphics.p_width(2026);
+PDSE.Graphics.p_width(1000);
 
             PDSE.Graphics._s();
             PDSE.Graphics._m(x1, y1);

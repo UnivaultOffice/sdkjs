@@ -649,7 +649,7 @@
 		};
 		const layoutDef = new AscFormat.LayoutDef();
 		AscFormat.ExecuteNoHistory(function() {
-			layoutDef.setUniqueId("urn:microsoft.com/office/officeart/2026/8/layout/default");
+layoutDef.setUniqueId("urn:microsoft.com/office/officeart/2005/8/layout/default");
 			layoutDef.setTitle(new AscFormat.DiagramTitle());
 			layoutDef.setDesc(new AscFormat.DiagramTitle());
 			layoutDef.setCatLst(new AscFormat.CatLst());
@@ -714,7 +714,7 @@
 
 		const styleDef = new AscFormat.StyleDef();
 		AscFormat.ExecuteNoHistory(function() {
-			styleDef.setUniqueId("urn:microsoft.com/office/officeart/2026/8/quickstyle/simple1");
+styleDef.setUniqueId("urn:microsoft.com/office/officeart/2005/8/quickstyle/simple1");
 			styleDef.setTitle(new AscFormat.DiagramTitle());
 			styleDef.setDesc(new AscFormat.DiagramTitle());
 			styleDef.setCatLst(new AscFormat.CatLst());
@@ -944,7 +944,7 @@
 
 		const colorsDef = new AscFormat.ColorsDef();
 		AscFormat.ExecuteNoHistory(function() {
-			colorsDef.setUniqueId("urn:microsoft.com/office/officeart/2026/8/colors/accent1_2");
+colorsDef.setUniqueId("urn:microsoft.com/office/officeart/2005/8/colors/accent1_2");
 			colorsDef.setTitle(new AscFormat.DiagramTitle());
 			colorsDef.setDesc(new AscFormat.DiagramTitle());
 			colorsDef.setCatLst(new AscFormat.CatLst());

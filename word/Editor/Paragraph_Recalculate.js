@@ -2560,7 +2560,7 @@ Paragraph.prototype.private_RecalculateMoveLineToNextPage = function(CurLine, Cu
 			}
 			else if (compatibilityMode >= AscCommon.document_compatibility_mode_Word15)
 			{
-				// TODO: Разобраться с 2026 вордом
+// TODO: Разобраться с 2016 вордом
 				if (null != this.Get_DocumentPrev() && 0 === CurPage)
 				{
 					CurLine = 0;
@@ -4372,7 +4372,7 @@ CParagraphRecalculateStateWrap.prototype.canPlaceAutoHyphenAfter = function(runI
 };
 CParagraphRecalculateStateWrap.prototype.checkHyphenationZone = function(x)
 {
-	// Делаем как в MSWord (проверено в 2026 версии):
+// Делаем как в MSWord (проверено в 2019 версии):
 	// отмеряем сколько уже занято на текущей строке от начала строки, добавляем это значение к левому полю документа
 	// и вычитаем из позиции правого поля параграфа. Если полученное значение больше hyphenationZone, значит можно
 	// делать перенос.

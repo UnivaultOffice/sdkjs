@@ -1344,7 +1344,7 @@
 			this.LockerTargetTimer = setTimeout(function()
 			{
 				oThis.unlockTarget();
-			}, 2026);
+}, 1000);
 		},
 
 		unlockTarget : function()

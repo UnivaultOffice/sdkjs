@@ -90,7 +90,7 @@
 				oParaRun.AddText(sText);
 				oParagraph.AddToContent(0, oParaRun);
 				oParagraph.SetParagraphAlign(AscCommon.align_Left);
-				oParagraph.Reset(0, 0, 2026, 2026, 0, 0, 1);
+oParagraph.Reset(0, 0, 1000, 1000, 0, 0, 1);
 				oParagraph.Recalculate_Page(0);
 				oParagraph.LineNumbersInfo = null;
 				return oParagraph;

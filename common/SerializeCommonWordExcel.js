@@ -1514,7 +1514,7 @@ function isRealObject(obj)
         if (isNaN(_ret))
           _ret = null;
         else
-          _ret /= 2026;
+_ret /= 1000;
       }
 
       return _ret;

@@ -398,42 +398,42 @@ const arrWordTestDocumentInfo = [
 				createParagraphInfo('ри', null, null, {start: [{id: 4, name: 's11'}]}),
 				createParagraphInfo('ве', null, null, {start: [{id: 5, name: 's2'}], end: [{id: 4}]}),
 				createParagraphInfo('т '),
-				createParagraphInfo('пр', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {end: [{id: 1}]}),
-				createParagraphInfo('и', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {
+createParagraphInfo('пр', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {end: [{id: 1}]}),
+createParagraphInfo('и', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {
 					end: [{
 						id  : '7',
 						name: 's7'
 					}, {id: 5}]
 				}),
-				createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null),
-				createParagraphInfo('ет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {
+createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null),
+createParagraphInfo('ет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {
 					start: [{
 						id  : 8,
 						name: 's4'
 					}]
 				}),
 				createParagraphInfo(' '),
-				createParagraphInfo('п', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {
+createParagraphInfo('п', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {
 					start: [{
 						id  : 9,
 						name: 's6'
 					}]
 				}),
-				createParagraphInfo('ри', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {
+createParagraphInfo('ри', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {
 					start: [{
 						id  : 11,
 						name: 's5'
 					}],
 					end  : [{id: 11}]
 				}),
-				createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {end: [{id: 7}]}),
-				createParagraphInfo('ет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {
+createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {end: [{id: 7}]}),
+createParagraphInfo('ет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {
 					end: [{
 						id  : 12,
 						name: 's9'
 					}, {id: 13, name: 's10'}, {id: 2}]
 				}),
-				createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {end: [{id: 12}]}),
+createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {end: [{id: 12}]}),
 				createParagraphInfo('прив', null, null, {end: [{id: 14, name: 's12'}, {id: 9}, {id: 14}]}),
 				createParagraphInfo('ет', null, null, {end: [{id: 3}, {id: 8}, {id: 13}]})
 			]
@@ -499,7 +499,7 @@ const arrWordTestDocumentInfo = [
 				createParagraphInfo('hello', undefined, undefined, undefined, {
 					comments: {
 						start: [{start: true, id: 1}],
-						end  : [{id: 1, data: {text: '2026'}}]
+end  : [{id: 1, data: {text: '1234'}}]
 					}
 				})
 			]
@@ -845,10 +845,10 @@ const arrWordTestDocumentInfo = [
 	///////////////////////// -> 32 <- /////////////////////////////
 	{
 		originalDocument: [
-			[createParagraphInfo('привет '), createParagraphInfo('привет привет', undefined, undefined, undefined, {comments:{start:[{start: true, id: 0}]}}), createParagraphInfo(undefined, undefined, undefined, undefined, {comments:{start:[{start: false, id: 0, data:{text: '123', quoteText: 'привет привет', arrAnswers: ['2026', '12', '13', '14']}}]}})]
+[createParagraphInfo('привет '), createParagraphInfo('привет привет', undefined, undefined, undefined, {comments:{start:[{start: true, id: 0}]}}), createParagraphInfo(undefined, undefined, undefined, undefined, {comments:{start:[{start: false, id: 0, data:{text: '123', quoteText: 'привет привет', arrAnswers: ['1234', '12', '13', '14']}}]}})]
 		],
 		revisedDocument : [
-			[createParagraphInfo('привет '), createParagraphInfo('привет привет', undefined, undefined, undefined, {comments:{start:[{start: true, id: 0}, {start: true, id: 1}]}}), createParagraphInfo(undefined, undefined, undefined, undefined, {comments:{start:[{start: false, id: 1, data:{text: '123', quoteText: 'привет привет', arrAnswers: ['2026', '12']}}, {start: false, id: 0, data:{text: '123', quoteText: 'привет привет', arrAnswers: ['2026', '12', '13']}}]}})]
+[createParagraphInfo('привет '), createParagraphInfo('привет привет', undefined, undefined, undefined, {comments:{start:[{start: true, id: 0}, {start: true, id: 1}]}}), createParagraphInfo(undefined, undefined, undefined, undefined, {comments:{start:[{start: false, id: 1, data:{text: '123', quoteText: 'привет привет', arrAnswers: ['1234', '12']}}, {start: false, id: 0, data:{text: '123', quoteText: 'привет привет', arrAnswers: ['1234', '12', '13']}}]}})]
 		]
 	},
 	///////////////////////// -> 33 <- /////////////////////////////
@@ -884,7 +884,7 @@ const arrWordTestDocumentInfo = [
 			[createParagraphInfo('Привет привет привет')]
 		],
 		revisedDocument : [
-			[createParagraphInfo('Привет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {start: [{id: 1, name: 's1'}]}, {comments:{start:[{start: true, id: 0}]}}), createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {start: [{id: 3, name: 's3'}]}), createParagraphInfo('при', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {start: [{id: 2, name: 's2'}]}, {comments:{start:[{start: true, id: 1}]}}), createParagraphInfo('вет', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026), undefined, {start: [{id: 3}]}), createParagraphInfo(' приве', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {comments:{start:[{start: false, id: 1, data:{text: '123', quoteText: 'привет', arrAnswers: null}}]}}), createParagraphInfo('т', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {start: [{id: 2}]}), createParagraphInfo(undefined, undefined, undefined, {start: [{id: 1}]}, {comments:{start:[{start: false, id: 0, data:{text: '123', quoteText: 'Привет привет привет', arrAnswers: null}}]}})]
+[createParagraphInfo('Привет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {start: [{id: 1, name: 's1'}]}, {comments:{start:[{start: true, id: 0}]}}), createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {start: [{id: 3, name: 's3'}]}), createParagraphInfo('при', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {start: [{id: 2, name: 's2'}]}, {comments:{start:[{start: true, id: 1}]}}), createParagraphInfo('вет', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000), undefined, {start: [{id: 3}]}), createParagraphInfo(' приве', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {comments:{start:[{start: false, id: 1, data:{text: '123', quoteText: 'привет', arrAnswers: null}}]}}), createParagraphInfo('т', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {start: [{id: 2}]}), createParagraphInfo(undefined, undefined, undefined, {start: [{id: 1}]}, {comments:{start:[{start: false, id: 0, data:{text: '123', quoteText: 'Привет привет привет', arrAnswers: null}}]}})]
 		]
 	},
 	///////////////////////// -> 37 <- /////////////////////////////
@@ -893,7 +893,7 @@ const arrWordTestDocumentInfo = [
 			[createParagraphInfo('Привет привет привет')]
 		],
 		revisedDocument : [
-			[createParagraphInfo('При', undefined, undefined, undefined, {comments:{start:[{start: true, id: 0}, {start: true, id: 1}]}}), createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined), createParagraphInfo('е', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026), undefined, undefined, {comments:{start:[{start: true, id: 2}]}}), createParagraphInfo('т', undefined, undefined), createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026), undefined, undefined, {comments:{start:[{start: false, id: 1, data:{text: '432', quoteText: 'Привет', arrAnswers: null}}]}}), createParagraphInfo('п', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026), undefined, undefined, {comments:{start:[{start: true, id: 3}]}}), createParagraphInfo('р', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026), undefined, undefined, {comments:{start:[{start: true, id: 4}]}}), createParagraphInfo('иве', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined), createParagraphInfo('т', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {comments:{start:[{start: false, id: 2, data:{text: '432', quoteText: 'ет приве', arrAnswers: null}}, {start: false, id: 4, data:{text: '432', quoteText: 'риве', arrAnswers: null}}]}}), createParagraphInfo(' привет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {comments:{start:[{start: false, id: 0, data:{text: '123', quoteText: 'Привет привет', arrAnswers: null}}]}}), createParagraphInfo(undefined, undefined, undefined, undefined, {comments:{start:[{start: false, id: 3, data:{text: '432', quoteText: 'привет привет', arrAnswers: null}}]}})]
+[createParagraphInfo('При', undefined, undefined, undefined, {comments:{start:[{start: true, id: 0}, {start: true, id: 1}]}}), createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined), createParagraphInfo('е', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000), undefined, undefined, {comments:{start:[{start: true, id: 2}]}}), createParagraphInfo('т', undefined, undefined), createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000), undefined, undefined, {comments:{start:[{start: false, id: 1, data:{text: '432', quoteText: 'Привет', arrAnswers: null}}]}}), createParagraphInfo('п', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000), undefined, undefined, {comments:{start:[{start: true, id: 3}]}}), createParagraphInfo('р', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000), undefined, undefined, {comments:{start:[{start: true, id: 4}]}}), createParagraphInfo('иве', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined), createParagraphInfo('т', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {comments:{start:[{start: false, id: 2, data:{text: '432', quoteText: 'ет приве', arrAnswers: null}}, {start: false, id: 4, data:{text: '432', quoteText: 'риве', arrAnswers: null}}]}}), createParagraphInfo(' привет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {comments:{start:[{start: false, id: 0, data:{text: '123', quoteText: 'Привет привет', arrAnswers: null}}]}}), createParagraphInfo(undefined, undefined, undefined, undefined, {comments:{start:[{start: false, id: 3, data:{text: '432', quoteText: 'привет привет', arrAnswers: null}}]}})]
 		]
 	},
 	///////////////////////// -> 38 <- /////////////////////////////
@@ -911,8 +911,8 @@ const arrWordTestDocumentInfo = [
 		],
 		revisedDocument: [
 			[createParagraphInfo("在真实、充分地表达各自意愿的基础上，根据《中华人民共和国"),
-			createParagraphInfo("合同法", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)),
-			createParagraphInfo("民法典", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
+createParagraphInfo("合同法", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)),
+createParagraphInfo("民法典", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
 			createParagraphInfo("》的规定，达成如下协议，并由双方共同恪守。")]
 		]
 	},
@@ -920,12 +920,12 @@ const arrWordTestDocumentInfo = [
 	{
 		originalDocument: [
 			[createParagraphInfo("1.这是一个测试段落，这是一个测试段落，这是一个测试段落，这是一个测试段落")],
-			[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)), createParagraphInfo("，这是一个测试段落")],
+[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)), createParagraphInfo("，这是一个测试段落")],
 			[createParagraphInfo("3.这是一个测试段落，这是一个测试段落，这是一个测试段落，这是一个测试段落")]
 		],
 		revisedDocument: [
 			[createParagraphInfo("1.这是一个测试段落，这是一个测试段落，这是一个测试段落，这是一个测试段落")],
-			[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026), undefined, undefined, {comments: {
+[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000), undefined, undefined, {comments: {
 					start: [{
 						id   : 1,
 						start: true
@@ -945,7 +945,7 @@ const arrWordTestDocumentInfo = [
 	{
 		originalDocument: [
 			[createParagraphInfo("1.这是一个测试段落，这是一个测试段落，这是一个测试段落，这是一个测试段落")],
-				[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026), undefined, undefined, {comments: {
+[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000), undefined, undefined, {comments: {
 						start: [{
 							id   : 1,
 							start: true
@@ -962,7 +962,7 @@ const arrWordTestDocumentInfo = [
 			],
 		revisedDocument: [
 			[createParagraphInfo("1.这是一个测试段落，这是一个测试段落，这是一个测试段落，这是一个测试段落")],
-			[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)), createParagraphInfo("，这是一个测试段落")],
+[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)), createParagraphInfo("，这是一个测试段落")],
 			[createParagraphInfo("3.这是一个测试段落，这是一个测试段落，这是一个测试段落，这是一个测试段落")]
 		]
 	},
@@ -1354,14 +1354,14 @@ const arrWordTestDocumentInfo = [
 			}, {
 				comments: {start: [{start: true, id: 4}]},
 				textPr  : {VertAlign: 1,}
-			}), createParagraphInfo(" ", undefined, undefined, {start: [{id: 8}]}, {}), createParagraphInfo("пр", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {
+}), createParagraphInfo(" ", undefined, undefined, {start: [{id: 8}]}, {}), createParagraphInfo("пр", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {
 				textPr: {
 					Italic   : true,
 					Strikeout: true,
 					VertAlign: 1,
 					ItalicCS : true,
 				}
-			}), createParagraphInfo("и", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {
+}), createParagraphInfo("и", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {
 				start: [{
 					id  : 11,
 					name: "s5"
@@ -1375,7 +1375,7 @@ const arrWordTestDocumentInfo = [
 					ItalicCS  : true,
 					FontSizeCS: 12,
 				}
-			}), createParagraphInfo("в", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {
+}), createParagraphInfo("в", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {
 				comments: {
 					start: [{
 						start: false,
@@ -1394,7 +1394,7 @@ const arrWordTestDocumentInfo = [
 					ItalicCS  : true,
 					FontSizeCS: 12,
 				}
-			}), createParagraphInfo("е", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {
+}), createParagraphInfo("е", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {
 				comments: {
 					start: [{
 						start: false,
@@ -1411,7 +1411,7 @@ const arrWordTestDocumentInfo = [
 					Strikeout: true,
 					ItalicCS : true,
 				}
-			}), createParagraphInfo("т ", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {textPr: {Strikeout: true,}}), createParagraphInfo("при", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {
+}), createParagraphInfo("т ", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {textPr: {Strikeout: true,}}), createParagraphInfo("при", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {
 				start: [{
 					id  : 12,
 					name: "s4"
@@ -1460,13 +1460,13 @@ const arrWordTestDocumentInfo = [
 				createParagraphInfo("测试", undefined, undefined, undefined, {
 					comments: {
 						start: [{id: 0, start: true}],
-						end  : [{id: 0,data: {text: '2026', quoteText: "测试"}
+end  : [{id: 0,data: {text: '4325', quoteText: "测试"}
 						}]
 					}
 				}),
-				createParagraphInfo("甲方", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026)),
-				createParagraphInfo("【有权无偿】", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {textPr: {Bold: true}}),
-				createParagraphInfo("使用", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026)),
+createParagraphInfo("甲方", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000)),
+createParagraphInfo("【有权无偿】", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {textPr: {Bold: true}}),
+createParagraphInfo("使用", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000)),
 				createParagraphInfo("。")
 			]
 		]
@@ -1492,7 +1492,7 @@ const arrWordTestDocumentInfo = [
 		revisedDocument: [
 			[
 				createParagraphInfo("培养更培养更培养更培养更培养更培养更培养更培养更培养更"),
-				createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026))
+createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000))
 			]
 		]
 	},
@@ -1504,7 +1504,7 @@ const arrWordTestDocumentInfo = [
 		],
 		revisedDocument: [
 			[
-				createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
+createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
 				createParagraphInfo("培养更培养更培养更培养更培养更培养更培养更培养更培养更")
 
 			]
@@ -1844,30 +1844,30 @@ const arrWordAnswers = [
 				start: [{id: 3, name: 's2'}], end: [{id: 1}]
 			}),
 			createParagraphInfo('т '),
-			createParagraphInfo('пр', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {end: [{id: 2}]}), createParagraphInfo('и', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {
+createParagraphInfo('пр', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {end: [{id: 2}]}), createParagraphInfo('и', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {
 				end: [{
 					id: 5, name: 's7'
 				}, {id: 3}]
 			}),
-			createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null),
-			createParagraphInfo('ет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {
+createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null),
+createParagraphInfo('ет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {
 				start: [{
 					id: 11, name: 's4'
 				}]
 			}),
 			createParagraphInfo(' ', new CCreatingReviewInfo('Valdemar', reviewtype_Add, 3000000)),
-			createParagraphInfo('п', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {
+createParagraphInfo('п', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {
 				start: [{
 					id: 8, name: 's6'
 				}]
 			}),
-			createParagraphInfo('ри', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {
+createParagraphInfo('ри', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {
 				start: [{id: 4, name: 's5'}], end: [{id: 4}]
 			}),
-			createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {end: [{id: 5}]}),
-			createParagraphInfo('ет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {
+createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {end: [{id: 5}]}),
+createParagraphInfo('ет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {
 				end: [{id: 6}, {id: 7, name: 's9'}, {id: 12, name: 's10'}]
-			}), createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), null, {end: [{id: 7}]}),
+}), createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), null, {end: [{id: 7}]}),
 			createParagraphInfo('прив', null, null, {
 				end: [{
 					id: 9, name: 's12'
@@ -1919,7 +1919,7 @@ const arrWordAnswers = [
 						}, {start: true, id: 2}],
 						end  : [{
 							id  : 2,
-							data: {text: '2026', quoteText: "hello"}
+data: {text: '1234', quoteText: "hello"}
 						}, {id: 1, data: {text: '123', quoteText: "hello"}}]
 					}
 				})
@@ -2186,9 +2186,9 @@ const arrWordAnswers = [
 						data : {
 							text      : '123',
 							quoteText : 'привет привет',
-							arrAnswers: ['2026', '12']
+arrAnswers: ['1234', '12']
 						}
-					}, {start: false, id: 1, data: {text: '123', quoteText: 'привет привет', arrAnswers: ['2026', '12', '13', '14']}}]
+}, {start: false, id: 1, data: {text: '123', quoteText: 'привет привет', arrAnswers: ['1234', '12', '13', '14']}}]
 				}
 			})]
 		]
@@ -2328,7 +2328,7 @@ const arrWordAnswers = [
 	/////////////////////////////////// -> 36 <- ////////////////////////////////////////////
 	{
 		finalDocument: [
-			[createParagraphInfo('Привет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {start: [{id: 3, name: 's1'}]}, {comments:{start:[{start: true, id: 0}]}}), createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {start: [{id: 1, name: 's3'}]}), createParagraphInfo('при', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {start: [{id: 2, name: 's2'}]}, {comments:{start:[{start: true, id: 1}]}}), createParagraphInfo('вет', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026), undefined, {start: [{id: 1}]}), createParagraphInfo(' приве', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {comments:{start:[{start: false, id: 1, data:{text: '123', quoteText: 'привет', arrAnswers: null}}]}}), createParagraphInfo('т', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {start: [{id: 2}]}), createParagraphInfo(undefined, undefined, undefined, {start: [{id: 3}]}, {comments:{start:[{start: false, id: 0, data:{text: '123', quoteText: 'Привет привет привет', arrAnswers: null}}]}})]
+[createParagraphInfo('Привет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {start: [{id: 3, name: 's1'}]}, {comments:{start:[{start: true, id: 0}]}}), createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {start: [{id: 1, name: 's3'}]}), createParagraphInfo('при', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {start: [{id: 2, name: 's2'}]}, {comments:{start:[{start: true, id: 1}]}}), createParagraphInfo('вет', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000), undefined, {start: [{id: 1}]}), createParagraphInfo(' приве', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {comments:{start:[{start: false, id: 1, data:{text: '123', quoteText: 'привет', arrAnswers: null}}]}}), createParagraphInfo('т', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {start: [{id: 2}]}), createParagraphInfo(undefined, undefined, undefined, {start: [{id: 3}]}, {comments:{start:[{start: false, id: 0, data:{text: '123', quoteText: 'Привет привет привет', arrAnswers: null}}]}})]
 		]
 	},
 	/////////////////////////////////// -> 37 <- ////////////////////////////////////////////
@@ -2341,14 +2341,14 @@ const arrWordAnswers = [
 						id   : 0
 					}, {start: true, id: 1}]
 				}
-			}), createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined), createParagraphInfo('е', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026), undefined, undefined, {
+}), createParagraphInfo('в', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined), createParagraphInfo('е', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000), undefined, undefined, {
 				comments: {
 					start: [{
 						start: true,
 						id   : 2
 					}]
 				}
-			}), createParagraphInfo('т', undefined, undefined), createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026), undefined, undefined, {
+}), createParagraphInfo('т', undefined, undefined), createParagraphInfo(' ', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000), undefined, undefined, {
 				comments: {
 					start: [{
 						start: false,
@@ -2360,21 +2360,21 @@ const arrWordAnswers = [
 						}
 					}]
 				}
-			}), createParagraphInfo('п', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026), undefined, undefined, {
+}), createParagraphInfo('п', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000), undefined, undefined, {
 				comments: {
 					start: [{
 						start: true,
 						id   : 3
 					}]
 				}
-			}), createParagraphInfo('р', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 2026), undefined, undefined, {
+}), createParagraphInfo('р', new CCreatingReviewInfo('Mark Potato', reviewtype_Add, 1000), undefined, undefined, {
 				comments: {
 					start: [{
 						start: true,
 						id   : 4
 					}]
 				}
-			}), createParagraphInfo('иве', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined), createParagraphInfo('т', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {
+}), createParagraphInfo('иве', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined), createParagraphInfo('т', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {
 				comments: {
 					start: [{
 						start: false,
@@ -2388,7 +2388,7 @@ const arrWordAnswers = [
 					{start: false, id: 4, data: {text: '432', quoteText: 'риве', arrAnswers: null}
 						}]
 				}
-			}), createParagraphInfo(' привет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {
+}), createParagraphInfo(' привет', new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {
 				comments: {
 					start: [{
 						start: false,
@@ -2425,8 +2425,8 @@ const arrWordAnswers = [
 	{
 		finalDocument: [
 			[createParagraphInfo("在真实、充分地表达各自意愿的基础上，根据《中华人民共和国"),
-			createParagraphInfo("合同法", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)),
-			createParagraphInfo("民法典", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
+createParagraphInfo("合同法", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)),
+createParagraphInfo("民法典", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
 			createParagraphInfo("》的规定，达成如下协议，并由双方共同恪守。")]
 		]
 	},
@@ -2434,7 +2434,7 @@ const arrWordAnswers = [
 	{
 		finalDocument: [
 			[createParagraphInfo("1.这是一个测试段落，这是一个测试段落，这是一个测试段落，这是一个测试段落")],
-			[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026), undefined, undefined, {comments: {
+[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000), undefined, undefined, {comments: {
 					start: [{
 						id   : 1,
 						start: true
@@ -2455,7 +2455,7 @@ const arrWordAnswers = [
 	{
 		finalDocument: [
 			[createParagraphInfo("1.这是一个测试段落，这是一个测试段落，这是一个测试段落，这是一个测试段落")],
-			[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026), undefined, undefined, {comments: {
+[createParagraphInfo("2. 这是一个测试段落，这是一个测试段落"), createParagraphInfo("，这是一个测试段落", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000), undefined, undefined, {comments: {
 					start: [{
 						id   : 1,
 						start: true
@@ -2699,14 +2699,14 @@ const arrWordAnswers = [
 			}, {
 				comments: {start: [{start: true, id: 4}]},
 				textPr  : {VertAlign: 1,}
-			}), createParagraphInfo(" ", undefined, undefined, {start: [{id: 8}]}, {}), createParagraphInfo("пр", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {
+}), createParagraphInfo(" ", undefined, undefined, {start: [{id: 8}]}, {}), createParagraphInfo("пр", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {
 				textPr: {
 					Italic   : true,
 					Strikeout: true,
 					VertAlign: 1,
 					ItalicCS : true,
 				}
-			}), createParagraphInfo("и", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {
+}), createParagraphInfo("и", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {
 				start: [{
 					id  : 11,
 					name: "s5"
@@ -2720,7 +2720,7 @@ const arrWordAnswers = [
 					ItalicCS  : true,
 					FontSizeCS: 12,
 				}
-			}), createParagraphInfo("в", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {
+}), createParagraphInfo("в", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {
 				comments: {
 					start: [{
 						start: false,
@@ -2739,7 +2739,7 @@ const arrWordAnswers = [
 					ItalicCS  : true,
 					FontSizeCS: 12,
 				}
-			}), createParagraphInfo("е", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {
+}), createParagraphInfo("е", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {
 				comments: {
 					start: [{
 						start: false,
@@ -2756,7 +2756,7 @@ const arrWordAnswers = [
 					Strikeout: true,
 					ItalicCS : true,
 				}
-			}), createParagraphInfo("т ", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {textPr: {Strikeout: true,}}), createParagraphInfo("при", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, {
+}), createParagraphInfo("т ", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {textPr: {Strikeout: true,}}), createParagraphInfo("при", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, {
 				start: [{
 					id  : 12,
 					name: "s4"
@@ -2794,12 +2794,12 @@ const arrWordAnswers = [
 				createParagraphInfo("测试", new CCreatingReviewInfo('Valdemar', reviewtype_Add, 3000000), undefined, undefined, {
 					comments: {
 						start: [{id: 0, start: true}],
-						end  : [{id: 0, data: {text: '2026', quoteText: "测试"}}]
+end  : [{id: 0, data: {text: '4325', quoteText: "测试"}}]
 					}
 				}),
-				createParagraphInfo("甲方", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026)),
-				createParagraphInfo("【有权无偿】", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026), undefined, undefined, {textPr: {Bold: true}}),
-				createParagraphInfo("使用", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 2026)),
+createParagraphInfo("甲方", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000)),
+createParagraphInfo("【有权无偿】", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000), undefined, undefined, {textPr: {Bold: true}}),
+createParagraphInfo("使用", new CCreatingReviewInfo('Mark Potato', reviewtype_Remove, 1000)),
 				createParagraphInfo("。")
 			]
 		]
@@ -2816,14 +2816,14 @@ const arrWordAnswers = [
 		finalDocument: [
 			[
 				createParagraphInfo("培养更培养更培养更培养更培养更培养更培养更培养更培养更"),
-				createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026))
+createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000))
 			]
 		]
 	},
 	{
 		finalDocument: [
 			[
-				createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
+createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
 				createParagraphInfo("培养更培养更培养更培养更培养更培养更培养更培养更培养更")
 			]
 		]
@@ -2883,33 +2883,33 @@ const arrSymbolDocumentTestInfo = [
 		revisedDocument: [
 			[
 			createParagraphInfo("培养更培养更培养更培养更培养更培养更培养更培养更培养更"),
-			createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026))]
+createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000))]
 		]
 	},
 	{
 		originalDocument: [
 			[
-				createParagraphInfo("依法向", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)),
-				createParagraphInfo("乙乙方乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("原告所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("依法向乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)),
-				createParagraphInfo("甲方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)),
+createParagraphInfo("依法向", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)),
+createParagraphInfo("乙乙方乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("原告所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("依法向乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)),
+createParagraphInfo("甲方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)),
 				createParagraphInfo("。")
 			]
 		],
 		revisedDocument: [
 			[
-				createParagraphInfo("依法向", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)),
-				createParagraphInfo("乙乙方乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026),  new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("原告", new CCreatingReviewInfo("User1", reviewtype_Remove, 2026), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("乙方", new CCreatingReviewInfo("User1", reviewtype_Add, 2026)),
-				createParagraphInfo("所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("依法向乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)),
-				createParagraphInfo("甲方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)),
+createParagraphInfo("依法向", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)),
+createParagraphInfo("乙乙方乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000),  new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("原告", new CCreatingReviewInfo("User1", reviewtype_Remove, 1000), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("乙方", new CCreatingReviewInfo("User1", reviewtype_Add, 1000)),
+createParagraphInfo("所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("依法向乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)),
+createParagraphInfo("甲方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)),
 				createParagraphInfo("。"),
 				]
 		]
@@ -2935,7 +2935,7 @@ const arrSymbolDocumentTestInfo = [
 		revisedDocument: [
 			[
 				createParagraphInfo("421421423241234124 21423431"),
-				createParagraphInfo("21", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
+createParagraphInfo("21", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
 				createParagraphInfo("4321432 241124123423141234"),
 			]
 		]
@@ -2962,10 +2962,10 @@ const arrSymbolDocumentTestInfo = [
 		],
 		revisedDocument: [
 			[
-				createParagraphInfo("Привет привет п", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("ри", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026), undefined, undefined, {textPr: {Bold: true}}),
-				createParagraphInfo("вет", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026), undefined, undefined, {textPr: {Bold: true, Italic: true}}),
-				createParagraphInfo("ик", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026), undefined, undefined, {textPr: {Italic: true}}),
+createParagraphInfo("Привет привет п", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("ри", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000), undefined, undefined, {textPr: {Bold: true}}),
+createParagraphInfo("вет", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000), undefined, undefined, {textPr: {Bold: true, Italic: true}}),
+createParagraphInfo("ик", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000), undefined, undefined, {textPr: {Italic: true}}),
 			]
 		]
 	},
@@ -3055,22 +3055,22 @@ const arrSymbolAnswers = [
 		finalDocument: [
 			[
 			createParagraphInfo("培养更培养更培养更培养更培养更培养更培养更培养更培养更"),
-			createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
+createParagraphInfo("培养更", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
 			createParagraphInfo("cxz", new CCreatingReviewInfo("Valdemar", reviewtype_Remove, 3000000))]
 		]
 	},
 	{
 		finalDocument: [
 			[
-				createParagraphInfo("依法向", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)),
-				createParagraphInfo("乙乙方乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026),  new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("原告", new CCreatingReviewInfo("User1", reviewtype_Remove, 2026), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("乙方", new CCreatingReviewInfo("User1", reviewtype_Add, 2026)),
-				createParagraphInfo("所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("依法向乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)),
-				createParagraphInfo("甲方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 2026)),
+createParagraphInfo("依法向", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)),
+createParagraphInfo("乙乙方乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000),  new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("原告", new CCreatingReviewInfo("User1", reviewtype_Remove, 1000), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("乙方", new CCreatingReviewInfo("User1", reviewtype_Add, 1000)),
+createParagraphInfo("所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("依法向乙方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)),
+createParagraphInfo("甲方", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000), new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("所在地具有管辖权的人民法院起诉", new CCreatingReviewInfo("Mark Potato", reviewtype_Remove, 1000)),
 				createParagraphInfo("。"),
 			]
 		]
@@ -3088,7 +3088,7 @@ const arrSymbolAnswers = [
 		finalDocument: [
 			[
 				createParagraphInfo("421421423241234124 21423431"),
-				createParagraphInfo("21", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
+createParagraphInfo("21", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
 				createParagraphInfo("4321432 241124123423141234"),
 			]
 		]
@@ -3105,10 +3105,10 @@ const arrSymbolAnswers = [
 	{
 		finalDocument: [
 			[
-				createParagraphInfo("Привет привет п", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026)),
-				createParagraphInfo("ри", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026), undefined, undefined, {textPr: {Bold: true}}),
-				createParagraphInfo("вет", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026), undefined, undefined, {textPr: {Bold: true, Italic: true}}),
-				createParagraphInfo("ик", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 2026), undefined, undefined, {textPr: {Italic: true}}),
+createParagraphInfo("Привет привет п", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000)),
+createParagraphInfo("ри", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000), undefined, undefined, {textPr: {Bold: true}}),
+createParagraphInfo("вет", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000), undefined, undefined, {textPr: {Bold: true, Italic: true}}),
+createParagraphInfo("ик", new CCreatingReviewInfo("Mark Potato", reviewtype_Add, 1000), undefined, undefined, {textPr: {Italic: true}}),
 			]
 		]
 	},

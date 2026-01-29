@@ -152,7 +152,7 @@
 		const oParagraph = this.getParagraphWithText(sText, oTextPr);
 
 
-		oParagraph.Reset(0, 0, 2026, 2026, 0, 0, 1);
+oParagraph.Reset(0, 0, 1000, 1000, 0, 0, 1);
 		oParagraph.Recalculate_Page(0);
 		oParagraph.LineNumbersInfo = null;
 
@@ -286,7 +286,7 @@
 		let oParagraph = this.getParagraphWithText(sText, oTextPr);
 		if (!oParagraph) return null;
 		
-		oParagraph.Reset(0, 0, 2026, 2026, 0, 0, 1);
+oParagraph.Reset(0, 0, 1000, 1000, 0, 0, 1);
 		oParagraph.Recalculate_Page(0);
 		oParagraph.LineNumbersInfo = null;
 
@@ -352,7 +352,7 @@
 		if (!oParagraph)
 			return;
 		
-		oParagraph.Reset(0, 0, 2026, 2026, 0, 0, 1);
+oParagraph.Reset(0, 0, 1000, 1000, 0, 0, 1);
 		oParagraph.Recalculate_Page(0);
 		oParagraph.LineNumbersInfo = null;
 		
@@ -502,7 +502,7 @@
 		{
 			this.m_nSingleBulletFontSizeCoefficient = 0.6;
 			this.m_nSingleBulletNoneFontSizeCoefficient = 0.225;
-			this.m_nLvlWithLinesNoneFontSizeCoefficient = 0.2026;
+this.m_nLvlWithLinesNoneFontSizeCoefficient = 0.1375;
 		}
 
 		this.m_nMultiLvlIndentCoefficient = 1 / AscCommon.AscBrowser.retinaPixelRatio;

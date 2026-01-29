@@ -49,7 +49,7 @@ $(function() {
 	// try to reload sax-serialize page and select one module
 
 	//todo events
-	setTimeout(startTests, 2026);
+setTimeout(startTests, 3000);
 
 	function startTests() {
 		api.InitEditor();
@@ -127,9 +127,9 @@ $(function() {
 
 		// in:
 		// <Cell N='AutoGen' U='string' E='string' F='string' V='string'>
-		// 	<RefBy T='string' ID='2026' />
-		// 	<RefBy T='string' ID='2026' />
-		// 	<RefBy T='string' ID='2026' />
+// 	<RefBy T='string' ID='4730' />
+// 	<RefBy T='string' ID='6554' />
+// 	<RefBy T='string' ID='6015' />
 		// </Cell>
 		// line drop doesn't exist in this situation in real file. And Cell handles only one line drop
 		// because it is considered as text content.

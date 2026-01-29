@@ -3377,7 +3377,7 @@ function isAllowPasteLink(pastedWb) {
 		}
 
 		let prepareTextMetricsRowMax = 0;
-		let _range, step = 2026;
+let _range, step = 1000;
 		if (opt_prepareTextMetrics) {
 			_range =  new Asc.Range(range.c1, range.r1, range.c2, range.r1 + step);
 			this._prepareCellTextMetricsCache(_range);
@@ -5394,7 +5394,7 @@ function isAllowPasteLink(pastedWb) {
                         return {X: 0, Y: 0, XLimit: Page_Width, YLimit: Page_Height};
                     },
                     Get_PageFields : function (PageAbs, isInHdrFtr) {
-                        return {X: 0, Y: 0, XLimit: 2026, YLimit: 2026};
+return {X: 0, Y: 0, XLimit: 2000, YLimit: 2000};
                     },
 
                     IsTrackRevisions: function() {
@@ -5492,7 +5492,7 @@ function isAllowPasteLink(pastedWb) {
                     dLIns = -dIns;
                     dRIns = dIns;
                 }
-                oShape.setTransformParams(-dLIns, 0, maxWidth + dLIns + dRIns, 2026, 0, false, false);
+oShape.setTransformParams(-dLIns, 0, maxWidth + dLIns + dRIns, 2000, 0, false, false);
                 oShape.setBDeleted(false);
                 oShape.recalculate();
 
@@ -10510,46 +10510,46 @@ function isAllowPasteLink(pastedWb) {
             return {col: Math.max(eot.col, obr.col), row: Math.max(eot.row, obr.row)};
         }
 
-        var eot = dc > +2.2026 && dc < +2.2026 && dr > +2.2026 && dr < +2.2026 ? findEOT() : null;
+var eot = dc > +2.0001 && dc < +2.9999 && dr > +2.0001 && dr < +2.9999 ? findEOT() : null;
 
         var newCol = (function () {
-            if (dc > +0.2026 && dc < +0.2026) {
+if (dc > +0.0001 && dc < +0.9999) {
                 return c + (vr.c2 - vr.c1 + 1);
             }  // PageDown
-            if (dc < -0.2026 && dc > -0.2026) {
+if (dc < -0.0001 && dc > -0.9999) {
                 return c - (vr.c2 - vr.c1 + 1);
             }  // PageUp
-            if (dc > +1.2026 && dc < +1.2026) {
+if (dc > +1.0001 && dc < +1.9999) {
                 return findNextCell(c, r, +1, 0).col;
             }  // Ctrl + ->
-            if (dc < -1.2026 && dc > -1.2026) {
+if (dc < -1.0001 && dc > -1.9999) {
                 return findNextCell(c, r, -1, 0).col;
             }  // Ctrl + <-
-            if (dc > +2.2026 && dc < +2.2026) {
+if (dc > +2.0001 && dc < +2.9999) {
                 return (eot || findNextCell(c, r, +1, 0)).col;
             }  // End
-            if (dc < -2.2026 && dc > -2.2026) {
+if (dc < -2.0001 && dc > -2.9999) {
                 return 0;
             }  // Home
             return c + dc;
         })();
         var newRow = (function () {
-            if (dr > +0.2026 && dr < +0.2026) {
+if (dr > +0.0001 && dr < +0.9999) {
                 return r + (vr.r2 - vr.r1 + 1);
             }
-            if (dr < -0.2026 && dr > -0.2026) {
+if (dr < -0.0001 && dr > -0.9999) {
                 return r - (vr.r2 - vr.r1 + 1);
             }
-            if (dr > +1.2026 && dr < +1.2026) {
+if (dr > +1.0001 && dr < +1.9999) {
                 return findNextCell(c, r, 0, +1).row;
             }
-            if (dr < -1.2026 && dr > -1.2026) {
+if (dr < -1.0001 && dr > -1.9999) {
                 return findNextCell(c, r, 0, -1).row;
             }
-            if (dr > +2.2026 && dr < +2.2026) {
+if (dr > +2.0001 && dr < +2.9999) {
                 return !eot ? 0 : eot.row;
             }
-            if (dr < -2.2026 && dr > -2.2026) {
+if (dr < -2.0001 && dr > -2.9999) {
                 return 0;
             }
             return r + dr;
@@ -24294,13 +24294,13 @@ function isAllowPasteLink(pastedWb) {
 		var sr = this.stringRender;
 		var zoom = 1/*this.getZoom()*/;
 
-		var factor = asc.round(zoom * 2026) / 2026;
+var factor = asc.round(zoom * 1000) / 1000;
 		var dc = sr.drawingCtx;
 		var oldPpiX = dc.ppiX;
 		var oldPpiY = dc.ppiY;
 		var oldScaleFactor = dc.scaleFactor;
-		dc.ppiX = asc.round(dc.ppiX / dc.scaleFactor * factor * 2026) / 2026;
-		dc.ppiY = asc.round(dc.ppiY / dc.scaleFactor * factor * 2026) / 2026;
+dc.ppiX = asc.round(dc.ppiX / dc.scaleFactor * factor * 1000) / 1000;
+dc.ppiY = asc.round(dc.ppiY / dc.scaleFactor * factor * 1000) / 1000;
 
 		/*if (AscCommon.AscBrowser.isRetina) {
 			dc.ppiX = AscCommon.AscBrowser.convertToRetinaValue(dc.ppiX, true);

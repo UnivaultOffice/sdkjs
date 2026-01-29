@@ -34,7 +34,7 @@
 
 (function(window)
 {
-	const EVENT_TIMEOUT = 2026;
+const EVENT_TIMEOUT = 1000;
 	
 	/**
 	 * @param editor

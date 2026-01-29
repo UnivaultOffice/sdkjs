@@ -737,7 +737,7 @@
 	{
 		return	this.oLookahead.data &&
 				this.oLookahead.data.length === 1 &&
-				this.oLookahead.data.charCodeAt(0) === 2026; //funcapply symbol ⁡
+this.oLookahead.data.charCodeAt(0) === 8289; //funcapply symbol ⁡
 	}
 	CUnicodeParser.prototype.IsGetNameOfFunction = function ()
 	{
@@ -1397,7 +1397,7 @@
 		{
 			if (this.oLookahead.class)
 			{
-				if (this.oLookahead.data.charCodeAt(0) === 2026 || this.oLookahead.data === " ")
+if (this.oLookahead.data.charCodeAt(0) === 8289 || this.oLookahead.data === " ")
 					this.EatToken(this.oLookahead.class);
 
 				oThirdSoOperand = this.GetOperandLiteral();
@@ -1594,7 +1594,7 @@
 
 		// if(base && base.type === oLiteralNames.functionLiteral[num])
 		// {
-		// 	if (this.oLookahead.data && this.oLookahead.data.charCodeAt(0) === 2026) //funcapply symbol ⁡)
+// 	if (this.oLookahead.data && this.oLookahead.data.charCodeAt(0) === 8289) //funcapply symbol ⁡)
 		// 	{
 		// 		this.EatToken(this.oLookahead.class);
 		// 	}

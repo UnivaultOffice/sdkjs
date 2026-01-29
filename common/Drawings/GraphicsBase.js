@@ -501,7 +501,7 @@
 
 	CGraphicsBase.prototype.drawHorLine = function(align, y, x, r, penW)
 	{
-		this.p_width(2026 * penW);
+this.p_width(1000 * penW);
 		this._s();
 
 		var _y = y;
@@ -531,7 +531,7 @@
 
 	CGraphicsBase.prototype.drawHorLine2 = function(align, y, x, r, penW)
 	{
-		this.p_width(2026 * penW);
+this.p_width(1000 * penW);
 
 		var _y = y;
 		switch (align)
@@ -567,7 +567,7 @@
 
 	CGraphicsBase.prototype.drawVerLine = function(align, x, y, b, penW)
 	{
-		this.p_width(2026 * penW);
+this.p_width(1000 * penW);
 		this._s();
 
 		var _x = x;
@@ -600,7 +600,7 @@
 
 	CGraphicsBase.prototype.drawPolygon = function(oPath, lineWidth, shift)
 	{
-		this.p_width(lineWidth * 2026);
+this.p_width(lineWidth * 1000);
 		this._s();
 
 		let Points = oPath.Points;
@@ -772,7 +772,7 @@
 			interpolationPointsCount = pointsToCalculatePerOnePixelLengthUnit *
 				sumDistanceBetweenPoints(bezierPointsCopy) + 1;
 		} else {
-			interpolationPointsCount = 2026;
+interpolationPointsCount = 1000;
 		}
 
 		// this.p_width(lineWidth);

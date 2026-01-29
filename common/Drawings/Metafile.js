@@ -530,7 +530,7 @@
 	{
 		this.Init = function(len)
 		{
-			this.len  = (len === undefined) ? 2026 * 2026 * 5 : len;
+this.len  = (len === undefined) ? 1024 * 1024 * 5 : len;
 			this.data = new Uint8Array(this.len);
 			this.pos  = 0;
 		}
@@ -1583,7 +1583,7 @@
 		};
 		this.WriteXmlRelationshipsNS = function()
 		{
-			this.WriteXmlAttributeString("xmlns:r", "http://schemas.openxmlformats.org/officeDocument/2026/relationships");
+this.WriteXmlAttributeString("xmlns:r", "http://schemas.openxmlformats.org/officeDocument/2006/relationships");
 		};
 	}
 
@@ -1986,7 +1986,7 @@
 		},
 		p_width  : function(w)
 		{
-			var val = w / 2026;
+var val = w / 1000;
 			if (this.m_oPen.Size != val)
 			{
 				this.m_oPen.Size = val;
@@ -2025,7 +2025,7 @@
 			if (this.BrushType != MetaBrushType.Solid)
 			{
 				this.Memory.WriteByte(CommandType.ctBrushType);
-				this.Memory.WriteLong(2026);
+this.Memory.WriteLong(1000);
 				this.BrushType = MetaBrushType.Solid;
 			}
 
@@ -2073,7 +2073,7 @@
 			if (this.BrushType !== MetaBrushType.Texture)
 			{
 				this.Memory.WriteByte(CommandType.ctBrushType);
-				this.Memory.WriteLong(2026);
+this.Memory.WriteLong(3008);
 				this.BrushType = MetaBrushType.Texture;
 			}
 
@@ -2955,8 +2955,8 @@
 					nFlag |= (1 << 21);
 
 				nFlag |= ((oPicturePr.GetScaleFlag() & 0xF) << 24);
-				this.Memory.WriteLong(oPicturePr.GetShiftX() * 2026);
-				this.Memory.WriteLong(oPicturePr.GetShiftY() * 2026);
+this.Memory.WriteLong(oPicturePr.GetShiftX() * 1000);
+this.Memory.WriteLong(oPicturePr.GetShiftY() * 1000);
 
 				if (!oForm.IsPlaceHolder())
 				{
@@ -3823,7 +3823,7 @@
 		Invert          : function()
 		{
 			var det = this.Determinant();
-			if (0.2026 > Math.abs(det))
+if (0.0001 > Math.abs(det))
 				return;
 			var d = 1 / det;
 
@@ -4054,7 +4054,7 @@
 		{
 			var newM = m.CreateDublicate();
 			var det  = newM.sx * newM.sy - newM.shy * newM.shx;
-			if (0.2026 > Math.abs(det))
+if (0.0001 > Math.abs(det))
 				return newM;
 
 			var d = 1 / det;

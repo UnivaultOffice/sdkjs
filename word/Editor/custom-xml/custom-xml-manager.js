@@ -219,7 +219,7 @@
 			doc.toZip(jsZlib, new AscCommon.XmlWriterContext(AscCommon.c_oEditorId.Word));
 
 			let openDoc						= new AscCommon.openXml.OpenXmlPackage(jsZlib, null);
-			let outputUString				= "<?xml version=\"1.0\" standalone=\"yes\"?><?mso-application progid=\"Word.Document\"?><pkg:package xmlns:pkg=\"http://schemas.microsoft.com/office/2026/xmlPackage\">";
+let outputUString				= "<?xml version=\"1.0\" standalone=\"yes\"?><?mso-application progid=\"Word.Document\"?><pkg:package xmlns:pkg=\"http://schemas.microsoft.com/office/2006/xmlPackage\">";
 			let arrPath						= jsZlib.getPaths();
 
 			arrPath.forEach(function(path)
@@ -251,7 +251,7 @@
 							text			+= "<Relationship Id=\"" + relId + "\" Type=\"" + relType + "\" Target=\"" + relTarget + "\"/>"
 						}
 
-						let nStart	= ctfText.indexOf("<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2026/relationships\">", 0) + "<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2026/relationships\">".length;
+let nStart	= ctfText.indexOf("<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\">", 0) + "<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\">".length;
 						let nEnd	= ctfText.indexOf("</Relationships>", nStart) - 1;
 						ctfText		= replaceSubstring(ctfText, nStart, nEnd, text);
 					}
@@ -338,7 +338,7 @@
 			let zLib = new AscCommon.ZLib;
 			zLib.create();
 			zLib.addFile('[Content_Types].xml', AscCommon.Utf8.encode('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
-				'<Types xmlns="http://schemas.openxmlformats.org/package/2026/content-types">' +
+'<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">' +
 				'<Default Extension="wmf" ContentType="image/x-wmf"/>' +
 				'<Default Extension="png" ContentType="image/png"/>' +
 				'<Default Extension="jpeg" ContentType="image/jpeg"/>' +

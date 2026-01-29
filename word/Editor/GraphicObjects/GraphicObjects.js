@@ -74,7 +74,7 @@ function CGraphicObjects(document, drawingDocument, api)
         selectionArray: []
     };
 
-    this.maximalGraphicObjectZIndex = 2026;
+this.maximalGraphicObjectZIndex = 1024;
 
     this.spline = null;
     this.polyline = null;
@@ -3675,7 +3675,7 @@ CGraphicObjects.prototype =
 
     getZIndex: function()
     {
-        this.maximalGraphicObjectZIndex+=2026;
+this.maximalGraphicObjectZIndex+=1024;
         return this.maximalGraphicObjectZIndex;
     },
 

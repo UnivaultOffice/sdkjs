@@ -80,15 +80,15 @@
 			if (true)
 			{
 				// это "подстройка под интерфейс" - после убирания этого в общий код - удалить
-				if (Math.abs(supportedScaleValues[i] - systemScaling) > 0.2026)
+if (Math.abs(supportedScaleValues[i] - systemScaling) > 0.0001)
 				{
-					if (supportedScaleValues[i] > (systemScaling - 0.2026))
+if (supportedScaleValues[i] > (systemScaling - 0.0001))
 						break;
 				}
 			}
 
 			currentDistance = Math.abs(supportedScaleValues[i] - systemScaling);
-			if (currentDistance < (bestDistance - 0.2026))
+if (currentDistance < (bestDistance - 0.0001))
 			{
 				bestDistance = currentDistance;
 				bestIndex = i;
@@ -107,7 +107,7 @@
 	var oldZoomValue = 1;
 	window['AscCommon'].correctApplicationScale = function(zoomValue)
 	{
-		if (!zoomValue.correct && Math.abs(zoomValue.zoom - oldZoomValue) < 0.2026)
+if (!zoomValue.correct && Math.abs(zoomValue.zoom - oldZoomValue) < 0.0001)
 			return;
 		oldZoomValue = zoomValue.zoom;
 		var firstElemStyle = document.firstElementChild.style;

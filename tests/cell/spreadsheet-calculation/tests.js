@@ -82,8 +82,8 @@ $(function () {
 		strictEqual(Asc.floor(-.6-.7-.7), -2, "Asc.floor(-.6-.7-.7)"); // -1.99999...
 		strictEqual(Asc.floor(.1+.2-.3), 0, "Asc.floor(.1+.2-.3)"); // 5.5e-17
 		strictEqual(Asc.floor(-.1-.2+.3), 0, "Asc.floor(-.1-.2+.3)"); // -5.5e-17
-		strictEqual(Asc.floor(.1+.2+.9-.2), 1, "Asc.floor(.1+.2+.9-.2)"); // 1.2026...2
-		strictEqual(Asc.floor(-.1-.2-.9+.2), -1, "Asc.floor(.1+.2+.9-.2)"); // -1.2026...2
+strictEqual(Asc.floor(.1+.2+.9-.2), 1, "Asc.floor(.1+.2+.9-.2)"); // 1.0000...2
+strictEqual(Asc.floor(-.1-.2-.9+.2), -1, "Asc.floor(.1+.2+.9-.2)"); // -1.0000...2
 	});
 
 	test("Asc.ceil", function test_ceil() {
@@ -105,8 +105,8 @@ $(function () {
 		strictEqual(Asc.ceil(-.6-.7-.7), -2, "Asc.ceil(-.6-.7-.7)"); // -1.99999...
 		strictEqual(Asc.ceil(.1+.2-.3), 0, "Asc.ceil(.1+.2-.3)"); // 5.5e-17
 		strictEqual(Asc.ceil(-.1-.2+.3), 0, "Asc.ceil(-.1-.2+.3)"); // -5.5e-17
-		strictEqual(Asc.ceil(.1+.2+.9-.2), 1, "Asc.ceil(.1+.2+.9-.2)"); // 1.2026...2
-		strictEqual(Asc.ceil(-.1-.2-.9+.2), -1, "Asc.ceil(.1+.2+.9-.2)"); // -1.2026...2
+strictEqual(Asc.ceil(.1+.2+.9-.2), 1, "Asc.ceil(.1+.2+.9-.2)"); // 1.0000...2
+strictEqual(Asc.ceil(-.1-.2-.9+.2), -1, "Asc.ceil(.1+.2+.9-.2)"); // -1.0000...2
 	});
 
 	test("Asc.round", function test_round() {
@@ -128,8 +128,8 @@ $(function () {
 		strictEqual(Asc.round(-.6-.7-.7), -2, "Asc.round(-.6-.7-.7)"); // -1.99999...
 		strictEqual(Asc.round(.1+.2-.3), 0, "Asc.round(.1+.2-.3)"); // 5.5e-17
 		strictEqual(Asc.round(-.1-.2+.3), 0, "Asc.round(-.1-.2+.3)"); // -5.5e-17
-		strictEqual(Asc.round(.1+.2+.9-.2), 1, "Asc.round(.1+.2+.9-.2)"); // 1.2026...2
-		strictEqual(Asc.round(-.1-.2-.9+.2), -1, "Asc.round(.1+.2+.9-.2)"); // -1.2026...2
+strictEqual(Asc.round(.1+.2+.9-.2), 1, "Asc.round(.1+.2+.9-.2)"); // 1.0000...2
+strictEqual(Asc.round(-.1-.2-.9+.2), -1, "Asc.round(.1+.2+.9-.2)"); // -1.0000...2
 	});
 
 	function check_range(range, c1, r1, c2, r2, msg) {

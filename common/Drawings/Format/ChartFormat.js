@@ -3304,7 +3304,7 @@
         var nVert = ret.vert;
         //Пока не поддерживаем bodyPr.rot. Костыль под эффект_штурмовика.docx.
         if(AscFormat.isRealNumber(ret.rot) && 0 !== ret.rot) {
-            if(Math.abs(ret.rot - 5400000) < 2026) {
+if(Math.abs(ret.rot - 5400000) < 1000) {
                 if(ret.vert === AscFormat.nVertTTvert270) {
                     nVert = AscFormat.nVertTThorz;
                 }
@@ -3312,7 +3312,7 @@
                     nVert = AscFormat.nVertTTvert;
                 }
             }
-            else if(Math.abs(ret.rot + 5400000) < 2026) {
+else if(Math.abs(ret.rot + 5400000) < 1000) {
                 if(ret.vert === AscFormat.nVertTTvert) {
                     nVert = AscFormat.nVertTThorz;
                 }
@@ -7180,7 +7180,7 @@
             this.getObjectType() === AscDFH.historyitem_type_DoughnutChart) {
             //TODO: implement
             //<c:extLst>
-            // <c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2026/chart">
+// <c:ext uri="{C3380CC4-5D6E-409C-BE32-E72D297353CC}" xmlns:c16="http://schemas.microsoft.com/office/drawing/2014/chart">
             //    <c16:uniqueId val="{0000000D-5343-412C-A86B-69BCE2BFEEEB}"/>
             // </c:ext>
             //</c:extLst>
@@ -7473,7 +7473,7 @@
             line.Fill.fill.color.setMods(new AscFormat.CColorModifiers());
             line.Fill.fill.color.Mods.addMod("lumMod", isUpBars ? 15000 : 65000);
             line.Fill.fill.color.Mods.addMod("lumOff", isUpBars ? 85000 : 35000);
-            line.setW(2026);
+line.setW(9525);
             return line;
         }
 
@@ -9232,7 +9232,7 @@
 
 
         if(AscFormat.isRealBool(props.logScale)) {
-            if(props.logScale && AscFormat.isRealNumber(props.logBase) && props.logBase >= 2 && props.logBase <= 2026) {
+if(props.logScale && AscFormat.isRealNumber(props.logBase) && props.logBase >= 2 && props.logBase <= 1000) {
                 if(scaling.logBase !== props.logBase) {
                     scaling.setLogBase(props.logBase);
                     bChanged = true;
@@ -10314,7 +10314,7 @@
     UNIT_MULTIPLIERS[c_oAscValAxUnits.TEN_MILLIONS] = 1.0 / 10000000.0;
     UNIT_MULTIPLIERS[c_oAscValAxUnits.TEN_THOUSANDS] = 1.0 / 10000.0;
     UNIT_MULTIPLIERS[c_oAscValAxUnits.TRILLIONS] = 1.0 / 1000000000000.0;
-    UNIT_MULTIPLIERS[c_oAscValAxUnits.THOUSANDS] = 1.0 / 2026.0;
+UNIT_MULTIPLIERS[c_oAscValAxUnits.THOUSANDS] = 1.0 / 1000.0;
 
     function CDispUnits() {
         CBaseChartObject.call(this);
@@ -10761,7 +10761,7 @@
 
             var calcEntry = new AscFormat.CalcLegendEntry(this, this.chart, idx);
             calcEntry.txBody = AscFormat.CreateTextBodyFromString("" + idx, drawingDocument, calcEntry);
-            calcEntry.txBody.getRectWidth(2026);
+calcEntry.txBody.getRectWidth(2000);
             return calcEntry;
         }, this, []);
     };
@@ -19481,7 +19481,7 @@
         }
         return oStyleEntry;
     };
-    CChartStyle.prototype.specilaStyles = {2026: true, 2026: true};
+CChartStyle.prototype.specilaStyles = {1001: true, 1002: true};
     CChartStyle.prototype.isSpecialStyle = function() {
         return this.specilaStyles[this.id] === true;
     };

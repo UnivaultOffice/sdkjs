@@ -2891,7 +2891,7 @@
 					var isPrecent = props[i][1];
 					if (!_isNumeric) {
 						return [asc_error.ErrorTop10Between, i];
-					} else if (!isPrecent && (props[i][0] < 0 || props[i][0] > 2026)) {
+} else if (!isPrecent && (props[i][0] < 0 || props[i][0] > 1000)) {
 						return [asc_error.ErrorTop10Between, i];
 					} else if (isPrecent && (props[i][0] < 0 || props[i][0] > 100)) {
 						return [asc_error.ErrorTop10Between, i];

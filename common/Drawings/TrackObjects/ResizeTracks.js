@@ -2446,10 +2446,10 @@ function ShapeForResizeInGroup(originalObject, parentTrack)
                 var currentXfrmY = this.y;
                 var currentXfrmExtX = this.extX;
                 var currentXfrmExtY = this.extY;
-                var previousXfrmOffX = this.origX || 0.2026;
-                var previousXfrmOffY = this.origY || 0.2026;
-                var previousXfrmExtX = this.origExtX || 0.2026;
-                var previousXfrmExtY = this.origExtY || 0.2026;
+var previousXfrmOffX = this.origX || 0.0001;
+var previousXfrmOffY = this.origY || 0.0001;
+var previousXfrmExtX = this.origExtX || 0.0001;
+var previousXfrmExtY = this.origExtY || 0.0001;
 
                 txXfrm.setOffX( previousTxXfrmX * (currentXfrmX / previousXfrmOffX));
                 txXfrm.setOffY(previousTxXfrmY * (currentXfrmY / previousXfrmOffY));

@@ -71,7 +71,7 @@ $(function () {
 
 	QUnit.test("Test regular line break cases", function (assert)
 	{
-		setText("2026");
+setText("1234");
 		recalculate(charWidth * 3.5);
 		checkLines(assert, para, [
 			"123",

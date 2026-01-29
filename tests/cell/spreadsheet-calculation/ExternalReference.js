@@ -743,9 +743,9 @@ $(function () {
 		let dimension = res.getDimensions();
 		assert.strictEqual(dimension.row, 1, 'IMPORTRANGE_1_after_add_references_row_count');
 
-		initReference(wb.externalReferences[0], "Sheet1", "A1", [[2026]]);
+initReference(wb.externalReferences[0], "Sheet1", "A1", [[1000]]);
 		res = oParser.calculate();
-		assert.strictEqual(res.getElementRowCol(0, 0).getValue(), 2026, 'IMPORTRANGE_1_AFTER_INIT');
+assert.strictEqual(res.getElementRowCol(0, 0).getValue(), 1000, 'IMPORTRANGE_1_AFTER_INIT');
 
 		assert.strictEqual(wb.externalReferences.length, 1, 'IMPORTRANGE_1_external_reference_length_before_add_clone_2');
 		wb.addExternalReferencesAfterParseFormulas(parseResult.externalReferenesNeedAdd);
@@ -810,15 +810,15 @@ $(function () {
 		assert.strictEqual(oParser.calculate().getValue(), "#REF!", 'result after add reference');
 
 		//update external reference structure
-		initReference(wb.externalReferences[0], "Sheet1", "A1", [["2026"]], true);
-		assert.strictEqual(oParser.calculate().getValue(), 2026, 'EXTERNAL_1_AFTER_INIT');
+initReference(wb.externalReferences[0], "Sheet1", "A1", [["1000"]], true);
+assert.strictEqual(oParser.calculate().getValue(), 1000, 'EXTERNAL_1_AFTER_INIT');
 
 		//create new ws and put date
 		let externalWs = createExternalWorksheet("Sheet1");
-		externalWs.getRange2("A1").setValue("2026");
+externalWs.getRange2("A1").setValue("2000");
 		//such as update from portal
 		wb.externalReferences[0].updateData([externalWs]);
-		assert.strictEqual(oParser.calculate().getValue(), 2026, 'EXTERNAL_2_AFTER_UPDATE');
+assert.strictEqual(oParser.calculate().getValue(), 2000, 'EXTERNAL_2_AFTER_UPDATE');
 
 		//remove external reference
 		wb.removeExternalReferences([wb.externalReferences[0].getAscLink()]);
@@ -840,16 +840,16 @@ $(function () {
 		assert.strictEqual(oParser.calculate().getValue(), 0, 'result after add area');
 
 		//update external reference structure
-		initReference(wb.externalReferences[0], "Sheet1", "A1:A2", [["2026"],["2026"]], true);
-		assert.strictEqual(oParser.calculate().getValue(), 2026, 'EXTERNAL_AREA_1_AFTER_INIT');
+initReference(wb.externalReferences[0], "Sheet1", "A1:A2", [["1000"],["2000"]], true);
+assert.strictEqual(oParser.calculate().getValue(), 3000, 'EXTERNAL_AREA_1_AFTER_INIT');
 
 		//create new ws and put date
 		externalWs = createExternalWorksheet("Sheet1");
-		externalWs.getRange2("A1").setValue("2026");
-		externalWs.getRange2("A2").setValue("2026");
+externalWs.getRange2("A1").setValue("2000");
+externalWs.getRange2("A2").setValue("4000");
 		//such as update from portal
 		wb.externalReferences[0].updateData([externalWs]);
-		assert.strictEqual(oParser.calculate().getValue(), 2026, 'EXTERNAL_AREA_2_AFTER_UPDATE');
+assert.strictEqual(oParser.calculate().getValue(), 6000, 'EXTERNAL_AREA_2_AFTER_UPDATE');
 
 		//remove external reference
 		wb.removeExternalReferences([wb.externalReferences[0].getAscLink()]);
@@ -883,16 +883,16 @@ $(function () {
 		assert.strictEqual(oParser.calculate().getValue(), 0, 'result after add name');
 
 		initDefinedName(wb.externalReferences[0], "Sheet1", "A1:A2", "test");
-		initReference(wb.externalReferences[0], "Sheet1", "A1:A2", [["2026"],["2026"]], true);
-		assert.strictEqual(oParser.calculate().getValue(), 2026, 'EXTERNAL_NAME_1_AFTER_INIT');
+initReference(wb.externalReferences[0], "Sheet1", "A1:A2", [["1000"],["2000"]], true);
+assert.strictEqual(oParser.calculate().getValue(), 3000, 'EXTERNAL_NAME_1_AFTER_INIT');
 
 		//create new ws and put date
 		externalWs = createExternalWorksheet("Sheet1");
-		externalWs.getRange2("A1").setValue("2026");
-		externalWs.getRange2("A2").setValue("2026");
+externalWs.getRange2("A1").setValue("2000");
+externalWs.getRange2("A2").setValue("4000");
 		//such as update from portal
 		wb.externalReferences[0].updateData([externalWs]);
-		assert.strictEqual(oParser.calculate().getValue(), 2026, 'EXTERNAL_NAME_2_AFTER_UPDATE');
+assert.strictEqual(oParser.calculate().getValue(), 6000, 'EXTERNAL_NAME_2_AFTER_UPDATE');
 
 		//remove external reference
 		wb.removeExternalReferences([wb.externalReferences[0].getAscLink()]);
@@ -960,13 +960,13 @@ $(function () {
 		assert.strictEqual(oParser.calculate().getValue().getValue(), "#REF!", 'result after add reference');
 
 		//update external reference structure
-		initReference(wb.externalReferences[0], "Sheet1", "A1", [["2026"]], true);
-		assert.strictEqual(oParser.calculate().getValue().getValue(), 2026, 'EXTERNAL_AFTER_INIT');
+initReference(wb.externalReferences[0], "Sheet1", "A1", [["1000"]], true);
+assert.strictEqual(oParser.calculate().getValue().getValue(), 1000, 'EXTERNAL_AFTER_INIT');
 
 		let externalWs = createExternalWorksheet("Sheet1");
-		externalWs.getRange2("A1").setValue("2026");
+externalWs.getRange2("A1").setValue("2000");
 		wb.externalReferences[0].updateData([externalWs]);
-		assert.strictEqual(oParser.calculate().getValue().getValue(), 2026, 'EXTERNAL_AFTER_UPDATE');
+assert.strictEqual(oParser.calculate().getValue().getValue(), 2000, 'EXTERNAL_AFTER_UPDATE');
 
 		// add the second link
 		oParser = new parserFormula("'" + sLink + "Sheet1" + "'" + "!A1", cellWithFormula, ws);
@@ -981,13 +981,13 @@ $(function () {
 		assert.ok(oParser.parse(true, null, parseResult), "'" + sLink + "Sheet1" + "'" + "!A1");
 		assert.strictEqual(oParser.calculate().getValue().getValue(), "#REF!", 'result after add reference');
 
-		initReference(wb.externalReferences[1], "Sheet1", "A1", [["2026"]], true);
-		assert.strictEqual(oParser.calculate().getValue().getValue(), 2026, 'EXTERNAL_AFTER_INIT');
+initReference(wb.externalReferences[1], "Sheet1", "A1", [["1111"]], true);
+assert.strictEqual(oParser.calculate().getValue().getValue(), 1111, 'EXTERNAL_AFTER_INIT');
 
 		let secondExternalWs = createExternalWorksheet("Sheet1");
-		secondExternalWs.getRange2("A1").setValue("2026");
+secondExternalWs.getRange2("A1").setValue("2222");
 		wb.externalReferences[1].updateData([secondExternalWs]);
-		assert.strictEqual(oParser.calculate().getValue().getValue(), 2026, 'EXTERNAL_AFTER_UPDATE');
+assert.strictEqual(oParser.calculate().getValue().getValue(), 2222, 'EXTERNAL_AFTER_UPDATE');
 
 
 		ws.getRange2("A100").setValue("='[new.xlsx]Sheet1'!A1");

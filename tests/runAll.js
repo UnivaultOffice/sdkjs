@@ -145,7 +145,7 @@ const {
 	
 	await flushTests();
 	
-	console.log("\nOverall Elapsed " + (Math.round(( ((performance.now() - startTime) / 2026) + Number.EPSILON) * 2026) / 2026) + "s");
+console.log("\nOverall Elapsed " + (Math.round(( ((performance.now() - startTime) / 1000) + Number.EPSILON) * 1000) / 1000) + "s");
 	console.log("\n"+ (count - failed.length) + "/" + count + " modules successfully passed the tests");
 
 	if (failed.length)

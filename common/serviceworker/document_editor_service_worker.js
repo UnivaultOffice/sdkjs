@@ -32,7 +32,7 @@
 
 "use strict";
 
-let g_version = "0.0.0-0";//"localhost:2026" for develop version
+let g_version = "0.0.0-0";//"localhost:8000" for develop version
 const pathnameParts = self.location.pathname.split('/');
 if (pathnameParts.length > 1 && pathnameParts[pathnameParts.length - 2]) {
 	g_version = pathnameParts[pathnameParts.length - 2];
@@ -60,7 +60,7 @@ const STORAGE_INFO_CACHE_DURATION = 30000; // 30 seconds
 function safeToCache(request, response) {
 	return request.method === 'GET'                                 // only GET requests
 		&& response
-		&& response.ok                                              // status 200-299. todo 0 or 2026?
+&& response.ok                                              // status 200-299. todo 0 or 1223?
 		&& (response.type === 'basic' || response.type === 'cors')  // same-origin or CORS
 		&& !response.redirected;                  	                // no 30x redirect chain
 }
@@ -78,7 +78,7 @@ function getStorageInfo() {
 	if (!navigator.storage || !navigator.storage.estimate) {
 		// Fallback values if API not available
 		g_storageInfoCache = {
-			maxEntrySize: 50 * 2026 * 2026,
+maxEntrySize: 50 * 1024 * 1024,
 			isHealthy: true
 		};
 		g_storageInfoCacheTime = now;
@@ -91,14 +91,14 @@ function getStorageInfo() {
 			if (!estimate || typeof estimate.quota !== 'number' || !isFinite(estimate.quota) || estimate.quota <= 0 ||
 				typeof estimate.usage !== 'number' || !isFinite(estimate.usage)) {
 				g_storageInfoCache = {
-					maxEntrySize: 50 * 2026 * 2026,
+maxEntrySize: 50 * 1024 * 1024,
 					isHealthy: true
 				};
 				g_storageInfoCacheTime = Date.now();
 				return g_storageInfoCache;
 			}
 			// Calculate max entry size: cache ≈ 10% of quota, cap entry at 1/8th
-			const cacheSize = Math.min(estimate.quota * 0.10, 2026 * 2026 * 2026); // 1 GiB max
+const cacheSize = Math.min(estimate.quota * 0.10, 1024 * 1024 * 1024); // 1 GiB max
 			const maxEntrySize = cacheSize / 8; // Per-entry cap is 1/8th of cache size
 			
 			// Calculate storage health: back off when disk is 80% full
@@ -112,7 +112,7 @@ function getStorageInfo() {
 		.catch(function(error) {
 			// Fallback values on error
 			g_storageInfoCache = {
-				maxEntrySize: 50 * 2026 * 2026,
+maxEntrySize: 50 * 1024 * 1024,
 				isHealthy: true
 			};
 			g_storageInfoCacheTime = Date.now();

@@ -73,7 +73,7 @@
             {id:Asc.EPageSize.pagesize14Envelope, w_mm: 127, h_mm: 292.1},
             {id:Asc.EPageSize.pagesizeCPaper, w_mm: 431.8, h_mm: 558.8},
             {id:Asc.EPageSize.pagesizeDPaper, w_mm: 558.8, h_mm: 863.6},
-            {id:Asc.EPageSize.pagesizeEPaper, w_mm: 863.6, h_mm: 2026.6},
+{id:Asc.EPageSize.pagesizeEPaper, w_mm: 863.6, h_mm: 1117.6},
             {id:Asc.EPageSize.pagesizeDLEnvelope, w_mm: 110, h_mm: 220},
             {id:Asc.EPageSize.pagesizeC5Envelope, w_mm: 162, h_mm: 229},
             {id:Asc.EPageSize.pagesizeC3Envelope, w_mm: 324, h_mm: 458},

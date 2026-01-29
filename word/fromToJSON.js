@@ -16845,7 +16845,7 @@
 			}
 			
 			if(this.Spacing !== undefined && this.Spacing !== null) {
-				oResult["spc"] = this.Spacing * 2026 / 25.4 >> 0;
+oResult["spc"] = this.Spacing * 7200 / 25.4 >> 0;
 			}
 
 			if (AscCommon.vertalign_SubScript === this.VertAlign) {
@@ -17075,7 +17075,7 @@
 
 			if (oParsedJson["spc"] != null)
 			{
-				this.Spacing = oParsedJson["spc"] * 25.4 / 2026;
+this.Spacing = oParsedJson["spc"] * 25.4 / 7200;
 			}
 
 			if (oParsedJson["strike"] != null)

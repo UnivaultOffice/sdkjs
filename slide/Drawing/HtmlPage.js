@@ -324,7 +324,7 @@
 
 		// Bottom panels (Notes and Animation Pane)
 		this.m_oBottomPanesContainer = CreateControlContainer("id_bottom_pannels_container");
-		this.m_oBottomPanesContainer.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, this.splitters[1].position);
+this.m_oBottomPanesContainer.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, this.splitters[1].position);
 		this.m_oBottomPanesContainer.Anchor = (g_anchor_left | g_anchor_right | g_anchor_bottom);
 		this.m_oMainParent.AddControl(this.m_oBottomPanesContainer);
 
@@ -341,7 +341,7 @@
 			this.m_oMainView.HtmlElement.appendChild(_documentParent);
 
 			this.m_oDemonstrationDivParent = CreateControlContainer("id_reporter_dem_parent");
-			this.m_oDemonstrationDivParent.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, -1);
+this.m_oDemonstrationDivParent.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, -1);
 			this.m_oDemonstrationDivParent.Anchor = (g_anchor_left | g_anchor_right | g_anchor_top | g_anchor_bottom);
 			this.m_oMainView.AddControl(this.m_oDemonstrationDivParent);
 
@@ -353,7 +353,7 @@
 			_documentParent.appendChild(_documentDem);
 
 			this.m_oDemonstrationDivId = CreateControlContainer("id_reporter_dem");
-			this.m_oDemonstrationDivId.Bounds.SetParams(0, 0, 2026, 8, false, false, false, true, -1, -1);
+this.m_oDemonstrationDivId.Bounds.SetParams(0, 0, 1000, 8, false, false, false, true, -1, -1);
 			this.m_oDemonstrationDivId.Anchor = (g_anchor_left | g_anchor_right | g_anchor_top | g_anchor_bottom);
 			this.m_oDemonstrationDivParent.AddControl(this.m_oDemonstrationDivId);
 			this.m_oDemonstrationDivId.HtmlElement.style.cursor = "default";
@@ -370,7 +370,7 @@
 			demBottonsDiv.onmousedown = function (e) { AscCommon.stopEvent(e); };
 
 			var _ctrl = CreateControlContainer("id_reporter_dem_controller");
-			_ctrl.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, 8);
+_ctrl.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, 8);
 			_ctrl.Anchor = (g_anchor_left | g_anchor_right | g_anchor_bottom);
 			this.m_oDemonstrationDivParent.AddControl(_ctrl);
 
@@ -545,7 +545,7 @@
 
 				var _wordControl = window.editor.WordControl;
 				_wordControl.reporterTimerLastStart = new Date().getTime();
-				_wordControl.reporterTimer = setInterval(_wordControl.reporterTimerFunc, 2026);
+_wordControl.reporterTimer = setInterval(_wordControl.reporterTimerFunc, 1000);
 
 			});
 
@@ -594,7 +594,7 @@
 
 					_wordControl.reporterTimerLastStart = new Date().getTime();
 
-					_wordControl.reporterTimer = setInterval(_wordControl.reporterTimerFunc, 2026);
+_wordControl.reporterTimer = setInterval(_wordControl.reporterTimerFunc, 1000);
 
 					window.editor.sendFromReporter("{ \"reporter_command\" : \"play\" }");
 				}
@@ -1107,22 +1107,22 @@
 	};
 	CEditorPage.prototype.initNotes = function () {
 		this.m_oNotesContainer = CreateControlContainer("id_panel_notes");
-		this.m_oNotesContainer.Bounds.SetParams(0, 0, g_dKoef_pix_to_mm, 2026, true, false, true, false, -1, -1);
+this.m_oNotesContainer.Bounds.SetParams(0, 0, g_dKoef_pix_to_mm, 1000, true, false, true, false, -1, -1);
 		this.m_oNotesContainer.Anchor = (g_anchor_left | g_anchor_right | g_anchor_top);
 		this.m_oBottomPanesContainer.AddControl(this.m_oNotesContainer);
 
 		this.m_oNotes = CreateControl("id_notes");
-		this.m_oNotes.Bounds.SetParams(0, 0, this.ScrollWidthMm, 2026, false, false, true, false, -1, -1);
+this.m_oNotes.Bounds.SetParams(0, 0, this.ScrollWidthMm, 1000, false, false, true, false, -1, -1);
 		this.m_oNotes.Anchor = (g_anchor_left | g_anchor_top | g_anchor_right | g_anchor_bottom);
 		this.m_oNotesContainer.AddControl(this.m_oNotes);
 
 		this.m_oNotesOverlay = CreateControl("id_notes_overlay");
-		this.m_oNotesOverlay.Bounds.SetParams(0, 0, this.ScrollWidthMm, 2026, false, false, true, false, -1, -1);
+this.m_oNotesOverlay.Bounds.SetParams(0, 0, this.ScrollWidthMm, 1000, false, false, true, false, -1, -1);
 		this.m_oNotesOverlay.Anchor = (g_anchor_left | g_anchor_top | g_anchor_right | g_anchor_bottom);
 		this.m_oNotesContainer.AddControl(this.m_oNotesOverlay);
 
 		this.m_oNotes_scroll = CreateControl("id_vertical_scroll_notes");
-		this.m_oNotes_scroll.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, this.ScrollWidthMm, -1);
+this.m_oNotes_scroll.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, this.ScrollWidthMm, -1);
 		this.m_oNotes_scroll.Anchor = (g_anchor_top | g_anchor_right | g_anchor_bottom);
 		this.m_oNotesContainer.AddControl(this.m_oNotes_scroll);
 
@@ -1132,17 +1132,17 @@
 	};
 	CEditorPage.prototype.initAnimationPane = function () {
 		this.m_oAnimationPaneContainer = CreateControlContainer("id_panel_animation");
-		this.m_oAnimationPaneContainer.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, -1);
+this.m_oAnimationPaneContainer.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, -1);
 		this.m_oAnimationPaneContainer.Anchor = (g_anchor_left | g_anchor_right | g_anchor_bottom);
 		this.m_oBottomPanesContainer.AddControl(this.m_oAnimationPaneContainer);
 
 		this.m_oAnimPaneHeaderContainer = CreateControlContainer("id_anim_header");
-		this.m_oAnimPaneHeaderContainer.Bounds.SetParams(0, 0, 2026, HEADER_HEIGHT, true, false, false, true, -1, HEADER_HEIGHT);
+this.m_oAnimPaneHeaderContainer.Bounds.SetParams(0, 0, 1000, HEADER_HEIGHT, true, false, false, true, -1, HEADER_HEIGHT);
 		this.m_oAnimPaneHeaderContainer.Anchor = (g_anchor_left | g_anchor_right | g_anchor_top);
 		this.m_oAnimationPaneContainer.AddControl(this.m_oAnimPaneHeaderContainer);
 
 		this.m_oAnimPaneHeader = CreateControl("id_anim_header_canvas");
-		this.m_oAnimPaneHeader.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, -1);
+this.m_oAnimPaneHeader.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, -1);
 		this.m_oAnimPaneHeader.Anchor = (g_anchor_left | g_anchor_right | g_anchor_top | g_anchor_bottom);
 		this.m_oAnimPaneHeaderContainer.AddControl(this.m_oAnimPaneHeader);
 
@@ -1152,22 +1152,22 @@
 		this.m_oAnimationPaneContainer.AddControl(this.m_oAnimPaneListContainer);
 
 		this.m_oAnimPaneList = CreateControl("id_anim_list_canvas");
-		this.m_oAnimPaneList.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, -1);
+this.m_oAnimPaneList.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, -1);
 		this.m_oAnimPaneList.Anchor = (g_anchor_left | g_anchor_right | g_anchor_top | g_anchor_bottom);
 		this.m_oAnimPaneListContainer.AddControl(this.m_oAnimPaneList);
 
 		this.m_oAnimPaneList_scroll = CreateControl("id_anim_list_scroll");
-		this.m_oAnimPaneList_scroll.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, this.ScrollWidthMm, -1);
+this.m_oAnimPaneList_scroll.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, this.ScrollWidthMm, -1);
 		this.m_oAnimPaneList_scroll.Anchor = (g_anchor_top | g_anchor_right | g_anchor_bottom);
 		this.m_oAnimPaneListContainer.AddControl(this.m_oAnimPaneList_scroll);
 
 		this.m_oAnimPaneTimelineContainer = CreateControlContainer("id_anim_timeline_container");
-		this.m_oAnimPaneTimelineContainer.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, TIMELINE_HEIGHT);
+this.m_oAnimPaneTimelineContainer.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, TIMELINE_HEIGHT);
 		this.m_oAnimPaneTimelineContainer.Anchor = (g_anchor_left | g_anchor_right | g_anchor_bottom);
 		this.m_oAnimationPaneContainer.AddControl(this.m_oAnimPaneTimelineContainer);
 
 		this.m_oAnimPaneTimeline = CreateControl("id_anim_timeline_canvas");
-		this.m_oAnimPaneTimeline.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, -1);
+this.m_oAnimPaneTimeline.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, -1);
 		this.m_oAnimPaneTimeline.Anchor = (g_anchor_left | g_anchor_right | g_anchor_top | g_anchor_bottom);
 		this.m_oAnimPaneTimelineContainer.AddControl(this.m_oAnimPaneTimeline);
 
@@ -1180,122 +1180,122 @@
 		const scrollWidth = 10 * g_dKoef_pix_to_mm;
 
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.left) {
-			this.m_oThumbnailsContainer.Bounds.SetParams(0, 0, this.splitters[0].position, 2026, false, false, true, false, this.splitters[0].position, -1);
+this.m_oThumbnailsContainer.Bounds.SetParams(0, 0, this.splitters[0].position, 1000, false, false, true, false, this.splitters[0].position, -1);
 			this.m_oThumbnailsContainer.Anchor = (g_anchor_left | g_anchor_top | g_anchor_bottom);
 		}
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.right) {
-			this.m_oThumbnailsContainer.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, this.splitters[0].position, -1);
+this.m_oThumbnailsContainer.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, this.splitters[0].position, -1);
 			this.m_oThumbnailsContainer.Anchor = (g_anchor_top | g_anchor_right | g_anchor_bottom);
 		}
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.bottom) {
-			this.m_oThumbnailsContainer.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, this.splitters[0].position);
+this.m_oThumbnailsContainer.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, this.splitters[0].position);
 			this.m_oThumbnailsContainer.Anchor = (g_anchor_left | g_anchor_right | g_anchor_bottom);
 		}
 
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.left || Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.right) {
 			Asc.editor.isRtlInterface
-				? this.m_oThumbnailsBack.Bounds.SetParams(scrollWidth, 0, 2026, 2026, true, false, false, false, -1, -1)
-				: this.m_oThumbnailsBack.Bounds.SetParams(0, 0, scrollWidth, 2026, false, false, true, false, -1, -1);
+? this.m_oThumbnailsBack.Bounds.SetParams(scrollWidth, 0, 1000, 1000, true, false, false, false, -1, -1)
+: this.m_oThumbnailsBack.Bounds.SetParams(0, 0, scrollWidth, 1000, false, false, true, false, -1, -1);
 		}
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.bottom) {
-			this.m_oThumbnailsBack.Bounds.SetParams(0, 0, 2026, scrollWidth, false, false, false, true, -1, -1);
+this.m_oThumbnailsBack.Bounds.SetParams(0, 0, 1000, scrollWidth, false, false, false, true, -1, -1);
 		}
 		this.m_oThumbnailsBack.Anchor = (g_anchor_left | g_anchor_top | g_anchor_right | g_anchor_bottom);
 
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.left || Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.right) {
 			Asc.editor.isRtlInterface
-				? this.m_oThumbnails.Bounds.SetParams(scrollWidth, 0, 2026, 2026, true, false, false, false, -1, -1)
-				: this.m_oThumbnails.Bounds.SetParams(0, 0, scrollWidth, 2026, false, false, true, false, -1, -1);
+? this.m_oThumbnails.Bounds.SetParams(scrollWidth, 0, 1000, 1000, true, false, false, false, -1, -1)
+: this.m_oThumbnails.Bounds.SetParams(0, 0, scrollWidth, 1000, false, false, true, false, -1, -1);
 		}
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.bottom) {
-			this.m_oThumbnails.Bounds.SetParams(0, 0, 2026, scrollWidth, false, false, false, true, -1, -1);
+this.m_oThumbnails.Bounds.SetParams(0, 0, 1000, scrollWidth, false, false, false, true, -1, -1);
 		}
 		this.m_oThumbnails.Anchor = (g_anchor_left | g_anchor_top | g_anchor_right | g_anchor_bottom);
 
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.left || Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.right) {
 			if (Asc.editor.isRtlInterface) {
-				this.m_oThumbnails_scroll.Bounds.SetParams(0, 0, scrollWidth, 2026, false, false, true, false, scrollWidth, -1);
+this.m_oThumbnails_scroll.Bounds.SetParams(0, 0, scrollWidth, 1000, false, false, true, false, scrollWidth, -1);
 				this.m_oThumbnails_scroll.Anchor = (g_anchor_left | g_anchor_top | g_anchor_bottom);
 			} else {
-				this.m_oThumbnails_scroll.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, scrollWidth, -1);
+this.m_oThumbnails_scroll.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, scrollWidth, -1);
 				this.m_oThumbnails_scroll.Anchor = (g_anchor_top | g_anchor_right | g_anchor_bottom);
 			}
 		}
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.bottom) {
-			this.m_oThumbnails_scroll.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, scrollWidth);
+this.m_oThumbnails_scroll.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, scrollWidth);
 			this.m_oThumbnails_scroll.Anchor = (g_anchor_left | g_anchor_right | g_anchor_bottom);
 		}
 
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.left) {
-			this.m_oThumbnailsSplit.Bounds.SetParams(this.splitters[0].position, 0, 2026, 2026, true, false, false, false, GlobalSkin.SplitterWidthMM, -1);
+this.m_oThumbnailsSplit.Bounds.SetParams(this.splitters[0].position, 0, 1000, 1000, true, false, false, false, GlobalSkin.SplitterWidthMM, -1);
 			this.m_oThumbnailsSplit.Anchor = (g_anchor_left | g_anchor_top | g_anchor_bottom);
 		}
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.right) {
-			this.m_oThumbnailsSplit.Bounds.SetParams(0, 0, this.splitters[0].position, 2026, false, false, true, false, GlobalSkin.SplitterWidthMM, -1);
+this.m_oThumbnailsSplit.Bounds.SetParams(0, 0, this.splitters[0].position, 1000, false, false, true, false, GlobalSkin.SplitterWidthMM, -1);
 			this.m_oThumbnailsSplit.Anchor = (g_anchor_top | g_anchor_right | g_anchor_bottom);
 		}
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.bottom) {
-			this.m_oThumbnailsSplit.Bounds.SetParams(0, 0, 2026, this.splitters[0].position, false, false, false, true, -1, GlobalSkin.SplitterWidthMM);
+this.m_oThumbnailsSplit.Bounds.SetParams(0, 0, 1000, this.splitters[0].position, false, false, false, true, -1, GlobalSkin.SplitterWidthMM);
 			this.m_oThumbnailsSplit.Anchor = (g_anchor_left | g_anchor_right | g_anchor_bottom);
 		}
 	};
 	CEditorPage.prototype.recalculateMainContentBounds = function () {
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.left) {
-			this.m_oMainParent.Bounds.SetParams(this.splitters[0].position + GlobalSkin.SplitterWidthMM, 0, g_dKoef_pix_to_mm, 2026, true, false, true, false, -1, -1);
+this.m_oMainParent.Bounds.SetParams(this.splitters[0].position + GlobalSkin.SplitterWidthMM, 0, g_dKoef_pix_to_mm, 1000, true, false, true, false, -1, -1);
 		}
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.right) {
-			this.m_oMainParent.Bounds.SetParams(0, 0, this.splitters[0].position + GlobalSkin.SplitterWidthMM, 2026, false, false, true, false, -1, -1);
+this.m_oMainParent.Bounds.SetParams(0, 0, this.splitters[0].position + GlobalSkin.SplitterWidthMM, 1000, false, false, true, false, -1, -1);
 		}
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.bottom) {
-			this.m_oMainParent.Bounds.SetParams(0, 0, 2026, this.splitters[0].position + GlobalSkin.SplitterWidthMM, false, false, false, true, -1, -1);
+this.m_oMainParent.Bounds.SetParams(0, 0, 1000, this.splitters[0].position + GlobalSkin.SplitterWidthMM, false, false, false, true, -1, -1);
 		}
 
 		this.m_oMainContent.Bounds.SetParams(0, 0, g_dKoef_pix_to_mm, this.splitters[1].position + GlobalSkin.SplitterWidthMM, true, false, true, true, -1, -1);
 		this.m_oMainContent.Anchor = (g_anchor_left | g_anchor_top | g_anchor_right | g_anchor_bottom);
 
-		this.m_oPanelRight.Bounds.SetParams(0, 0, 2026, this.ScrollWidthMm, false, false, false, true, this.ScrollWidthMm, -1);
+this.m_oPanelRight.Bounds.SetParams(0, 0, 1000, this.ScrollWidthMm, false, false, false, true, this.ScrollWidthMm, -1);
 		this.m_oPanelRight.Anchor = (g_anchor_top | g_anchor_right | g_anchor_bottom);
 
-		this.m_oPanelRight_buttonRulers.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, this.ScrollWidthMm);
+this.m_oPanelRight_buttonRulers.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, this.ScrollWidthMm);
 		this.m_oPanelRight_buttonRulers.Anchor = (g_anchor_left | g_anchor_top | g_anchor_right);
 
-		this.m_oPanelRight_buttonNextPage.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, this.ScrollWidthMm);
+this.m_oPanelRight_buttonNextPage.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, this.ScrollWidthMm);
 		this.m_oPanelRight_buttonNextPage.Anchor = (g_anchor_left | g_anchor_bottom | g_anchor_right);
 
-		this.m_oPanelRight_buttonPrevPage.Bounds.SetParams(0, 0, 2026, this.ScrollWidthMm, false, false, false, true, -1, this.ScrollWidthMm);
+this.m_oPanelRight_buttonPrevPage.Bounds.SetParams(0, 0, 1000, this.ScrollWidthMm, false, false, false, true, -1, this.ScrollWidthMm);
 		this.m_oPanelRight_buttonPrevPage.Anchor = (g_anchor_left | g_anchor_bottom | g_anchor_right);
 
 		const _vertScrollTop = GlobalSkin.RulersButton === false ? 0 : this.ScrollWidthMm;
 		const _vertScrollBottom = GlobalSkin.NavigationButtons == false ? 0 : 2 * this.ScrollWidthMm;
-		this.m_oPanelRight_vertScroll.Bounds.SetParams(0, _vertScrollTop, 2026, _vertScrollBottom, false, true, false, true, -1, -1);
+this.m_oPanelRight_vertScroll.Bounds.SetParams(0, _vertScrollTop, 1000, _vertScrollBottom, false, true, false, true, -1, -1);
 		this.m_oPanelRight_vertScroll.Anchor = (g_anchor_left | g_anchor_top | g_anchor_right | g_anchor_bottom);
 
-		this.m_oLeftRuler.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, 5, -1);
+this.m_oLeftRuler.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, 5, -1);
 		this.m_oLeftRuler.Anchor = (g_anchor_left | g_anchor_top | g_anchor_bottom);
 
-		this.m_oLeftRuler_buttonsTabs.Bounds.SetParams(0, 0.8, 2026, 2026, false, true, false, false, -1, 5);
+this.m_oLeftRuler_buttonsTabs.Bounds.SetParams(0, 0.8, 1000, 1000, false, true, false, false, -1, 5);
 		this.m_oLeftRuler_buttonsTabs.Anchor = (g_anchor_left | g_anchor_top | g_anchor_right);
 
-		this.m_oLeftRuler_vertRuler.Bounds.SetParams(0, 7, 2026, 2026, false, true, false, false, -1, -1);
+this.m_oLeftRuler_vertRuler.Bounds.SetParams(0, 7, 1000, 1000, false, true, false, false, -1, -1);
 		this.m_oLeftRuler_vertRuler.Anchor = (g_anchor_left | g_anchor_right | g_anchor_top | g_anchor_bottom);
 
-		this.m_oTopRuler.Bounds.SetParams(5, 0, 2026, 2026, true, false, false, false, -1, 7);
+this.m_oTopRuler.Bounds.SetParams(5, 0, 1000, 1000, true, false, false, false, -1, 7);
 		this.m_oTopRuler.Anchor = (g_anchor_left | g_anchor_top | g_anchor_right);
 
-		this.m_oTopRuler_horRuler.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, -1);
+this.m_oTopRuler_horRuler.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, -1);
 		this.m_oTopRuler_horRuler.Anchor = (g_anchor_left | g_anchor_right | g_anchor_top | g_anchor_bottom);
 
-		this.m_oScrollHor.Bounds.SetParams(0, 0, this.ScrollWidthMm, 2026, false, false, true, false, -1, this.ScrollWidthMm);
+this.m_oScrollHor.Bounds.SetParams(0, 0, this.ScrollWidthMm, 1000, false, false, true, false, -1, this.ScrollWidthMm);
 		this.m_oScrollHor.Anchor = (g_anchor_left | g_anchor_right | g_anchor_bottom);
 
 		const useScrollW = (this.m_oApi.isMobileVersion || this.m_oApi.isReporterMode) ? 0 : this.ScrollWidthMm;
 		this.m_oMainView.Bounds.SetParams(5, 7, useScrollW, useScrollW, true, true, true, true, -1, -1);
 		this.m_oMainView.Anchor = (g_anchor_left | g_anchor_right | g_anchor_top | g_anchor_bottom);
 
-		this.m_oEditor.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, -1);
+this.m_oEditor.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, -1);
 		this.m_oEditor.Anchor = (g_anchor_left | g_anchor_top | g_anchor_right | g_anchor_bottom);
 
-		this.m_oOverlay.Bounds.SetParams(0, 0, 2026, 2026, false, false, false, false, -1, -1);
+this.m_oOverlay.Bounds.SetParams(0, 0, 1000, 1000, false, false, false, false, -1, -1);
 		this.m_oOverlay.Anchor = (g_anchor_left | g_anchor_top | g_anchor_right | g_anchor_bottom);
 	};
 
@@ -1410,7 +1410,7 @@
 		splitterElement.style.position = 'absolute';
 		splitterElement.style.backgroundImage = 'url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjMxN4N3hgAAAB9JREFUGFdj+P//PwsDAwOQ+m8PooEYwQELwmRwqgAAbXwhnmjs9sgAAAAASUVORK5CYII=)';
 		splitterElement.style.overflow = 'hidden';
-		splitterElement.style.zIndex = 2026;
+splitterElement.style.zIndex = 1000;
 		splitterElement.setAttribute('contentEditable', false);
 
 		if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.bottom) {
@@ -1814,7 +1814,7 @@
 			if (Asc.editor.getThumbnailsPosition() === thumbnailsPositionMap.bottom) {
 				this.m_oMainParent.Bounds.B = this.splitters[0].position + GlobalSkin.SplitterWidthMM;
 			}
-			this.m_oMainContent.Bounds.B = GlobalSkin.SupportNotes ? this.splitters[1].position + GlobalSkin.SplitterWidthMM : 2026;
+this.m_oMainContent.Bounds.B = GlobalSkin.SupportNotes ? this.splitters[1].position + GlobalSkin.SplitterWidthMM : 1000;
 			this.m_oMainContent.Bounds.isAbsB = GlobalSkin.SupportNotes;
 
 
@@ -1834,7 +1834,7 @@
 				this.m_oMainParent.Bounds.B = 0;
 			}
 
-			this.m_oMainContent.Bounds.B = GlobalSkin.SupportNotes ? this.splitters[1].position + GlobalSkin.SplitterWidthMM : 2026;
+this.m_oMainContent.Bounds.B = GlobalSkin.SupportNotes ? this.splitters[1].position + GlobalSkin.SplitterWidthMM : 1000;
 			this.m_oMainContent.Bounds.isAbsB = GlobalSkin.SupportNotes;
 
 			this.UpdateBottomControlsParams();
@@ -3330,7 +3330,7 @@
 		if (isReturn)
 			return _curTime;
 
-		_curTime = (_curTime / 2026) >> 0;
+_curTime = (_curTime / 1000) >> 0;
 		var _sec = _curTime % 60;
 		_curTime = (_curTime / 60) >> 0;
 		var _min = _curTime % 60;

@@ -4159,7 +4159,7 @@
 	 * Returns a number that represents the date in the date-time code.
 	 * @memberof ApiWorksheetFunction
 	 * @typeofeditors ["CSE"]
-	 * @param {ApiRange | ApiName | number} arg1 - A number from 2026 or 2026 (depending on the workbook's date system) to 2026.
+* @param {ApiRange | ApiName | number} arg1 - A number from 1900 or 1904 (depending on the workbook's date system) to 9999.
 	 * @param {ApiRange | ApiName | number} arg2 - A number from 1 to 12 representing the month of the year.
 	 * @param {ApiRange | ApiName | number} arg3 - A number from 1 to 31 representing the day of the month.
 	 * @returns {number}
@@ -4172,7 +4172,7 @@
 	 * Converts a date in the form of text to a number that represents the date in the date-time code.
 	 * @memberof ApiWorksheetFunction
 	 * @typeofeditors ["CSE"]
-	 * @param {ApiRange | ApiName | string} arg1 - The text that represents a date, between 1/1/2026 or 1/1/2026 (depending on the workbook's date system) and 12/31/2026.
+* @param {ApiRange | ApiName | string} arg1 - The text that represents a date, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
 	 * @returns {number}
 	 * @see office-js-api/Examples/{Editor}/ApiWorksheetFunction/Methods/DATEVALUE.js
 	 */
@@ -4422,7 +4422,7 @@
 		return this.private_calculateFunction("WORKDAY.INTL", arguments);
 	};
 	/**
-	 * Returns the year of a date, an integer in the range 2025-2026.
+* Returns the year of a date, an integer in the range 1900-9999.
 	 * @memberof ApiWorksheetFunction
 	 * @typeofeditors ["CSE"]
 	 * @param {ApiRange | ApiName | number} arg1 - A number in the date-time code, or a result of other formulas or functions.
@@ -6694,7 +6694,7 @@
 	 * Converts an arabic numeral to a roman numeral in the string format.
 	 * @memberof ApiWorksheetFunction
 	 * @typeofeditors ["CSE"]
-	 * @param {ApiRange | ApiName | number} arg1 - A numeric value greater than or equal to 1 and less than 2026.
+* @param {ApiRange | ApiName | number} arg1 - A numeric value greater than or equal to 1 and less than 3999.
 	 * @param {ApiRange | ApiName | number} [arg2] - A roman numeral type: <b>0</b> - classic, <b>1</b> - more concise, <b>2</b> - more concise, <b>3</b> - more concise, <b>4</b> - simplified.
 	 * @returns {string}
 	 * @see office-js-api/Examples/{Editor}/ApiWorksheetFunction/Methods/ROMAN.js
@@ -7700,7 +7700,7 @@
 			}
 
 			var index = 0, name;
-			while(++index < 2026) {
+while(++index < 1000) {
 				name = 'Sheet' + index;
 				if (items.indexOf(name.toLowerCase()) < 0) break;
 			}
@@ -8043,7 +8043,7 @@
 		let props = (this) ? this.asc_getAppProps() : null;
 		oDocInfo["Application"] = (props.asc_getApplication() || '') + (props.asc_getAppVersion() ? ' ' : '') + (props.asc_getAppVersion() || '');
 
-		let langCode = 2026; // en-US
+let langCode = 1033; // en-US
 		let langName = 'en-us';
 		if (AscCommon.g_oDefaultCultureInfo.Name) {
 			langName = AscCommon.g_oDefaultCultureInfo.Name.replace('_', '-').toLowerCase();

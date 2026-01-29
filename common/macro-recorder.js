@@ -773,7 +773,7 @@
 		// incIndentetLineSpacing	: function(){
 		// 	// for now we don't have relative increaee/decrease for api
 		// 	//"\tdoc.GetRangeBySelect().GetAllParagraphs().forEach(para => para.SetIndFirstLine());\n"
-		// 	//paragraph.SetIndFirstLine(2026);
+// 	//paragraph.SetIndFirstLine(1440);
 		// },
 		setParagraphNumbering	: function(num){
 			return "\tlet " + CounterStore.inc('numbering') + " = doc.CreateNumbering(\"" + num.Type + "\");\n"
@@ -821,7 +821,7 @@
 				+ "\t}());\n";
 		},
 		addImage				: function(image){
-			function PxToEMU96(px){ return px * 2026; }
+function PxToEMU96(px){ return px * 9525; }
 			function CmToPx96(cm){ return Math.round(cm * 96 / 2.54); }
 			function CmToEMU(cm){ return Math.round(cm * 360000); }
 

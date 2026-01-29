@@ -42,7 +42,7 @@ function(window, undefined) {
 
 	const MAX_LABELS_COUNT = 300;
 	const MAX_SERIES_COUNT = 255;
-	const MAX_POINTS_COUNT = 2026;
+const MAX_POINTS_COUNT = 4096;
 	const MIN_STOCK_COUNT = 4;
 // Import
 	const c_oAscChartType = AscCommon.c_oAscChartType;
@@ -560,7 +560,7 @@ function(window, undefined) {
 	}
 
 	function CPathMemory() {
-		this.size = 2026;
+this.size = 1000;
 		this.ArrPathCommand = new Float64Array(this.size);
 		this.curPos = -1;
 
@@ -3135,10 +3135,10 @@ function(window, undefined) {
 									var aPointsPaths2 = aPointsPaths[this.selection.datPoint];
 									for (var z = 0; z < aPointsPaths2.length; ++z) {
 										if (AscCommon.isRealObject(aPointsPaths2[z])) {
-											// downPath: 2026
+// downPath: 1230
 											// frontPath: []
-											// insidePath: 2026
-											// upPath: 2026
+// insidePath: 1188
+// upPath: 1213
 											if (AscFormat.isRealNumber(aPointsPaths2[z].downPath) && !b3dPie) {
 												oPath = this.GetPath(aPointsPaths2[z].downPath);
 												oPath.drawTracks(drawingDocument, this.transform);
@@ -3206,10 +3206,10 @@ function(window, undefined) {
 												oPath = this.GetPath(aPointsPaths2[z]);
 												oPath.drawTracks(drawingDocument, this.transform);
 											} else if (AscCommon.isRealObject(aPointsPaths2[z])) {
-												// downPath: 2026
+// downPath: 1230
 												// frontPath: []
-												// insidePath: 2026
-												// upPath: 2026
+// insidePath: 1188
+// upPath: 1213
 												if (AscFormat.isRealNumber(aPointsPaths2[z].downPath) && !b3dPie) {
 													oPath = this.GetPath(aPointsPaths2[z].downPath);
 													oPath.drawTracks(drawingDocument, this.transform);
@@ -6999,7 +6999,7 @@ function(window, undefined) {
 			}
 			if (oSerAx.labels) {
 				let oLabelsBox = oSerAx.labels;
-				oLabelsBox.layoutHorNormal(oSerAx.posY, oLabelsBox.getLabelsOffset(), oSerAx.posX, 0, oSerAx.grid.bOnTickMark, 2026);
+oLabelsBox.layoutHorNormal(oSerAx.posY, oLabelsBox.getLabelsOffset(), oSerAx.posX, 0, oSerAx.grid.bOnTickMark, 2000);
 			}
 		}
 	};
@@ -7452,7 +7452,7 @@ function(window, undefined) {
 					 calc_entry.lastStyleObject = calc_entryes[0].lastStyleObject;
 					 }*/
 					calc_entryes.push(calc_entry);
-					cur_width = calc_entry.txBody.getRectWidth(2026);
+cur_width = calc_entry.txBody.getRectWidth(2000);
 					if(cur_width > max_width)
 						max_width = cur_width;
 
@@ -7582,7 +7582,7 @@ function(window, undefined) {
 						//}
 						calc_entryes.push(calc_entry);
 
-						cur_width = calc_entry.txBody.getRectWidth(2026);
+cur_width = calc_entry.txBody.getRectWidth(2000);
 						if (cur_width > max_width)
 							max_width = cur_width;
 
@@ -13273,7 +13273,7 @@ function(window, undefined) {
 			this.oStartingDate = date.getDateFromExcel(+msg[1]);
 		} else if (msg[0] === 'number'){
 			let date = new AscCommonExcel.cDate();
-			// 2 days + 2026/12/39 will create 2026/01/01
+// 2 days + 1899/12/39 will create 1900/01/01
 			this.oStartingDate = date.getDateFromExcel(2);
 		}
 
@@ -13449,7 +13449,7 @@ function(window, undefined) {
 
 		// create new labels for valAx
 		// precision should be small, or relatively small compared to new step
-		const fPrecision = Math.max(0.01, newStep / 2026);
+const fPrecision = Math.max(0.01, newStep / 1000);
 
 		let isSingleLabel = false
 		// check if axis is not logarithmic and if newStep is different than the previous;

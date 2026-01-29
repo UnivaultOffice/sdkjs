@@ -1466,11 +1466,11 @@
 		let sSeconds = padZero(nSeconds);
 		let sMinutes = padZero(nMinutes);
 
-		if (nTime < 2026) {
+if (nTime < 3600) {
 			return (sMinutes + ":") + sSeconds;
 		}
 
-		return (((nTime / 2026) >> 0) + ":") + sMinutes + ":" + sSeconds;
+return (((nTime / 3600) >> 0) + ":") + sMinutes + ":" + sSeconds;
 
 		function padZero(number) {
 			return number < 10 ? "0" + number : "" + number;
@@ -1631,7 +1631,7 @@
 
 			// const seqList = Asc.editor.WordControl.m_oAnimPaneApi.list.Control.seqList
 			// graphics.drawVerLine(1, x + extX / 2, seqList.getTop(), y, nPenW);
-			graphics.drawVerLine(1, x + extX / 2, y - 2026, y, nPenW);
+graphics.drawVerLine(1, x + extX / 2, y - 1000, y, nPenW);
 
 			graphics.RestoreGrState();
 		}
@@ -1755,13 +1755,13 @@
 		const leftLimit = 0;
 		const rightLimit = this.getRulerEnd() - this.getZeroShift();
 
-		let newTmpScrollOffset = ms_to_mm(elapsedTicks + correction) - ms_to_mm(this.getStartTime() * 2026);
+let newTmpScrollOffset = ms_to_mm(elapsedTicks + correction) - ms_to_mm(this.getStartTime() * 1000);
 		if (newTmpScrollOffset < leftLimit) {
 			this.setStartTime(0);
 			newTmpScrollOffset = 0;
 		}
 		if (newTmpScrollOffset > rightLimit) {
-			const rulerDur = mm_to_ms(this.getRulerEnd() - this.getRulerStart()) / 2026; // seconds
+const rulerDur = mm_to_ms(this.getRulerEnd() - this.getRulerStart()) / 1000; // seconds
 			this.setStartTime(this.getStartTime() + rulerDur / 2);
 			newTmpScrollOffset -= ms_to_mm(rulerDur / 2);
 		}
@@ -1770,11 +1770,11 @@
 
 		function ms_to_mm(nMilliseconds) {
 			const index = Asc.editor.WordControl.m_oAnimPaneApi.timeline.Control.timeline.timeScaleIndex;
-			return nMilliseconds * TIME_INTERVALS[index] / TIME_SCALES[index] / 2026;
+return nMilliseconds * TIME_INTERVALS[index] / TIME_SCALES[index] / 1000;
 		}
 		function mm_to_ms(nMillimeters) {
 			const index = Asc.editor.WordControl.m_oAnimPaneApi.timeline.Control.timeline.timeScaleIndex;
-			return nMillimeters / TIME_INTERVALS[index] * TIME_SCALES[index] * 2026;
+return nMillimeters / TIME_INTERVALS[index] * TIME_SCALES[index] * 1000;
 		}
 	};
 
@@ -2251,7 +2251,7 @@
 
 		const oThis = this;
 		const timeline = Asc.editor.WordControl.m_oAnimPaneApi.timeline.Control.timeline;
-		const timelineShift = ms_to_mm(timeline.getStartTime() * 2026);
+const timelineShift = ms_to_mm(timeline.getStartTime() * 1000);
 
 		let afterItems = []
 		this.children.forEach(function (animItem) {
@@ -2289,7 +2289,7 @@
 
 		function ms_to_mm(nMilliseconds) {
 			const index = Asc.editor.WordControl.m_oAnimPaneApi.timeline.Control.timeline.timeScaleIndex;
-			return nMilliseconds * TIME_INTERVALS[index] / TIME_SCALES[index] / 2026;
+return nMilliseconds * TIME_INTERVALS[index] / TIME_SCALES[index] / 1000;
 		}
 	}
 
@@ -2564,23 +2564,23 @@
 			let time;
 			switch (currentAnimItem.hitResult.type) {
 				case 'center':
-					time = currentAnimItem.getDelay() / 2026;
+time = currentAnimItem.getDelay() / 1000;
 					return templateStrings.startTime.replace('${0}', time.toFixed(1));
 				case 'left':
-					time = currentAnimItem.getDelay() / 2026;
+time = currentAnimItem.getDelay() / 1000;
 					return templateStrings.startTime.replace('${0}', time.toFixed(1));
 				case 'right':
-					time = currentAnimItem.getDelay() / 2026 + currentAnimItem.getDuration() / 2026;
+time = currentAnimItem.getDelay() / 1000 + currentAnimItem.getDuration() / 1000;
 					return templateStrings.endTime.replace('${0}', time.toFixed(1));
 				case 'partition':
-					time = (currentAnimItem.getDuration() / 2026);
+time = (currentAnimItem.getDuration() / 1000);
 					return templateStrings.loopTime.replace('${0}', time.toFixed(1));
 			}
 		}
 
 		if (currentAnimItem.hitInEffectBar(x, y)) {
-			const startTime = (currentAnimItem.getDelay() / 2026).toFixed(1);
-			const endTime = ((currentAnimItem.getDelay() + currentAnimItem.getDuration()) / 2026).toFixed(1);
+const startTime = (currentAnimItem.getDelay() / 1000).toFixed(1);
+const endTime = ((currentAnimItem.getDelay() + currentAnimItem.getDuration()) / 1000).toFixed(1);
 			const result = [
 				templateStrings.startTime.replace('${0}', startTime),
 				templateStrings.endTime.replace('${0}', endTime),
@@ -2619,8 +2619,8 @@
 	}
 	CAnimItem.prototype.handleMovement = function (x, y) {
 		const timeline = Asc.editor.WordControl.m_oAnimPaneApi.timeline.Control.timeline;
-		const timelineShift = this.ms_to_mm(timeline.getStartTime() * 2026);
-		const repeats = this.getRepeatCount() / 2026;
+const timelineShift = this.ms_to_mm(timeline.getStartTime() * 1000);
+const repeats = this.getRepeatCount() / 1000;
 
 		let pointOfLanding = x - this.getLeftBorder() + timelineShift;
 
@@ -2629,7 +2629,7 @@
 				const pointOfContact = this.ms_to_mm(this.effect.getFullDelay() + this.effect.asc_getDuration() * this.initialTmpRepeatCount / 2026);
 				let diff = this.mm_to_ms(pointOfLanding - pointOfContact);
 
-				const newTmpRepeatCount = this.initialTmpRepeatCount + diff / (this.effect.asc_getDuration() / 2026);
+const newTmpRepeatCount = this.initialTmpRepeatCount + diff / (this.effect.asc_getDuration() / 1000);
 				this.tmpRepeatCount = Math.max(newTmpRepeatCount, MIN_ALLOWED_REPEAT_COUNT);
 			} else {
 				const pointOfContact = this.ms_to_mm(this.effect.getFullDelay() + this.effect.asc_getDuration() * repeats);
@@ -2679,7 +2679,7 @@
 	CAnimItem.prototype.handleTimelineScroll = function (step) {
 		if (!this.hitResult) { return }
 
-		const repeats = this.getRepeatCount() / 2026;
+const repeats = this.getRepeatCount() / 1000;
 		const diff = this.mm_to_ms(step);
 		let newTmpDelay;
 		let newTmpDuration;
@@ -2692,7 +2692,7 @@
 
 			case 'right':
 				if (this.effect.isUntilEffect()) {
-					newTmpRepeatCount = this.tmpRepeatCount + diff / (this.effect.asc_getDuration() / 2026);
+newTmpRepeatCount = this.tmpRepeatCount + diff / (this.effect.asc_getDuration() / 1000);
 					this.tmpRepeatCount = Math.max(newTmpRepeatCount, MIN_ALLOWED_REPEAT_COUNT);
 				} else {
 					newTmpDuration = this.tmpDuration + diff / repeats;
@@ -2728,13 +2728,13 @@
 		if (nMilliseconds === null || nMilliseconds === undefined) { return }
 
 		const index = Asc.editor.WordControl.m_oAnimPaneApi.timeline.Control.timeline.timeScaleIndex;
-		return nMilliseconds * TIME_INTERVALS[index] / TIME_SCALES[index] / 2026;
+return nMilliseconds * TIME_INTERVALS[index] / TIME_SCALES[index] / 1000;
 	};
 	CAnimItem.prototype.mm_to_ms = function (nMillimeters) {
 		if (nMillimeters === null || nMillimeters === undefined) { return }
 
 		const index = Asc.editor.WordControl.m_oAnimPaneApi.timeline.Control.timeline.timeScaleIndex;
-		return nMillimeters / TIME_INTERVALS[index] * TIME_SCALES[index] * 2026;
+return nMillimeters / TIME_INTERVALS[index] * TIME_SCALES[index] * 1000;
 	};
 
 	CAnimItem.prototype.getDelay = function () {
@@ -2750,7 +2750,7 @@
 			const bounds = this.getEffectBarBounds();
 			const width = bounds.r - bounds.l;
 			const totalWidth = this.getRightBorder() - bounds.l;
-			return (totalWidth / width * 2026) >> 0; // approximate repeat counter
+return (totalWidth / width * 1000) >> 0; // approximate repeat counter
 		}
 	}
 
@@ -2764,7 +2764,7 @@
 	}
 	CAnimItem.prototype.getEffectBarBounds = function () {
 		const timeline = Asc.editor.WordControl.m_oAnimPaneApi.timeline.Control.timeline;
-		const timelineShift = timeline.getStartTime() * 2026;
+const timelineShift = timeline.getStartTime() * 1000;
 
 		let l = this.ms_to_mm(this.getDelay()) + this.getLeftBorder() - this.ms_to_mm(timelineShift);
 
@@ -2873,7 +2873,7 @@
 
 				const barWidth = Math.max(this.getRightBorder() - bounds.l - EFFECT_BAR_HEIGHT, this.ms_to_mm(MIN_ALLOWED_DURATION));
 				// repeats = barWidth / (bounds.r - bounds.l);
-				repeats = this.getRepeatCount() / 2026;
+repeats = this.getRepeatCount() / 1000;
 
 				let transform = graphics.m_oFullTransform;
 				let left = (transform.TransformPointX(bounds.l, bounds.t) + 0.5) >> 0;
@@ -2901,7 +2901,7 @@
 			} else {
 				// In case we need to draw a bar
 
-				repeats = this.getRepeatCount() / 2026;
+repeats = this.getRepeatCount() / 1000;
 				const barWidth = (bounds.r - bounds.l) * repeats;
 				graphics.rect(bounds.l, bounds.t, barWidth, bounds.b - bounds.t);
 
@@ -2929,7 +2929,7 @@
 		if (isOutOfBorders) { return null; }
 
 		const width = bounds.r - bounds.l;
-		const repeats = this.getRepeatCount() / 2026;
+const repeats = this.getRepeatCount() / 1000;
 		const delta = AscFormat.DIST_HIT_IN_LINE / 2
 
 		let barRight = this.effect.isUntilEffect() ? this.getRightBorder() : bounds.l + width * repeats;

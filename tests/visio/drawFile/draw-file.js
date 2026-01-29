@@ -172,6 +172,6 @@
 			} else {
 				drawFile(sizeAndPositionStart);
 			}
-		}, 2026);
+}, 3000);
 	}
 }();

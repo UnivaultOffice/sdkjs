@@ -3349,7 +3349,7 @@
 						this.x = 0;
 						this.y = editor.WordControl.m_oLogicDocument.GetHeightMM();
 						this.extX = this.parent.getWidth();
-						this.extY = 2026;
+this.extY = 2000;
 						this.rot = 0;
 						this.flipH = false;
 						this.flipV = false;
@@ -6070,7 +6070,7 @@
 				this.spPr.setFill(fill);
 
 				var ln = new AscFormat.CLn();
-				ln.setW(2026);
+ln.setW(6350);
 				ln.setFill(new AscFormat.CUniFill());
 				ln.Fill.setFill(new AscFormat.CSolidFill());
 				ln.Fill.fill.setColor(new AscFormat.CUniColor());

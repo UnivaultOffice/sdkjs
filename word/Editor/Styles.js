@@ -3278,7 +3278,7 @@ CStyle.prototype =
         {
             Color: { r: 0, g: 0, b: 0 },
             Value: border_Single,
-            Size: 0.2026 * g_dKoef_pt_to_mm,
+Size: 0.5001 * g_dKoef_pt_to_mm,
             Space: 0,
             Unifill: CellShd1.Unifill
         };
@@ -6716,15 +6716,15 @@ CStyle.prototype.CreateTOC = function(nLvl, nType)
 		else if (3 === nLvl)
 			ParaPr.Ind.Left = 850 / 20 * g_dKoef_pt_to_mm;
 		else if (4 === nLvl)
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1134 / 20 * g_dKoef_pt_to_mm;
 		else if (5 === nLvl)
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1417 / 20 * g_dKoef_pt_to_mm;
 		else if (6 === nLvl)
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1701 / 20 * g_dKoef_pt_to_mm;
 		else if (7 === nLvl)
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1984 / 20 * g_dKoef_pt_to_mm;
 		else if (8 === nLvl)
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 2268 / 20 * g_dKoef_pt_to_mm;
 	}
 	else if (Asc.c_oAscTOCStylesType.Standard === nType)
 	{
@@ -6763,27 +6763,27 @@ CStyle.prototype.CreateTOC = function(nLvl, nType)
 		}
 		else if (4 === nLvl)
 		{
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1134 / 20 * g_dKoef_pt_to_mm;
 			TextPr.FontSize = 11;
 		}
 		else if (5 === nLvl)
 		{
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1417 / 20 * g_dKoef_pt_to_mm;
 			TextPr.FontSize = 11;
 		}
 		else if (6 === nLvl)
 		{
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1701 / 20 * g_dKoef_pt_to_mm;
 			TextPr.FontSize = 11;
 		}
 		else if (7 === nLvl)
 		{
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1984 / 20 * g_dKoef_pt_to_mm;
 			TextPr.FontSize = 11;
 		}
 		else if (8 === nLvl)
 		{
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 2268 / 20 * g_dKoef_pt_to_mm;
 			TextPr.FontSize = 11;
 		}
 	}
@@ -6884,19 +6884,19 @@ CStyle.prototype.CreateTOC = function(nLvl, nType)
 		}
 		else if (5 === nLvl)
 		{
-			ParaPr.Ind.FirstLine = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.FirstLine = 1134 / 20 * g_dKoef_pt_to_mm;
 		}
 		else if (6 === nLvl)
 		{
-			ParaPr.Ind.FirstLine = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.FirstLine = 1417 / 20 * g_dKoef_pt_to_mm;
 		}
 		else if (7 === nLvl)
 		{
-			ParaPr.Ind.FirstLine = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.FirstLine = 1701 / 20 * g_dKoef_pt_to_mm;
 		}
 		else if (8 === nLvl)
 		{
-			ParaPr.Ind.FirstLine = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.FirstLine = 1984 / 20 * g_dKoef_pt_to_mm;
 		}
 	}
 	else if (Asc.c_oAscTOCStylesType.Web === nType)
@@ -6931,23 +6931,23 @@ CStyle.prototype.CreateTOC = function(nLvl, nType)
 		}
 		else if (4 === nLvl)
 		{
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1134 / 20 * g_dKoef_pt_to_mm;
 		}
 		else if (5 === nLvl)
 		{
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1417 / 20 * g_dKoef_pt_to_mm;
 		}
 		else if (6 === nLvl)
 		{
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1701 / 20 * g_dKoef_pt_to_mm;
 		}
 		else if (7 === nLvl)
 		{
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 1984 / 20 * g_dKoef_pt_to_mm;
 		}
 		else if (8 === nLvl)
 		{
-			ParaPr.Ind.Left = 2026 / 20 * g_dKoef_pt_to_mm;
+ParaPr.Ind.Left = 2268 / 20 * g_dKoef_pt_to_mm;
 		}
 	}
 
@@ -11279,25 +11279,25 @@ CTablePr.prototype.Write_ToBinary = function(Writer)
 	if (undefined != this.TableCellMar.Bottom)
 	{
 		this.TableCellMar.Bottom.Write_ToBinary(Writer);
-		Flags |= 2026;
+Flags |= 1024;
 	}
 
 	if (undefined != this.TableCellMar.Left)
 	{
 		this.TableCellMar.Left.Write_ToBinary(Writer);
-		Flags |= 2026;
+Flags |= 2048;
 	}
 
 	if (undefined != this.TableCellMar.Right)
 	{
 		this.TableCellMar.Right.Write_ToBinary(Writer);
-		Flags |= 2026;
+Flags |= 4096;
 	}
 
 	if (undefined != this.TableCellMar.Top)
 	{
 		this.TableCellMar.Top.Write_ToBinary(Writer);
-		Flags |= 2026;
+Flags |= 8192;
 	}
 
 	if (undefined != this.TableCellSpacing)
@@ -11411,25 +11411,25 @@ CTablePr.prototype.Read_FromBinary = function(Reader)
 		this.TableBorders.InsideV.Read_FromBinary(Reader);
 	}
 
-	if (2026 & Flags)
+if (1024 & Flags)
 	{
 		this.TableCellMar.Bottom = new CTableMeasurement(tblwidth_Auto, 0);
 		this.TableCellMar.Bottom.Read_FromBinary(Reader);
 	}
 
-	if (2026 & Flags)
+if (2048 & Flags)
 	{
 		this.TableCellMar.Left = new CTableMeasurement(tblwidth_Auto, 0);
 		this.TableCellMar.Left.Read_FromBinary(Reader);
 	}
 
-	if (2026 & Flags)
+if (4096 & Flags)
 	{
 		this.TableCellMar.Right = new CTableMeasurement(tblwidth_Auto, 0);
 		this.TableCellMar.Right.Read_FromBinary(Reader);
 	}
 
-	if (2026 & Flags)
+if (8192 & Flags)
 	{
 		this.TableCellMar.Top = new CTableMeasurement(tblwidth_Auto, 0);
 		this.TableCellMar.Top.Read_FromBinary(Reader);
@@ -12209,25 +12209,25 @@ CTableCellPr.prototype.Write_ToBinary = function(Writer)
 	if (undefined != this.TableCellBorders.Right)
 	{
 		this.TableCellBorders.Right.Write_ToBinary(Writer);
-		Flags |= 2026;
+Flags |= 1024;
 	}
 
 	if (undefined != this.TableCellBorders.Top)
 	{
 		this.TableCellBorders.Top.Write_ToBinary(Writer);
-		Flags |= 2026;
+Flags |= 2048;
 	}
 
 	if (undefined != this.TableCellW)
 	{
 		this.TableCellW.Write_ToBinary(Writer);
-		Flags |= 2026;
+Flags |= 4096;
 	}
 
 	if (undefined != this.VAlign)
 	{
 		Writer.WriteLong(this.VAlign);
-		Flags |= 2026;
+Flags |= 8192;
 	}
 
 	if (undefined != this.VMerge)
@@ -12321,25 +12321,25 @@ CTableCellPr.prototype.Read_FromBinary = function(Reader)
 		this.TableCellBorders.Left.Read_FromBinary(Reader);
 	}
 
-	if (2026 & Flags)
+if (1024 & Flags)
 	{
 		this.TableCellBorders.Right = new CDocumentBorder();
 		this.TableCellBorders.Right.Read_FromBinary(Reader);
 	}
 
-	if (2026 & Flags)
+if (2048 & Flags)
 	{
 		this.TableCellBorders.Top = new CDocumentBorder();
 		this.TableCellBorders.Top.Read_FromBinary(Reader);
 	}
 
-	if (2026 & Flags)
+if (4096 & Flags)
 	{
 		this.TableCellW = new CTableMeasurement(tblwidth_Auto, 0);
 		this.TableCellW.Read_FromBinary(Reader);
 	}
 
-	if (2026 & Flags)
+if (8192 & Flags)
 		this.VAlign = Reader.GetLong();
 
 	if (16384 & Flags)
@@ -13986,25 +13986,25 @@ CTextPr.prototype.Write_ToBinary = function(Writer)
 	if (undefined != this.Spacing)
 	{
 		Writer.WriteDouble(this.Spacing);
-		Flags |= 2026;
+Flags |= 1024;
 	}
 
 	if (undefined != this.DStrikeout)
 	{
 		Writer.WriteBool(this.DStrikeout);
-		Flags |= 2026;
+Flags |= 2048;
 	}
 
 	if (undefined != this.Caps)
 	{
 		Writer.WriteBool(this.Caps);
-		Flags |= 2026;
+Flags |= 4096;
 	}
 
 	if (undefined != this.SmallCaps)
 	{
 		Writer.WriteBool(this.SmallCaps);
-		Flags |= 2026;
+Flags |= 8192;
 	}
 
 	if (undefined != this.Position)
@@ -14176,19 +14176,19 @@ CTextPr.prototype.Read_FromBinary = function(Reader)
 		this.RStyle = Reader.GetString2();
 
 	// Spacing
-	if (Flags & 2026)
+if (Flags & 1024)
 		this.Spacing = Reader.GetDouble();
 
 	// DStrikeout
-	if (Flags & 2026)
+if (Flags & 2048)
 		this.DStrikeout = Reader.GetBool();
 
 	// Caps
-	if (Flags & 2026)
+if (Flags & 4096)
 		this.Caps = Reader.GetBool();
 
 	// SmallCaps
-	if (Flags & 2026)
+if (Flags & 8192)
 		this.SmallCaps = Reader.GetBool();
 
 	// Position
@@ -16119,25 +16119,25 @@ CFramePr.prototype =
 		if (undefined != this.XAlign)
 		{
 			Writer.WriteLong(this.XAlign);
-			Flags |= 2026;
+Flags |= 1024;
 		}
 
 		if (undefined != this.Y)
 		{
 			Writer.WriteDouble(this.Y);
-			Flags |= 2026;
+Flags |= 2048;
 		}
 
 		if (undefined != this.YAlign)
 		{
 			Writer.WriteLong(this.YAlign);
-			Flags |= 2026;
+Flags |= 4096;
 		}
 
 		if (undefined !== this.Wrap)
 		{
 			Writer.WriteLong(this.Wrap);
-			Flags |= 2026;
+Flags |= 8192;
 		}
 
 		var EndPos = Writer.GetCurPosition();
@@ -16180,16 +16180,16 @@ CFramePr.prototype =
 		if (Flags & 512)
 			this.X = Reader.GetDouble();
 
-		if (Flags & 2026)
+if (Flags & 1024)
 			this.XAlign = Reader.GetLong();
 
-		if (Flags & 2026)
+if (Flags & 2048)
 			this.Y = Reader.GetDouble();
 
-		if (Flags & 2026)
+if (Flags & 4096)
 			this.YAlign = Reader.GetLong();
 
-		if (Flags & 2026)
+if (Flags & 8192)
 			this.Wrap = Reader.GetLong();
 	},
 
@@ -17075,25 +17075,25 @@ CParaPr.prototype.Write_ToBinary = function(Writer)
 	if (undefined != this.Brd.Left)
 	{
 		this.Brd.Left.Write_ToBinary(Writer);
-		Flags |= 2026;
+Flags |= 1024;
 	}
 
 	if (undefined != this.Brd.Right)
 	{
 		this.Brd.Right.Write_ToBinary(Writer);
-		Flags |= 2026;
+Flags |= 2048;
 	}
 
 	if (undefined != this.Brd.Top)
 	{
 		this.Brd.Top.Write_ToBinary(Writer);
-		Flags |= 2026;
+Flags |= 4096;
 	}
 
 	if (undefined != this.WidowControl)
 	{
 		Writer.WriteBool(this.WidowControl);
-		Flags |= 2026;
+Flags |= 8192;
 	}
 
 	if (undefined != this.Tabs)
@@ -17223,25 +17223,25 @@ CParaPr.prototype.Read_FromBinary = function(Reader)
 		this.Brd.Bottom.Read_FromBinary(Reader);
 	}
 
-	if (Flags & 2026)
+if (Flags & 1024)
 	{
 		this.Brd.Left = new CDocumentBorder();
 		this.Brd.Left.Read_FromBinary(Reader);
 	}
 
-	if (Flags & 2026)
+if (Flags & 2048)
 	{
 		this.Brd.Right = new CDocumentBorder();
 		this.Brd.Right.Read_FromBinary(Reader);
 	}
 
-	if (Flags & 2026)
+if (Flags & 4096)
 	{
 		this.Brd.Top = new CDocumentBorder();
 		this.Brd.Top.Read_FromBinary(Reader);
 	}
 
-	if (Flags & 2026)
+if (Flags & 8192)
 		this.WidowControl = Reader.GetBool();
 
 	if (Flags & 16384)

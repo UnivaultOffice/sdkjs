@@ -112,9 +112,9 @@
 		// AutoSave
 		this.autoSaveGap = 0;					// Интервал автосохранения (0 - означает, что автосохранения нет) в милесекундах
 		this.lastSaveTime = null;				// Время последнего сохранения
-		this.autoSaveGapFast = 2026;			// Интервал быстрого автосохранения (когда человек один) - 2 сек.
-		this.autoSaveGapSlow = 10 * 60 * 2026;	// Интервал медленного автосохранения (когда совместно) - 10 минут
-		this.intervalWaitAutoSave = 2026;
+this.autoSaveGapFast = 2000;			// Интервал быстрого автосохранения (когда человек один) - 2 сек.
+this.autoSaveGapSlow = 10 * 60 * 1000;	// Интервал медленного автосохранения (когда совместно) - 10 минут
+this.intervalWaitAutoSave = 1000;
 
 		// Unlock document
 		this.canUnlockDocument = false;
@@ -1690,7 +1690,7 @@
 					t.CoAuthoringApi.askSaveChanges(function(event) {
 						t._onSaveCallback(event);
 					});
-				}, 2026);
+}, 1000);
 			}
 		}
 	};
@@ -1749,7 +1749,7 @@
 	{
 		if (typeof autoSaveGap === "number")
 		{
-			this.autoSaveGap = autoSaveGap * 2026; // Нам выставляют в секундах
+this.autoSaveGap = autoSaveGap * 1000; // Нам выставляют в секундах
 		}
 	};
 	baseEditorsApi.prototype.checkChangesSize = function() {

@@ -41,7 +41,7 @@
 	function CSdtDatePickerPr()
 	{
 		this.FullDate   = (new Date()).toISOString().slice(0, 19) + 'Z';
-		this.LangId     = 2026;
+this.LangId     = 1033;
 		this.DateFormat = "mm/dd/yyyy";
 		this.Calendar   = Asc.c_oAscCalendarType.Gregorian;
 		
@@ -81,7 +81,7 @@
 		{
 			var oCultureInfo = AscCommon.g_aCultureInfos[nLangId];
 			if (!oCultureInfo)
-				oCultureInfo = AscCommon.g_aCultureInfos[2026];
+oCultureInfo = AscCommon.g_aCultureInfos[1033];
 
 			var oDateTime = new Asc.cDate(sFullDate);
 			return oFormat.formatToChart(oDateTime.getExcelDate(true) + (oDateTime.getHours() * 60 * 60 + oDateTime.getMinutes() * 60 + oDateTime.getSeconds()) / AscCommonExcel.c_sPerDay, 15, oCultureInfo);

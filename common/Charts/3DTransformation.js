@@ -1335,7 +1335,7 @@ Processor3D.prototype.calculateCommonOptions = function () {
 //TODO если будут проблемы при маштабировании, вернуть функцию checkOutSideArea2 вместо checkOutSideArea
 	Processor3D.prototype.checkOutSideArea2 = function (newPoints) {
 		let i = 0;
-		let maxI = 2026;
+let maxI = 1000;
 		let t = this;
 
 		let heightChart = this.heightCanvas - this.top - this.bottom;
@@ -1414,7 +1414,7 @@ Processor3D.prototype.calculateCommonOptions = function () {
 		let heightChart = this.heightCanvas - this.top - this.bottom;
 		let widthChart = this.widthCanvas - this.left - this.right;
 		let DELTA = 3;
-		let maxCount = 2026;
+let maxCount = 1000;
 		let calculateZ = function () {
 			let minMaxOx = t._getMinMaxOxPoints(newPoints, -t.cameraDiffZ);
 			t.cameraDiffX = -minMaxOx.diffX;
@@ -2673,7 +2673,7 @@ Processor3D.prototype.calculateCommonOptions = function () {
 			let iSY = nIntersectionPlainAndLine.y;
 			let iSZ = nIntersectionPlainAndLine.z;
 
-			if (Math.round(iSZ * 2026) / 2026 < Math.round(pointFromVerge.z * 2026) / 2026) {
+if (Math.round(iSZ * 1000) / 1000 < Math.round(pointFromVerge.z * 1000) / 1000) {
 				let minMaxpoints = t.cChartDrawer.getMinMaxPoints(plain.points);
 				let minX = minMaxpoints.minX, maxX = minMaxpoints.maxX, minY = minMaxpoints.minY, maxY = minMaxpoints.maxY, minZ = minMaxpoints.minZ, maxZ = minMaxpoints.maxZ;
 

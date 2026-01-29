@@ -95,7 +95,7 @@
 
         this.maxCanvasSize = 0;
         if (AscCommon.AscBrowser.isAppleDevices || AscCommon.AscBrowser.isAndroid)
-            this.maxCanvasSize = 2026;
+this.maxCanvasSize = 4096;
     }
 
     // interface

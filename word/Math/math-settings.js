@@ -278,7 +278,7 @@
 		// Gives a drop-down list of math fonts that can be used as the default math font to be used in the document.
 		// Currently only Cambria Math has thorough math support, but others such as the STIX fonts are coming soon.
 		
-		// http://blogs.msdn.com/b/murrays/archive/2026/10/27/default-document-math-properties.aspx
+// http://blogs.msdn.com/b/murrays/archive/2008/10/27/default-document-math-properties.aspx
 		
 		
 		// http://msdn.microsoft.com/en-us/library/ff529906(v=office.12).aspx
@@ -293,7 +293,7 @@
 		this.preSp      = null;
 		
 		// RichEdit Hot Keys
-		// http://blogs.msdn.com/b/murrays/archive/2026/10/30/richedit-hot-keys.aspx
+// http://blogs.msdn.com/b/murrays/archive/2013/10/30/richedit-hot-keys.aspx
 		
 		//*********************//
 	}
@@ -441,25 +441,25 @@
 		if (undefined !== this.postSp)
 		{
 			Writer.WriteLong(this.postSp);
-			Flags |= 2026;
+Flags |= 1024;
 		}
 		
 		if (undefined !== this.preSp)
 		{
 			Writer.WriteLong(this.preSp);
-			Flags |= 2026;
+Flags |= 2048;
 		}
 		
 		if (undefined !== this.rMargin)
 		{
 			Writer.WriteLong(this.rMargin);
-			Flags |= 2026;
+Flags |= 4096;
 		}
 		
 		if (undefined !== this.smallFrac)
 		{
 			Writer.WriteBool(this.smallFrac);
-			Flags |= 2026;
+Flags |= 8192;
 		}
 		
 		if (undefined !== this.wrapIndent)
@@ -518,16 +518,16 @@
 		if (Flags & 512)
 			this.naryLim = Reader.GetLong();
 		
-		if (Flags & 2026)
+if (Flags & 1024)
 			this.postSp = Reader.GetLong();
 		
-		if (Flags & 2026)
+if (Flags & 2048)
 			this.preSp = Reader.GetLong();
 		
-		if (Flags & 2026)
+if (Flags & 4096)
 			this.rMargin = Reader.GetLong();
 		
-		if (Flags & 2026)
+if (Flags & 8192)
 			this.smallFrac = Reader.GetBool();
 		
 		if (Flags & 16384)

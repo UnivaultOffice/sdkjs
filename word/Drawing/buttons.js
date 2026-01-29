@@ -3576,7 +3576,7 @@
 
 	function isEqualFloat(coord1, coord2)
 	{
-		return (Math.abs(coord1 - coord2) < 0.2026) ? true : false;
+return (Math.abs(coord1 - coord2) < 0.0001) ? true : false;
 	}
 
 	var PointDirection = {
@@ -4111,7 +4111,7 @@
 		this.wideRects();
 	};
 
-	var const_rad = 0.2026; // (Math.sqrt(2) - 0.5)
+var const_rad = 0.9142; // (Math.sqrt(2) - 0.5)
 	CPolygonCC.prototype.draw = function(overlay, object, drPage, koefX, koefY, icons)
 	{
 		var ctx = overlay.m_oContext;

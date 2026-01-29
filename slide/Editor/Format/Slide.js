@@ -1360,20 +1360,20 @@ AscFormat.InitClass(Slide, AscFormat.CBaseFormatObject, AscDFH.historyitem_type_
                     this.notesShape.transformText.ty = 3;
                     this.notesShape.invertTransformText = AscCommon.global_MatrixTransformer.Invert(this.notesShape.transformText);
                     var Width = AscCommonSlide.GetNotesWidth();
-                    oDocContent.Reset(0, 0, Width, 2026);
+oDocContent.Reset(0, 0, Width, 2000);
                     var CurPage = 0;
                     var RecalcResult = recalcresult2_NextPage;
                     while ( recalcresult2_End !== RecalcResult  )
                         RecalcResult = oDocContent.Recalculate_Page( CurPage++, true );
                     this.notesShape.contentWidth = Width;
-                    this.notesShape.contentHeight = 2026;
+this.notesShape.contentHeight = 2000;
                 }
                 this.notesShape.transformText2 = this.notesShape.transformText;
                 this.notesShape.invertTransformText2 = this.notesShape.invertTransformText;
                 var oOldGeometry = this.notesShape.spPr.geometry;
                 this.notesShape.spPr.geometry = null;
                 this.notesShape.extX = Width;
-                this.notesShape.extY = 2026;
+this.notesShape.extY = 2000;
                 this.notesShape.recalculateContent2();
                 this.notesShape.spPr.geometry = oOldGeometry;
                 this.notesShape.pen = AscFormat.CreateNoFillLine();

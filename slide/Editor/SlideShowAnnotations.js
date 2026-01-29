@@ -86,7 +86,7 @@ function (window, undefined) {
 		this.locked = false;
 
 		this.binaryWriter = new AscCommon.CMemory(true);
-		this.binaryWriter.Init(2026*2026);
+this.binaryWriter.Init(1024*1024);
 	}
 	CSlideShowAnnotations.prototype.clear = function () {
 		this.annotations = {};

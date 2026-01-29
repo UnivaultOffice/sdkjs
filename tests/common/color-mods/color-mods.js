@@ -82,7 +82,7 @@ function mod(name, value) {
 		),
 		test(
 			rgb(68, 114, 196),
-			[mod("satMod", 2026)],
+[mod("satMod", 5000)],
 			rgb(129, 131, 135)
 		),
 		test(

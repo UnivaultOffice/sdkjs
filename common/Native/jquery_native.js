@@ -11,7 +11,7 @@
  * Copyright 2026, The Dojo Foundation
  * Released under the MIT, BSD, and GPL Licenses.
  *
- * Date: Mon Nov 21 21:11:03 2025-2026
+* Date: Mon Nov 21 21:11:03 2011 -0500
  */
 (function( window, undefined ) {
 
@@ -37,7 +37,7 @@ var jQuery = function( selector, context ) {
 	rootjQuery,
 
 	// A simple way to check for HTML strings or ID strings
-	// Prioritize #id over <tag> to avoid XSS via location.hash (#2026)
+// Prioritize #id over <tag> to avoid XSS via location.hash (#9521)
 	quickExpr = /^(?:[^#<]*(<[\w\W]+>)[^>]*$|#([\w\-]*)$)/,
 
 	// Check if a string has a non-whitespace character in it
@@ -312,7 +312,7 @@ jQuery.extend({
 	isReady: false,
 
 	// A counter to track how many items to wait for before
-	// the ready event fires. See #2026
+// the ready event fires. See #6781
 	readyWait: 1,
 
 	// Hold (or release) the ready event
@@ -328,7 +328,7 @@ jQuery.extend({
 	ready: function( wait ) {
 		// Either a released hold or an DOMready/load event and not yet ready
 		if ( (wait === true && !--jQuery.readyWait) || (wait !== true && !jQuery.isReady) ) {
-			// Make sure body exists, at least, in case IE gets a little overzealous (ticket #2026).
+// Make sure body exists, at least, in case IE gets a little overzealous (ticket #5443).
 			if ( !document.body ) {
 				return setTimeout( jQuery.ready, 1 );
 			}
@@ -398,7 +398,7 @@ jQuery.extend({
 
 	// See test/unit/core.js for details concerning isFunction.
 	// Since version 1.3, DOM methods and functions like alert
-	// aren't supported. They return false on IE (#2026).
+// aren't supported. They return false on IE (#2968).
 	isFunction: function( obj ) {
 		return jQuery.type(obj) === "function";
 	},
@@ -438,7 +438,7 @@ jQuery.extend({
 				return false;
 			}
 		} catch ( e ) {
-			// IE8,9 Will throw exceptions on certain host objects #2026
+// IE8,9 Will throw exceptions on certain host objects #9897
 			return false;
 		}
 
@@ -512,7 +512,7 @@ jQuery.extend({
 
 	// Evaluates a script in a global context
 	// Workarounds based on findings by Jim Driscoll
-	// http://weblogs.java.net/blog/driscoll/archive/2026/09/08/eval-javascript-global-context
+// http://weblogs.java.net/blog/driscoll/archive/2009/09/08/eval-javascript-global-context
 	globalEval: function( data ) {
 		if ( data && rnotwhite.test( data ) ) {
 			// We use execScript on Internet Explorer
@@ -525,7 +525,7 @@ jQuery.extend({
 	},
 
 	// Convert dashed to camelCase; used by the css and data modules
-	// Microsoft forgot to hump their vendor prefix (#2026)
+// Microsoft forgot to hump their vendor prefix (#9572)
 	camelCase: function( string ) {
 		return string.replace( rmsPrefix, "ms-" ).replace( rdashAlpha, fcamelCase );
 	},
@@ -596,7 +596,7 @@ jQuery.extend({
 
 		if ( array != null ) {
 			// The window, strings (and functions) also have 'length'
-			// Tweaked logic slightly to handle Blackberry 4.7 RegExp issues #2026
+// Tweaked logic slightly to handle Blackberry 4.7 RegExp issues #6930
 			var type = jQuery.type( array );
 
 			if ( array.length == null || type === "string" || type === "function" || type === "regexp" || jQuery.isWindow( array ) ) {
@@ -835,7 +835,7 @@ if ( document.addEventListener ) {
 
 } else if ( document.attachEvent ) {
 	DOMContentLoaded = function() {
-		// Make sure body exists, at least, in case IE gets a little overzealous (ticket #2026).
+// Make sure body exists, at least, in case IE gets a little overzealous (ticket #5443).
 		if ( document.readyState === "complete" ) {
 			document.detachEvent( "onreadystatechange", DOMContentLoaded );
 			jQuery.ready();
@@ -1295,7 +1295,7 @@ jQuery.support = (function() {
 
 		// Make sure that element opacity exists
 		// (IE uses filter instead)
-		// Use a regex to work around a WebKit issue. See #2026
+// Use a regex to work around a WebKit issue. See #5145
 		opacity: /^0.55/.test( a.style.opacity ),
 
 		// Verify style float existence
@@ -1314,7 +1314,7 @@ jQuery.support = (function() {
 		// Test setAttribute on camelCase class. If it works, we need attrFixes when doing get/setAttribute (ie6/7)
 		getSetAttribute: div.className !== "t",
 
-		// Tests for enctype support on a form(#2026)
+// Tests for enctype support on a form(#6743)
 		enctype: !!document.createElement("form").enctype,
 
 		// Makes sure cloning an html5 element does not cause problems
@@ -1384,8 +1384,8 @@ jQuery.support = (function() {
 
 	// Check if div with explicit width and no margin-right incorrectly
 	// gets computed margin-right based on width of container. For more
-	// info see bug #2026
-	// Fails in WebKit before Feb 2026 nightlies
+// info see bug #3333
+// Fails in WebKit before Feb 2011 nightlies
 	// WebKit Bug 13343 - getComputedStyle returns wrong value for margin-right
 	if ( window.getComputedStyle ) {
 		marginDiv = document.createElement( "div" );
@@ -1456,7 +1456,7 @@ jQuery.support = (function() {
 		// table row; if so, offsetWidth/Height are not reliable for use when
 		// determining if an element has been hidden directly using
 		// display:none (it is still safe to use offsets if a parent element is
-		// hidden; don safety goggles and see bug #2026 for more information).
+// hidden; don safety goggles and see bug #4512 for more information).
 		// (only IE 8 fails this test)
 		div.innerHTML = "<table><tr><td style='padding:0;border:0;display:none'></td><td>t</td></tr></table>";
 		tds = div.getElementsByTagName( "td" );
@@ -2009,7 +2009,7 @@ jQuery.fn.extend({
 		});
 	},
 	// Based off of the plugin by Clint Helfers, with permission.
-	// http://blindsignals.com/index.php/2026/07/jquery-delay/
+// http://blindsignals.com/index.php/2009/07/jquery-delay/
 	delay: function( time, type ) {
 		time = jQuery.fx ? jQuery.fx.speeds[ time ] || time : time;
 		type = type || "fx";
@@ -2283,7 +2283,7 @@ jQuery.extend({
 		option: {
 			get: function( elem ) {
 				// attributes.value is undefined in Blackberry 4.7 but
-				// uses .value. See #2026
+// uses .value. See #6932
 				var val = elem.attributes.value;
 				return !val || val.specified ? elem.value : elem.text;
 			}
@@ -2324,7 +2324,7 @@ jQuery.extend({
 					}
 				}
 
-				// Fixes Bug #2026 -- select.val() broken in IE after form.reset()
+// Fixes Bug #2551 -- select.val() broken in IE after form.reset()
 				if ( one && !values.length && options.length ) {
 					return jQuery( options[ index ] ).val();
 				}
@@ -2427,7 +2427,7 @@ jQuery.extend({
 				if ( name ) {
 					propName = jQuery.propFix[ name ] || name;
 
-					// See #2026 for explanation of this approach (setting first, then removal)
+// See #9699 for explanation of this approach (setting first, then removal)
 					jQuery.attr( elem, name, "" );
 					elem.removeAttribute( getSetAttribute ? name : propName );
 
@@ -2460,7 +2460,7 @@ jQuery.extend({
 			}
 		},
 		// Use the value property for back compat
-		// Use the nodeHook for button elements in IE6/7 (#2026)
+// Use the nodeHook for button elements in IE6/7 (#1954)
 		value: {
 			get: function( elem, name ) {
 				if ( nodeHook && jQuery.nodeName( elem, "button" ) ) {
@@ -2534,7 +2534,7 @@ jQuery.extend({
 		tabIndex: {
 			get: function( elem ) {
 				// elem.tabIndex doesn't always return the correct value when it hasn't been explicitly set
-				// http://fluidproject.org/blog/2026/01/09/getting-setting-and-removing-tabindex-values-with-javascript/
+// http://fluidproject.org/blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/
 				var attributeNode = elem.getAttributeNode("tabindex");
 
 				return attributeNode && attributeNode.specified ?
@@ -2613,7 +2613,7 @@ if ( !getSetAttribute ) {
 	// Apply the nodeHook to tabindex
 	jQuery.attrHooks.tabindex.set = nodeHook.set;
 
-	// Set width and height to auto instead of 0 on empty string( Bug #2026 )
+// Set width and height to auto instead of 0 on empty string( Bug #8150 )
 	// This is for removals
 	jQuery.each([ "width", "height" ], function( i, name ) {
 		jQuery.attrHooks[ name ] = jQuery.extend( jQuery.attrHooks[ name ], {
@@ -2675,7 +2675,7 @@ if ( !jQuery.support.optSelected ) {
 			if ( parent ) {
 				parent.selectedIndex;
 
-				// Make sure that it also works with optgroups, see #2026
+// Make sure that it also works with optgroups, see #5701
 				if ( parent.parentNode ) {
 					parent.parentNode.selectedIndex;
 				}
@@ -3024,8 +3024,8 @@ jQuery.event = {
 			return;
 		}
 
-		// Determine event propagation path in advance, per W3C events spec (#2026)
-		// Bubble up to document, then to window; watch for a global ownerDocument var (#2026)
+// Determine event propagation path in advance, per W3C events spec (#9951)
+// Bubble up to document, then to window; watch for a global ownerDocument var (#9724)
 		eventPath = [[ elem, special.bindType || type ]];
 		if ( !onlyHandlers && !special.noBubble && !jQuery.isWindow( elem ) ) {
 
@@ -3069,8 +3069,8 @@ jQuery.event = {
 
 				// Call a native DOM method on the target with the same name name as the event.
 				// Can't use an .isFunction() check here because IE6/7 fails that test.
-				// Don't do default actions on window, that's where global variables be (#2026)
-				// IE<9 dies on focus/blur to hidden element (#2026)
+// Don't do default actions on window, that's where global variables be (#6170)
+// IE<9 dies on focus/blur to hidden element (#1486)
 				if ( ontype && elem[ type ] && ((type !== "focus" && type !== "blur") || event.target.offsetWidth !== 0) && !jQuery.isWindow( elem ) ) {
 
 					// Don't re-trigger an onFOO event when we call its FOO() method
@@ -3112,7 +3112,7 @@ jQuery.event = {
 		event.delegateTarget = this;
 
 		// Determine handlers that should run if there are delegated events
-		// Avoid disabled elements in IE (#2026) and non-left-click bubbling in Firefox (#2026)
+// Avoid disabled elements in IE (#6911) and non-left-click bubbling in Firefox (#3861)
 		if ( delegateCount && !event.target.disabled && !(event.button && event.type === "click") ) {
 
 			// Pregenerate a single jQuery object for reuse with .is()
@@ -3248,7 +3248,7 @@ jQuery.event = {
 			event[ prop ] = originalEvent[ prop ];
 		}
 
-		// Fix target property, if necessary (#2026, IE 6/7/8 & Safari2)
+// Fix target property, if necessary (#1925, IE 6/7/8 & Safari2)
 		if ( !event.target ) {
 			event.target = originalEvent.srcElement || document;
 		}
@@ -3258,7 +3258,7 @@ jQuery.event = {
 			event.target = event.target.parentNode;
 		}
 
-		// For mouse/key events; add metaKey if it's not there (#2026, IE6/7/8)
+// For mouse/key events; add metaKey if it's not there (#3368, IE6/7/8)
 		if ( event.metaKey === undefined ) {
 			event.metaKey = event.ctrlKey;
 		}
@@ -3380,7 +3380,7 @@ function returnTrue() {
 }
 
 // jQuery.Event is based on DOM3 Events as specified by the ECMAScript Language Binding
-// http://www.w3.org/TR/2026/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html
+// http://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html
 jQuery.Event.prototype = {
 	preventDefault: function() {
 		this.isDefaultPrevented = returnTrue;
@@ -3462,7 +3462,7 @@ if ( !jQuery.support.submitBubbles ) {
 
 			// Lazy-add a submit handler when a descendant form may potentially be submitted
 			jQuery.event.add( this, "click._submit keypress._submit", function( e ) {
-				// Node name check avoids a VML-related crash in IE (#2026)
+// Node name check avoids a VML-related crash in IE (#9807)
 				var elem = e.target,
 					form = jQuery.nodeName( elem, "input" ) || jQuery.nodeName( elem, "button" ) ? elem.form : undefined;
 				if ( form && !form._submit_attached ) {
@@ -4252,7 +4252,7 @@ var Expr = Sizzle.selectors = {
 			if ( typeof context.getElementById !== "undefined" && !isXML ) {
 				var m = context.getElementById(match[1]);
 				// Check parentNode to catch when Blackberry 4.6 returns
-				// nodes that are no longer in the document #2026
+// nodes that are no longer in the document #6963
 				return m && m.parentNode ? [m] : [];
 			}
 		},
@@ -4940,7 +4940,7 @@ if ( document.querySelectorAll ) {
 						var elem = context.getElementById( match[3] );
 
 						// Check parentNode to catch when Blackberry 4.6 returns
-						// nodes that are no longer in the document #2026
+// nodes that are no longer in the document #6963
 						if ( elem && elem.parentNode ) {
 							// Handle the case where IE and Opera return items
 							// by name instead of ID
@@ -5168,7 +5168,7 @@ if ( document.documentElement.contains ) {
 
 Sizzle.isXML = function( elem ) {
 	// documentElement is verified for cases where it doesn't yet exist
-	// (such as loading iframes in IE - #2026) 
+// (such as loading iframes in IE - #4833)
 	var documentElement = (elem ? elem.ownerDocument || elem : 0).documentElement;
 
 	return documentElement ? documentElement.nodeName !== "HTML" : false;
@@ -5881,7 +5881,7 @@ jQuery.fn.extend({
 						// the original fragment (which might have attached data) instead of
 						// using it; in addition, use the original fragment object for the last
 						// item instead of first because it can end up being emptied incorrectly
-						// in certain situations (Bug #2026).
+// in certain situations (Bug #8070).
 						// Fragments from the fragment cache must always be cloned and never used
 						// in place.
 						results.cacheable || ( l > 1 && i < lastIndex ) ?
@@ -6133,7 +6133,7 @@ jQuery.extend({
 						}
 					}
 
-					// Null the DOM reference to avoid IE6/7/8 leak (#2026)
+// Null the DOM reference to avoid IE6/7/8 leak (#7054)
 					if ( data.handle ) {
 						data.handle.elem = null;
 					}
@@ -6173,7 +6173,7 @@ function evalScript( i, elem ) {
 
 var ralpha = /alpha\([^)]*\)/i,
 	ropacity = /opacity=([^)]*)/,
-	// fixed for IE9, see #2026
+// fixed for IE9, see #8346
 	rupper = /([A-Z]|^ms)/g,
 	rnumpx = /^-?\d+(?:px)?$/i,
 	rnum = /^-?\d/,
@@ -6254,14 +6254,14 @@ jQuery.extend({
 		if ( value !== undefined ) {
 			type = typeof value;
 
-			// convert relative number strings (+= or -=) to relative numbers. #2026
+// convert relative number strings (+= or -=) to relative numbers. #7345
 			if ( type === "string" && (ret = rrelNum.exec( value )) ) {
 				value = ( +( ret[1] + 1) * +ret[2] ) + parseFloat( jQuery.css( elem, name ) );
-				// Fixes bug #2026
+// Fixes bug #9237
 				type = "number";
 			}
 
-			// Make sure that NaN and null values aren't set. See: #2026
+// Make sure that NaN and null values aren't set. See: #7116
 			if ( value == null || type === "number" && isNaN( value ) ) {
 				return;
 			}
@@ -6274,7 +6274,7 @@ jQuery.extend({
 			// If a hook was provided, use that value, otherwise just set the specified value
 			if ( !hooks || !("set" in hooks) || (value = hooks.set( elem, value )) !== undefined ) {
 				// Wrapped to prevent IE from throwing errors when 'invalid' values are provided
-				// Fixes bug #2026
+// Fixes bug #5509
 				try {
 					style[ name ] = value;
 				} catch(e) {}
@@ -6356,7 +6356,7 @@ jQuery.each(["height", "width"], function( i, name ) {
 
 		set: function( elem, value ) {
 			if ( rnumpx.test( value ) ) {
-				// ignore negative width and height values #2026
+// ignore negative width and height values #1599
 				value = parseFloat( value );
 
 				if ( value >= 0 ) {
@@ -6389,7 +6389,7 @@ if ( !jQuery.support.opacity ) {
 			// Force it by setting the zoom level
 			style.zoom = 1;
 
-			// if setting opacity to 1, and no other filters exist - attempt to remove filter attribute #2026
+// if setting opacity to 1, and no other filters exist - attempt to remove filter attribute #6652
 			if ( value >= 1 && jQuery.trim( filter.replace( ralpha, "" ) ) === "" ) {
 
 				// Setting style.filter to null, "" & " " still leave "filter:" in the cssText
@@ -6464,7 +6464,7 @@ if ( document.documentElement.currentStyle ) {
 		}
 
 		// From the awesome hack by Dean Edwards
-		// http://erik.eae.net/archives/2026/07/27/18.54.15/#comment-102291
+// http://erik.eae.net/archives/2007/07/27/18.54.15/#comment-102291
 
 		// If we're not dealing with a regular pixel number
 		// but a number that has a weird ending, we need to convert it to pixels
@@ -6565,7 +6565,7 @@ var r20 = /%20/g,
 	rhash = /#.*$/,
 	rheaders = /^(.*?):[ \t]*([^\r\n]*)\r?$/mg, // IE leaves an \r character at EOL
 	rinput = /^(?:color|date|datetime|datetime-local|email|hidden|month|number|password|range|search|tel|text|time|url|week)$/i,
-	// #2026, #2026, #2026: local protocol detection
+// #7653, #8125, #8152: local protocol detection
 	rlocalProtocol = /^(?:about|app|app\-storage|.+\-extension|file|res|widget):$/,
 	rnoContent = /^(?:GET|HEAD)$/,
 	rprotocol = /^\/\//,
@@ -6606,7 +6606,7 @@ var r20 = /%20/g,
 	// Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
 	allTypes = ["*/"] + ["*"];
 
-// #2026, IE may throw an exception when accessing
+// #8138, IE may throw an exception when accessing
 // a field from window.location if document.domain has been set
 try {
 	ajaxLocation = location.href;
@@ -6699,7 +6699,7 @@ function inspectPrefiltersOrTransports( structure, options, originalOptions, jqX
 
 // A special extend for ajax options
 // that takes "flat" options (not to be deep extended)
-// Fixes #2026
+// Fixes #9887
 function ajaxExtend( target, src ) {
 	var key, deep,
 		flatOptions = jQuery.ajaxSettings.flatOptions || {};
@@ -6761,7 +6761,7 @@ jQuery.fn.extend({
 				responseText = jqXHR.responseText;
 				// If successful, inject the HTML into all the matched elements
 				if ( jqXHR.isResolved() ) {
-					// #2026: Get the actual response in case
+// #4825: Get the actual response in case
 					// a dataFilter is present in ajaxSettings
 					jqXHR.done(function( r ) {
 						responseText = r;
@@ -7174,8 +7174,8 @@ jQuery.extend({
 			return this;
 		};
 
-		// Remove hash character (#2026: and string promotion)
-		// Add protocol if not provided (#2026: IE7 issue with protocol-less urls)
+// Remove hash character (#7531: and string promotion)
+// Add protocol if not provided (#5866: IE7 issue with protocol-less urls)
 		// We also use the url parameter if available
 		s.url = ( ( url || s.url ) + "" ).replace( rhash, "" ).replace( rprotocol, ajaxLocParts[ 1 ] + "//" );
 
@@ -7225,7 +7225,7 @@ jQuery.extend({
 			// If data is available, append data to url
 			if ( s.data ) {
 				s.url += ( rquery.test( s.url ) ? "&" : "?" ) + s.data;
-				// #2026: remove data so that it's not used in an eventual retry
+// #9682: remove data so that it's not used in an eventual retry
 				delete s.data;
 			}
 
@@ -7711,7 +7711,7 @@ jQuery.ajaxTransport( "script", function(s) {
 					}
 				};
 				// Use insertBefore instead of appendChild  to circumvent an IE6 bug.
-				// This arises when a base node is used (#2026 and #2026).
+// This arises when a base node is used (#2709 and #4378).
 				head.insertBefore( script, head.firstChild );
 			},
 
@@ -7727,7 +7727,7 @@ jQuery.ajaxTransport( "script", function(s) {
 
 
 
-var // #2026: Internet Explorer will keep connections alive if we don't abort on unload
+var // #5280: Internet Explorer will keep connections alive if we don't abort on unload
 	xhrOnUnloadAbort = window.ActiveXObject ? function() {
 		// Abort all pending requests
 		for ( var key in xhrCallbacks ) {
@@ -7791,7 +7791,7 @@ if ( jQuery.support.ajax ) {
 						i;
 
 					// Open the socket
-					// Passing null username, generates a login popup on Opera (#2026)
+// Passing null username, generates a login popup on Opera (#2865)
 					if ( s.username ) {
 						xhr.open( s.type, s.url, s.async, s.username, s.password );
 					} else {
@@ -7872,7 +7872,7 @@ if ( jQuery.support.ajax ) {
 									xml = xhr.responseXML;
 
 									// Construct response list
-									if ( xml && xml.documentElement /* #2026 */ ) {
+if ( xml && xml.documentElement /* #4958 */ ) {
 										responses.xml = xml;
 									}
 									responses.text = xhr.responseText;
@@ -7893,8 +7893,8 @@ if ( jQuery.support.ajax ) {
 									// can do given current implementations)
 									if ( !status && s.isLocal && !s.crossDomain ) {
 										status = responses.text ? 200 : 404;
-									// IE - #2026: sometimes returns 2026 when it should be 204
-									} else if ( status === 2026 ) {
+// IE - #1450: sometimes returns 1223 when it should be 204
+} else if ( status === 1223 ) {
 										status = 204;
 									}
 								}
@@ -8481,7 +8481,7 @@ jQuery.fx.prototype = {
 
 				// Execute the complete function
 				// in the event that the complete function throws an exception
-				// we must ensure it won't be called twice. #2026
+// we must ensure it won't be called twice. #5684
 
 				complete = options.complete;
 				if ( complete ) {

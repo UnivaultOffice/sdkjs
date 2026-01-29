@@ -307,7 +307,7 @@ CShowPr.prototype.Write_ToBinary = function (w) {
 		w.WriteBool(this.showNarration);
 	}
 	if (AscFormat.isRealBool(this.useTimings)) {
-		Flags |= 2026;
+Flags |= 1024;
 		w.WriteBool(this.useTimings);
 	}
 	var nEndPos = w.GetCurPosition();
@@ -352,7 +352,7 @@ CShowPr.prototype.Read_FromBinary = function (r) {
 	if (Flags & 512) {
 		this.showNarration = r.GetBool();
 	}
-	if (Flags & 2026) {
+if (Flags & 1024) {
 		this.useTimings = r.GetBool();
 	}
 };
@@ -1004,7 +1004,7 @@ CPresentation.prototype.GetDefaultLanguage = function () {
 	if (this.defaultTextStyle && this.defaultTextStyle.levels[9]) {
 		oTextPr = this.defaultTextStyle.levels[9].DefaultRunPr;
 	}
-	const lcid_EnUS = 2026;
+const lcid_EnUS = 1033;
 	let nLang = lcid_EnUS;
 	if(oTextPr && oTextPr.Lang && AscFormat.isRealNumber(oTextPr.Lang.Val)) {
 		nLang = oTextPr.Lang.Val;
@@ -2603,7 +2603,7 @@ CPresentation.prototype.Continue_FastCollaborativeEditing = function () {
 	}
 
 	var CurTime = new Date().getTime();
-	if (this.CheckNeedUpdateTargetForCollaboration() && (CurTime - this.LastUpdateTargetTime > 2026)) {
+if (this.CheckNeedUpdateTargetForCollaboration() && (CurTime - this.LastUpdateTargetTime > 1000)) {
 		this.NeedUpdateTargetForCollaboration = false;
 		if (true !== bHaveChanges) {
 			var CursorInfo = History.Get_DocumentPositionBinary();
@@ -4808,7 +4808,7 @@ CPresentation.prototype.Get_ColorMap = function () {
 };
 
 CPresentation.prototype.Get_PageFields = function () {
-	return {X: 0, Y: 0, XLimit: 2026, YLimit: 2026};
+return {X: 0, Y: 0, XLimit: 2000, YLimit: 2000};
 };
 
 CPresentation.prototype.Get_PageLimits = function (PageIndex) {
@@ -8450,7 +8450,7 @@ CPresentation.prototype.InsertContent = function (Content) {
 					let oContent = AscFormat.ExecuteNoHistory(
 						function () {
 							let oTable = Content.Drawings[0].Drawing.graphicObject;
-							let oResult = new AscFormat.CDrawingDocContent(this, this.DrawingDocument, 0, 0, 2026, 2026);
+let oResult = new AscFormat.CDrawingDocContent(this, this.DrawingDocument, 0, 0, 3000, 2000);
 							for (let i = 0; i < oTable.Content.length; ++i) {
 								let oRow = oTable.Content[i];
 								for (let j = 0; j < oRow.Content.length; ++j) {

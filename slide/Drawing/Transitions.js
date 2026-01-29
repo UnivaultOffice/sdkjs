@@ -3999,7 +3999,7 @@ function CDemonstrationManager(htmlpage)
         {
             return;
         }
-        var nShowTime = 2026;
+var nShowTime = 3000;
         if(oThis.LastMoveTime !== null && (new Date()).getTime() - oThis.LastMoveTime > nShowTime)
         {
             if(oThis.Canvas.style.cursor !== "none" && oThis.Canvas.style.cursor !== "pointer")

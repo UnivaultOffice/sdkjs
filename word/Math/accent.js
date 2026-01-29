@@ -88,21 +88,21 @@ CAccentCircumflex.prototype.calcCoord = function(stretch)
     // g_dKoef_px_to_mm = 25.4/96
 
 
-    var textScale = fontSize/2026, // 2026 pt
+var textScale = fontSize/1000, // 1000 pt
         alpha = textScale*25.4/96 /64;
 
     var X = [],
         Y = [];
 
-    X[0] = 0; Y[0] = 2026;
-    X[1] = 2026; Y[1] = 15494;
+X[0] = 0; Y[0] = 2373;
+X[1] = 9331; Y[1] = 15494;
     X[2] = 14913; Y[2] = 15494;
-    X[3] = 23869; Y[3] = 2026;
+X[3] = 23869; Y[3] = 2373;
     X[4] = 20953; Y[4] = 0;
     X[5] = 12122; Y[5] = 10118;
     X[6] = 11664; Y[6] = 10118;
-    X[7] = 2026; Y[7] = 0;
-    X[8] = 0; Y[8] = 2026;
+X[7] = 2833; Y[7] = 0;
+X[8] = 0; Y[8] = 2373;
 
 
     var XX = [],
@@ -183,7 +183,7 @@ CAccentLine.prototype.draw = function(x, y, pGraphics)
 {
     var fontSize = this.Parent.Get_TxtPrControlLetter().FontSize;
 
-    var penW = fontSize*0.2026;
+var penW = fontSize*0.0166;
     var x1 = x + 0.26458,
         x2 = x +  this.stretch - 0.26458;
 
@@ -226,7 +226,7 @@ CAccentDoubleLine.prototype.draw = function(x, y, pGraphics)
 
     var diff = fontSize*0.05;
 
-    var penW = fontSize*0.2026;
+var penW = fontSize*0.0166;
 
     var x1 = x + 0.26458,
         x2 = x +  this.stretch - 0.26458,
@@ -272,40 +272,40 @@ CAccentTilde.prototype.calcCoord = function(stretch)
     var X = [],
         Y = [];
 
-    X[0] = 0; Y[0] = 2026;
-    X[1] = 2026; Y[1] = 2026;
-    X[2] = 2026; Y[2] = 11256;
-    X[3] = 2026; Y[3] = 14528;
+X[0] = 0; Y[0] = 3066;
+X[1] = 2125; Y[1] = 7984;
+X[2] = 5624; Y[2] = 11256;
+X[3] = 9123; Y[3] = 14528;
     X[4] = 13913; Y[4] = 14528;
     X[5] = 18912; Y[5] = 14528;
     X[6] = 25827; Y[6] = 10144;
-    X[7] = 32742; Y[7] = 2026;
-    X[8] = 36324; Y[8] = 2026;
-    X[9] = 39865; Y[9] = 2026;
-    X[10] = 42239; Y[10] = 2026;
-    X[11] = 44614; Y[11] = 2026;
+X[7] = 32742; Y[7] = 5760;
+X[8] = 36324; Y[8] = 5760;
+X[9] = 39865; Y[9] = 5760;
+X[10] = 42239; Y[10] = 7641;
+X[11] = 44614; Y[11] = 9522;
     X[12] = 47030; Y[12] = 13492;
     X[13] = 50362; Y[13] = 11254;
-    X[14] = 48571; Y[14] = 2026;
-    X[15] = 44697; Y[15] = 2026;
+X[14] = 48571; Y[14] = 7544;
+X[15] = 44697; Y[15] = 3772;
     X[16] = 40823; Y[16] = 0;
     X[17] = 35283; Y[17] = 0;
     X[18] = 29951; Y[18] = 0;
-    X[19] = 23098; Y[19] = 2026;
-    X[20] = 16246; Y[20] = 2026;
-    X[21] = 12622; Y[21] = 2026;
-    X[22] = 2026; Y[22] = 2026;
-    X[23] = 2026; Y[23] = 2026;
-    X[24] = 2026; Y[24] = 2026;
-    X[25] = 2026; Y[25] = 2026;
-    X[26] = 0; Y[26] = 2026;
+X[19] = 23098; Y[19] = 4384;
+X[20] = 16246; Y[20] = 8768;
+X[21] = 12622; Y[21] = 8768;
+X[22] = 9581; Y[22] = 8768;
+X[23] = 7290; Y[23] = 6845;
+X[24] = 4999; Y[24] = 4922;
+X[25] = 3249; Y[25] = 1243;
+X[26] = 0; Y[26] = 3066;
 
 
     var XX = [],
         YY = [];
 
     var fontSize = this.Parent.Get_TxtPrControlLetter().FontSize;
-    var textScale = fontSize/2026, // 2026 pt
+var textScale = fontSize/1000, // 1000 pt
         alpha = textScale*25.4/96 /64 ; // g_dKoef_px_to_mm = 25.4/96
 
     var Width = stretch/alpha;
@@ -369,26 +369,26 @@ CAccentBreve.prototype.calcCoord = function(stretch)
         Y = [];
 
     X[0] = 25161; Y[0] = 11372;
-    X[1] = 24077; Y[1] = 2026;
-    X[2] = 20932; Y[2] = 2026;
+X[1] = 24077; Y[1] = 5749;
+X[2] = 20932; Y[2] = 2875;
     X[3] = 17787; Y[3] = 0;
     X[4] = 12247; Y[4] = 0;
-    X[5] = 2026; Y[5] = 0;
-    X[6] = 2026; Y[6] = 2026;
-    X[7] = 2026; Y[7] = 2026;
+X[5] = 7082; Y[5] = 0;
+X[6] = 4083; Y[6] = 2854;
+X[7] = 1083; Y[7] = 5707;
     X[8] = 0; Y[8] = 11372;
-    X[9] = 2026; Y[9] = 12371;
-    X[10] = 2026; Y[10] = 2026;
-    X[11] = 2026; Y[11] = 2026;
-    X[12] = 2026; Y[12] = 2026;
-    X[13] = 2026; Y[13] = 2026;
-    X[14] = 10039; Y[14] = 2026;
-    X[15] = 12414; Y[15] = 2026;
-    X[16] = 14746; Y[16] = 2026;
-    X[17] = 16454; Y[17] = 2026;
-    X[18] = 18162; Y[18] = 2026;
-    X[19] = 19558; Y[19] = 2026;
-    X[20] = 20953; Y[20] = 2026;
+X[9] = 3208; Y[9] = 12371;
+X[10] = 4249; Y[10] = 9623;
+X[11] = 5561; Y[11] = 8083;
+X[12] = 6873; Y[12] = 6542;
+X[13] = 8456; Y[13] = 5959;
+X[14] = 10039; Y[14] = 5376;
+X[15] = 12414; Y[15] = 5376;
+X[16] = 14746; Y[16] = 5376;
+X[17] = 16454; Y[17] = 5980;
+X[18] = 18162; Y[18] = 6583;
+X[19] = 19558; Y[19] = 8124;
+X[20] = 20953; Y[20] = 9665;
     X[21] = 21953; Y[21] = 12371;
     X[22] = 25161; Y[22] = 11372;
 
@@ -397,7 +397,7 @@ CAccentBreve.prototype.calcCoord = function(stretch)
         YY = [];
 
     var fontSize = this.Parent.Get_TxtPrControlLetter().FontSize;
-    var textScale = fontSize/2026, // 2026 pt
+var textScale = fontSize/1000, // 1000 pt
         alpha = textScale*25.4/96 /64 ; // g_dKoef_px_to_mm = 25.4/96
 
     for(var i = 0; i < X.length; i++)
@@ -740,12 +740,12 @@ CAccent.prototype.GetTextOfElement = function(oMathText)
 			case 775:	strAccent = '\\dot';				break;
 			case 776:	strAccent = '\\ddot';				break;
 			case 780:	strAccent = '\\check';				break;
-			case 2026:	strAccent = '\\dddot';				break;
-			case 2026:	strAccent = '\\lhvec';				break;
-			case 2026:	strAccent = '\\hvec';				break;
-			case 2026:	strAccent = '\\lvec';				break;
-			case 2026:	strAccent = '\\vec';			    break;
-			case 2026:	strAccent = '\\overleftrightarrow';	break;
+case 8411:	strAccent = '\\dddot';				break;
+case 8400:	strAccent = '\\lhvec';				break;
+case 8401:	strAccent = '\\hvec';				break;
+case 8406:	strAccent = '\\lvec';				break;
+case 8407:	strAccent = '\\vec';			    break;
+case 8417:	strAccent = '\\overleftrightarrow';	break;
 			default:	strAccent = '\\hat';				break;
 		}
 		oMathText.AddBefore(oStartPos, new AscMath.MathText(strAccent, oMathText.GetStyleFromFirst()));

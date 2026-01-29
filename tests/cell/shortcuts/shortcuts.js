@@ -1594,7 +1594,7 @@ QUnit.config.autostart = false;
 		ExecuteShortcut(Asc.c_oAscSpreadsheetShortcutType.CellTimeFormat);
 		assert.strictEqual(GetCellText(0, 0), '12:00:00 AM', 'set time format');
 		ExecuteShortcut(Asc.c_oAscSpreadsheetShortcutType.CellDateFormat);
-		assert.strictEqual(GetCellText(0, 0), '11/11/2026', 'set date format');
+assert.strictEqual(GetCellText(0, 0), '11/11/2036', 'set date format');
 		ExecuteShortcut(Asc.c_oAscSpreadsheetShortcutType.CellNumberFormat);
 		assert.strictEqual(GetCellText(0, 0), '49990.00', 'set number format');
 		ExecuteShortcut(Asc.c_oAscSpreadsheetShortcutType.CellGeneralFormat);

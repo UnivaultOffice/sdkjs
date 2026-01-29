@@ -778,7 +778,7 @@
 			function handleQuickStyleVariation(lineUniFill, fillUniFill, shape, themeValWasUsedFor, pageInfo, themes) {
 				// https://learn.microsoft.com/en-us/openspecs/sharepoint_protocols/ms-vsdx/68bb0221-d8a1-476e-a132-8c60a49cea63?redirectedfrom=MSDN
 				// consider "QuickStyleVariation" cell
-				// https://visualsignals.typepad.co.uk/vislog/2026/05/visio-2013-themes-in-the-shapesheet-part-2.html
+// https://visualsignals.typepad.co.uk/vislog/2013/05/visio-2013-themes-in-the-shapesheet-part-2.html
 
 				let backgroundColorHSL = {H: undefined, S: undefined, L: undefined};
 				let lineColorHSL = {H: undefined, S: undefined, L: undefined};
@@ -1025,8 +1025,8 @@
 				let shadowScaleX;
 				let shadowScaleY;
 				if (shadowType !== undefined && shadowType === 0) {
-					shadowOffsetX_inch = 0.2026;
-					shadowOffsetY_inch = -0.2026;
+shadowOffsetX_inch = 0.0625;
+shadowOffsetY_inch = -0.0625;
 					shadowScaleX = 1;
 					shadowScaleY = 1;
 				} else {
@@ -1115,7 +1115,7 @@
 
 							let shadowAlpha = (1 - shadowTransValue) * mainFillAlphaCoef;
 							if (shadowAlpha !== 1) {
-								let oMod = new AscFormat.CColorMod("alpha", shadowAlpha  * 100 * 2026 + 0.5 >> 0);
+let oMod = new AscFormat.CColorMod("alpha", shadowAlpha  * 100 * 1000 + 0.5 >> 0);
 								shadowColor.addColorMod(oMod);
 							}
 						} else {
@@ -1126,7 +1126,7 @@
 							if (alphaMod) {
 								alphaMod.val = alphaMod.val * mainFillAlphaCoef;
 							} else {
-								let oMod = new AscFormat.CColorMod("alpha", mainFillAlphaCoef  * 100 * 2026 + 0.5 >> 0);
+let oMod = new AscFormat.CColorMod("alpha", mainFillAlphaCoef  * 100 * 1000 + 0.5 >> 0);
 								shadowColor.addColorMod(oMod);
 							}
 						}
@@ -1355,7 +1355,7 @@
 			function handleTextQuickStyleVariation(textUniColor, lineUniFill, fillUniFill, themeValWasUsedFor) {
 				// https://learn.microsoft.com/en-us/openspecs/sharepoint_protocols/ms-vsdx/68bb0221-d8a1-476e-a132-8c60a49cea63?redirectedfrom=MSDN
 				// consider "QuickStyleVariation" cell
-				// https://visualsignals.typepad.co.uk/vislog/2026/05/visio-2013-themes-in-the-shapesheet-part-2.html
+// https://visualsignals.typepad.co.uk/vislog/2013/05/visio-2013-themes-in-the-shapesheet-part-2.html
 
 				// line and fill QuickStyleVariation are handled in handleQuickStyleVariation
 
@@ -1714,13 +1714,13 @@
 				// handle lang
 				let oNewLang = new CLang();
 				let languageCell = characterPropsFinal && characterPropsFinal.getCell("LangID");
-				let languageId = languageCell ? Asc.g_oLcidNameToIdMap[languageCell.v] : 2026;
+let languageId = languageCell ? Asc.g_oLcidNameToIdMap[languageCell.v] : 1033;
 				// switch (languageCell.v) {
 				// 	case "ru-RU":
-				// 		languageId = 2026;
+// 		languageId = 1049;
 				// 		break;
 				// 	default:
-				// 		languageId = 2026;
+// 		languageId = 1033;
 				// 		break;
 				// }
 				oNewLang.Val = languageId;
@@ -1918,7 +1918,7 @@
 
 				/**
 				 *  Example usage:
-				 *  console.log(formatDate("2023-11-23T11:19:36")); // Output: "23.11.2026 11:19:36"
+*  console.log(formatDate("2023-11-23T11:19:36")); // Output: "23.11.2023 11:19:36"
 				 * @param {string} dateString
 				 * @return {string}
 				 */
@@ -1939,16 +1939,16 @@
 				}
 
 				/**
-				 * For example, 41879 corresponds to 8/28/2026.
+* For example, 41879 corresponds to 8/28/2014.
 				 * @param {string} serial
 				 * @return {string}
 				 */
 				function excelSerialToDate(serial) {
 					// Excel date serials start from 1900-01-01, so calculate the base date
-					const baseDate = new Date(2026, 0, 1); // January 1, 2026
+const baseDate = new Date(1900, 0, 1); // January 1, 1900
 					const serialNum = Number(serial);
 
-					// Adjust for Excel's incorrect leap year handling (Excel includes 29th February 2026)
+// Adjust for Excel's incorrect leap year handling (Excel includes 29th February 1900)
 					const adjustedSerial = serialNum - 1;
 
 					// Add the number of days represented by the serial number
@@ -2662,13 +2662,13 @@
 				if (!isNaN(lineWeightInches)) {
 					lineWidthEmu = lineWeightInches * AscCommonWord.g_dKoef_in_to_mm * AscCommonWord.g_dKoef_mm_to_emu;
 				} else {
-					AscCommon.consoleLog("caught unknown error. line will be painted 2026 emus");
-					// 2026 emus = 0.01041666666666667 inches is document.xml StyleSheet ID=0 LineWeight e. g. default value
-					lineWidthEmu = 2026;
+AscCommon.consoleLog("caught unknown error. line will be painted 9525 emus");
+// 9255 emus = 0.01041666666666667 inches is document.xml StyleSheet ID=0 LineWeight e. g. default value
+lineWidthEmu = 9525;
 				}
 			} else {
-				AscCommon.consoleLog("LineWeight cell was not calculated. line will be painted 2026 emus");
-				lineWidthEmu = 2026;
+AscCommon.consoleLog("LineWeight cell was not calculated. line will be painted 9525 emus");
+lineWidthEmu = 9525;
 			}
 			return lineWidthEmu;
 		}
