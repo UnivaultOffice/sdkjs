@@ -2131,6 +2131,179 @@ str += String.fromCharCode(55296 | ch >> 10, 56320 | ch & 1023);
 
 	function InitOnMessage(callback)
 	{
+		function reportsDebug(jobId, msg)
+		{
+			try
+			{
+				var payload = JSON.stringify({type: "reports:debug", data: {msg: msg || "", jobId: jobId || ""}});
+				if (window.parent)
+					window.parent.postMessage(payload, "*");
+				if (window.AscDesktopEditor && window.AscDesktopEditor.sendSystemMessage)
+					window.AscDesktopEditor.sendSystemMessage({type: "reports:debug", data: {msg: msg || "", jobId: jobId || ""}});
+			}
+			catch (e)
+			{
+			}
+		}
+
+		function reportsRunJob(job)
+		{
+			try
+			{
+				if (!job)
+					return;
+
+				var st = window.__reportsJobState || (window.__reportsJobState = {});
+				if (st.lastJobId === job.id && st.done)
+					return;
+
+				st.lastJobId = job.id;
+				st.done = false;
+				if (!st.startedAt)
+					st.startedAt = Date.now();
+
+				var api = (window.Asc && Asc.editor) ? Asc.editor : (window.editor || window.Asc);
+				if (!api || !api.asc_setWorksheetRange)
+				{
+					reportsDebug(job.id, "reports: no api");
+					return;
+				}
+
+				function ready()
+				{
+					var full = api.isLoadFullApi;
+					var loaded = api.isDocumentLoadComplete;
+					try { if (typeof full === "function") full = full.call(api); } catch (e) {}
+					try { if (typeof loaded === "function") loaded = loaded.call(api); } catch (e) {}
+					return !!(full && loaded);
+				}
+
+				function setRange(sheet, addr)
+				{
+					var a = String(addr || "").trim();
+					if (!a)
+						return;
+					var s = String(sheet || "").trim();
+					var full = s ? (s + "!" + a) : a;
+					api.asc_setWorksheetRange(full);
+				}
+
+				function insertText(value)
+				{
+					var text = String(value || "");
+					if (api.asc_insertInCell)
+					{
+						api.asc_insertInCell(text);
+						if (api.asc_closeCellEditor)
+							api.asc_closeCellEditor();
+						return;
+					}
+					if (api.asc_enterText)
+					{
+						var v = text;
+						try { v = (v && v.codePointsArray) ? v.codePointsArray() : v; } catch (e) {}
+						api.asc_enterText(v);
+						if (api.asc_closeCellEditor)
+							api.asc_closeCellEditor();
+					}
+				}
+
+				function runOnce()
+				{
+					if (!ready())
+						return false;
+
+					var acts = (job && job.actions) ? job.actions : [];
+					for (var i = 0; i < acts.length; i++)
+					{
+						var action = acts[i];
+						if (!action || !action.type)
+							continue;
+
+						if (action.type === "setText")
+						{
+							var target = String(action.target || "").trim();
+							if (!target)
+								continue;
+							setRange(action.sheet, target);
+							insertText(action.value || "");
+							if (action.merge && api.asc_mergeCells)
+							{
+								try { api.asc_mergeCells(); } catch (e) {}
+							}
+						}
+						else if (action.type === "groupCols")
+						{
+							if (!action.range || !api.asc_group)
+								continue;
+							setRange(action.sheet, action.range);
+							try { api.asc_group(false); } catch (e) {}
+							if (typeof action.expanded === "boolean" && api.asc_changeGroupDetails)
+							{
+								try { api.asc_changeGroupDetails(!!action.expanded); } catch (e) {}
+							}
+						}
+						else if (action.type === "deleteRow")
+						{
+							if (!action.row || !api.asc_deleteCells)
+								continue;
+							var row = String(action.row).trim();
+							if (!row)
+								continue;
+							setRange(action.sheet, row + ":" + row);
+							try
+							{
+								if (Asc && Asc.c_oAscDeleteOptions)
+									api.asc_deleteCells(Asc.c_oAscDeleteOptions.DeleteRows);
+								else
+									api.asc_deleteCells(2);
+							}
+							catch (e)
+							{
+							}
+						}
+					}
+
+					st.done = true;
+					reportsDebug(job.id, "reports: done");
+					return true;
+				}
+
+				if (runOnce())
+					return;
+
+				if (st.timer)
+				{
+					clearInterval(st.timer);
+					st.timer = null;
+				}
+				st.timer = setInterval(function()
+				{
+					try
+					{
+						if (runOnce())
+						{
+							clearInterval(st.timer);
+							st.timer = null;
+						}
+						else if (Date.now() - st.startedAt > 60000)
+						{
+							clearInterval(st.timer);
+							st.timer = null;
+							reportsDebug(job.id, "reports: timeout");
+						}
+					}
+					catch (e)
+					{
+					}
+				}, 500);
+			}
+			catch (e)
+			{
+				reportsDebug(job && job.id, "reports: error " + e);
+			}
+		}
+
 		if (window.addEventListener)
 		{
 			window.addEventListener("message", function (event)
@@ -2166,6 +2339,12 @@ str += String.fromCharCode(55296 | ch >> 10, 56320 | ch & 1023);
 						}
 						else if (data["type"] === "onExternalPluginMessage")
 						{
+							if (data["data"] && data["data"]["type"] === "reports:run")
+							{
+								reportsRunJob(data["data"]["job"]);
+								return;
+							}
+
 							if (!window.g_asc_plugins)
 								return;
 
