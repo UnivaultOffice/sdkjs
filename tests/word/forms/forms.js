@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2024
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -437,7 +437,7 @@ $(function () {
 		textForm2.ClearContentControlExt();
 		assert.strictEqual(formsManager.IsAllRequiredFormsFilled(), true, "Clear text form and check ");
 
-		AscTest.AddTextToInlineSdt(textForm2, "https://www.univaultoffice.github.io/");
+		AscTest.AddTextToInlineSdt(textForm2, "https://www.univaultoffice.com/");
 		assert.strictEqual(textForm2Pr.CheckFormat(textForm2.GetInnerText()), true, "Check format");
 		assert.strictEqual(formsManager.IsAllRequiredFormsFilled(), true, "Fill text form with correct hyperlink and check ");
 
@@ -457,9 +457,9 @@ $(function () {
 			);
 		}
 
-CheckFormMask("", "1234", "1234");
-CheckFormMask("X", "1234", "1");
-CheckFormMask("a", "1234", "1234");
+		CheckFormMask("", "1234", "1234");
+		CheckFormMask("X", "1234", "1");
+		CheckFormMask("a", "1234", "1234");
 		CheckFormMask("a", "1bcd", "1bcd");
 		CheckFormMask("a9", "bc", "bc");
 		CheckFormMask("a\\9", "bc", "b9");
@@ -538,7 +538,7 @@ CheckFormMask("a", "1234", "1234");
 		CheckFormMask("9-\\a-9-b-9-c-9-d", "12", "1-a-2-b-");
 		CheckFormMask("9-\\a-9-b-9-c-9-d", "12bsx", "12bsx");
 		CheckFormMask("9-\\a-9-b-9-c-9-d", "123", "1-a-2-b-3-c-");
-CheckFormMask("9-\\a-9-b-9-c-9-d", "1234", "1-a-2-b-3-c-4-d");
+		CheckFormMask("9-\\a-9-b-9-c-9-d", "1234", "1-a-2-b-3-c-4-d");
 		CheckFormMask("9-\\a-9-b-9-c-9-d", "1234bc", "1-a-2-b-3-c-4-d");
 
 		CheckFormMask("order №OOOOO-99.99.99-aa-9999", "", "");
@@ -559,23 +559,23 @@ CheckFormMask("9-\\a-9-b-9-c-9-d", "1234", "1-a-2-b-3-c-4-d");
 
 		CheckFormMask(
 			"OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO",
-"2001",
-"2001:",
+			"2001",
+			"2001:",
 		);
 		CheckFormMask(
 			"OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO",
-"2001:",
-"2001:",
+			"2001:",
+			"2001:",
 		);
 		CheckFormMask(
 			"OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO",
 			"20010db8",
-"2001:0db8:",
+			"2001:0db8:",
 		);
 		CheckFormMask(
 			"OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO:OOOO",
 			"20010db885a3000000008a2e03707334",
-"2001:0db8:85a3:0000:0000:8a2e:0370:7334",
+			"2001:0db8:85a3:0000:0000:8a2e:0370:7334",
 		);
 	})
 	

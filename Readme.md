@@ -13,11 +13,11 @@ JavaScript SDK provides the necessary **client-side APIs** for integrating and c
 
 ## 🌐 Project Resources
 
-- **Official website:** [UNIVAULTOFFICE Homepage](https://www.univaultoffice.github.io?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs)
-- **Source repository:** [SDKJS on GitHub](https://github.com/UnivaultOffice/sdkjs)
-- **UNIVAULTOFFICE Docs:** [Suite overview](https://www.univaultoffice.github.io/docs?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs)
+- **Official website:** [UNIVAULTOFFICE Homepage](https://www.univaultoffice.com?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs)
+- **Source repository:** [SDKJS on GitHub](https://github.com/UNIVAULTOFFICE/sdkjs)
+- **UNIVAULTOFFICE Docs:** [Suite overview](https://www.univaultoffice.com/docs?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs)
 
-📖 **Developer documentation:** [UNIVAULTOFFICE API Documentation](https://api.univaultoffice.github.io?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs) — The essential
+📖 **Developer documentation:** [UNIVAULTOFFICE API Documentation](https://api.univaultoffice.com?utm_source=github&utm_medium=cpc&utm_campaign=GitHubSdkjs) — The essential
 reference guide for working with UNIVAULTOFFICE APIs and integration modules.
 
 ## 📁 Repository Structure Overview
@@ -43,17 +43,17 @@ The directory layout below helps developers quickly navigate and understand SDKJ
 
 We welcome community participation, technical insights, and feedback. For questions, integration issues, or troubleshooting related to [UNIVAULTOFFICE Document Server][2], please explore these resources:
 
-- **Report issues:** [GitHub Issues](https://github.com/UnivaultOffice/DocumentServer/issues)
+- **Report issues:** [GitHub Issues](https://github.com/UNIVAULTOFFICE/DocumentServer/issues)
 - **Forum:** [UNIVAULTOFFICE Community][1]
-- **Feedback platform:** [feedback.univaultoffice.github.io](https://feedback.univaultoffice.github.io/forums/966080-your-voice-matters)
+- **Feedback platform:** [feedback.univaultoffice.com](https://feedback.univaultoffice.com/forums/966080-your-voice-matters)
 - **Developer Q&A:** [Stack Overflow][3]
 
-[1]: https://community.univaultoffice.github.io/
-[2]: https://github.com/UnivaultOffice/DocumentServer
+[1]: https://community.univaultoffice.com/
+[2]: https://github.com/UNIVAULTOFFICE/DocumentServer
 [3]: https://stackoverflow.com/questions/tagged/univaultoffice
-[4]: https://github.com/UnivaultOffice/DesktopEditors
-[5]: https://github.com/UnivaultOffice/office-js-api
+[4]: https://github.com/UNIVAULTOFFICE/DesktopEditors
+[5]: https://github.com/UNIVAULTOFFICE/office-js-api
 
 ## 📜 License
 
-**SDKJS** is licensed under the **GNU Affero General Public License (AGPL) v3.0**. For full details, refer to the [LICENSE](https://github.com/UnivaultOffice/sdkjs/blob/master/LICENSE.txt) file.
+**SDKJS** is licensed under the **GNU Affero General Public License (AGPL) v3.0**. For full details, refer to the [LICENSE](https://github.com/UNIVAULTOFFICE/sdkjs/blob/master/LICENSE.txt) file.

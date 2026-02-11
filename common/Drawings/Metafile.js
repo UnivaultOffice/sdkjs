@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2024
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -530,7 +530,7 @@
 	{
 		this.Init = function(len)
 		{
-this.len  = (len === undefined) ? 1024 * 1024 * 5 : len;
+			this.len  = (len === undefined) ? 1024 * 1024 * 5 : len;
 			this.data = new Uint8Array(this.len);
 			this.pos  = 0;
 		}
@@ -1583,7 +1583,7 @@ this.len  = (len === undefined) ? 1024 * 1024 * 5 : len;
 		};
 		this.WriteXmlRelationshipsNS = function()
 		{
-this.WriteXmlAttributeString("xmlns:r", "http://schemas.openxmlformats.org/officeDocument/2006/relationships");
+			this.WriteXmlAttributeString("xmlns:r", "http://schemas.openxmlformats.org/officeDocument/2006/relationships");
 		};
 	}
 
@@ -1986,7 +1986,7 @@ this.WriteXmlAttributeString("xmlns:r", "http://schemas.openxmlformats.org/offic
 		},
 		p_width  : function(w)
 		{
-var val = w / 1000;
+			var val = w / 1000;
 			if (this.m_oPen.Size != val)
 			{
 				this.m_oPen.Size = val;
@@ -2025,7 +2025,7 @@ var val = w / 1000;
 			if (this.BrushType != MetaBrushType.Solid)
 			{
 				this.Memory.WriteByte(CommandType.ctBrushType);
-this.Memory.WriteLong(1000);
+				this.Memory.WriteLong(1000);
 				this.BrushType = MetaBrushType.Solid;
 			}
 
@@ -2073,7 +2073,7 @@ this.Memory.WriteLong(1000);
 			if (this.BrushType !== MetaBrushType.Texture)
 			{
 				this.Memory.WriteByte(CommandType.ctBrushType);
-this.Memory.WriteLong(3008);
+				this.Memory.WriteLong(3008);
 				this.BrushType = MetaBrushType.Texture;
 			}
 
@@ -2955,8 +2955,8 @@ this.Memory.WriteLong(3008);
 					nFlag |= (1 << 21);
 
 				nFlag |= ((oPicturePr.GetScaleFlag() & 0xF) << 24);
-this.Memory.WriteLong(oPicturePr.GetShiftX() * 1000);
-this.Memory.WriteLong(oPicturePr.GetShiftY() * 1000);
+				this.Memory.WriteLong(oPicturePr.GetShiftX() * 1000);
+				this.Memory.WriteLong(oPicturePr.GetShiftY() * 1000);
 
 				if (!oForm.IsPlaceHolder())
 				{
@@ -3823,7 +3823,7 @@ this.Memory.WriteLong(oPicturePr.GetShiftY() * 1000);
 		Invert          : function()
 		{
 			var det = this.Determinant();
-if (0.0001 > Math.abs(det))
+			if (0.0001 > Math.abs(det))
 				return;
 			var d = 1 / det;
 
@@ -4054,7 +4054,7 @@ if (0.0001 > Math.abs(det))
 		{
 			var newM = m.CreateDublicate();
 			var det  = newM.sx * newM.sy - newM.shy * newM.shx;
-if (0.0001 > Math.abs(det))
+			if (0.0001 > Math.abs(det))
 				return newM;
 
 			var d = 1 / det;

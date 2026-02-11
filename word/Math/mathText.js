@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2024
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -267,10 +267,10 @@ CMathText.prototype.private_getCode = function()
         Sty = Compiled_MPrp.sty;
 
     // Mathematical Alphanumeric Characters
-// http://www.w3.org/TR/2014/REC-xml-entity-names-20140410/Overview.html#alphabets
+    // http://www.w3.org/TR/2014/REC-xml-entity-names-20140410/Overview.html#alphabets
 
 	if (code == 0x2061) // \funcapply ⁡
-code = 8196;
+        code = 8196;
     else if(code == 0x2A)      // "*"
         code = 0x2217;
     else if(code == 0x2D) // "-"
@@ -288,9 +288,9 @@ code = 8196;
             else if((code == 0x6A && bAccent) ||code == 0x237)   // "j" with dot || "j" dotless plain => "j" dotless italic
                 code = 0x1D6A5;*/
             else if(code == 0x69 && bAccent)
-code = 2835;
+                code = 2835;
             else if(code == 0x6A && bAccent)
-code = 2836;
+                code = 2836;
             else if(bCapitale)
                 code  = code + 0x1D3F3;
             else if(bSmall)
@@ -322,9 +322,9 @@ code = 2836;
         else if(Sty == STY_BI)
         {
             if(code == 0x69 && bAccent)
-code = 2841;
+                code = 2841;
             else if(code == 0x6A && bAccent)
-code = 2842;
+                code = 2842;
             else if(bCapitale)
                 code = code + 0x1D427;
             else if(bSmall)
@@ -357,9 +357,9 @@ code = 2842;
         else if(Sty == STY_BOLD)
         {
             if(code == 0x69 && bAccent)
-code = 2829;
+                code = 2829;
             else if(code == 0x6A && bAccent)
-code = 2830;
+                code = 2830;
             else if(bCapitale)
                 code = code + 0x1D3BF;
             else if(bSmall)
@@ -405,7 +405,7 @@ code = 2830;
                 if(code == 0x69 && bAccent)
                     code = 199;
                 else if(code == 0x6A && bAccent)
-code = 2828;
+                    code = 2828;
 
             }
         }
@@ -413,9 +413,9 @@ code = 2828;
     else if(Scr == TXT_DOUBLE_STRUCK)
     {
         if(code == 0x69 && bAccent)
-code = 2851;
+            code = 2851;
         else if(code == 0x6A && bAccent)
-code = 2852;
+            code = 2852;
         else if(code == 0x43)   // C
             code = 0x2102;
         else if(code == 0x48)   // H
@@ -496,9 +496,9 @@ code = 2852;
     else if(Scr == TXT_MONOSPACE)
     {
         if(code == 0x69 && bAccent)
-code = 4547;
+            code = 4547;
         else if(code == 0x6A && bAccent)
-code = 4548;
+            code = 4548;
         else if(bCapitale)
             code  = code + 0x1D62F;
         else if(bSmall)
@@ -511,9 +511,9 @@ code = 4548;
         if(Sty == STY_BOLD ||Sty == STY_BI)
         {
             if(code == 0x69 && bAccent)
-code = 2849;
+                code = 2849;
             else if(code == 0x6A && bAccent)
-code = 2850;
+                code = 2850;
             else if(bCapitale)
                 code = code + 0x1D52B;
             else if(bSmall)
@@ -522,9 +522,9 @@ code = 2850;
         else
         {
             if(code == 0x69 && bAccent)
-code = 2847;
+                code = 2847;
             else if(code == 0x6A && bAccent)
-code = 2848;
+                code = 2848;
             else if(code == 0x43)   // C
                 code = 0x212D;
             else if(code == 0x48)   // H
@@ -547,9 +547,9 @@ code = 2848;
         if(Sty == STY_ITALIC)
         {
             if(code == 0x69 && bAccent)
-code = 2857;
+                code = 2857;
             else if(code == 0x6A && bAccent)
-code = 2858;
+                code = 2858;
             else if(bCapitale)
                 code = code + 0x1D5C7;
             else if(bSmall)
@@ -560,9 +560,9 @@ code = 2858;
         else if(Sty == STY_BOLD)
         {
             if(code == 0x69 && bAccent)
-code = 2855;
+                code = 2855;
             else if(code == 0x6A && bAccent)
-code = 2856;
+                code = 2856;
             else if(bCapitale)
                 code = code + 0x1D593;
             else if(bSmall)
@@ -595,9 +595,9 @@ code = 2856;
         else if(Sty == STY_BI)
         {
             if(code == 0x69 && bAccent)
-code = 2859;
+                code = 2859;
             else if(code == 0x6A && bAccent)
-code = 2860;
+                code = 2860;
             else if(bCapitale)
                 code = code + 0x1D5FB;
             else if(bSmall)
@@ -630,9 +630,9 @@ code = 2860;
         else
         {
             if(code == 0x69 && bAccent)
-code = 2853;
+                code = 2853;
             else if(code == 0x6A && bAccent)
-code = 2854;
+                code = 2854;
             else if(bCapitale)
                 code = code + 0x1D55F;
             else if(bSmall)
@@ -647,9 +647,9 @@ code = 2854;
         if(Sty == STY_ITALIC || Sty == STY_PLAIN)
         {
             if(code == 0x69 && bAccent)
-code = 2843;
+                code = 2843;
             else if(code == 0x6A && bAccent)
-code = 2844;
+                code = 2844;
             else if(code == 0x42)   // B
                 code = 0x212C;
             else if(code == 0x45)   // E
@@ -680,9 +680,9 @@ code = 2844;
         else
         {
             if(code == 0x69 && bAccent)
-code = 2845;
+                code = 2845;
             else if(code == 0x6A && bAccent)
-code = 2846;
+                code = 2846;
             else if(bCapitale)
                 code = code + 0x1D48F;
             else if(bSmall)
@@ -903,13 +903,13 @@ CMathText.prototype.Draw = function(x, y, pGraphics, InfoTextPr)
 		{
 			pGraphics.tg(this.RecalcInfo.StyleCode, X, Y);
 		}
-else if (Asc.editor.ShowParaMarks && (this.value === 8195 || this.value === 8194 || this.value === 160))
+		else if (Asc.editor.ShowParaMarks && (this.value === 8195 || this.value === 8194 || this.value === 160))
 		{
 			let widthOfCircle = g_oTextMeasurer.MeasureCode(176).Width / 2;
 			pGraphics.FillTextCode(X + this.size.width / 2 - widthOfCircle, Y, 176);
 			pGraphics.FillTextCode(X, Y, this.value);
 		}
-else if (Asc.editor.ShowParaMarks && this.value === 8197) //draw \thicksp
+		else if (Asc.editor.ShowParaMarks && this.value === 8197) //draw \thicksp
 		{
 			// for some reason, word does not use a Unicode character for "Four-Per-Em Space", but a drawn rectangle
 			pGraphics.FillTextCode(X + this.size.width, Y, this.value)

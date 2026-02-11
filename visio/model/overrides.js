@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2023
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -149,7 +149,7 @@ AscFormat.CShape.prototype.recalculate = function ()
  * @return {CUniFill|*}
  */
 AscFormat.CTheme.prototype.getFillStyle = function (idx, unicolor, isConnectorShape) {
-if (idx === 0 || idx === 1000) {
+	if (idx === 0 || idx === 1000) {
 		return AscFormat.CreateNoFillUniFill();
 	}
 	var ret;
@@ -165,9 +165,9 @@ if (idx === 0 || idx === 1000) {
 					return ret;
 				}
 			}
-} else if (idx >= 1001) {
-if (fmtScheme.bgFillStyleLst[idx - 1001]) {
-ret = fmtScheme.bgFillStyleLst[idx - 1001].createDuplicate();
+		} else if (idx >= 1001) {
+			if (fmtScheme.bgFillStyleLst[idx - 1001]) {
+				ret = fmtScheme.bgFillStyleLst[idx - 1001].createDuplicate();
 				if (ret) {
 					ret.checkPhColor(unicolor, false);
 					return ret;
@@ -215,7 +215,7 @@ AscFormat.CTheme.prototype.getLnStyle = function (idx, unicolor, isConnectorShap
 AscFormat.builder_CreateLine = function(nWidth, oFill) {
 	if (nWidth === 0) {
 		// return new AscFormat.CreateNoFillLine();
-nWidth = 1000;
+		nWidth = 1000;
 	}
 	var oLn = new AscFormat.CLn();
 	oLn.w = nWidth;
@@ -545,8 +545,8 @@ Asc.cDate.prototype.getUTCFullYear = function () {
 	var month = Date.prototype.getUTCMonth.call(this);
 	var date = Date.prototype.getUTCDate.call(this);
 
-if (1899 == year && 11 == month && (30 === date || 31 === date)) {
-return 1900;
+	if (1899 == year && 11 == month && (30 === date || 31 === date)) {
+		return 1900;
 	} else {
 		return year;
 	}
@@ -582,7 +582,7 @@ AscCommonWord.CPresentationField.prototype.private_GetString = function()
 		} else if (valueUnits === "MM") {
 			valueInProperUnits = Number(valueV) * g_dKoef_in_to_mm;
 		} else if (valueUnits === "M") {
-valueInProperUnits = Number(valueV) * g_dKoef_in_to_mm / 1000;
+			valueInProperUnits = Number(valueV) * g_dKoef_in_to_mm / 1000;
 		} else {
 			valueInProperUnits = valueV;
 		}
@@ -598,7 +598,7 @@ valueInProperUnits = Number(valueV) * g_dKoef_in_to_mm / 1000;
 	var oCultureInfo = AscCommon.g_aCultureInfos[this.Get_CompiledPr().Lang.Val];
 	if(!oCultureInfo)
 	{
-oCultureInfo = AscCommon.g_aCultureInfos[1033];
+		oCultureInfo = AscCommon.g_aCultureInfos[1033];
 	}
 	var oDateTime;
 	if(typeof this.FieldType === 'string')
@@ -672,7 +672,7 @@ oCultureInfo = AscCommon.g_aCultureInfos[1033];
 		}
 
 		// if (this.vsdxFieldValue.u === "DATE") {
-// 	// TODO fix 31.12.1899 visio date
+		// 	// TODO fix 31.12.1899 visio date
 		// 	const oFormat = this.private_GetDateTimeFormat(this.vsdxFieldValue,
 		// 		this.vsdxFieldFormat);
 		// 	if(oFormat)

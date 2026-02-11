@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2024
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -42,7 +42,7 @@ function(window, undefined) {
 
 	const MAX_LABELS_COUNT = 300;
 	const MAX_SERIES_COUNT = 255;
-const MAX_POINTS_COUNT = 4096;
+	const MAX_POINTS_COUNT = 4096;
 	const MIN_STOCK_COUNT = 4;
 // Import
 	const c_oAscChartType = AscCommon.c_oAscChartType;
@@ -560,7 +560,7 @@ const MAX_POINTS_COUNT = 4096;
 	}
 
 	function CPathMemory() {
-this.size = 1000;
+		this.size = 1000;
 		this.ArrPathCommand = new Float64Array(this.size);
 		this.curPos = -1;
 
@@ -2716,7 +2716,7 @@ this.size = 1000;
 			return;
 		}
 
-		//for bug http://issues.univaultoffice.github.io/show_bug.cgi?id=35570 TODO: check it
+		//for bug http://bugzilla.univaultoffice.com/show_bug.cgi?id=35570 TODO: check it
 		const nType = oProps.getType();
 		const nCurType = oCurProps.getType();
 		let bEmpty;
@@ -3135,10 +3135,10 @@ this.size = 1000;
 									var aPointsPaths2 = aPointsPaths[this.selection.datPoint];
 									for (var z = 0; z < aPointsPaths2.length; ++z) {
 										if (AscCommon.isRealObject(aPointsPaths2[z])) {
-// downPath: 1230
+											// downPath: 1230
 											// frontPath: []
-// insidePath: 1188
-// upPath: 1213
+											// insidePath: 1188
+											// upPath: 1213
 											if (AscFormat.isRealNumber(aPointsPaths2[z].downPath) && !b3dPie) {
 												oPath = this.GetPath(aPointsPaths2[z].downPath);
 												oPath.drawTracks(drawingDocument, this.transform);
@@ -3206,10 +3206,10 @@ this.size = 1000;
 												oPath = this.GetPath(aPointsPaths2[z]);
 												oPath.drawTracks(drawingDocument, this.transform);
 											} else if (AscCommon.isRealObject(aPointsPaths2[z])) {
-// downPath: 1230
+												// downPath: 1230
 												// frontPath: []
-// insidePath: 1188
-// upPath: 1213
+												// insidePath: 1188
+												// upPath: 1213
 												if (AscFormat.isRealNumber(aPointsPaths2[z].downPath) && !b3dPie) {
 													oPath = this.GetPath(aPointsPaths2[z].downPath);
 													oPath.drawTracks(drawingDocument, this.transform);
@@ -6999,7 +6999,7 @@ this.size = 1000;
 			}
 			if (oSerAx.labels) {
 				let oLabelsBox = oSerAx.labels;
-oLabelsBox.layoutHorNormal(oSerAx.posY, oLabelsBox.getLabelsOffset(), oSerAx.posX, 0, oSerAx.grid.bOnTickMark, 2000);
+				oLabelsBox.layoutHorNormal(oSerAx.posY, oLabelsBox.getLabelsOffset(), oSerAx.posX, 0, oSerAx.grid.bOnTickMark, 2000);
 			}
 		}
 	};
@@ -7452,7 +7452,7 @@ oLabelsBox.layoutHorNormal(oSerAx.posY, oLabelsBox.getLabelsOffset(), oSerAx.pos
 					 calc_entry.lastStyleObject = calc_entryes[0].lastStyleObject;
 					 }*/
 					calc_entryes.push(calc_entry);
-cur_width = calc_entry.txBody.getRectWidth(2000);
+					cur_width = calc_entry.txBody.getRectWidth(2000);
 					if(cur_width > max_width)
 						max_width = cur_width;
 
@@ -7582,7 +7582,7 @@ cur_width = calc_entry.txBody.getRectWidth(2000);
 						//}
 						calc_entryes.push(calc_entry);
 
-cur_width = calc_entry.txBody.getRectWidth(2000);
+						cur_width = calc_entry.txBody.getRectWidth(2000);
 						if (cur_width > max_width)
 							max_width = cur_width;
 
@@ -13273,7 +13273,7 @@ cur_width = calc_entry.txBody.getRectWidth(2000);
 			this.oStartingDate = date.getDateFromExcel(+msg[1]);
 		} else if (msg[0] === 'number'){
 			let date = new AscCommonExcel.cDate();
-// 2 days + 1899/12/39 will create 1900/01/01
+			// 2 days + 1899/12/39 will create 1900/01/01
 			this.oStartingDate = date.getDateFromExcel(2);
 		}
 
@@ -13449,7 +13449,7 @@ cur_width = calc_entry.txBody.getRectWidth(2000);
 
 		// create new labels for valAx
 		// precision should be small, or relatively small compared to new step
-const fPrecision = Math.max(0.01, newStep / 1000);
+		const fPrecision = Math.max(0.01, newStep / 1000);
 
 		let isSingleLabel = false
 		// check if axis is not logarithmic and if newStep is different than the previous;

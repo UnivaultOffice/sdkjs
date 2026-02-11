@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2024
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -113,7 +113,7 @@ function CControl()
             if (this.Bounds.isAbsL)
                 _x = this.Bounds.L;
             else
-_x = (this.Bounds.L * _width / 1000);
+                _x = (this.Bounds.L * _width / 1000);
 
             if (-1 != this.Bounds.AbsW)
                 _r = _x + this.Bounds.AbsW;
@@ -122,7 +122,7 @@ _x = (this.Bounds.L * _width / 1000);
                 if (this.Bounds.isAbsR)
                     _r = (_width - this.Bounds.R);
                 else
-_r = this.Bounds.R * _width / 1000;
+                    _r = this.Bounds.R * _width / 1000;
             }
         }
         else if (g_anchor_right == hor_anchor)
@@ -130,7 +130,7 @@ _r = this.Bounds.R * _width / 1000;
             if (this.Bounds.isAbsR)
                 _r = (_width - this.Bounds.R);
             else
-_r = (this.Bounds.R * _width / 1000);
+                _r = (this.Bounds.R * _width / 1000);
 
             if (-1 != this.Bounds.AbsW)
                 _x = _r - this.Bounds.AbsW;
@@ -139,7 +139,7 @@ _r = (this.Bounds.R * _width / 1000);
                 if (this.Bounds.isAbsL)
                     _x = this.Bounds.L;
                 else
-_x = this.Bounds.L * _width / 1000;
+                    _x = this.Bounds.L * _width / 1000;
             }
         }
         else if ((g_anchor_left | g_anchor_right) == hor_anchor)
@@ -147,12 +147,12 @@ _x = this.Bounds.L * _width / 1000;
             if (this.Bounds.isAbsL)
                 _x = this.Bounds.L;
             else
-_x = (this.Bounds.L * _width / 1000);
+                _x = (this.Bounds.L * _width / 1000);
 
             if (this.Bounds.isAbsR)
                 _r = (_width - this.Bounds.R);
             else
-_r = (this.Bounds.R * _width / 1000);
+                _r = (this.Bounds.R * _width / 1000);
         }
         else
         {
@@ -165,7 +165,7 @@ _r = (this.Bounds.R * _width / 1000);
             if (this.Bounds.isAbsT)
                 _y = this.Bounds.T;
             else
-_y = (this.Bounds.T * _height / 1000);
+                _y = (this.Bounds.T * _height / 1000);
 
             if (-1 != this.Bounds.AbsH)
                 _b = _y + this.Bounds.AbsH;
@@ -174,7 +174,7 @@ _y = (this.Bounds.T * _height / 1000);
                 if (this.Bounds.isAbsB)
                     _b = (_height - this.Bounds.B);
                 else
-_b = this.Bounds.B * _height / 1000;
+                    _b = this.Bounds.B * _height / 1000;
             }
         }
         else if (g_anchor_bottom == ver_anchor)
@@ -182,7 +182,7 @@ _b = this.Bounds.B * _height / 1000;
             if (this.Bounds.isAbsB)
                 _b = (_height - this.Bounds.B);
             else
-_b = (this.Bounds.B * _height / 1000);
+                _b = (this.Bounds.B * _height / 1000);
 
             if (-1 != this.Bounds.AbsH)
                 _y = _b - this.Bounds.AbsH;
@@ -191,7 +191,7 @@ _b = (this.Bounds.B * _height / 1000);
                 if (this.Bounds.isAbsT)
                     _y = this.Bounds.T;
                 else
-_y = this.Bounds.T * _height / 1000;
+                    _y = this.Bounds.T * _height / 1000;
             }
         }
         else if ((g_anchor_top | g_anchor_bottom) == ver_anchor)
@@ -199,12 +199,12 @@ _y = this.Bounds.T * _height / 1000;
             if (this.Bounds.isAbsT)
                 _y = this.Bounds.T;
             else
-_y = (this.Bounds.T * _height / 1000);
+                _y = (this.Bounds.T * _height / 1000);
 
             if (this.Bounds.isAbsB)
                 _b = (_height - this.Bounds.B);
             else
-_b = (this.Bounds.B * _height / 1000);
+                _b = (this.Bounds.B * _height / 1000);
         }
         else
         {
@@ -324,7 +324,7 @@ function CControlContainer()
             if (this.Bounds.isAbsL)
                 _x = this.Bounds.L;
             else
-_x = (this.Bounds.L * _width / 1000);
+                _x = (this.Bounds.L * _width / 1000);
 
             if (-1 != this.Bounds.AbsW)
                 _r = _x + this.Bounds.AbsW;
@@ -333,7 +333,7 @@ _x = (this.Bounds.L * _width / 1000);
                 if (this.Bounds.isAbsR)
                     _r = (_width - this.Bounds.R);
                 else
-_r = this.Bounds.R * _width / 1000;
+                    _r = this.Bounds.R * _width / 1000;
             }
         }
         else if (g_anchor_right == hor_anchor)
@@ -341,7 +341,7 @@ _r = this.Bounds.R * _width / 1000;
             if (this.Bounds.isAbsR)
                 _r = (_width - this.Bounds.R);
             else
-_r = (this.Bounds.R * _width / 1000);
+                _r = (this.Bounds.R * _width / 1000);
 
             if (-1 != this.Bounds.AbsW)
                 _x = _r - this.Bounds.AbsW;
@@ -350,7 +350,7 @@ _r = (this.Bounds.R * _width / 1000);
                 if (this.Bounds.isAbsL)
                     _x = this.Bounds.L;
                 else
-_x = this.Bounds.L * _width / 1000;
+                    _x = this.Bounds.L * _width / 1000;
             }
         }
         else if ((g_anchor_left | g_anchor_right) == hor_anchor)
@@ -358,12 +358,12 @@ _x = this.Bounds.L * _width / 1000;
             if (this.Bounds.isAbsL)
                 _x = this.Bounds.L;
             else
-_x = (this.Bounds.L * _width / 1000);
+                _x = (this.Bounds.L * _width / 1000);
 
             if (this.Bounds.isAbsR)
                 _r = (_width - this.Bounds.R);
             else
-_r = (this.Bounds.R * _width / 1000);
+                _r = (this.Bounds.R * _width / 1000);
         }
         else
         {
@@ -376,7 +376,7 @@ _r = (this.Bounds.R * _width / 1000);
             if (this.Bounds.isAbsT)
                 _y = this.Bounds.T;
             else
-_y = (this.Bounds.T * _height / 1000);
+                _y = (this.Bounds.T * _height / 1000);
 
             if (-1 != this.Bounds.AbsH)
                 _b = _y + this.Bounds.AbsH;
@@ -385,7 +385,7 @@ _y = (this.Bounds.T * _height / 1000);
                 if (this.Bounds.isAbsB)
                     _b = (_height - this.Bounds.B);
                 else
-_b = this.Bounds.B * _height / 1000;
+                    _b = this.Bounds.B * _height / 1000;
             }
         }
         else if (g_anchor_bottom == ver_anchor)
@@ -393,7 +393,7 @@ _b = this.Bounds.B * _height / 1000;
             if (this.Bounds.isAbsB)
                 _b = (_height - this.Bounds.B);
             else
-_b = (this.Bounds.B * _height / 1000);
+                _b = (this.Bounds.B * _height / 1000);
 
             if (-1 != this.Bounds.AbsH)
                 _y = _b - this.Bounds.AbsH;
@@ -402,7 +402,7 @@ _b = (this.Bounds.B * _height / 1000);
                 if (this.Bounds.isAbsT)
                     _y = this.Bounds.T;
                 else
-_y = this.Bounds.T * _height / 1000;
+                    _y = this.Bounds.T * _height / 1000;
             }
         }
         else if ((g_anchor_top | g_anchor_bottom) == ver_anchor)
@@ -410,12 +410,12 @@ _y = this.Bounds.T * _height / 1000;
             if (this.Bounds.isAbsT)
                 _y = this.Bounds.T;
             else
-_y = (this.Bounds.T * _height / 1000);
+                _y = (this.Bounds.T * _height / 1000);
 
             if (this.Bounds.isAbsB)
                 _b = (_height - this.Bounds.B);
             else
-_b = (this.Bounds.B * _height / 1000);
+                _b = (this.Bounds.B * _height / 1000);
         }
         else
         {

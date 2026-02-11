@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2024
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1123,7 +1123,7 @@ function CMasterThumbnailDrawer()
             _textPr2.RFonts.Ascii = {Name: _theme.themeElements.fontScheme.minorFont.latin, Index: -1};
             _textPr2.FontSize = nFontSize;
             _textPr2.Color = this.GetBodyTextColor(_master, _layout);
-var docContent = new CDocumentContent(editor.WordControl.m_oLogicDocument, editor.WordControl.m_oDrawingDocument, 0, 0, 1000, 1000, false, false, true);
+            var docContent = new CDocumentContent(editor.WordControl.m_oLogicDocument, editor.WordControl.m_oDrawingDocument, 0, 0, 1000, 1000, false, false, true);
             var par = docContent.Content[0];
             par.MoveCursorToStartPos();
             var _paraPr = new CParaPr;
@@ -1136,7 +1136,7 @@ var docContent = new CDocumentContent(editor.WordControl.m_oLogicDocument, edito
             parRun.Set_Pr(_textPr2);
             parRun.AddText("a");
             par.Add_ToContent(1, parRun);
-par.Reset(0, 0, 1000, 1000, 0, 0, 1);
+            par.Reset(0, 0, 1000, 1000, 0, 0, 1);
             par.Recalculate_Page(0);
 
             var _text_x = _params[5] * dKoefPixToMM;
@@ -1335,7 +1335,7 @@ par.Reset(0, 0, 1000, 1000, 0, 0, 1);
             _textPr2.RFonts.Ascii = {Name: _theme.themeElements.fontScheme.minorFont.latin, Index: -1};
             _textPr2.FontSize = nFontSize;
             _textPr2.Color = this.GetBodyTextColor(_master, _layout);
-var docContent = new CDocumentContent(editor.WordControl.m_oLogicDocument, editor.WordControl.m_oDrawingDocument, 0, 0, 1000, 1000, false, false, true);
+            var docContent = new CDocumentContent(editor.WordControl.m_oLogicDocument, editor.WordControl.m_oDrawingDocument, 0, 0, 1000, 1000, false, false, true);
             var par = docContent.Content[0];
             par.MoveCursorToStartPos();
             var _paraPr = new CParaPr;
@@ -1348,7 +1348,7 @@ var docContent = new CDocumentContent(editor.WordControl.m_oLogicDocument, edito
             parRun.Set_Pr(_textPr2);
             parRun.AddText("a");
             par.Add_ToContent(1, parRun);
-par.Reset(0, 0, 1000, 1000, 0, 0, 1);
+            par.Reset(0, 0, 1000, 1000, 0, 0, 1);
             par.Recalculate_Page(0);
             if (!window["NATIVE_EDITOR_ENJINE"]) {
                 var koefFont = AscCommon.g_dKoef_pix_to_mm / AscCommon.AscBrowser.retinaPixelRatio;

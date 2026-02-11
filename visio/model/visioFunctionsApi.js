@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2023
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -52,7 +52,7 @@
 	 */
 	function themeval(cell, shape, pageInfo, themes, themeValue,
 					  defaultValue, gradientEnabled, themedColorsRow) {
-// https://visualsignals.typepad.co.uk/vislog/2013/05/visio-2013-themes-in-the-shapesheet-part-2.html
+		// https://visualsignals.typepad.co.uk/vislog/2013/05/visio-2013-themes-in-the-shapesheet-part-2.html
 
 
 		// 1) Calculate color
@@ -151,7 +151,7 @@
 			getModifiersMethod = themes[0].getLnStyle;
 			isLineIdx = true;
 
-// // 9255 emus = 0.01041666666666667 inches is document.xml StyleSheet ID=0 LineWeight e. g. default value
+			// // 9255 emus = 0.01041666666666667 inches is document.xml StyleSheet ID=0 LineWeight e. g. default value
 			initialDefaultValue = 0.01041666666666667;
 		} else if (cellName === "FillGradientEnabled") {
 			quickStyleCellName = "QuickStyleFillColor";
@@ -239,10 +239,10 @@
 		// find theme index
 		// ! Because now we only calculate colors lets find theme by
 		// ext uri="{2703A3B3-D2E1-43D9-8057-6E9D74E0F44A}" clrScheme extension schemeEnum
-// which is sometimes different from ext uri="{D75FF423-9257-4291-A4FE-1B2448832E17} - themeSchemeSchemeEnum
+		// which is sometimes different from ext uri="{D75FF423-9257-4291-A4FE-1B2448832E17} - themeSchemeSchemeEnum
 		// and pick ColorSchemeIndex instead of ThemeIndex cell
 		// upd: if connector styles are used lets use ConnectorSchemeIndex cell and
-// ext uri="{D75FF423-9257-4291-A4FE-1B2448832E17} - themeSchemeSchemeEnum to find theme
+		// ext uri="{D75FF423-9257-4291-A4FE-1B2448832E17} - themeSchemeSchemeEnum to find theme
 		let themeIndex = shape.calculateColorThemeIndex(pageInfo);
 
 		// TODO: if THEMEVAL was called with themeValue (argument like "FillColor") even if themeIndex is 0 we should return

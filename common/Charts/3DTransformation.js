@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2024
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -1335,7 +1335,7 @@ Processor3D.prototype.calculateCommonOptions = function () {
 //TODO если будут проблемы при маштабировании, вернуть функцию checkOutSideArea2 вместо checkOutSideArea
 	Processor3D.prototype.checkOutSideArea2 = function (newPoints) {
 		let i = 0;
-let maxI = 1000;
+		let maxI = 1000;
 		let t = this;
 
 		let heightChart = this.heightCanvas - this.top - this.bottom;
@@ -1414,7 +1414,7 @@ let maxI = 1000;
 		let heightChart = this.heightCanvas - this.top - this.bottom;
 		let widthChart = this.widthCanvas - this.left - this.right;
 		let DELTA = 3;
-let maxCount = 1000;
+		let maxCount = 1000;
 		let calculateZ = function () {
 			let minMaxOx = t._getMinMaxOxPoints(newPoints, -t.cameraDiffZ);
 			t.cameraDiffX = -minMaxOx.diffX;
@@ -2673,7 +2673,7 @@ let maxCount = 1000;
 			let iSY = nIntersectionPlainAndLine.y;
 			let iSZ = nIntersectionPlainAndLine.z;
 
-if (Math.round(iSZ * 1000) / 1000 < Math.round(pointFromVerge.z * 1000) / 1000) {
+			if (Math.round(iSZ * 1000) / 1000 < Math.round(pointFromVerge.z * 1000) / 1000) {
 				let minMaxpoints = t.cChartDrawer.getMinMaxPoints(plain.points);
 				let minX = minMaxpoints.minX, maxX = minMaxpoints.maxX, minY = minMaxpoints.minY, maxY = minMaxpoints.maxY, minZ = minMaxpoints.minZ, maxZ = minMaxpoints.maxZ;
 

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2023
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -649,7 +649,7 @@
 		};
 		const layoutDef = new AscFormat.LayoutDef();
 		AscFormat.ExecuteNoHistory(function() {
-layoutDef.setUniqueId("urn:microsoft.com/office/officeart/2005/8/layout/default");
+			layoutDef.setUniqueId("urn:microsoft.com/office/officeart/2005/8/layout/default");
 			layoutDef.setTitle(new AscFormat.DiagramTitle());
 			layoutDef.setDesc(new AscFormat.DiagramTitle());
 			layoutDef.setCatLst(new AscFormat.CatLst());
@@ -714,7 +714,7 @@ layoutDef.setUniqueId("urn:microsoft.com/office/officeart/2005/8/layout/default"
 
 		const styleDef = new AscFormat.StyleDef();
 		AscFormat.ExecuteNoHistory(function() {
-styleDef.setUniqueId("urn:microsoft.com/office/officeart/2005/8/quickstyle/simple1");
+			styleDef.setUniqueId("urn:microsoft.com/office/officeart/2005/8/quickstyle/simple1");
 			styleDef.setTitle(new AscFormat.DiagramTitle());
 			styleDef.setDesc(new AscFormat.DiagramTitle());
 			styleDef.setCatLst(new AscFormat.CatLst());
@@ -944,7 +944,7 @@ styleDef.setUniqueId("urn:microsoft.com/office/officeart/2005/8/quickstyle/simpl
 
 		const colorsDef = new AscFormat.ColorsDef();
 		AscFormat.ExecuteNoHistory(function() {
-colorsDef.setUniqueId("urn:microsoft.com/office/officeart/2005/8/colors/accent1_2");
+			colorsDef.setUniqueId("urn:microsoft.com/office/officeart/2005/8/colors/accent1_2");
 			colorsDef.setTitle(new AscFormat.DiagramTitle());
 			colorsDef.setDesc(new AscFormat.DiagramTitle());
 			colorsDef.setCatLst(new AscFormat.CatLst());

@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2024
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -9708,8 +9708,8 @@ PasteProcessor.prototype =
 
 		//TODO пересмотреть функцию перевода из римских чисел
 		var romanToIndex = function (text) {
-var arab_number = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000, 4000, 5000, 9000, 10000];
-var rom_number = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M", "M&#8577;", "&#8577;", "&#8577;&#8578;", "&#8578;"];
+			var arab_number = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000, 4000, 5000, 9000, 10000];
+			var rom_number = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M", "M&#8577;", "&#8577;", "&#8577;&#8578;", "&#8578;"];
 
 			var text = text.toUpperCase();
 			var result = 0;
@@ -9818,7 +9818,7 @@ var rom_number = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "C
 		if (aNumbering && aNumbering[1]) {
 
 			var correctText = function (_str) {
-//лежит строка вида - ""\(\0022\\\0027%1sdfdf\0022J\\J\)""
+				//лежит строка вида - ""\(\0022\\\0027%1sdfdf\0022J\\J\)""
 
 				if (!_str) {
 					return "";
@@ -10898,7 +10898,7 @@ var rom_number = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "C
 		// <head/>
 		// <body lang=EN-US style='tab-interval:.5in;word-wrap:break-word'>
 		// <span>
-// <w:Sdt DocPart="0D4FD865761947FCBA0D9229E17016DB" Calendar="t" MapToDateTime="t" CalendarType="Gregorian" Date="2022-10-24" DateFormat="dd.MM.yyyy" Lang="EN-US" Title="Date Picker" Form="t" Key="DatePicker1" Border="blue" Shd="yellow" HelpText="Select a date" Required="t" RoleName="DateRole" RoleColor="#FF5733" sdttag="DateTag" Label="DateLabel" ID="-291673853">24.10.2022</w:Sdt>
+		// <w:Sdt DocPart="0D4FD865761947FCBA0D9229E17016DB" Calendar="t" MapToDateTime="t" CalendarType="Gregorian" Date="2022-10-24" DateFormat="dd.MM.yyyy" Lang="EN-US" Title="Date Picker" Form="t" Key="DatePicker1" Border="blue" Shd="yellow" HelpText="Select a date" Required="t" RoleName="DateRole" RoleColor="#FF5733" sdttag="DateTag" Label="DateLabel" ID="-291673853">24.10.2022</w:Sdt>
 		// </span>
 		// </body>
 		// </html>
@@ -10923,8 +10923,8 @@ var rom_number = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "C
 		// <!--StartFragment-->
 		// <span>
 		//  <w:Sdt Form="t" Key="CreditCard1" HelpText="Enter credit card number" Required="t" sdttag="CreditCardTag" Label="CreditCardLabel" ID="1837335025" PlcHdr="PlaceholderText" showingplchdr ="t">
-// 	 <w:TextForm MaxCharacters="-1" Comb="f" WidthRule="1" MultiLine="f" AutoFit="f" FormatType="mask" Mask="9999-9999-9999-9999"/>
-// 1234-5678-9012-3456
+		// 	 <w:TextForm MaxCharacters="-1" Comb="f" WidthRule="1" MultiLine="f" AutoFit="f" FormatType="mask" Mask="9999-9999-9999-9999"/>
+		// 1234-5678-9012-3456
 		// </w:Sdt>
 		// </span>
 		// <!--EndFragment-->
@@ -11576,7 +11576,7 @@ var rom_number = ["I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "C
 				mso-table-layout-alt:fixed;
 				border:none;
 				mso-border-alt:solid windowtext .5pt;
-mso-yfti-tbllook:1184;
+				mso-yfti-tbllook:1184;
 				mso-table-lspace:7.1pt;
 				margin-left:4.85pt;
 				mso-table-rspace:7.1pt;

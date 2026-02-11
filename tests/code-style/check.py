@@ -34,7 +34,7 @@ def get_last_symbol_in_file(file_path):
 
 def check_file_without_license(files):
   files_without_license = []
-  license_header = b'Copyright Univault Technologies'
+  license_header = b'Copyright Univault System'
   for file in files:
     if -1 == find_string_in_file(file, license_header):
       files_without_license.append(file)
@@ -43,7 +43,7 @@ def check_file_without_license(files):
 
 def check_file_without_latvian_address(files):
   files_without_latvian_address = []
-  latvian_address = b'000000 (TEST)'
+  latvian_address = b'LV-1050'
   for file in files:
     if -1 == find_string_in_file(file, latvian_address):
       files_without_latvian_address.append(file)

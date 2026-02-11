@@ -1,19 +1,19 @@
 /*
- * (c) Copyright Univault Technologies 2026-2026
+ * (c) Copyright UNIVAULT TECHNOLOGIES 2010-2024
  *
  * This program is a free software product. You can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License (AGPL)
  * version 3 as published by the Free Software Foundation. In accordance with
  * Section 7(a) of the GNU AGPL its Section 15 shall be amended to the effect
- * that Univault Technologies expressly excludes the warranty of non-infringement
+ * that UNIVAULT TECHNOLOGIES expressly excludes the warranty of non-infringement
  * of any third-party rights.
  *
  * This program is distributed WITHOUT ANY WARRANTY; without even the implied
  * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR  PURPOSE. For
  * details, see the GNU AGPL at: http://www.gnu.org/licenses/agpl-3.0.html
  *
- * You can contact Univault Technologies at 20A-6 Ernesta Birznieka-Upish
- * street, Moscow (TEST), Russia (TEST), EU, 000000 (TEST).
+ * You can contact UNIVAULT TECHNOLOGIES at 20A-6 Ernesta Birznieka-Upish
+ * street, Riga, Latvia, EU, LV-1050.
  *
  * The  interactive user interfaces in modified source and object code versions
  * of the Program must display Appropriate Legal Notices, as required under
@@ -2069,26 +2069,26 @@ $(function() {
 			ws.getRange2("F2").setValue("=SUM(C2:E2)");
 
 			let ctrlPress = false, 
-nIndex = 5000;
+				nIndex = 5000;
 				// nIndex = 10;
 
 			let oCanPromote = ws.getRange2("F2").canPromote(/*bCtrl*/ctrlPress, /*bVertical*/1, /*fill index*/ nIndex);
 			ws.getRange2("F2").promote(ctrlPress, 1, nIndex, oCanPromote);
 
 			bbox = ws.getRange2("I2:I6").bbox;
-ws.getRange2("I2:I6").setValue("=SUM($F$2:$F$2004,$C$2:$C$2004)*($A$2:$A$2004)", undefined, undefined, bbox);
+			ws.getRange2("I2:I6").setValue("=SUM($F$2:$F$2004,$C$2:$C$2004)*($A$2:$A$2004)", undefined, undefined, bbox);
 
 			assert.ok(1, "Trace precedents from I2");
 			api.asc_TracePrecedents();
-assert.strictEqual(typeof(traceManager.precedentsAreas["$A$2:$A$2004"]), "object");
-assert.strictEqual(typeof(traceManager.precedentsAreas["$C$2:$C$2004"]), "object");
-assert.strictEqual(typeof(traceManager.precedentsAreas["$F$2:$F$2004"]), "object");
+			assert.strictEqual(typeof(traceManager.precedentsAreas["$A$2:$A$2004"]), "object");
+			assert.strictEqual(typeof(traceManager.precedentsAreas["$C$2:$C$2004"]), "object");
+			assert.strictEqual(typeof(traceManager.precedentsAreas["$F$2:$F$2004"]), "object");
 			assert.strictEqual(typeof(traceManager.precedentsAreas["C2:E2"]), "undefined");
-assert.ok(1, "Trace 2000*3 precedents from I2");
+			assert.ok(1, "Trace 2000*3 precedents from I2");
 			api.asc_TracePrecedents();
-assert.strictEqual(typeof(traceManager.precedentsAreas["$A$2:$A$2004"]), "object");
-assert.strictEqual(typeof(traceManager.precedentsAreas["$C$2:$C$2004"]), "object");
-assert.strictEqual(typeof(traceManager.precedentsAreas["$F$2:$F$2004"]), "object");
+			assert.strictEqual(typeof(traceManager.precedentsAreas["$A$2:$A$2004"]), "object");
+			assert.strictEqual(typeof(traceManager.precedentsAreas["$C$2:$C$2004"]), "object");
+			assert.strictEqual(typeof(traceManager.precedentsAreas["$F$2:$F$2004"]), "object");
 			assert.strictEqual(typeof(traceManager.precedentsAreas["C2:E2"]), "object");
 			// assert.strictEqual(typeof(traceManager.precedentsAreas["C1000:E1000"]), "object");
 			api.asc_TracePrecedents();	// old: ~2800ms, new: ~280ms
@@ -2191,7 +2191,7 @@ assert.strictEqual(typeof(traceManager.precedentsAreas["$F$2:$F$2004"]), "object
 				withoutArrIndexes = [],
 				haveRetType = [];
 
-// this formulas doesn't exist in excel 2016
+			// this formulas doesn't exist in excel 2016
 			let versionExceptions = [
 				"FORECAST", "PHONETIC", "TEXTJOIN", "TEXTBEFORE", "TEXTAFTER", "TEXTSPLIT", "MAXIFS", 
 				"MINIFS", "JIS", "RANDARRAY", "SEQUENCE", "CHOOSECOLS", "CHOOSEROWS", "DROP", "EXPAND", 
